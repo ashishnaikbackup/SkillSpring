@@ -92,7 +92,15 @@ Every topic listed inside a learning school now opens a dedicated SkillSpring ro
 
 **Important scope note:** a roadmap is not the same as a fully written course. The roadmap pages provide a structured progression and school-specific learning framework; detailed concept-by-concept lessons, worked examples, exercises, assessments and projects still need to be authored for each individual topic. The 12 course pages are the current detailed-course set, not proof that every catalogue topic is complete. Progress remains stored in the current browser only.
 
-## Zero-to-hero programming courses\n\n- **Programming Logic: Absolute Zero** — 13 lessons from computer/program fundamentals and problem decomposition through algorithms, pseudocode, variables, decisions, loops, functions, debugging and testing.\n- **Data Structures & Algorithms: Zero to Interview Ready** — 12 lessons covering Big-O, core data structures, searching, sorting, trees, graphs, problem patterns and interview communication.\n- **AI-Assisted & Vibe Coding** — 11 lessons on requirements-first prompting, AI coding workflows, code review, debugging, testing, privacy, security, Git checkpoints and deployment.\n\nFollow the [Start Here learning path](start-here.html) before jumping into advanced topics.\n\n## Expanded essential professional courses
+## Zero-to-hero programming courses
+
+- **Programming Logic: Absolute Zero** — 13 lessons from computer/program fundamentals and problem decomposition through algorithms, pseudocode, variables, decisions, loops, functions, debugging and testing.
+- **Data Structures & Algorithms: Zero to Interview Ready** — 12 lessons covering Big-O, core data structures, searching, sorting, trees, graphs, problem patterns and interview communication.
+- **AI-Assisted & Vibe Coding** — 11 lessons on requirements-first prompting, AI coding workflows, code review, debugging, testing, privacy, security, Git checkpoints and deployment.
+
+Follow the [Start Here learning path](start-here.html) before jumping into advanced topics.
+
+## Expanded essential professional courses
 
 The catalogue now also links to interactive, lesson-based courses for:
 
