@@ -2,7 +2,7 @@
 
 **SkillSpring** is a beginner-first self-learning platform designed to take learners from first principles to practical, portfolio-ready work across technology, design, data, business and personal skills.
 
-The public-facing product is branded SkillSpring. The repository is currently still named `RunCode`; the repository slug can be renamed separately in GitHub Settings.
+The public product and repository are named SkillSpring.
 
 ## Start learning
 
@@ -28,7 +28,7 @@ The public-facing product is branded SkillSpring. The repository is currently st
 | [UI/UX Design](ux-course.html) | Research, problem framing, wireframes, visual design, prototyping and usability |
 | [Spreadsheets](sheets-course.html) | Formulas, functions, validation, analysis, dashboards and models |
 
-The Python course currently has 16 modules. The other 11 courses have six guided modules each. They are substantial beginner foundations, not claims of complete professional mastery or exhaustive coverage of every tool in each field.
+The 12 foundational courses listed above include 16 Python modules and six guided modules in each of the other 11 courses. Additional essential professional courses and the zero-to-hero programming courses are listed in the expanded sections below. These are substantial learning foundations, not claims of complete professional mastery or exhaustive coverage of every tool in each field.
 
 ## How courses work
 
@@ -57,7 +57,7 @@ These schools are the long-term curriculum scope. A topic appearing in the catal
 - Static HTML, CSS and JavaScript.
 - Python playground uses Pyodide in the browser.
 - No user account or cross-device progress sync yet.
-- Multi-language code execution is not yet provided. Do not run untrusted code on an application server; future execution environments must use isolated sandboxes with resource limits.
+- The [multi-language coding lab](polyglot.html) provides browser-based Python, JavaScript, HTML/CSS preview and SQLite, plus a third-party Piston sandbox for additional languages. Availability and supported versions can change; it is not a self-hosted compiler or a full IDE. Never submit secrets or private data.
 - Never put API keys, passwords, banking credentials or private learner data in frontend code or public repositories.
 - Finance material is educational and does not guarantee returns or replace qualified financial advice.
 
@@ -68,7 +68,7 @@ These schools are the long-term curriculum scope. A topic appearing in the catal
 - [x] Publish the 16-module Python course and 11 additional six-module foundation courses.
 - [x] Add the Field Radar learning section.
 - [ ] Deepen every course with more lessons, worked solutions, graded practice and larger projects.
-- [ ] Add interactive SQL, spreadsheet, data and electronics practice labs.
+- [ ] Expand dedicated SQL, spreadsheet, data and electronics practice labs; the current multi-language lab includes SQLite practice.
 - [ ] Add full courses for the remaining programming languages and learning schools.
 - [ ] Add accessible assessments, automated site tests and improved course search.
 - [ ] Add optional accounts and secure cross-device progress sync.
@@ -92,7 +92,7 @@ Every topic listed inside a learning school now opens a dedicated SkillSpring ro
 
 **Important scope note:** a roadmap is not the same as a fully written course. The roadmap pages provide a structured progression and school-specific learning framework; detailed concept-by-concept lessons, worked examples, exercises, assessments and projects still need to be authored for each individual topic. The 12 course pages are the current detailed-course set, not proof that every catalogue topic is complete. Progress remains stored in the current browser only.
 
-## Expanded essential professional courses
+## Zero-to-hero programming courses\n\n- **Programming Logic: Absolute Zero** — 13 lessons from computer/program fundamentals and problem decomposition through algorithms, pseudocode, variables, decisions, loops, functions, debugging and testing.\n- **Data Structures & Algorithms: Zero to Interview Ready** — 12 lessons covering Big-O, core data structures, searching, sorting, trees, graphs, problem patterns and interview communication.\n- **AI-Assisted & Vibe Coding** — 11 lessons on requirements-first prompting, AI coding workflows, code review, debugging, testing, privacy, security, Git checkpoints and deployment.\n\nFollow the [Start Here learning path](start-here.html) before jumping into advanced topics.\n\n## Expanded essential professional courses
 
 The catalogue now also links to interactive, lesson-based courses for:
 
