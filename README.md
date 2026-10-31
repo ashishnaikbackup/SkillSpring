@@ -75,6 +75,16 @@ These schools are the long-term curriculum scope. A topic appearing in the catal
 - [ ] Add optional accounts and secure cross-device progress sync.
 - [ ] Add a maintained, sourced technology-news feed alongside the curated Field Radar notes.
 
+## Local quality checks
+
+Run the static validation script from the repository root:
+
+```bash
+node scripts/validate-site.mjs
+```
+
+It checks JavaScript syntax, inline scripts, local HTML/Markdown links, catalogue destinations, required lesson structures and the main zero-to-hero navigation. It does not replace browser-based interaction tests or prove that third-party language execution and the live Pages deployment are working.
+
 ## Website deployment
 
 A GitHub Actions workflow is included at `.github/workflows/pages.yml` to publish the static site from the repository root. In GitHub, open **Settings → Pages** and set the build and deployment source to **GitHub Actions** if it is not already selected. The workflow runs on pushes to `main` and can also be started manually from the Actions tab. After a successful deployment, GitHub shows the public Pages URL in Settings → Pages and in the workflow deployment environment.
