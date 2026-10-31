@@ -85,3 +85,9 @@ Open `index.html` through a local web server such as VS Code Live Server. The Py
 See [docs/PRODUCT_VISION.md](docs/PRODUCT_VISION.md) for the product principles, architecture direction, safety rules and long-term roadmap.
 
 **Project status:** SkillSpring's public-facing rebrand, course library, 12 course pages and Field Radar are committed to the public GitHub repository. A GitHub Pages deployment workflow has been added; its first successful run and public URL still need verification in the repository's Actions/Pages settings. The broader curriculum is still being built in stages.
+
+## Interactive topic roadmaps
+
+Every topic listed inside a learning school now opens a dedicated SkillSpring roadmap page. The roadmap view is organised into eight progressive milestones covering orientation, foundations, tools and first examples, guided practice, intermediate work, advanced practice, professional workflow and a capstone. It includes practice prompts, knowledge checks and local milestone tracking.
+
+**Important scope note:** a roadmap is not the same as a fully written course. The roadmap pages provide a structured progression and school-specific learning framework; detailed concept-by-concept lessons, worked examples, exercises, assessments and projects still need to be authored for each individual topic. The 12 course pages are the current detailed-course set, not proof that every catalogue topic is complete. Progress remains stored in the current browser only.
