@@ -87,7 +87,7 @@ It checks JavaScript syntax, inline scripts, local HTML/Markdown links, catalogu
 
 ## Website deployment
 
-A GitHub Actions workflow is included at `.github/workflows/pages.yml` to publish the static site from the repository root. In GitHub, open **Settings → Pages** and set the build and deployment source to **GitHub Actions** if it is not already selected. The workflow runs on pushes to `main` and can also be started manually from the Actions tab. After a successful deployment, GitHub shows the public Pages URL in Settings → Pages and in the workflow deployment environment.
+A GitHub Actions workflow is included at `.github/workflows/pages.yml` to publish the static site from the repository root. In GitHub, open **Settings → Pages** and set the build and deployment source to **GitHub Actions** if it is not already selected. The workflow runs on pushes to `main` and can also be started manually from the Actions tab. It validates local links/course data before deployment, then smoke-tests the homepage, Start Here page, course catalogue, multi-language lab and key assets. After a successful deployment, GitHub shows the public Pages URL in Settings → Pages and in the workflow deployment environment.
 
 ## Local development
 
