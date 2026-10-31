@@ -70,7 +70,8 @@ These schools are the long-term curriculum scope. A topic appearing in the catal
 - [ ] Deepen every course with more lessons, worked solutions, graded practice and larger projects.
 - [ ] Expand dedicated SQL, spreadsheet, data and electronics practice labs; the current multi-language lab includes SQLite practice.
 - [ ] Add full courses for the remaining programming languages and learning schools.
-- [x] Add automated static site validation for JavaScript syntax, local links, course catalogue routes and required lesson data.\n- [ ] Add more accessible graded assessments and improved course search.
+- [x] Add automated static site validation for JavaScript syntax, local links, course catalogue routes and required lesson data.
+- [ ] Add more accessible graded assessments and improved course search.
 - [ ] Add optional accounts and secure cross-device progress sync.
 - [ ] Add a maintained, sourced technology-news feed alongside the curated Field Radar notes.
 
