@@ -70,7 +70,7 @@ These schools are the long-term curriculum scope. A topic appearing in the catal
 - [ ] Deepen every course with more lessons, worked solutions, graded practice and larger projects.
 - [ ] Expand dedicated SQL, spreadsheet, data and electronics practice labs; the current multi-language lab includes SQLite practice.
 - [ ] Add full courses for the remaining programming languages and learning schools.
-- [ ] Add accessible assessments, automated site tests and improved course search.
+- [x] Add automated static site validation for JavaScript syntax, local links, course catalogue routes and required lesson data.\n- [ ] Add more accessible graded assessments and improved course search.
 - [ ] Add optional accounts and secure cross-device progress sync.
 - [ ] Add a maintained, sourced technology-news feed alongside the curated Field Radar notes.
 
@@ -84,7 +84,7 @@ Open `index.html` through a local web server such as VS Code Live Server. The Py
 
 See [docs/PRODUCT_VISION.md](docs/PRODUCT_VISION.md) for the product principles, architecture direction, safety rules and long-term roadmap.
 
-**Project status:** SkillSpring's public-facing rebrand, course library with 24 catalogue entries and Field Radar are committed to the public GitHub repository. A GitHub Pages deployment workflow has been added; its first successful run and public URL still need verification in the repository's Actions/Pages settings. The broader curriculum is still being built in stages.
+**Project status:** SkillSpring's public-facing rebrand, course library with 24 catalogue entries and Field Radar are committed to the public GitHub repository. A GitHub Pages deployment workflow has been added; its first successful run and public URL still need verification in the repository's Actions/Pages settings. The zero-to-hero logic, DSA and AI-assisted coding courses, Start Here guide and multi-language practice lab are now in the repository. The broader curriculum and live Pages deployment verification are still in progress.
 
 ## Interactive topic roadmaps
 
