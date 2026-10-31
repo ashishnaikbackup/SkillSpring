@@ -1,51 +1,130 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="RunCode - a simple browser-based Python playground for learning and running Python code." />
-  <title>RunCode — Python Playground</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101827">
+  <meta name="description" content="RunCode is a beginner-to-professional learning and productivity platform for technology, business, finance, design and more.">
+  <title>RunCode — Learn. Build. Master.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="topbar">
-    <div class="brand"><span class="logo">▶</span><span>RunCode</span></div>
-    <div class="language">Python 3 <span class="dot"></span></div>
-    <div class="actions">
-      <button id="clearBtn" class="ghost">Clear</button>
-      <button id="runBtn" class="run">▶ Run</button>
-    </div>
-  </header>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="#" data-view="home"><span class="brand-mark">R</span><span>RunCode<span class="brand-period">.</span></span></a>
+      <div class="side-label">LEARN</div>
+      <nav class="side-nav">
+        <button class="nav-link active" data-view="home"><span>⌂</span> Overview</button>
+        <button class="nav-link" data-view="explore"><span>▦</span> Explore schools</button>
+        <button class="nav-link" data-view="paths"><span>⌁</span> Learning paths</button>
+        <button class="nav-link" data-view="saved"><span>☆</span> My learning</button>
+      </nav>
+      <div class="side-label">PRACTICE</div>
+      <nav class="side-nav">
+        <button class="nav-link" data-view="playground"><span>⌘</span> Code playground</button>
+        <button class="nav-link" data-view="labs"><span>▤</span> Practice labs</button>
+        <button class="nav-link" data-view="projects"><span>◫</span> Projects</button>
+      </nav>
+      <div class="side-label">MY WORKSPACE</div>
+      <nav class="side-nav">
+        <button class="nav-link" data-view="finance"><span>₹</span> Personal finance</button>
+        <button class="nav-link" data-view="office"><span>▧</span> Office & productivity</button>
+        <button class="nav-link" data-view="career"><span>↗</span> Career centre</button>
+      </nav>
+      <div class="sidebar-bottom"><div class="mini-avatar">R</div><div><strong>Your learning space</strong><small>Built to grow with you</small></div></div>
+    </aside>
 
-  <main class="workspace">
-    <section class="panel editor-panel">
-      <div class="panel-head"><span>Code</span><span id="status">Ready</span></div>
-      <textarea id="editor" spellcheck="false">print("Hello, World!")
+    <main class="main-area">
+      <header class="topbar">
+        <button class="mobile-menu" id="menuBtn" aria-label="Open menu">☰</button>
+        <div class="breadcrumb">Your workspace <span>/</span> <strong id="crumb">Overview</strong></div>
+        <div class="top-actions"><span class="online-dot"></span><span class="top-caption">Your journey starts here</span><button class="avatar">Y</button></div>
+      </header>
+
+      <section class="page active" id="homePage">
+        <div class="welcome-row">
+          <div><div class="eyebrow">YOUR PERSONAL LEARNING PLATFORM</div><h1>Learn anything.<br><span>Build everything.</span></h1><p class="lead">Start from absolute zero. Build real skills. Grow into professional-level work — one step at a time.</p><div class="welcome-actions"><button class="btn-primary" data-go="explore">Explore all learning schools <span>→</span></button><button class="btn-secondary" data-go="paths">View learning paths</button></div></div>
+          <div class="hero-art" aria-label="Learning journey illustration"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="hero-core"><span>R</span></div><div class="float-card card-code">⌘ <small>CODE</small></div><div class="float-card card-data">▥ <small>DATA</small></div><div class="float-card card-idea">✦ <small>IDEAS</small></div><div class="hero-caption">BEGINNER <span>→</span> PROFESSIONAL</div></div>
+        </div>
+        <div class="stats-grid">
+          <article class="stat-card"><span class="stat-icon purple">▦</span><div><strong id="schoolCount">12</strong><small>Learning schools</small></div></article>
+          <article class="stat-card"><span class="stat-icon blue">⌘</span><div><strong>30+</strong><small>Technology languages & tools</small></div></article>
+          <article class="stat-card"><span class="stat-icon orange">◎</span><div><strong>7 levels</strong><small>Zero to mastery</small></div></article>
+          <article class="stat-card"><span class="stat-icon green">◇</span><div><strong id="progressStat">0%</strong><small>Your learning progress</small></div></article>
+        </div>
+        <div class="section-heading"><div><div class="eyebrow">CHOOSE YOUR DIRECTION</div><h2>Explore learning schools</h2><p>One platform. Many ways to grow.</p></div><button class="text-link" data-go="explore">View all schools →</button></div>
+        <div class="school-grid" id="homeSchools"></div>
+        <div class="section-heading"><div><div class="eyebrow">A CLEAR PATH FORWARD</div><h2>From beginner to professional</h2><p>Every subject follows a structured progression.</p></div></div>
+        <div class="level-strip" id="levelStrip"></div>
+        <div class="section-heading"><div><div class="eyebrow">START BUILDING</div><h2>Explore the practice workspace</h2><p>Learning becomes real when you put it into practice.</p></div></div>
+        <div class="feature-grid">
+          <button class="feature-card" data-go="playground"><span class="feature-symbol">⌘</span><strong>Code playground</strong><small>Write and run Python in your browser.</small><span class="feature-arrow">Open lab →</span></button>
+          <button class="feature-card" data-go="labs"><span class="feature-symbol">▤</span><strong>Practice labs</strong><small>Build skills with SQL, spreadsheets and more.</small><span class="feature-arrow">Explore labs →</span></button>
+          <button class="feature-card" data-go="projects"><span class="feature-symbol">◫</span><strong>Project studio</strong><small>Turn knowledge into portfolio evidence.</small><span class="feature-arrow">View projects →</span></button>
+        </div>
+      </section>
+
+      <section class="page" id="explorePage">
+        <div class="page-intro"><div class="eyebrow">THE RUNCode CATALOGUE</div><h1>Explore all learning schools</h1><p>Choose a subject and follow a structured path from foundations to advanced practice.</p></div>
+        <div class="search-row"><input id="searchInput" type="search" placeholder="Search languages, subjects, tools or skills…"><select id="levelFilter"><option value="all">All levels</option><option value="beginner">Beginner friendly</option><option value="intermediate">Intermediate</option><option value="advanced">Advanced</option></select></div>
+        <div class="filter-row" id="schoolFilters"></div>
+        <div class="catalogue-grid" id="catalogueGrid"></div>
+      </section>
+
+      <section class="page" id="pathsPage">
+        <div class="page-intro"><div class="eyebrow">GUIDED LEARNING</div><h1>Learning paths</h1><p>Follow a sensible order instead of jumping between disconnected tutorials.</p></div>
+        <div class="path-list" id="pathList"></div>
+      </section>
+
+      <section class="page" id="savedPage">
+        <div class="page-intro"><div class="eyebrow">YOUR JOURNEY</div><h1>My learning</h1><p>Your saved subjects and completed learning milestones on this device.</p></div>
+        <div id="savedContent"></div>
+      </section>
+
+      <section class="page" id="detailPage">
+        <button class="back-link" data-go="explore">← Back to schools</button>
+        <div id="courseDetail"></div>
+      </section>
+
+      <section class="page" id="playgroundPage">
+        <div class="page-intro"><div class="eyebrow">PRACTICE LAB · PYTHON</div><h1>Python code playground</h1><p>Experiment with Python directly in your browser. Code runs locally using Pyodide.</p></div>
+        <div class="playground-toolbar"><span class="runtime-status" id="status">Preparing Python runtime…</span><div><button class="btn-secondary compact" id="clearBtn">Clear</button><button class="btn-primary compact" id="runBtn">▶ Run code</button></div></div>
+        <div class="playground-grid"><div class="editor-card"><div class="editor-head">main.py <span>PYTHON 3</span></div><textarea id="editor" spellcheck="false">print("Hello, World!")
 
 name = input("What is your name? ")
-print("Hello", name)</textarea>
-    </section>
+print("Welcome to RunCode,", name)</textarea><div class="editor-foot">Tip: Press Ctrl + Enter or Cmd + Enter to run.</div></div><div class="output-column"><div class="editor-card"><div class="editor-head">Input <span>ONE LINE PER input()</span></div><textarea id="stdin" class="small-editor" placeholder="Enter input values here"></textarea></div><div class="editor-card output-card"><div class="editor-head">Output <button id="copyBtn" class="copy-link">Copy</button></div><pre id="output">Your program output will appear here.</pre></div></div></div>
+        <div class="notice"><strong>About this lab</strong><span>Python runs in your browser tab through WebAssembly. Do not enter secrets or sensitive data into practice code.</span></div>
+      </section>
 
-    <section class="bottom-grid">
-      <div class="panel">
-        <div class="panel-head"><span>Input</span><span class="hint">One line per input()</span></div>
-        <textarea id="stdin" spellcheck="false" placeholder="Ashish"></textarea>
-      </div>
-      <div class="panel output-panel">
-        <div class="panel-head"><span>Output</span><button id="copyBtn" class="mini">Copy</button></div>
-        <pre id="output">Press Run to execute your Python program.</pre>
-      </div>
-    </section>
+      <section class="page" id="labsPage">
+        <div class="page-intro"><div class="eyebrow">LEARN BY DOING</div><h1>Practice labs</h1><p>Hands-on environments and guided exercises. Some labs are planned for later releases.</p></div>
+        <div class="lab-grid" id="labGrid"></div>
+      </section>
 
-    <section class="info">
-      <strong>Python in your browser</strong>
-      <span>Powered by Pyodide (CPython compiled to WebAssembly). Your code runs locally in this tab.</span>
-    </section>
-  </main>
+      <section class="page" id="projectsPage">
+        <div class="page-intro"><div class="eyebrow">SHOW WHAT YOU CAN DO</div><h1>Project studio</h1><p>Professional skills grow through practical projects, case studies and evidence of your work.</p></div>
+        <div class="project-grid" id="projectGrid"></div>
+      </section>
 
+      <section class="page" id="financePage">
+        <div class="page-intro"><div class="eyebrow">MY WORKSPACE</div><h1>Personal finance</h1><p>Learn to manage money with practical tools and clearly labelled educational simulations.</p></div>
+        <div class="workspace-grid" id="financeTools"></div><div class="notice"><strong>Educational use</strong><span>Calculators and examples are for learning and organisation, not personalised investment advice or guaranteed returns. No bank or brokerage accounts are connected.</span></div>
+      </section>
+
+      <section class="page" id="officePage">
+        <div class="page-intro"><div class="eyebrow">MY WORKSPACE</div><h1>Office & productivity</h1><p>Build everyday skills for documents, spreadsheets, presentations and personal organisation.</p></div>
+        <div class="workspace-grid" id="officeTools"></div>
+      </section>
+
+      <section class="page" id="careerPage">
+        <div class="page-intro"><div class="eyebrow">MY WORKSPACE</div><h1>Career centre</h1><p>Prepare for professional opportunities with practical career skills and portfolio evidence.</p></div>
+        <div class="workspace-grid" id="careerTools"></div>
+      </section>
+    </main>
+  </div>
   <script src="https://cdn.jsdelivr.net/pyodide/v0.28.2/full/pyodide.js"></script>
   <script src="app.js"></script>
 </body>
