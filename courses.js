@@ -18,5 +18,10 @@ const courses=[
 ,{slug:"powerautomate",name:"Power Automate: Workflow Automation",level:"Beginner → automation foundations",desc:"Build flows using triggers, actions, conditions, approvals, connectors, monitoring and safe error handling.",href:"essential-course.html?course=powerautomate",topics:"Triggers · Actions · Conditions · Approvals · Security"}
 ,{slug:"git",name:"Git & GitHub: Professional Collaboration",level:"Beginner → team workflow",desc:"Learn commits, branches, merges, pull requests, conflict resolution, repository hygiene and collaboration.",href:"essential-course.html?course=git",topics:"Commits · Branches · Merge · Pull Requests · Security"}
 
+,{slug:"logic",name:"Programming Logic: Absolute Zero",level:"Absolute beginner → confident problem solver",desc:"Learn what code is, inputs and outputs, algorithms, flowcharts, variables, decisions, loops, functions, debugging and testing.",href:"essential-course.html?course=logic",topics:"Computer basics · Logic · Algorithms · Pseudocode · Debugging"}
+,{slug:"dsa",name:"Data Structures & Algorithms: Zero to Interview Ready",level:"Beginner → interview preparation",desc:"Understand complexity, arrays, linked lists, stacks, queues, hash maps, recursion, trees, graphs, sorting, searching and problem-solving patterns.",href:"essential-course.html?course=dsa",topics:"Big-O · Arrays · Hash Maps · Trees · Graphs · DP"}
+,{slug:"vibecoding",name:"AI-Assisted & Vibe Coding: Prompt to Reliable Software",level:"Beginner → responsible AI developer",desc:"Plan with prompts, use AI coding tools, understand generated code, debug, test, secure, review and deploy real projects.",href:"essential-course.html?course=vibecoding",topics:"Prompting · AI IDEs · Agents · Debugging · Testing · Security"}
+
+
 ];
 document.getElementById('courseGrid').innerHTML=courses.map((c,i)=>'<a class="lesson course-card" href="'+c.href+'"><span class="tag">COURSE '+String(i+1).padStart(2,'0')+' · '+c.level.toUpperCase()+'</span><h2>'+c.name+'</h2><p>'+c.desc+'</p><div class="callout">'+c.topics+'</div><span class="open">Open course →</span></a>').join('');
