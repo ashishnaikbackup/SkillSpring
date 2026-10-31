@@ -74,10 +74,14 @@ These schools are the long-term curriculum scope. A topic appearing in the catal
 - [ ] Add optional accounts and secure cross-device progress sync.
 - [ ] Add a maintained, sourced technology-news feed alongside the curated Field Radar notes.
 
-## Development
+## Website deployment
+
+A GitHub Actions workflow is included at `.github/workflows/pages.yml` to publish the static site from the repository root. In GitHub, open **Settings → Pages** and set the build and deployment source to **GitHub Actions** if it is not already selected. The workflow runs on pushes to `main` and can also be started manually from the Actions tab. After a successful deployment, GitHub shows the public Pages URL in Settings → Pages and in the workflow deployment environment.
+
+## Local development
 
 Open `index.html` through a local web server such as VS Code Live Server. The Python runtime and web fonts require an internet connection.
 
 See [docs/PRODUCT_VISION.md](docs/PRODUCT_VISION.md) for the product principles, architecture direction, safety rules and long-term roadmap.
 
-**Project status:** SkillSpring's public-facing rebrand, course library, 12 course pages and Field Radar are committed to the public GitHub repository. GitHub Pages deployment has not yet been verified, and the broader curriculum is still being built in stages.
+**Project status:** SkillSpring's public-facing rebrand, course library, 12 course pages and Field Radar are committed to the public GitHub repository. A GitHub Pages deployment workflow has been added; its first successful run and public URL still need verification in the repository's Actions/Pages settings. The broader curriculum is still being built in stages.
