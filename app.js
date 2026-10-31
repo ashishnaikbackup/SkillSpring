@@ -15,7 +15,7 @@ const schools = [
 const levelNames=["Absolute beginner","Foundations","Beginner practice","Intermediate","Advanced","Professional practice","Mastery"];
 const levelDescriptions=["Start with no prior knowledge","Understand the essential principles","Practise with guided examples","Solve independent problems","Work with complex concepts","Apply industry-style workflows","Build expertise through capstones"];
 const paths=[
-{title:"Programming foundations",desc:"Computer basics → logic → Python → Git → problem solving → projects",duration:"Start here · Beginner friendly",school:"programming"},
+{title:"Zero-to-hero software developer",desc:"Computer basics → programming logic → Python fundamentals → debugging & tests → Git/GitHub → DSA → SQL & APIs → portfolio projects → interview practice",duration:"Start here · Beginner friendly",school:"programming"},
 {title:"Full-stack web developer",desc:"HTML → CSS → JavaScript → Git → frontend → backend → databases → deployment",duration:"Beginner to professional pathway",school:"design"},
 {title:"AI & data practitioner",desc:"Python → maths & statistics → data analysis → machine learning → LLM applications",duration:"Build a foundation before advanced AI",school:"ai"},
 {title:"Electronics & VLSI engineer",desc:"Circuit fundamentals → digital logic → C → embedded systems → Verilog → FPGA → VLSI",duration:"Engineering pathway",school:"engineering"},
