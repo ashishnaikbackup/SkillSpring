@@ -135,9 +135,24 @@ for (const [label, route] of [
 }
 const languages = [...poly.matchAll(/<option value="([^"]+)"/g)].map((match) => match[1]);
 for (const language of ["python","javascript","html","sql","c","cpp","java","csharp","go","rust","php","ruby","typescript","kotlin","swift","r","bash","dart","scala","lua","perl","haskell","julia","powershell","fortran","octave"]) {
-  if (!languages.includes(language)) fail(`Multi-language lab is missing ${language}.`);
+  if (!languages.includes(language)) fail("Multi-language lab is missing " + language + ".");
 }
-if (!poly.includes("localCommands") || !poly.includes('id="download"')) fail("Local run commands and source download are missing.");
+const inlineLab = poly.match(/<script>([\s\S]*?)<\/script>/)?.[1] || "";
+const objectKeys = (name) => {
+  const match = inlineLab.match(new RegExp("const " + name + "=\\{([\\s\\S]*?)\\};"));
+  return match ? [...match[1].matchAll(/(?:^|,)([a-z][a-z0-9]*):/g)].map((item) => item[1]) : [];
+};
+const defaultKeys = objectKeys("defaults");
+const metaKeys = objectKeys("meta");
+const localKeys = objectKeys("localCommands");
+for (const language of languages) {
+  if (!defaultKeys.includes(language)) fail("Multi-language lab has no starter code for " + language + ".");
+  if (!metaKeys.includes(language)) fail("Multi-language lab has no file/runtime metadata for " + language + ".");
+  if (!["python","javascript","html","sql"].includes(language) && !localKeys.includes(language)) {
+    fail("Multi-language lab has no local run command for " + language + ".");
+  }
+}
+if (!poly.includes('id="download"')) fail("Source download is missing.");
 if (poly.includes("emkc.org/api/v2/piston/execute")) fail("Do not use the public Piston endpoint without authorization.");
 if (!poly.includes("loadPyodide") || !poly.includes("sql.js")) fail("A browser runtime for Python or SQL is missing.");
 
