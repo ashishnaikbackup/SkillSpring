@@ -176,3 +176,21 @@ Security requirements: row-level security, input validation, rate limits, secret
 ## Product success definition
 
 A beginner can choose a path, understand the first lesson, practise a concept, receive useful feedback, complete a project and see their progress. A returning learner can also use the personal workspace independently of courses.
+
+
+## Current implementation status — October 2026
+
+The first learning-platform prototype now includes:
+- A responsive SkillSpring dashboard with 12 learning schools, search, saved subjects, guided learning paths and a career-oriented zero-to-hero software path.
+- A published course catalogue with 24 entries, including 12 essential lesson-based courses and the original language, web, data, design and finance foundations.
+- A dedicated Start Here page and a detailed beginner guide that sequence computer basics, logic, Python, problem solving, Git, DSA, role-specific breadth, AI-assisted coding and portfolio preparation.
+- Three new courses: Programming Logic (13 lessons), DSA (12 lessons) and AI-assisted/vibe coding (11 lessons).
+- A multi-language practice lab: browser-based Python, JavaScript, HTML/CSS preview and SQLite, plus an external Piston execution integration for additional languages.
+- Local browser progress tracking and a static GitHub Pages deployment workflow.
+
+Known limitations:
+- The code editor is a lightweight textarea, not a full IDE with language-server autocomplete, breakpoints or step debugging.
+- External language execution depends on a third-party public sandbox and is not guaranteed to be available for every language/version.
+- Progress is stored locally in the current browser; there are no user accounts or cross-device sync.
+- Several learning schools and advanced topics remain roadmaps rather than fully authored textbook courses.
+- The Pages workflow and public deployment must be verified through a successful GitHub Actions run and a live-site smoke test before calling the first release deployed.
