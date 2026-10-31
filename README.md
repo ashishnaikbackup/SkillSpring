@@ -84,13 +84,13 @@ Open `index.html` through a local web server such as VS Code Live Server. The Py
 
 See [docs/PRODUCT_VISION.md](docs/PRODUCT_VISION.md) for the product principles, architecture direction, safety rules and long-term roadmap.
 
-**Project status:** SkillSpring's public-facing rebrand, course library, 12 course pages and Field Radar are committed to the public GitHub repository. A GitHub Pages deployment workflow has been added; its first successful run and public URL still need verification in the repository's Actions/Pages settings. The broader curriculum is still being built in stages.
+**Project status:** SkillSpring's public-facing rebrand, course library with 24 catalogue entries and Field Radar are committed to the public GitHub repository. A GitHub Pages deployment workflow has been added; its first successful run and public URL still need verification in the repository's Actions/Pages settings. The broader curriculum is still being built in stages.
 
 ## Interactive topic roadmaps
 
 Every topic listed inside a learning school now opens a dedicated SkillSpring roadmap page. The roadmap view is organised into eight progressive milestones covering orientation, foundations, tools and first examples, guided practice, intermediate work, advanced practice, professional workflow and a capstone. It includes practice prompts, knowledge checks and local milestone tracking.
 
-**Important scope note:** a roadmap is not the same as a fully written course. The roadmap pages provide a structured progression and school-specific learning framework; detailed concept-by-concept lessons, worked examples, exercises, assessments and projects still need to be authored for each individual topic. The 12 course pages are the current detailed-course set, not proof that every catalogue topic is complete. Progress remains stored in the current browser only.
+**Important scope note:** a roadmap is not the same as a fully written course. The roadmap pages provide a structured progression and school-specific learning framework; detailed concept-by-concept lessons, worked examples, exercises, assessments and projects still need to be authored for each individual topic. The 24 catalogue entries are the current detailed-course set, not proof that every catalogue topic is complete. Progress remains stored in the current browser only.
 
 ## Zero-to-hero programming courses
 
@@ -130,14 +130,9 @@ SkillSpring's target is not to make a beginner memorise definitions. Every full 
 The expanded catalogue is a work in progress. Do not interpret a course title or generic topic roadmap as proof that every field or subtopic has a complete textbook-level curriculum. Course content must be expanded and reviewed in depth over time. Completion does not guarantee employment, certification or professional competence.
 
  
-## Zero-to-hero programming and AI coding additions
+## Multi-language coding lab
 
-Three new detailed courses are now available:
-- **Programming Logic: Absolute Zero** — computer/program fundamentals, input-process-output, algorithms, flowcharts, pseudocode, variables, operators, conditions, loops, functions, collections, debugging and testing (13 lessons).
-- **Data Structures & Algorithms: Zero to Interview Ready** — Big-O, arrays, strings, linked lists, stacks, queues, hash maps, recursion, searching, sorting, trees, heaps, graphs, greedy/DP patterns and interview problem solving (12 lessons).
-- **AI-Assisted & Vibe Coding** — requirements-first prompting, tool selection, planning, code understanding, evidence-based debugging, tests, security, Git checkpoints, deployment and a capstone (11 lessons).
-
-A new [Multi-language coding lab](polyglot.html) includes in-browser Python (Pyodide), JavaScript and HTML/CSS preview, SQLite practice, plus a public Piston API integration for compiled/interpreted languages such as C, C++, Java, C#, Go, Rust, PHP, Ruby, TypeScript, Kotlin, Swift, R and Bash. Third-party runner availability and supported versions can change; it is not a self-hosted compiler service. Never submit secrets or private code/data. The simple editor is a learning workspace, not a full IDE with language-server autocomplete or debugger support.
+The [coding lab](polyglot.html) includes in-browser Python (Pyodide), JavaScript, HTML/CSS preview and SQLite practice, plus a public Piston API integration for C, C++, Java, C#, Go, Rust, PHP, Ruby, TypeScript, Kotlin, Swift, R and Bash. Third-party runner availability and supported versions can change; this is not a self-hosted compiler service. Never submit secrets or private code/data. The lightweight editor does not yet provide language-server autocomplete, breakpoints or step debugging.
 
 ## Learning order for a complete beginner
 
