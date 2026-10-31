@@ -97,3 +97,35 @@ Lessons must show derivations and worked solutions, not only final answers.
 
 ## Current implementation note
 The public catalogue currently includes 12 original course pages plus new detailed course players for Word, PowerPoint, Excel, Power BI, Outlook/Teams, Access, Power Automate, Git/GitHub and Interview/Career Readiness. The topic catalogue routes matching subjects to these course pages. This is a meaningful expansion, not completion of every course family above. The remaining course families must be authored to the same standard before SkillSpring can claim comprehensive coverage.
+
+## Absolute-beginner programming sequence
+
+For a learner with no coding or logic background, use this exact dependency order before advanced topics:
+1. Digital literacy: computer parts, operating systems, files/folders, browser, terminal basics and safe downloads.
+2. What programs do: input → processing → output; instructions, algorithms and precise steps.
+3. Computational thinking: decomposition, patterns, abstraction, pseudocode and flowcharts.
+4. First language (Python recommended): values, variables, types, expressions, input/output, decisions, loops, functions and collections.
+5. Debugging and correctness: trace tables, error categories, test cases, boundary conditions and readable code.
+6. Small programs: calculator, number guessing, unit converter, quiz, file organiser and simple data report.
+7. Git/GitHub: repository, commits, branches, pull requests, README and safe secret handling.
+8. DSA prerequisites: arrays/strings, maps/sets, linked lists, stacks/queues, recursion and Big-O.
+9. DSA core: searching, sorting, trees, heaps, graphs, greedy methods, backtracking and dynamic programming.
+10. Professional practice: testing, SQL, APIs, code review, documentation, deployment, security and maintainability.
+11. Portfolio and hiring: 3–5 well-explained projects, role-specific skills matrix, CV, interview practice and honest skill evidence.
+
+## AI-assisted development pathway
+
+Teach learners to use AI coding tools as a supervised accelerator, not as a substitute for understanding:
+- Define requirements and acceptance criteria before prompting.
+- Ask for architecture and a small implementation plan.
+- Work in small, reviewable diffs and keep Git checkpoints.
+- Understand every important generated file and data flow.
+- Debug with reproducible errors and evidence.
+- Write and independently verify tests.
+- Review security, privacy, dependency and licensing risks.
+- Deploy to a preview, test it and maintain rollback capability.
+- Be able to explain and modify the delivered code without the assistant.
+
+## Multi-language practice lab status
+
+The current standalone lab offers Python through Pyodide, JavaScript execution in a sandboxed browser frame, HTML/CSS/JS preview, SQLite via sql.js, and external Piston API execution for additional languages. This provides broad practice access but is not equivalent to installing every compiler/runtime locally. External availability, versions, networking and execution limits are outside SkillSpring's control. The current editor is a lightweight textarea, not a full language-server IDE. Do not advertise debugger, autocomplete or guaranteed execution where not implemented.
