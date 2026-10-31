@@ -57,7 +57,7 @@ These schools are the long-term curriculum scope. A topic appearing in the catal
 - Static HTML, CSS and JavaScript.
 - Python playground uses Pyodide in the browser.
 - No user account or cross-device progress sync yet.
-- The [multi-language coding lab](polyglot.html) provides browser-based Python, JavaScript, HTML/CSS preview and SQLite, plus a third-party Piston sandbox for additional languages. Availability and supported versions can change; it is not a self-hosted compiler or a full IDE. Never submit secrets or private data.
+- The [multi-language coding lab](polyglot.html) runs Python, JavaScript, HTML/CSS preview and SQLite in the browser. It provides downloadable source files and local-run commands for 22 additional languages; it does not send code to a public third-party runner.
 - Never put API keys, passwords, banking credentials or private learner data in frontend code or public repositories.
 - Finance material is educational and does not guarantee returns or replace qualified financial advice.
 
@@ -143,7 +143,7 @@ The expanded catalogue is a work in progress. Do not interpret a course title or
  
 ## Multi-language coding lab
 
-The [coding lab](polyglot.html) includes in-browser Python (Pyodide), JavaScript, HTML/CSS preview and SQLite practice, plus a public Piston API integration for C, C++, Java, C#, Go, Rust, PHP, Ruby, TypeScript, Kotlin, Swift, R and Bash. Third-party runner availability and supported versions can change; this is not a self-hosted compiler service. Never submit secrets or private code/data. The lightweight editor does not yet provide language-server autocomplete, breakpoints or step debugging.
+The [coding lab](polyglot.html) includes in-browser Python (Pyodide), JavaScript, HTML/CSS preview and SQLite practice. For 22 other languages it provides editable starter files, download and local compiler/runtime commands. It is a lightweight editor, not a full IDE with language-server autocomplete, breakpoints or step debugging. An earlier Piston public-API integration was removed because the public API now requires authorization; SkillSpring does not embed third-party API keys. See the [official Piston API policy](https://github.com/engineer-man/piston#public-api).
 
 ## Learning order for a complete beginner
 
