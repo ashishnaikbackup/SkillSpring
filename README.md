@@ -15,7 +15,7 @@ The repository now includes a responsive learning-platform dashboard with:
 
 Learning progress and saved schools currently use browser local storage on the current device. They are not yet synchronised across devices or user accounts.
 
-## Learning schools
+## Published self-paced course\n\n- [Python: Zero to Professional Foundations](python-course.html) — 16 modules from programming basics, syntax and Hello World through data structures, functions, OOP, files, debugging, Git, APIs, SQLite and a portfolio capstone. The course includes worked examples, practice tasks and module knowledge checks.\n- [Field Radar](field-radar.html) — concise educational trend notes and suggested next skills across the learning schools. It is a curated learning resource, not a live news feed.\n\nCourse completion is currently saved in browser local storage on the learner's device.\n\n## Learning schools
 
 1. Programming & Software Development
 2. Web, App & UI/UX Design
@@ -37,8 +37,9 @@ Each school is intended to grow into structured courses with beginner-friendly e
 - [x] Establish product vision and learning-school structure.
 - [x] Create the responsive platform dashboard and catalogue.
 - [x] Preserve the browser Python playground.
-- [ ] Build the first complete Python course from absolute beginner to advanced projects.
-- [ ] Add lesson content, quizzes, exercises, notes and durable progress tracking.
+- [x] Publish the first complete self-paced Python course with 16 modules, explanations, examples, practice tasks, knowledge checks and a capstone project.
+- [x] Add browser-local course progress and module navigation.
+- [x] Add Field Radar notes covering AI, software, data, UX, cybersecurity, cloud, engineering, finance and management.
 - [ ] Add an interactive SQL/SQLite practice lab.
 - [ ] Add spreadsheet practice with sample datasets.
 - [ ] Build real personal workspace tools and privacy controls.
@@ -62,4 +63,4 @@ See [docs/PRODUCT_VISION.md](docs/PRODUCT_VISION.md) for the complete product de
 
 ## Project status
 
-**Status:** Platform foundation prototype. The dashboard and catalogue are implemented; most course lessons, labs and workspace tools remain planned work.
+**Status:** Platform foundation plus its first published full course. Python is the first complete self-paced course; the other subject catalogues are not yet complete courses. SQL/spreadsheet labs, additional full curricula, workspace tools and cross-device accounts remain in development.
