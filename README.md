@@ -91,3 +91,32 @@ See [docs/PRODUCT_VISION.md](docs/PRODUCT_VISION.md) for the product principles,
 Every topic listed inside a learning school now opens a dedicated SkillSpring roadmap page. The roadmap view is organised into eight progressive milestones covering orientation, foundations, tools and first examples, guided practice, intermediate work, advanced practice, professional workflow and a capstone. It includes practice prompts, knowledge checks and local milestone tracking.
 
 **Important scope note:** a roadmap is not the same as a fully written course. The roadmap pages provide a structured progression and school-specific learning framework; detailed concept-by-concept lessons, worked examples, exercises, assessments and projects still need to be authored for each individual topic. The 12 course pages are the current detailed-course set, not proof that every catalogue topic is complete. Progress remains stored in the current browser only.
+
+## Expanded essential professional courses
+
+The catalogue now also links to interactive, lesson-based courses for:
+
+- **Microsoft Word** — document creation, styles, page layout, tables, references, accessibility and a professional report.
+- **Microsoft PowerPoint** — storytelling, slide design, charts, diagrams, animation, presenter workflow and a final presentation.
+- **Microsoft Excel** — formulas, references, logic, lookups, data cleaning, PivotTables, dashboards, Power Query and a business model.
+- **Microsoft Power BI** — data connections, Power Query, star-schema modelling, DAX measures, visuals, publishing concepts, security and a BI capstone.
+- **Outlook & Teams** — professional email, calendars, meetings, collaboration and security.
+- **Microsoft Access** — relational database design, keys, relationships, queries, forms and reports.
+- **Power Automate** — triggers, actions, conditions, approvals, error handling and workflow security.
+- **Git & GitHub** — commits, branches, merges, pull requests, conflict resolution and professional repository practice.
+- **Job Interview & Career Readiness** — role analysis, CV, portfolio, STAR answers, technical interviews, communication, mock interviews and a career plan.
+
+These are now linked from the course catalogue and use a common lesson player with worked examples, hands-on tasks, knowledge checks, lesson navigation and local progress. Some Microsoft features depend on product version, licence and organisation settings; the courses teach concepts and workflows rather than promising access to paid software.
+
+## What "professional-ready" means here
+
+SkillSpring's target is not to make a beginner memorise definitions. Every full course should eventually include:
+1. Prerequisites and a zero-assumption introduction.
+2. Concepts explained in plain language, with terminology defined before use.
+3. Demonstrations and worked examples with reasoning.
+4. Guided practice, independent exercises and answer explanations.
+5. Beginner, intermediate and advanced projects.
+6. Real-world workflows, quality checks, safety, privacy and professional standards.
+7. Portfolio evidence, role-specific interview questions and mock assessments where relevant.
+
+The expanded catalogue is a work in progress. Do not interpret a course title or generic topic roadmap as proof that every field or subtopic has a complete textbook-level curriculum. Course content must be expanded and reviewed in depth over time. Completion does not guarantee employment, certification or professional competence.
