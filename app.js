@@ -26,10 +26,10 @@ const paths=[
 const $=s=>document.querySelector(s);
 const $$=s=>[...document.querySelectorAll(s)];
 let currentView="home",activeSchool="all",pyodide=null,pyLoading=false;
-let saved=JSON.parse(localStorage.getItem("runcodeSaved")||"[]");
-let completed=JSON.parse(localStorage.getItem("runcodeCompleted")||"[]");
+let saved=JSON.parse(localStorage.getItem("skillspringSaved")||localStorage.getItem("runcodeSaved")||"[]");
+let completed=JSON.parse(localStorage.getItem("skillspringCompleted")||localStorage.getItem("runcodeCompleted")||"[]");
 const safe=s=>String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
-function persist(){localStorage.setItem("runcodeSaved",JSON.stringify(saved));localStorage.setItem("runcodeCompleted",JSON.stringify(completed));updateProgress()}
+function persist(){localStorage.setItem("skillspringSaved",JSON.stringify(saved));localStorage.setItem("skillspringCompleted",JSON.stringify(completed));updateProgress()}
 function updateProgress(){const total=schools.reduce((n,s)=>n+s.topics.length,0);const pct=Math.round(completed.length/total*100);$("#progressStat").textContent=pct+"%"}
 function card(s){return `<button class="school-card" data-school="${s.id}"><div class="school-top"><span class="school-icon">${s.icon}</span><span class="school-count">${s.topics.length} topics</span></div><h3>${s.name}</h3><p>${s.desc}</p><div class="school-footer"><span>Explore school</span><span>→</span></div></button>`}
 function renderHome(){$("#homeSchools").innerHTML=schools.map(card).join("");$("#schoolCount").textContent=schools.length;$("#levelStrip").innerHTML=levelNames.map((n,i)=>`<div class="level-item"><b>0${i}</b><strong>${n}</strong><small>${levelDescriptions[i]}</small></div>`).join("");updateProgress()}
