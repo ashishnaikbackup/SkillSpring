@@ -1,23 +1,42 @@
-# SkillSpring — Learn. Build. Practise. Master.
+# SkillSpring — Learn. Practise. Build.
 
-SkillSpring is a modular beginner-to-professional learning and personal productivity platform. Its goal is to help people start from absolute zero, develop practical skills across many disciplines, and demonstrate what they can do through exercises and projects.
+**SkillSpring** is a beginner-first self-learning platform designed to take learners from first principles to practical, portfolio-ready work across technology, design, data, business and personal skills.
 
-## Current platform build
+The public-facing product is branded SkillSpring. The repository is currently still named `RunCode`; the repository slug can be renamed separately in GitHub Settings.
 
-The repository now includes a responsive learning-platform dashboard, a complete Python course, six additional foundational courses and a field-trend learning section. It includes:
-- 12 learning schools and a searchable subject catalogue.
-- Programming language coverage including Python, C, C++, Java, JavaScript, TypeScript, C#, Go, Rust, PHP, Ruby, Kotlin, Swift, HTML, CSS, SQL and Bash.
-- Paths across programming, web development, AI/data, electronics/VLSI, finance, office skills and business.
-- Seven-stage learning progression from absolute beginner to mastery.
-- School detail pages and locally saved learning interests.
-- Navigation for practice labs, project studio, personal finance, office/productivity and career centre.
-- A browser-based Python playground powered by Pyodide.
+## Start learning
 
-Learning progress and saved schools currently use browser local storage on the current device. They are not yet synchronised across devices or user accounts.
+- **[Course library](courses.html)** — browse all published self-paced courses.
+- **[Python: Zero to Professional Foundations](python-course.html)** — the most extensive course so far, with 16 modules from Hello World through programming fundamentals, data structures, functions, OOP, files, debugging, Git, APIs, SQLite and a portfolio capstone.
+- **[Field Radar](field-radar.html)** — short educational explainers about changing tools, technology and professional skills. This is a curated learning resource, not a live news feed.
+- **[Learning dashboard](index.html)** — the main platform experience, subject schools, learning paths and Python playground.
 
-## Published self-paced coursess\n\n- [Python: Zero to Professional Foundations](python-course.html) — 16 modules from programming basics through APIs, SQLite and a portfolio capstone.
-- [Course library](courses.html) — published foundations courses for C, C++, JavaScript, HTML/CSS, SQL and personal finance. Each has six guided modules, examples, explanations, practice tasks and knowledge checks.\n- [Field Radar](field-radar.html) — concise educational trend notes and suggested next skills across the learning schools. It is a curated learning resource, not a live news feed.\n\nCourse completion is currently saved in browser local storage on the learner's device.\n\n## Learning schools
+## Published course library
 
+| Course | Learning scope |
+|---|---|
+| [Python](python-course.html) | 16 modules; beginner to advanced foundations and capstone |
+| [C](c-course.html) | Compilation, syntax, control flow, functions, arrays, pointers, memory and files |
+| [C++](cpp-course.html) | Fundamentals, functions, OOP, references, STL and resource safety |
+| [Java](java-course.html) | Syntax, types, methods, collections, OOP, exceptions and files |
+| [JavaScript](javascript-course.html) | Language fundamentals, arrays, DOM, events, async code and APIs |
+| [TypeScript](typescript-course.html) | Types, unions, generics, narrowing, modules and validation |
+| [HTML & CSS](web-course.html) | Semantic HTML, forms, CSS, layout, responsive design and accessibility |
+| [SQL](sql-course.html) | Tables, queries, updates, aggregation, joins, relational design and safe SQL |
+| [Personal Finance](finance-course.html) | Budgeting, banking, inflation, debt, insurance, investing principles and risk |
+| [Data Science](data-course.html) | Data workflow, Python, statistics, visualisation, cleaning and reporting |
+| [UI/UX Design](ux-course.html) | Research, problem framing, wireframes, visual design, prototyping and usability |
+| [Spreadsheets](sheets-course.html) | Formulas, functions, validation, analysis, dashboards and models |
+
+The Python course currently has 16 modules. The other 11 courses have six guided modules each. They are substantial beginner foundations, not claims of complete professional mastery or exhaustive coverage of every tool in each field.
+
+## How courses work
+
+Each course is designed around explanations, worked examples, practice tasks and knowledge checks. Learners can move between modules and mark progress. Course progress is stored in browser local storage on the current device; it is not yet synchronised between devices or accounts.
+
+## Learning schools
+
+The wider catalogue includes:
 1. Programming & Software Development
 2. Web, App & UI/UX Design
 3. AI, Data Science & Automation
@@ -31,37 +50,34 @@ Learning progress and saved schools currently use browser local storage on the c
 11. Personal Productivity & Knowledge
 12. Mathematics, Science & Research
 
-Each school is intended to grow into structured courses with beginner-friendly explanations, worked examples, exercises, quizzes, notes, projects, assessments and professional practice. The current catalogue is a roadmap and navigation foundation; it does not mean every listed topic already has a complete course.
+These schools are the long-term curriculum scope. A topic appearing in the catalogue does not mean a full course for it has already been published.
+
+## Technical notes
+
+- Static HTML, CSS and JavaScript.
+- Python playground uses Pyodide in the browser.
+- No user account or cross-device progress sync yet.
+- Multi-language code execution is not yet provided. Do not run untrusted code on an application server; future execution environments must use isolated sandboxes with resource limits.
+- Never put API keys, passwords, banking credentials or private learner data in frontend code or public repositories.
+- Finance material is educational and does not guarantee returns or replace qualified financial advice.
 
 ## Roadmap
 
-- [x] Establish product vision and learning-school structure.
-- [x] Create the responsive platform dashboard and catalogue.
-- [x] Preserve the browser Python playground.
-- [x] Publish the first complete self-paced Python course with 16 modules, explanations, examples, practice tasks, knowledge checks and a capstone project.
-- [x] Add browser-local course progress and module navigation.
-- [x] Add Field Radar notes covering AI, software, data, UX, cybersecurity, cloud, engineering, finance and management.
-- [ ] Add an interactive SQL/SQLite practice lab.
-- [ ] Add spreadsheet practice with sample datasets.
-- [ ] Build real personal workspace tools and privacy controls.
-- [ ] Add additional programming language execution through secure isolated sandboxes.
-- [ ] Expand all schools into full courses and practical professional pathways.
-- [ ] Add optional AI tutoring and personalised revision.
-
-## Technical direction
-
-The prototype uses HTML, CSS and JavaScript, with Pyodide for browser-based Python. React/TypeScript, Supabase, secure backend services and optional AI integrations can be introduced as the application grows.
-
-Never execute untrusted code on the main application server. Multi-language execution requires isolated sandboxes with resource limits. Never expose AI provider secrets in frontend code. Finance tools should be educational and organisational, not guarantees of investment returns or automated financial advice.
+- [x] Establish SkillSpring's product direction and 12 learning schools.
+- [x] Build the responsive learning dashboard and catalogue.
+- [x] Publish the 16-module Python course and 11 additional six-module foundation courses.
+- [x] Add the Field Radar learning section.
+- [ ] Deepen every course with more lessons, worked solutions, graded practice and larger projects.
+- [ ] Add interactive SQL, spreadsheet, data and electronics practice labs.
+- [ ] Add full courses for the remaining programming languages and learning schools.
+- [ ] Add accessible assessments, automated site tests and improved course search.
+- [ ] Add optional accounts and secure cross-device progress sync.
+- [ ] Add a maintained, sourced technology-news feed alongside the curated Field Radar notes.
 
 ## Development
 
-Open `index.html` through a local web server such as VS Code Live Server. An internet connection is needed for the Pyodide runtime and Google Fonts.
+Open `index.html` through a local web server such as VS Code Live Server. The Python runtime and web fonts require an internet connection.
 
-## Product blueprint
+See [docs/PRODUCT_VISION.md](docs/PRODUCT_VISION.md) for the product principles, architecture direction, safety rules and long-term roadmap.
 
-See [docs/PRODUCT_VISION.md](docs/PRODUCT_VISION.md) for the complete product definition, course structure, safety principles, architecture and phased roadmap.
-
-## Project status
-
-**Status:** Rebranded as SkillSpring. The platform has one expanded 16-module Python course, eleven additional guided foundation courses, a course library and Field Radar. These are meaningful first curricula, not a claim that every discipline or professional specialisation is complete. More depth, hands-on execution labs, spreadsheet tools, additional subject courses, accessibility testing, automated tests and cross-device accounts remain in development.
+**Project status:** SkillSpring's public-facing rebrand, course library, 12 course pages and Field Radar are committed to the public GitHub repository. GitHub Pages deployment has not yet been verified, and the broader curriculum is still being built in stages.
