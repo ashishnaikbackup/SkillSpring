@@ -2,9 +2,9 @@
 
 SkillSpring is a modular beginner-to-professional learning and personal productivity platform. Its goal is to help people start from absolute zero, develop practical skills across many disciplines, and demonstrate what they can do through exercises and projects.
 
-## Current prototype
+## Current platform build
 
-The repository now includes a responsive learning-platform dashboard with:
+The repository now includes a responsive learning-platform dashboard, a complete Python course, six additional foundational courses and a field-trend learning section. It includes:
 - 12 learning schools and a searchable subject catalogue.
 - Programming language coverage including Python, C, C++, Java, JavaScript, TypeScript, C#, Go, Rust, PHP, Ruby, Kotlin, Swift, HTML, CSS, SQL and Bash.
 - Paths across programming, web development, AI/data, electronics/VLSI, finance, office skills and business.
@@ -15,7 +15,7 @@ The repository now includes a responsive learning-platform dashboard with:
 
 Learning progress and saved schools currently use browser local storage on the current device. They are not yet synchronised across devices or user accounts.
 
-## Published self-paced courses\n\n- [Python: Zero to Professional Foundations](python-course.html) — 16 modules from programming basics through APIs, SQLite and a portfolio capstone.
+## Published self-paced coursess\n\n- [Python: Zero to Professional Foundations](python-course.html) — 16 modules from programming basics through APIs, SQLite and a portfolio capstone.
 - [Course library](courses.html) — published foundations courses for C, C++, JavaScript, HTML/CSS, SQL and personal finance. Each has six guided modules, examples, explanations, practice tasks and knowledge checks.\n- [Field Radar](field-radar.html) — concise educational trend notes and suggested next skills across the learning schools. It is a curated learning resource, not a live news feed.\n\nCourse completion is currently saved in browser local storage on the learner's device.\n\n## Learning schools
 
 1. Programming & Software Development
@@ -64,4 +64,4 @@ See [docs/PRODUCT_VISION.md](docs/PRODUCT_VISION.md) for the complete product de
 
 ## Project status
 
-**Status:** Platform foundation plus its first published full course. Python is the first complete self-paced course; the other subject catalogues are not yet complete courses. SQL/spreadsheet labs, additional full curricula, workspace tools and cross-device accounts remain in development.
+**Status:** Rebranded as SkillSpring. The platform has one expanded 16-module Python course, six additional six-module foundations courses, a course library and Field Radar. These are meaningful first curricula, not a claim that every discipline or professional specialisation is complete. More depth, hands-on execution labs, spreadsheet tools, additional subject courses, accessibility testing, automated tests and cross-device accounts remain in development.
