@@ -133,6 +133,9 @@ A new [Multi-language coding lab](polyglot.html) includes in-browser Python (Pyo
 
 ## Learning order for a complete beginner
 
+Read the [Start Here: Zero to Job-Ready Skills guide](docs/START_HERE_ZERO_TO_JOB.md) for the full staged learning sequence, daily problem-solving routine, role pathways and portfolio guidance.
+
+
 1. Computer and file basics.
 2. Programming logic and problem decomposition.
 3. One first language (Python is the recommended starting point).
