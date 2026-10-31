@@ -104,7 +104,10 @@ for (const course of courses) {
   const courseKey = new URLSearchParams(query).get("course");
   if (courseKey && !essential[courseKey]) fail(`Course ${course.slug} points to missing essential course key "${courseKey}".`);
 }
-for (const key of Object.keys(essential)) {\n  if (!courses.some((course) => course.href === `essential-course.html?course=${key}`)) fail(`Essential course "${key}" is not linked from the course catalogue.`);\n}\nfor (const [key, course] of Object.entries(essential)) {
+for (const key of Object.keys(essential)) {
+  if (!courses.some((course) => course.href === `essential-course.html?course=${key}`)) fail(`Essential course "${key}" is not linked from the course catalogue.`);
+}
+for (const [key, course] of Object.entries(essential)) {
   if (!Array.isArray(course.modules) || course.modules.length === 0) {
     fail(`Essential course "${key}" has no lessons.`);
     continue;
