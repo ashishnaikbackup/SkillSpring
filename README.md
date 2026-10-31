@@ -120,3 +120,28 @@ SkillSpring's target is not to make a beginner memorise definitions. Every full 
 7. Portfolio evidence, role-specific interview questions and mock assessments where relevant.
 
 The expanded catalogue is a work in progress. Do not interpret a course title or generic topic roadmap as proof that every field or subtopic has a complete textbook-level curriculum. Course content must be expanded and reviewed in depth over time. Completion does not guarantee employment, certification or professional competence.
+
+ 
+## Zero-to-hero programming and AI coding additions
+
+Three new detailed courses are now available:
+- **Programming Logic: Absolute Zero** — computer/program fundamentals, input-process-output, algorithms, flowcharts, pseudocode, variables, operators, conditions, loops, functions, collections, debugging and testing (13 lessons).
+- **Data Structures & Algorithms: Zero to Interview Ready** — Big-O, arrays, strings, linked lists, stacks, queues, hash maps, recursion, searching, sorting, trees, heaps, graphs, greedy/DP patterns and interview problem solving (12 lessons).
+- **AI-Assisted & Vibe Coding** — requirements-first prompting, tool selection, planning, code understanding, evidence-based debugging, tests, security, Git checkpoints, deployment and a capstone (11 lessons).
+
+A new [Multi-language coding lab](polyglot.html) includes in-browser Python (Pyodide), JavaScript and HTML/CSS preview, SQLite practice, plus a public Piston API integration for compiled/interpreted languages such as C, C++, Java, C#, Go, Rust, PHP, Ruby, TypeScript, Kotlin, Swift, R and Bash. Third-party runner availability and supported versions can change; it is not a self-hosted compiler service. Never submit secrets or private code/data. The simple editor is a learning workspace, not a full IDE with language-server autocomplete or debugger support.
+
+## Learning order for a complete beginner
+
+1. Computer and file basics.
+2. Programming logic and problem decomposition.
+3. One first language (Python is the recommended starting point).
+4. Variables, types, operators, conditions, loops, functions and collections.
+5. Debugging, testing and small exercises.
+6. Git and GitHub.
+7. Data structures, algorithms and complexity.
+8. SQL, web fundamentals and one project track.
+9. Larger projects, code review, deployment and portfolio.
+10. Role-specific interview practice and continuous learning.
+
+Do not rush to DSA before understanding loops, functions, arrays/lists and basic problem decomposition. Each learner should solve problems independently and explain their reasoning; watching lessons or copying generated code is not proof of mastery.
