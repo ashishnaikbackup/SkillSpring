@@ -64,4 +64,4 @@ See [docs/PRODUCT_VISION.md](docs/PRODUCT_VISION.md) for the complete product de
 
 ## Project status
 
-**Status:** Rebranded as SkillSpring. The platform has one expanded 16-module Python course, six additional six-module foundations courses, a course library and Field Radar. These are meaningful first curricula, not a claim that every discipline or professional specialisation is complete. More depth, hands-on execution labs, spreadsheet tools, additional subject courses, accessibility testing, automated tests and cross-device accounts remain in development.
+**Status:** Rebranded as SkillSpring. The platform has one expanded 16-module Python course, eleven additional guided foundation courses, a course library and Field Radar. These are meaningful first curricula, not a claim that every discipline or professional specialisation is complete. More depth, hands-on execution labs, spreadsheet tools, additional subject courses, accessibility testing, automated tests and cross-device accounts remain in development.
