@@ -1,8 +1,8 @@
-# RunCode — Product Vision & Master Roadmap
+# SkillSpring — Product Vision & Master Roadmap
 
 ## Product definition
 
-RunCode is a beginner-to-professional learning and personal productivity platform. It is designed to help a learner start with no prior knowledge, develop practical skills across technology and business disciplines, build evidence of competence through projects, and organise useful parts of their personal and professional life.
+SkillSpring is a beginner-to-professional learning and personal productivity platform. It is designed to help a learner start with no prior knowledge, develop practical skills across technology and business disciplines, build evidence of competence through projects, and organise useful parts of their personal and professional life.
 
 It is not merely a code editor or a collection of links. It is a modular learning environment with a consistent teaching system, hands-on practice, assessments, projects, progress tracking and optional personal tools.
 
