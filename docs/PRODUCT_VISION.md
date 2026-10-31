@@ -185,7 +185,7 @@ The first learning-platform prototype now includes:
 - A published course catalogue with 24 entries, including 12 essential lesson-based courses and the original language, web, data, design and finance foundations.
 - A dedicated Start Here page and a detailed beginner guide that sequence computer basics, logic, Python, problem solving, Git, DSA, role-specific breadth, AI-assisted coding and portfolio preparation.
 - Three new courses: Programming Logic (13 lessons), DSA (12 lessons) and AI-assisted/vibe coding (11 lessons).
-- A multi-language practice lab: browser-based Python, JavaScript, HTML/CSS preview and SQLite, plus an external Piston execution integration for additional languages.
+- A multi-language practice lab: browser-based Python, JavaScript, HTML/CSS preview and SQLite, plus downloadable source and local-run instructions for additional languages.
 - Local browser progress tracking and a static GitHub Pages deployment workflow.
 
 Known limitations:
