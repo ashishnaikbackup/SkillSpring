@@ -143,7 +143,7 @@ The expanded catalogue is a work in progress. Do not interpret a course title or
  
 ## Multi-language coding lab
 
-The [coding lab](polyglot.html) includes in-browser Python (Pyodide), JavaScript, HTML/CSS preview and SQLite practice. For 22 other languages—C, C++, Java, C#, Go, Rust, PHP, Ruby, TypeScript, Kotlin, Swift, R, Bash, Dart, Scala, Lua, Perl, Haskell, Julia, PowerShell, Fortran and GNU Octave—it provides editable starter files, download and local compiler/runtime commands. It is a lightweight editor, not a full IDE with language-server autocomplete, breakpoints or step debugging. An earlier Piston public-API integration was removed because the public API now requires authorization; SkillSpring does not embed third-party API keys. See the [official Piston API policy](https://github.com/engineer-man/piston#public-api).
+The [coding lab](polyglot.html) includes in-browser Python (Pyodide), JavaScript, HTML/CSS preview and SQLite practice. For 22 other languages—C, C++, Java, C#, Go, Rust, PHP, Ruby, TypeScript, Kotlin, Swift, R, Bash, Dart, Scala, Lua, Perl, Haskell, Julia, PowerShell, Fortran and GNU Octave—it provides editable starter files, download and local compiler/runtime commands. It is a lightweight editor, not a full IDE with language-server autocomplete, breakpoints or step debugging. An earlier Piston public-API integration was removed because the public API has required authorization since 15 February 2026; SkillSpring does not embed third-party API keys. See the [official Piston API policy](https://github.com/engineer-man/piston#public-api).
 
 ## Learning order for a complete beginner
 
