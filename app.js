@@ -1,93 +1,48 @@
-let pyodide = null;
-let loading = false;
-
-const editor = document.getElementById('editor');
-const stdin = document.getElementById('stdin');
-const output = document.getElementById('output');
-const runBtn = document.getElementById('runBtn');
-const clearBtn = document.getElementById('clearBtn');
-const copyBtn = document.getElementById('copyBtn');
-const status = document.getElementById('status');
-
-async function loadPython() {
-  if (pyodide) return pyodide;
-  if (loading) {
-    while (!pyodide) await new Promise(r => setTimeout(r, 100));
-    return pyodide;
-  }
-  loading = true;
-  status.textContent = 'Loading Python…';
-  pyodide = await loadPyodide();
-  loading = false;
-  status.textContent = 'Ready';
-  return pyodide;
-}
-
-async function runCode() {
-  runBtn.disabled = true;
-  runBtn.textContent = 'Running…';
-  status.textContent = 'Running';
-  output.textContent = '';
-
-  try {
-    const py = await loadPython();
-    const inputLines = stdin.value.split(/\r?\n/);
-    let inputIndex = 0;
-
-    py.setStdin({
-      stdin: () => inputIndex < inputLines.length ? inputLines[inputIndex++] : ''
-    });
-
-    await py.runPythonAsync(`import sys\nfrom io import StringIO\n__runcode_out = StringIO()\n__runcode_old = sys.stdout\nsys.stdout = __runcode_out`);
-    await py.runPythonAsync(editor.value);
-    const result = await py.runPythonAsync('__runcode_out.getvalue()');
-    await py.runPythonAsync('sys.stdout = __runcode_old');
-
-    output.textContent = result || 'Program finished with no output.';
-    status.textContent = 'Finished';
-  } catch (error) {
-    try { await pyodide?.runPythonAsync('sys.stdout = __runcode_old'); } catch (_) {}
-    output.textContent = String(error).replace(/^PythonError:\s*/i, '');
-    status.textContent = 'Error';
-  } finally {
-    runBtn.disabled = false;
-    runBtn.textContent = '▶ Run';
-  }
-}
-
-runBtn.addEventListener('click', runCode);
-clearBtn.addEventListener('click', () => {
-  editor.value = '';
-  stdin.value = '';
-  output.textContent = 'Press Run to execute your Python program.';
-  status.textContent = 'Ready';
-  editor.focus();
-});
-
-copyBtn.addEventListener('click', async () => {
-  try {
-    await navigator.clipboard.writeText(output.textContent);
-    copyBtn.textContent = 'Copied!';
-    setTimeout(() => copyBtn.textContent = 'Copy', 1000);
-  } catch (_) {}
-});
-
-editor.addEventListener('keydown', event => {
-  if (event.key === 'Tab') {
-    event.preventDefault();
-    const start = editor.selectionStart;
-    const end = editor.selectionEnd;
-    editor.value = editor.value.slice(0, start) + '    ' + editor.value.slice(end);
-    editor.selectionStart = editor.selectionEnd = start + 4;
-  }
-  if ((event.ctrlKey || event.metaKey) && event.key === 'Enter') {
-    event.preventDefault();
-    runCode();
-  }
-});
-
-loadPython().catch(error => {
-  status.textContent = 'Load failed';
-  output.textContent = 'Could not load Python runtime. Check your internet connection and refresh.';
-  console.error(error);
-});
+const schools = [
+{id:"programming",icon:"⌘",name:"Programming & Software Development",desc:"Learn to think like a programmer and build real software.",topics:["Python","C","C++","Java","JavaScript","TypeScript","C#","Go","Rust","PHP","Ruby","Kotlin","Swift","HTML","CSS","SQL","Bash","Data Structures","Algorithms","Git"]},
+{id:"design",icon:"✳",name:"Web, App & UI/UX Design",desc:"Design useful digital experiences and build websites and apps.",topics:["HTML & CSS","Frontend Development","Backend Development","Full Stack","React","Node.js","Responsive Design","UX Research","Figma","Wireframing","Prototyping","Design Systems","Accessibility","Mobile Apps"]},
+{id:"ai",icon:"✦",name:"AI, Data Science & Automation",desc:"Understand AI, work with data and automate meaningful tasks.",topics:["AI Fundamentals","Prompt Engineering","Python for Data","Statistics","Data Analysis","Machine Learning","Deep Learning","Generative AI","LLMs","AI Agents","RAG & Vector Databases","APIs","Workflow Automation","Responsible AI"]},
+{id:"engineering",icon:"⌁",name:"Electronics, VLSI & Engineering",desc:"Explore electronics, embedded systems, digital design and hardware.",topics:["Electrical Fundamentals","Digital Electronics","Analog Electronics","Circuit Analysis","Embedded C","Arduino","ESP32","Sensors & IoT","PCB Design","Verilog","SystemVerilog","FPGA","VLSI","Semiconductors","Robotics"]},
+{id:"office",icon:"▤",name:"Office, Documents & Productivity",desc:"Become confident with the tools used in study and professional work.",topics:["Microsoft Excel","Google Sheets","Spreadsheet Formulas","Pivot Tables","Dashboards","Microsoft Word","Google Docs","PowerPoint","Google Slides","Professional Reports","Email","PDF Workflows","Office Automation"]},
+{id:"finance",icon:"₹",name:"Personal Finance & Economics",desc:"Understand money, plan finances and learn how financial systems work.",topics:["Money Fundamentals","Budgeting","Saving","Banking","Credit & Loans","Tax Basics (India)","Insurance","Inflation","Compound Interest","Mutual Funds & SIPs","Stocks & ETFs","Bonds","Gold","Real Estate","Risk & Diversification","Global Economics"]},
+{id:"business",icon:"▥",name:"Business, Accounting & Management",desc:"Learn how organisations operate, make decisions and grow.",topics:["Accounting Basics","Financial Statements","Business Models","Marketing","Sales","Operations","Project Management","Human Resources","Business Strategy","Entrepreneurship","Leadership","Business Analytics","Negotiation"]},
+{id:"it",icon:"⌬",name:"IT, Networking, Cloud & Cybersecurity",desc:"Build foundations for modern IT systems and secure computing.",topics:["Computer Fundamentals","Operating Systems","Linux","Computer Networks","Databases","Cloud Computing","DevOps","Docker","System Administration","Cybersecurity Basics","Ethical Security Labs","Privacy & Security"]},
+{id:"career",icon:"↗",name:"Career & Professional Skills",desc:"Develop the communication and workplace skills that support a career.",topics:["Professional English","Communication","Business Writing","Presentations","Teamwork","Critical Thinking","CV & Resume","LinkedIn","Interview Preparation","Job Search","Portfolio Building","Workplace Skills"]},
+{id:"creative",icon:"◈",name:"Creative & Digital Media",desc:"Create visual content, build brands and communicate ideas.",topics:["Graphic Design","Branding","Typography","Image Editing","Video Editing","Audio Editing","Animation","Photography","Content Creation","Social Media","Digital Marketing","Storytelling"]},
+{id:"productivity",icon:"◷",name:"Personal Productivity & Knowledge",desc:"Organise your time, goals, projects and personal knowledge.",topics:["Time Management","Goal Setting","Task Management","Calendars","Habit Tracking","Note Taking","Knowledge Management","Decision Making","Personal Projects","Planning Systems"]},
+{id:"science",icon:"∑",name:"Mathematics, Science & Research",desc:"Strengthen the foundations behind technology and informed decisions.",topics:["Arithmetic","Algebra","Geometry","Trigonometry","Calculus","Probability","Statistics","Physics","Chemistry","Logic","Scientific Reasoning","Research Methods","Data Literacy"]}
+];
+const levelNames=["Absolute beginner","Foundations","Beginner practice","Intermediate","Advanced","Professional practice","Mastery"];
+const levelDescriptions=["Start with no prior knowledge","Understand the essential principles","Practise with guided examples","Solve independent problems","Work with complex concepts","Apply industry-style workflows","Build expertise through capstones"];
+const paths=[
+{title:"Programming foundations",desc:"Computer basics → logic → Python → Git → problem solving → projects",duration:"Start here · Beginner friendly",school:"programming"},
+{title:"Full-stack web developer",desc:"HTML → CSS → JavaScript → Git → frontend → backend → databases → deployment",duration:"Beginner to professional pathway",school:"design"},
+{title:"AI & data practitioner",desc:"Python → maths & statistics → data analysis → machine learning → LLM applications",duration:"Build a foundation before advanced AI",school:"ai"},
+{title:"Electronics & VLSI engineer",desc:"Circuit fundamentals → digital logic → C → embedded systems → Verilog → FPGA → VLSI",duration:"Engineering pathway",school:"engineering"},
+{title:"Personal finance foundations",desc:"Budgeting → banking → interest → credit → insurance → investing concepts → risk",duration:"For everyday money decisions",school:"finance"},
+{title:"Professional office skills",desc:"Computer basics → documents → spreadsheets → formulas → analysis → dashboards → reports",duration:"Practical workplace skills",school:"office"},
+{title:"Business & management",desc:"Business basics → accounting → marketing → operations → project management → strategy",duration:"Build commercial understanding",school:"business"}
+];
+const $=s=>document.querySelector(s);
+const $$=s=>[...document.querySelectorAll(s)];
+let currentView="home",activeSchool="all",pyodide=null,pyLoading=false;
+let saved=JSON.parse(localStorage.getItem("runcodeSaved")||"[]");
+let completed=JSON.parse(localStorage.getItem("runcodeCompleted")||"[]");
+const safe=s=>String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+function persist(){localStorage.setItem("runcodeSaved",JSON.stringify(saved));localStorage.setItem("runcodeCompleted",JSON.stringify(completed));updateProgress()}
+function updateProgress(){const total=schools.reduce((n,s)=>n+s.topics.length,0);const pct=Math.round(completed.length/total*100);$("#progressStat").textContent=pct+"%"}
+function card(s){return `<button class="school-card" data-school="${s.id}"><div class="school-top"><span class="school-icon">${s.icon}</span><span class="school-count">${s.topics.length} topics</span></div><h3>${s.name}</h3><p>${s.desc}</p><div class="school-footer"><span>Explore school</span><span>→</span></div></button>`}
+function renderHome(){$("#homeSchools").innerHTML=schools.map(card).join("");$("#schoolCount").textContent=schools.length;$("#levelStrip").innerHTML=levelNames.map((n,i)=>`<div class="level-item"><b>0${i}</b><strong>${n}</strong><small>${levelDescriptions[i]}</small></div>`).join("");updateProgress()}
+function renderFilters(){const filters=[{id:"all",name:"All schools"},...schools.map(s=>({id:s.id,name:s.name.split(" ")[0]}))];$("#schoolFilters").innerHTML=filters.map(f=>`<button class="filter-chip ${activeSchool===f.id?"active":""}" data-filter="${f.id}">${f.name}</button>`).join("")}
+function renderCatalogue(){const q=$("#searchInput").value.toLowerCase().trim(),level=$("#levelFilter").value;const list=schools.filter(s=>(activeSchool==="all"||s.id===activeSchool)&&(!q||(s.name+" "+s.desc+" "+s.topics.join(" ")).toLowerCase().includes(q)));$("#catalogueGrid").innerHTML=list.length?list.map(s=>`<button class="catalogue-card" data-school="${s.id}"><div class="school-top"><span class="school-icon">${s.icon}</span><span class="school-count">${s.topics.length} learning topics</span></div><h3>${s.name}</h3><p>${s.desc}</p><div class="tags">${s.topics.slice(0,5).map(t=>`<span class="tag">${t}</span>`).join("")}</div></button>`).join(""):`<div class="empty-state">No subjects match that search. Try another keyword.</div>`;}
+function showDetail(id){const s=schools.find(x=>x.id===id);if(!s)return;const isSaved=saved.includes(id);$("#courseDetail").innerHTML=`<div class="detail-hero"><div class="eyebrow">LEARNING SCHOOL</div><h1>${s.icon} ${s.name}</h1><p>${s.desc} This school is organised into a progressive learning journey. Individual courses and full lesson content will be developed in stages.</p><div class="detail-meta"><span class="tag">${s.topics.length} topics</span><span class="tag">7 learning levels</span><span class="tag">Beginner to mastery</span></div><div class="detail-actions"><button class="btn-primary" id="saveSchool">${isSaved?"★ Saved to my learning":"☆ Save this school"}</button><button class="btn-secondary" data-go="paths">View guided paths</button></div></div><div class="detail-section"><h2>Topics in this school</h2><div class="catalogue-grid">${s.topics.map((t,i)=>`<div class="catalogue-card"><div class="school-top"><span class="school-icon">${String(i+1).padStart(2,"0")}</span><span class="school-count">Learning topic</span></div><h3>${t}</h3><p>Learn the foundations, practise with examples, solve exercises and build a practical project.</p><span class="tag">Beginner → advanced</span></div>`).join("")}</div></div><div class="detail-section"><h2>Progression for every topic</h2><div class="level-detail">${levelNames.map((n,i)=>`<div><strong>Level ${i} · ${n}</strong><small>${levelDescriptions[i]}</small></div>`).join("")}</div></div>`;$("#saveSchool").addEventListener("click",()=>{saved=saved.includes(id)?saved.filter(x=>x!==id):[...saved,id];persist();showDetail(id)});navigate("detail")}
+function renderPaths(){$("#pathList").innerHTML=paths.map((p,i)=>{const s=schools.find(x=>x.id===p.school);return `<div class="path-card"><div><div class="eyebrow">PATH 0${i+1} · ${s.name.toUpperCase()}</div><h3>${p.title}</h3><p>${p.desc}</p><small style="display:block;color:#8191a8;margin-top:8px;font-size:10px">${p.duration}</small></div><button class="btn-secondary compact" data-school="${p.school}">Explore path →</button></div>`}).join("")}
+function renderSaved(){const list=schools.filter(s=>saved.includes(s.id));$("#savedContent").innerHTML=list.length? `<div class="catalogue-grid">${list.map(card).join("")}</div>`:`<div class="empty-state">You haven't saved a school yet. Explore the catalogue and save subjects you want to learn.</div>`}
+function renderCards(){const labs=[["Python playground","Run Python code in your browser using Pyodide.","Available","playground"],["SQL & SQLite lab","Practise queries, tables, joins and database concepts with sample data.","Planned",""],["Spreadsheet practice","Learn formulas, sorting, filtering, charts and dashboards.","Planned",""],["UI/UX challenge lab","Work through design briefs, wireframes and usability exercises.","Planned",""],["Finance simulator","Practise budgeting, compound interest and loan calculations with sample data.","Planned","finance"],["Electronics & logic lab","Explore digital logic, circuits and engineering exercises.","Planned",""]];$("#labGrid").innerHTML=labs.map(x=>`<article class="lab-card"><span class="status-pill ${x[2]==="Planned"?"planned":""}">${x[2]}</span><h3>${x[0]}</h3><p>${x[1]}</p>${x[3]? `<button class="card-action" data-go="${x[3]}">Open →</button>`:`<span class="card-action">On the roadmap</span>`}</article>`).join("");const projects=[["Personal portfolio website","Build and deploy a professional portfolio with projects and a skills profile.","Web development"],["Expense tracker","Create a practical tracker and monthly spending summary.","Programming + finance"],["Business dashboard","Turn a sample dataset into useful KPIs and visual reports.","Sheets + analytics"],["IoT monitoring prototype","Collect sample sensor readings and display useful information.","Embedded + IoT"],["SQL data exploration","Query a sample database and explain what the results mean.","SQL + data"],["Brand identity project","Create a brief, visual direction and a small design system.","UI/UX + creative"]];$("#projectGrid").innerHTML=projects.map(p=>`<article class="project-card"><span class="tag">${p[2]}</span><h3>${p[0]}</h3><p>${p[1]}</p><span class="card-action">Project brief · Planned</span></article>`).join("");const finance=[["Budget planner","Organise income, spending categories and savings goals.","Personal finance"],["Compound interest","Understand how time, rate and contributions affect growth.","Calculator concept"],["Loan & EMI learning","Explore principal, interest, tenure and repayment schedules.","Calculator concept"],["Investment concepts","Learn diversification, volatility, fees and risk using sample portfolios.","Education only"],["Money glossary","Understand banking, credit, taxes, insurance and investing terms.","Reference guide"],["Monthly review","Create a simple personal money review routine.","Planning tool"]];$("#financeTools").innerHTML=finance.map(x=>workspaceCard(x)).join("");const office=[["Spreadsheet skills","Excel and Google Sheets from cells and formulas to pivot tables and dashboards.","Learning path"],["Document studio","Professional reports, letters, CVs and document formatting.","Templates roadmap"],["Presentation skills","Structure slides, tell a story with data and present clearly.","Learning path"],["PDF & file workflows","Understand practical document conversion and file organisation.","Tools roadmap"],["Personal task planner","Plan priorities, deadlines and weekly work.","Workspace roadmap"],["Notes & knowledge base","Organise notes, learning summaries and revision material.","Workspace roadmap"]];$("#officeTools").innerHTML=office.map(x=>workspaceCard(x)).join("");const career=[["CV & resume builder","Create a clear, evidence-based resume for your target role.","Career toolkit"],["Interview practice","Prepare answers, explain projects and practise technical questions.","Practice path"],["Skills inventory","Track what you know and attach evidence of projects.","Career toolkit"],["Portfolio checklist","Present projects with context, screenshots, outcomes and source code.","Project toolkit"],["Professional communication","Practise email, meetings, presentations and workplace writing.","Learning path"],["Career planning","Compare role requirements and build a realistic skill roadmap.","Planning tool"]];$("#careerTools").innerHTML=career.map(x=>workspaceCard(x)).join("")}
+function workspaceCard(x){return `<article class="workspace-card"><span class="tag">${x[2]}</span><h3>${x[0]}</h3><p>${x[1]}</p><span class="card-action">Planned module</span></article>`}
+const pageNames={home:"Overview",explore:"Explore schools",paths:"Learning paths",saved:"My learning",detail:"School details",playground:"Code playground",labs:"Practice labs",projects:"Projects",finance:"Personal finance",office:"Office & productivity",career:"Career centre"};
+function navigate(view){currentView=view;$$(".page").forEach(p=>p.classList.remove("active"));const page=$("#"+view+"Page");if(page)page.classList.add("active");$$(".nav-link").forEach(n=>n.classList.toggle("active",n.dataset.view===view));$("#crumb").textContent=pageNames[view]||"Overview";$("#sidebar").classList.remove("open");window.scrollTo({top:0,behavior:"smooth"});if(view==="saved")renderSaved();if(view==="playground")loadPython().catch(()=>{});}
+function initPython(){const editor=$("#editor");if(!editor)return;const stdin=$("#stdin"),output=$("#output"),run=$("#runBtn"),status=$("#status");async function loadPython(){if(pyodide)return pyodide;if(pyLoading){while(pyLoading)await new Promise(r=>setTimeout(r,100));if(pyodide)return pyodide}pyLoading=true;status.textContent="Loading Python runtime…";try{pyodide=await loadPyodide();status.textContent="Python ready";return pyodide}catch(e){status.textContent="Python could not load";throw e}finally{pyLoading=false}}window.loadPython=loadPython;async function runCode(){run.disabled=true;run.textContent="Running…";status.textContent="Running";output.textContent="";let py;try{py=await loadPython();const lines=stdin.value.split(/\r?\n/);let i=0;py.setStdin({stdin:()=>i<lines.length?lines[i++]:""});await py.runPythonAsync("import sys\nfrom io import StringIO\n__rc_out = StringIO()\n__rc_old = sys.stdout\nsys.stdout = __rc_out");await py.runPythonAsync(editor.value);const result=await py.runPythonAsync("__rc_out.getvalue()");await py.runPythonAsync("sys.stdout = __rc_old");output.textContent=result||"Program finished with no output.";status.textContent="Execution finished"}catch(e){try{await py?.runPythonAsync("sys.stdout = __rc_old")}catch(_){}output.textContent=String(e).replace(/^PythonError:\\s*/i,"");status.textContent="Execution error"}finally{run.disabled=false;run.textContent="▶ Run code"}}run.addEventListener("click",runCode);$("#clearBtn").addEventListener("click",()=>{editor.value="";stdin.value="";output.textContent="Your program output will appear here.";editor.focus()});$("#copyBtn").addEventListener("click",async()=>{try{await navigator.clipboard.writeText(output.textContent);$("#copyBtn").textContent="Copied";setTimeout(()=>$("#copyBtn").textContent="Copy",1000)}catch(_){}});editor.addEventListener("keydown",e=>{if(e.key==="Tab"){e.preventDefault();const a=editor.selectionStart,b=editor.selectionEnd;editor.setRangeText("    ",a,b,"end")}if((e.ctrlKey||e.metaKey)&&e.key==="Enter"){e.preventDefault();runCode()}});loadPython().catch(()=>{});}
+document.addEventListener("click",e=>{const nav=e.target.closest("[data-view]");if(nav){e.preventDefault();navigate(nav.dataset.view);return}const go=e.target.closest("[data-go]");if(go){navigate(go.dataset.go);return}const school=e.target.closest("[data-school]");if(school){showDetail(school.dataset.school);return}const filter=e.target.closest("[data-filter]");if(filter){activeSchool=filter.dataset.filter;renderFilters();renderCatalogue()}});
+$("#searchInput").addEventListener("input",renderCatalogue);$("#levelFilter").addEventListener("change",renderCatalogue);$("#menuBtn").addEventListener("click",()=>$("#sidebar").classList.toggle("open"));
+renderHome();renderFilters();renderCatalogue();renderPaths();renderCards();initPython();
