@@ -91,7 +91,7 @@ A GitHub Actions workflow is included at `.github/workflows/pages.yml` to publis
 
 ## Local development
 
-Open `index.html` through a local web server such as VS Code Live Server. The Python runtime and web fonts require an internet connection.
+Open `index.html` through a local web server such as VS Code Live Server. The Python and SQLite browser runtimes and web fonts require an internet connection.
 
 See [docs/PRODUCT_VISION.md](docs/PRODUCT_VISION.md) for the product principles, architecture direction, safety rules and long-term roadmap.
 
