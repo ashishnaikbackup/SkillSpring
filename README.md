@@ -1,6 +1,6 @@
-# RunCode — Learn. Build. Practise. Master.
+# SkillSpring — Learn. Build. Practise. Master.
 
-RunCode is a modular beginner-to-professional learning and personal productivity platform. Its goal is to help people start from absolute zero, develop practical skills across many disciplines, and demonstrate what they can do through exercises and projects.
+SkillSpring is a modular beginner-to-professional learning and personal productivity platform. Its goal is to help people start from absolute zero, develop practical skills across many disciplines, and demonstrate what they can do through exercises and projects.
 
 ## Current prototype
 
@@ -15,7 +15,8 @@ The repository now includes a responsive learning-platform dashboard with:
 
 Learning progress and saved schools currently use browser local storage on the current device. They are not yet synchronised across devices or user accounts.
 
-## Published self-paced course\n\n- [Python: Zero to Professional Foundations](python-course.html) — 16 modules from programming basics, syntax and Hello World through data structures, functions, OOP, files, debugging, Git, APIs, SQLite and a portfolio capstone. The course includes worked examples, practice tasks and module knowledge checks.\n- [Field Radar](field-radar.html) — concise educational trend notes and suggested next skills across the learning schools. It is a curated learning resource, not a live news feed.\n\nCourse completion is currently saved in browser local storage on the learner's device.\n\n## Learning schools
+## Published self-paced courses\n\n- [Python: Zero to Professional Foundations](python-course.html) — 16 modules from programming basics through APIs, SQLite and a portfolio capstone.
+- [Course library](courses.html) — published foundations courses for C, C++, JavaScript, HTML/CSS, SQL and personal finance. Each has six guided modules, examples, explanations, practice tasks and knowledge checks.\n- [Field Radar](field-radar.html) — concise educational trend notes and suggested next skills across the learning schools. It is a curated learning resource, not a live news feed.\n\nCourse completion is currently saved in browser local storage on the learner's device.\n\n## Learning schools
 
 1. Programming & Software Development
 2. Web, App & UI/UX Design
