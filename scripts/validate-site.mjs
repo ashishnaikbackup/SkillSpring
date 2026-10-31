@@ -134,10 +134,11 @@ for (const [label, route] of [
   if (!topic.includes(route)) fail(`Topic navigation for ${label} is missing.`);
 }
 const languages = [...poly.matchAll(/<option value="([^"]+)"/g)].map((match) => match[1]);
-for (const language of ["python","javascript","html","sql","c","cpp","java","csharp","go","rust","php","ruby","typescript","kotlin","swift","r","bash"]) {
+for (const language of ["python","javascript","html","sql","c","cpp","java","csharp","go","rust","php","ruby","typescript","kotlin","swift","r","bash","dart","scala","lua","perl","haskell","julia","powershell","fortran","octave"]) {
   if (!languages.includes(language)) fail(`Multi-language lab is missing ${language}.`);
 }
-if (!poly.includes("emkc.org/api/v2/piston/execute")) fail("External sandbox runner integration is missing.");
+if (!poly.includes("localCommands") || !poly.includes('id="download"')) fail("Local run commands and source download are missing.");
+if (poly.includes("emkc.org/api/v2/piston/execute")) fail("Do not use the public Piston endpoint without authorization.");
 if (!poly.includes("loadPyodide") || !poly.includes("sql.js")) fail("A browser runtime for Python or SQL is missing.");
 
 console.log(`Checked ${files.length} files, ${courses.length} catalogue courses, ${Object.keys(essential).length} essential courses, and ${languages.length} lab languages.`);
