@@ -28,6 +28,14 @@ try {
   check("learning school filter", await page.locator(".launch-card").count() >= 2);
   await page.locator("#filterSchool").selectOption("all");
 
+  await page.goto(pageUrl("/professional-labs.html"), { waitUntil: "networkidle" });
+  await page.locator('[data-extra-lab="finance"]').click();
+  await page.locator("#finCalc").click();
+  check("finance cash-flow lab", await page.locator("#finResult").innerText().then(t => t.includes("₹7000.00")));
+  await page.locator('[data-extra-lab="business"]').click();
+  await page.locator("#bizCalc").click();
+  check("business break-even lab", await page.locator("#bizResult").innerText().then(t => t.includes("50 units")));
+
   await page.goto(pageUrl("/progress-backup.html"), { waitUntil: "networkidle" });
   await page.evaluate(() => localStorage.setItem("skillspring-browser-qa-probe", "ok"));
   const downloadPromise = page.waitForEvent("download");
