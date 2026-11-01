@@ -420,7 +420,18 @@ if (fs.existsSync(powerBiProjectPath)) {
   }
 }
 
-// Mastery Studio: local-first skill tracker, weekly planner and portable revision backup.\nconst masteryPath = path.join(root, "mastery-studio.html");\nif (!fs.existsSync(masteryPath)) fail("Mastery Studio page is missing.");\nif (fs.existsSync(masteryPath)) {\n  const mastery = fs.readFileSync(masteryPath, "utf8");\n  for (const feature of ["skillspring-mastery-studio-v1", "metricMastered", "reviewQueue", "makePlan", "exportData", "importData", "prefers-reduced-motion", "aria-live"]) {\n    if (!mastery.includes(feature)) fail("Mastery Studio is missing required feature: " + feature + ".");\n  }\n  if (!mastery.includes("href=\\"index.html\\"")) fail("Mastery Studio is missing its dashboard navigation.");\n}\n\n// Validate the live Field Radar payload, not only that its JSON parses.
+// Mastery Studio: local-first skill tracker, weekly planner and portable revision backup.
+const masteryPath = path.join(root, "mastery-studio.html");
+if (!fs.existsSync(masteryPath)) fail("Mastery Studio page is missing.");
+if (fs.existsSync(masteryPath)) {
+  const mastery = fs.readFileSync(masteryPath, "utf8");
+  for (const feature of ["skillspring-mastery-studio-v1", "metricMastered", "reviewQueue", "makePlan", "exportData", "importData", "prefers-reduced-motion", "aria-live"]) {
+    if (!mastery.includes(feature)) fail("Mastery Studio is missing required feature: " + feature + ".");
+  }
+  if (!mastery.includes('href="index.html"')) fail("Mastery Studio is missing its dashboard navigation.");
+}
+
+// // Validate the live Field Radar payload, not only that its JSON parses.
 try {
   const sourceConfig = JSON.parse(fs.readFileSync(path.join(root, "data/field-radar-sources.json"), "utf8"));
   const radarFeed = JSON.parse(fs.readFileSync(path.join(root, "data/field-radar.json"), "utf8"));
