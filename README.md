@@ -7,7 +7,7 @@ The public product and repository are named SkillSpring.
 ## Start learning
 
 - **[Course library](courses.html)** — browse all published self-paced courses.
-- **[Python: Zero to Professional Foundations](python-course.html)** — the most extensive course so far, with 16 modules from Hello World through programming fundamentals, data structures, functions, OOP, files, debugging, Git, APIs, SQLite and a portfolio capstone.
+- **[Python: Zero to Professional Foundations](python-course.html)** — the most extensive course so far, with 16 modules from Hello World through programming fundamentals, data structures, functions, OOP, files, debugging, Git, APIs, SQLite and a portfolio capstone.\n- **[Python Coding Practice](python-practice.html)** — 10 browser-run challenges with automatic tests, feedback, hints, revealable solutions and local code/progress saving. Python runs through Pyodide in the learner’s browser.
 - **[Field Radar](field-radar.html)** — short educational explainers about changing tools, technology and professional skills. This is a curated learning resource, not a live news feed.
 - **[Learning dashboard](index.html)** — the main platform experience, subject schools, learning paths and Python playground.
 
@@ -57,7 +57,7 @@ These schools are the long-term curriculum scope. A topic appearing in the catal
 - Static HTML, CSS and JavaScript.
 - Python playground uses Pyodide in the browser.
 - No user account or cross-device progress sync yet.
-- The [multi-language coding lab](polyglot.html) runs Python, JavaScript, HTML/CSS preview and SQLite in the browser. It provides downloadable source files and local-run commands for 22 additional languages; it does not send code to a public third-party runner.
+- The [Python coding practice path](python-practice.html) adds 10 progressively harder exercises with automatic Python assertions, hints and solutions. The [multi-language coding lab](polyglot.html) runs Python, JavaScript, HTML/CSS preview and SQLite in the browser. It provides downloadable source files and local-run commands for 22 additional languages; it does not send code to a public third-party runner.
 - Never put API keys, passwords, banking credentials or private learner data in frontend code or public repositories.
 - Finance material is educational and does not guarantee returns or replace qualified financial advice.
 
@@ -67,7 +67,7 @@ These schools are the long-term curriculum scope. A topic appearing in the catal
 - [x] Build the responsive learning dashboard and catalogue.
 - [x] Publish the 16-module Python course and 11 additional six-module foundation courses.
 - [x] Add the Field Radar learning section.
-- [ ] Deepen every course with more lessons, worked solutions, graded practice and larger projects.
+- [x] Add an interactive Python practice path with 10 tested challenges, hints, solutions and local progress.\n- [ ] Deepen every course with more lessons, worked solutions, graded practice and larger projects.
 - [ ] Expand dedicated SQL, spreadsheet, data and electronics practice labs; the current multi-language lab includes SQLite practice.
 - [ ] Add full courses for the remaining programming languages and learning schools.
 - [x] Add automated static site validation for JavaScript syntax, local links, course catalogue routes and required lesson data.
