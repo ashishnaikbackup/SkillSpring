@@ -72,3 +72,11 @@ A shared `ux-polish.css` layer is now applied exactly once across all 21 public 
 7. Use Field Radar to discover changes, but verify important claims at the original source.
 
 **Release decision:** the current Version 1 website and its listed core deliverables are deployed and pass the repository's automated quality and deployment checks. The broader multi-school curriculum, more graded practice tracks, learner accounts and cross-device sync remain future development rather than hidden claims of completion.
+
+
+## Curriculum expansion — 1 November 2026
+
+- Added [interactive 12-school curriculum map](../curriculum-map.html): eight progressive stages per school, course families, role directions, worked-example expectations, practice outcomes, assessment standards and capstone portfolio projects.
+- Added [graded JavaScript and SQL practice](../advanced-practice.html): eight challenges per track, browser-based test checking, starter tasks, hints, example solutions and local progress. JavaScript uses a sandboxed iframe; SQL uses SQLite in the browser with fictional sample data.
+- Added validator requirements for both pages, dashboard navigation, all 12 school definitions and at least eight challenges per new track.
+- These additions improve curriculum visibility and practical practice but do not close the course-authoring backlog. The 24 existing course entries still need an initial human editorial audit; the remaining course families still need complete lessons, worked solutions, exercises, assessments and projects. See [master curriculum](MASTER_CURRICULUM.md) and [product vision](PRODUCT_VISION.md).
