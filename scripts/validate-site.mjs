@@ -119,6 +119,39 @@ for (const [key, course] of Object.entries(essential)) {
   }
 }
 if (!fs.existsSync(path.join(root, "docs/START_HERE_ZERO_TO_JOB.md"))) fail("The zero-to-job learning guide is missing.");
+const practicePagePath = path.join(root, "python-practice.html");
+const practiceScriptPath = path.join(root, "python-practice.js");
+if (!fs.existsSync(practicePagePath) || !fs.existsSync(practiceScriptPath)) {
+  fail("The interactive Python practice page or its script is missing.");
+} else {
+  const practicePage = fs.readFileSync(practicePagePath, "utf8");
+  const practiceScript = fs.readFileSync(practiceScriptPath, "utf8");
+  if (!practicePage.includes('id="codeEditor"') || !practicePage.includes("pyodide.js")) {
+    fail("The Python practice page is missing its editor or browser Python runtime.");
+  }
+  const challengeMatch = practiceScript.match(/const challenges = ([\\s\\S]*?\\n\\]);/);
+  if (!challengeMatch) {
+    fail("Could not read the Python practice challenge data.");
+  } else {
+    try {
+      const challenges = vm.runInNewContext("(" + challengeMatch[1] + ")");
+      const ids = challenges.map((item) => item.id);
+      if (challenges.length < 10) fail("The Python practice path must contain at least 10 challenges.");
+      if (new Set(ids).size !== ids.length) fail("Python practice challenge IDs must be unique.");
+      for (const item of challenges) {
+        for (const field of ["title", "task", "starter", "hint", "solution", "tests"]) {
+          if (!item[field]) fail("Python practice challenge " + item.id + " is missing " + field + ".");
+        }
+      }
+    } catch (error) {
+      fail("Could not validate Python practice challenge data: " + error.message);
+    }
+  }
+  const startHere = fs.readFileSync(path.join(root, "start-here.html"), "utf8");
+  if (!startHere.includes('href="python-practice.html"')) {
+    fail("The Start Here path does not link to interactive Python practice.");
+  }
+}
 const index = fs.readFileSync(path.join(root, "index.html"), "utf8");
 const app = fs.readFileSync(path.join(root, "app.js"), "utf8");
 const topic = fs.readFileSync(path.join(root, "topic.js"), "utf8");
