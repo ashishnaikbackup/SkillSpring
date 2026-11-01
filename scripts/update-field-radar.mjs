@@ -119,8 +119,8 @@ const sourceStatus = [];
 for (const result of results) {
   const { source, status, items, error } = result;
   const oldStatus = oldSources.get(source.id) || {};
+  const oldSourceItems = oldItems.filter(item => item.sourceId === source.id);
   let selectedItems = items;
-  const lastSuccess = status === "ok" ? today : (oldStatus.lastSuccess || null);
   if (status !== "ok") {
     selectedItems = oldItems.filter(item => item.sourceId === source.id);
   } else {
@@ -130,15 +130,17 @@ for (const result of results) {
       .slice(0, maxPerSource);
   }
   freshItems.push(...selectedItems);
+  const statusChanged = oldStatus.status !== status;
+  const contentChanged = JSON.stringify(selectedItems) !== JSON.stringify(oldSourceItems);
   sourceStatus.push({
     id: source.id,
     name: source.name,
     category: source.category,
     url: source.url,
     status,
-    message: error || (status === "ok" ? "Feed refreshed" : "Using last successful items where available"),
-    lastChecked: today,
-    lastSuccess,
+    message: statusChanged ? (error || (status === "ok" ? "Feed refreshed" : "Using last successful items where available")) : (oldStatus.message || "Feed checked"),
+    lastStatusChange: statusChanged ? today : (oldStatus.lastStatusChange || null),
+    lastContentUpdate: contentChanged ? today : (oldStatus.lastContentUpdate || null),
     itemCount: selectedItems.length
   });
 }
@@ -155,8 +157,10 @@ if (!items.length) {
   throw new Error("No Field Radar items were available. The previous published feed has not been replaced.");
 }
 
+const itemsChanged = JSON.stringify(items) !== JSON.stringify(oldItems);
+const sourceStatusChanged = JSON.stringify(sourceStatus) !== JSON.stringify(previous.sources || []);
 const report = {
-  generatedAt: today,
+  generatedAt: itemsChanged || sourceStatusChanged ? today : (previous.generatedAt || today),
   disclaimer: "Automatically collected headlines and short feed excerpts. Original reporting remains with the publisher. Check the source link for full context. This is not financial, legal or security advice.",
   sources: sourceStatus,
   items
