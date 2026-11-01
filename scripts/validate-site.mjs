@@ -226,6 +226,111 @@ if (!poly.includes('id="download"')) fail("Source download is missing.");
 if (poly.includes("emkc.org/api/v2/piston/execute")) fail("Do not use the public Piston endpoint without authorization.");
 if (!poly.includes("loadPyodide") || !poly.includes("sql.js")) fail("A browser runtime for Python or SQL is missing.");
 
+// Validate the Power BI practice data as a connected, internally consistent dataset.
+function readSimpleCsv(relativePath) {
+  const filePath = path.join(root, relativePath);
+  if (!fs.existsSync(filePath)) {
+    fail("Required practice dataset is missing: " + relativePath);
+    return [];
+  }
+  const lines = fs.readFileSync(filePath, "utf8").trim().split(/\r?\n/);
+  if (lines.length < 2) {
+    fail("Practice dataset has no data rows: " + relativePath);
+    return [];
+  }
+  const headers = lines[0].split(",");
+  return lines.slice(1).map((line) => {
+    const values = line.split(",");
+    return Object.fromEntries(headers.map((header, index) => [header, values[index] ?? ""]));
+  });
+}
+const salesRows = readSimpleCsv("data/powerbi-sales.csv");
+const productRows = readSimpleCsv("data/powerbi-products.csv");
+const regionRows = readSimpleCsv("data/powerbi-regions.csv");
+if (salesRows.length !== 36) fail("Power BI Sales sample must contain exactly 36 transactions.");
+if (productRows.length !== 6) fail("Power BI Products sample must contain exactly six products.");
+if (regionRows.length !== 4) fail("Power BI Regions sample must contain exactly four regions.");
+const productIds = new Set(productRows.map((row) => row.ProductID));
+const regionIds = new Set(regionRows.map((row) => row.RegionID));
+const orderIds = new Set();
+let totalSales = 0;
+let totalCost = 0;
+for (const row of salesRows) {
+  if (orderIds.has(row.OrderID)) fail("Power BI Sales sample contains duplicate OrderID " + row.OrderID + ".");
+  orderIds.add(row.OrderID);
+  if (!productIds.has(row.ProductID)) fail("Power BI Sales row " + row.OrderID + " references an unknown ProductID.");
+  if (!regionIds.has(row.RegionID)) fail("Power BI Sales row " + row.OrderID + " references an unknown RegionID.");
+  const quantity = Number(row.Quantity);
+  const unitPrice = Number(row.UnitPrice);
+  const discount = Number(row.DiscountPct);
+  const unitCost = Number(row.UnitCost);
+  const salesAmount = Number(row.SalesAmount);
+  const costAmount = Number(row.CostAmount);
+  if (![quantity, unitPrice, discount, unitCost, salesAmount, costAmount].every(Number.isFinite)) {
+    fail("Power BI Sales row " + row.OrderID + " contains a non-numeric measure.");
+    continue;
+  }
+  if (Math.abs(salesAmount - quantity * unitPrice * (1 - discount)) > 0.011) {
+    fail("Power BI Sales row " + row.OrderID + " has an incorrect SalesAmount.");
+  }
+  if (Math.abs(costAmount - quantity * unitCost) > 0.011) {
+    fail("Power BI Sales row " + row.OrderID + " has an incorrect CostAmount.");
+  }
+  totalSales += salesAmount;
+  totalCost += costAmount;
+}
+if (orderIds.size !== salesRows.length) fail("Power BI Sales sample must have unique order IDs.");
+if (Math.abs(totalSales - 1077005) > 0.011) fail("Power BI Sales dataset total does not reconcile to 1,077,005.");
+if (Math.abs(totalCost - 854380) > 0.011) fail("Power BI Cost dataset total does not reconcile to 854,380.");
+const powerBiProjectPath = path.join(root, "powerbi-project.html");
+if (fs.existsSync(powerBiProjectPath)) {
+  const projectPage = fs.readFileSync(powerBiProjectPath, "utf8");
+  for (const asset of ["data/powerbi-sales.csv", "data/powerbi-products.csv", "data/powerbi-regions.csv"]) {
+    if (!projectPage.includes(asset)) fail("Power BI capstone page does not link to " + asset + ".");
+  }
+}
+
+// Validate the live Field Radar payload, not only that its JSON parses.
+try {
+  const sourceConfig = JSON.parse(fs.readFileSync(path.join(root, "data/field-radar-sources.json"), "utf8"));
+  const radarFeed = JSON.parse(fs.readFileSync(path.join(root, "data/field-radar.json"), "utf8"));
+  const sourceIds = new Set(sourceConfig.sources.map((source) => source.id));
+  if (!sourceConfig.sources.length) fail("Field Radar has no allowlisted sources.");
+  if (new Set(sourceConfig.sources.map((source) => source.id)).size !== sourceConfig.sources.length) {
+    fail("Field Radar source IDs must be unique.");
+  }
+  if (!radarFeed.items.length) fail("Field Radar feed has no published headlines.");
+  if (radarFeed.items.length > 30) fail("Field Radar feed exceeds its 30-headline limit.");
+  for (const item of radarFeed.items) {
+    if (!sourceIds.has(item.sourceId)) fail("Field Radar item references an unknown source: " + item.sourceId);
+    try {
+      const url = new URL(item.url);
+      if (url.protocol !== "https:") fail("Field Radar headline URL is not HTTPS: " + item.url);
+    } catch {
+      fail("Field Radar headline has an invalid URL: " + item.url);
+    }
+    if (item.publishedAt && !Number.isFinite(new Date(item.publishedAt).getTime())) {
+      fail("Field Radar headline has an invalid publication date: " + item.title);
+    }
+  }
+  for (const source of radarFeed.sources) {
+    if (!["ok", "restricted", "failed"].includes(source.status)) {
+      fail("Field Radar source has an unknown status: " + source.id);
+    }
+  }
+} catch (error) {
+  fail("Could not validate live Field Radar data: " + error.message);
+}
+
+const readmePath = path.join(root, "README.md");
+if (fs.existsSync(readmePath)) {
+  const readme = fs.readFileSync(readmePath, "utf8");
+  if (readme.includes("\\n")) fail("README.md contains literal backslash-n sequences instead of real line breaks.");
+  if (readme.includes("first successful run and public URL still need verification")) {
+    fail("README.md still describes the Pages deployment as unverified.");
+  }
+}
+
 console.log(`Checked ${files.length} files, ${courses.length} catalogue courses, ${Object.keys(essential).length} essential courses, and ${languages.length} lab languages.`);
 if (warnings.length) console.warn(warnings.map((item) => "WARN: " + item).join("\n"));
 if (errors.length) {
