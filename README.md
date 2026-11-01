@@ -14,7 +14,7 @@ The public product and repository are named SkillSpring.
 - **[Field Radar](field-radar.html)** — evergreen learning notes plus a daily refreshed, source-linked headline feed across programming, AI, Microsoft tools, Indian finance/regulation, cybersecurity, design and engineering.
 - **[Learning dashboard](index.html)** — the main platform experience, subject schools, learning paths and Python playground.
 - **[Learning-platform benchmark](docs/LEARNING_PLATFORM_BENCHMARK.md)** — research notes and original teaching principles adapted from Mimo, Brilliant, freeCodeCamp, Microsoft Learn, Google Skillshop and Exercism.
-- **[Course freshness policy](docs/COURSE_FRESHNESS_POLICY.md)** — push-based course-file change detection plus push-based course-file change detection plus weekly review-date and official-source checks create a review issue when lessons need human verification; the initial audit issue currently lists all 24 courses; the system does not silently rewrite content.
+- **[Course freshness policy](docs/COURSE_FRESHNESS_POLICY.md)** — push-based course-file change detection plus weekly review-date and official-source checks create a review issue when lessons need human verification; the initial audit issue currently lists all 24 courses; the system does not silently rewrite content.
 - **[Field Radar update policy](docs/FIELD_RADAR_UPDATE_POLICY.md)** — a daily allowlisted RSS/Atom collector refreshes headlines across programming, AI, Microsoft tools, India finance/regulation, cybersecurity, design and engineering.
 
 ## Published course library
@@ -79,7 +79,8 @@ These schools are the long-term curriculum scope. A topic appearing in the catal
 - [ ] Add dedicated graded practice labs for JavaScript, SQL, spreadsheets, data analysis and electronics; the current multi-language lab includes JavaScript and SQLite execution/preview but is not yet a full autograder for every language.
 - [ ] Build out the remaining course families across all 12 schools; the 24-entry catalogue is a starting library, not complete coverage of the full curriculum.
 - [x] Add automated static site validation for JavaScript syntax, local links, course catalogue routes and required lesson data.
-- [ ] Expand accessible graded assessments, progress analytics and course search.
+- [x] Apply a shared responsive UI/UX and accessibility polish layer across public pages; manual device/screen-reader QA is documented separately.
+- [ ] Expand graded assessments and progress analytics; the course catalogue already includes keyword search and level filtering.
 - [ ] Add optional accounts and secure cross-device progress sync.
 - [x] Add a weekly course freshness monitor with official reference-link checks and human review reminders. The initial audit issue lists all 24 courses awaiting editorial review; structural checks are not treated as line-by-line content sign-off.
 - [x] Add a maintained, sourced headline feed with a daily allowlisted RSS/Atom refresh, publisher links, publication dates and source-status handling.
