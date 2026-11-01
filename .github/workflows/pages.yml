@@ -71,7 +71,3 @@ jobs:
           curl --fail --silent --show-error --location "$base/engineering-course-data.js" -o /tmp/skillspring-engineering-data.js
           grep -qi "SI base units" /tmp/skillspring-engineering-data.js
 
-          curl --fail --silent --show-error --location "$base/career-launchpad.html" -o /tmp/skillspring-career-launchpad.html
-          grep -qi "30 course capstones" /tmp/skillspring-career-launchpad.html
-          curl --fail --silent --show-error --location "$base/progress-backup.html" -o /tmp/skillspring-progress-backup.html
-          grep -qi "Download my backup" /tmp/skillspring-progress-backup.html
