@@ -184,7 +184,7 @@ if (!essentialPlayer.includes('store+"-passed"') || !essentialPlayer.includes('d
   fail("Essential course lessons must track knowledge-check passes before completion.");
 }
 for (const key of Object.keys(essential)) {
-  if (!courses.some((course) => course.href === `essential-course.html?course=${key}`)) fail(`Essential course "${key}" is not linked from the course catalogue.`);
+  if (!courses.some((course) => course.href === `essential-course.html?course=${key}` || (key === "engineering" && course.href === "engineering-course.html"))) fail(`Essential course "${key}" is not linked from the course catalogue.`);
 }
 for (const relativePath of ["data/field-radar.json", "data/field-radar-sources.json"]) {
   try {
@@ -414,7 +414,7 @@ try {
 const readmePath = path.join(root, "README.md");
 if (fs.existsSync(readmePath)) {
   const readme = fs.readFileSync(readmePath, "utf8");
-  if (readme.includes("\n")) fail("README.md contains literal backslash-n sequences instead of real line breaks.");
+  if (readme.includes("\\n")) fail("README.md contains literal backslash-n sequences instead of real line breaks.");
   if (readme.includes("first successful run and public URL still need verification")) {
     fail("README.md still describes the Pages deployment as unverified.");
   }
