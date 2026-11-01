@@ -33,8 +33,8 @@ async function checkSource(url) {
 }
 
 const courses = await Promise.all(manifest.courses.map(async (course) => {
-  const lastReviewed = new Date(course.lastReviewed + "T00:00:00Z");
-  const ageDays = dayDifference(lastReviewed, today);
+  const lastReviewed = course.lastReviewed ? new Date(course.lastReviewed + "T00:00:00Z") : null;
+  const ageDays = lastReviewed ? dayDifference(lastReviewed, today) : null;
   const sourceChecks = await Promise.all(course.sources.map(checkSource));
   return {
     slug: course.slug,
@@ -42,7 +42,8 @@ const courses = await Promise.all(manifest.courses.map(async (course) => {
     lastReviewed: course.lastReviewed,
     reviewIntervalDays: course.reviewIntervalDays,
     ageDays,
-    reviewDue: ageDays >= course.reviewIntervalDays,
+    reviewDue: !lastReviewed || ageDays >= course.reviewIntervalDays,
+    reviewStatus: course.reviewStatus || (lastReviewed ? "reviewed" : "initial-review-required"),
     sourceChecks
   };
 }));
