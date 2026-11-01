@@ -22,10 +22,10 @@ try {
   await page.goto(pageUrl("/career-launchpad.html"), { waitUntil: "networkidle" });
   check("30 capstone briefs", await page.locator("#capstoneGrid .launch-card").count() === 30);
   await page.locator("#searchCapstone").fill("Power BI");
-  check("capstone search", await page.locator(".launch-card").count() === 1 && await page.locator(".launch-card").innerText().then(t => t.includes("Power BI")));
+  check("capstone search", await page.locator("#capstoneGrid .launch-card").count() === 1 && await page.locator("#resultCount").innerText().then(t => t.includes("1 of 30")));
   await page.locator("#searchCapstone").fill("");
   await page.locator("#filterSchool").selectOption("finance");
-  check("learning school filter", await page.locator(".launch-card").count() >= 2);
+  check("learning school filter", await page.locator("#capstoneGrid .launch-card").count() >= 2);
   await page.locator("#filterSchool").selectOption("all");
 
   await page.goto(pageUrl("/professional-labs.html"), { waitUntil: "networkidle" });
