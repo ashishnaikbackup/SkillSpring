@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="A practical Power BI retail sales dashboard project with sample CSV data, DAX measures, data modelling, report design and validation.">
+<title>Power BI Retail Dashboard Project · SkillSpring</title>
+<link rel="stylesheet" href="course.css"><link rel="stylesheet" href="powerbi-project.css">
+</head>
+<body>
+<header class="top"><a class="brand" href="index.html">SkillSpring<span>.</span></a><nav><a href="courses.html">All courses</a><a href="essential-course.html?course=powerbi">Power BI lessons</a><a href="field-radar.html">Field Radar</a></nav></header>
+<main class="wrap project-wrap">
+<section class="hero"><div class="eyebrow">POWER BI · HANDS-ON CAPSTONE</div><h1>Build a retail sales<br><span>dashboard from zero.</span></h1><p>Work like a junior data analyst. Import fictional sales data, clean it, build a star schema, write DAX measures, create a report and validate your numbers before presenting an insight.</p><div class="project-meta"><span>36 fictional transactions</span><span>3 CSV files</span><span>Beginner-friendly brief</span></div></section>
+<section class="lesson">
+<div class="eyebrow">01 · DOWNLOAD YOUR DATA</div><h2>Start with the practice files</h2><p>Download all three CSV files into the same folder. The data is fictional and contains no real customer or business records.</p>
+<div class="download-grid">
+<a class="download-card" href="data/powerbi-sales.csv" download><strong>Sales transactions</strong><span>36 orders · dates, quantities, discounts, sales and costs</span><b>Download CSV ↓</b></a>
+<a class="download-card" href="data/powerbi-products.csv" download><strong>Products</strong><span>6 products · categories, standard prices and costs</span><b>Download CSV ↓</b></a>
+<a class="download-card" href="data/powerbi-regions.csv" download><strong>Regions</strong><span>4 sales regions · region names and country</span><b>Download CSV ↓</b></a>
+</div>
+</section>
+<section class="lesson"><div class="eyebrow">02 · THE BUSINESS BRIEF</div><h2>What does the manager need to know?</h2><p>You are a junior analyst supporting a small retailer. The manager wants to understand performance during 2025.</p><ol><li>What were total sales, total cost and gross profit?</li><li>How did sales change month by month?</li><li>Which products and categories contributed most?</li><li>Which region generated the highest sales and profit?</li><li>What was the average order value?</li><li>What data-quality limitations should be disclosed?</li></ol></section>
+<section class="lesson"><div class="eyebrow">03 · IMPORT AND CLEAN</div><h2>Prepare the data in Power Query</h2><ol><li>Open Power BI Desktop and choose <b>Get data → Text/CSV</b>.</li><li>Import all three files and rename the queries to <b>Sales</b>, <b>Products</b> and <b>Regions</b>.</li><li>Set OrderDate to Date; Quantity to Whole number; UnitPrice, UnitCost, SalesAmount, CostAmount and DiscountPct to Decimal number; IDs and names to Text.</li><li>Inspect nulls, duplicate order IDs, blank product/region IDs and unusual values.</li><li>Use repeatable transformations only when justified. Do not silently delete questionable records.</li><li>Select <b>Close & Apply</b>.</li></ol><div class="callout"><b>Checkpoint:</b> Sales should contain 36 rows. Every Sales ProductID and RegionID should match a row in its dimension table.</div></section>
+<section class="lesson"><div class="eyebrow">04 · BUILD THE DATA MODEL</div><h2>Connect facts to dimensions</h2><p>Create one-to-many relationships with single-direction filtering from the dimension tables into Sales.</p><div class="relationship"><span>Products[ProductID]</span><b>1 → *</b><span>Sales[ProductID]</span></div><div class="relationship"><span>Regions[RegionID]</span><b>1 → *</b><span>Sales[RegionID]</span></div><p>Create a date table using <b>Modeling → New table</b>:</p><pre><code>Date =
+CALENDAR(
+    MIN(Sales[OrderDate]),
+    MAX(Sales[OrderDate])
+)</code></pre><p>Add these calculated columns:</p><pre><code>Year = YEAR('Date'[Date])
+Month Number = MONTH('Date'[Date])
+Month = FORMAT('Date'[Date], "MMM")</code></pre><p>Sort Date[Month] by Date[Month Number], then relate Date[Date] 1 → many to Sales[OrderDate]. Mark the table as a date table if that option is available in your Power BI version.</p></section>
+<section class="lesson"><div class="eyebrow">05 · WRITE DAX MEASURES</div><h2>Turn transactions into useful metrics</h2><p>Create these measures in the Sales table or a dedicated Measures table.</p><pre><code>Total Sales = SUM(Sales[SalesAmount])
+
+Total Cost = SUM(Sales[CostAmount])
+
+Gross Profit = [Total Sales] - [Total Cost]
+
+Profit Margin = DIVIDE([Gross Profit], [Total Sales])
+
+Total Orders = DISTINCTCOUNT(Sales[OrderID])
+
+Units Sold = SUM(Sales[Quantity])
+
+Average Order Value = DIVIDE([Total Sales], [Total Orders])</code></pre><p>Format the sales, cost, profit and average order value measures as currency. Format Profit Margin as a percentage.</p><div class="callout"><b>Understand this:</b> A measure recalculates in the current filter context. When a user selects a region or month, the same measure returns a different result for that selection. DIVIDE also lets you handle a zero denominator safely.</div></section>
+<section class="lesson"><div class="eyebrow">06 · DESIGN YOUR REPORT</div><h2>Build two useful report pages</h2><div class="report-grid"><div><h3>Overview page</h3><ul><li>KPI cards: Total Sales, Gross Profit, Profit Margin, Total Orders and Average Order Value.</li><li>Line chart: Total Sales by Date[Month].</li><li>Bar chart: Total Sales by Regions[RegionName].</li><li>Bar chart: Gross Profit by Products[Category].</li><li>Table: ProductName, Units Sold, Total Sales and Gross Profit.</li><li>Slicers: Year, RegionName and Category.</li></ul></div><div><h3>Product detail page</h3><ul><li>Compare products by sales and gross profit.</li><li>Show category contribution.</li><li>Allow users to filter by region and date.</li><li>Use clear titles, labels and number formats.</li><li>Keep contrast readable and avoid decorative visuals that do not answer a question.</li></ul></div></div></section>
+<section class="lesson"><div class="eyebrow">07 · VALIDATE BEFORE YOU PRESENT</div><h2>Check that your report is trustworthy</h2><ul class="checklist"><li>Sales has 36 rows and 36 unique order IDs.</li><li>Every transaction has a valid product and region.</li><li>Total Sales and Total Cost match independent sums from the CSV.</li><li>Region and month selections update the KPI cards.</li><li>Month is sorted chronologically, not alphabetically.</li><li>Profit Margin is total gross profit divided by total sales, not an unweighted average of row percentages.</li><li>Assumptions and limitations are documented.</li></ul><p>If totals differ, inspect data types, relationship direction, duplicate rows and DAX expressions before changing the source data.</p></section>
+<section class="lesson"><div class="eyebrow">08 · PORTFOLIO EVIDENCE</div><h2>Package your work professionally</h2><ol><li>PBIX project file.</li><li>PDF export or clear report screenshots.</li><li>Data model diagram.</li><li>One-page data dictionary.</li><li>DAX measures with plain-language explanations.</li><li>Validation checklist.</li><li>A short business recommendation supported by the report.</li><li>A 3–5 minute walkthrough explaining the question, data, model, measures, insight and limitations.</li></ol><h3>Prepare to answer these questions</h3><ul><li>Why did you separate Sales, Products and Regions?</li><li>What is the grain of the Sales table?</li><li>What is the difference between a measure and a calculated column?</li><li>What is filter context?</li><li>How did you validate the totals?</li><li>How would you restrict regional managers to their own region?</li></ul></section>
+<section class="lesson"><div class="eyebrow">OFFICIAL REFERENCES</div><h2>Continue learning from Microsoft</h2><ul><li><a href="https://learn.microsoft.com/en-us/power-bi/fundamentals/power-bi-learning-path-directory" target="_blank" rel="noopener">Power BI learning paths ↗</a></li><li><a href="https://learn.microsoft.com/en-us/training/powerplatform/power-bi/" target="_blank" rel="noopener">Microsoft Learn: Power BI training ↗</a></li><li><a href="https://learn.microsoft.com/en-us/dax/" target="_blank" rel="noopener">DAX reference ↗</a></li></ul><p class="small-note">Publishing and sharing depend on the current Power BI Service licence, tenant and organisation settings. Do not publish private or confidential data publicly. The PBIX must be created in Power BI Desktop; SkillSpring supplies the dataset and guided project, not a browser-based Power BI engine.</p><a class="back-link" href="essential-course.html?course=powerbi">← Return to Power BI lessons</a></section>
+<footer>SkillSpring · Practice with data. Validate the insight. Explain the decision.</footer>
+</main></body></html>
