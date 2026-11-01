@@ -194,3 +194,10 @@ Known limitations:
 - Progress is stored locally in the current browser; there are no user accounts or cross-device sync.
 - Several learning schools and advanced topics remain roadmaps rather than fully authored textbook courses.
 - The Pages workflow and public deployment must be verified through a successful GitHub Actions run and a live-site smoke test before calling the first release deployed.
+
+
+## Curriculum map and practice studio — 1 November 2026
+
+The [interactive curriculum map](../curriculum-map.html) exposes all 12 schools as eight-stage syllabi with course families, practical outcomes, assessment standards and portfolio capstones. The [graded practice studio](../advanced-practice.html) now provides eight JavaScript and eight SQL/SQLite exercises with browser-based tests, hints and solutions. The curriculum map is a planning blueprint, not a substitute for authored lesson content. The long-term product promise remains open until each course family meets the full course standard and receives an editorial review.
+
+The next authoring priorities are: (1) complete initial editorial review of the 24 existing course entries; (2) deepen the current 24 courses to full worked-example/exercise/assessment/project standards; (3) author missing course families across all 12 schools; (4) add spreadsheet, data, electronics and networking practice labs; (5) perform manual mobile/desktop/accessibility QA. Accounts, cross-device progress and a full IDE require separate architecture and security work.
