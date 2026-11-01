@@ -1,0 +1,61 @@
+/* SkillSpring final UI/UX system — shared polish layer */
+:root{--ux-radius:16px;--ux-shadow:0 18px 48px rgba(0,0,0,.22);--ux-focus:#c4b8ff}
+html{scroll-behavior:smooth;scroll-padding-top:88px}
+body{line-height:1.55;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+a{transition:color .18s ease,opacity .18s ease}
+button,a,input,select,textarea{touch-action:manipulation}
+button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:2px solid var(--ux-focus)!important;outline-offset:3px!important}
+::selection{background:#8171e8;color:#fff}
+.skip-link{position:fixed;z-index:1000;top:10px;left:10px;padding:11px 15px;border-radius:9px;background:#f4f1ff;color:#17152a;font-weight:800;transform:translateY(-160%);transition:transform .18s}
+.skip-link:focus{transform:translateY(0)}
+.sidebar{overflow-y:auto;overscroll-behavior:contain;scrollbar-width:thin;scrollbar-color:#3a4963 transparent}
+.sidebar .side-nav{gap:3px}
+.sidebar .nav-link{min-height:42px;line-height:1.35}
+.sidebar .nav-link.active{box-shadow:inset 3px 0 #a99bff}
+.mobile-menu{width:42px;height:42px;border:1px solid var(--line);border-radius:11px;background:#172438}
+.main-area{min-width:0}
+.page{width:100%}
+.welcome-row{gap:clamp(20px,4vw,56px)}
+.welcome-row h1{letter-spacing:-.045em}
+.lead,.page-intro p{font-size:clamp(14px,1.25vw,16px)}
+.btn-primary,.btn-secondary,.filter-chip,.tool-button,.run-button{min-height:42px}
+.stat-card,.school-card,.catalogue-card,.feature-card,.lab-card,.project-card,.workspace-card,.path-card{border-radius:var(--ux-radius);box-shadow:0 5px 18px rgba(0,0,0,.08)}
+.school-card,.catalogue-card,.feature-card,.lab-card,.project-card,.workspace-card,.path-card{padding:20px}
+.school-card h3,.catalogue-card h3,.feature-card strong,.lab-card h3,.project-card h3,.workspace-card h3{font-size:15px}
+.school-card p,.catalogue-card p,.feature-card small,.lab-card p,.project-card p,.workspace-card p{font-size:12px;line-height:1.65}
+.section-heading{gap:16px}
+.section-heading h2{font-size:clamp(20px,2vw,25px)}
+.search-row input,.search-row select{min-height:46px}
+.search-row input:focus,.search-row select:focus{border-color:#9b8cff;box-shadow:0 0 0 3px #9b8cff24}
+.empty-state{padding:44px 20px}
+.detail-hero{box-shadow:var(--ux-shadow)}
+.notice{line-height:1.65}
+.editor-card,.panel,.challenge-sidebar,.challenge-main,.lesson,.capstone{border-radius:14px}
+textarea,pre{tab-size:4}
+footer{line-height:1.7}
+@media(min-width:1500px){.page{padding-left:clamp(42px,4vw,70px);padding-right:clamp(42px,4vw,70px)}}
+@media(max-width:760px){
+ .sidebar{width:min(300px,86vw);padding:18px 14px}
+ .sidebar.open{transform:translateX(0)}
+ .sidebar-backdrop{position:fixed;inset:0;background:rgba(3,8,18,.68);backdrop-filter:blur(3px);z-index:9;opacity:0;pointer-events:none;transition:opacity .2s}
+ .sidebar-backdrop.visible{opacity:1;pointer-events:auto}
+ .topbar{height:62px;gap:10px}
+ .breadcrumb{font-size:11px;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+ .page{padding:24px 16px 48px}
+ .welcome-row{padding:10px 0 25px}
+ .welcome-row h1{font-size:clamp(35px,10vw,44px);letter-spacing:-.04em}
+ .hero-art{max-width:420px;width:100%;margin:0 auto}
+ .stats-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .stat-card{min-width:0;gap:9px}
+ .stat-card strong{font-size:17px}
+ .section-heading{align-items:flex-start}
+ .section-heading .text-link{white-space:nowrap}
+ .level-strip{gap:8px}
+ .welcome-actions>*{flex:1 1 100%;text-align:center;justify-content:center}
+ .playground-toolbar{align-items:flex-start;gap:12px;flex-direction:column}
+ .playground-toolbar>div{width:100%}
+ .playground-toolbar button{flex:1}
+ .editor-card textarea{min-height:240px}
+}
+@media(max-width:390px){.stats-grid{grid-template-columns:1fr}.section-heading{flex-direction:column}.level-strip{grid-template-columns:1fr 1fr}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important;animation:none!important}}
