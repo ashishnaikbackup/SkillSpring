@@ -115,6 +115,18 @@ if (fs.existsSync(path.join(root, "courses.js"))) {
   }
 }
 
+// Cross-discipline engineering field studio release contract.
+const fieldStudioPath = path.join(root, "engineering-field-studio.html");
+if (!fs.existsSync(fieldStudioPath)) fail("Engineering field practice studio is missing.");
+if (fs.existsSync(fieldStudioPath)) {
+  const studio = fs.readFileSync(fieldStudioPath, "utf8");
+  for (const required of ["mechanical", "civil", "chemical", "instrumentation", "biomedical", "fieldCheck", "fieldCalc", "aria-live", "prefers-reduced-motion"]) {
+    if (!studio.includes(required)) fail("Engineering field studio is missing required learning/accessibility feature: " + required + ".");
+  }
+  if (!dashboardHtml.includes("engineering-course.html")) fail("Engineering foundations navigation is missing from the dashboard.");
+  if (!fs.readFileSync(path.join(root, "engineering-course.html"), "utf8").includes("engineering-field-studio.html")) fail("Engineering field studio is not linked from the engineering course.");
+}
+
 // Curriculum map and graded practice release contract.
 for (const page of ["curriculum-map.html", "advanced-practice.html", "professional-labs.html"]) {
   if (!fs.existsSync(path.join(root, page))) fail(`Required learning expansion page is missing: ${page}.`);
