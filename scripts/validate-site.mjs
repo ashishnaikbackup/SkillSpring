@@ -72,7 +72,8 @@ for (const file of files.filter((f) => f.endsWith(".html"))) {
 // Shared UI/UX contract: every published page must expose the shared design layer and a working skip target.
 for (const file of files.filter((f) => f.endsWith(".html"))) {
   const html = fs.readFileSync(file, "utf8");
-  if (!html.includes('href="ux-polish.css"')) fail(`${relative(file)} is missing the shared UX stylesheet.`);
+  const uxStylesheetCount = (html.match(/href=["\']ux-polish\\.css["\']/g) || []).length;
+  if (uxStylesheetCount !== 1) fail(`${relative(file)} must load the shared UX stylesheet exactly once (found ${uxStylesheetCount}).`);
   if (!/<a\b[^>]*class=["'][^"']*\bskip-link\b[^"']*["'][^>]*href=["']#main-content["']/i.test(html)) {
     fail(`${relative(file)} is missing an accessible skip link to main content.`);
   }
