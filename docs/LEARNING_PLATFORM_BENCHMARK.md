@@ -88,7 +88,7 @@ This is a product-learning benchmark, not a request to copy another platform's l
 
 - A first dedicated [Python coding practice path](../python-practice.html) now includes ten browser-run challenges with automated assertions, hints, solutions and local progress.
 - The 16-module [Python course](../python-course.html) provides the longer conceptual path and a personal-expense-tracker capstone.
-- The [Power BI course](../essential-course.html?course=powerbi) now links to a hands-on [retail dashboard capstone](POWER_BI_RETAIL_PROJECT.md) with fictional Sales, Products and Regions CSV data, model relationships, DAX measures, report tasks and validation checks. It still needs a full browser-level Power BI assessment; learners must use Power BI Desktop to produce the PBIX artifact.
+- The [Power BI course](../essential-course.html?course=powerbi) now links to a hands-on [retail dashboard capstone](../powerbi-project.html) with fictional Sales, Products and Regions CSV data, model relationships, DAX measures, report tasks and validation checks. It still needs a full browser-level Power BI assessment; learners must use Power BI Desktop to produce the PBIX artifact.
 - The [Start Here guide](../start-here.html) explains the beginner learning order. DSA is intentionally positioned after Python fundamentals.
 
 ## Gaps to close next
