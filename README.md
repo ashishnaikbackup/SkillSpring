@@ -6,6 +6,8 @@ The public product and repository are named SkillSpring.
 
 ## Start learning
 
+- **[Mastery Hub](mastery-hub.html)** — personal learning plan, six-step mastery loop, spaced-revision queue, deliberate-practice log, weekly checklist and portfolio evidence gate. Saves locally in your browser.
+
 - **[Career Launchpad](career-launchpad.html)** — 30 course-specific portfolio capstones with beginner steps, expected evidence, role directions and interview practice across programming, web, data, finance, office tools, career, creative media, productivity and engineering.
 - **[Progress Backup](progress-backup.html)** — privately export/import browser-local course and practice progress as JSON to move it manually between devices; no account or cloud sync required.
 - **[Whole-platform completion addendum](docs/WHOLE_PLATFORM_COMPLETION_ADDENDUM.md)** — current delivery status and the remaining human review, course-depth and manual QA acceptance requirements.
