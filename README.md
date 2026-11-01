@@ -80,7 +80,7 @@ These schools are the long-term curriculum scope. A topic appearing in the catal
 - [x] Add automated static site validation for JavaScript syntax, local links, course catalogue routes and required lesson data.
 - [ ] Expand accessible graded assessments, progress analytics and course search.
 - [ ] Add optional accounts and secure cross-device progress sync.
-- [x] Add a weekly course freshness monitor with official reference-link checks and human review reminders. Initial content audits are explicitly flagged rather than falsely marked complete.
+- [x] Add a weekly course freshness monitor with official reference-link checks and human review reminders. The initial date is a catalogue/route/source baseline, not a claim of line-by-line editorial sign-off for every lesson.
 - [x] Add a maintained, sourced headline feed with a daily allowlisted RSS/Atom refresh, publisher links, publication dates and source-status handling.
 
 ## Local quality checks
