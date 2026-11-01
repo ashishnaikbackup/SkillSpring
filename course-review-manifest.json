@@ -11,7 +11,12 @@
         "https://docs.python.org/3/tutorial/",
         "https://docs.python.org/3/library/"
       ],
-      "reviewStatus": "initial-review-required"
+      "reviewStatus": "initial-review-required",
+      "contentFiles": [
+        "course.js",
+        "python-course.html",
+        "python-practice.js"
+      ]
     },
     {
       "slug": "c",
@@ -22,7 +27,11 @@
         "https://learn.microsoft.com/en-us/cpp/c-language/",
         "https://www.gnu.org/software/gnu-c-manual/gnu-c-manual.html"
       ],
-      "reviewStatus": "initial-review-required"
+      "reviewStatus": "initial-review-required",
+      "contentFiles": [
+        "course-engine.js",
+        "c-course.html"
+      ]
     },
     {
       "slug": "cpp",
@@ -33,7 +42,11 @@
         "https://learn.microsoft.com/en-us/cpp/cpp/",
         "https://isocpp.org/"
       ],
-      "reviewStatus": "initial-review-required"
+      "reviewStatus": "initial-review-required",
+      "contentFiles": [
+        "course-engine.js",
+        "cpp-course.html"
+      ]
     },
     {
       "slug": "java",
@@ -44,7 +57,11 @@
         "https://dev.java/learn/",
         "https://docs.oracle.com/en/java/"
       ],
-      "reviewStatus": "initial-review-required"
+      "reviewStatus": "initial-review-required",
+      "contentFiles": [
+        "course-engine.js",
+        "java-course.html"
+      ]
     },
     {
       "slug": "javascript",
@@ -54,7 +71,11 @@
       "sources": [
         "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide"
       ],
-      "reviewStatus": "initial-review-required"
+      "reviewStatus": "initial-review-required",
+      "contentFiles": [
+        "course-engine.js",
+        "javascript-course.html"
+      ]
     },
     {
       "slug": "typescript",
@@ -64,7 +85,11 @@
       "sources": [
         "https://www.typescriptlang.org/docs/"
       ],
-      "reviewStatus": "initial-review-required"
+      "reviewStatus": "initial-review-required",
+      "contentFiles": [
+        "course-engine.js",
+        "typescript-course.html"
+      ]
     },
     {
       "slug": "web",
@@ -75,7 +100,11 @@
         "https://developer.mozilla.org/en-US/docs/Learn_web_development",
         "https://www.w3.org/WAI/standards-guidelines/wcag/"
       ],
-      "reviewStatus": "initial-review-required"
+      "reviewStatus": "initial-review-required",
+      "contentFiles": [
+        "course-engine.js",
+        "web-course.html"
+      ]
     },
     {
       "slug": "sql",
@@ -85,7 +114,11 @@
       "sources": [
         "https://www.postgresql.org/docs/current/tutorial.html"
       ],
-      "reviewStatus": "initial-review-required"
+      "reviewStatus": "initial-review-required",
+      "contentFiles": [
+        "course-engine.js",
+        "sql-course.html"
+      ]
     },
     {
       "slug": "finance",
@@ -97,7 +130,11 @@
         "https://investor.sebi.gov.in/",
         "https://www.investor.gov/"
       ],
-      "reviewStatus": "initial-review-required"
+      "reviewStatus": "initial-review-required",
+      "contentFiles": [
+        "course-engine.js",
+        "finance-course.html"
+      ]
     },
     {
       "slug": "data",
@@ -108,7 +145,11 @@
         "https://pandas.pydata.org/docs/",
         "https://scikit-learn.org/stable/user_guide.html"
       ],
-      "reviewStatus": "initial-review-required"
+      "reviewStatus": "initial-review-required",
+      "contentFiles": [
+        "course-engine.js",
+        "data-course.html"
+      ]
     },
     {
       "slug": "ux",
@@ -119,7 +160,11 @@
         "https://www.w3.org/WAI/",
         "https://www.nngroup.com/articles/"
       ],
-      "reviewStatus": "initial-review-required"
+      "reviewStatus": "initial-review-required",
+      "contentFiles": [
+        "course-engine.js",
+        "ux-course.html"
+      ]
     },
     {
       "slug": "sheets",
@@ -130,7 +175,11 @@
         "https://workspace.google.com/products/sheets/",
         "https://support.microsoft.com/excel"
       ],
-      "reviewStatus": "initial-review-required"
+      "reviewStatus": "initial-review-required",
+      "contentFiles": [
+        "course-engine.js",
+        "sheets-course.html"
+      ]
     },
     {
       "slug": "word",
@@ -140,7 +189,10 @@
       "sources": [
         "https://support.microsoft.com/word"
       ],
-      "reviewStatus": "initial-review-required"
+      "reviewStatus": "initial-review-required",
+      "contentFiles": [
+        "essential-courses.js"
+      ]
     },
     {
       "slug": "powerpoint",
@@ -150,7 +202,10 @@
       "sources": [
         "https://support.microsoft.com/powerpoint"
       ],
-      "reviewStatus": "initial-review-required"
+      "reviewStatus": "initial-review-required",
+      "contentFiles": [
+        "essential-courses.js"
+      ]
     },
     {
       "slug": "excel",
@@ -160,7 +215,10 @@
       "sources": [
         "https://support.microsoft.com/excel"
       ],
-      "reviewStatus": "initial-review-required"
+      "reviewStatus": "initial-review-required",
+      "contentFiles": [
+        "essential-courses.js"
+      ]
     },
     {
       "slug": "powerbi",
@@ -171,7 +229,15 @@
         "https://learn.microsoft.com/en-us/power-bi/",
         "https://learn.microsoft.com/en-us/power-bi/fundamentals/power-bi-learning-path-directory"
       ],
-      "reviewStatus": "initial-review-required"
+      "reviewStatus": "initial-review-required",
+      "contentFiles": [
+        "essential-courses.js",
+        "powerbi-project.html",
+        "docs/POWER_BI_RETAIL_PROJECT.md",
+        "data/powerbi-sales.csv",
+        "data/powerbi-products.csv",
+        "data/powerbi-regions.csv"
+      ]
     },
     {
       "slug": "outlook",
@@ -182,7 +248,10 @@
         "https://support.microsoft.com/outlook",
         "https://support.microsoft.com/teams"
       ],
-      "reviewStatus": "initial-review-required"
+      "reviewStatus": "initial-review-required",
+      "contentFiles": [
+        "essential-courses.js"
+      ]
     },
     {
       "slug": "access",
@@ -193,7 +262,10 @@
         "https://support.microsoft.com/access",
         "https://learn.microsoft.com/en-us/office/client-developer/access/desktop-database-reference/"
       ],
-      "reviewStatus": "initial-review-required"
+      "reviewStatus": "initial-review-required",
+      "contentFiles": [
+        "essential-courses.js"
+      ]
     },
     {
       "slug": "powerautomate",
@@ -203,7 +275,10 @@
       "sources": [
         "https://learn.microsoft.com/en-us/power-automate/"
       ],
-      "reviewStatus": "initial-review-required"
+      "reviewStatus": "initial-review-required",
+      "contentFiles": [
+        "essential-courses.js"
+      ]
     },
     {
       "slug": "git",
@@ -214,7 +289,10 @@
         "https://git-scm.com/doc",
         "https://docs.github.com/en"
       ],
-      "reviewStatus": "initial-review-required"
+      "reviewStatus": "initial-review-required",
+      "contentFiles": [
+        "essential-courses.js"
+      ]
     },
     {
       "slug": "interview",
@@ -225,7 +303,10 @@
         "https://www.ncs.gov.in/",
         "https://www.naceweb.org/career-readiness/competencies/career-readiness-defined/"
       ],
-      "reviewStatus": "initial-review-required"
+      "reviewStatus": "initial-review-required",
+      "contentFiles": [
+        "essential-courses.js"
+      ]
     },
     {
       "slug": "logic",
@@ -236,7 +317,10 @@
         "https://cs50.harvard.edu/x/",
         "https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/"
       ],
-      "reviewStatus": "initial-review-required"
+      "reviewStatus": "initial-review-required",
+      "contentFiles": [
+        "essential-courses.js"
+      ]
     },
     {
       "slug": "dsa",
@@ -247,7 +331,10 @@
         "https://algs4.cs.princeton.edu/home/",
         "https://cp-algorithms.com/"
       ],
-      "reviewStatus": "initial-review-required"
+      "reviewStatus": "initial-review-required",
+      "contentFiles": [
+        "essential-courses.js"
+      ]
     },
     {
       "slug": "vibecoding",
@@ -258,7 +345,10 @@
         "https://docs.github.com/en/copilot",
         "https://platform.openai.com/docs/"
       ],
-      "reviewStatus": "initial-review-required"
+      "reviewStatus": "initial-review-required",
+      "contentFiles": [
+        "essential-courses.js"
+      ]
     }
   ]
 }
