@@ -50,5 +50,11 @@ jobs:
           done
           curl --fail --silent --show-error --location "$base/" -o /tmp/skillspring-home.html
           grep -qi "SkillSpring" /tmp/skillspring-home.html
-          curl --fail --silent --show-error --location "$base/start-here.html" | grep -qi "Start from zero"
-          curl --fail --silent --show-error --location "$base/polyglot.html" | grep -qi "Multi-language coding lab"
+          curl --fail --silent --show-error --location "$base/start-here.html" -o /tmp/skillspring-start.html
+          grep -qi "Start from zero" /tmp/skillspring-start.html
+          curl --fail --silent --show-error --location "$base/polyglot.html" -o /tmp/skillspring-lab.html
+          grep -qi "Multi-language coding lab" /tmp/skillspring-lab.html
+          curl --fail --silent --show-error --location "$base/field-radar.html" -o /tmp/skillspring-radar.html
+          grep -qi "Latest headlines from the field" /tmp/skillspring-radar.html
+          curl --fail --silent --show-error --location "$base/powerbi-project.html" -o /tmp/skillspring-powerbi.html
+          grep -qi "Build a retail sales" /tmp/skillspring-powerbi.html
