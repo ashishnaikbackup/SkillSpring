@@ -27,7 +27,7 @@ A separate [Engineering Field Practice Studio](https://ashishnaikbackup.github.i
 | Public website | Static SkillSpring site deployed on GitHub Pages | Deployment workflow succeeded and its HTTP smoke tests passed. |
 | Learning library | 25 course catalogue entries across 12 learning schools | Catalogue routes, required course data and local links are checked by the static validator. Not every school has a full course yet. |
 | Beginner path | Start Here guide, programming logic, 16-module Python course and DSA progression | Dependency order is documented; DSA follows programming fundamentals. |
-| Coding practice | Ten progressive Python coding challenges | Runs in the browser with Pyodide; includes automated assertions, hints, revealable example solutions and local saved code/progress. |
+| Coding practice | 10 Python, 8 JavaScript and 8 SQL/SQLite graded challenges | Python runs through Pyodide; JavaScript runs in a sandboxed browser frame; SQL uses SQLite in the browser. Tracks include checks, hints, example solutions and local progress. |
 | Multi-language lab | 26 language/tool choices | Python, JavaScript, HTML/CSS preview and SQLite run in the browser. Twenty-two additional languages have starter files, download and local run instructions; they are not remotely compiled by SkillSpring. |
 | Microsoft / workplace tools | Word, PowerPoint, Excel, Power BI, Outlook & Teams, Access and Power Automate courses | Lesson-based introductions and workplace tasks. Power BI also has a separate hands-on retail dashboard project. |
 | Power BI project | Three fictional CSV datasets, 36 transactions, modelling and DAX/report brief | Dataset keys and arithmetic are checked by the site validator; project totals are documented for reconciliation. Learners create the PBIX in Power BI Desktop. |
@@ -58,7 +58,7 @@ A shared `ux-polish.css` layer is now applied exactly once across all 25 public 
 ## Known limits — do not overstate the release
 
 1. **Curriculum depth:** 25 catalogue entries are published, but the long-term curriculum across all 12 schools is not fully authored to textbook or professional certification depth. Some courses are six-to-eight lesson foundations. The README roadmap identifies the remaining course families and assessment work.
-2. **Practice coverage:** the dedicated automatic coding autograder currently exists for the ten Python challenges. JavaScript and SQLite are available in the lab, but do not yet have equivalent graded challenge tracks.
+2. **Practice coverage:** Python has 10 graded challenges; JavaScript and SQL/SQLite have eight each. More tasks, broader edge-case coverage and manual browser verification remain worthwhile additions.
 3. **IDE scope:** the multi-language lab is a lightweight practice editor. It is not a full IDE with language-server autocomplete, breakpoints, step debugging or guaranteed online compilation for all languages.
 4. **Progress:** course and practice progress are stored in browser local storage on the current device. There are no learner accounts or cross-device synchronisation.
 5. **Power BI:** SkillSpring supplies fictional data and a detailed project brief; the learner needs Power BI Desktop to create and save the PBIX.
