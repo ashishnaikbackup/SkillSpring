@@ -73,10 +73,10 @@ for (const file of files.filter((f) => f.endsWith(".html"))) {
 for (const file of files.filter((f) => f.endsWith(".html"))) {
   const html = fs.readFileSync(file, "utf8");
   if (!html.includes('href="ux-polish.css"')) fail(`${relative(file)} is missing the shared UX stylesheet.`);
-  if (!/<a\\b[^>]*class=["'][^"']*\\bskip-link\\b[^"']*["'][^>]*href=["']#main-content["']/i.test(html)) {
+  if (!/<a\b[^>]*class=["'][^"']*\bskip-link\b[^"']*["'][^>]*href=["']#main-content["']/i.test(html)) {
     fail(`${relative(file)} is missing an accessible skip link to main content.`);
   }
-  if (!/<main\\b[^>]*id=["']main-content["']/i.test(html)) fail(`${relative(file)} is missing the main-content landmark target.`);
+  if (!/<main\b[^>]*id=["']main-content["']/i.test(html)) fail(`${relative(file)} is missing the main-content landmark target.`);
 }
 const dashboardHtml = fs.readFileSync(path.join(root, "index.html"), "utf8");
 if (!dashboardHtml.includes('id="sidebarBackdrop"') || !dashboardHtml.includes('aria-controls="sidebar"') || !dashboardHtml.includes('aria-expanded="false"')) {
