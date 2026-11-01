@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "description": "Review schedule for 25 published course entries. Existing courses start with lastReviewed=null and reviewStatus=initial-review-required until a human completes an initial content review.",
+  "description": "Review schedule for 30 published course entries. Initial human editorial sign-off remains separate from automated validation and AI-assisted structural review.",
   "courses": [
     {
       "slug": "python",
@@ -353,6 +353,76 @@
       "contentFiles": [
         "engineering-course-data.js",
         "engineering-course.html"
+      ]
+    },
+    {
+      "slug": "business",
+      "title": "Business & Accounting Foundations",
+      "lastReviewed": null,
+      "reviewIntervalDays": 180,
+      "sources": [
+        "https://www.sba.gov/business-guide",
+        "https://www.ifrs.org/issued-standards/list-of-standards/"
+      ],
+      "reviewStatus": "initial-review-required",
+      "contentFiles": [
+        "essential-courses.js"
+      ]
+    },
+    {
+      "slug": "it",
+      "title": "IT Support, Networking & Cloud Foundations",
+      "lastReviewed": null,
+      "reviewIntervalDays": 90,
+      "sources": [
+        "https://www.cloudflare.com/learning/",
+        "https://learn.microsoft.com/en-us/training/azure/"
+      ],
+      "reviewStatus": "initial-review-required",
+      "contentFiles": [
+        "essential-courses.js"
+      ]
+    },
+    {
+      "slug": "maths",
+      "title": "Mathematics, Science & Research Foundations",
+      "lastReviewed": null,
+      "reviewIntervalDays": 180,
+      "sources": [
+        "https://openstax.org/subjects/math",
+        "https://www.khanacademy.org/"
+      ],
+      "reviewStatus": "initial-review-required",
+      "contentFiles": [
+        "essential-courses.js"
+      ]
+    },
+    {
+      "slug": "creative",
+      "title": "Creative Media, Design & Communication",
+      "lastReviewed": null,
+      "reviewIntervalDays": 180,
+      "sources": [
+        "https://www.w3.org/WAI/",
+        "https://creativecommons.org/share-your-work/"
+      ],
+      "reviewStatus": "initial-review-required",
+      "contentFiles": [
+        "essential-courses.js"
+      ]
+    },
+    {
+      "slug": "productivity",
+      "title": "Personal Productivity & Knowledge Management",
+      "lastReviewed": null,
+      "reviewIntervalDays": 180,
+      "sources": [
+        "https://learningcenter.unc.edu/tips-and-tools/",
+        "https://www.nngroup.com/articles/"
+      ],
+      "reviewStatus": "initial-review-required",
+      "contentFiles": [
+        "essential-courses.js"
       ]
     }
   ]
