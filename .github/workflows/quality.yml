@@ -18,5 +18,7 @@ jobs:
         uses: actions/checkout@v7
       - name: Check freshness script syntax
         run: node --check scripts/check-course-freshness.mjs
+      - name: Check Field Radar collector syntax
+        run: node --check scripts/update-field-radar.mjs
       - name: Validate JavaScript, course data and local links
         run: node scripts/validate-site.mjs
