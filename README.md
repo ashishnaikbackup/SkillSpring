@@ -181,3 +181,6 @@ Do not rush to DSA before understanding loops, functions, arrays/lists and basic
 
 
 **Assessment behaviour update:** The 12 essential lesson-player courses now require the learner to pass that lesson's knowledge check before marking it complete. Correct answers unlock completion and provide feedback; incorrect answers show the correct answer and prompt a review. This is a per-lesson gate, not yet a multi-question cumulative final exam or a substitute for the course-level assessments still required.
+
+
+**Open completion tracker:** [Issue #3 — Complete the full 12-school curriculum and practice labs](https://github.com/ashishnaikbackup/SkillSpring/issues/3) tracks the remaining authoring, additional graded labs and release gates. The initial editorial audit of the 24 existing course entries remains separately tracked in [issue #2](https://github.com/ashishnaikbackup/SkillSpring/issues/2).
