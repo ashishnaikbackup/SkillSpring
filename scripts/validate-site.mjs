@@ -46,7 +46,7 @@ const existsTarget = (fromFile, raw) => {
   return false;
 };
 
-for (const file of files.filter((f) => f.endsWith(".js") || f.endsWith(".mjs"))) {
+for (const file of files.filter((f) => f.endsWith(".js"))) {
   try { new vm.Script(fs.readFileSync(file, "utf8"), { filename: relative(file) }); }
   catch (error) { fail(`JavaScript syntax error in ${relative(file)}: ${error.message}`); }
 }
