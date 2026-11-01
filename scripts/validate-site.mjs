@@ -84,6 +84,29 @@ if (!dashboardHtml.includes('id="sidebarBackdrop"') || !dashboardHtml.includes('
   fail("The dashboard mobile navigation is missing its accessible menu/backdrop controls.");
 }
 
+// Engineering fundamentals course release contract.
+for (const file of ["engineering-course.html", "engineering-course-data.js"]) {
+  if (!fs.existsSync(path.join(root, file))) fail(`Required engineering course asset is missing: ${file}.`);
+}
+if (fs.existsSync(path.join(root, "engineering-course.html"))) {
+  const engineeringPage = fs.readFileSync(path.join(root, "engineering-course.html"), "utf8");
+  for (const asset of ["engineering-course-data.js", "essential-courses.js", "essential-course.js"]) {
+    if (!engineeringPage.includes(`src="${asset}"`)) fail(`Engineering course page does not load ${asset}.`);
+  }
+}
+if (fs.existsSync(path.join(root, "engineering-course-data.js"))) {
+  const engineeringData = fs.readFileSync(path.join(root, "engineering-course-data.js"), "utf8");
+  const lessonCount = (engineeringData.match(/^\s*\["/gm) || []).length;
+  if (!engineeringData.includes("essentialCourses.engineering")) fail("Engineering course data is not registered as essentialCourses.engineering.");
+  if (lessonCount < 14) fail(`Engineering foundations course requires at least 14 progressive lessons (found ${lessonCount}).`);
+}
+if (fs.existsSync(path.join(root, "courses.js"))) {
+  const catalogue = fs.readFileSync(path.join(root, "courses.js"), "utf8");
+  if (!catalogue.includes('slug:"engineering"') || !catalogue.includes('href:"engineering-course.html"')) {
+    fail("Engineering foundations course is missing from the course catalogue.");
+  }
+}
+
 // Curriculum map and graded practice release contract.
 for (const page of ["curriculum-map.html", "advanced-practice.html", "professional-labs.html"]) {
   if (!fs.existsSync(path.join(root, page))) fail(`Required learning expansion page is missing: ${page}.`);
