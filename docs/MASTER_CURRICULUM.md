@@ -96,6 +96,8 @@ Lessons must show derivations and worked solutions, not only final answers.
 - A learner with no prior knowledge can follow prerequisites without unexplained jumps.
 
 ## Current implementation note
+
+The public site is deployed at [ashishnaikbackup.github.io/SkillSpring](https://ashishnaikbackup.github.io/SkillSpring/). On 1 November 2026, the GitHub Actions quality workflow, weekly freshness workflow and Pages deployment all completed successfully. The Pages workflow smoke-tested the homepage, Start Here, course catalogue, multi-language lab, logic course route, Python practice, Power BI project, Field Radar, feed JSON, sample CSVs and core assets. Static validation and HTTP smoke tests do not replace hands-on browser testing of every interaction or external application workflow.
 The public catalogue contains 24 course entries: 12 original language, web, data, design and finance foundations plus 12 essential lesson-based courses (Word, PowerPoint, Excel, Power BI, Interview/Career Readiness, Outlook/Teams, Access, Power Automate, Git/GitHub, absolute-beginner programming logic, DSA and AI-assisted/vibe coding). The essential lesson-player data contains 12 detailed courses and 98 lessons. The topic catalogue routes matching subjects to these course pages. A multi-language practice page provides browser execution for Python, JavaScript, HTML/CSS preview and SQLite, plus downloadable source and local-run commands for additional languages. This is a meaningful expansion, not completion of every course family above; compiled-language execution occurs on the learner's own computer and the lightweight editor is not a full IDE. The remaining course families must be authored to the same standard before SkillSpring can claim comprehensive coverage.
 
 ## Absolute-beginner programming sequence
@@ -126,6 +128,14 @@ Teach learners to use AI coding tools as a supervised accelerator, not as a subs
 - Deploy to a preview, test it and maintain rollback capability.
 - Be able to explain and modify the delivered code without the assistant.
 
-## Power BI practical capstone status\n\nThe Power BI course now links to a hands-on [retail sales dashboard project](../powerbi-project.html) with three fictional CSV datasets (Sales, Products and Regions), a star-schema relationship task, a date table, DAX measures, visual/report requirements, validation steps and portfolio deliverables. The PBIX must be created in Power BI Desktop; SkillSpring supplies the data and guided brief but does not run the Power BI engine in the browser.\n\n## Interactive Python practice status\n\nA dedicated [Python coding practice path](../python-practice.html) has been added with ten progressive challenges: output, variables, arithmetic, conditions, loops, functions, lists, dictionaries, debugging and a mini expense-total capstone. It executes Python in-browser through Pyodide, checks learner code with automated assertions, provides hints and revealable example solutions, and stores code/progress in local storage. It is a first practical coding loop, not yet a full autograder, debugger or account-synchronised assessment system. The learner must still read feedback, understand the code and practise independently.\n\n## Multi-language practice lab status
+## Power BI practical capstone status
+
+The Power BI course now links to a hands-on [retail sales dashboard project](../powerbi-project.html) with three fictional CSV datasets (Sales, Products and Regions), a star-schema relationship task, a date table, DAX measures, visual/report requirements, validation steps and portfolio deliverables. The PBIX must be created in Power BI Desktop; SkillSpring supplies the data and guided brief but does not run the Power BI engine in the browser.
+
+## Interactive Python practice status
+
+A dedicated [Python coding practice path](../python-practice.html) has been added with ten progressive challenges: output, variables, arithmetic, conditions, loops, functions, lists, dictionaries, debugging and a mini expense-total capstone. It executes Python in-browser through Pyodide, checks learner code with automated assertions, provides hints and revealable example solutions, and stores code/progress in local storage. It is a first practical coding loop, not yet a full autograder, debugger or account-synchronised assessment system. The learner must still read feedback, understand the code and practise independently.
+
+## Multi-language practice lab status
 
 The current standalone lab offers Python through Pyodide, JavaScript execution in a sandboxed browser frame, HTML/CSS/JS preview and SQLite via sql.js. For additional languages it provides downloadable starter files and local compiler/runtime instructions. It does not claim online execution for those languages. The current editor is a lightweight textarea, not a full language-server IDE. Do not advertise debugger, autocomplete or guaranteed execution where not implemented.
