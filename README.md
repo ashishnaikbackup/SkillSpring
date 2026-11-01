@@ -15,7 +15,7 @@ The public product and repository are named SkillSpring.
 - **[Course library](courses.html)** — browse all published self-paced courses.
 - **[Full 12-school curriculum map](curriculum-map.html)** — inspect the complete learning-school scope, course families, eight progressive stages, assessment standards and portfolio projects. This is a syllabus map, not a claim that every lesson is fully authored.
 - **[Graded JavaScript & SQL practice](advanced-practice.html)** — eight JavaScript and eight SQL challenges with browser-based checks, hints, example solutions and local progress.
-- **[Professional practice labs](professional-labs.html)** — interactive spreadsheet modelling, descriptive statistics, Ohm’s law/power, IPv4 subnetting and UI/UX accessibility review.
+- **[Professional practice labs](professional-labs.html)** — interactive spreadsheet modelling, descriptive statistics, Ohm’s law/power, IPv4 subnetting, UI/UX accessibility review, personal cash-flow modelling and business unit economics.
 - **[Engineering Field Practice Studio](engineering-field-studio.html)** — worked and auto-checked beginner simulations for mechanical statics, civil quantity take-off, chemical mass balance, 4–20 mA instrumentation and biomedical dilution mathematics.
 - **[Version 1 release status](docs/RELEASE_STATUS.md)** — live website, shipped features, automated checks, schedules and known limitations.
 - **[UI/UX audit](docs/UI_UX_AUDIT.md)** — cross-page responsive/accessibility polish, verification scope and remaining manual release QA.
