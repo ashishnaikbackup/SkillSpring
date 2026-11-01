@@ -11,6 +11,7 @@ The public product and repository are named SkillSpring.
 - **[Field Radar](field-radar.html)** — short educational explainers about changing tools, technology and professional skills. This is a curated learning resource, not a live news feed.
 - **[Learning dashboard](index.html)** — the main platform experience, subject schools, learning paths and Python playground.
 - **[Learning-platform benchmark](docs/LEARNING_PLATFORM_BENCHMARK.md)** — research notes and original teaching principles adapted from Mimo, Brilliant, freeCodeCamp, Microsoft Learn, Google Skillshop and Exercism.
+- **[Course freshness policy](docs/COURSE_FRESHNESS_POLICY.md)** — weekly review-date and official-source checks create a review issue when lessons need human verification; they do not silently rewrite content.
 
 ## Published course library
 
@@ -74,7 +75,7 @@ These schools are the long-term curriculum scope. A topic appearing in the catal
 - [x] Add automated static site validation for JavaScript syntax, local links, course catalogue routes and required lesson data.
 - [ ] Add more accessible graded assessments and improved course search.
 - [ ] Add optional accounts and secure cross-device progress sync.
-- [ ] Add a maintained, sourced technology-news feed alongside the curated Field Radar notes.
+- [x] Add a weekly course freshness monitor with official reference-link checks and human review reminders.\n- [ ] Add a maintained, sourced technology-news feed alongside the curated Field Radar notes.
 
 ## Local quality checks
 
