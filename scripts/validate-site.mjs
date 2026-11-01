@@ -119,6 +119,13 @@ if (fs.existsSync(path.join(root, "courses.js"))) {
 for (const page of ["curriculum-map.html", "advanced-practice.html", "professional-labs.html"]) {
   if (!fs.existsSync(path.join(root, page))) fail(`Required learning expansion page is missing: ${page}.`);
 }
+const engineeringLabPath = path.join(root, "professional-labs.js");
+if (fs.existsSync(engineeringLabPath)) {
+  const engineeringLab = fs.readFileSync(engineeringLabPath, "utf8");
+  for (const required of ["circuitCalc", "cR1", "cR2", "cVs", "cCap", "RC time constant"]) {
+    if (!engineeringLab.includes(required)) fail("Electronics practice lab is missing circuit-analysis feature: " + required + ".");
+  }
+}
 const dashboardForLearning = fs.readFileSync(path.join(root, "index.html"), "utf8");
 for (const href of ["curriculum-map.html", "advanced-practice.html", "professional-labs.html"]) {
   if (!dashboardForLearning.includes(`href="${href}"`)) fail(`Dashboard does not link to ${href}.`);
