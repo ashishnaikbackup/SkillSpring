@@ -163,6 +163,10 @@ The expanded catalogue is a work in progress. Do not interpret a course title or
 
 The [coding lab](polyglot.html) includes in-browser Python (Pyodide), JavaScript, HTML/CSS preview and SQLite practice. For 22 other languages—C, C++, Java, C#, Go, Rust, PHP, Ruby, TypeScript, Kotlin, Swift, R, Bash, Dart, Scala, Lua, Perl, Haskell, Julia, PowerShell, Fortran and GNU Octave—it provides editable starter files, download and local compiler/runtime commands. It is a lightweight editor, not a full IDE with language-server autocomplete, breakpoints or step debugging. An earlier Piston public-API integration was removed because the public API has required authorization since 15 February 2026; SkillSpring does not embed third-party API keys. See the [official Piston API policy](https://github.com/engineer-man/piston#public-api).
 
+## How SkillSpring teaches from zero to professional
+
+Read the [Learning Design Standard](docs/LEARNING_DESIGN_STANDARD.md) for the eight-stage progression, lesson pattern, mastery gates, project rubrics and accessible motion principles. The curriculum map is a syllabus; individual course families are only complete after the full lesson, assessment, project and editorial-review standards are met.
+
 ## Learning order for a complete beginner
 
 Read the [Start Here: Zero to Job-Ready Skills guide](docs/START_HERE_ZERO_TO_JOB.md) for the full staged learning sequence, daily problem-solving routine, role pathways and portfolio guidance.
