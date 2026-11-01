@@ -26,9 +26,9 @@ The shared `ux-polish.css` design layer is loaded exactly once across all 21 pub
 
 ## Automated verification
 
-- Latest quality workflow: [run 41265676746](https://github.com/ashishnaikbackup/SkillSpring/actions/runs/41265676746) — passed on the latest source commit at the time of this audit.
+- Latest quality workflow: [run 41265769156](https://github.com/ashishnaikbackup/SkillSpring/actions/runs/41265769156) — passed on source commit `127496cd6b0c913fb250b5c52a189ef084753adb`.
 - The quality workflow also checks JavaScript and inline-script syntax, local routes/assets, catalogue/course structure, practice data, Power BI sample data and Field Radar integrity.
-- GitHub Pages deployment is triggered automatically on changes. Check [GitHub Actions](https://github.com/ashishnaikbackup/SkillSpring/actions) before assuming the newest changes are live.
+- Latest Pages deployment: [run 41265768992](https://github.com/ashishnaikbackup/SkillSpring/actions/runs/41265768992) — succeeded, including content/link validation and deployed-page/asset smoke tests. Further documentation commits also trigger a fresh deployment.
 
 ## Manual release QA still required
 
