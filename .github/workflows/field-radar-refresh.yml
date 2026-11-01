@@ -3,6 +3,12 @@ name: SkillSpring Field Radar refresh
 on:
   push:
     branches: [main]
+    paths:
+      - 'data/field-radar-sources.json'
+      - 'scripts/update-field-radar.mjs'
+      - 'field-radar.html'
+      - 'field-radar-live.css'
+      - '.github/workflows/field-radar-refresh.yml'
   schedule:
     - cron: "20 2 * * *"
   workflow_dispatch:
