@@ -16,5 +16,7 @@ jobs:
     steps:
       - name: Check out repository
         uses: actions/checkout@v7
+      - name: Check freshness script syntax
+        run: node --check scripts/check-course-freshness.mjs
       - name: Validate JavaScript, course data and local links
         run: node scripts/validate-site.mjs
