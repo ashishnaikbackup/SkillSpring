@@ -53,7 +53,7 @@ jobs:
               'This issue is a review reminder, not permission to overwrite course content automatically.',
               '',
               '## Courses due for review',
-              ...(due.length ? due.map(course => '- **' + course.title + '** (' + course.slug + ') — last reviewed ' + course.lastReviewed + '; interval ' + course.reviewIntervalDays + ' days.') : ['- None']),
+              ...(due.length ? due.map(course => '- **' + course.title + '** (' + course.slug + ') — ' + (course.lastReviewed ? ('last reviewed ' + course.lastReviewed) : 'initial content audit required; no verified review date') + '; interval ' + course.reviewIntervalDays + ' days.') : ['- None']),
               '',
               '## Reference links needing manual verification',
               ...(failed.length ? failed.map(item => '- **' + item.course + '** (' + item.slug + ') — ' + item.url + ' — ' + (item.error || ('HTTP ' + item.httpStatus)) + '.') : ['- None']),
