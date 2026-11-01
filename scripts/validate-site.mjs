@@ -101,8 +101,8 @@ if (fs.existsSync(path.join(root, "engineering-course-data.js"))) {
     const engineeringContext = {};
     const essentialSource = fs.readFileSync(path.join(root, "essential-courses.js"), "utf8");
     vm.runInNewContext(essentialSource + "\n" + engineeringData + "\nglobalThis.__engineering = essentialCourses.engineering;", engineeringContext);
-    if (!engineeringContext.__engineering || !Array.isArray(engineeringContext.__engineering.modules) || engineeringContext.__engineering.modules.length < 14) {
-      fail("Engineering foundations course must load at least 14 progressive lessons.");
+    if (!engineeringContext.__engineering || !Array.isArray(engineeringContext.__engineering.modules) || engineeringContext.__engineering.modules.length < 20) {
+      fail("Engineering foundations course must load at least 20 progressive lessons.");
     }
   } catch (error) {
     fail("Could not load engineering course data: " + error.message);
