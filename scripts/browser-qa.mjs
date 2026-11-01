@@ -4,6 +4,7 @@ import AxeBuilder from "@axe-core/playwright";
 const base = (process.env.SKILLSPRING_BASE_URL || "https://ashishnaikbackup.github.io/SkillSpring").replace(/\/$/, "");
 const browser = await chromium.launch({ headless: true });
 const results = [];
+const pageUrl = route => base + route + (route.includes("?") ? "&" : "?") + "qa=" + Date.now();
 const check = (name, ok, detail = "") => {
   results.push({ name, ok, detail });
   console.log((ok ? "PASS " : "FAIL ") + name + (detail ? " — " + detail : ""));
@@ -12,7 +13,7 @@ try {
   const context = await browser.newContext({ viewport: { width: 1440, height: 900 } });
   const page = await context.newPage();
   for (const route of ["/", "/courses.html", "/career-launchpad.html", "/progress-backup.html", "/engineering-course.html", "/engineering-field-studio.html"]) {
-    const response = await page.goto(base + route, { waitUntil: "networkidle" });
+    const response = await page.goto(pageUrl(route), { waitUntil: "networkidle" });
     check("HTTP " + route, !!response && response.ok(), response ? String(response.status()) : "no response");
     check("main landmark " + route, await page.locator("main#main-content").count() === 1);
     check("skip link " + route, await page.locator('a.skip-link[href="#main-content"]').count() === 1);
@@ -52,7 +53,7 @@ try {
   }
 
   for (const key of ["business", "it", "maths", "creative", "productivity", "powerbi", "excel"]) {
-    await page.goto(base + "/essential-course.html?course=" + key, { waitUntil: "domcontentloaded" });
+    await page.goto(pageUrl("/essential-course.html?course=" + key), { waitUntil: "domcontentloaded" });
     check("course route " + key, await page.locator("#courseTitle").innerText().then(t => !t.toLowerCase().includes("not found")));
     check("course lessons " + key, await page.locator("#courseNav .lesson-nav").count() >= 5);
   }
