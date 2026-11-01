@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#101827">
+<meta name="description" content="Plan deliberate practice, track skill mastery, schedule revision and collect portfolio evidence with SkillSpring Mastery Studio.">
+<title>Mastery Studio · SkillSpring</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="course.css">
+<link rel="stylesheet" href="ux-polish.css">
+<style>
+:root{--bg:#0b1220;--panel:#131e2f;--line:#2b3b52;--muted:#a8b5c8;--text:#edf2fa;--accent:#a99bff;--green:#8fe0b7;--amber:#f4cb82}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 88% 0%,#25204a 0,transparent 32%),var(--bg);color:var(--text);font:15px 'DM Sans',sans-serif;line-height:1.6}.wrap{max-width:1180px;margin:auto;padding:22px}.top{display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap;margin-bottom:34px}.brand{font:800 21px Manrope;color:#fff;text-decoration:none}.brand span{color:var(--accent)}nav{display:flex;gap:14px;flex-wrap:wrap}a{color:#c8beff}.hero{padding:22px 0 30px}.eyebrow{font-size:11px;letter-spacing:1.6px;color:var(--accent);font-weight:700}.hero h1{font:800 clamp(34px,5vw,55px)/1.1 Manrope;margin:10px 0}.hero p{max-width:780px;color:#bfcbda;font-size:17px}.panel{background:var(--panel);border:1px solid var(--line);border-radius:15px;padding:20px;margin:18px 0}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px}.metric{background:#101a2a;border:1px solid var(--line);border-radius:12px;padding:15px}.metric strong{display:block;font:800 28px Manrope;color:#fff}.metric small,.muted{color:var(--muted)}h2{font:800 23px Manrope;margin:0 0 6px}h3{font:700 16px Manrope;margin:0 0 8px}.row{display:flex;gap:10px;align-items:center;flex-wrap:wrap}.row>*{flex:1}.btn,button{font:700 13px 'DM Sans';border:1px solid #485879;background:#202d45;color:#f3f4ff;padding:10px 13px;border-radius:9px;cursor:pointer}.btn.primary,button.primary{background:#6e60c8;border-color:#897be1;color:#fff}.btn:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,a:focus-visible{outline:3px solid #c0b5ff;outline-offset:2px}input,select,textarea{width:100%;background:#0c1625;border:1px solid #3a4b65;color:#eef2fa;border-radius:8px;padding:10px;font:14px 'DM Sans'}.field{min-width:150px}.field label{display:block;font-size:12px;color:#c5d0df;margin-bottom:5px}.skill-list{display:grid;gap:10px}.skill{display:grid;grid-template-columns:1.2fr 1fr 1fr auto;gap:12px;align-items:center;background:#101a2a;border:1px solid var(--line);border-radius:11px;padding:13px}.skill p{margin:3px 0 0;color:var(--muted);font-size:12px}.skill small{color:var(--muted)}.pill{display:inline-block;background:#29264d;color:#d7d0ff;border-radius:20px;padding:3px 8px;font-size:11px}.progress{height:7px;background:#26354b;border-radius:10px;overflow:hidden;margin-top:8px}.progress span{display:block;height:100%;background:linear-gradient(90deg,#8f80f2,#6bd1c3)}.plan{display:grid;grid-template-columns:repeat(7,1fr);gap:8px}.day{background:#101a2a;border:1px solid var(--line);border-radius:10px;padding:10px;min-height:112px}.day strong{display:block;color:#cfc7ff;margin-bottom:7px}.day p{font-size:12px;color:#c0ccdc;margin:4px 0}.review{display:flex;justify-content:space-between;gap:10px;align-items:center;border-bottom:1px solid #293950;padding:10px 0}.review:last-child{border:0}.checklist{display:grid;grid-template-columns:repeat(2,1fr);gap:9px}.check{display:flex;gap:9px;align-items:flex-start;background:#101a2a;padding:10px;border-radius:9px;color:#cbd5e2;font-size:13px}.check input{width:auto;margin-top:4px}.note{border-left:3px solid #8e80ec;background:#1b2540;padding:12px 15px;border-radius:0 9px 9px 0;color:#cbd5e2;margin:14px 0}.footer{border-top:1px solid var(--line);margin-top:35px;padding:20px 0;color:var(--muted);font-size:12px}.empty{color:var(--muted);padding:18px;text-align:center}.danger{background:#3a202b;border-color:#714050}.sr{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+@media(max-width:850px){.grid{grid-template-columns:repeat(2,1fr)}.skill{grid-template-columns:1fr 1fr}.plan{grid-template-columns:repeat(2,1fr)}}@media(max-width:560px){.wrap{padding:15px}.grid,.checklist{grid-template-columns:1fr}.skill{grid-template-columns:1fr}.plan{grid-template-columns:1fr 1fr}.panel{padding:15px}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<main id="main-content" class="wrap">
+<header class="top"><a class="brand" href="index.html">SkillSpring<span>.</span></a><nav aria-label="Main navigation"><a href="index.html">Dashboard</a><a href="start-here.html">Start here</a><a href="courses.html">Courses</a><a href="career-launchpad.html">Capstones</a><a href="progress-backup.html">Progress backup</a></nav></header>
+<section class="hero"><div class="eyebrow">YOUR PERSONAL SKILL DEVELOPMENT WORKSPACE</div><h1>Mastery is built.<br><span style="color:#b7aaff">One deliberate session at a time.</span></h1><p>Turn lessons into skills you can explain, practise and use independently. Build a realistic weekly plan, track confidence honestly, revisit important ideas and collect evidence of your work.</p></section>
+<div class="grid" aria-live="polite">
+ <article class="metric"><small>Skills you're tracking</small><strong id="metricSkills">0</strong><small>Across your chosen fields</small></article>
+ <article class="metric"><small>Independent mastery</small><strong id="metricMastered">0</strong><small>Skills you can use without a walkthrough</small></article>
+ <article class="metric"><small>Revision due</small><strong id="metricDue">0</strong><small>Concepts ready for retrieval practice</small></article>
+</div>
+<section class="panel"><h2>1. Your mastery map</h2><p class="muted">Start with the suggested skills or add your own. Be honest: watching a lesson is not the same as being able to do the task yourself.</p>
+<div class="row" style="margin:14px 0"><div class="field"><label for="skillName">Skill or topic</label><input id="skillName" maxlength="90" placeholder="e.g. Python functions, Excel PivotTables"></div><div class="field"><label for="skillSchool">Learning school</label><select id="skillSchool"><option>Programming & software</option><option>Data & AI</option><option>Engineering & electronics</option><option>Business & accounting</option><option>Finance</option><option>IT, networking & cloud</option><option>Design & creative</option><option>Office & productivity</option><option>Mathematics & science</option><option>Career & communication</option><option>Personal development</option><option>Other</option></select></div><div class="field" style="align-self:end"><button class="primary" id="addSkill">Add skill</button></div></div>
+<div class="skill-list" id="skillList" aria-live="polite"></div>
+<div class="row" style="margin-top:14px"><button id="restoreDefaults">Restore suggested skills</button><button id="exportData">Export mastery data</button><div class="field"><label for="importData">Import mastery backup (JSON)</label><input id="importData" type="file" accept="application/json,.json"></div></div><p id="dataStatus" class="muted" role="status">Your mastery map is saved only in this browser on this device.</p>
+</section>
+<section class="panel"><h2>2. Build a weekly study plan</h2><p class="muted">Choose a sustainable number of hours. The planner distributes your time across new learning, active practice, revision and portfolio work.</p>
+<div class="row" style="margin:14px 0"><div class="field"><label for="hours">Hours available per week</label><input id="hours" type="number" min="1" max="60" value="7"></div><div class="field"><label for="days">Study days per week</label><select id="days"><option value="3">3 days</option><option value="4">4 days</option><option value="5" selected>5 days</option><option value="6">6 days</option><option value="7">7 days</option></select></div><div class="field"><label for="focus">Main focus this week</label><select id="focus"><option value="balanced">Balanced skill growth</option><option value="foundation">Strengthen fundamentals</option><option value="practice">More hands-on practice</option><option value="portfolio">Build portfolio evidence</option><option value="revision">Revision and retention</option></select></div><div class="field" style="align-self:end"><button class="primary" id="makePlan">Generate my week</button></div></div>
+<div class="plan" id="weekPlan" aria-live="polite"></div>
+<div class="note"><strong>A useful 60-minute session:</strong> 5 min recall yesterday's ideas · 20 min learn one small concept · 25 min solve/build without copying · 10 min check mistakes and write what you can now explain.</div>
+</section>
+<section class="panel"><h2>3. Retrieval practice queue</h2><p class="muted">Review from memory before opening notes. Explain the concept aloud, solve a fresh example, then check what you missed.</p><div id="reviewQueue"></div></section>
+<section class="panel"><h2>4. Evidence that proves your skill</h2><p class="muted">Use this checklist before calling a skill portfolio-ready. A certificate or completed video alone is not enough.</p>
+<div class="checklist" id="evidenceChecklist">
+<label class="check"><input type="checkbox"> I can explain the problem and core concepts in my own words.</label>
+<label class="check"><input type="checkbox"> I can complete a representative task without step-by-step help.</label>
+<label class="check"><input type="checkbox"> I tested normal cases, edge cases and likely failure cases.</label>
+<label class="check"><input type="checkbox"> I can explain my decisions, trade-offs and mistakes.</label>
+<label class="check"><input type="checkbox"> I created a real artifact, project, analysis or worked solution.</label>
+<label class="check"><input type="checkbox"> I documented setup, tools, sources and limitations.</label>
+<label class="check"><input type="checkbox"> Someone else can inspect or reproduce my result.</label>
+<label class="check"><input type="checkbox"> I can answer questions and improve it after feedback.</label>
+</div><p class="muted">These checks are a self-review aid, not an accredited certification or guarantee of job readiness.</p>
+</section>
+<section class="panel"><h2>5. A simple learning loop that works</h2><div class="grid">
+<article class="metric"><h3>Understand</h3><p class="muted">Define the problem, prerequisites and key terms. Ask why the idea works.</p></article>
+<article class="metric"><h3>Retrieve</h3><p class="muted">Close the notes. Recall the steps, draw the idea or explain it from memory.</p></article>
+<article class="metric"><h3>Practise</h3><p class="muted">Solve a new problem. Start small, then add realistic constraints and edge cases.</p></article>
+<article class="metric"><h3>Get feedback</h3><p class="muted">Compare with a trusted answer, run tests or ask a knowledgeable person to review.</p></article>
+<article class="metric"><h3>Build</h3><p class="muted">Apply the skill to a useful mini-project with a clear output and documented decisions.</p></article>
+<article class="metric"><h3>Revisit</h3><p class="muted">Review after 1, 3, 7, 14 and 30 days, adjusting when recall is weak.</p></article>
+</div></section>
+<footer class="footer">Mastery Studio stores its data locally in this browser. Use Export regularly to keep a backup. It does not create accounts, upload your learning history or certify professional competence. <a href="docs/LEARNING_DESIGN_STANDARD.md">Learning design standard</a> · <a href="docs/WHOLE_PLATFORM_COMPLETION_ADDENDUM.md">Platform scope and limitations</a></footer>
+</main>
+<script>
+(function(){
+'use strict';
+const KEY='skillspring-mastery-studio-v1';
+const defaults=[
+['Programming logic','Programming & software'],['Python fundamentals','Programming & software'],['Git and GitHub','Programming & software'],['HTML, CSS and JavaScript','Programming & software'],['SQL and databases','Data & AI'],['Excel and spreadsheets','Office & productivity'],['Statistics and data analysis','Data & AI'],['Power BI dashboards','Data & AI'],['Personal finance','Finance'],['Business analysis and accounting','Business & accounting'],['Networking fundamentals','IT, networking & cloud'],['Engineering and electronics fundamentals','Engineering & electronics']
+];
+const $=id=>document.getElementById(id);
+const safeText=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+let state={skills:[],plan:null};
+function today(){const d=new Date();return new Date(d.getFullYear(),d.getMonth(),d.getDate()).toISOString().slice(0,10)}
+function plusDays(n){const d=new Date();d.setDate(d.getDate()+n);return d.toISOString().slice(0,10)}
+function save(){try{localStorage.setItem(KEY,JSON.stringify(state));$('dataStatus').textContent='Saved locally on this device · '+state.skills.length+' skills tracked.'}catch(e){$('dataStatus').textContent='Could not save locally. Export a backup and check browser storage settings.'}}
+function load(){try{const raw=localStorage.getItem(KEY);if(raw){const parsed=JSON.parse(raw);if(parsed&&Array.isArray(parsed.skills))state={skills:parsed.skills,plan:parsed.plan||null}}}catch(e){state={skills:[],plan:null}}if(!state.skills.length)state.skills=defaults.map((x,i)=>({id:'starter-'+i,name:x[0],school:x[1],level:0,last:null,due:today(),evidence:''}));}
+const levels=['New to this','Learning the basics','Practising with guidance','Can explain and apply','Can build independently'];
+function render(){
+$('metricSkills').textContent=state.skills.length;
+$('metricMastered').textContent=state.skills.filter(s=>Number(s.level)>=4).length;
+$('metricDue').textContent=state.skills.filter(s=>s.due&&s.due<=today()&&Number(s.level)>0).length;
+$('skillList').innerHTML=state.skills.map(s=>'<article class="skill"><div><strong>'+safeText(s.name)+'</strong><p>'+safeText(s.school)+'</p><div class="progress"><span style="width:'+Math.max(0,Math.min(100,Number(s.level)*25))+'%"></span></div></div><div><label class="sr" for="level-'+safeText(s.id)+'">Mastery level for '+safeText(s.name)+'</label><select data-level="'+safeText(s.id)+'" id="level-'+safeText(s.id)+'">'+levels.map((l,i)=>'<option value="'+i+'" '+(Number(s.level)===i?'selected':'')+'>'+l+'</option>').join('')+'</select></div><div><small>Next review</small><br><strong>'+safeText(s.due||'Not scheduled')+'</strong><p>'+ (s.last?'Last practised '+safeText(s.last):'Not practised yet')+'</p></div><div class="row"><button data-practise="'+safeText(s.id)+'">Practised today</button><button class="danger" data-delete="'+safeText(s.id)+'" aria-label="Remove '+safeText(s.name)+'">×</button></div></article>').join('')||'<p class="empty">No skills yet. Add one above to begin.</p>';
+const due=state.skills.filter(s=>s.due&&s.due<=today()&&Number(s.level)>0);
+$('reviewQueue').innerHTML=due.length?due.map(s=>'<div class="review"><div><strong>'+safeText(s.name)+'</strong><p class="muted">'+safeText(s.school)+' · '+safeText(s.due)+'</p></div><button data-practise="'+safeText(s.id)+'">Review complete</button></div>').join(''):'<p class="empty">Nothing is due yet. Mark a skill as practised to schedule its next review.</p>';
+if(state.plan)renderPlan(state.plan);
+}
+function practise(id){const s=state.skills.find(x=>x.id===id);if(!s)return;s.last=today();const interval=[1,3,7,14,30][Math.max(0,Math.min(4,Number(s.level)))];s.due=plusDays(interval);save();render()}
+function renderPlan(p){const names=['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday'];const slots=p.slots||[];$('weekPlan').innerHTML=names.map((n,i)=>'<article class="day"><strong>'+n+'</strong>'+(slots[i]?slots[i].map(x=>'<p>'+safeText(x)+'</p>').join(''):'<p class="muted">Rest / optional catch-up</p>')+'</article>').join('')}
+function generatePlan(){const hours=Math.max(1,Math.min(60,Number($('hours').value)||7));const days=Math.max(3,Math.min(7,Number($('days').value)||5));const focus=$('focus').value;const ratio={balanced:[.35,.35,.2,.1],foundation:[.5,.25,.2,.05],practice:[.2,.5,.2,.1],portfolio:[.2,.3,.15,.35],revision:[.2,.25,.45,.1]}[focus];const mins=Math.round(hours*60/days);const tasks=['Learn one small concept','Solve a fresh practice task','Recall and revise older topics','Build or document portfolio evidence'];const slots=Array.from({length:7},()=>[]);let active=0;for(let i=0;i<7&&active<days;i++){const pick=ratio.map((r,j)=>({j,v:r})).sort((a,b)=>b.v-a.v);const task=pick[active%pick.length].j;slots[i].push(Math.round(mins)+' min · '+tasks[task]);if(active===0)slots[i].push('Write one question you still have');active++}state.plan={hours,days,focus,slots};save();renderPlan(state.plan)}
+$('addSkill').addEventListener('click',()=>{const name=$('skillName').value.trim();if(!name){$('skillName').focus();return}state.skills.push({id:'custom-'+Date.now(),name,school:$('skillSchool').value,level:0,last:null,due:today(),evidence:''});$('skillName').value='';save();render()});
+$('skillName').addEventListener('keydown',e=>{if(e.key==='Enter')$('addSkill').click()});
+$('skillList').addEventListener('change',e=>{const id=e.target.dataset.level;if(!id)return;const s=state.skills.find(x=>x.id===id);if(s){s.level=Number(e.target.value);s.due=today();save();render()}});
+document.addEventListener('click',e=>{const p=e.target.closest('[data-practise]');if(p)practise(p.dataset.practise);const d=e.target.closest('[data-delete]');if(d&&confirm('Remove this skill from your mastery map?')){state.skills=state.skills.filter(s=>s.id!==d.dataset.delete);save();render()}});
+$('makePlan').addEventListener('click',generatePlan);
+$('restoreDefaults').addEventListener('click',()=>{if(!confirm('Replace your current skill list with the suggested starter list? Export a backup first if you need it.'))return;state.skills=defaults.map((x,i)=>({id:'starter-'+i,name:x[0],school:x[1],level:0,last:null,due:today(),evidence:''}));save();render()});
+$('exportData').addEventListener('click',()=>{const blob=new Blob([JSON.stringify({app:'SkillSpring Mastery Studio',version:1,exportedAt:new Date().toISOString(),state},null,2)],{type:'application/json'});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download='skillspring-mastery-backup.json';a.click();URL.revokeObjectURL(url);$('dataStatus').textContent='Mastery backup exported.'});
+$('importData').addEventListener('change',async e=>{const f=e.target.files&&e.target.files[0];if(!f)return;if(f.size>1024*1024){$('dataStatus').textContent='File too large. Choose a backup under 1 MB.';return}try{const parsed=JSON.parse(await f.text());const incoming=parsed.state||parsed;if(!Array.isArray(incoming.skills)||incoming.skills.length>300||!incoming.skills.every(s=>s&&typeof s.name==='string'&&typeof s.school==='string'&&Number.isFinite(Number(s.level))&&Number(s.level)>=0&&Number(s.level)<=4)){throw new Error('Invalid backup format')}if(!confirm('Import '+incoming.skills.length+' skills and replace this device’s current mastery map?'))return;state={skills:incoming.skills.map(s=>({id:String(s.id||'import-'+Math.random()),name:s.name.slice(0,90),school:s.school.slice(0,80),level:Number(s.level),last:s.last||null,due:s.due||today(),evidence:''})),plan:incoming.plan||null};save();render();$('dataStatus').textContent='Mastery backup imported.'}catch(err){$('dataStatus').textContent='Could not import: '+err.message}e.target.value=''});
+load();render();if(!state.plan)generatePlan();
+})();
+</script>
+</body></html>
