@@ -9,7 +9,8 @@ const check = (name, ok, detail = "") => {
   console.log((ok ? "PASS " : "FAIL ") + name + (detail ? " — " + detail : ""));
 };
 try {
-  const page = await browser.newPage({ viewport: { width: 1440, height: 900 } });
+  const context = await browser.newContext({ viewport: { width: 1440, height: 900 } });
+  const page = await context.newPage();
   for (const route of ["/", "/courses.html", "/career-launchpad.html", "/progress-backup.html", "/engineering-course.html", "/engineering-field-studio.html"]) {
     const response = await page.goto(base + route, { waitUntil: "networkidle" });
     check("HTTP " + route, !!response && response.ok(), response ? String(response.status()) : "no response");
@@ -18,7 +19,7 @@ try {
   }
 
   await page.goto(base + "/career-launchpad.html", { waitUntil: "networkidle" });
-  check("30 capstone briefs", await page.locator(".launch-card").count() === 30);
+  check("30 capstone briefs", await page.locator("#capstoneGrid .launch-card").count() === 30);
   await page.locator("#searchCapstone").fill("Power BI");
   check("capstone search", await page.locator(".launch-card").count() === 1 && await page.locator(".launch-card").innerText().then(t => t.includes("Power BI")));
   await page.locator("#searchCapstone").fill("");
