@@ -4,6 +4,8 @@ Last verified: 1 November 2026
 
 ## Public links
 
+- UI/UX audit: https://github.com/ashishnaikbackup/SkillSpring/blob/main/docs/UI_UX_AUDIT.md
+
 - Live website: https://ashishnaikbackup.github.io/SkillSpring/
 - GitHub repository: https://github.com/ashishnaikbackup/SkillSpring
 - Course library: https://ashishnaikbackup.github.io/SkillSpring/courses.html
@@ -27,7 +29,7 @@ Last verified: 1 November 2026
 | Learning design research | Benchmark notes from Mimo, Brilliant, freeCodeCamp, Microsoft Learn, Microsoft Applied Skills, Google Skillshop and Exercism | Original teaching patterns are documented; no proprietary lesson text, assets or branding are copied. |
 | Field Radar | Daily RSS/Atom headline collection from 14 allowlisted publisher/regulator feeds | At the last verified refresh, 14/14 feeds returned successfully and 14 attributed headlines were published. The collector keeps last-known-good items when a source is unavailable. |
 | Course freshness | Push-based course-file change detection plus weekly review-date and official-reference checks | Creates or updates a human review issue naming affected courses/files. The initial review issue currently lists all 24 courses awaiting their first editorial content review. It does not silently rewrite lessons or guarantee semantic correctness. |
-| UI / accessibility | Responsive layouts, keyboard focus indicators, interaction feedback and reduced-motion handling in shared styles | Static source checks pass. Manually test on the target phone/browser before relying on every interaction. |
+| UI / accessibility | Shared cross-page responsive polish layer, touch-sized controls, keyboard focus, reduced-motion support, skip link and accessible mobile sidebar controls | Automated checks are running for this pass. Manual Android/desktop/screen-reader QA remains outstanding; see [UI/UX audit](UI_UX_AUDIT.md). |
 | Documentation | Product vision, master curriculum, Start Here, benchmark, Power BI project, Field Radar policy and course freshness policy | Linked from the repository README and relevant pages. |
 
 ## Automation schedules
@@ -43,6 +45,10 @@ The GitHub Actions quality workflow checks JavaScript syntax, inline scripts, lo
 The Pages deployment workflow separately checks the availability of the home page, Start Here, course library, coding lab, logic course route, Python practice page and assets, Power BI capstone and sample data, Field Radar page and feed JSON. The successful deployment log records the published URL above.
 
 These automated checks are not a substitute for a full manual browser test of every exercise, external runtime, responsive state or third-party product workflow.
+
+## UI/UX polish update — 1 November 2026
+
+A shared `ux-polish.css` layer is now applied across the public HTML pages. The dashboard navigation has a skip link, accessible search/filter labels, duplicate links removed, and mobile sidebar dismissal via backdrop or Escape with `aria-expanded` state. The full manual QA matrix is documented in [UI_UX_AUDIT.md](UI_UX_AUDIT.md). This is a source-level polish pass, not a claim that every browser/device combination has been manually verified.
 
 ## Known limits — do not overstate the release
 
