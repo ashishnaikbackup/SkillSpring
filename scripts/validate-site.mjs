@@ -138,6 +138,14 @@ if (!fs.existsSync(freshnessPath)) {
       if ((!hasVerifiedReviewDate && !needsInitialAudit) || !Number.isInteger(item.reviewIntervalDays) || item.reviewIntervalDays < 1 || !Array.isArray(item.sources) || !item.sources.length) {
         fail("Course freshness entry " + item.slug + " must have a verified review date or be explicitly marked initial-review-required, plus a valid interval and HTTPS sources.");
       }
+      if (!Array.isArray(item.contentFiles) || !item.contentFiles.length) {
+        fail("Course freshness entry " + item.slug + " is missing content-file change detection paths.");
+      }
+      for (const contentFile of item.contentFiles || []) {
+        if (typeof contentFile !== "string" || !fs.existsSync(path.join(root, contentFile))) {
+          fail("Course freshness entry " + item.slug + " references a missing content file: " + contentFile);
+        }
+      }
       for (const source of item.sources || []) {
         if (typeof source !== "string" || !source.startsWith("https://")) fail("Course freshness entry " + item.slug + " has a non-HTTPS source.");
       }
