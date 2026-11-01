@@ -75,6 +75,10 @@ Portfolio: a documented personal operating system and learning plan.
 Sequence: arithmetic → algebra → geometry/trigonometry → functions → calculus → probability/statistics → logic → physics/chemistry foundations → scientific reasoning → data literacy → research methods and technical writing.
 Lessons must show derivations and worked solutions, not only final answers.
 
+## Final-year engineering student bridge
+
+A separate [Engineering Student: Final-Year Zero-to-Job Programme](ENGINEERING_STUDENT_ZERO_TO_JOB.md) now provides a practical 16-week bridge from digital/math foundations to role selection, specialisation, projects, portfolio evidence and interviews. It includes role-specific starting tracks for software, web/UI/UX, data/AI, electronics/embedded, VLSI/FPGA, mechanical, civil, chemical, instrumentation/control, biomedical/biotech and finance/business operations. It is a learning and assessment plan, not proof that all those full discipline courses have already been authored. Dedicated lessons, supervised practical requirements and technical reviews remain necessary for each specialisation.
+
 ## Role-based learning paths
 - Junior software developer: programming foundations, Git, DSA, SQL, APIs, testing, projects and interviews.
 - Data analyst: Excel, SQL, statistics, Power BI, data storytelling and portfolio.
