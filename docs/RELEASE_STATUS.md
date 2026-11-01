@@ -80,3 +80,6 @@ A shared `ux-polish.css` layer is now applied exactly once across all 21 public 
 - Added [graded JavaScript and SQL practice](../advanced-practice.html): eight challenges per track, browser-based test checking, starter tasks, hints, example solutions and local progress. JavaScript uses a sandboxed iframe; SQL uses SQLite in the browser with fictional sample data.
 - Added validator requirements for both pages, dashboard navigation, all 12 school definitions and at least eight challenges per new track.
 - These additions improve curriculum visibility and practical practice but do not close the course-authoring backlog. The 24 existing course entries still need an initial human editorial audit; the remaining course families still need complete lessons, worked solutions, exercises, assessments and projects. See [master curriculum](MASTER_CURRICULUM.md) and [product vision](PRODUCT_VISION.md).
+
+
+**Assessment behaviour update:** The 12 essential lesson-player courses now require the learner to pass that lesson's knowledge check before marking it complete. Correct answers unlock completion and provide feedback; incorrect answers show the correct answer and prompt a review. This is a per-lesson gate, not yet a multi-question cumulative final exam or a substitute for the course-level assessments still required.
