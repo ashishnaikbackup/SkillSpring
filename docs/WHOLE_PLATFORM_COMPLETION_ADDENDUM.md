@@ -10,6 +10,7 @@
   - Creative media, design and communication
   - Personal productivity and knowledge management
 - The [Career Launchpad](../career-launchpad.html) contains one guided capstone for every catalogue course. Each project brief includes a role direction, staged tasks, portfolio evidence and an interview prompt.
+- The [Professional Practice Labs](../professional-labs.html) now include seven tracks: spreadsheet modelling, descriptive data analysis, electronics, networking, UI/UX review, personal cash-flow budgeting and business unit economics/break-even.
 - The [Progress Backup](../progress-backup.html) page provides local JSON export/import so learners can move progress manually between browsers without creating accounts or sending learning data to a server.
 - The [AI-assisted source audit](COURSE_CONTENT_AUDIT_2026-11-01.md) inventories the actual 30 courses, lesson counts, strengths and remaining depth gaps.
 
