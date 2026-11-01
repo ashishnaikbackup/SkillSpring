@@ -12,7 +12,7 @@ const check = (name, ok, detail = "") => {
 try {
   const context = await browser.newContext({ viewport: { width: 1440, height: 900 } });
   const page = await context.newPage();
-  for (const route of ["/", "/courses.html", "/career-launchpad.html", "/progress-backup.html", "/mastery-hub.html", "/engineering-course.html", "/engineering-field-studio.html"]) {
+  for (const route of ["/", "/courses.html", "/career-launchpad.html", "/progress-backup.html", "/mastery-hub.html", "/mastery-studio.html", "/engineering-course.html", "/engineering-field-studio.html"]) {
     const response = await page.goto(pageUrl(route), { waitUntil: "networkidle" });
     check("HTTP " + route, !!response && response.ok(), response ? String(response.status()) : "no response");
     check("main landmark " + route, await page.locator("main#main-content").count() === 1);
@@ -49,6 +49,21 @@ try {
   await page.locator("#weekFocus").fill("Finish SQL joins practice");
   await page.locator("#makeWeek").click();
   check("weekly checklist generated", await page.locator("#weekList label").count() >= 7);
+
+  await page.goto(pageUrl("/mastery-studio.html"), { waitUntil: "networkidle" });
+  await page.locator("#skillName").fill("Verilog testbench design");
+  await page.locator("#addSkill").click();
+  const masteryLevel = page.locator('#skillList select[data-level^="custom-"]');
+  await masteryLevel.selectOption("4");
+  check("mastery skill can be tracked", await page.locator("#metricMastered").innerText() === "1");
+  await page.locator("#hours").fill("8");
+  await page.locator("#days").selectOption("4");
+  await page.locator("#makePlan").click();
+  check("weekly mastery plan generated", await page.locator("#weekPlan .day").count() === 7);
+  const masteryDownloadPromise = page.waitForEvent("download");
+  await page.locator("#exportData").click();
+  const masteryDownload = await masteryDownloadPromise;
+  check("mastery map export", masteryDownload.suggestedFilename() === "skillspring-mastery-backup.json");
 
   await page.goto(pageUrl("/professional-labs.html"), { waitUntil: "networkidle" });
   await page.locator('[data-extra-lab="finance"]').click();
@@ -103,7 +118,7 @@ try {
   await page.keyboard.press("Tab");
   check("keyboard first focus reaches skip link", await page.evaluate(() => document.activeElement?.classList?.contains("skip-link")));
 
-  for (const route of ["/", "/courses.html", "/career-launchpad.html", "/progress-backup.html", "/mastery-hub.html", "/engineering-field-studio.html"]) {
+  for (const route of ["/", "/courses.html", "/career-launchpad.html", "/progress-backup.html", "/mastery-hub.html", "/mastery-studio.html", "/engineering-field-studio.html"]) {
     await page.goto(pageUrl(route), { waitUntil: "networkidle" });
     const axe = await new AxeBuilder({ page }).withTags(["wcag2a", "wcag2aa", "wcag21a", "wcag21aa"]).analyze();
     const serious = axe.violations.filter(v => v.impact === "critical" || v.impact === "serious");
