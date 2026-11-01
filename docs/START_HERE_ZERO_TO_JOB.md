@@ -19,6 +19,10 @@ For every concept:
 
 Watching a lesson is exposure, not mastery. A completed lesson should mean you produced evidence: code, a solved problem, a diagram, a report, a project or an explanation.
 
+## Engineering students: choose a practical placement pathway
+
+If you are in your final year and feel you are starting from zero, first read the [Engineering Student: Final-Year Zero-to-Job Programme](ENGINEERING_STUDENT_ZERO_TO_JOB.md). It provides a 16-week bridge, a baseline exercise with worked answer, role-specific learning sequences, practical projects and hiring-readiness checks. Choose one primary role track; do not attempt every specialisation simultaneously.
+
 ## Stage 0 — Digital and computer basics
 
 Learn hardware, software, operating systems, applications, browsers, files/folders, paths, downloads, archives, backups, safe installation, terminal basics, privacy, passwords, phishing and safe API-key handling.
