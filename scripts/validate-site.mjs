@@ -195,11 +195,13 @@ const launchpadPath = path.join(root, "career-launchpad.html");
 if (!fs.existsSync(launchpadPath)) fail("The career launchpad is missing.");
 if (fs.existsSync(launchpadPath)) {
   const launchpad = fs.readFileSync(launchpadPath, "utf8");
-  const dataMatch = launchpad.match(/const projects\\s*=\\s*(\\[[\\s\\S]*?\\]);\\s*const schoolLabels/);
-  if (!dataMatch) fail("Could not read career launchpad capstone data.");
+  const dataStart = launchpad.indexOf("const projects=[");
+  const dataEnd = launchpad.indexOf("const schoolLabels", dataStart);
+  if (dataStart < 0 || dataEnd < 0) fail("Could not read career launchpad capstone data.");
   else {
     try {
-      const projects = vm.runInNewContext("(" + dataMatch[1] + ")");
+      const projectsSource = launchpad.slice(dataStart + "const projects=".length, dataEnd).trim().replace(/;$/, "");
+      const projects = vm.runInNewContext("(" + projectsSource + ")");
       const ids = projects.map((item) => item.slug);
       if (projects.length !== courses.length) fail("Career launchpad must contain one capstone for each course.");
       if (new Set(ids).size !== ids.length) fail("Career launchpad capstone slugs must be unique.");
