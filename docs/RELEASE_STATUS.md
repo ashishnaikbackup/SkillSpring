@@ -15,12 +15,16 @@ Last verified: 1 November 2026
 - Power BI capstone: https://ashishnaikbackup.github.io/SkillSpring/powerbi-project.html
 - Field Radar: https://ashishnaikbackup.github.io/SkillSpring/field-radar.html
 
+## Engineering foundations update — 1 November 2026
+
+A 14-lesson [Engineering Fundamentals course](https://ashishnaikbackup.github.io/SkillSpring/engineering-course.html) is now linked from the course catalogue and electrical/electronics curriculum. It begins with SI units, algebra and physics, then develops circuit laws, components, semiconductor concepts, analog/digital foundations, embedded systems, Verilog/testbenches, FPGA and VLSI verification. The electronics practice lab also includes series/parallel equivalents, a voltage divider and an RC time-constant calculator. This is a foundation pathway, not full coverage of all engineering disciplines or advanced VLSI specialisations. The new course is included in the 25-course editorial review manifest and remains awaiting human review.
+
 ## Release checklist
 
 | Area | Version 1 delivery | Verification / scope |
 |---|---|---|
 | Public website | Static SkillSpring site deployed on GitHub Pages | Deployment workflow succeeded and its HTTP smoke tests passed. |
-| Learning library | 24 course catalogue entries across 12 learning schools | Catalogue routes, required course data and local links are checked by the static validator. Not every school has a full course yet. |
+| Learning library | 25 course catalogue entries across 12 learning schools | Catalogue routes, required course data and local links are checked by the static validator. Not every school has a full course yet. |
 | Beginner path | Start Here guide, programming logic, 16-module Python course and DSA progression | Dependency order is documented; DSA follows programming fundamentals. |
 | Coding practice | Ten progressive Python coding challenges | Runs in the browser with Pyodide; includes automated assertions, hints, revealable example solutions and local saved code/progress. |
 | Multi-language lab | 26 language/tool choices | Python, JavaScript, HTML/CSS preview and SQLite run in the browser. Twenty-two additional languages have starter files, download and local run instructions; they are not remotely compiled by SkillSpring. |
@@ -28,7 +32,7 @@ Last verified: 1 November 2026
 | Power BI project | Three fictional CSV datasets, 36 transactions, modelling and DAX/report brief | Dataset keys and arithmetic are checked by the site validator; project totals are documented for reconciliation. Learners create the PBIX in Power BI Desktop. |
 | Learning design research | Benchmark notes from Mimo, Brilliant, freeCodeCamp, Microsoft Learn, Microsoft Applied Skills, Google Skillshop and Exercism | Original teaching patterns are documented; no proprietary lesson text, assets or branding are copied. |
 | Field Radar | Daily RSS/Atom headline collection from 14 allowlisted publisher/regulator feeds | At the last verified refresh, 14/14 feeds returned successfully and 14 attributed headlines were published. The collector keeps last-known-good items when a source is unavailable. |
-| Course freshness | Push-based course-file change detection plus weekly review-date and official-reference checks | Creates or updates a human review issue naming affected courses/files. The initial review issue currently lists all 24 courses awaiting their first editorial content review. It does not silently rewrite lessons or guarantee semantic correctness. |
+| Course freshness | Push-based course-file change detection plus weekly review-date and official-reference checks | Creates or updates a human review issue naming affected courses/files. The initial review issue currently lists all 25 courses awaiting their first editorial content review. It does not silently rewrite lessons or guarantee semantic correctness. |
 | UI / accessibility | Shared cross-page responsive polish layer on all 24 HTML pages, skip links/main landmarks, keyboard focus, reduced-motion support, responsive headers and accessible mobile sidebar controls | Latest quality workflow passed; validator now enforces shared stylesheet, skip links and main landmarks on every page. Manual Android/desktop/screen-reader QA remains outstanding; see [UI/UX audit](UI_UX_AUDIT.md). |
 | Documentation | Product vision, master curriculum, Start Here, benchmark, Power BI project, Field Radar policy and course freshness policy | Linked from the repository README and relevant pages. |
 
@@ -48,7 +52,7 @@ These automated checks are not a substitute for a full manual browser test of ev
 
 ## UI/UX polish update — 1 November 2026
 
-A shared `ux-polish.css` layer is now applied exactly once across all 24 public HTML pages. Every page has a skip link and main-content landmark; the dashboard has accessible search/filter labels and mobile sidebar dismissal via backdrop or Escape with `aria-expanded` state. The quality validator enforces these baseline requirements. The full manual QA matrix is documented in [UI_UX_AUDIT.md](UI_UX_AUDIT.md). This is a source-level polish pass, not a claim that every browser/device combination has been manually verified.
+A shared `ux-polish.css` layer is now applied exactly once across all 25 public HTML pages. Every page has a skip link and main-content landmark; the dashboard has accessible search/filter labels and mobile sidebar dismissal via backdrop or Escape with `aria-expanded` state. The quality validator enforces these baseline requirements. The full manual QA matrix is documented in [UI_UX_AUDIT.md](UI_UX_AUDIT.md). This is a source-level polish pass, not a claim that every browser/device combination has been manually verified.
 
 ## Known limits — do not overstate the release
 
