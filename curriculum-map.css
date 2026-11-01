@@ -19,3 +19,9 @@
 .school-panel .module-card:nth-child(7){animation-delay:.24s}
 .school-panel .module-card:nth-child(8){animation-delay:.28s}
 @media(prefers-reduced-motion:reduce){.module-card,.school-panel{animation:none!important;transition:none!important}.module-card:hover{transform:none}}
+
+
+.course-family-link{display:inline-flex;align-items:center;gap:6px;padding:9px 11px;border:1px solid #766dc0;border-radius:9px;background:#272449;color:#e4ddff;text-decoration:none;font-size:12px;font-weight:700;transition:transform .2s ease,background .2s ease,border-color .2s ease}
+.course-family-link:hover{transform:translateY(-2px);background:#34305d;border-color:#a89cff}
+.course-family-link:focus-visible{outline:3px solid #b8aaff;outline-offset:3px}
+@media(prefers-reduced-motion:reduce){.course-family-link{transition:none}.course-family-link:hover{transform:none}}
