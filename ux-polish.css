@@ -1,6 +1,7 @@
 /* SkillSpring final UI/UX system — shared polish layer */
 :root{--ux-radius:16px;--ux-shadow:0 18px 48px rgba(0,0,0,.22);--ux-focus:#c4b8ff}
 html{scroll-behavior:smooth;scroll-padding-top:88px}
+.sidebar-backdrop{display:none}
 body{line-height:1.55;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
 a{transition:color .18s ease,opacity .18s ease}
 button,a,input,select,textarea{touch-action:manipulation}
@@ -37,7 +38,7 @@ footer{line-height:1.7}
 @media(max-width:760px){
  .sidebar{width:min(300px,86vw);padding:18px 14px}
  .sidebar.open{transform:translateX(0)}
- .sidebar-backdrop{position:fixed;inset:0;background:rgba(3,8,18,.68);backdrop-filter:blur(3px);z-index:9;opacity:0;pointer-events:none;transition:opacity .2s}
+ .sidebar-backdrop{display:block;position:fixed;inset:0;background:rgba(3,8,18,.68);backdrop-filter:blur(3px);z-index:9;opacity:0;pointer-events:none;transition:opacity .2s}
  .sidebar-backdrop.visible{opacity:1;pointer-events:auto}
  .topbar{height:62px;gap:10px}
  .breadcrumb{font-size:11px;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
