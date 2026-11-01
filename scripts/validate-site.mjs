@@ -133,8 +133,10 @@ if (!fs.existsSync(freshnessPath)) {
       if (!reviewSlugs.includes(course.slug)) fail("Course freshness manifest is missing " + course.slug + ".");
     }
     for (const item of freshness.courses) {
-      if (!item.lastReviewed || !Number.isInteger(item.reviewIntervalDays) || item.reviewIntervalDays < 1 || !Array.isArray(item.sources) || !item.sources.length) {
-        fail("Course freshness entry " + item.slug + " is missing a review date, interval or source URLs.");
+      const hasVerifiedReviewDate = typeof item.lastReviewed === "string" && /^\\d{4}-\\d{2}-\\d{2}$/.test(item.lastReviewed);
+      const needsInitialAudit = item.lastReviewed === null && item.reviewStatus === "initial-review-required";
+      if ((!hasVerifiedReviewDate && !needsInitialAudit) || !Number.isInteger(item.reviewIntervalDays) || item.reviewIntervalDays < 1 || !Array.isArray(item.sources) || !item.sources.length) {
+        fail("Course freshness entry " + item.slug + " must have a verified review date or be explicitly marked initial-review-required, plus a valid interval and HTTPS sources.");
       }
       for (const source of item.sources || []) {
         if (typeof source !== "string" || !source.startsWith("https://")) fail("Course freshness entry " + item.slug + " has a non-HTTPS source.");
