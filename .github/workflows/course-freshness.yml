@@ -1,0 +1,68 @@
+name: SkillSpring course freshness review
+
+on:
+  schedule:
+    - cron: "0 3 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+concurrency:
+  group: skillspring-course-freshness
+  cancel-in-progress: false
+
+jobs:
+  review:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Check review dates and official source links
+        run: node scripts/check-course-freshness.mjs
+      - name: Create or refresh a course review issue when needed
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const report = JSON.parse(fs.readFileSync('data/course-review-status.json', 'utf8'));
+            const due = report.courses.filter(course => course.reviewDue);
+            const failed = report.courses.flatMap(course =>
+              course.sourceChecks.filter(source => source.status !== 'reachable')
+                .map(source => ({ course: course.title, slug: course.slug, ...source }))
+            );
+            if (!due.length && !failed.length) {
+              core.info('No course review is due and all reference checks responded successfully.');
+              return;
+            }
+            const lines = [
+              'Automated review checkpoint: ' + report.generatedAt,
+              '',
+              'This issue is a review reminder, not permission to overwrite course content automatically.',
+              '',
+              '## Courses due for review',
+              ...(due.length ? due.map(course => '- **' + course.title + '** (' + course.slug + ') — last reviewed ' + course.lastReviewed + '; interval ' + course.reviewIntervalDays + ' days.') : ['- None']),
+              '',
+              '## Reference links needing manual verification',
+              ...(failed.length ? failed.map(item => '- **' + item.course + '** (' + item.slug + ') — ' + item.url + ' — ' + (item.error || ('HTTP ' + item.httpStatus)) + '.') : ['- None']),
+              '',
+              '## Reviewer checklist',
+              '- Confirm current product behaviour and version-specific changes against official documentation.',
+              '- Update lesson examples, screenshots, licensing notes and source links where required.',
+              '- Test exercises and capstones after any content changes.',
+              '- Update lastReviewed in course-review-manifest.json only after review is complete.',
+              '- Do not treat an inaccessible URL as proof that its content is outdated; verify manually.'
+            ];
+            const body = lines.join('\n');
+            const title = '[Automated] SkillSpring course freshness review';
+            const { owner, repo } = context.repo;
+            const open = await github.rest.issues.listForRepo({ owner, repo, state: 'open', per_page: 100 });
+            const existing = open.data.find(issue => issue.title === title);
+            if (existing) {
+              await github.rest.issues.update({ owner, repo, issue_number: existing.number, body });
+              core.info('Updated existing review issue #' + existing.number);
+            } else {
+              const created = await github.rest.issues.create({ owner, repo, title, body });
+              core.info('Created review issue #' + created.data.number);
+            }
