@@ -1,1 +1,21 @@
 .curriculum-controls{display:flex;gap:12px;align-items:center;margin:20px 0 24px;flex-wrap:wrap}.curriculum-controls input{flex:1;min-width:220px}.curriculum-controls input,.curriculum-controls select{background:#111d2d;border:1px solid #35445d;border-radius:10px;color:#edf2fa;padding:13px}.curriculum-controls span{color:#aebbd0;font-size:13px}.curriculum-layout{display:grid;grid-template-columns:260px minmax(0,1fr);gap:20px;align-items:start}.school-nav,.school-panel,.quality-grid article{background:#111d2d;border:1px solid #29384f;border-radius:16px;padding:18px}.school-nav{position:sticky;top:14px}.school-nav h2{font-size:17px;margin:0 0 12px}.school-nav nav{display:grid;gap:6px}.school-nav button{background:transparent;color:#c6d1e1;border:1px solid transparent;text-align:left;border-radius:9px;padding:10px;cursor:pointer}.school-nav button.active,.school-nav button:hover{background:#202e44;border-color:#59698b;color:#fff}.school-panel h2{font-size:26px;margin:6px 0}.school-panel p{line-height:1.7;color:#bdc9d9}.school-meta{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0 18px}.school-meta span{font-size:12px;padding:6px 9px;border:1px solid #34435c;border-radius:20px;color:#c7d2e2}.course-family{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0 22px}.course-family span{background:#202e44;padding:7px 10px;border-radius:8px;font-size:12px;color:#d8e2f0}.module-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:14px 0}.module-card{background:#16243a;border:1px solid #2a3a55;border-radius:12px;padding:15px}.module-card small{color:#a99aff;font-weight:800;letter-spacing:.07em}.module-card h3{margin:8px 0;font-size:16px}.module-card p{font-size:13px;margin:6px 0}.deliverable{background:#182b34;border:1px solid #2b554e;border-radius:12px;padding:15px;margin:12px 0}.deliverable p{margin:6px 0}.quality-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}.quality-grid h3{margin:0}.quality-grid p{font-size:13px;line-height:1.6;color:#c0ccdc}.empty{padding:28px;text-align:center;color:#bbc7d8}@media(max-width:820px){.curriculum-layout{grid-template-columns:1fr}.school-nav{position:static}.school-nav nav{grid-template-columns:repeat(2,minmax(0,1fr))}.quality-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:520px){.module-grid,.quality-grid{grid-template-columns:1fr}.school-nav nav{grid-template-columns:1fr}.school-panel{padding:15px}}
+
+/* Progressive curriculum timeline and mastery gates */
+.module-grid{position:relative}
+.module-card{position:relative;overflow:hidden;transition:transform .22s ease,border-color .22s ease,box-shadow .22s ease}
+.module-card:before{content:"";position:absolute;inset:0 auto 0 0;width:3px;background:linear-gradient(180deg,#a99aff,#58c5d8);opacity:.8}
+.module-card:hover{transform:translateY(-3px);border-color:#7f74c8;box-shadow:0 12px 28px #03091666}
+.module-card small{display:inline-flex;align-items:center;gap:7px;padding:5px 8px;border-radius:20px;background:#29264c;color:#c9c0ff}
+.module-card h3{line-height:1.35}
+.mastery-gate{margin:14px 0 18px;padding:16px 18px;border:1px solid #426657;border-radius:12px;background:linear-gradient(110deg,#172e30,#18263a)}
+.mastery-gate strong{color:#a7e4c7;font-size:14px}
+.mastery-gate ul{margin:9px 0 0;padding-left:20px;color:#c5d4d4;line-height:1.7;font-size:13px}
+.school-panel{animation:ss-page-enter .35s ease both}
+.school-panel .module-card:nth-child(2){animation-delay:.04s}
+.school-panel .module-card:nth-child(3){animation-delay:.08s}
+.school-panel .module-card:nth-child(4){animation-delay:.12s}
+.school-panel .module-card:nth-child(5){animation-delay:.16s}
+.school-panel .module-card:nth-child(6){animation-delay:.20s}
+.school-panel .module-card:nth-child(7){animation-delay:.24s}
+.school-panel .module-card:nth-child(8){animation-delay:.28s}
+@media(prefers-reduced-motion:reduce){.module-card,.school-panel{animation:none!important;transition:none!important}.module-card:hover{transform:none}}
