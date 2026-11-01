@@ -35,7 +35,7 @@ function cleanText(value, limit = 360) {
 
 function tagValue(block, names) {
   for (const name of names) {
-    const match = block.match(new RegExp("<(?:[\\\\w.-]+:)?" + name + "\\\\b[^>]*>([\\\\s\\\\S]*?)<\\\\/(?:[\\\\w.-]+:)?" + name + "\\\\s*>", "i"));
+    const match = block.match(new RegExp("<(?:[\\w.-]+:)?" + name + "\\b[^>]*>([\\s\\S]*?)<\\/(?:[\\w.-]+:)?" + name + "\\s*>", "i"));
     if (match?.[1]) return match[1];
   }
   return "";
