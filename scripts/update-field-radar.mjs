@@ -159,7 +159,7 @@ const itemsChanged = JSON.stringify(items) !== JSON.stringify(oldItems);
 const sourceStatusChanged = JSON.stringify(sourceStatus) !== JSON.stringify(previous.sources || []);
 const report = {
   generatedAt: itemsChanged || sourceStatusChanged ? today : (previous.generatedAt || today),
-  disclaimer: "Automatically collected headlines and short feed excerpts. Original reporting remains with the publisher. Check the source link for full context. This is not financial, legal or security advice.",
+  disclaimer: "Automatically collected publisher headlines with original links. Read the publisher's source for full context. This is not financial, legal or security advice.",
   sources: sourceStatus,
   items
 };
