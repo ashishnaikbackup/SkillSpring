@@ -144,13 +144,16 @@ try {
 } catch (error) { fail("Could not load the course catalogue: " + error.message); }
 try {
   const context = {};
-  vm.runInNewContext(fs.readFileSync(path.join(root, "essential-courses.js"), "utf8") + "\nglobalThis.__essential = essentialCourses;", context);
+  const essentialSource = fs.readFileSync(path.join(root, "essential-courses.js"), "utf8");
+  const engineeringSource = fs.readFileSync(path.join(root, "engineering-course-data.js"), "utf8");
+  vm.runInNewContext(essentialSource + "\\n" + engineeringSource + "\\nglobalThis.__essential = essentialCourses;", context);
+  if (!context.__essential?.engineering || context.__essential.engineering.modules.length < 14) fail("Engineering foundations course must load at least 14 progressive lessons.");
   essential = context.__essential || {};
 } catch (error) { fail("Could not load essential course data: " + error.message); }
 
 const slugs = courses.map((course) => course.slug);
 if (new Set(slugs).size !== slugs.length) fail("The course catalogue contains duplicate slugs.");
-for (const required of ["logic", "dsa", "vibecoding"]) {
+for (const required of ["logic", "dsa", "vibecoding", "engineering"]) {
   if (!slugs.includes(required)) fail(`Required course "${required}" is missing from courses.js.`);
   if (!essential[required]) fail(`Required course data "${required}" is missing from essential-courses.js.`);
 }
