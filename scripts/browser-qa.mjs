@@ -19,7 +19,7 @@ try {
     check("skip link " + route, await page.locator('a.skip-link[href="#main-content"]').count() === 1);
   }
 
-  await page.goto(base + "/career-launchpad.html", { waitUntil: "networkidle" });
+  await page.goto(pageUrl("/career-launchpad.html"), { waitUntil: "networkidle" });
   check("30 capstone briefs", await page.locator("#capstoneGrid .launch-card").count() === 30);
   await page.locator("#searchCapstone").fill("Power BI");
   check("capstone search", await page.locator(".launch-card").count() === 1 && await page.locator(".launch-card").innerText().then(t => t.includes("Power BI")));
@@ -28,7 +28,7 @@ try {
   check("learning school filter", await page.locator(".launch-card").count() >= 2);
   await page.locator("#filterSchool").selectOption("all");
 
-  await page.goto(base + "/progress-backup.html", { waitUntil: "networkidle" });
+  await page.goto(pageUrl("/progress-backup.html"), { waitUntil: "networkidle" });
   await page.evaluate(() => localStorage.setItem("skillspring-browser-qa-probe", "ok"));
   const downloadPromise = page.waitForEvent("download");
   await page.locator("#exportBtn").click();
@@ -47,7 +47,7 @@ try {
     ...["word","powerpoint","excel","powerbi","outlook","access","powerautomate","git","interview","logic","dsa","vibecoding","business","it","maths","creative","productivity"].map(key => "/essential-course.html?course=" + key)
   ];
   for (const route of courseRoutes) {
-    await page.goto(base + route, { waitUntil: "domcontentloaded" });
+    await page.goto(pageUrl(route), { waitUntil: "domcontentloaded" });
     const count = await page.locator("#courseNav .lesson-nav, #moduleNav .module-link").count();
     check("course lesson player " + route, count > 0, count + " lesson navigation items");
   }
@@ -59,7 +59,7 @@ try {
   }
 
   await page.setViewportSize({ width: 390, height: 844 });
-  await page.goto(base + "/", { waitUntil: "networkidle" });
+  await page.goto(pageUrl("/"), { waitUntil: "networkidle" });
   const menu = page.locator("#menuBtn");
   if (await menu.count()) {
     await menu.click();
@@ -69,12 +69,12 @@ try {
   } else check("mobile menu control", false, "missing #menuBtn");
 
   await page.setViewportSize({ width: 1440, height: 900 });
-  await page.goto(base + "/career-launchpad.html", { waitUntil: "networkidle" });
+  await page.goto(pageUrl("/career-launchpad.html"), { waitUntil: "networkidle" });
   await page.keyboard.press("Tab");
   check("keyboard first focus reaches skip link", await page.evaluate(() => document.activeElement?.classList?.contains("skip-link")));
 
   for (const route of ["/", "/courses.html", "/career-launchpad.html", "/progress-backup.html", "/engineering-field-studio.html"]) {
-    await page.goto(base + route, { waitUntil: "networkidle" });
+    await page.goto(pageUrl(route), { waitUntil: "networkidle" });
     const axe = await new AxeBuilder({ page }).withTags(["wcag2a", "wcag2aa", "wcag21a", "wcag21aa"]).analyze();
     const serious = axe.violations.filter(v => v.impact === "critical" || v.impact === "serious");
     check("axe critical/serious scan " + route, serious.length === 0, serious.map(v => v.id + ":" + v.nodes.length).join(", ") || "none");
