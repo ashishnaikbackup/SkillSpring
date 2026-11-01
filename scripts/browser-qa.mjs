@@ -34,6 +34,22 @@ try {
   const download = await downloadPromise;
   check("progress export download", download.suggestedFilename() === "skillspring-progress-backup.json");
   await page.evaluate(() => localStorage.removeItem("skillspring-browser-qa-probe"));
+  const importPayload = { format: "skillspring-progress-backup", version: 1, createdAt: new Date().toISOString(), entryCount: 1, entries: [{ key: "skillspring-browser-qa-import-probe", value: "restored" }] };
+  await page.locator("#backupFile").setInputFiles({ name: "skillspring-test-backup.json", mimeType: "application/json", buffer: Buffer.from(JSON.stringify(importPayload)) });
+  await page.locator("#importBtn").click();
+  page.once("dialog", dialog => dialog.accept());
+  check("progress import", await page.evaluate(() => localStorage.getItem("skillspring-browser-qa-import-probe")) === "restored");
+  await page.evaluate(() => localStorage.removeItem("skillspring-browser-qa-import-probe"));
+
+  const courseRoutes = [
+    "/python-course.html", "/c-course.html", "/cpp-course.html", "/java-course.html", "/javascript-course.html", "/typescript-course.html", "/web-course.html", "/sql-course.html", "/finance-course.html", "/data-course.html", "/ux-course.html", "/sheets-course.html", "/engineering-course.html",
+    ...["word","powerpoint","excel","powerbi","outlook","access","powerautomate","git","interview","logic","dsa","vibecoding","business","it","maths","creative","productivity"].map(key => "/essential-course.html?course=" + key)
+  ];
+  for (const route of courseRoutes) {
+    await page.goto(base + route, { waitUntil: "domcontentloaded" });
+    const count = await page.locator("#courseNav .lesson-nav, #moduleNav .module-link").count();
+    check("course lesson player " + route, count > 0, count + " lesson navigation items");
+  }
 
   for (const key of ["business", "it", "maths", "creative", "productivity", "powerbi", "excel"]) {
     await page.goto(base + "/essential-course.html?course=" + key, { waitUntil: "domcontentloaded" });
