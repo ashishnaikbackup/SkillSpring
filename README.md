@@ -12,6 +12,7 @@ The public product and repository are named SkillSpring.
 - **[Learning dashboard](index.html)** — the main platform experience, subject schools, learning paths and Python playground.
 - **[Learning-platform benchmark](docs/LEARNING_PLATFORM_BENCHMARK.md)** — research notes and original teaching principles adapted from Mimo, Brilliant, freeCodeCamp, Microsoft Learn, Google Skillshop and Exercism.
 - **[Course freshness policy](docs/COURSE_FRESHNESS_POLICY.md)** — weekly review-date and official-source checks create a review issue when lessons need human verification; they do not silently rewrite content.
+- **[Field Radar update policy](docs/FIELD_RADAR_UPDATE_POLICY.md)** — a daily allowlisted RSS/Atom collector refreshes headlines across programming, AI, Microsoft tools, India finance/regulation, cybersecurity, design and engineering.
 
 ## Published course library
 
