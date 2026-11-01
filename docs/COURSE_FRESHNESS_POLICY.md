@@ -2,6 +2,10 @@
 
 SkillSpring covers both evergreen concepts and fast-changing tools. A static lesson cannot reliably update itself just because a vendor changes a feature or a new industry trend appears.
 
+## Initial review baseline
+
+The initial 1 November 2026 checkpoint verified the 24-course inventory, catalogue routes, lesson-data structure, reference-source mapping and site validation. It was **not** a line-by-line editorial sign-off of every lesson. The `lastReviewed` dates in the initial manifest represent this baseline checkpoint; individual lessons still need deeper subject-matter review as the platform matures.
+
 ## What is automated
 
 - The course-review-manifest.json file lists published course families, official reference sources, last-reviewed dates and review intervals.
