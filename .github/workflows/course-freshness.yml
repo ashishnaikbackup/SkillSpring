@@ -30,17 +30,17 @@ jobs:
             const fs = require('fs');
             const report = JSON.parse(fs.readFileSync('data/course-review-status.json', 'utf8'));
             const due = report.courses.filter(course => course.reviewDue);
-            const failed = report.courses.flatMap(course =>
-              course.sourceChecks.filter(source => source.status === 'check_failed')
+            const unverified = report.courses.flatMap(course =>
+              course.sourceChecks.filter(source => source.status === 'check_failed' || source.status === 'restricted')
                 .map(source => ({ course: course.title, slug: course.slug, ...source }))
             );
             const title = '[Automated] SkillSpring course freshness review';
             const { owner, repo } = context.repo;
             const open = await github.rest.issues.listForRepo({ owner, repo, state: 'open', per_page: 100 });
             const existing = open.data.find(issue => issue.title === title);
-            if (!due.length && !failed.length) {
+            if (!due.length && !unverified.length) {
               if (existing) {
-                await github.rest.issues.update({ owner, repo, issue_number: existing.number, state: 'closed', body: 'Latest automated checkpoint (' + report.generatedAt + '): no courses are due for review and no source URLs were confirmed broken. Some sources may restrict automated checks; that status is not treated as a broken link.' });
+                await github.rest.issues.update({ owner, repo, issue_number: existing.number, state: 'closed', body: 'Latest automated checkpoint (' + report.generatedAt + '): no courses are due for review and all source checks were reachable. Restricted or failed checks remain open for manual verification.' });
                 core.info('Closed resolved review issue #' + existing.number);
               } else {
                 core.info('No course review is due and no source URLs were confirmed broken.');
@@ -56,7 +56,7 @@ jobs:
               ...(due.length ? due.map(course => '- **' + course.title + '** (' + course.slug + ') — ' + (course.lastReviewed ? ('last reviewed ' + course.lastReviewed) : 'initial content audit required; no verified review date') + '; interval ' + course.reviewIntervalDays + ' days.') : ['- None']),
               '',
               '## Reference links needing manual verification',
-              ...(failed.length ? failed.map(item => '- **' + item.course + '** (' + item.slug + ') — ' + item.url + ' — ' + (item.error || ('HTTP ' + item.httpStatus)) + '.') : ['- None']),
+              ...(unverified.length ? unverified.map(item => '- **' + item.course + '** (' + item.slug + ') — ' + item.url + ' — ' + (item.status === 'restricted' ? 'automated access restricted; verify manually' : (item.error || ('HTTP ' + item.httpStatus))) + '.') : ['- None']),
               '',
               '## Reviewer checklist',
               '- Confirm current product behaviour and version-specific changes against official documentation.',
