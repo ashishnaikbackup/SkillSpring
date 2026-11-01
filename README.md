@@ -10,6 +10,7 @@ The public product and repository are named SkillSpring.
 - **[Python: Zero to Professional Foundations](python-course.html)** — the most extensive course so far, with 16 modules from Hello World through programming fundamentals, data structures, functions, OOP, files, debugging, Git, APIs, SQLite and a portfolio capstone.\n- **[Python Coding Practice](python-practice.html)** — 10 browser-run challenges with automatic tests, feedback, hints, revealable solutions and local code/progress saving. Python runs through Pyodide in the learner’s browser.
 - **[Field Radar](field-radar.html)** — short educational explainers about changing tools, technology and professional skills. This is a curated learning resource, not a live news feed.
 - **[Learning dashboard](index.html)** — the main platform experience, subject schools, learning paths and Python playground.
+- **[Learning-platform benchmark](docs/LEARNING_PLATFORM_BENCHMARK.md)** — research notes and original teaching principles adapted from Mimo, Brilliant, freeCodeCamp, Microsoft Learn, Google Skillshop and Exercism.
 
 ## Published course library
 
