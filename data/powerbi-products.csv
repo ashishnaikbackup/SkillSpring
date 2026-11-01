@@ -1,0 +1,7 @@
+ProductID,ProductName,Category,StandardPrice,StandardCost
+P001,Laptop,Electronics,42000,31000
+P002,Monitor,Electronics,12500,8500
+P003,Keyboard,Accessories,1800,900
+P004,Mouse,Accessories,950,420
+P005,Office Chair,Furniture,7800,5100
+P006,Desk Lamp,Furniture,1450,760
