@@ -1,5 +1,5 @@
 {
-  "generatedAt": null,
+  "generatedAt": "2026-11-01T02:06:00.544Z",
   "disclaimer": "Automatically collected headlines and short feed excerpts. Original reporting remains with the publisher. Check the source link for full context. This is not financial, legal or security advice.",
   "sources": [
     {
@@ -7,141 +7,1156 @@
       "name": "Python Insider",
       "category": "Programming",
       "url": "https://blog.python.org/rss.xml",
-      "status": "not_checked",
-      "lastChecked": null,
-      "lastSuccess": null,
-      "itemCount": 0
+      "status": "ok",
+      "message": "Feed refreshed",
+      "lastStatusChange": "2026-11-01T02:06:00.544Z",
+      "lastContentUpdate": "2026-11-01T02:06:00.544Z",
+      "itemCount": 8
     },
     {
       "id": "github",
       "name": "GitHub Blog",
       "category": "Software Development",
       "url": "https://github.blog/feed/",
-      "status": "not_checked",
-      "lastChecked": null,
-      "lastSuccess": null,
-      "itemCount": 0
+      "status": "ok",
+      "message": "Feed refreshed",
+      "lastStatusChange": "2026-11-01T02:06:00.544Z",
+      "lastContentUpdate": "2026-11-01T02:06:00.544Z",
+      "itemCount": 8
     },
     {
       "id": "google-dev",
       "name": "Google Developers",
       "category": "Software Development",
       "url": "https://developers.googleblog.com/feeds/posts/default/",
-      "status": "not_checked",
-      "lastChecked": null,
-      "lastSuccess": null,
-      "itemCount": 0
+      "status": "ok",
+      "message": "Feed refreshed",
+      "lastStatusChange": "2026-11-01T02:06:00.544Z",
+      "lastContentUpdate": "2026-11-01T02:06:00.544Z",
+      "itemCount": 8
     },
     {
       "id": "openai",
       "name": "OpenAI News",
       "category": "AI & Data",
       "url": "https://openai.com/news/rss.xml",
-      "status": "not_checked",
-      "lastChecked": null,
-      "lastSuccess": null,
-      "itemCount": 0
+      "status": "ok",
+      "message": "Feed refreshed",
+      "lastStatusChange": "2026-11-01T02:06:00.544Z",
+      "lastContentUpdate": "2026-11-01T02:06:00.544Z",
+      "itemCount": 8
     },
     {
       "id": "google-ai",
       "name": "Google AI",
       "category": "AI & Data",
       "url": "https://blog.google/technology/ai/rss/",
-      "status": "not_checked",
-      "lastChecked": null,
-      "lastSuccess": null,
-      "itemCount": 0
+      "status": "ok",
+      "message": "Feed refreshed",
+      "lastStatusChange": "2026-11-01T02:06:00.544Z",
+      "lastContentUpdate": "2026-11-01T02:06:00.544Z",
+      "itemCount": 8
     },
     {
       "id": "deepmind",
       "name": "Google DeepMind",
       "category": "AI & Data",
       "url": "https://deepmind.google/blog/rss.xml",
-      "status": "not_checked",
-      "lastChecked": null,
-      "lastSuccess": null,
-      "itemCount": 0
+      "status": "ok",
+      "message": "Feed refreshed",
+      "lastStatusChange": "2026-11-01T02:06:00.544Z",
+      "lastContentUpdate": "2026-11-01T02:06:00.544Z",
+      "itemCount": 8
     },
     {
       "id": "huggingface",
       "name": "Hugging Face Blog",
       "category": "AI & Data",
       "url": "https://huggingface.co/blog/feed.xml",
-      "status": "not_checked",
-      "lastChecked": null,
-      "lastSuccess": null,
-      "itemCount": 0
+      "status": "ok",
+      "message": "Feed refreshed",
+      "lastStatusChange": "2026-11-01T02:06:00.544Z",
+      "lastContentUpdate": "2026-11-01T02:06:00.544Z",
+      "itemCount": 8
     },
     {
       "id": "power-platform",
       "name": "Microsoft Power Platform",
       "category": "Office & Analytics",
       "url": "https://www.microsoft.com/en-us/power-platform/blog/feed/",
-      "status": "not_checked",
-      "lastChecked": null,
-      "lastSuccess": null,
-      "itemCount": 0
+      "status": "ok",
+      "message": "Feed refreshed",
+      "lastStatusChange": "2026-11-01T02:06:00.544Z",
+      "lastContentUpdate": "2026-11-01T02:06:00.544Z",
+      "itemCount": 8
     },
     {
       "id": "m365-roadmap",
       "name": "Microsoft 365 Roadmap",
       "category": "Office & Productivity",
       "url": "https://www.microsoft.com/releasecommunications/api/v2/m365/rss",
-      "status": "not_checked",
-      "lastChecked": null,
-      "lastSuccess": null,
-      "itemCount": 0
+      "status": "ok",
+      "message": "Feed refreshed",
+      "lastStatusChange": "2026-11-01T02:06:00.544Z",
+      "lastContentUpdate": "2026-11-01T02:06:00.544Z",
+      "itemCount": 8
     },
     {
       "id": "rbi",
       "name": "Reserve Bank of India",
       "category": "Finance & India",
       "url": "https://www.rbi.org.in/pressreleases_rss.xml",
-      "status": "not_checked",
-      "lastChecked": null,
-      "lastSuccess": null,
-      "itemCount": 0
+      "status": "ok",
+      "message": "Feed refreshed",
+      "lastStatusChange": "2026-11-01T02:06:00.544Z",
+      "lastContentUpdate": "2026-11-01T02:06:00.544Z",
+      "itemCount": 8
     },
     {
       "id": "sebi",
       "name": "SEBI",
       "category": "Finance & India",
       "url": "https://www.sebi.gov.in/sebirss.xml",
-      "status": "not_checked",
-      "lastChecked": null,
-      "lastSuccess": null,
-      "itemCount": 0
+      "status": "ok",
+      "message": "Feed refreshed",
+      "lastStatusChange": "2026-11-01T02:06:00.544Z",
+      "lastContentUpdate": "2026-11-01T02:06:00.544Z",
+      "itemCount": 8
     },
     {
       "id": "cisa",
       "name": "CISA Advisories",
       "category": "Cybersecurity",
       "url": "https://www.cisa.gov/cybersecurity-advisories/all.xml",
-      "status": "not_checked",
-      "lastChecked": null,
-      "lastSuccess": null,
-      "itemCount": 0
+      "status": "ok",
+      "message": "Feed refreshed",
+      "lastStatusChange": "2026-11-01T02:06:00.544Z",
+      "lastContentUpdate": "2026-11-01T02:06:00.544Z",
+      "itemCount": 8
     },
     {
       "id": "figma",
       "name": "Figma Blog",
       "category": "Design & Creative",
       "url": "https://www.figma.com/blog/feed/atom.xml",
-      "status": "not_checked",
-      "lastChecked": null,
-      "lastSuccess": null,
-      "itemCount": 0
+      "status": "ok",
+      "message": "Feed refreshed",
+      "lastStatusChange": "2026-11-01T02:06:00.544Z",
+      "lastContentUpdate": "2026-11-01T02:06:00.544Z",
+      "itemCount": 8
     },
     {
       "id": "ieee-spectrum",
       "name": "IEEE Spectrum",
       "category": "Engineering & Electronics",
       "url": "https://spectrum.ieee.org/customfeeds/feed/all-topics/rss",
-      "status": "not_checked",
-      "lastChecked": null,
-      "lastSuccess": null,
-      "itemCount": 0
+      "status": "ok",
+      "message": "Feed refreshed",
+      "lastStatusChange": "2026-11-01T02:06:00.544Z",
+      "lastContentUpdate": "2026-11-01T02:06:00.544Z",
+      "itemCount": 8
     }
   ],
-  "items": []
+  "items": [
+    {
+      "id": "https://spectrum.ieee.org/early-electric-vehicles",
+      "title": "When Electric Cars Were for Women",
+      "summary": "Early carmakers decided women wanted cars that were quiet, clean, and easy to start",
+      "url": "https://spectrum.ieee.org/early-electric-vehicles",
+      "publishedAt": "2026-10-31T13:00:02.000Z",
+      "sourceId": "ieee-spectrum",
+      "sourceName": "IEEE Spectrum",
+      "category": "Engineering & Electronics"
+    },
+    {
+      "id": "https://www.figma.com/blog/the-tldr-on-figma-weave/",
+      "title": "The TL;DR on Figma Weave: Make your creative process repeatable",
+      "summary": "Figma Weave brings AI generation and editing tools together into connected, reusable workflows, giving you a process your team can shape, refine, and repeat. Here’s what it unlocks for creative teams and how to get the most out of it.",
+      "url": "https://www.figma.com/blog/the-tldr-on-figma-weave/",
+      "publishedAt": "2026-10-31T00:58:00.000Z",
+      "sourceId": "figma",
+      "sourceName": "Figma Blog",
+      "category": "Design & Creative"
+    },
+    {
+      "id": "https://www.microsoft.com/microsoft-365/roadmap?id=578225",
+      "title": "Microsoft 365: Frontier expands to public previews in Teams, Outlook, OneDrive, and SharePoint",
+      "summary": "Frontier is expanding to bring eligible public preview features across Microsoft 365 into one program. Users enrolled in Frontier can get eligible previews for new Outlook for Windows, OneDrive, SharePoint, Microsoft Teams, and Copilot, managed through a single admin-controlled enrollment experience. Frontier enrollment is optional and separate from Standar…",
+      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=578225",
+      "publishedAt": "2026-10-30T22:08:34.000Z",
+      "sourceId": "m365-roadmap",
+      "sourceName": "Microsoft 365 Roadmap",
+      "category": "Office & Productivity"
+    },
+    {
+      "id": "https://www.microsoft.com/microsoft-365/roadmap?id=577901",
+      "title": "Microsoft Teams: Activity in other accounts and orgs improvements",
+      "summary": "Stay up-to-date with what's happening in your other accounts and organizations with the 'Activity in Other Accounts and Orgs' panel. Preview and open chats, channels, and other activity in other accounts and orgs from your main Teams window, without switching tenants. More info: https://learn.microsoft.com/en-us/microsoftteams/activity-in-other-accounts-org…",
+      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=577901",
+      "publishedAt": "2026-10-30T22:08:34.000Z",
+      "sourceId": "m365-roadmap",
+      "sourceName": "Microsoft 365 Roadmap",
+      "category": "Office & Productivity"
+    },
+    {
+      "id": "https://www.microsoft.com/microsoft-365/roadmap?id=577392",
+      "title": "Microsoft Copilot (Microsoft 365): [Education] Create multi-week unit plans with Teach",
+      "summary": "Educators can use Teach in Microsoft 365 Copilot to create structured unit plans that span multiple lessons or weeks. They can customize the plan components to organize connected lesson plans and quizzes across a unit. #education GA date: October CY2026",
+      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=577392",
+      "publishedAt": "2026-10-30T22:08:34.000Z",
+      "sourceId": "m365-roadmap",
+      "sourceName": "Microsoft 365 Roadmap",
+      "category": "Office & Productivity"
+    },
+    {
+      "id": "https://www.microsoft.com/microsoft-365/roadmap?id=573251",
+      "title": "Dynamics 365 Business Central: Sustainability Management - Add EUDR certification information",
+      "summary": "Record EUDR certification information for items under the EU Deforestation Regulation. Different lots of the same item can carry different certificates, origins and validity, it is stored on Lot No. Information, not on the item. An item is opted in with a single EUDR Relevant flag on the Item Card, which enforces lot tracking with lot information. Certifica…",
+      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=573251",
+      "publishedAt": "2026-10-30T22:08:34.000Z",
+      "sourceId": "m365-roadmap",
+      "sourceName": "Microsoft 365 Roadmap",
+      "category": "Office & Productivity"
+    },
+    {
+      "id": "https://www.microsoft.com/microsoft-365/roadmap?id=570662",
+      "title": "Microsoft Edge: Select Password from the context menu",
+      "summary": "Users can now manually access saved credentials when password suggestions don't appear automatically. When a user right-clicks a recognized username or password field, a new Select Password option appears in the context menu. This provides a reliable fallback path for sign-in scenarios where autofill suggestions are not surfaced, reducing the need for users…",
+      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=570662",
+      "publishedAt": "2026-10-30T22:08:34.000Z",
+      "sourceId": "m365-roadmap",
+      "sourceName": "Microsoft 365 Roadmap",
+      "category": "Office & Productivity"
+    },
+    {
+      "id": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63897",
+      "title": "Premature redemption under Sovereign Gold Bond (SGB) Scheme - Redemption Price for premature redemption of SGB 2021-22 Series VII due on November 02, 2026",
+      "summary": "In terms of GOI notification F.No. 4(5)-B(W&M)/2021 dated October 21, 2021 (SGB 2021-22 Series VII - Issue date November 02, 2021) on Sovereign Gold Bond Scheme, premature redemption of Gold Bond may be permitted after fifth year from the date of issue of such Gold Bond on the date on which interest is payable. Accordingly, the due date of premature redempt…",
+      "url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63897",
+      "publishedAt": "2026-10-30T18:40:00.000Z",
+      "sourceId": "rbi",
+      "sourceName": "Reserve Bank of India",
+      "category": "Finance & India"
+    },
+    {
+      "id": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63896",
+      "title": "Auction of State Government Securities",
+      "summary": "The following State Governments have offered to sell stock by way of auction, for an aggregate amount of ₹29,900 Crore (Face Value). Sr. No. State/UT Amount to be raised (₹ Crore) Additional Borrowing (Greenshoe) Option (₹ Crore) Tenor (Year) Type of Auction 1. Andhra Pradesh 1000 - Re-issue of 7.46% Andhra Pradesh SGS 2035, issued on August 12, 2026 Price…",
+      "url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63896",
+      "publishedAt": "2026-10-30T18:10:00.000Z",
+      "sourceId": "rbi",
+      "sourceName": "Reserve Bank of India",
+      "category": "Finance & India"
+    },
+    {
+      "id": "https://huggingface.co/blog/nvidia/nemotron-halloween",
+      "title": "nemotron-halloween",
+      "summary": "",
+      "url": "https://huggingface.co/blog/nvidia/nemotron-halloween",
+      "publishedAt": "2026-10-30T17:57:24.000Z",
+      "sourceId": "huggingface",
+      "sourceName": "Hugging Face Blog",
+      "category": "AI & Data"
+    },
+    {
+      "id": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63895",
+      "title": "Auction of 91-Day, 182-Day and 364-Day Treasury Bills",
+      "summary": "Reserve Bank of India announces the auction of Government of India Treasury Bills as per the following details: Sr. No. Treasury Bill Notified Amount (₹ crore) Auction Date Settlement Date 1 91-Day 8,000 November 04, 2026 (Wednesday) November 05, 2026 (Thursday) 2 182-Day 8,000 3 364-Day 7,000 Total 23,000 The sale will be subject to the terms and condition…",
+      "url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63895",
+      "publishedAt": "2026-10-30T17:40:00.000Z",
+      "sourceId": "rbi",
+      "sourceName": "Reserve Bank of India",
+      "category": "Finance & India"
+    },
+    {
+      "id": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63894",
+      "title": "Lending and Deposit Rates of Scheduled Commercial Banks – October 2026",
+      "summary": "Data on lending and deposit rates of scheduled commercial banks (SCBs) (excluding regional rural banks and small finance banks) received during October 2026 are set out in Tables 1 to 9. Highlights: Lending Rates: The weighted average lending rate (WALR) on outstanding rupee loans of SCBs remained unchanged at 8.96 per cent in September 2026 compared to Aug…",
+      "url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63894",
+      "publishedAt": "2026-10-30T17:35:00.000Z",
+      "sourceId": "rbi",
+      "sourceName": "Reserve Bank of India",
+      "category": "Finance & India"
+    },
+    {
+      "id": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63893",
+      "title": "Monthly Data on India’s International Trade in Services for the Month of September 2026",
+      "summary": "The values of exports and imports of services during September 2026 are presented in the following table. International Trade in Services (US$ million) Month Receipts (Exports) Payments (Imports) July &ndash; 2026 38,253 (13.4) 20,606 (19.1) August &ndash; 2026 35,471 (13.7) 18,934 (21.4) September &ndash; 2026 39,305 (7.2) 20,097 (12.6) Note: (i) Data for…",
+      "url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63893",
+      "publishedAt": "2026-10-30T17:30:00.000Z",
+      "sourceId": "rbi",
+      "sourceName": "Reserve Bank of India",
+      "category": "Finance & India"
+    },
+    {
+      "id": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63892",
+      "title": "625 th Meeting of Central Board of the Reserve Bank of India",
+      "summary": "The 625 th meeting of the Central Board of Directors of Reserve Bank of India was held today in Mumbai under the Chairmanship of Shri Sanjay Malhotra, Governor. The Central Board took the Integrity Pledge as part of the observance of Vigilance Awareness Week 2026. The Board in its meeting deliberated on the prevailing economic conditions and associated chal…",
+      "url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63892",
+      "publishedAt": "2026-10-30T17:10:00.000Z",
+      "sourceId": "rbi",
+      "sourceName": "Reserve Bank of India",
+      "category": "Finance & India"
+    },
+    {
+      "id": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63891",
+      "title": "Sectoral Deployment of Bank Credit – September 2026",
+      "summary": "Data on sectoral deployment of bank credit for the month of September 2026, collected from 41 select scheduled commercial banks (SCBs), which together account for about 95 per cent of the total non-food credit by all SCBs 1 , are set out in Statements I and II . On a year-on-year (y-o-y) basis, non-food bank credit 2 grew by 19.1 per cent as on the fortnigh…",
+      "url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63891",
+      "publishedAt": "2026-10-30T17:00:00.000Z",
+      "sourceId": "rbi",
+      "sourceName": "Reserve Bank of India",
+      "category": "Finance & India"
+    },
+    {
+      "id": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63890",
+      "title": "Reserve Bank of India – Bulletin Weekly Statistical Supplement – Extract",
+      "summary": "1. Reserve Bank of India - Liabilities and Assets* (₹ Crore) Item 2025 2026 Variation Oct. 24 Oct. 16 Oct. 23 Week Year 1 2 3 4 5 4 Loans and Advances 4.1 Central Government - 0 0 0 0 4.2 State Governments 23777 29700 21074 -8626 -2703 * Data are provisional; difference, if any, is due to rounding off. 2. Foreign Exchange Reserves* Item As on October 23, 20…",
+      "url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63890",
+      "publishedAt": "2026-10-30T17:00:00.000Z",
+      "sourceId": "rbi",
+      "sourceName": "Reserve Bank of India",
+      "category": "Finance & India"
+    },
+    {
+      "id": "https://spectrum.ieee.org/video-friday-whole-body-manipulation",
+      "title": "Video Friday: Spot Plays to Show Its Whole-Body Manipulation",
+      "summary": "Your weekly selection of awesome robot videos",
+      "url": "https://spectrum.ieee.org/video-friday-whole-body-manipulation",
+      "publishedAt": "2026-10-30T16:30:03.000Z",
+      "sourceId": "ieee-spectrum",
+      "sourceName": "IEEE Spectrum",
+      "category": "Engineering & Electronics"
+    },
+    {
+      "id": "https://www.cisa.gov/news-events/alerts/2026/10/30/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+      "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
+      "summary": "CISA has added two new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation. CVE-2026-111357 Ivanti Connect Secure Missing Authentication for Critical Function Vulnerability CVE-2026-118527 Ivanti Connect Secure Generation of Predictable Numbers or Identifiers Vulnerability These types of vulnerabil…",
+      "url": "https://www.cisa.gov/news-events/alerts/2026/10/30/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+      "publishedAt": "2026-10-30T12:00:00.000Z",
+      "sourceId": "cisa",
+      "sourceName": "CISA Advisories",
+      "category": "Cybersecurity"
+    },
+    {
+      "id": "https://openai.com/index/helping-websites-express-ai-training-preferences",
+      "title": "Making it easier for websites to express AI training preferences",
+      "summary": "OpenAI will honor a shared robots.txt signal to help website operators communicate their AI training preferences to participating providers.",
+      "url": "https://openai.com/index/helping-websites-express-ai-training-preferences",
+      "publishedAt": "2026-10-30T09:30:00.000Z",
+      "sourceId": "openai",
+      "sourceName": "OpenAI News",
+      "category": "AI & Data"
+    },
+    {
+      "id": "https://openai.com/index/community-safety-report-and-new-protections-for-teens",
+      "title": "Community safety report and new protections for teens",
+      "summary": "OpenAI is strengthening violence prevention in ChatGPT with expanded safeguards, earlier interventions, and a new commitment to public safety reporting.",
+      "url": "https://openai.com/index/community-safety-report-and-new-protections-for-teens",
+      "publishedAt": "2026-10-30T09:00:00.000Z",
+      "sourceId": "openai",
+      "sourceName": "OpenAI News",
+      "category": "AI & Data"
+    },
+    {
+      "id": "https://openai.com/index/fair-use-benefits-everyone",
+      "title": "Fair use benefits everyone",
+      "summary": "OpenAI shares excerpts from court briefs by creators, academics, accessibility advocates, and legal experts, among others, on how fair use supports AI training and innovation.",
+      "url": "https://openai.com/index/fair-use-benefits-everyone",
+      "publishedAt": "2026-10-30T00:00:00.000Z",
+      "sourceId": "openai",
+      "sourceName": "OpenAI News",
+      "category": "AI & Data"
+    },
+    {
+      "id": "https://www.microsoft.com/microsoft-365/roadmap?id=577894",
+      "title": "Dynamics 365 Supply Chain Management: Enable fulfillment optimization in Dynamics 365 Supply Chain Management",
+      "summary": "Distributed order management (DOM) can now optimize fulfillment for standard sales orders in Dynamics 365 Supply Chain Management. Previously, DOM was available only for Dynamics 365 Commerce orders. Now you can use the same rules-based fulfillment engine to automatically choose the best site and warehouse for each sales order line, without depending on Com…",
+      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=577894",
+      "publishedAt": "2026-10-29T23:01:00.000Z",
+      "sourceId": "m365-roadmap",
+      "sourceName": "Microsoft 365 Roadmap",
+      "category": "Office & Productivity"
+    },
+    {
+      "id": "https://www.microsoft.com/microsoft-365/roadmap?id=577867",
+      "title": "Dynamics 365 Supply Chain Management: Check margins when overriding prices in Unified pricing management",
+      "summary": "Price override allows sales representatives to adjust the preset price of a product during a transaction—typically for business purposes such as customer negotiations and retention. Previously, price override validation only enforced amount-based thresholds, without evaluating how the override would impact profit margins. Unified pricing management now prov…",
+      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=577867",
+      "publishedAt": "2026-10-29T23:01:00.000Z",
+      "sourceId": "m365-roadmap",
+      "sourceName": "Microsoft 365 Roadmap",
+      "category": "Office & Productivity"
+    },
+    {
+      "id": "https://www.microsoft.com/microsoft-365/roadmap?id=577858",
+      "title": "Dynamics 365 Finance: Enhance positive pay file generation through batch processing",
+      "summary": "This feature improves the scalability and performance of positive pay file generation by enabling the process to run as a background batch job. Organizations that generate large positive pay files can now offload processing from the interactive user session, reducing the risk of timeouts and improving the overall user experience. The enhancement is designed…",
+      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=577858",
+      "publishedAt": "2026-10-29T23:01:00.000Z",
+      "sourceId": "m365-roadmap",
+      "sourceName": "Microsoft 365 Roadmap",
+      "category": "Office & Productivity"
+    },
+    {
+      "id": "https://www.figma.com/blog/training-a-figma-fluent-editing-model/",
+      "title": "How we’re training a Figma-fluent editing model",
+      "summary": "We’ve increasingly seen that specialized post-training can compete with frontier models. Here, we’re sharing the research behind how we’re translating that to design editing workflows.",
+      "url": "https://www.figma.com/blog/training-a-figma-fluent-editing-model/",
+      "publishedAt": "2026-10-29T21:00:00.000Z",
+      "sourceId": "figma",
+      "sourceName": "Figma Blog",
+      "category": "Design & Creative"
+    },
+    {
+      "id": "https://www.figma.com/blog/making-something-human-4-things-we-took-away-from-config-india/",
+      "title": "Making something human: 4 things we took away from Config India",
+      "summary": "AI can help us create almost anything now. But from icons and NFTs to art installations and fashion design, it's still up to the maker to deliver something that resonates.",
+      "url": "https://www.figma.com/blog/making-something-human-4-things-we-took-away-from-config-india/",
+      "publishedAt": "2026-10-29T20:00:00.000Z",
+      "sourceId": "figma",
+      "sourceName": "Figma Blog",
+      "category": "Design & Creative"
+    },
+    {
+      "id": "https://openai.com/index/updated-model-spec",
+      "title": "An updated Model Spec for more capable and beneficial AI",
+      "summary": "OpenAI’s updated Model Spec outlines five core values to guide more capable AI toward sound judgment, human agency, and faithfulness to human intent.",
+      "url": "https://openai.com/index/updated-model-spec",
+      "publishedAt": "2026-10-29T17:00:00.000Z",
+      "sourceId": "openai",
+      "sourceName": "OpenAI News",
+      "category": "AI & Data"
+    },
+    {
+      "id": "https://spectrum.ieee.org/infrastructure-inspection-airship-hylight",
+      "title": "Autonomous Airships Keep Tabs on Energy Infrastructure",
+      "summary": "French startup HyLight goes up against helicopters and drones",
+      "url": "https://spectrum.ieee.org/infrastructure-inspection-airship-hylight",
+      "publishedAt": "2026-10-29T14:00:02.000Z",
+      "sourceId": "ieee-spectrum",
+      "sourceName": "IEEE Spectrum",
+      "category": "Engineering & Electronics"
+    },
+    {
+      "id": "https://huggingface.co/blog/ibm-granite/granite-switch-4-1-1",
+      "title": "Granite Switch 4.1.1 — Update models like you update software",
+      "summary": "",
+      "url": "https://huggingface.co/blog/ibm-granite/granite-switch-4-1-1",
+      "publishedAt": "2026-10-29T13:37:07.000Z",
+      "sourceId": "huggingface",
+      "sourceName": "Hugging Face Blog",
+      "category": "AI & Data"
+    },
+    {
+      "id": "https://spectrum.ieee.org/medical-implant-energy-harvesting-mesh",
+      "title": "Mesh Woven Into Heart Tissue Harvests Energy From Motion",
+      "summary": "The approach could offer a more biocompatible way to power implants",
+      "url": "https://spectrum.ieee.org/medical-implant-energy-harvesting-mesh",
+      "publishedAt": "2026-10-29T12:00:02.000Z",
+      "sourceId": "ieee-spectrum",
+      "sourceName": "IEEE Spectrum",
+      "category": "Engineering & Electronics"
+    },
+    {
+      "id": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-302-03",
+      "title": "Hitachi Energy CoreTec Product",
+      "summary": "View CSAF Summary Hitachi Energy is aware of OS command injection and Dirty Frag vulnerabilities that affect CoreTec product versions listed in this document. Successful exploitation of these vulnerabilities could result in impact on confidentiality, integrity and availability of the product. Please refer to the Recommended Immediate Actions for information…",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-302-03",
+      "publishedAt": "2026-10-29T12:00:00.000Z",
+      "sourceId": "cisa",
+      "sourceName": "CISA Advisories",
+      "category": "Cybersecurity"
+    },
+    {
+      "id": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-302-02",
+      "title": "Hitachi Energy TRO600 series products",
+      "summary": "View CSAF Summary Hitachi Energy is aware of multiple vulnerabilities that affect the TRO600 series product versions listed in this document. These vulnerabilities can be exploited for remote code execution (RCE) to carry out further attacks and disclosure of sensitive information. Please refer to the Recommended Immediate Actions section for information ab…",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-302-02",
+      "publishedAt": "2026-10-29T12:00:00.000Z",
+      "sourceId": "cisa",
+      "sourceName": "CISA Advisories",
+      "category": "Cybersecurity"
+    },
+    {
+      "id": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-302-01",
+      "title": "Siemens Mendix SAML Module",
+      "summary": "View CSAF Summary Mendix SAML module contains an authentication bypass vulnerability that could allow an unauthenticated remote attacker to gain unauthorized access by replaying a valid SAML assertion in IdP-initiated authentication flows. Siemens has released new versions for the affected products and recommends to update to the latest versions. The follow…",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-302-01",
+      "publishedAt": "2026-10-29T12:00:00.000Z",
+      "sourceId": "cisa",
+      "sourceName": "CISA Advisories",
+      "category": "Cybersecurity"
+    },
+    {
+      "id": "https://www.cisa.gov/news-events/alerts/2026/10/29/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+      "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
+      "summary": "CISA has added two new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation. CVE-2026-97229 GitLab Community Edition and Enterprise Edition Integer Overflow or Wraparound vulnerability CVE-2026-76418 Cisco Secure Firewall ASA Software and Cisco Secure FTD Software Unchecked Return Value to NULL Poin…",
+      "url": "https://www.cisa.gov/news-events/alerts/2026/10/29/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+      "publishedAt": "2026-10-29T12:00:00.000Z",
+      "sourceId": "cisa",
+      "sourceName": "CISA Advisories",
+      "category": "Cybersecurity"
+    },
+    {
+      "id": "https://openai.com/index/how-we-detect-frontier-model-misalignment",
+      "title": "How we detect frontier model misalignment",
+      "summary": "OpenAI uses layered monitoring to detect frontier model misalignment and unauthorized agent behavior so responders can intervene before incidents escalate.",
+      "url": "https://openai.com/index/how-we-detect-frontier-model-misalignment",
+      "publishedAt": "2026-10-29T09:00:00.000Z",
+      "sourceId": "openai",
+      "sourceName": "OpenAI News",
+      "category": "AI & Data"
+    },
+    {
+      "id": "https://openai.com/index/ropes-gray-ai-diligence",
+      "title": "How Ropes & Gray is developing AI for transactional diligence",
+      "summary": "Ropes & Gray is developing AI for transactional diligence with OpenAI. Lawyers review grouped documents, summaries, and reports before advising clients.",
+      "url": "https://openai.com/index/ropes-gray-ai-diligence",
+      "publishedAt": "2026-10-29T07:00:00.000Z",
+      "sourceId": "openai",
+      "sourceName": "OpenAI News",
+      "category": "AI & Data"
+    },
+    {
+      "id": "https://openai.com/index/credit-saison",
+      "title": "Credit Saison achieves 954% ROI in a ChatGPT Enterprise pilot",
+      "summary": "Credit Saison’s ChatGPT Enterprise pilot delivered 954% ROI. See how leaders and employees helped turn the results into companywide adoption.",
+      "url": "https://openai.com/index/credit-saison",
+      "publishedAt": "2026-10-29T00:00:00.000Z",
+      "sourceId": "openai",
+      "sourceName": "OpenAI News",
+      "category": "AI & Data"
+    },
+    {
+      "id": "https://huggingface.co/blog/announcing-project-protostar",
+      "title": "Announcing Project ProtoStar: Making Publicly Funded Science AI-Ready",
+      "summary": "",
+      "url": "https://huggingface.co/blog/announcing-project-protostar",
+      "publishedAt": "2026-10-29T00:00:00.000Z",
+      "sourceId": "huggingface",
+      "sourceName": "Hugging Face Blog",
+      "category": "AI & Data"
+    },
+    {
+      "id": "https://huggingface.co/blog/mistral-large4",
+      "title": "Welcome Le Chonk: Mistral Large 4 on Hugging Face",
+      "summary": "",
+      "url": "https://huggingface.co/blog/mistral-large4",
+      "publishedAt": "2026-10-29T00:00:00.000Z",
+      "sourceId": "huggingface",
+      "sourceName": "Hugging Face Blog",
+      "category": "AI & Data"
+    },
+    {
+      "id": "https://huggingface.co/blog/anydecisionmodel",
+      "title": "Introducing AnySpeechRecognizer and AnyDecisionModel: Open Models for Speech and Decisions on Apple Platforms",
+      "summary": "",
+      "url": "https://huggingface.co/blog/anydecisionmodel",
+      "publishedAt": "2026-10-29T00:00:00.000Z",
+      "sourceId": "huggingface",
+      "sourceName": "Hugging Face Blog",
+      "category": "AI & Data"
+    },
+    {
+      "id": "https://www.microsoft.com/en-us/power-platform/blog/2026/10/28/dataverse-plugin-copilot-cowork/",
+      "title": "From one prompt to a governed Dataverse app: the Dataverse plugin lands in Copilot Cowork",
+      "summary": "The Microsoft Dataverse plugin for Copilot Cowork turns a plain-language request into real Dataverse tables, sample data and a published app, with every change approved by you and every action running under your own permissions. The post From one prompt to a governed Dataverse app: the Dataverse plugin lands in Copilot Cowork appeared first on Microsoft Pow…",
+      "url": "https://www.microsoft.com/en-us/power-platform/blog/2026/10/28/dataverse-plugin-copilot-cowork/",
+      "publishedAt": "2026-10-28T20:50:01.000Z",
+      "sourceId": "power-platform",
+      "sourceName": "Microsoft Power Platform",
+      "category": "Office & Analytics"
+    },
+    {
+      "id": "https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model/",
+      "title": "Gemini 4 Carbon: Our next frontier model",
+      "summary": "",
+      "url": "https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model/",
+      "publishedAt": "2026-10-28T17:00:58.000Z",
+      "sourceId": "deepmind",
+      "sourceName": "Google DeepMind",
+      "category": "AI & Data"
+    },
+    {
+      "id": "https://github.blog/news-insights/company-news/github-universe-2026-evolving-every-layer-of-the-stack/",
+      "title": "GitHub Universe 2026: Evolving every layer of the stack",
+      "summary": "Today, we laid out our vision for GitHub as the most comprehensive, end-to-end software delivery system in the world. The post GitHub Universe 2026: Evolving every layer of the stack appeared first on The GitHub Blog .",
+      "url": "https://github.blog/news-insights/company-news/github-universe-2026-evolving-every-layer-of-the-stack/",
+      "publishedAt": "2026-10-28T16:09:28.000Z",
+      "sourceId": "github",
+      "sourceName": "GitHub Blog",
+      "category": "Software Development"
+    },
+    {
+      "id": "https://github.blog/news-insights/octoverse/octoverse-commits-pushes-reach-new-highs-in-2026-as-developers-build-with-agents/",
+      "title": "Octoverse: Commits, pushes, reach new highs in 2026 as developers build with agents",
+      "summary": "See how a record year of growth reached every industry, every field, and every kind of builder in the 2026 Octoverse report. The post Octoverse: Commits, pushes, reach new highs in 2026 as developers build with agents appeared first on The GitHub Blog .",
+      "url": "https://github.blog/news-insights/octoverse/octoverse-commits-pushes-reach-new-highs-in-2026-as-developers-build-with-agents/",
+      "publishedAt": "2026-10-28T16:07:40.000Z",
+      "sourceId": "github",
+      "sourceName": "GitHub Blog",
+      "category": "Software Development"
+    },
+    {
+      "id": "https://openai.com/index/openai-servicenow-partnership-expansion",
+      "title": "OpenAI and ServiceNow expand partnership across enterprise workflows",
+      "summary": "OpenAI and ServiceNow expand their partnership to bring OpenAI models and agents into ServiceNow and ServiceNow workflows into ChatGPT and Codex.",
+      "url": "https://openai.com/index/openai-servicenow-partnership-expansion",
+      "publishedAt": "2026-10-28T13:15:00.000Z",
+      "sourceId": "openai",
+      "sourceName": "OpenAI News",
+      "category": "AI & Data"
+    },
+    {
+      "id": "https://spectrum.ieee.org/beta-technologies-electric-aircraft",
+      "title": "How Beta Technologies Is Clearing the Runway for Electric Flight",
+      "summary": "It aims to lift the industry with its aircraft, motors, batteries, and charging network",
+      "url": "https://spectrum.ieee.org/beta-technologies-electric-aircraft",
+      "publishedAt": "2026-10-28T13:00:03.000Z",
+      "sourceId": "ieee-spectrum",
+      "sourceName": "IEEE Spectrum",
+      "category": "Engineering & Electronics"
+    },
+    {
+      "id": "https://www.figma.com/blog/source-material-brent-david-freaney/",
+      "title": "Source material: \"BRAT\" Art Director Brent David Freaney finds design inspiration from everyday life",
+      "summary": "The designer takes us through his world of color theory, photography, graphic systems, and found ephemeral.",
+      "url": "https://www.figma.com/blog/source-material-brent-david-freaney/",
+      "publishedAt": "2026-10-28T13:00:00.000Z",
+      "sourceId": "figma",
+      "sourceName": "Figma Blog",
+      "category": "Design & Creative"
+    },
+    {
+      "id": "https://www.cisa.gov/news-events/alerts/2026/10/28/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+      "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
+      "summary": "CISA has added two new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation. CVE-2026-41709 Broadcom VMWare ESX Insufficient Logging Vulnerability CVE-2026-46300 Linux Kernel Missing Initialization of a Variable Vulnerability These types of vulnerabilities are a frequent attack vector for malicious…",
+      "url": "https://www.cisa.gov/news-events/alerts/2026/10/28/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+      "publishedAt": "2026-10-28T12:00:00.000Z",
+      "sourceId": "cisa",
+      "sourceName": "CISA Advisories",
+      "category": "Cybersecurity"
+    },
+    {
+      "id": "https://spectrum.ieee.org/faa-aviation-airwaves",
+      "title": "FAA Gets Serious About Aviation Airwaves",
+      "summary": "Companies seek to secure 33 GHz of spectrum across 9 million square kilometers",
+      "url": "https://spectrum.ieee.org/faa-aviation-airwaves",
+      "publishedAt": "2026-10-28T08:00:04.000Z",
+      "sourceId": "ieee-spectrum",
+      "sourceName": "IEEE Spectrum",
+      "category": "Engineering & Electronics"
+    },
+    {
+      "id": "https://www.microsoft.com/en-us/power-platform/blog/power-apps/invite-agentic-coauthors-to-collaborate-with-you-directly-in-canvas-studio/",
+      "title": "Invite agentic coauthors to collaborate with you directly in canvas studio!",
+      "summary": "Today we’re excited to share big news for canvas app makers: agentic authoring in canvas studio using your GitHub account is now available in preview! In September, the canvas authoring agent plugin became generally available (GA), so you could build canvas apps from your own coding agent – GitHub Copilot CLI, Claude Code and more. The post Invite agentic c…",
+      "url": "https://www.microsoft.com/en-us/power-platform/blog/power-apps/invite-agentic-coauthors-to-collaborate-with-you-directly-in-canvas-studio/",
+      "publishedAt": "2026-10-27T19:00:00.000Z",
+      "sourceId": "power-platform",
+      "sourceName": "Microsoft Power Platform",
+      "category": "Office & Analytics"
+    },
+    {
+      "id": "https://huggingface.co/blog/LiquidAI/lfm3",
+      "title": "Build specialized multimodal models with LFM3",
+      "summary": "",
+      "url": "https://huggingface.co/blog/LiquidAI/lfm3",
+      "publishedAt": "2026-10-27T17:16:52.000Z",
+      "sourceId": "huggingface",
+      "sourceName": "Hugging Face Blog",
+      "category": "AI & Data"
+    },
+    {
+      "id": "https://huggingface.co/blog/allenai/novelty-bench",
+      "title": "Can we trust LLMs to judge whether a research idea is novel?",
+      "summary": "",
+      "url": "https://huggingface.co/blog/allenai/novelty-bench",
+      "publishedAt": "2026-10-27T16:12:42.000Z",
+      "sourceId": "huggingface",
+      "sourceName": "Hugging Face Blog",
+      "category": "AI & Data"
+    },
+    {
+      "id": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
+      "title": "Genie 4: A new generation of world simulation",
+      "summary": "Genie 4: our new world model unlocking unprecedented realism in real-time simulation.",
+      "url": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
+      "publishedAt": "2026-10-27T16:01:38.000Z",
+      "sourceId": "deepmind",
+      "sourceName": "Google DeepMind",
+      "category": "AI & Data"
+    },
+    {
+      "id": "https://spectrum.ieee.org/ai-generated-scientific-papers",
+      "title": "I Used AI to Fake a Scientific Paper. Here’s What Happened",
+      "summary": "My experiment with an IEEE journal revealed AI’s threats to scholarly publishing",
+      "url": "https://spectrum.ieee.org/ai-generated-scientific-papers",
+      "publishedAt": "2026-10-27T13:00:03.000Z",
+      "sourceId": "ieee-spectrum",
+      "sourceName": "IEEE Spectrum",
+      "category": "Engineering & Electronics"
+    },
+    {
+      "id": "https://www.cisa.gov/news-events/alerts/2026/10/27/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+      "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
+      "summary": "CISA has added two new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation. CVE-2026-48356 Adobe Commerce and Magento Unrestricted Upload of File with Dangerous Type Vulnerability CVE-2026-111497 Google Brotli Unchecked Return Value Vulnerability These types of vulnerabilities are a frequent attack…",
+      "url": "https://www.cisa.gov/news-events/alerts/2026/10/27/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+      "publishedAt": "2026-10-27T12:00:00.000Z",
+      "sourceId": "cisa",
+      "sourceName": "CISA Advisories",
+      "category": "Cybersecurity"
+    },
+    {
+      "id": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-300-01",
+      "title": "EPICS Base",
+      "summary": "View CSAF Summary Successful exploitation of these vulnerabilities could allow an attacker to cause a denial-of-service condition, corrupt memory, disclose sensitive information, or potentially execute arbitrary code. The following versions of EPICS Base are affected: EPICS Base release &lt;=7.0.10 (CVE-2026-114595, CVE-2026-114596, CVE-2026-114597, CVE-202…",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-300-01",
+      "publishedAt": "2026-10-27T12:00:00.000Z",
+      "sourceId": "cisa",
+      "sourceName": "CISA Advisories",
+      "category": "Cybersecurity"
+    },
+    {
+      "id": "https://www.microsoft.com/en-us/power-platform/blog/2026/10/26/custom-apis-just-landed-in-the-dataverse-mcp-server-agents-just-got-smarter/",
+      "title": "Custom APIs just landed in the Dataverse MCP Server, Agents just got smarter",
+      "summary": "The Dataverse MCP Server now supports custom APIs allowing customers to leverage their existing custom business logic, from their Agents, regardless of where they are hosted. The post Custom APIs just landed in the Dataverse MCP Server, Agents just got smarter appeared first on Microsoft Power Platform Blog .",
+      "url": "https://www.microsoft.com/en-us/power-platform/blog/2026/10/26/custom-apis-just-landed-in-the-dataverse-mcp-server-agents-just-got-smarter/",
+      "publishedAt": "2026-10-26T16:39:55.000Z",
+      "sourceId": "power-platform",
+      "sourceName": "Microsoft Power Platform",
+      "category": "Office & Analytics"
+    },
+    {
+      "id": "https://blog.google/products-and-platforms/products/education/ai-quests-polar-peaks/",
+      "title": "Our newest AI Quest: Mapping the human brain",
+      "summary": "An illustration of a planet rotating to show various cartoon figures waving. At the top is the text \"AI Quests\"",
+      "url": "https://blog.google/products-and-platforms/products/education/ai-quests-polar-peaks/",
+      "publishedAt": "2026-10-26T16:00:00.000Z",
+      "sourceId": "google-ai",
+      "sourceName": "Google AI",
+      "category": "AI & Data"
+    },
+    {
+      "id": "https://spectrum.ieee.org/magnetic",
+      "title": "Build a Hidden Lock With a Magnetic Imager",
+      "summary": "Only the right gesture can open it",
+      "url": "https://spectrum.ieee.org/magnetic",
+      "publishedAt": "2026-10-26T13:00:02.000Z",
+      "sourceId": "ieee-spectrum",
+      "sourceName": "IEEE Spectrum",
+      "category": "Engineering & Electronics"
+    },
+    {
+      "id": "https://blog.python.org/2026/10/python-3152-31410-31318-31216-31118/",
+      "title": "Python 3.15.2, 3.14.10, 3.13.18, 3.12.16 and 3.11.18 are out",
+      "summary": "Five expedited security releases to distrust the compromised eMudhra intermediate CA keys.",
+      "url": "https://blog.python.org/2026/10/python-3152-31410-31318-31216-31118/",
+      "publishedAt": "2026-10-26T00:00:00.000Z",
+      "sourceId": "python",
+      "sourceName": "Python Insider",
+      "category": "Programming"
+    },
+    {
+      "id": "https://www.figma.com/blog/6-ways-teams-are-experimenting-with-code-layers/",
+      "title": "6 ways teams are experimenting with code layers",
+      "summary": "Now that code layers is in open beta, you can bring code to the canvas. Here’s how six teams are using it to experiment, get stakeholders aligned, and move faster.",
+      "url": "https://www.figma.com/blog/6-ways-teams-are-experimenting-with-code-layers/",
+      "publishedAt": "2026-10-23T22:43:00.000Z",
+      "sourceId": "figma",
+      "sourceName": "Figma Blog",
+      "category": "Design & Creative"
+    },
+    {
+      "id": "https://www.microsoft.com/en-us/power-platform/blog/2026/10/23/dataverse-and-workiq-ppcc-2026/",
+      "title": "AI that understands your business: Dataverse and Work IQ at PPCC 2026",
+      "summary": "With business applications in Work IQ, now in public preview, Copilot and agents understand your business too. The post AI that understands your business: Dataverse and Work IQ at PPCC 2026 appeared first on Microsoft Power Platform Blog .",
+      "url": "https://www.microsoft.com/en-us/power-platform/blog/2026/10/23/dataverse-and-workiq-ppcc-2026/",
+      "publishedAt": "2026-10-23T21:34:54.000Z",
+      "sourceId": "power-platform",
+      "sourceName": "Microsoft Power Platform",
+      "category": "Office & Analytics"
+    },
+    {
+      "id": "https://www.figma.com/blog/how-to-put-your-design-system-to-work-with-the-figma-agent/",
+      "title": "How to put your design system to work with the Figma agent",
+      "summary": "Your design system can help the Figma agent understand the principles and guidelines that define your product. Here’s how to make that context useful to the agent.",
+      "url": "https://www.figma.com/blog/how-to-put-your-design-system-to-work-with-the-figma-agent/",
+      "publishedAt": "2026-10-23T02:27:00.000Z",
+      "sourceId": "figma",
+      "sourceName": "Figma Blog",
+      "category": "Design & Creative"
+    },
+    {
+      "id": "https://huggingface.co/blog/torch-neuronx-model-support",
+      "title": "Does Your Model Run on AWS Trainium? Look It Up",
+      "summary": "",
+      "url": "https://huggingface.co/blog/torch-neuronx-model-support",
+      "publishedAt": "2026-10-23T00:00:00.000Z",
+      "sourceId": "huggingface",
+      "sourceName": "Hugging Face Blog",
+      "category": "AI & Data"
+    },
+    {
+      "id": "https://github.blog/security/how-bug-bounty-sharpens-one-researchers-security-skills/",
+      "title": "How bug bounty sharpens one researcher’s security skills",
+      "summary": "As Cybersecurity Awareness Month continues, the GitHub Bug Bounty team spotlights @r31n, diving into their research approach, favorite bug classes, and advice for aspiring hackers. The post How bug bounty sharpens one researcher’s security skills appeared first on The GitHub Blog .",
+      "url": "https://github.blog/security/how-bug-bounty-sharpens-one-researchers-security-skills/",
+      "publishedAt": "2026-10-22T17:21:30.000Z",
+      "sourceId": "github",
+      "sourceName": "GitHub Blog",
+      "category": "Software Development"
+    },
+    {
+      "id": "https://www.microsoft.com/en-us/power-platform/blog/2026/10/22/microsoft-named-a-leader-in-two-evaluations-of-next-generation-app-development-platforms/",
+      "title": "Microsoft named a Leader in two evaluations of next-generation app development platforms",
+      "summary": "Discover how Microsoft Power Platform and Microsoft Copilot Studio are shaping the next generation of business software with AI-powered development, agents, apps, workflows, and enterprise governance. Learn why Microsoft was recognized as a Leader in two 2026 analyst evaluations. The post Microsoft named a Leader in two evaluations of next-generation app de…",
+      "url": "https://www.microsoft.com/en-us/power-platform/blog/2026/10/22/microsoft-named-a-leader-in-two-evaluations-of-next-generation-app-development-platforms/",
+      "publishedAt": "2026-10-22T17:00:00.000Z",
+      "sourceId": "power-platform",
+      "sourceName": "Microsoft Power Platform",
+      "category": "Office & Analytics"
+    },
+    {
+      "id": "https://www.figma.com/blog/lufthansa-figma-make/",
+      "title": "How Lufthansa Systems prototypes realistic maps for the cockpit with Figma Make",
+      "summary": "Pilots depend on in-flight software to navigate routes, see air traffic, avoid turbulence, and more. To bring more dynamic prototypes to user testing, Lufthansa Systems turned to Figma Make.",
+      "url": "https://www.figma.com/blog/lufthansa-figma-make/",
+      "publishedAt": "2026-10-22T14:50:00.000Z",
+      "sourceId": "figma",
+      "sourceName": "Figma Blog",
+      "category": "Design & Creative"
+    },
+    {
+      "id": "https://deepmind.google/blog/beyond-tree-cover-mapping-the-worlds-forest-types/",
+      "title": "Beyond tree cover: mapping the world’s forest types",
+      "summary": "A global map categorizing every 10-meter patch of land on Earth into distinct forest types.",
+      "url": "https://deepmind.google/blog/beyond-tree-cover-mapping-the-worlds-forest-types/",
+      "publishedAt": "2026-10-22T14:30:24.000Z",
+      "sourceId": "deepmind",
+      "sourceName": "Google DeepMind",
+      "category": "AI & Data"
+    },
+    {
+      "id": "https://github.blog/engineering/architecture-optimization/the-bridge-to-agent-scale-git-infrastructure/",
+      "title": "The bridge to agent-scale Git infrastructure",
+      "summary": "We moved a copy of 99.99999% of GitHub's repositories to Azure. Here's how per-reference quorums will bring over the rest, and how object storage lets reads scale independently. The post The bridge to agent-scale Git infrastructure appeared first on The GitHub Blog .",
+      "url": "https://github.blog/engineering/architecture-optimization/the-bridge-to-agent-scale-git-infrastructure/",
+      "publishedAt": "2026-10-21T16:00:00.000Z",
+      "sourceId": "github",
+      "sourceName": "GitHub Blog",
+      "category": "Software Development"
+    },
+    {
+      "id": "https://blog.google/company-news/inside-google/around-the-globe/google-asia/e-conomy-sea-report-2026/",
+      "title": "Southeast Asia’s digital economy to hit $368 billion",
+      "summary": "Cover image for the e-Conomy SEA 2026 report titled Building the intelligent economy by Google, Temasek, and Bain and Company. A 3D illustration features a glowing yellow star surrounded by miniature scenes representing digital sectors, including data cen",
+      "url": "https://blog.google/company-news/inside-google/around-the-globe/google-asia/e-conomy-sea-report-2026/",
+      "publishedAt": "2026-10-21T04:00:00.000Z",
+      "sourceId": "google-ai",
+      "sourceName": "Google AI",
+      "category": "AI & Data"
+    },
+    {
+      "id": "https://blog.python.org/2026/10/python-3151-3149-31317/",
+      "title": "Python 3.15.1, 3.14.9 and 3.13.17 are out",
+      "summary": "Three certified security releases for 3.15, 3.14 and 3.13.",
+      "url": "https://blog.python.org/2026/10/python-3151-3149-31317/",
+      "publishedAt": "2026-10-21T00:00:00.000Z",
+      "sourceId": "python",
+      "sourceName": "Python Insider",
+      "category": "Programming"
+    },
+    {
+      "id": "https://www.figma.com/blog/source-material-ben-ganz/",
+      "title": "Source material: Designer Ben Ganz on pushing the limits of what we can do",
+      "summary": "From experimental typography and print artifacts to architecture, furniture, and fashion, PIN-UP Magazine’s creative director explores how materials, systems, and unexpected connections can shape new visual worlds.",
+      "url": "https://www.figma.com/blog/source-material-ben-ganz/",
+      "publishedAt": "2026-10-20T19:18:00.000Z",
+      "sourceId": "figma",
+      "sourceName": "Figma Blog",
+      "category": "Design & Creative"
+    },
+    {
+      "id": "https://github.blog/ai-and-ml/github-copilot/how-3-java-champions-are-using-github-copilot-for-increased-productivity/",
+      "title": "How 3 Java Champions are using GitHub Copilot for increased productivity",
+      "summary": "Three Java Champions share how they use GitHub Copilot to solve problems, accelerate development, and keep humans responsible for the results. The post How 3 Java Champions are using GitHub Copilot for increased productivity appeared first on The GitHub Blog .",
+      "url": "https://github.blog/ai-and-ml/github-copilot/how-3-java-champions-are-using-github-copilot-for-increased-productivity/",
+      "publishedAt": "2026-10-20T16:05:03.000Z",
+      "sourceId": "github",
+      "sourceName": "GitHub Blog",
+      "category": "Software Development"
+    },
+    {
+      "id": "https://github.blog/ai-and-ml/github-copilot/how-to-continue-a-github-copilot-app-session-in-vs-code/",
+      "title": "How to continue a GitHub Copilot app session in VS Code",
+      "summary": "Learn how to move an agent session from the GitHub Copilot app into VS Code without losing the conversation, code changes, or working context. The post How to continue a GitHub Copilot app session in VS Code appeared first on The GitHub Blog .",
+      "url": "https://github.blog/ai-and-ml/github-copilot/how-to-continue-a-github-copilot-app-session-in-vs-code/",
+      "publishedAt": "2026-10-19T18:47:22.000Z",
+      "sourceId": "github",
+      "sourceName": "GitHub Blog",
+      "category": "Software Development"
+    },
+    {
+      "id": "https://github.blog/news-insights/company-news/the-next-developer-interface-is-ambient-intelligence/",
+      "title": "The next developer interface is ambient intelligence",
+      "summary": "AI, agents, voice, and physical controls are shifting software development from operating tools to expressing intent—and helping developers stay focused on building. The post The next developer interface is ambient intelligence appeared first on The GitHub Blog .",
+      "url": "https://github.blog/news-insights/company-news/the-next-developer-interface-is-ambient-intelligence/",
+      "publishedAt": "2026-10-15T19:39:27.000Z",
+      "sourceId": "github",
+      "sourceName": "GitHub Blog",
+      "category": "Software Development"
+    },
+    {
+      "id": "https://github.blog/engineering/platform-security/staying-evergreen-how-we-automated-secure-access-and-repo-hygiene-in-a-shared-org/",
+      "title": "Staying Evergreen: How we automated secure access and repo hygiene in a shared org",
+      "summary": "Put native GitHub features to work to review outside collaborator access and archive stale repositories. The post Staying Evergreen: How we automated secure access and repo hygiene in a shared org appeared first on The GitHub Blog .",
+      "url": "https://github.blog/engineering/platform-security/staying-evergreen-how-we-automated-secure-access-and-repo-hygiene-in-a-shared-org/",
+      "publishedAt": "2026-10-15T18:00:00.000Z",
+      "sourceId": "github",
+      "sourceName": "GitHub Blog",
+      "category": "Software Development"
+    },
+    {
+      "id": "https://deepmind.google/blog/accelerating-antimicrobial-discovery/",
+      "title": "Accelerating the search for antimicrobial peptides with Google Antigravity",
+      "summary": "Accelerating the search for novel antimicrobial peptides using Google Antigravity for Science.",
+      "url": "https://deepmind.google/blog/accelerating-antimicrobial-discovery/",
+      "publishedAt": "2026-10-15T16:08:03.000Z",
+      "sourceId": "deepmind",
+      "sourceName": "Google DeepMind",
+      "category": "AI & Data"
+    },
+    {
+      "id": "https://www.microsoft.com/en-us/power-platform/blog/power-pages/go-multilingual-with-the-power-pages-plugin/",
+      "title": "Go multilingual with the Power Pages plugin",
+      "summary": "We’re thrilled to bring localization support to the Power Pages plugin for GitHub Copilot CLI and Claude Code. The new /add-localization skill makes it easy to create multilingual Power Pages SPA sites in 43+ languages, including experiences in right-to-left languages such as Arabic and Hebrew. The post Go multilingual with the Power Pages plugin appeared f…",
+      "url": "https://www.microsoft.com/en-us/power-platform/blog/power-pages/go-multilingual-with-the-power-pages-plugin/",
+      "publishedAt": "2026-10-14T08:25:25.000Z",
+      "sourceId": "power-platform",
+      "sourceName": "Microsoft Power Platform",
+      "category": "Office & Analytics"
+    },
+    {
+      "id": "https://deepmind.google/blog/on-device-ai-scam-detection-mddi/",
+      "title": "Google DeepMind and Singapore Government collaborate to build fine-tuned AI model for scam detection",
+      "summary": "Learn how Google DeepMind and GovTech Singapore uses lightweight on-device Gemma models to intercept conversational scams in private chats with zero cloud data egress.",
+      "url": "https://deepmind.google/blog/on-device-ai-scam-detection-mddi/",
+      "publishedAt": "2026-10-14T02:00:14.000Z",
+      "sourceId": "deepmind",
+      "sourceName": "Google DeepMind",
+      "category": "AI & Data"
+    },
+    {
+      "id": "https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely/",
+      "title": "Developing Gemini 4 Argon responsibly and safely",
+      "summary": "",
+      "url": "https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely/",
+      "publishedAt": "2026-10-13T19:43:07.000Z",
+      "sourceId": "deepmind",
+      "sourceName": "Google DeepMind",
+      "category": "AI & Data"
+    },
+    {
+      "id": "https://www.microsoft.com/en-us/power-platform/blog/power-pages/create-power-pages-sites-in-minutes-with-spa-templates/",
+      "title": "Create Power Pages sites in minutes with SPA templates",
+      "summary": "We’re thrilled to share SPA template support in the Power Pages plugin for GitHub Copilot CLI and Claude Code. The /create-site skill can now create your site from a ready-made single-page application (SPA) template, instead of generating every page and component from scratch. The post Create Power Pages sites in minutes with SPA templates appeared first on…",
+      "url": "https://www.microsoft.com/en-us/power-platform/blog/power-pages/create-power-pages-sites-in-minutes-with-spa-templates/",
+      "publishedAt": "2026-10-13T17:25:20.000Z",
+      "sourceId": "power-platform",
+      "sourceName": "Microsoft Power Platform",
+      "category": "Office & Analytics"
+    },
+    {
+      "id": "https://deepmind.google/blog/gemini-4-argon-for-robotics/",
+      "title": "Gemini 4 Argon for Robotics",
+      "summary": "",
+      "url": "https://deepmind.google/blog/gemini-4-argon-for-robotics/",
+      "publishedAt": "2026-10-13T16:01:58.000Z",
+      "sourceId": "deepmind",
+      "sourceName": "Google DeepMind",
+      "category": "AI & Data"
+    },
+    {
+      "id": "https://deepmind.google/blog/introducing-gemini-4-argon/",
+      "title": "Gemini 4 Argon: Built to solve your hardest problems",
+      "summary": "",
+      "url": "https://deepmind.google/blog/introducing-gemini-4-argon/",
+      "publishedAt": "2026-10-13T16:01:52.000Z",
+      "sourceId": "deepmind",
+      "sourceName": "Google DeepMind",
+      "category": "AI & Data"
+    },
+    {
+      "id": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/",
+      "title": "Gemini 4 Argon: Built to solve your hardest problems",
+      "summary": "TBD",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/",
+      "publishedAt": "2026-10-13T16:00:00.000Z",
+      "sourceId": "google-ai",
+      "sourceName": "Google AI",
+      "category": "AI & Data"
+    },
+    {
+      "id": "https://blog.python.org/2026/10/python-3160-alpha-1-is-now-available/",
+      "title": "Python 3.16.0 alpha 1 is now available",
+      "summary": "The first developer preview of Python 3.16 is ready for testing.",
+      "url": "https://blog.python.org/2026/10/python-3160-alpha-1-is-now-available/",
+      "publishedAt": "2026-10-13T00:00:00.000Z",
+      "sourceId": "python",
+      "sourceName": "Python Insider",
+      "category": "Programming"
+    },
+    {
+      "id": "https://blog.python.org/2026/10/python-3150-final-is-here/",
+      "title": "Python 3.15.0 (final) is here!",
+      "summary": "A brand new Python here for you to enjoy!",
+      "url": "https://blog.python.org/2026/10/python-3150-final-is-here/",
+      "publishedAt": "2026-10-09T00:00:00.000Z",
+      "sourceId": "python",
+      "sourceName": "Python Insider",
+      "category": "Programming"
+    },
+    {
+      "id": "https://www.microsoft.com/en-us/power-platform/blog/power-pages/microsoft-power-pages-is-now-available-in-sweden-central-and-italy-north/",
+      "title": "Microsoft Power Pages is now available in Sweden Central and Italy North",
+      "summary": "We’re excited to announce the general availability of Microsoft Power Pages in the Sweden Central and Italy North regions. Whether you’re a no-code, low-code, or code-first developer, Power Pages empowers you to build scalable, secure, and business-centric websites. The post Microsoft Power Pages is now available in Sweden Central and Italy North appeared f…",
+      "url": "https://www.microsoft.com/en-us/power-platform/blog/power-pages/microsoft-power-pages-is-now-available-in-sweden-central-and-italy-north/",
+      "publishedAt": "2026-10-08T12:36:38.000Z",
+      "sourceId": "power-platform",
+      "sourceName": "Microsoft Power Platform",
+      "category": "Office & Analytics"
+    },
+    {
+      "id": "https://blog.google/innovation-and-ai/technology/ai/playground-experimental-gaming-platform/",
+      "title": "Introducing Playground: Create and play custom games",
+      "summary": "Overview of Playground",
+      "url": "https://blog.google/innovation-and-ai/technology/ai/playground-experimental-gaming-platform/",
+      "publishedAt": "2026-10-07T12:00:00.000Z",
+      "sourceId": "google-ai",
+      "sourceName": "Google AI",
+      "category": "AI & Data"
+    },
+    {
+      "id": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-september-2026/",
+      "title": "The latest AI news we announced in September 2026",
+      "summary": "A video showing the September AI updates",
+      "url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-september-2026/",
+      "publishedAt": "2026-10-02T15:00:00.000Z",
+      "sourceId": "google-ai",
+      "sourceName": "Google AI",
+      "category": "AI & Data"
+    },
+    {
+      "id": "https://blog.python.org/2026/10/python-3150-rc3/",
+      "title": "Python 3.15.0 candidate 3 is here!",
+      "summary": "Following tradition, a surprise rc3!",
+      "url": "https://blog.python.org/2026/10/python-3150-rc3/",
+      "publishedAt": "2026-10-02T00:00:00.000Z",
+      "sourceId": "python",
+      "sourceName": "Python Insider",
+      "category": "Programming"
+    },
+    {
+      "id": "https://blog.python.org/2026/10/python-31022-31117/",
+      "title": "Python 3.10.22, 3.11.17, 3.12.15, 3.13.16 and 3.14.8 are now available!",
+      "summary": "Security updates across Python 3.10–3.14, the final maintenance release of 3.13, and a farewell to Python 3.10.",
+      "url": "https://blog.python.org/2026/10/python-31022-31117/",
+      "publishedAt": "2026-10-01T00:00:00.000Z",
+      "sourceId": "python",
+      "sourceName": "Python Insider",
+      "category": "Programming"
+    },
+    {
+      "id": "https://blog.python.org/2026/09/language-summit-2026/",
+      "title": "Python Language Summit 2026",
+      "summary": "The 2026 Python Language Summit was hosted in Kraków, Poland as part of EuroPython 2026. There were 15 talks covering free-threading, Rust, garbage collection, type annotations, and more.",
+      "url": "https://blog.python.org/2026/09/language-summit-2026/",
+      "publishedAt": "2026-09-30T12:00:11.000Z",
+      "sourceId": "python",
+      "sourceName": "Python Insider",
+      "category": "Programming"
+    },
+    {
+      "id": "https://blog.python.org/2026/09/language-summit-2026-lightning-talks/",
+      "title": "Lightning Talks (Python Language Summit 2026)",
+      "summary": "Lightning talks on a one-time ABI break, safer interruptions, EktuPy (Scratch but Python), an AGENTS.md file for CPython, and a call to read PEP 836.",
+      "url": "https://blog.python.org/2026/09/language-summit-2026-lightning-talks/",
+      "publishedAt": "2026-09-30T12:00:10.000Z",
+      "sourceId": "python",
+      "sourceName": "Python Insider",
+      "category": "Programming"
+    },
+    {
+      "id": "https://blog.google/innovation-and-ai/technology/ai/winner-future-vision-xprize/",
+      "title": "Watch the winning trailer from the Future Vision XPRIZE, The Gifted.",
+      "summary": "Watch the winning trailer from the Future Vision XPRIZE, The Gifted.",
+      "url": "https://blog.google/innovation-and-ai/technology/ai/winner-future-vision-xprize/",
+      "publishedAt": "2026-09-28T19:00:00.000Z",
+      "sourceId": "google-ai",
+      "sourceName": "Google AI",
+      "category": "AI & Data"
+    },
+    {
+      "id": "https://blog.google/innovation-and-ai/technology/research/google-beam-expansion/",
+      "title": "Google Beam expands with new regions, partners, and customers",
+      "summary": "Google Beam promotional animation",
+      "url": "https://blog.google/innovation-and-ai/technology/research/google-beam-expansion/",
+      "publishedAt": "2026-09-23T18:00:00.000Z",
+      "sourceId": "google-ai",
+      "sourceName": "Google AI",
+      "category": "AI & Data"
+    },
+    {
+      "id": "https://blog.google/innovation-and-ai/technology/ai/expanding-ai-economy-research-bench/",
+      "title": "New experts join Google’s AI & Economy team",
+      "summary": "Text \"AI & Economy Research Program\" all over a green grid background, with the Google G logo in the bottom right corner",
+      "url": "https://blog.google/innovation-and-ai/technology/ai/expanding-ai-economy-research-bench/",
+      "publishedAt": "2026-09-18T14:00:00.000Z",
+      "sourceId": "google-ai",
+      "sourceName": "Google AI",
+      "category": "AI & Data"
+    },
+    {
+      "id": "https://developers.googleblog.com/devfest-is-back/",
+      "title": "DevFest is back!",
+      "summary": "DevFest 2026 runs from October 1 to December 31, bringing together nearly a million developers across more than 800 global events centered on the agentic AI era. Under the theme \"Build, Secure, Scale,\" participants gain hands-on experience with Google’s developer stack—including Gemini, Google AI Studio, Google Antigravity, and Web MCP—through live workshop…",
+      "url": "https://developers.googleblog.com/devfest-is-back/",
+      "publishedAt": null,
+      "sourceId": "google-dev",
+      "sourceName": "Google Developers",
+      "category": "Software Development"
+    },
+    {
+      "id": "https://developers.googleblog.com/build-generative-ui-apps-with-a2ui-copilotkit-agents/",
+      "title": "Build Generative UI Apps with A2UI & CopilotKit Agents",
+      "summary": "See Google A2Ui in action! Learn how to natively render agentic UIs across Langchain, AWS Strands, Microsoft agents, and Google ADK using CopilotKit SDKs for A2UI.",
+      "url": "https://developers.googleblog.com/build-generative-ui-apps-with-a2ui-copilotkit-agents/",
+      "publishedAt": null,
+      "sourceId": "google-dev",
+      "sourceName": "Google Developers",
+      "category": "Software Development"
+    },
+    {
+      "id": "https://developers.googleblog.com/smaller-apps-and-faster-gpu-inference-with-litert-in-google-play-services/",
+      "title": "Smaller apps and faster GPU inference with LiteRT in Google Play services",
+      "summary": "LiteRT in Google Play services now offers GPU inference powered by ML Drift, delivering about 1.4x faster performance alongside the new CompiledModel API. Switching from bundled binaries reduces app size by approximately 8 MB while enabling seamless, automatic runtime updates across billions of devices. Developers can easily adopt these updates by updating…",
+      "url": "https://developers.googleblog.com/smaller-apps-and-faster-gpu-inference-with-litert-in-google-play-services/",
+      "publishedAt": null,
+      "sourceId": "google-dev",
+      "sourceName": "Google Developers",
+      "category": "Software Development"
+    },
+    {
+      "id": "https://developers.googleblog.com/hill-climbing-agent-quality-with-agents-cli-evaluation/",
+      "title": "Hill-Climbing Agent Quality with Agents CLI Evaluation",
+      "summary": "This post walks through the Agents CLI evaluation loop for systematically improving agent performance through continuous testing and grading. It demonstrates how to catch prompt regressions, evaluate model backend swaps using side-by-side trace comparisons, and automate evaluation passes. Developers will also learn how to integrate nightly scheduled runs wi…",
+      "url": "https://developers.googleblog.com/hill-climbing-agent-quality-with-agents-cli-evaluation/",
+      "publishedAt": null,
+      "sourceId": "google-dev",
+      "sourceName": "Google Developers",
+      "category": "Software Development"
+    }
+  ]
 }
