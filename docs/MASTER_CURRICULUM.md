@@ -139,3 +139,16 @@ A dedicated [Python coding practice path](../python-practice.html) has been adde
 ## Multi-language practice lab status
 
 The current standalone lab offers Python through Pyodide, JavaScript execution in a sandboxed browser frame, HTML/CSS/JS preview and SQLite via sql.js. For additional languages it provides downloadable starter files and local compiler/runtime instructions. It does not claim online execution for those languages. The current editor is a lightweight textarea, not a full language-server IDE. Do not advertise debugger, autocomplete or guaranteed execution where not implemented.
+
+
+## Curriculum expansion delivered — 1 November 2026
+
+The interactive [12-school curriculum map](../curriculum-map.html) now publishes an eight-stage sequence for each school, with the course families in scope, a school-specific worked-example standard, assessment expectations and portfolio capstone. It is a syllabus and scope-control tool. It does not claim that all listed course families have fully authored lessons.
+
+The [graded practice studio](../advanced-practice.html) adds eight JavaScript challenges and eight SQL/SQLite challenges. Each includes a task, starter code/query, test criteria, hint and example solution. JavaScript runs in a sandboxed iframe; SQL runs in a browser-local SQLite database seeded with fictional learner/customer/order records. Passing state is stored locally in the browser. These are learning exercises, not secure production execution environments.
+
+### Remaining completion standard
+
+For every course family listed above, author and review the full course before marking it complete: prerequisites, glossary, sequenced concept lessons, worked examples with reasoning, guided and independent exercises, answer explanations, multiple knowledge checks, cumulative and final practical assessments, beginner/intermediate/advanced projects, rubrics, professional workflow, safety/accessibility, official references, portfolio evidence and role-specific interview preparation. The 24 existing catalogue courses still require their initial editorial audit; do not invent review dates or close issue #2 without a real lesson-by-lesson check.
+
+Practice coverage still to add includes spreadsheet modelling, data analysis/statistics, electronics/circuit/HDL verification, networking/subnetting and design critique/prototype evaluation. Cross-device accounts/sync and a full language-server IDE remain separate product/platform projects, not prerequisites for publishing the static learning content.
