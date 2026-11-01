@@ -146,7 +146,7 @@ if (fs.existsSync(engineeringLabPath)) {
   }
 }
 const dashboardForLearning = fs.readFileSync(path.join(root, "index.html"), "utf8");
-for (const href of ["curriculum-map.html", "advanced-practice.html", "professional-labs.html", "career-launchpad.html", "progress-backup.html"]) {
+for (const href of ["curriculum-map.html", "advanced-practice.html", "professional-labs.html", "career-launchpad.html", "progress-backup.html", "mastery-studio.html"]) {
   if (!dashboardForLearning.includes(`href="${href}"`)) fail(`Dashboard does not link to ${href}.`);
 }
 const practiceSource = fs.readFileSync(path.join(root, "advanced-practice.js"), "utf8");
@@ -420,7 +420,7 @@ if (fs.existsSync(powerBiProjectPath)) {
   }
 }
 
-// Validate the live Field Radar payload, not only that its JSON parses.
+// Mastery Studio: local-first skill tracker, weekly planner and portable revision backup.\nconst masteryPath = path.join(root, "mastery-studio.html");\nif (!fs.existsSync(masteryPath)) fail("Mastery Studio page is missing.");\nif (fs.existsSync(masteryPath)) {\n  const mastery = fs.readFileSync(masteryPath, "utf8");\n  for (const feature of ["skillspring-mastery-studio-v1", "metricMastered", "reviewQueue", "makePlan", "exportData", "importData", "prefers-reduced-motion", "aria-live"]) {\n    if (!mastery.includes(feature)) fail("Mastery Studio is missing required feature: " + feature + ".");\n  }\n  if (!mastery.includes("href=\\"index.html\\"")) fail("Mastery Studio is missing its dashboard navigation.");\n}\n\n// Validate the live Field Radar payload, not only that its JSON parses.
 try {
   const sourceConfig = JSON.parse(fs.readFileSync(path.join(root, "data/field-radar-sources.json"), "utf8"));
   const radarFeed = JSON.parse(fs.readFileSync(path.join(root, "data/field-radar.json"), "utf8"));
