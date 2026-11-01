@@ -131,6 +131,14 @@ for (const page of ["curriculum-map.html", "advanced-practice.html", "profession
   if (!fs.existsSync(path.join(root, page))) fail(`Required learning expansion page is missing: ${page}.`);
 }
 const engineeringLabPath = path.join(root, "professional-labs.js");
+const extendedLabPath = path.join(root, "professional-labs-extras.js");
+if (!fs.existsSync(extendedLabPath)) fail("Finance and business practice labs are missing.");
+if (fs.existsSync(extendedLabPath)) {
+  const extendedLabs = fs.readFileSync(extendedLabPath, "utf8");
+  for (const feature of ["finCalc", "bizCalc", "Monthly cash-flow", "unit economics"]) {
+    if (!extendedLabs.includes(feature)) fail("Extended professional labs are missing " + feature + ".");
+  }
+}
 if (fs.existsSync(engineeringLabPath)) {
   const engineeringLab = fs.readFileSync(engineeringLabPath, "utf8");
   for (const required of ["circuitCalc", "cR1", "cR2", "cVs", "cCap", "RC time constant"]) {
