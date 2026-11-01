@@ -38,7 +38,7 @@ try {
   await page.locator("#addCard").click();
   check("spaced revision card added", await page.locator("#dueCount").innerText() === "1");
   await page.locator("#reviewList button[data-forgot]").click();
-  check("revision retry scheduled", await page.locator("#reviewList").innerText().then(t => t.includes("1/5 reviews")));
+  check("revision retry scheduled", await page.locator("#reviewList").innerText().then(t => t.includes("0/5 reviews")));
   await page.locator("#reviewList button[data-grade]").click();
   check("revision success advances stage", await page.locator("#reviewList").innerText().then(t => t.includes("1/5 reviews")));
   await page.locator("#sessionSkill").fill("SQL joins");
