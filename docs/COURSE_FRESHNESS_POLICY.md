@@ -4,11 +4,11 @@ SkillSpring covers both evergreen concepts and fast-changing tools. A static les
 
 ## Initial review baseline
 
-The initial 1 November 2026 checkpoint verified the 24-course inventory, catalogue routes, lesson-data structure, reference-source mapping and site validation. It was **not** a line-by-line editorial sign-off of every lesson. The `lastReviewed` dates in the initial manifest represent this baseline checkpoint; individual lessons still need deeper subject-matter review as the platform matures.
+The initial 1 November 2026 checkpoint verified the 24-course inventory, catalogue routes, lesson-data structure, reference-source mapping and site validation. It was **not** a line-by-line editorial sign-off of every lesson. Accordingly, all 24 existing entries currently have `lastReviewed: null` and `reviewStatus: initial-review-required` until a human completes the initial content review.
 
 ## What is automated
 
-- The course-review-manifest.json file lists published course families, official reference sources, content files to watch and review intervals. New entries should start with `lastReviewed: null` and `reviewStatus: initial-review-required`; a date is recorded only after a human has checked the course. The initial 2026-11-01 dates in the current manifest are a structural/source baseline, not full editorial sign-off.
+- The course-review-manifest.json file lists published course families, official reference sources, content files to watch and review intervals. New and not-yet-reviewed entries start with `lastReviewed: null` and `reviewStatus: initial-review-required`; a date is recorded only after a human has checked the course.
 - The checker runs on a weekly GitHub Actions schedule, on pushes and manually. On pushes it compares the before/after commits and maps changed lesson/course data files to the affected courses.
 - It flags courses with no verified content-review date, courses whose review interval has elapsed and official source URLs that could not be reached by both a HEAD and a small-range GET request.
 - GitHub Actions creates or refreshes one open review issue with changed courses/files, courses due by age, restricted/failed source checks and a human reviewer checklist. An issue remains open until a human reviewer closes it after updating the review date.
