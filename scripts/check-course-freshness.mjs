@@ -20,6 +20,9 @@ async function checkSource(url) {
       if (response.status >= 200 && response.status < 400) {
         return { url, status: "reachable", httpStatus: response.status, checkedAt: today.toISOString().slice(0, 10) };
       }
+      if ([401, 403, 429].includes(response.status)) {
+        return { url, status: "restricted", httpStatus: response.status, checkedAt: today.toISOString().slice(0, 10) };
+      }
       lastError = "HTTP " + response.status;
       if (![400, 403, 405, 429, 500, 501, 502, 503, 504].includes(response.status)) break;
     } catch (error) {
@@ -48,7 +51,8 @@ const report = {
   generatedAt: new Date().toISOString(),
   coursesChecked: courses.length,
   reviewDueCount: courses.filter((course) => course.reviewDue).length,
-  sourceCheckFailureCount: courses.reduce((count, course) => count + course.sourceChecks.filter((source) => source.status !== "reachable").length, 0),
+  sourceCheckFailureCount: courses.reduce((count, course) => count + course.sourceChecks.filter((source) => source.status === "check_failed").length, 0),
+  restrictedSourceCount: courses.reduce((count, course) => count + course.sourceChecks.filter((source) => source.status === "restricted").length, 0),
   courses
 };
 fs.mkdirSync(path.dirname(outputPath), { recursive: true });
