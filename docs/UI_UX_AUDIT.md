@@ -49,7 +49,7 @@ Automated source checks cannot replace visual and assistive-technology checks on
 
 - The 25 published course entries still require their initial editorial audit. Track in [GitHub issue #2](https://github.com/ashishnaikbackup/SkillSpring/issues/2). Do not set review dates or close the issue until the actual lesson material has been checked.
 - The long-term 12-school curriculum is not fully authored to professional depth. Several schools have foundation pages or catalogue descriptions rather than complete course families, assessment tracks and portfolio projects.
-- Graded coding tracks beyond Python (at minimum JavaScript and SQL) remain future work.
+- Python has 10 graded challenges and JavaScript/SQL each have eight. Additional languages, broader edge-case tests and manual browser verification remain future work.
 - The multi-language editor is intentionally not a full IDE; no language server, breakpoints or universal online compiler.
 - Progress is local to one browser/device; learner accounts and cross-device sync are not implemented.
 - Full browser/device visual regression, screen-reader testing and learner usability testing remain manual QA.
