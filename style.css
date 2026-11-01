@@ -8,3 +8,48 @@
 :where(a,button,input,select,textarea,[tabindex]):focus-visible{outline:2px solid #b7aaff;outline-offset:3px}
 button:disabled{cursor:not-allowed;opacity:.55}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto!important}*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
+
+
+/* Final dashboard UI/UX pass */
+.sidebar{overflow-y:auto;overscroll-behavior:contain;scrollbar-width:thin;scrollbar-color:#35445d transparent}
+.side-nav{gap:3px}
+.nav-link{min-height:42px;line-height:1.35}
+.nav-link:focus-visible{outline-offset:1px}
+.topbar{min-height:68px}
+.mobile-menu{width:42px;height:42px;border-radius:10px;align-items:center;justify-content:center}
+.mobile-menu:hover{background:#202d43}
+.page{width:100%}
+.school-card,.catalogue-card,.feature-card,.lab-card,.project-card,.workspace-card,.path-card,.stat-card{min-width:0}
+.school-card p,.catalogue-card p,.feature-card small,.lab-card p,.project-card p,.workspace-card p{line-height:1.65}
+.btn-primary,.btn-secondary,.filter-chip,.text-link,.copy-link{transition:background .16s ease,border-color .16s ease,color .16s ease,transform .16s ease}
+.btn-primary:focus-visible,.btn-secondary:focus-visible{outline-offset:3px}
+.search-row input:focus-visible,.search-row select:focus-visible,.editor-card textarea:focus-visible{outline:2px solid #b7aaff;outline-offset:2px}
+.empty-state{line-height:1.7}
+.notice{line-height:1.65}
+@media(max-width:760px){
+ .sidebar{width:min(310px,86vw);padding:18px 14px}
+ body.nav-open::after{content:"";position:fixed;inset:0;background:#020611aa;z-index:8}
+ .sidebar.open{z-index:10}
+ .main-area{min-width:0}
+ .topbar{gap:10px;min-height:62px;height:auto;padding:8px 14px}
+ .breadcrumb{font-size:11px}
+ .page{padding:22px 15px 44px}
+ .welcome-row h1{font-size:clamp(34px,9vw,42px);letter-spacing:-1.5px}
+ .welcome-actions>*{flex:1 1 100%;text-align:center;justify-content:center}
+ .hero-art{max-width:100%;overflow:hidden}
+ .stats-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .stat-card{gap:9px}
+ .stat-card strong{font-size:17px}
+ .section-heading{align-items:flex-start;gap:12px;flex-wrap:wrap}
+ .level-strip{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .feature-grid{grid-template-columns:1fr}
+ .playground-toolbar{align-items:flex-start;gap:10px;flex-wrap:wrap}
+ .playground-toolbar>div{width:100%}
+ .playground-toolbar button{flex:1}
+ .editor-card textarea{font-size:13px}
+}
+@media(max-width:380px){
+ .stats-grid{grid-template-columns:1fr}
+ .top-actions{gap:5px}
+ .breadcrumb span{padding:0 4px}
+}
