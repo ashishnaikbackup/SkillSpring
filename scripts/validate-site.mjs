@@ -138,6 +138,10 @@ for (const course of courses) {
   const courseKey = new URLSearchParams(query).get("course");
   if (courseKey && !essential[courseKey]) fail(`Course ${course.slug} points to missing essential course key "${courseKey}".`);
 }
+const essentialPlayer = fs.readFileSync(path.join(root, "essential-course.js"), "utf8");
+if (!essentialPlayer.includes('store+"-passed"') || !essentialPlayer.includes('document.getElementById("done").disabled')) {
+  fail("Essential course lessons must track knowledge-check passes before completion.");
+}
 for (const key of Object.keys(essential)) {
   if (!courses.some((course) => course.href === `essential-course.html?course=${key}`)) fail(`Essential course "${key}" is not linked from the course catalogue.`);
 }
