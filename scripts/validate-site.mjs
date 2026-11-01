@@ -172,7 +172,7 @@ for (const language of ["python","javascript","html","sql","c","cpp","java","csh
 }
 const inlineLab = poly.match(/<script>([\s\S]*?)<\/script>/)?.[1] || "";
 const objectKeys = (name) => {
-  const match = inlineLab.match(new RegExp("const " + name + "=\\{([\s\S]*?)\\};"));
+  const match = inlineLab.match(new RegExp("const\\s+" + name + "\\s*=\\s*\\{([\\s\\S]*?)\\};"));
   return match ? [...match[1].matchAll(/(?:^|,)\s*([a-z][a-z0-9]*):/g)].map((item) => item[1]) : [];
 };
 const defaultKeys = objectKeys("defaults");
