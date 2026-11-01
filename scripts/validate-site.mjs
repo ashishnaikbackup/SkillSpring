@@ -135,7 +135,7 @@ const extendedLabPath = path.join(root, "professional-labs-extras.js");
 if (!fs.existsSync(extendedLabPath)) fail("Finance and business practice labs are missing.");
 if (fs.existsSync(extendedLabPath)) {
   const extendedLabs = fs.readFileSync(extendedLabPath, "utf8");
-  for (const feature of ["finCalc", "bizCalc", "Monthly cash-flow", "unit economics"]) {
+  for (const feature of ["finCalc", "bizCalc", "monthly cash-flow", "unit economics"]) {
     if (!extendedLabs.includes(feature)) fail("Extended professional labs are missing " + feature + ".");
   }
 }
