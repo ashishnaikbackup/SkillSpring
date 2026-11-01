@@ -58,17 +58,17 @@ async function checkSource(url) {
 }
 
 const courses = await Promise.all(manifest.courses.map(async (course) => {
-  const lastReviewed = new Date(course.lastReviewed + "T00:00:00Z");
-  const ageDays = dayDifference(lastReviewed, today);
+  const hasVerifiedReviewDate = typeof course.lastReviewed === "string" && /^\d{4}-\d{2}-\d{2}$/.test(course.lastReviewed);
+  const ageDays = hasVerifiedReviewDate ? dayDifference(new Date(course.lastReviewed + "T00:00:00Z"), today) : null;
   const courseChangedFiles = (course.contentFiles || []).filter((file) => changedFileSet.has(file));
   const sourceChecks = await Promise.all(course.sources.map(checkSource));
   return {
     slug: course.slug,
     title: course.title,
-    lastReviewed: course.lastReviewed,
+    lastReviewed: hasVerifiedReviewDate ? course.lastReviewed : null,
     reviewIntervalDays: course.reviewIntervalDays,
     ageDays,
-    reviewDue: ageDays >= course.reviewIntervalDays,
+    reviewDue: !hasVerifiedReviewDate || ageDays >= course.reviewIntervalDays,
     contentChanged: courseChangedFiles.length > 0,
     changedFiles: courseChangedFiles,
     contentFiles: course.contentFiles || [],
