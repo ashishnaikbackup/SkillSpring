@@ -1,0 +1,32 @@
+name: SkillSpring browser and accessibility QA
+
+on:
+  workflow_run:
+    workflows: ["Deploy SkillSpring to GitHub Pages"]
+    types: [completed]
+
+permissions:
+  contents: read
+
+jobs:
+  browser-qa:
+    if: github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Check out current main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Install browser test tools
+        run: npm install --no-save playwright @axe-core/playwright
+      - name: Install Chromium
+        run: npx playwright install --with-deps chromium
+      - name: Test deployed SkillSpring
+        run: node scripts/browser-qa.mjs
+        env:
+          SKILLSPRING_BASE_URL: https://ashishnaikbackup.github.io/SkillSpring
