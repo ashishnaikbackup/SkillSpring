@@ -20,6 +20,8 @@ Every full course must contain:
 
 ## Learning schools and course families
 
+The current starter library has expanded to 30 catalogue entries. Five cross-school foundation courses now give absolute beginners a first structured route into [Business & Accounting](../essential-course.html?course=business), [IT Support, Networking & Cloud](../essential-course.html?course=it), [Mathematics, Science & Research](../essential-course.html?course=maths), [Creative Media & Communication](../essential-course.html?course=creative), and [Productivity & Knowledge Management](../essential-course.html?course=productivity). The [Career Launchpad](../career-launchpad.html) supplies a practical capstone brief for every course. Course-specific depth gaps and review status are recorded in the [30-course content audit](COURSE_CONTENT_AUDIT_2026-11-01.md) and [whole-platform addendum](WHOLE_PLATFORM_COMPLETION_ADDENDUM.md).
+
 ### 1. Programming & software development
 Core sequence: computer fundamentals → computational thinking → one beginner language → debugging → data structures and algorithms → OOP and design → Git → testing → APIs → databases → security basics → deployment → software architecture.
 Course families to build: Python, C, C++, Java, JavaScript, TypeScript, C#, Go, Rust, PHP, Ruby, Kotlin, Swift, Dart, R, MATLAB, Bash/PowerShell, HTML/CSS, SQL, data structures, algorithms, testing, APIs and architecture.
