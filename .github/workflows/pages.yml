@@ -40,7 +40,7 @@ jobs:
         run: |
           set -euo pipefail
           base="${PAGE_URL%/}"
-          for path in "" "start-here.html" "courses.html" "polyglot.html" "essential-course.html?course=logic" "app.js" "courses.js" "essential-courses.js" "essential-course.js" "style.css" "course-engine.js"; do
+          for path in "" "start-here.html" "courses.html" "polyglot.html" "essential-course.html?course=logic" "python-practice.html" "python-practice.js" "python-practice.css" "app.js" "courses.js" "essential-courses.js" "essential-course.js" "style.css" "course-engine.js"; do
             curl --fail --silent --show-error --location --retry 8 --retry-delay 5 --retry-all-errors "$base/$path" -o /dev/null
           done
           curl --fail --silent --show-error --location "$base/" -o /tmp/skillspring-home.html
