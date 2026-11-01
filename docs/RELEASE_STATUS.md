@@ -57,7 +57,7 @@ A shared `ux-polish.css` layer is now applied exactly once across all 25 public 
 
 ## Known limits — do not overstate the release
 
-1. **Curriculum depth:** 24 catalogue entries are published, but the long-term curriculum across all 12 schools is not fully authored to textbook or professional certification depth. Some courses are six-to-eight lesson foundations. The README roadmap identifies the remaining course families and assessment work.
+1. **Curriculum depth:** 25 catalogue entries are published, but the long-term curriculum across all 12 schools is not fully authored to textbook or professional certification depth. Some courses are six-to-eight lesson foundations. The README roadmap identifies the remaining course families and assessment work.
 2. **Practice coverage:** the dedicated automatic coding autograder currently exists for the ten Python challenges. JavaScript and SQLite are available in the lab, but do not yet have equivalent graded challenge tracks.
 3. **IDE scope:** the multi-language lab is a lightweight practice editor. It is not a full IDE with language-server autocomplete, breakpoints, step debugging or guaranteed online compilation for all languages.
 4. **Progress:** course and practice progress are stored in browser local storage on the current device. There are no learner accounts or cross-device synchronisation.
@@ -84,7 +84,7 @@ A shared `ux-polish.css` layer is now applied exactly once across all 25 public 
 - Added [interactive 12-school curriculum map](../curriculum-map.html): eight progressive stages per school, course families, role directions, worked-example expectations, practice outcomes, assessment standards and capstone portfolio projects.
 - Added [graded JavaScript and SQL practice](../advanced-practice.html): eight challenges per track, browser-based test checking, starter tasks, hints, example solutions and local progress. JavaScript uses a sandboxed iframe; SQL uses SQLite in the browser with fictional sample data.
 - Added validator requirements for both pages, dashboard navigation, all 12 school definitions and at least eight challenges per new track.
-- These additions improve curriculum visibility and practical practice but do not close the course-authoring backlog. The 24 existing course entries still need an initial human editorial audit; the remaining course families still need complete lessons, worked solutions, exercises, assessments and projects. See [master curriculum](MASTER_CURRICULUM.md) and [product vision](PRODUCT_VISION.md).
+- These additions improve curriculum visibility and practical practice but do not close the course-authoring backlog. The 25 existing course entries still need an initial human editorial audit; the remaining course families still need complete lessons, worked solutions, exercises, assessments and projects. See [master curriculum](MASTER_CURRICULUM.md) and [product vision](PRODUCT_VISION.md).
 
 
 **Assessment behaviour update:** The 12 essential lesson-player courses now require the learner to pass that lesson's knowledge check before marking it complete. Correct answers unlock completion and provide feedback; incorrect answers show the correct answer and prompt a review. This is a per-lesson gate, not yet a multi-question cumulative final exam or a substitute for the course-level assessments still required.
