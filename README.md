@@ -17,7 +17,7 @@ The public product and repository are named SkillSpring.
 - **[Field Radar](field-radar.html)** — evergreen learning notes plus a daily refreshed, source-linked headline feed across programming, AI, Microsoft tools, Indian finance/regulation, cybersecurity, design and engineering.
 - **[Learning dashboard](index.html)** — the main platform experience, subject schools, learning paths and Python playground.
 - **[Learning-platform benchmark](docs/LEARNING_PLATFORM_BENCHMARK.md)** — research notes and original teaching principles adapted from Mimo, Brilliant, freeCodeCamp, Microsoft Learn, Google Skillshop and Exercism.
-- **[Course freshness policy](docs/COURSE_FRESHNESS_POLICY.md)** — push-based course-file change detection plus weekly review-date and official-source checks create a review issue when lessons need human verification; the initial audit issue currently lists all 24 courses; the system does not silently rewrite content.
+- **[Course freshness policy](docs/COURSE_FRESHNESS_POLICY.md)** — push-based course-file change detection plus weekly review-date and official-source checks create a review issue when lessons need human verification; the initial audit issue currently lists all 25 courses; the system does not silently rewrite content.
 - **[Field Radar update policy](docs/FIELD_RADAR_UPDATE_POLICY.md)** — a daily allowlisted RSS/Atom collector refreshes headlines across programming, AI, Microsoft tools, India finance/regulation, cybersecurity, design and engineering.
 
 ## Published course library
@@ -88,7 +88,7 @@ These schools are the long-term curriculum scope. A topic appearing in the catal
 - [x] Apply a shared responsive UI/UX and accessibility polish layer across public pages; manual device/screen-reader QA is documented separately.
 - [ ] Expand graded assessments and progress analytics across every school; current auto-graded coverage includes Python, JavaScript and SQL practice tracks, while most other courses use lesson knowledge checks.
 - [ ] Add optional accounts and secure cross-device progress sync.
-- [x] Add a weekly course freshness monitor with official reference-link checks and human review reminders. The initial audit issue lists all 24 courses awaiting editorial review; structural checks are not treated as line-by-line content sign-off.
+- [x] Add a weekly course freshness monitor with official reference-link checks and human review reminders. The initial audit issue lists all 25 courses awaiting editorial review; structural checks are not treated as line-by-line content sign-off.
 - [x] Add a maintained, sourced headline feed with a daily allowlisted RSS/Atom refresh, publisher links, publication dates and source-status handling.
 
 ## Local quality checks
@@ -113,13 +113,13 @@ See [docs/PRODUCT_VISION.md](docs/PRODUCT_VISION.md) for the product principles,
 
 **Curriculum expansion (1 November 2026):** The [full curriculum map](curriculum-map.html) now makes all 12 school syllabi explicit, with eight progressive stages per school, course families, practical outcomes, worked-example expectations, assessments and portfolio capstones. The [graded practice studio](advanced-practice.html) adds eight JavaScript and eight SQL challenges with browser-based checking, hints and example solutions. These are substantive additions, but a curriculum map is not a substitute for authored lesson material. The full course-by-course editorial and depth requirements remain open.
 
-**Release status (1 November 2026):** The current SkillSpring v1 site is deployed successfully to GitHub Pages. The latest verified Actions run passed the static validator and post-deployment smoke tests for the homepage, Start Here, course catalogue, multi-language lab, Python practice page, Power BI project, Field Radar and key data/assets. The repository contains 24 catalogue entries, 12 detailed essential-course players (98 guided lessons), 12 foundational course pages (Python has 16 modules; the other 11 have six modules each), a 10-challenge in-browser Python practice path, a 26-selectable-language/toolchain coding workspace (four browser execution/preview modes plus local-run guidance for the remaining languages), a practical Power BI capstone with fictional CSV data, and a daily source-linked Field Radar feed. This is a usable v1 release, not a claim that every topic across all 12 learning schools is already a complete professional textbook. The remaining curriculum gaps are listed below and in the master curriculum.
+**Release status (1 November 2026):** The current SkillSpring v1 site is deployed successfully to GitHub Pages. The latest verified Actions run passed the static validator and post-deployment smoke tests for the homepage, Start Here, course catalogue, multi-language lab, Python practice page, Power BI project, Field Radar and key data/assets. The repository contains 25 catalogue entries, 12 detailed essential-course players (98 guided lessons), 12 foundational course pages (Python has 16 modules; the other 11 have six modules each), a 10-challenge in-browser Python practice path, a 26-selectable-language/toolchain coding workspace (four browser execution/preview modes plus local-run guidance for the remaining languages), a practical Power BI capstone with fictional CSV data, and a daily source-linked Field Radar feed. This is a usable v1 release, not a claim that every topic across all 12 learning schools is already a complete professional textbook. The remaining curriculum gaps are listed below and in the master curriculum.
 
 ## Interactive topic roadmaps
 
 Every topic listed inside a learning school now opens a dedicated SkillSpring roadmap page. The roadmap view is organised into eight progressive milestones covering orientation, foundations, tools and first examples, guided practice, intermediate work, advanced practice, professional workflow and a capstone. It includes practice prompts, knowledge checks and local milestone tracking.
 
-**Important scope note:** a roadmap is not the same as a fully written course. The roadmap pages provide a structured progression and school-specific learning framework; detailed concept-by-concept lessons, worked examples, exercises, assessments and projects still need to be authored for each individual topic. The 24 catalogue entries are the current detailed-course set, not proof that every catalogue topic is complete. Progress remains stored in the current browser only.
+**Important scope note:** a roadmap is not the same as a fully written course. The roadmap pages provide a structured progression and school-specific learning framework; detailed concept-by-concept lessons, worked examples, exercises, assessments and projects still need to be authored for each individual topic. The 25 catalogue entries are the current detailed-course set, not proof that every catalogue topic is complete. Progress remains stored in the current browser only.
 
 ## Zero-to-hero programming courses
 
@@ -177,6 +177,8 @@ Read the [Learning Design Standard](docs/LEARNING_DESIGN_STANDARD.md) for the ei
 
 Read the [Start Here: Zero to Job-Ready Skills guide](docs/START_HERE_ZERO_TO_JOB.md) for the full staged learning sequence, daily problem-solving routine, role pathways and portfolio guidance.
 
+Read the [Role-Ready Field Guide](docs/ROLE_READY_FIELD_GUIDE.md) for a school-by-school explanation of foundations, professional skills, tools, portfolio projects, entry roles, hiring evidence and interview preparation. It defines the intended standard; it does not claim every course has already been authored to that depth.
+
 
 1. Computer and file basics.
 2. Programming logic and problem decomposition.
@@ -195,4 +197,4 @@ Do not rush to DSA before understanding loops, functions, arrays/lists and basic
 **Assessment behaviour update:** The 12 essential lesson-player courses now require the learner to pass that lesson's knowledge check before marking it complete. Correct answers unlock completion and provide feedback; incorrect answers show the correct answer and prompt a review. This is a per-lesson gate, not yet a multi-question cumulative final exam or a substitute for the course-level assessments still required.
 
 
-**Open completion tracker:** [Issue #3 — Complete the full 12-school curriculum and practice labs](https://github.com/ashishnaikbackup/SkillSpring/issues/3) tracks the remaining authoring, additional graded labs and release gates. The initial editorial audit of the 24 existing course entries remains separately tracked in [issue #2](https://github.com/ashishnaikbackup/SkillSpring/issues/2).
+**Open completion tracker:** [Issue #3 — Complete the full 12-school curriculum and practice labs](https://github.com/ashishnaikbackup/SkillSpring/issues/3) tracks the remaining authoring, additional graded labs and release gates. The initial editorial audit of the 25 existing course entries remains separately tracked in [issue #2](https://github.com/ashishnaikbackup/SkillSpring/issues/2).
