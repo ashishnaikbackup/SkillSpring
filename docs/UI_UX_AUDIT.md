@@ -4,37 +4,38 @@ Updated: 1 November 2026
 
 ## Scope covered
 
-A shared UI polish layer is loaded after each public HTML page's existing styles:
+The shared `ux-polish.css` design layer is loaded exactly once across all 21 public HTML pages:
 - Home dashboard and school catalogue
-- Course catalogue and lesson-player pages
-- Start Here guide and topic pages
-- Python challenge runner and Python course
-- Multi-language lab
+- Complete-course catalogue and all lesson-player pages
+- Start Here guide and topic roadmaps
+- Python course and challenge runner
+- Multi-language coding lab
 - Power BI capstone
 - Field Radar
 
-## Implemented in this pass
+## Implemented
 
-- Shared responsive spacing, typography, card treatment, controls, focus treatment and reduced-motion behaviour.
-- Improved mobile layout for the dashboard: more resilient heading sizes, touch-sized controls, two-column stats with a narrow-screen fallback, improved action wrapping and editor sizing.
-- Sidebar can be opened and dismissed on mobile using the menu, backdrop or Escape; the menu exposes expanded state and accessible labels.
-- Added a skip-to-main-content link and a stable main-content focus target on the dashboard.
-- Added accessible names to the catalogue search and level filter; replaced the decorative profile button with a non-interactive profile label.
-- Removed duplicate navigation entries from the dashboard sidebar.
-- Added keyboard focus styling, touch interaction hints, smooth-scroll offsets and more consistent card/lesson surfaces.
+- Consistent responsive spacing, typography, cards, lesson surfaces, touch targets, controls, focus treatment and reduced-motion behaviour.
+- A skip-to-main-content link and a stable main landmark target on every published HTML page.
+- Dashboard mobile navigation with backdrop dismissal, Escape-key dismissal, focus return, accessible menu label and `aria-expanded` state.
+- Accessible names for the learning catalogue search and level filter.
+- Duplicate sidebar navigation entries removed; the beginner guide now opens its learner-facing Start Here page instead of raw Markdown.
+- Improved small-screen dashboard heading/action wrapping, stats layout, editor sizing and sidebar scrolling.
+- Consistent responsive header navigation on standalone course, guide, practice and reference pages.
+- Shared UX requirements are enforced by `scripts/validate-site.mjs`: every HTML page must load the shared stylesheet once, expose the skip link and contain the matching main-content landmark. Dashboard mobile-menu controls are also checked.
 
-## Verification
+## Automated verification
 
-- Changes are committed to the main branch and trigger the repository quality and Pages workflows.
-- The repository quality workflow validates JavaScript syntax, inline scripts, local routes, lesson structures, course data and other project integrity checks.
-- Pages deployment workflow performs HTTP smoke checks on key routes and assets.
-- These checks do not perform full visual regression or real-device assistive-technology testing.
+- Latest quality workflow: [run 41265676746](https://github.com/ashishnaikbackup/SkillSpring/actions/runs/41265676746) — passed on the latest source commit at the time of this audit.
+- The quality workflow also checks JavaScript and inline-script syntax, local routes/assets, catalogue/course structure, practice data, Power BI sample data and Field Radar integrity.
+- GitHub Pages deployment is triggered automatically on changes. Check [GitHub Actions](https://github.com/ashishnaikbackup/SkillSpring/actions) before assuming the newest changes are live.
 
 ## Manual release QA still required
 
-Before claiming a fully human-verified UI/UX release, perform this short matrix on the deployed site:
+Automated source checks cannot replace visual and assistive-technology checks on actual devices. Before claiming a fully human-verified UI/UX release, perform this matrix on the deployed site:
+
 1. Android Chrome at approximately 360–390 px width: open/close sidebar, browse schools, search/filter, open a course and complete a lesson.
-2. Desktop Chrome/Firefox: keyboard-only tab order, visible focus, Escape behaviour, browser zoom at 200%.
+2. Desktop Chrome/Firefox: keyboard-only tab order, visible focus, Escape behaviour and browser zoom at 200%.
 3. Reduced-motion OS setting: confirm no essential interaction depends on animation.
 4. Python practice: runtime ready/error state, reset, run, failed test, passing test, hint and solution reveal.
 5. Multi-language lab: Python, JavaScript, HTML preview and SQLite each produce the expected result; local-toolchain guidance is clear for other languages.
@@ -52,4 +53,4 @@ Before claiming a fully human-verified UI/UX release, perform this short matrix 
 
 ## Release wording
 
-The UI source has received a cross-page responsive and accessibility polish pass. Do not describe the experience as fully human-verified until the manual matrix above is completed. Do not describe SkillSpring as meeting the entire professional curriculum promise until the editorial audit and curriculum/practice gaps are closed.
+The UI source has received a cross-page responsive and accessibility polish pass, with automated checks enforcing the shared stylesheet, skip links and main landmarks. Do not describe the experience as fully human-verified until the manual matrix above is completed. Do not describe SkillSpring as meeting the entire professional curriculum promise until the editorial audit and curriculum/practice gaps are closed.
