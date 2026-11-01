@@ -107,6 +107,20 @@ for (const course of courses) {
 for (const key of Object.keys(essential)) {
   if (!courses.some((course) => course.href === `essential-course.html?course=${key}`)) fail(`Essential course "${key}" is not linked from the course catalogue.`);
 }
+for (const relativePath of ["data/field-radar.json", "data/field-radar-sources.json"]) {
+  try {
+    JSON.parse(fs.readFileSync(path.join(root, relativePath), "utf8"));
+  } catch (error) {
+    fail("Could not parse " + relativePath + ": " + error.message);
+  }
+}
+const radarPagePath = path.join(root, "field-radar.html");
+if (fs.existsSync(radarPagePath)) {
+  const radarPage = fs.readFileSync(radarPagePath, "utf8");
+  if (!radarPage.includes('id="liveNewsGrid"') || !radarPage.includes('data/field-radar.json')) {
+    fail("Field Radar page is missing its live headline section.");
+  }
+}
 const freshnessPath = path.join(root, "course-review-manifest.json");
 if (!fs.existsSync(freshnessPath)) {
   fail("The course freshness manifest is missing.");
