@@ -1,0 +1,240 @@
+{
+  "schemaVersion": 1,
+  "description": "Course review schedule. Dates are review checkpoints, not claims that every page is automatically updated.",
+  "courses": [
+    {
+      "slug": "python",
+      "title": "Python: Zero to Professional Foundations",
+      "lastReviewed": "2026-11-01",
+      "reviewIntervalDays": 90,
+      "sources": [
+        "https://docs.python.org/3/tutorial/",
+        "https://docs.python.org/3/library/"
+      ]
+    },
+    {
+      "slug": "c",
+      "title": "C Programming Foundations",
+      "lastReviewed": "2026-11-01",
+      "reviewIntervalDays": 180,
+      "sources": [
+        "https://en.cppreference.com/w/c",
+        "https://www.open-std.org/jtc1/sc22/wg14/"
+      ]
+    },
+    {
+      "slug": "cpp",
+      "title": "C++ Programming Foundations",
+      "lastReviewed": "2026-11-01",
+      "reviewIntervalDays": 90,
+      "sources": [
+        "https://en.cppreference.com/w/",
+        "https://isocpp.org/"
+      ]
+    },
+    {
+      "slug": "java",
+      "title": "Java Programming Foundations",
+      "lastReviewed": "2026-11-01",
+      "reviewIntervalDays": 90,
+      "sources": [
+        "https://dev.java/learn/",
+        "https://docs.oracle.com/en/java/"
+      ]
+    },
+    {
+      "slug": "javascript",
+      "title": "JavaScript Programming",
+      "lastReviewed": "2026-11-01",
+      "reviewIntervalDays": 90,
+      "sources": [
+        "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide"
+      ]
+    },
+    {
+      "slug": "typescript",
+      "title": "TypeScript Programming",
+      "lastReviewed": "2026-11-01",
+      "reviewIntervalDays": 60,
+      "sources": [
+        "https://www.typescriptlang.org/docs/"
+      ]
+    },
+    {
+      "slug": "web",
+      "title": "HTML and CSS Foundations",
+      "lastReviewed": "2026-11-01",
+      "reviewIntervalDays": 90,
+      "sources": [
+        "https://developer.mozilla.org/en-US/docs/Learn_web_development",
+        "https://www.w3.org/WAI/standards-guidelines/wcag/"
+      ]
+    },
+    {
+      "slug": "sql",
+      "title": "SQL and Relational Databases",
+      "lastReviewed": "2026-11-01",
+      "reviewIntervalDays": 90,
+      "sources": [
+        "https://www.postgresql.org/docs/current/tutorial.html"
+      ]
+    },
+    {
+      "slug": "finance",
+      "title": "Personal Finance Foundations",
+      "lastReviewed": "2026-11-01",
+      "reviewIntervalDays": 60,
+      "sources": [
+        "https://www.rbi.org.in/",
+        "https://investor.sebi.gov.in/",
+        "https://www.investor.gov/"
+      ]
+    },
+    {
+      "slug": "data",
+      "title": "Data Science Foundations",
+      "lastReviewed": "2026-11-01",
+      "reviewIntervalDays": 90,
+      "sources": [
+        "https://pandas.pydata.org/docs/",
+        "https://scikit-learn.org/stable/user_guide.html"
+      ]
+    },
+    {
+      "slug": "ux",
+      "title": "UI/UX Design Foundations",
+      "lastReviewed": "2026-11-01",
+      "reviewIntervalDays": 180,
+      "sources": [
+        "https://www.w3.org/WAI/",
+        "https://www.nngroup.com/articles/"
+      ]
+    },
+    {
+      "slug": "sheets",
+      "title": "Spreadsheets Foundations",
+      "lastReviewed": "2026-11-01",
+      "reviewIntervalDays": 90,
+      "sources": [
+        "https://support.microsoft.com/excel",
+        "https://support.google.com/docs/topic/9054603"
+      ]
+    },
+    {
+      "slug": "word",
+      "title": "Microsoft Word",
+      "lastReviewed": "2026-11-01",
+      "reviewIntervalDays": 90,
+      "sources": [
+        "https://support.microsoft.com/word"
+      ]
+    },
+    {
+      "slug": "powerpoint",
+      "title": "Microsoft PowerPoint",
+      "lastReviewed": "2026-11-01",
+      "reviewIntervalDays": 90,
+      "sources": [
+        "https://support.microsoft.com/powerpoint"
+      ]
+    },
+    {
+      "slug": "excel",
+      "title": "Microsoft Excel",
+      "lastReviewed": "2026-11-01",
+      "reviewIntervalDays": 60,
+      "sources": [
+        "https://support.microsoft.com/excel"
+      ]
+    },
+    {
+      "slug": "powerbi",
+      "title": "Microsoft Power BI",
+      "lastReviewed": "2026-11-01",
+      "reviewIntervalDays": 30,
+      "sources": [
+        "https://learn.microsoft.com/en-us/power-bi/",
+        "https://learn.microsoft.com/en-us/power-bi/fundamentals/power-bi-learning-path-directory"
+      ]
+    },
+    {
+      "slug": "outlook",
+      "title": "Outlook and Teams",
+      "lastReviewed": "2026-11-01",
+      "reviewIntervalDays": 60,
+      "sources": [
+        "https://support.microsoft.com/outlook",
+        "https://support.microsoft.com/teams"
+      ]
+    },
+    {
+      "slug": "access",
+      "title": "Microsoft Access",
+      "lastReviewed": "2026-11-01",
+      "reviewIntervalDays": 90,
+      "sources": [
+        "https://support.microsoft.com/access",
+        "https://learn.microsoft.com/en-us/office/client-developer/access/desktop-database-reference/"
+      ]
+    },
+    {
+      "slug": "powerautomate",
+      "title": "Microsoft Power Automate",
+      "lastReviewed": "2026-11-01",
+      "reviewIntervalDays": 30,
+      "sources": [
+        "https://learn.microsoft.com/en-us/power-automate/"
+      ]
+    },
+    {
+      "slug": "git",
+      "title": "Git and GitHub",
+      "lastReviewed": "2026-11-01",
+      "reviewIntervalDays": 60,
+      "sources": [
+        "https://git-scm.com/doc",
+        "https://docs.github.com/en"
+      ]
+    },
+    {
+      "slug": "interview",
+      "title": "Career and Interview Readiness",
+      "lastReviewed": "2026-11-01",
+      "reviewIntervalDays": 90,
+      "sources": [
+        "https://www.ncs.gov.in/",
+        "https://www.naceweb.org/career-readiness/competencies/career-readiness-defined/"
+      ]
+    },
+    {
+      "slug": "logic",
+      "title": "Programming Logic and Computational Thinking",
+      "lastReviewed": "2026-11-01",
+      "reviewIntervalDays": 180,
+      "sources": [
+        "https://www.cs.cmu.edu/afs/cs/usr/15110/www/",
+        "https://cs50.harvard.edu/x/"
+      ]
+    },
+    {
+      "slug": "dsa",
+      "title": "Data Structures and Algorithms",
+      "lastReviewed": "2026-11-01",
+      "reviewIntervalDays": 180,
+      "sources": [
+        "https://algs4.cs.princeton.edu/home/",
+        "https://cp-algorithms.com/"
+      ]
+    },
+    {
+      "slug": "vibecoding",
+      "title": "AI-Assisted Coding",
+      "lastReviewed": "2026-11-01",
+      "reviewIntervalDays": 30,
+      "sources": [
+        "https://docs.github.com/en/copilot",
+        "https://platform.openai.com/docs/"
+      ]
+    }
+  ]
+}
