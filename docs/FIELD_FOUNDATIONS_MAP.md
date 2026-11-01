@@ -28,7 +28,7 @@ SkillSpring must not assume that a learner already knows the prerequisites simpl
 
 ## 4. Electrical, electronics and VLSI engineering
 
-**Prerequisites:** arithmetic, fractions, ratios, algebra, scientific notation, rearranging equations, graphs, geometry/trigonometry, SI units, unit prefixes, dimensional analysis and foundational physics (charge, energy, force, fields and waves).
+**Prerequisites:** arithmetic, fractions, ratios, algebra, scientific notation, rearranging equations, graphs, geometry/trigonometry, vectors, complex numbers, calculus/differential equations, frequency/signal analysis, probability/statistics, SI units, unit prefixes, dimensional analysis and foundational physics (charge, energy, force, fields and waves).
 
 **Progression:** engineering measurement and lab safety → charge/current/voltage/power → resistance and Ohm's law → series/parallel circuits → KCL/KVL → network theorems and RC/RL transients → passive/active components → semiconductor physics and PN junctions → BJT/MOSFET → analog biasing/amplifiers/op-amps → binary/Boolean logic → combinational circuits → latches/flip-flops/FSMs/timing → C programming and computer architecture → microcontrollers/GPIO/ADC/PWM/serial buses → Verilog/SystemVerilog → simulation/testbenches/assertions → FPGA constraints/synthesis/timing → CMOS/VLSI power-area-performance and verification.
 
