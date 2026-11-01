@@ -35,6 +35,10 @@ The shared `ux-polish.css` design layer is loaded exactly once across all 28 pub
 - The quality workflow also checks JavaScript and inline-script syntax, local routes/assets, catalogue/course structure, practice data, Power BI sample data and Field Radar integrity.
 - Latest Pages deployment: [run 41265768992](https://github.com/ashishnaikbackup/SkillSpring/actions/runs/41265768992) — succeeded, including content/link validation and deployed-page/asset smoke tests. Further documentation commits also trigger a fresh deployment.
 
+## Automated browser QA added
+
+A Playwright workflow now runs after a successful GitHub Pages deployment. It checks deployed routes, skip links/main landmarks, 30 capstone cards and filtering, progress export, selected new course routes, mobile navigation, keyboard focus and axe WCAG 2.1 A/AA critical/serious findings. See `.github/workflows/browser-qa.yml` and `scripts/browser-qa.mjs`. This is automated Chromium coverage at desktop/mobile viewport sizes, not a physical Android device test or a screen-reader test.
+
 ## Manual release QA still required
 
 Automated source checks cannot replace visual and assistive-technology checks on actual devices. Before claiming a fully human-verified UI/UX release, perform this matrix on the deployed site:
