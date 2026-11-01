@@ -6,6 +6,9 @@ The public product and repository are named SkillSpring.
 
 ## Start learning
 
+- **[Career Launchpad](career-launchpad.html)** — 30 course-specific portfolio capstones with beginner steps, expected evidence, role directions and interview practice across programming, web, data, finance, office tools, career, creative media, productivity and engineering.
+- **[New foundation courses](courses.html)** — business/accounting, IT/networking/cloud, maths/science/research, creative media and productivity now have dedicated six-lesson beginner courses.
+
 - **[Course library](courses.html)** — browse all published self-paced courses.
 - **[Full 12-school curriculum map](curriculum-map.html)** — inspect the complete learning-school scope, course families, eight progressive stages, assessment standards and portfolio projects. This is a syllabus map, not a claim that every lesson is fully authored.
 - **[Graded JavaScript & SQL practice](advanced-practice.html)** — eight JavaScript and eight SQL challenges with browser-based checks, hints, example solutions and local progress.
