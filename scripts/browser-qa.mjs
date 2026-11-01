@@ -36,8 +36,8 @@ try {
   await page.evaluate(() => localStorage.removeItem("skillspring-browser-qa-probe"));
   const importPayload = { format: "skillspring-progress-backup", version: 1, createdAt: new Date().toISOString(), entryCount: 1, entries: [{ key: "skillspring-browser-qa-import-probe", value: "restored" }] };
   await page.locator("#backupFile").setInputFiles({ name: "skillspring-test-backup.json", mimeType: "application/json", buffer: Buffer.from(JSON.stringify(importPayload)) });
-  await page.locator("#importBtn").click();
   page.once("dialog", dialog => dialog.accept());
+  await page.locator("#importBtn").click();
   check("progress import", await page.evaluate(() => localStorage.getItem("skillspring-browser-qa-import-probe")) === "restored");
   await page.evaluate(() => localStorage.removeItem("skillspring-browser-qa-import-probe"));
 
