@@ -1,2 +1,7 @@
 .course-card{display:flex;flex-direction:column;gap:10px;text-decoration:none;color:inherit;min-height:250px}.course-card h2{font:800 24px Manrope;margin:0}.course-card p{color:#c2cede;margin:0}.course-card .tag{color:#a99aff;font-size:11px;font-weight:800;letter-spacing:1px}.course-card .open{margin-top:auto;color:#6bd6ad;font-weight:800;font-size:13px}
 .radar-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:16px;align-items:stretch}.course-card{height:100%}
+
+.course-card{border:1px solid transparent;border-radius:15px;padding:20px;transition:transform .18s ease,border-color .18s ease,background-color .18s ease}
+.course-card:hover{transform:translateY(-3px);border-color:var(--accent);background:var(--panel2)}
+.course-card:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+@media(prefers-reduced-motion:reduce){.course-card{transition:none}.course-card:hover{transform:none}}
