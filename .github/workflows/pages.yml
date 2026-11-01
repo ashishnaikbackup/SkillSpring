@@ -45,7 +45,7 @@ jobs:
         run: |
           set -euo pipefail
           base="${PAGE_URL%/}"
-          for path in "" "start-here.html" "courses.html" "curriculum-map.html" "curriculum-map.js" "curriculum-map.css" "advanced-practice.html" "advanced-practice.js" "advanced-practice.css" "polyglot.html" "essential-course.html?course=logic" "python-practice.html" "python-practice.js" "python-practice.css" "powerbi-project.html" "powerbi-project.css" "field-radar.html" "field-radar-live.css" "data/field-radar.json" "data/powerbi-sales.csv" "data/powerbi-products.csv" "data/powerbi-regions.csv" "app.js" "courses.js" "essential-courses.js" "essential-course.js" "style.css" "course-engine.js"; do
+          for path in "" "start-here.html" "courses.html" "curriculum-map.html" "curriculum-map.js" "curriculum-map.css" "advanced-practice.html" "advanced-practice.js" "advanced-practice.css" "professional-labs.html" "professional-labs.js" "professional-labs.css" "polyglot.html" "essential-course.html?course=logic" "python-practice.html" "python-practice.js" "python-practice.css" "powerbi-project.html" "powerbi-project.css" "field-radar.html" "field-radar-live.css" "data/field-radar.json" "data/powerbi-sales.csv" "data/powerbi-products.csv" "data/powerbi-regions.csv" "app.js" "courses.js" "essential-courses.js" "essential-course.js" "style.css" "course-engine.js"; do
             curl --fail --silent --show-error --location --retry 8 --retry-delay 5 --retry-all-errors "$base/$path" -o /dev/null
           done
           curl --fail --silent --show-error --location "$base/" -o /tmp/skillspring-home.html
@@ -62,3 +62,5 @@ jobs:
           grep -qi "12 schools" /tmp/skillspring-curriculum.html
           curl --fail --silent --show-error --location "$base/advanced-practice.html" -o /tmp/skillspring-practice.html
           grep -qi "Graded practice" /tmp/skillspring-practice.html
+          curl --fail --silent --show-error --location "$base/professional-labs.html" -o /tmp/skillspring-professional-labs.html
+          grep -qi "five disciplines" /tmp/skillspring-professional-labs.html
