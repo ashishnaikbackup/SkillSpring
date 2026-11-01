@@ -4,7 +4,7 @@ Updated: 1 November 2026
 
 ## Scope covered
 
-The shared `ux-polish.css` design layer is loaded exactly once across all 25 public HTML pages:
+The shared `ux-polish.css` design layer is loaded exactly once across all 26 public HTML pages:
 - Home dashboard and school catalogue
 - Complete-course catalogue and all lesson-player pages
 - Start Here guide and topic roadmaps
@@ -47,7 +47,7 @@ Automated source checks cannot replace visual and assistive-technology checks on
 
 ## Product requirements still open (not UI polish)
 
-- The 24 published course entries still require their initial editorial audit. Track in [GitHub issue #2](https://github.com/ashishnaikbackup/SkillSpring/issues/2). Do not set review dates or close the issue until the actual lesson material has been checked.
+- The 25 published course entries still require their initial editorial audit. Track in [GitHub issue #2](https://github.com/ashishnaikbackup/SkillSpring/issues/2). Do not set review dates or close the issue until the actual lesson material has been checked.
 - The long-term 12-school curriculum is not fully authored to professional depth. Several schools have foundation pages or catalogue descriptions rather than complete course families, assessment tracks and portfolio projects.
 - Graded coding tracks beyond Python (at minimum JavaScript and SQL) remain future work.
 - The multi-language editor is intentionally not a full IDE; no language server, breakpoints or universal online compiler.
