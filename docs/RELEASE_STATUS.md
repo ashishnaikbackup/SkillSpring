@@ -29,7 +29,7 @@ Last verified: 1 November 2026
 | Learning design research | Benchmark notes from Mimo, Brilliant, freeCodeCamp, Microsoft Learn, Microsoft Applied Skills, Google Skillshop and Exercism | Original teaching patterns are documented; no proprietary lesson text, assets or branding are copied. |
 | Field Radar | Daily RSS/Atom headline collection from 14 allowlisted publisher/regulator feeds | At the last verified refresh, 14/14 feeds returned successfully and 14 attributed headlines were published. The collector keeps last-known-good items when a source is unavailable. |
 | Course freshness | Push-based course-file change detection plus weekly review-date and official-reference checks | Creates or updates a human review issue naming affected courses/files. The initial review issue currently lists all 24 courses awaiting their first editorial content review. It does not silently rewrite lessons or guarantee semantic correctness. |
-| UI / accessibility | Shared cross-page responsive polish layer on all 23 HTML pages, skip links/main landmarks, keyboard focus, reduced-motion support, responsive headers and accessible mobile sidebar controls | Latest quality workflow passed; validator now enforces shared stylesheet, skip links and main landmarks on every page. Manual Android/desktop/screen-reader QA remains outstanding; see [UI/UX audit](UI_UX_AUDIT.md). |
+| UI / accessibility | Shared cross-page responsive polish layer on all 24 HTML pages, skip links/main landmarks, keyboard focus, reduced-motion support, responsive headers and accessible mobile sidebar controls | Latest quality workflow passed; validator now enforces shared stylesheet, skip links and main landmarks on every page. Manual Android/desktop/screen-reader QA remains outstanding; see [UI/UX audit](UI_UX_AUDIT.md). |
 | Documentation | Product vision, master curriculum, Start Here, benchmark, Power BI project, Field Radar policy and course freshness policy | Linked from the repository README and relevant pages. |
 
 ## Automation schedules
@@ -48,7 +48,7 @@ These automated checks are not a substitute for a full manual browser test of ev
 
 ## UI/UX polish update — 1 November 2026
 
-A shared `ux-polish.css` layer is now applied exactly once across all 23 public HTML pages. Every page has a skip link and main-content landmark; the dashboard has accessible search/filter labels and mobile sidebar dismissal via backdrop or Escape with `aria-expanded` state. The quality validator enforces these baseline requirements. The full manual QA matrix is documented in [UI_UX_AUDIT.md](UI_UX_AUDIT.md). This is a source-level polish pass, not a claim that every browser/device combination has been manually verified.
+A shared `ux-polish.css` layer is now applied exactly once across all 24 public HTML pages. Every page has a skip link and main-content landmark; the dashboard has accessible search/filter labels and mobile sidebar dismissal via backdrop or Escape with `aria-expanded` state. The quality validator enforces these baseline requirements. The full manual QA matrix is documented in [UI_UX_AUDIT.md](UI_UX_AUDIT.md). This is a source-level polish pass, not a claim that every browser/device combination has been manually verified.
 
 ## Known limits — do not overstate the release
 
