@@ -178,3 +178,6 @@ Read the [Start Here: Zero to Job-Ready Skills guide](docs/START_HERE_ZERO_TO_JO
 10. Role-specific interview practice and continuous learning.
 
 Do not rush to DSA before understanding loops, functions, arrays/lists and basic problem decomposition. Each learner should solve problems independently and explain their reasoning; watching lessons or copying generated code is not proof of mastery.
+
+
+**Assessment behaviour update:** The 12 essential lesson-player courses now require the learner to pass that lesson's knowledge check before marking it complete. Correct answers unlock completion and provide feedback; incorrect answers show the correct answer and prompt a review. This is a per-lesson gate, not yet a multi-question cumulative final exam or a substitute for the course-level assessments still required.
