@@ -59,7 +59,7 @@ jobs:
               ...(changed.length ? changed.map(course => '- **' + course.title + '** (' + course.slug + ') — changed: ' + course.changedFiles.join(', ') + '.') : ['- None detected']),
               '',
               '## Courses due for scheduled review',
-              ...(due.length ? due.map(course => '- **' + course.title + '** (' + course.slug + ') — last reviewed ' + course.lastReviewed + '; interval ' + course.reviewIntervalDays + ' days.') : ['- None']),
+              ...(due.length ? due.map(course => '- **' + course.title + '** (' + course.slug + ') — ' + (course.lastReviewed ? ('last reviewed ' + course.lastReviewed) : 'initial content audit required; no verified review date') + '; interval ' + course.reviewIntervalDays + ' days.') : ['- None']),
               '',
               '## Reference URLs needing manual verification',
               ...(unverified.length ? unverified.map(item => '- **' + item.course + '** (' + item.slug + ') — ' + item.url + ' — ' + (item.status === 'restricted' ? 'automated access restricted; verify manually' : (item.error || ('HTTP ' + item.httpStatus))) + '.') : ['- None']),
