@@ -165,7 +165,7 @@ The [coding lab](polyglot.html) includes in-browser Python (Pyodide), JavaScript
 
 ## How SkillSpring teaches from zero to professional
 
-- [Engineering Fundamentals: Electrical, Electronics & VLSI](engineering-course.html) — 14 beginner-first lessons from SI units, maths and physics through circuits, semiconductors, analog/digital systems, embedded systems, Verilog, FPGA and VLSI.
+- [Engineering Fundamentals: Electrical, Electronics & VLSI](engineering-course.html) — 20 beginner-first lessons from SI units, algebra, vectors, complex numbers, calculus, signals and physics through circuits, semiconductors, analog/digital systems, embedded systems, Verilog, FPGA and VLSI.
 - [Field-specific Fundamentals Map](docs/FIELD_FOUNDATIONS_MAP.md) — prerequisites for all 12 schools.
 
 
