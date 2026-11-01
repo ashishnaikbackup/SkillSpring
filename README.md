@@ -175,7 +175,7 @@ The expanded catalogue is a work in progress. Do not interpret a course title or
 
 The [coding lab](polyglot.html) includes in-browser Python (Pyodide), JavaScript, HTML/CSS preview and SQLite practice. For 22 other languages—C, C++, Java, C#, Go, Rust, PHP, Ruby, TypeScript, Kotlin, Swift, R, Bash, Dart, Scala, Lua, Perl, Haskell, Julia, PowerShell, Fortran and GNU Octave—it provides editable starter files, download and local compiler/runtime commands. It is a lightweight editor, not a full IDE with language-server autocomplete, breakpoints or step debugging. An earlier Piston public-API integration was removed because the public API has required authorization since 15 February 2026; SkillSpring does not embed third-party API keys. See the [official Piston API policy](https://github.com/engineer-man/piston#public-api).
 
-## How SkillSpring teaches from zero to professional
+## Personal mastery planning\n\nUse the [Mastery Studio](mastery-studio.html) to build a weekly study plan, track honest skill levels, schedule spaced revision, and export a local mastery backup. It complements course progress: a completed lesson is not proof of independent mastery.\n\n## How SkillSpring teaches from zero to professional
 
 - [Engineering Fundamentals: Electrical, Electronics & VLSI](engineering-course.html) — 20 beginner-first lessons from SI units, algebra, vectors, complex numbers, calculus, signals and physics through circuits, semiconductors, analog/digital systems, embedded systems, Verilog, FPGA and VLSI.
 - [Field-specific Fundamentals Map](docs/FIELD_FOUNDATIONS_MAP.md) — prerequisites for all 12 schools.
