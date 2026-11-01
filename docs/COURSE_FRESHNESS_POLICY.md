@@ -8,7 +8,7 @@ The initial 1 November 2026 checkpoint verified the 24-course inventory, catalog
 
 ## What is automated
 
-- The course-review-manifest.json file lists published course families, official reference sources, review intervals and review status. New entries begin as initial-review-required; a date is recorded only after a human has checked the course.
+- The course-review-manifest.json file lists published course families, official reference sources, content files to watch and review intervals. New entries should start with `lastReviewed: null` and `reviewStatus: initial-review-required`; a date is recorded only after a human has checked the course. The initial 2026-11-01 dates in the current manifest are a structural/source baseline, not full editorial sign-off.
 - The checker runs on a weekly GitHub Actions schedule, on pushes and manually. On pushes it compares the before/after commits and maps changed lesson/course data files to the affected courses.
 - It flags courses with no verified content-review date, courses whose review interval has elapsed and official source URLs that could not be reached by both a HEAD and a small-range GET request.
 - GitHub Actions creates or refreshes one open review issue with changed courses/files, courses due by age, restricted/failed source checks and a human reviewer checklist. An issue remains open until a human reviewer closes it after updating the review date.
@@ -27,6 +27,7 @@ For rapidly changing tools such as Power BI, Microsoft 365, Power Automate and A
 4. Update and test the lesson and its exercises.
 5. Update lastReviewed in the manifest only after review and validation.
 6. Keep the change in Git history so a learner can see what was revised.
+7. Close the automated review issue manually after the reviewed changes and checks are committed.
 
 ## Current limitations
 
