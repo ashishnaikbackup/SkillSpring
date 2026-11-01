@@ -146,7 +146,7 @@ try {
   const context = {};
   const essentialSource = fs.readFileSync(path.join(root, "essential-courses.js"), "utf8");
   const engineeringSource = fs.readFileSync(path.join(root, "engineering-course-data.js"), "utf8");
-  vm.runInNewContext(essentialSource + "\n" + engineeringSource + "\\nglobalThis.__essential = essentialCourses;", context);
+  vm.runInNewContext(essentialSource + "\n" + engineeringSource + "\nglobalThis.__essential = essentialCourses;", context);
   if (!context.__essential?.engineering || context.__essential.engineering.modules.length < 14) fail("Engineering foundations course must load at least 14 progressive lessons.");
   essential = context.__essential || {};
 } catch (error) { fail("Could not load essential course data: " + error.message); }
