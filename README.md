@@ -7,6 +7,9 @@ The public product and repository are named SkillSpring.
 ## Start learning
 
 - **[Career Launchpad](career-launchpad.html)** — 30 course-specific portfolio capstones with beginner steps, expected evidence, role directions and interview practice across programming, web, data, finance, office tools, career, creative media, productivity and engineering.
+- **[Progress Backup](progress-backup.html)** — privately export/import browser-local course and practice progress as JSON to move it manually between devices; no account or cloud sync required.
+- **[Whole-platform completion addendum](docs/WHOLE_PLATFORM_COMPLETION_ADDENDUM.md)** — current delivery status and the remaining human review, course-depth and manual QA acceptance requirements.
+- **[30-course content audit](docs/COURSE_CONTENT_AUDIT_2026-11-01.md)** — AI-assisted source review and course-by-course depth gaps; not a claim of human expert sign-off.
 - **[New foundation courses](courses.html)** — business/accounting, IT/networking/cloud, maths/science/research, creative media and productivity now have dedicated six-lesson beginner courses.
 
 - **[Course library](courses.html)** — browse all published self-paced courses.
