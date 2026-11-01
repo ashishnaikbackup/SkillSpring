@@ -7,6 +7,8 @@ The public product and repository are named SkillSpring.
 ## Start learning
 
 - **[Course library](courses.html)** — browse all published self-paced courses.
+- **[Full 12-school curriculum map](curriculum-map.html)** — inspect the complete learning-school scope, course families, eight progressive stages, assessment standards and portfolio projects. This is a syllabus map, not a claim that every lesson is fully authored.
+- **[Graded JavaScript & SQL practice](advanced-practice.html)** — eight JavaScript and eight SQL challenges with browser-based checks, hints, example solutions and local progress.
 - **[Version 1 release status](docs/RELEASE_STATUS.md)** — live website, shipped features, automated checks, schedules and known limitations.
 - **[UI/UX audit](docs/UI_UX_AUDIT.md)** — cross-page responsive/accessibility polish, verification scope and remaining manual release QA.
 - **[Python: Zero to Professional Foundations](python-course.html)** — the most extensive course so far, with 16 modules from Hello World through programming fundamentals, data structures, functions, OOP, files, debugging, Git, APIs, SQLite and a portfolio capstone.
@@ -75,12 +77,14 @@ These schools are the long-term curriculum scope. A topic appearing in the catal
 - [x] Add the Field Radar learning section.
 - [x] Add an interactive Python practice path with 10 tested challenges, hints, solutions and local progress.
 - [x] Add a hands-on Power BI retail dashboard project with three fictional CSV datasets and a step-by-step DAX/model/report guide.
+- [x] Publish an explicit 12-school curriculum map with course families, progressive stages, examples, practice outcomes, assessment standards and portfolio capstones. This makes the remaining authoring scope visible; it does not count as authored lessons.
+- [x] Add graded JavaScript and SQL tracks with eight challenges each, browser-based checks, hints and solutions.
 - [ ] Continue expanding all courses to the full master-curriculum standard: deeper lessons, worked solutions, automated practice, multiple projects, assessments and role-specific portfolio rubrics.
-- [ ] Add dedicated graded practice labs for JavaScript, SQL, spreadsheets, data analysis and electronics; the current multi-language lab includes JavaScript and SQLite execution/preview but is not yet a full autograder for every language.
+- [ ] Add graded practice labs for spreadsheets, data analysis and electronics. JavaScript and SQL now have dedicated eight-challenge tracks; the multi-language lab remains a lightweight practice workspace, not a universal compiler.
 - [ ] Build out the remaining course families across all 12 schools; the 24-entry catalogue is a starting library, not complete coverage of the full curriculum.
 - [x] Add automated static site validation for JavaScript syntax, local links, course catalogue routes and required lesson data.
 - [x] Apply a shared responsive UI/UX and accessibility polish layer across public pages; manual device/screen-reader QA is documented separately.
-- [ ] Expand graded assessments and progress analytics; the course catalogue already includes keyword search and level filtering.
+- [ ] Expand graded assessments and progress analytics across every school; current auto-graded coverage includes Python, JavaScript and SQL practice tracks, while most other courses use lesson knowledge checks.
 - [ ] Add optional accounts and secure cross-device progress sync.
 - [x] Add a weekly course freshness monitor with official reference-link checks and human review reminders. The initial audit issue lists all 24 courses awaiting editorial review; structural checks are not treated as line-by-line content sign-off.
 - [x] Add a maintained, sourced headline feed with a daily allowlisted RSS/Atom refresh, publisher links, publication dates and source-status handling.
@@ -104,6 +108,8 @@ A GitHub Actions workflow is included at `.github/workflows/pages.yml` to publis
 Open `index.html` through a local web server such as VS Code Live Server. The Python and SQLite browser runtimes and web fonts require an internet connection.
 
 See [docs/PRODUCT_VISION.md](docs/PRODUCT_VISION.md) for the product principles, architecture direction, safety rules and long-term roadmap.
+
+**Curriculum expansion (1 November 2026):** The [full curriculum map](curriculum-map.html) now makes all 12 school syllabi explicit, with eight progressive stages per school, course families, practical outcomes, worked-example expectations, assessments and portfolio capstones. The [graded practice studio](advanced-practice.html) adds eight JavaScript and eight SQL challenges with browser-based checking, hints and example solutions. These are substantive additions, but a curriculum map is not a substitute for authored lesson material. The full course-by-course editorial and depth requirements remain open.
 
 **Release status (1 November 2026):** The current SkillSpring v1 site is deployed successfully to GitHub Pages. The latest verified Actions run passed the static validator and post-deployment smoke tests for the homepage, Start Here, course catalogue, multi-language lab, Python practice page, Power BI project, Field Radar and key data/assets. The repository contains 24 catalogue entries, 12 detailed essential-course players (98 guided lessons), 12 foundational course pages (Python has 16 modules; the other 11 have six modules each), a 10-challenge in-browser Python practice path, a 26-selectable-language/toolchain coding workspace (four browser execution/preview modes plus local-run guidance for the remaining languages), a practical Power BI capstone with fictional CSV data, and a daily source-linked Field Radar feed. This is a usable v1 release, not a claim that every topic across all 12 learning schools is already a complete professional textbook. The remaining curriculum gaps are listed below and in the master curriculum.
 
