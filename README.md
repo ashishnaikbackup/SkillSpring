@@ -121,7 +121,7 @@ The catalogue now also links to interactive, lesson-based courses for:
 - **Microsoft Word** — document creation, styles, page layout, tables, references, accessibility and a professional report.
 - **Microsoft PowerPoint** — storytelling, slide design, charts, diagrams, animation, presenter workflow and a final presentation.
 - **Microsoft Excel** — formulas, references, logic, lookups, data cleaning, PivotTables, dashboards, Power Query and a business model.
-- **Microsoft Power BI** — data connections, Power Query, star-schema modelling, DAX measures, visuals, publishing concepts and security. The [hands-on retail dashboard capstone](docs/POWER_BI_RETAIL_PROJECT.md) includes fictional Sales, Products and Regions CSV files, DAX measures, model relationships, report tasks and validation checks.
+- **Microsoft Power BI** — data connections, Power Query, star-schema modelling, DAX measures, visuals, publishing concepts and security. The [hands-on retail dashboard capstone](powerbi-project.html) (source brief: [Markdown](docs/POWER_BI_RETAIL_PROJECT.md)) includes fictional Sales, Products and Regions CSV files, DAX measures, model relationships, report tasks and validation checks.
 - **Outlook & Teams** — professional email, calendars, meetings, collaboration and security.
 - **Microsoft Access** — relational database design, keys, relationships, queries, forms and reports.
 - **Power Automate** — triggers, actions, conditions, approvals, error handling and workflow security.
