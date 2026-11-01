@@ -45,6 +45,12 @@ jobs:
           fi
       - name: Deploy the refreshed static site
         if: steps.commit.outputs.changed == 'true'
-        env:
-          GH_TOKEN: \${{ github.token }}
-        run: gh workflow run pages.yml --ref main
+        uses: actions/github-script@v7
+        with:
+          script: |
+            await github.rest.actions.createWorkflowDispatch({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              workflow_id: "pages.yml",
+              ref: "main"
+            });
