@@ -20,7 +20,7 @@ async function checkSource(url) {
       if (response.status >= 200 && response.status < 400) {
         return { url, status: "reachable", httpStatus: response.status, checkedAt: today.toISOString().slice(0, 10) };
       }
-      if ([401, 403, 429].includes(response.status)) {
+      if ([401, 403, 416, 429].includes(response.status)) {
         return { url, status: "restricted", httpStatus: response.status, checkedAt: today.toISOString().slice(0, 10) };
       }
       lastError = "HTTP " + response.status;
