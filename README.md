@@ -83,7 +83,7 @@ These schools are the long-term curriculum scope. A topic appearing in the catal
 - [x] Add five interactive professional mini-labs for spreadsheet modelling, data analysis, electronics, networking and UI/UX evaluation.
 - [ ] Continue expanding all courses to the full master-curriculum standard: deeper lessons, worked solutions, automated practice, multiple projects, assessments and role-specific portfolio rubrics.
 - [ ] Expand the five starter professional labs into full graded practice tracks with multi-stage assignments and detailed rubrics. JavaScript and SQL already have dedicated eight-challenge tracks; the multi-language lab remains a lightweight practice workspace, not a universal compiler.
-- [ ] Build out the remaining course families across all 12 schools; the 24-entry catalogue is a starting library, not complete coverage of the full curriculum.
+- [ ] Build out the remaining course families across all 12 schools; the 25-entry catalogue is a starting library, not complete coverage of the full curriculum.
 - [x] Add automated static site validation for JavaScript syntax, local links, course catalogue routes and required lesson data.
 - [x] Apply a shared responsive UI/UX and accessibility polish layer across public pages; manual device/screen-reader QA is documented separately.
 - [ ] Expand graded assessments and progress analytics across every school; current auto-graded coverage includes Python, JavaScript and SQL practice tracks, while most other courses use lesson knowledge checks.
