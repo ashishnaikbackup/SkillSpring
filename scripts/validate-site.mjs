@@ -85,11 +85,11 @@ if (!dashboardHtml.includes('id="sidebarBackdrop"') || !dashboardHtml.includes('
 }
 
 // Curriculum map and graded practice release contract.
-for (const page of ["curriculum-map.html", "advanced-practice.html"]) {
+for (const page of ["curriculum-map.html", "advanced-practice.html", "professional-labs.html"]) {
   if (!fs.existsSync(path.join(root, page))) fail(`Required learning expansion page is missing: ${page}.`);
 }
 const dashboardForLearning = fs.readFileSync(path.join(root, "index.html"), "utf8");
-for (const href of ["curriculum-map.html", "advanced-practice.html"]) {
+for (const href of ["curriculum-map.html", "advanced-practice.html", "professional-labs.html"]) {
   if (!dashboardForLearning.includes(`href="${href}"`)) fail(`Dashboard does not link to ${href}.`);
 }
 const practiceSource = fs.readFileSync(path.join(root, "advanced-practice.js"), "utf8");
