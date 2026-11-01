@@ -2,6 +2,8 @@
 
 ## What changed
 
+- Added the [Mastery Hub](../mastery-hub.html): personal goal and school planner, six-step mastery loop, local spaced-revision cards, deliberate-practice journal, weekly checklist and a portfolio evidence gate. Learners can use it across all 12 schools.
+
 - The published course catalogue now has **30 entries across the 12 learning schools**.
 - Five additional six-lesson beginner courses cover:
   - Business and accounting
@@ -20,6 +22,7 @@
 |---|---|---|
 | Whole-platform beginner foundations | Expanded | 30 courses across 12 schools, including the five previously underrepresented school families. |
 | Course-specific portfolio practice | Delivered as briefs | 30 project briefs are published. Learners still need to create the actual files, complete testing and obtain feedback. |
+| Learning process and mastery support | Delivered as a local toolkit | Mastery Hub supports goal-setting, retrieval practice, revision scheduling, deliberate practice, weekly execution and portfolio evidence. It does not certify mastery or replace expert feedback. |
 | Local progress portability | Delivered | Learners can export/import supported browser-local state. No accounts or automatic sync. |
 | Initial content review | AI-assisted source audit completed; human sign-off pending | See the 30-course audit. The audit does not claim expert verification or execution of every desktop workflow. |
 | Full professional depth in every course | Not complete | Many courses remain 5–8 lesson foundations. The audit lists course-specific next-depth work. |
