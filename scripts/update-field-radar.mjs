@@ -10,8 +10,8 @@ try { previous = JSON.parse(fs.readFileSync(outputPath, "utf8")); } catch {}
 const now = new Date();
 const today = now.toISOString();
 const maxAgeDays = 75;
-const maxPerSource = 8;
-const maxTotal = 100;
+const maxPerSource = 1;
+const maxTotal = 30;
 
 function decodeXml(value) {
   const named = { amp: "&", lt: "<", gt: ">", quot: '"', apos: "'", nbsp: " " };
@@ -74,11 +74,9 @@ function parseFeed(xml, source) {
     const rawDate = cleanText(tagValue(block, ["pubDate", "published", "updated", "dc:date", "date"]), 100);
     const parsedDate = rawDate ? new Date(rawDate) : null;
     const publishedAt = parsedDate && Number.isFinite(parsedDate.getTime()) ? parsedDate.toISOString() : null;
-    const summary = cleanText(tagValue(block, ["description", "summary", "content:encoded", "content"]), 360);
     items.push({
       id: link,
       title,
-      summary,
       url: link,
       publishedAt,
       sourceId: source.id,
@@ -122,7 +120,7 @@ for (const result of results) {
   const oldSourceItems = oldItems.filter(item => item.sourceId === source.id);
   let selectedItems = items;
   if (status !== "ok") {
-    selectedItems = oldItems.filter(item => item.sourceId === source.id);
+    selectedItems = oldItems.filter(item => item.sourceId === source.id).slice(0, maxPerSource).map(item => ({ ...item, summary: "" }));
   } else {
     selectedItems = items
       .filter(item => !item.publishedAt || (now - new Date(item.publishedAt)) / 86400000 <= maxAgeDays)
