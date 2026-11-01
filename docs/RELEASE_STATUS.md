@@ -4,6 +4,8 @@ Last verified: 1 November 2026
 
 ## Public links
 
+- Mastery Hub: https://ashishnaikbackup.github.io/SkillSpring/mastery-hub.html
+
 - UI/UX audit: https://github.com/ashishnaikbackup/SkillSpring/blob/main/docs/UI_UX_AUDIT.md
 
 - Live website: https://ashishnaikbackup.github.io/SkillSpring/
@@ -18,22 +20,26 @@ Last verified: 1 November 2026
 
 ## Engineering foundations update — 1 November 2026
 
-A separate [Engineering Field Practice Studio](https://ashishnaikbackup.github.io/SkillSpring/engineering-field-studio.html) now adds worked examples, editable calculations and automatically checked independent exercises for mechanical statics, civil quantity take-off, chemical mass balance, instrumentation scaling and biomedical dilution mathematics. These are introductory, idealised learning models—not validated designs, medical protocols or a substitute for supervised labs.\n\nA 20-lesson [Engineering Fundamentals course](https://ashishnaikbackup.github.io/SkillSpring/engineering-course.html) is now linked from the course catalogue and electrical/electronics curriculum. It begins with SI units, algebra and physics, then develops circuit laws, components, semiconductor concepts, analog/digital foundations, embedded systems, Verilog/testbenches, FPGA and VLSI verification. The course also adds vector/trigonometry, complex-number phasors, calculus, frequency-domain/Fourier/Laplace intuition, measurement uncertainty and Thevenin/Norton/transient foundations. The electronics practice lab includes series/parallel equivalents, a voltage divider and an RC time-constant calculator. This is a foundation pathway, not full coverage of all engineering disciplines or advanced VLSI specialisations. The new course is included in the 25-course editorial review manifest and remains awaiting human review.
+A separate [Engineering Field Practice Studio](https://ashishnaikbackup.github.io/SkillSpring/engineering-field-studio.html) now adds worked examples, editable calculations and automatically checked independent exercises for mechanical statics, civil quantity take-off, chemical mass balance, instrumentation scaling and biomedical dilution mathematics. These are introductory, idealised learning models—not validated designs, medical protocols or a substitute for supervised labs.\n\nA 20-lesson [Engineering Fundamentals course](https://ashishnaikbackup.github.io/SkillSpring/engineering-course.html) is now linked from the course catalogue and electrical/electronics curriculum. It begins with SI units, algebra and physics, then develops circuit laws, components, semiconductor concepts, analog/digital foundations, embedded systems, Verilog/testbenches, FPGA and VLSI verification. The course also adds vector/trigonometry, complex-number phasors, calculus, frequency-domain/Fourier/Laplace intuition, measurement uncertainty and Thevenin/Norton/transient foundations. The electronics practice lab includes series/parallel equivalents, a voltage divider and an RC time-constant calculator. This is a foundation pathway, not full coverage of all engineering disciplines or advanced VLSI specialisations. The new course is included in the 30-course editorial review manifest and remains awaiting human review.
+
+## Mastery Hub update — 1 November 2026
+
+The new [Mastery Hub](https://ashishnaikbackup.github.io/SkillSpring/mastery-hub.html) provides a local learning plan, six-step mastery loop, spaced-revision queue with retry scheduling, deliberate-practice log, weekly checklist and a portfolio evidence gate. Its state is stored in the learner's browser; use Progress Backup to transfer supported local progress between devices.
 
 ## Release checklist
 
 | Area | Version 1 delivery | Verification / scope |
 |---|---|---|
 | Public website | Static SkillSpring site deployed on GitHub Pages | Deployment workflow succeeded and its HTTP smoke tests passed. |
-| Learning library | 25 course catalogue entries across 12 learning schools | Catalogue routes, required course data and local links are checked by the static validator. Not every school has a full course yet. |
-| Beginner path | Start Here guide, programming logic, 16-module Python course and DSA progression | Dependency order is documented; DSA follows programming fundamentals. |
+| Learning library | 30 course catalogue entries across 12 learning schools | Catalogue routes, required course data and local links are checked by the static validator. Not every school has a full course yet. |
+| Beginner path | Start Here guide, programming logic, 17-module Python course and DSA progression | Dependency order is documented; DSA follows programming fundamentals. |
 | Coding practice | 10 Python, 8 JavaScript and 8 SQL/SQLite graded challenges | Python runs through Pyodide; JavaScript runs in a sandboxed browser frame; SQL uses SQLite in the browser. Tracks include checks, hints, example solutions and local progress. |
 | Multi-language lab | 26 language/tool choices | Python, JavaScript, HTML/CSS preview and SQLite run in the browser. Twenty-two additional languages have starter files, download and local run instructions; they are not remotely compiled by SkillSpring. |
 | Microsoft / workplace tools | Word, PowerPoint, Excel, Power BI, Outlook & Teams, Access and Power Automate courses | Lesson-based introductions and workplace tasks. Power BI also has a separate hands-on retail dashboard project. |
 | Power BI project | Three fictional CSV datasets, 36 transactions, modelling and DAX/report brief | Dataset keys and arithmetic are checked by the site validator; project totals are documented for reconciliation. Learners create the PBIX in Power BI Desktop. |
 | Learning design research | Benchmark notes from Mimo, Brilliant, freeCodeCamp, Microsoft Learn, Microsoft Applied Skills, Google Skillshop and Exercism | Original teaching patterns are documented; no proprietary lesson text, assets or branding are copied. |
 | Field Radar | Daily RSS/Atom headline collection from 14 allowlisted publisher/regulator feeds | At the last verified refresh, 14/14 feeds returned successfully and 14 attributed headlines were published. The collector keeps last-known-good items when a source is unavailable. |
-| Course freshness | Push-based course-file change detection plus weekly review-date and official-reference checks | Creates or updates a human review issue naming affected courses/files. The initial review issue currently lists all 25 courses awaiting their first editorial content review. It does not silently rewrite lessons or guarantee semantic correctness. |
+| Course freshness | Push-based course-file change detection plus weekly review-date and official-reference checks | Creates or updates a human review issue naming affected courses/files. The initial review issue currently lists all 30 courses awaiting their first editorial content review. It does not silently rewrite lessons or guarantee semantic correctness. |
 | UI / accessibility | Shared cross-page responsive polish layer on all 24 HTML pages, skip links/main landmarks, keyboard focus, reduced-motion support, responsive headers and accessible mobile sidebar controls | Latest quality workflow passed; validator now enforces shared stylesheet, skip links and main landmarks on every page. Manual Android/desktop/screen-reader QA remains outstanding; see [UI/UX audit](UI_UX_AUDIT.md). |
 | Documentation | Product vision, master curriculum, Start Here, benchmark, Power BI project, Field Radar policy and course freshness policy | Linked from the repository README and relevant pages. |
 
@@ -57,7 +63,7 @@ A shared `ux-polish.css` layer is now applied exactly once across all 25 public 
 
 ## Known limits — do not overstate the release
 
-1. **Curriculum depth:** 25 catalogue entries are published, but the long-term curriculum across all 12 schools is not fully authored to textbook or professional certification depth. Some courses are six-to-eight lesson foundations. The README roadmap identifies the remaining course families and assessment work.
+1. **Curriculum depth:** 30 catalogue entries are published, but the long-term curriculum across all 12 schools is not fully authored to textbook or professional certification depth. Some courses are six-to-eight lesson foundations. The README roadmap identifies the remaining course families and assessment work.
 2. **Practice coverage:** Python has 10 graded challenges; JavaScript and SQL/SQLite have eight each. More tasks, broader edge-case coverage and manual browser verification remain worthwhile additions.
 3. **IDE scope:** the multi-language lab is a lightweight practice editor. It is not a full IDE with language-server autocomplete, breakpoints, step debugging or guaranteed online compilation for all languages.
 4. **Progress:** course and practice progress are stored in browser local storage on the current device. There are no learner accounts or cross-device synchronisation.
@@ -84,13 +90,13 @@ A shared `ux-polish.css` layer is now applied exactly once across all 25 public 
 - Added [interactive 12-school curriculum map](../curriculum-map.html): eight progressive stages per school, course families, role directions, worked-example expectations, practice outcomes, assessment standards and capstone portfolio projects.
 - Added [graded JavaScript and SQL practice](../advanced-practice.html): eight challenges per track, browser-based test checking, starter tasks, hints, example solutions and local progress. JavaScript uses a sandboxed iframe; SQL uses SQLite in the browser with fictional sample data.
 - Added validator requirements for both pages, dashboard navigation, all 12 school definitions and at least eight challenges per new track.
-- These additions improve curriculum visibility and practical practice but do not close the course-authoring backlog. The 25 existing course entries still need an initial human editorial audit; the remaining course families still need complete lessons, worked solutions, exercises, assessments and projects. See [master curriculum](MASTER_CURRICULUM.md) and [product vision](PRODUCT_VISION.md).
+- These additions improve curriculum visibility and practical practice but do not close the course-authoring backlog. The 30 existing course entries still need an initial human editorial audit; the remaining course families still need complete lessons, worked solutions, exercises, assessments and projects. See [master curriculum](MASTER_CURRICULUM.md) and [product vision](PRODUCT_VISION.md).
 
 
 **Assessment behaviour update:** The 12 essential lesson-player courses now require the learner to pass that lesson's knowledge check before marking it complete. Correct answers unlock completion and provide feedback; incorrect answers show the correct answer and prompt a review. This is a per-lesson gate, not yet a multi-question cumulative final exam or a substitute for the course-level assessments still required.
 
 
-**Open completion tracker:** [Issue #3 — Complete the full 12-school curriculum and practice labs](https://github.com/ashishnaikbackup/SkillSpring/issues/3) tracks the remaining authoring, additional graded labs and release gates. The initial editorial audit of the 24 existing course entries remains separately tracked in [issue #2](https://github.com/ashishnaikbackup/SkillSpring/issues/2).
+**Open completion tracker:** [Issue #3 — Complete the full 12-school curriculum and practice labs](https://github.com/ashishnaikbackup/SkillSpring/issues/3) tracks the remaining authoring, additional graded labs and release gates. The initial editorial audit of the 30 existing course entries remains separately tracked in [issue #2](https://github.com/ashishnaikbackup/SkillSpring/issues/2).
 
 
 ## Professional mini-labs delivered — 1 November 2026
