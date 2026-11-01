@@ -31,7 +31,7 @@ The public product and repository are named SkillSpring.
 
 | Course | Learning scope |
 |---|---|
-| [Python](python-course.html) | 16 modules; beginner to advanced foundations and capstone |
+| [Python](python-course.html) | 17 modules; beginner to advanced foundations and capstone |
 | [C](c-course.html) | Compilation, syntax, control flow, functions, arrays, pointers, memory and files |
 | [C++](cpp-course.html) | Fundamentals, functions, OOP, references, STL and resource safety |
 | [Java](java-course.html) | Syntax, types, methods, collections, OOP, exceptions and files |
@@ -86,7 +86,7 @@ These schools are the long-term curriculum scope. A topic appearing in the catal
 
 - [x] Establish SkillSpring's product direction and 12 learning schools.
 - [x] Build the responsive learning dashboard and catalogue.
-- [x] Publish the 16-module Python course and 11 additional six-module foundation courses.
+- [x] Publish the 17-module Python course and 11 additional five-to-six-module foundation courses.
 - [x] Add the Field Radar learning section.
 - [x] Add an interactive Python practice path with 10 tested challenges, hints, solutions and local progress.
 - [x] Add a hands-on Power BI retail dashboard project with three fictional CSV datasets and a step-by-step DAX/model/report guide.
@@ -131,7 +131,7 @@ See [docs/PRODUCT_VISION.md](docs/PRODUCT_VISION.md) for the product principles,
 
 Every topic listed inside a learning school now opens a dedicated SkillSpring roadmap page. The roadmap view is organised into eight progressive milestones covering orientation, foundations, tools and first examples, guided practice, intermediate work, advanced practice, professional workflow and a capstone. It includes practice prompts, knowledge checks and local milestone tracking.
 
-**Important scope note:** a roadmap is not the same as a fully written course. The roadmap pages provide a structured progression and school-specific learning framework; detailed concept-by-concept lessons, worked examples, exercises, assessments and projects still need to be authored for each individual topic. The 25 catalogue entries are the current detailed-course set, not proof that every catalogue topic is complete. Progress remains stored in the current browser only.
+**Important scope note:** a roadmap is not the same as a fully written course. The roadmap pages provide a structured progression and school-specific learning framework; detailed concept-by-concept lessons, worked examples, exercises, assessments and projects still need to be authored for each individual topic. The 30 catalogue entries are the current detailed-course set, not proof that every catalogue topic is complete. Progress is stored locally; learners can export/import it manually using [Progress Backup](progress-backup.html), but there is no automatic account-based sync.
 
 ## Zero-to-hero programming courses
 
@@ -211,4 +211,4 @@ Do not rush to DSA before understanding loops, functions, arrays/lists and basic
 **Assessment behaviour update:** The 12 essential lesson-player courses now require the learner to pass that lesson's knowledge check before marking it complete. Correct answers unlock completion and provide feedback; incorrect answers show the correct answer and prompt a review. This is a per-lesson gate, not yet a multi-question cumulative final exam or a substitute for the course-level assessments still required.
 
 
-**Open completion tracker:** [Issue #3 — Complete the full 12-school curriculum and practice labs](https://github.com/ashishnaikbackup/SkillSpring/issues/3) tracks the remaining authoring, additional graded labs and release gates. The initial editorial audit of the 25 existing course entries remains separately tracked in [issue #2](https://github.com/ashishnaikbackup/SkillSpring/issues/2).
+**Open completion tracker:** [Issue #3 — Complete the full 12-school curriculum and practice labs](https://github.com/ashishnaikbackup/SkillSpring/issues/3) tracks the remaining authoring, additional graded labs and release gates. The initial editorial audit of the 30 course entries remains separately tracked in [issue #2](https://github.com/ashishnaikbackup/SkillSpring/issues/2).
