@@ -1,0 +1,44 @@
+name: SkillSpring Field Radar refresh
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: "20 2 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: skillspring-field-radar
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Collect recent headlines from allowlisted RSS and Atom feeds
+        run: node scripts/update-field-radar.mjs
+      - name: Commit updated feed only when content or source status changes
+        id: commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/field-radar.json
+          if git diff --cached --quiet; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "No new headlines or source-status changes."
+          else
+            git commit -m "Refresh Field Radar headlines"
+            git push
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+      - name: Deploy the refreshed static site
+        if: steps.commit.outputs.changed == 'true'
+        env:
+          GH_TOKEN: \${{ github.token }}
+        run: gh workflow run pages.yml --ref main
