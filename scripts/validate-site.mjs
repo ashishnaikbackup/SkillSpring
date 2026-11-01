@@ -46,7 +46,7 @@ const existsTarget = (fromFile, raw) => {
   return false;
 };
 
-for (const file of files.filter((f) => f.endsWith(".js"))) {
+for (const file of files.filter((f) => f.endsWith(".js") || f.endsWith(".mjs"))) {
   try { new vm.Script(fs.readFileSync(file, "utf8"), { filename: relative(file) }); }
   catch (error) { fail(`JavaScript syntax error in ${relative(file)}: ${error.message}`); }
 }
@@ -106,6 +106,29 @@ for (const course of courses) {
 }
 for (const key of Object.keys(essential)) {
   if (!courses.some((course) => course.href === `essential-course.html?course=${key}`)) fail(`Essential course "${key}" is not linked from the course catalogue.`);
+}
+const freshnessPath = path.join(root, "course-review-manifest.json");
+if (!fs.existsSync(freshnessPath)) {
+  fail("The course freshness manifest is missing.");
+} else {
+  try {
+    const freshness = JSON.parse(fs.readFileSync(freshnessPath, "utf8"));
+    const reviewSlugs = freshness.courses.map((course) => course.slug);
+    if (new Set(reviewSlugs).size !== reviewSlugs.length) fail("Course freshness manifest contains duplicate slugs.");
+    for (const course of courses) {
+      if (!reviewSlugs.includes(course.slug)) fail("Course freshness manifest is missing " + course.slug + ".");
+    }
+    for (const item of freshness.courses) {
+      if (!item.lastReviewed || !Number.isInteger(item.reviewIntervalDays) || item.reviewIntervalDays < 1 || !Array.isArray(item.sources) || !item.sources.length) {
+        fail("Course freshness entry " + item.slug + " is missing a review date, interval or source URLs.");
+      }
+      for (const source of item.sources || []) {
+        if (typeof source !== "string" || !source.startsWith("https://")) fail("Course freshness entry " + item.slug + " has a non-HTTPS source.");
+      }
+    }
+  } catch (error) {
+    fail("Could not validate course freshness manifest: " + error.message);
+  }
 }
 for (const [key, course] of Object.entries(essential)) {
   if (!Array.isArray(course.modules) || course.modules.length === 0) {
