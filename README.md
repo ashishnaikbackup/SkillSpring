@@ -69,7 +69,7 @@ These schools are the long-term curriculum scope. A topic appearing in the catal
 - [x] Build the responsive learning dashboard and catalogue.
 - [x] Publish the 16-module Python course and 11 additional six-module foundation courses.
 - [x] Add the Field Radar learning section.
-- [x] Add an interactive Python practice path with 10 tested challenges, hints, solutions and local progress.\n- [ ] Deepen every course with more lessons, worked solutions, graded practice and larger projects.
+- [x] Add an interactive Python practice path with 10 tested challenges, hints, solutions and local progress.\n- [x] Add a hands-on Power BI retail dashboard project with three fictional CSV datasets and a step-by-step DAX/model/report guide.\n- [ ] Deepen every course with more lessons, worked solutions, graded practice and larger projects.
 - [ ] Expand dedicated SQL, spreadsheet, data and electronics practice labs; the current multi-language lab includes SQLite practice.
 - [ ] Add full courses for the remaining programming languages and learning schools.
 - [x] Add automated static site validation for JavaScript syntax, local links, course catalogue routes and required lesson data.
@@ -120,7 +120,7 @@ The catalogue now also links to interactive, lesson-based courses for:
 - **Microsoft Word** — document creation, styles, page layout, tables, references, accessibility and a professional report.
 - **Microsoft PowerPoint** — storytelling, slide design, charts, diagrams, animation, presenter workflow and a final presentation.
 - **Microsoft Excel** — formulas, references, logic, lookups, data cleaning, PivotTables, dashboards, Power Query and a business model.
-- **Microsoft Power BI** — data connections, Power Query, star-schema modelling, DAX measures, visuals, publishing concepts, security and a BI capstone.
+- **Microsoft Power BI** — data connections, Power Query, star-schema modelling, DAX measures, visuals, publishing concepts and security. The [hands-on retail dashboard capstone](docs/POWER_BI_RETAIL_PROJECT.md) includes fictional Sales, Products and Regions CSV files, DAX measures, model relationships, report tasks and validation checks.
 - **Outlook & Teams** — professional email, calendars, meetings, collaboration and security.
 - **Microsoft Access** — relational database design, keys, relationships, queries, forms and reports.
 - **Power Automate** — triggers, actions, conditions, approvals, error handling and workflow security.
