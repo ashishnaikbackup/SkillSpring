@@ -43,6 +43,11 @@ The public product and repository are named SkillSpring.
 | [Data Science](data-course.html) | Data workflow, Python, statistics, visualisation, cleaning and reporting |
 | [UI/UX Design](ux-course.html) | Research, problem framing, wireframes, visual design, prototyping and usability |
 | [Spreadsheets](sheets-course.html) | Formulas, functions, validation, analysis, dashboards and models |
+| [Business & Accounting](essential-course.html?course=business) | Business models, bookkeeping, financial statements, unit economics and operations |
+| [IT Support & Cloud](essential-course.html?course=it) | Troubleshooting, operating systems, networking, subnetting, cloud identity and defensive security |
+| [Maths, Science & Research](essential-course.html?course=maths) | Units, algebra, statistics, probability, calculus intuition and scientific method |
+| [Creative Media](essential-course.html?course=creative) | Visual design, branding, production, storytelling, licensing and portfolio delivery |
+| [Productivity & Knowledge Management](essential-course.html?course=productivity) | Planning, focus, note-taking, active recall, digital organisation and workflow design |
 
 The 12 foundational course pages listed above include 17 Python modules and five or six guided modules in each of the other 11 courses. Additional essential professional courses and the zero-to-hero programming courses are listed in the expanded sections below. These are substantial learning foundations, not claims of complete professional mastery or exhaustive coverage of every tool in each field.
 
