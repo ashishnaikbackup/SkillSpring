@@ -3,3 +3,8 @@
 .topic-link{display:block;text-decoration:none;color:inherit;cursor:pointer;transition:transform .18s ease,border-color .18s ease}
 .topic-link:hover{transform:translateY(-2px);border-color:#8e80e8}
 .detail-help{color:#9eacc0;max-width:760px;margin:0 0 18px}
+
+/* Keyboard accessibility and motion preferences */
+:where(a,button,input,select,textarea,[tabindex]):focus-visible{outline:2px solid #b7aaff;outline-offset:3px}
+button:disabled{cursor:not-allowed;opacity:.55}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto!important}*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
