@@ -129,7 +129,7 @@ if (!fs.existsSync(practicePagePath) || !fs.existsSync(practiceScriptPath)) {
   if (!practicePage.includes('id="codeEditor"') || !practicePage.includes("pyodide.js")) {
     fail("The Python practice page is missing its editor or browser Python runtime.");
   }
-  const challengeMatch = practiceScript.match(/const challenges = ([\s\S]*?\n\\]);/);
+  const challengeMatch = practiceScript.match(/const challenges = ([\s\S]*?\n\]);/);
   if (!challengeMatch) {
     fail("Could not read the Python practice challenge data.");
   } else {
