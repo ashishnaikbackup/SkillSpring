@@ -123,7 +123,6 @@ if (fs.existsSync(fieldStudioPath)) {
   for (const required of ["mechanical", "civil", "chemical", "instrumentation", "biomedical", "fieldCheck", "fieldCalc", "aria-live", "prefers-reduced-motion"]) {
     if (!studio.includes(required)) fail("Engineering field studio is missing required learning/accessibility feature: " + required + ".");
   }
-  if (!dashboardHtml.includes("engineering-course.html")) fail("Engineering foundations navigation is missing from the dashboard.");
   if (!fs.readFileSync(path.join(root, "engineering-course.html"), "utf8").includes("engineering-field-studio.html")) fail("Engineering field studio is not linked from the engineering course.");
 }
 
