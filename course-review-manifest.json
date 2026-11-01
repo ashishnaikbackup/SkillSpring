@@ -18,8 +18,8 @@
       "lastReviewed": "2026-11-01",
       "reviewIntervalDays": 180,
       "sources": [
-        "https://en.cppreference.com/w/c",
-        "https://www.open-std.org/jtc1/sc22/wg14/"
+        "https://learn.microsoft.com/en-us/cpp/c-language/",
+        "https://www.gnu.org/software/gnu-c-manual/gnu-c-manual.html"
       ]
     },
     {
@@ -28,7 +28,7 @@
       "lastReviewed": "2026-11-01",
       "reviewIntervalDays": 90,
       "sources": [
-        "https://en.cppreference.com/w/",
+        "https://learn.microsoft.com/en-us/cpp/cpp/",
         "https://isocpp.org/"
       ]
     },
@@ -116,8 +116,8 @@
       "lastReviewed": "2026-11-01",
       "reviewIntervalDays": 90,
       "sources": [
-        "https://support.microsoft.com/excel",
-        "https://support.google.com/docs/topic/9054603"
+        "https://support.google.com/docs/",
+        "https://support.microsoft.com/excel"
       ]
     },
     {
@@ -212,8 +212,8 @@
       "lastReviewed": "2026-11-01",
       "reviewIntervalDays": 180,
       "sources": [
-        "https://www.cs.cmu.edu/afs/cs/usr/15110/www/",
-        "https://cs50.harvard.edu/x/"
+        "https://cs50.harvard.edu/x/",
+        "https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/"
       ]
     },
     {
