@@ -19,12 +19,12 @@ The public product and repository are named SkillSpring.
 - **[Engineering Field Practice Studio](engineering-field-studio.html)** — worked and auto-checked beginner simulations for mechanical statics, civil quantity take-off, chemical mass balance, 4–20 mA instrumentation and biomedical dilution mathematics.
 - **[Version 1 release status](docs/RELEASE_STATUS.md)** — live website, shipped features, automated checks, schedules and known limitations.
 - **[UI/UX audit](docs/UI_UX_AUDIT.md)** — cross-page responsive/accessibility polish, verification scope and remaining manual release QA.
-- **[Python: Zero to Professional Foundations](python-course.html)** — the most extensive course so far, with 16 modules from Hello World through programming fundamentals, data structures, functions, OOP, files, debugging, Git, APIs, SQLite and a portfolio capstone.
+- **[Python: Zero to Professional Foundations](python-course.html)** — the most extensive course so far, with 17 modules from Hello World through programming fundamentals, data structures, functions, OOP, files, debugging, Git, APIs, SQLite and a portfolio capstone.
 - **[Python Coding Practice](python-practice.html)** — 10 browser-run challenges with automatic tests, feedback, hints, revealable solutions and local code/progress saving. Python runs through Pyodide in the learner’s browser.
 - **[Field Radar](field-radar.html)** — evergreen learning notes plus a daily refreshed, source-linked headline feed across programming, AI, Microsoft tools, Indian finance/regulation, cybersecurity, design and engineering.
 - **[Learning dashboard](index.html)** — the main platform experience, subject schools, learning paths and Python playground.
 - **[Learning-platform benchmark](docs/LEARNING_PLATFORM_BENCHMARK.md)** — research notes and original teaching principles adapted from Mimo, Brilliant, freeCodeCamp, Microsoft Learn, Google Skillshop and Exercism.
-- **[Course freshness policy](docs/COURSE_FRESHNESS_POLICY.md)** — push-based course-file change detection plus weekly review-date and official-source checks create a review issue when lessons need human verification; the initial audit issue currently lists all 25 courses; the system does not silently rewrite content.
+- **[Course freshness policy](docs/COURSE_FRESHNESS_POLICY.md)** — push-based course-file change detection plus weekly review-date and official-source checks create a review issue when lessons need human verification; the initial audit issue currently lists all 30 courses; the system does not silently rewrite content.
 - **[Field Radar update policy](docs/FIELD_RADAR_UPDATE_POLICY.md)** — a daily allowlisted RSS/Atom collector refreshes headlines across programming, AI, Microsoft tools, India finance/regulation, cybersecurity, design and engineering.
 
 ## Published course library
@@ -44,7 +44,7 @@ The public product and repository are named SkillSpring.
 | [UI/UX Design](ux-course.html) | Research, problem framing, wireframes, visual design, prototyping and usability |
 | [Spreadsheets](sheets-course.html) | Formulas, functions, validation, analysis, dashboards and models |
 
-The 12 foundational courses listed above include 16 Python modules and six guided modules in each of the other 11 courses. Additional essential professional courses and the zero-to-hero programming courses are listed in the expanded sections below. These are substantial learning foundations, not claims of complete professional mastery or exhaustive coverage of every tool in each field.
+The 12 foundational course pages listed above include 17 Python modules and five or six guided modules in each of the other 11 courses. Additional essential professional courses and the zero-to-hero programming courses are listed in the expanded sections below. These are substantial learning foundations, not claims of complete professional mastery or exhaustive coverage of every tool in each field.
 
 ## How courses work
 
@@ -90,12 +90,12 @@ These schools are the long-term curriculum scope. A topic appearing in the catal
 - [x] Add five interactive professional mini-labs for spreadsheet modelling, data analysis, electronics, networking and UI/UX evaluation.
 - [ ] Continue expanding all courses to the full master-curriculum standard: deeper lessons, worked solutions, automated practice, multiple projects, assessments and role-specific portfolio rubrics.
 - [ ] Expand the five starter professional labs into full graded practice tracks with multi-stage assignments and detailed rubrics. JavaScript and SQL already have dedicated eight-challenge tracks; the multi-language lab remains a lightweight practice workspace, not a universal compiler.
-- [ ] Build out the remaining course families across all 12 schools; the 25-entry catalogue is a starting library, not complete coverage of the full curriculum.
+- [ ] Build out the remaining course families across all 12 schools; the 30-entry catalogue is a starting library, not complete coverage of the full curriculum.
 - [x] Add automated static site validation for JavaScript syntax, local links, course catalogue routes and required lesson data.
 - [x] Apply a shared responsive UI/UX and accessibility polish layer across public pages; manual device/screen-reader QA is documented separately.
 - [ ] Expand graded assessments and progress analytics across every school; current auto-graded coverage includes Python, JavaScript and SQL practice tracks, while most other courses use lesson knowledge checks.
 - [ ] Add optional accounts and secure cross-device progress sync.
-- [x] Add a weekly course freshness monitor with official reference-link checks and human review reminders. The initial audit issue lists all 25 courses awaiting editorial review; structural checks are not treated as line-by-line content sign-off.
+- [x] Add a weekly course freshness monitor with official reference-link checks and human review reminders. The initial audit issue lists all 30 courses awaiting editorial review; structural checks are not treated as line-by-line content sign-off.
 - [x] Add a maintained, sourced headline feed with a daily allowlisted RSS/Atom refresh, publisher links, publication dates and source-status handling.
 
 ## Local quality checks
@@ -120,7 +120,7 @@ See [docs/PRODUCT_VISION.md](docs/PRODUCT_VISION.md) for the product principles,
 
 **Curriculum expansion (1 November 2026):** The [full curriculum map](curriculum-map.html) now makes all 12 school syllabi explicit, with eight progressive stages per school, course families, practical outcomes, worked-example expectations, assessments and portfolio capstones. The [graded practice studio](advanced-practice.html) adds eight JavaScript and eight SQL challenges with browser-based checking, hints and example solutions. These are substantive additions, but a curriculum map is not a substitute for authored lesson material. The full course-by-course editorial and depth requirements remain open.
 
-**Release status (1 November 2026):** The current SkillSpring v1 site is deployed successfully to GitHub Pages. The latest verified Actions run passed the static validator and post-deployment smoke tests for the homepage, Start Here, course catalogue, multi-language lab, Python practice page, Power BI project, Field Radar and key data/assets. The repository contains 25 catalogue entries, 12 detailed essential-course players (98 guided lessons), 12 foundational course pages (Python has 16 modules; the other 11 have six modules each), a 10-challenge in-browser Python practice path, a 26-selectable-language/toolchain coding workspace (four browser execution/preview modes plus local-run guidance for the remaining languages), a practical Power BI capstone with fictional CSV data, and a daily source-linked Field Radar feed. This is a usable v1 release, not a claim that every topic across all 12 learning schools is already a complete professional textbook. The remaining curriculum gaps are listed below and in the master curriculum.
+**Release status (1 November 2026):** The current SkillSpring v1 site is deployed successfully to GitHub Pages. The latest verified Actions run passed the static validator and post-deployment smoke tests for the homepage, Start Here, course catalogue, multi-language lab, Python practice page, Power BI project, Field Radar and key data/assets. The repository contains 30 catalogue entries, 17 essential-course players (134 guided lessons), 12 foundational course pages (Python has 17 modules; the other 11 have five or six modules each), a 10-challenge in-browser Python practice path, a 26-selectable-language/toolchain coding workspace (four browser execution/preview modes plus local-run guidance for the remaining languages), a practical Power BI capstone with fictional CSV data, and a daily source-linked Field Radar feed. This is a usable v1 release, not a claim that every topic across all 12 learning schools is already a complete professional textbook. The remaining curriculum gaps are listed below and in the master curriculum.
 
 ## Interactive topic roadmaps
 
