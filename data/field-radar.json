@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-01T02:06:00.544Z",
+  "generatedAt": "2026-11-01T02:07:11.658Z",
   "disclaimer": "Automatically collected headlines and short feed excerpts. Original reporting remains with the publisher. Check the source link for full context. This is not financial, legal or security advice.",
   "sources": [
     {
@@ -32,7 +32,7 @@
       "status": "ok",
       "message": "Feed refreshed",
       "lastStatusChange": "2026-11-01T02:06:00.544Z",
-      "lastContentUpdate": "2026-11-01T02:06:00.544Z",
+      "lastContentUpdate": "2026-11-01T02:07:11.658Z",
       "itemCount": 8
     },
     {
@@ -87,7 +87,7 @@
       "status": "ok",
       "message": "Feed refreshed",
       "lastStatusChange": "2026-11-01T02:06:00.544Z",
-      "lastContentUpdate": "2026-11-01T02:06:00.544Z",
+      "lastContentUpdate": "2026-11-01T02:07:11.658Z",
       "itemCount": 8
     },
     {
@@ -120,7 +120,7 @@
       "status": "ok",
       "message": "Feed refreshed",
       "lastStatusChange": "2026-11-01T02:06:00.544Z",
-      "lastContentUpdate": "2026-11-01T02:06:00.544Z",
+      "lastContentUpdate": "2026-11-01T02:07:11.658Z",
       "itemCount": 8
     },
     {
@@ -427,6 +427,16 @@
       "sourceId": "openai",
       "sourceName": "OpenAI News",
       "category": "AI & Data"
+    },
+    {
+      "id": "https://www.microsoft.com/en-us/power-platform/blog/2026/10/29/built-by-makers-five-years-of-power-platform-community-conference/",
+      "title": "Built by makers: Five years of Power Platform Community Conference",
+      "summary": "Five years in, PPCC is still built by makers. Explore the ideas, innovations, and community moments that shaped this year’s event. The post Built by makers: Five years of Power Platform Community Conference appeared first on Microsoft Power Platform Blog .",
+      "url": "https://www.microsoft.com/en-us/power-platform/blog/2026/10/29/built-by-makers-five-years-of-power-platform-community-conference/",
+      "publishedAt": "2026-10-29T16:30:00.000Z",
+      "sourceId": "power-platform",
+      "sourceName": "Microsoft Power Platform",
+      "category": "Office & Analytics"
     },
     {
       "id": "https://spectrum.ieee.org/infrastructure-inspection-airship-hylight",
@@ -1017,16 +1027,6 @@
       "sourceId": "python",
       "sourceName": "Python Insider",
       "category": "Programming"
-    },
-    {
-      "id": "https://www.microsoft.com/en-us/power-platform/blog/power-pages/microsoft-power-pages-is-now-available-in-sweden-central-and-italy-north/",
-      "title": "Microsoft Power Pages is now available in Sweden Central and Italy North",
-      "summary": "We’re excited to announce the general availability of Microsoft Power Pages in the Sweden Central and Italy North regions. Whether you’re a no-code, low-code, or code-first developer, Power Pages empowers you to build scalable, secure, and business-centric websites. The post Microsoft Power Pages is now available in Sweden Central and Italy North appeared f…",
-      "url": "https://www.microsoft.com/en-us/power-platform/blog/power-pages/microsoft-power-pages-is-now-available-in-sweden-central-and-italy-north/",
-      "publishedAt": "2026-10-08T12:36:38.000Z",
-      "sourceId": "power-platform",
-      "sourceName": "Microsoft Power Platform",
-      "category": "Office & Analytics"
     },
     {
       "id": "https://blog.google/innovation-and-ai/technology/ai/playground-experimental-gaming-platform/",
