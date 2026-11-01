@@ -37,6 +37,10 @@ Your job is to create a report that answers:
 
 Do not silently delete questionable records. Note what you found and justify any cleaning step.
 
+## Data dictionary and dataset grain
+
+Each row in Sales represents one fictional order transaction (36 rows total). `OrderID` is unique in this sample. `CustomerID` is an anonymised fictional identifier; there is no customer dimension in this project. `ProductID` and `RegionID` connect each transaction to the Products and Regions dimension tables. `Quantity` is the number of units; `UnitPrice` and `UnitCost` are per-unit amounts before the discount; `DiscountPct` is stored as a decimal (for example, 0.10 means 10%); `SalesAmount` is the discounted line revenue; `CostAmount` is line cost. The supplied CSVs are fictional training data and should not be treated as real company performance.
+
 ## Step 2 — Build the model
 
 Create these relationships in Model view:
@@ -108,6 +112,7 @@ Create a second detail page for product/category performance. Use descriptive ti
 Before presenting the dashboard:
 
 - Check that the Sales table has 36 rows.
+- Reconcile the supplied practice dataset: expected Total Sales = 1,077,005; Total Cost = 854,380; Gross Profit = 222,625; Profit Margin ≈ 20.67%. These are illustrative dataset amounts; choose and document the currency/format used in your report.
 - Check that every transaction has a valid product and region.
 - Compare Total Sales and Total Cost with independent sums from the CSV.
 - Select each region and confirm that the totals change as expected.
