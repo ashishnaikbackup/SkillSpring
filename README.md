@@ -9,6 +9,7 @@ The public product and repository are named SkillSpring.
 - **[Course library](courses.html)** — browse all published self-paced courses.
 - **[Full 12-school curriculum map](curriculum-map.html)** — inspect the complete learning-school scope, course families, eight progressive stages, assessment standards and portfolio projects. This is a syllabus map, not a claim that every lesson is fully authored.
 - **[Graded JavaScript & SQL practice](advanced-practice.html)** — eight JavaScript and eight SQL challenges with browser-based checks, hints, example solutions and local progress.
+- **[Professional practice labs](professional-labs.html)** — interactive spreadsheet modelling, descriptive statistics, Ohm’s law/power, IPv4 subnetting and UI/UX accessibility review.
 - **[Version 1 release status](docs/RELEASE_STATUS.md)** — live website, shipped features, automated checks, schedules and known limitations.
 - **[UI/UX audit](docs/UI_UX_AUDIT.md)** — cross-page responsive/accessibility polish, verification scope and remaining manual release QA.
 - **[Python: Zero to Professional Foundations](python-course.html)** — the most extensive course so far, with 16 modules from Hello World through programming fundamentals, data structures, functions, OOP, files, debugging, Git, APIs, SQLite and a portfolio capstone.
@@ -79,8 +80,9 @@ These schools are the long-term curriculum scope. A topic appearing in the catal
 - [x] Add a hands-on Power BI retail dashboard project with three fictional CSV datasets and a step-by-step DAX/model/report guide.
 - [x] Publish an explicit 12-school curriculum map with course families, progressive stages, examples, practice outcomes, assessment standards and portfolio capstones. This makes the remaining authoring scope visible; it does not count as authored lessons.
 - [x] Add graded JavaScript and SQL tracks with eight challenges each, browser-based checks, hints and solutions.
+- [x] Add five interactive professional mini-labs for spreadsheet modelling, data analysis, electronics, networking and UI/UX evaluation.
 - [ ] Continue expanding all courses to the full master-curriculum standard: deeper lessons, worked solutions, automated practice, multiple projects, assessments and role-specific portfolio rubrics.
-- [ ] Add graded practice labs for spreadsheets, data analysis and electronics. JavaScript and SQL now have dedicated eight-challenge tracks; the multi-language lab remains a lightweight practice workspace, not a universal compiler.
+- [ ] Expand the five starter professional labs into full graded practice tracks with multi-stage assignments and detailed rubrics. JavaScript and SQL already have dedicated eight-challenge tracks; the multi-language lab remains a lightweight practice workspace, not a universal compiler.
 - [ ] Build out the remaining course families across all 12 schools; the 24-entry catalogue is a starting library, not complete coverage of the full curriculum.
 - [x] Add automated static site validation for JavaScript syntax, local links, course catalogue routes and required lesson data.
 - [x] Apply a shared responsive UI/UX and accessibility polish layer across public pages; manual device/screen-reader QA is documented separately.
