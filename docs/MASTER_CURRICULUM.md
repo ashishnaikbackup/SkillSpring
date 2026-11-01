@@ -165,3 +165,8 @@ Practice coverage still to add includes spreadsheet modelling, data analysis/sta
 ## Professional mini-labs delivered — 1 November 2026
 
 The [Professional Practice Labs](../professional-labs.html) page now includes five browser-based starter labs: (1) spreadsheet invoice modelling with quantity, price, tax and total validation; (2) descriptive statistics for learner-supplied numeric samples; (3) ideal-resistor Ohm's law and power calculations with safety caveats; (4) IPv4 CIDR subnet/network/broadcast/host calculations; and (5) a UI/UX accessibility and usability review checklist with prioritisation guidance. These are entry-level interactive exercises. They do not replace full spreadsheet assignments, statistical investigations, circuit simulation/HDL verification, network troubleshooting labs or moderated usability testing.
+
+
+## Additional applied engineering field studios — 1 November 2026
+
+The [Engineering Field Practice Studio](../engineering-field-studio.html) adds beginner-first worked examples, editable calculations and auto-checked independent exercises for mechanical moments, civil concrete quantity take-off, chemical component mass balance, instrumentation 4–20 mA scaling and biomedical dilution mathematics. Each studio includes a portfolio extension and explicit limitations. These are introductory calculation models only. They do not complete the specialist curricula: each field still needs deeper concept lessons, validated tool workflows, standards, safety training, multi-stage projects, cumulative assessments and human technical review.
