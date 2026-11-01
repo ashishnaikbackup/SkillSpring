@@ -179,6 +179,8 @@ Read the [Start Here: Zero to Job-Ready Skills guide](docs/START_HERE_ZERO_TO_JO
 
 Read the [Role-Ready Field Guide](docs/ROLE_READY_FIELD_GUIDE.md) for a school-by-school explanation of foundations, professional skills, tools, portfolio projects, entry roles, hiring evidence and interview preparation. It defines the intended standard; it does not claim every course has already been authored to that depth.
 
+For final-year engineering learners, follow the [Engineering Student: Final-Year Zero-to-Job Programme](docs/ENGINEERING_STUDENT_ZERO_TO_JOB.md), which adds a 16-week learning plan and practical tracks for software, web, data, electronics, VLSI, mechanical, civil, chemical, instrumentation, biomedical and finance/operations roles.
+
 
 1. Computer and file basics.
 2. Programming logic and problem decomposition.
