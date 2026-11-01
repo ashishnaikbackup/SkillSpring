@@ -155,3 +155,8 @@ Practice coverage still to add includes spreadsheet modelling, data analysis/sta
 
 
 **Assessment behaviour update:** The 12 essential lesson-player courses now require the learner to pass that lesson's knowledge check before marking it complete. Correct answers unlock completion and provide feedback; incorrect answers show the correct answer and prompt a review. This is a per-lesson gate, not yet a multi-question cumulative final exam or a substitute for the course-level assessments still required.
+
+
+## Professional mini-labs delivered — 1 November 2026
+
+The [Professional Practice Labs](../professional-labs.html) page now includes five browser-based starter labs: (1) spreadsheet invoice modelling with quantity, price, tax and total validation; (2) descriptive statistics for learner-supplied numeric samples; (3) ideal-resistor Ohm's law and power calculations with safety caveats; (4) IPv4 CIDR subnet/network/broadcast/host calculations; and (5) a UI/UX accessibility and usability review checklist with prioritisation guidance. These are entry-level interactive exercises. They do not replace full spreadsheet assignments, statistical investigations, circuit simulation/HDL verification, network troubleshooting labs or moderated usability testing.
