@@ -138,7 +138,7 @@ if (fs.existsSync(engineeringLabPath)) {
   }
 }
 const dashboardForLearning = fs.readFileSync(path.join(root, "index.html"), "utf8");
-for (const href of ["curriculum-map.html", "advanced-practice.html", "professional-labs.html"]) {
+for (const href of ["curriculum-map.html", "advanced-practice.html", "professional-labs.html", "career-launchpad.html", "progress-backup.html"]) {
   if (!dashboardForLearning.includes(`href="${href}"`)) fail(`Dashboard does not link to ${href}.`);
 }
 const practiceSource = fs.readFileSync(path.join(root, "advanced-practice.js"), "utf8");
@@ -179,7 +179,8 @@ try {
 
 const slugs = courses.map((course) => course.slug);
 if (new Set(slugs).size !== slugs.length) fail("The course catalogue contains duplicate slugs.");
-for (const required of ["logic", "dsa", "vibecoding", "engineering"]) {
+if (courses.length !== 30) fail("The published course catalogue must contain 30 entries (found " + courses.length + ").");
+for (const required of ["logic", "dsa", "vibecoding", "engineering", "business", "it", "maths", "creative", "productivity"]) {
   if (!slugs.includes(required)) fail(`Required course "${required}" is missing from courses.js.`);
   if (!essential[required]) fail(`Required course data "${required}" is missing from essential-courses.js.`);
 }
@@ -189,6 +190,25 @@ for (const course of courses) {
   if (!fs.existsSync(path.join(root, target))) fail(`Course ${course.slug} points to missing page ${target}.`);
   const courseKey = new URLSearchParams(query).get("course");
   if (courseKey && !essential[courseKey]) fail(`Course ${course.slug} points to missing essential course key "${courseKey}".`);
+}
+const launchpadPath = path.join(root, "career-launchpad.html");
+if (!fs.existsSync(launchpadPath)) fail("The career launchpad is missing.");
+if (fs.existsSync(launchpadPath)) {
+  const launchpad = fs.readFileSync(launchpadPath, "utf8");
+  const dataMatch = launchpad.match(/const projects\\s*=\\s*(\\[[\\s\\S]*?\\]);\\s*const schoolLabels/);
+  if (!dataMatch) fail("Could not read career launchpad capstone data.");
+  else {
+    try {
+      const projects = vm.runInNewContext("(" + dataMatch[1] + ")");
+      const ids = projects.map((item) => item.slug);
+      if (projects.length !== courses.length) fail("Career launchpad must contain one capstone for each course.");
+      if (new Set(ids).size !== ids.length) fail("Career launchpad capstone slugs must be unique.");
+      for (const course of courses) {
+        const project = projects.find((item) => item.slug === course.slug);
+        if (!project || !project.brief || !project.steps?.length || !project.evidence?.length || !project.interview) fail("Career launchpad is missing a complete capstone for " + course.slug + ".");
+      }
+    } catch (error) { fail("Could not validate career launchpad data: " + error.message); }
+  }
 }
 const essentialPlayer = fs.readFileSync(path.join(root, "essential-course.js"), "utf8");
 if (!essentialPlayer.includes('store+"-passed"') || !essentialPlayer.includes('document.getElementById("done").disabled')) {
