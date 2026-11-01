@@ -4,7 +4,7 @@ Updated: 1 November 2026
 
 ## Scope covered
 
-The shared `ux-polish.css` design layer is loaded exactly once across all 26 public HTML pages:
+The shared `ux-polish.css` design layer is loaded exactly once across all 28 public HTML pages:
 - Home dashboard and school catalogue
 - Complete-course catalogue and all lesson-player pages
 - Start Here guide and topic roadmaps
@@ -12,6 +12,8 @@ The shared `ux-polish.css` design layer is loaded exactly once across all 26 pub
 - Multi-language coding lab
 - Power BI capstone
 - Field Radar
+- Career Launchpad with search and learning-school filter
+- Local progress backup/export/import page
 - Full 12-school curriculum map
 - Graded JavaScript and SQL practice studio
 - Five professional practice mini-labs
