@@ -10,8 +10,11 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="ux-polish.css">
 </head>
 <body>
+  <a class="skip-link" href="#mainContent">Skip to main content</a>
+  <div class="sidebar-backdrop" id="sidebarBackdrop" aria-hidden="true"></div>
   <div class="app-shell">
     <aside class="sidebar" id="sidebar">
       <a class="brand" href="#" data-view="home"><span class="brand-mark">S</span><span>SkillSpring<span class="brand-period">.</span></span></a>
@@ -21,7 +24,6 @@
         <a class="nav-link" href="start-here.html"><span>↗</span> Start here · Zero to job-ready</a>
         <button class="nav-link" data-view="explore"><span>▦</span> Explore schools</button>
         <button class="nav-link" data-view="paths"><span>⌁</span> Learning paths</button>
-        <a class="nav-link" href="docs/START_HERE_ZERO_TO_JOB.md"><span>🚀</span> Start from zero</a>
         <button class="nav-link" data-view="saved"><span>☆</span> My learning</button>
         <a class="nav-link" href="courses.html"><span>📘</span> Complete courses</a>
         <a class="nav-link" href="polyglot.html"><span>⌘</span> Multi-language coding lab</a>
@@ -29,7 +31,6 @@
       </nav>
       <div class="side-label">PRACTICE</div>
       <nav class="side-nav">
-        <a class="nav-link" href="polyglot.html"><span>⌘</span> Multi-language coding lab</a>
         <button class="nav-link" data-view="playground"><span>⌘</span> Python playground</button>
         <button class="nav-link" data-view="labs"><span>▤</span> Practice labs</button>
         <button class="nav-link" data-view="projects"><span>◫</span> Projects</button>
@@ -43,11 +44,11 @@
       <div class="sidebar-bottom"><div class="mini-avatar">S</div><div><strong>Your learning space</strong><small>Built to grow with you</small></div></div>
     </aside>
 
-    <main class="main-area">
+    <main class="main-area" id="mainContent" tabindex="-1">
       <header class="topbar">
-        <button class="mobile-menu" id="menuBtn" aria-label="Open menu">☰</button>
+        <button class="mobile-menu" id="menuBtn" aria-label="Open navigation menu" aria-controls="sidebar" aria-expanded="false">☰</button>
         <div class="breadcrumb">Your workspace <span>/</span> <strong id="crumb">Overview</strong></div>
-        <div class="top-actions"><span class="online-dot"></span><span class="top-caption">Your journey starts here</span><button class="avatar">Y</button></div>
+        <div class="top-actions"><span class="online-dot"></span><span class="top-caption">Your journey starts here</span><span class="avatar" aria-label="Your learning profile">S</span></div>
       </header>
 
       <section class="page active" id="homePage">
@@ -77,7 +78,7 @@
 
       <section class="page" id="explorePage">
         <div class="page-intro"><div class="eyebrow">THE SKILLSPRING CATALOGUE</div><h1>Explore all learning schools</h1><p>Choose a subject and follow a structured path from foundations to advanced practice.</p></div>
-        <div class="search-row"><input id="searchInput" type="search" placeholder="Search languages, subjects, tools or skills…"><select id="levelFilter"><option value="all">All levels</option><option value="beginner">Beginner friendly</option><option value="intermediate">Intermediate</option><option value="advanced">Advanced</option></select></div>
+        <div class="search-row"><input id="searchInput" type="search" aria-label="Search learning schools and courses" placeholder="Search languages, subjects, tools or skills…"><select id="levelFilter" aria-label="Filter by learning level"><option value="all">All levels</option><option value="beginner">Beginner friendly</option><option value="intermediate">Intermediate</option><option value="advanced">Advanced</option></select></div>
         <div class="filter-row" id="schoolFilters"></div>
         <div class="catalogue-grid" id="catalogueGrid"></div>
       </section>
