@@ -9,6 +9,7 @@ Last verified: 1 November 2026
 - Live website: https://ashishnaikbackup.github.io/SkillSpring/
 - GitHub repository: https://github.com/ashishnaikbackup/SkillSpring
 - Course library: https://ashishnaikbackup.github.io/SkillSpring/courses.html
+- Engineering Field Practice Studio: https://ashishnaikbackup.github.io/SkillSpring/engineering-field-studio.html
 - Beginner route: https://ashishnaikbackup.github.io/SkillSpring/start-here.html
 - Python coding practice: https://ashishnaikbackup.github.io/SkillSpring/python-practice.html
 - Multi-language lab: https://ashishnaikbackup.github.io/SkillSpring/polyglot.html
@@ -17,7 +18,7 @@ Last verified: 1 November 2026
 
 ## Engineering foundations update — 1 November 2026
 
-A 20-lesson [Engineering Fundamentals course](https://ashishnaikbackup.github.io/SkillSpring/engineering-course.html) is now linked from the course catalogue and electrical/electronics curriculum. It begins with SI units, algebra and physics, then develops circuit laws, components, semiconductor concepts, analog/digital foundations, embedded systems, Verilog/testbenches, FPGA and VLSI verification. The course also adds vector/trigonometry, complex-number phasors, calculus, frequency-domain/Fourier/Laplace intuition, measurement uncertainty and Thevenin/Norton/transient foundations. The electronics practice lab includes series/parallel equivalents, a voltage divider and an RC time-constant calculator. This is a foundation pathway, not full coverage of all engineering disciplines or advanced VLSI specialisations. The new course is included in the 25-course editorial review manifest and remains awaiting human review.
+A separate [Engineering Field Practice Studio](https://ashishnaikbackup.github.io/SkillSpring/engineering-field-studio.html) now adds worked examples, editable calculations and automatically checked independent exercises for mechanical statics, civil quantity take-off, chemical mass balance, instrumentation scaling and biomedical dilution mathematics. These are introductory, idealised learning models—not validated designs, medical protocols or a substitute for supervised labs.\n\nA 20-lesson [Engineering Fundamentals course](https://ashishnaikbackup.github.io/SkillSpring/engineering-course.html) is now linked from the course catalogue and electrical/electronics curriculum. It begins with SI units, algebra and physics, then develops circuit laws, components, semiconductor concepts, analog/digital foundations, embedded systems, Verilog/testbenches, FPGA and VLSI verification. The course also adds vector/trigonometry, complex-number phasors, calculus, frequency-domain/Fourier/Laplace intuition, measurement uncertainty and Thevenin/Norton/transient foundations. The electronics practice lab includes series/parallel equivalents, a voltage divider and an RC time-constant calculator. This is a foundation pathway, not full coverage of all engineering disciplines or advanced VLSI specialisations. The new course is included in the 25-course editorial review manifest and remains awaiting human review.
 
 ## Release checklist
 
