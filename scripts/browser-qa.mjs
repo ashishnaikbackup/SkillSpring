@@ -12,7 +12,7 @@ const check = (name, ok, detail = "") => {
 try {
   const context = await browser.newContext({ viewport: { width: 1440, height: 900 } });
   const page = await context.newPage();
-  for (const route of ["/", "/courses.html", "/career-launchpad.html", "/progress-backup.html", "/engineering-course.html", "/engineering-field-studio.html"]) {
+  for (const route of ["/", "/courses.html", "/career-launchpad.html", "/progress-backup.html", "/mastery-hub.html", "/engineering-course.html", "/engineering-field-studio.html"]) {
     const response = await page.goto(pageUrl(route), { waitUntil: "networkidle" });
     check("HTTP " + route, !!response && response.ok(), response ? String(response.status()) : "no response");
     check("main landmark " + route, await page.locator("main#main-content").count() === 1);
@@ -27,6 +27,28 @@ try {
   await page.locator("#filterSchool").selectOption("finance");
   check("learning school filter", await page.locator("#capstoneGrid .launch-card").count() >= 2);
   await page.locator("#filterSchool").selectOption("all");
+
+  await page.goto(pageUrl("/mastery-hub.html"), { waitUntil: "networkidle" });
+  await page.locator("#goal").fill("Learn SQL joins and analyse a small dataset");
+  await page.locator("#outcome").fill("Write and explain correct joins for a sample database.");
+  await page.locator("#savePlan").click();
+  check("mastery plan saves", await page.locator("#statGoal").innerText().then(t => t.includes("Learn SQL joins")));
+  await page.locator("#topic").fill("SQL LEFT JOIN");
+  await page.locator("#prompt").fill("Explain what rows are retained by a LEFT JOIN.");
+  await page.locator("#addCard").click();
+  check("spaced revision card added", await page.locator("#dueCount").innerText() === "1");
+  await page.locator("#reviewList button[data-forgot]").click();
+  check("revision retry scheduled", await page.locator("#reviewList").innerText().then(t => t.includes("1/5 reviews")));
+  await page.locator("#reviewList button[data-grade]").click();
+  check("revision success advances stage", await page.locator("#reviewList").innerText().then(t => t.includes("1/5 reviews")));
+  await page.locator("#sessionSkill").fill("SQL joins");
+  await page.locator("#sessionResult").fill("Solved three join queries and compared outputs.");
+  await page.locator("#sessionGap").fill("Practise unmatched records next.");
+  await page.locator("#logSession").click();
+  check("practice session logged", await page.locator("#statSessions").innerText() === "1");
+  await page.locator("#weekFocus").fill("Finish SQL joins practice");
+  await page.locator("#makeWeek").click();
+  check("weekly checklist generated", await page.locator("#weekList label").count() >= 7);
 
   await page.goto(pageUrl("/professional-labs.html"), { waitUntil: "networkidle" });
   await page.locator('[data-extra-lab="finance"]').click();
@@ -81,7 +103,7 @@ try {
   await page.keyboard.press("Tab");
   check("keyboard first focus reaches skip link", await page.evaluate(() => document.activeElement?.classList?.contains("skip-link")));
 
-  for (const route of ["/", "/courses.html", "/career-launchpad.html", "/progress-backup.html", "/engineering-field-studio.html"]) {
+  for (const route of ["/", "/courses.html", "/career-launchpad.html", "/progress-backup.html", "/mastery-hub.html", "/engineering-field-studio.html"]) {
     await page.goto(pageUrl(route), { waitUntil: "networkidle" });
     const axe = await new AxeBuilder({ page }).withTags(["wcag2a", "wcag2aa", "wcag21a", "wcag21aa"]).analyze();
     const serious = axe.violations.filter(v => v.impact === "critical" || v.impact === "serious");
