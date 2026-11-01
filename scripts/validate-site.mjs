@@ -96,9 +96,17 @@ if (fs.existsSync(path.join(root, "engineering-course.html"))) {
 }
 if (fs.existsSync(path.join(root, "engineering-course-data.js"))) {
   const engineeringData = fs.readFileSync(path.join(root, "engineering-course-data.js"), "utf8");
-  const lessonCount = (engineeringData.match(/^\s*\["/gm) || []).length;
   if (!engineeringData.includes("essentialCourses.engineering")) fail("Engineering course data is not registered as essentialCourses.engineering.");
-  if (lessonCount < 14) fail(`Engineering foundations course requires at least 14 progressive lessons (found ${lessonCount}).`);
+  try {
+    const engineeringContext = {};
+    const essentialSource = fs.readFileSync(path.join(root, "essential-courses.js"), "utf8");
+    vm.runInNewContext(essentialSource + "\n" + engineeringData + "\nglobalThis.__engineering = essentialCourses.engineering;", engineeringContext);
+    if (!engineeringContext.__engineering || !Array.isArray(engineeringContext.__engineering.modules) || engineeringContext.__engineering.modules.length < 14) {
+      fail("Engineering foundations course must load at least 14 progressive lessons.");
+    }
+  } catch (error) {
+    fail("Could not load engineering course data: " + error.message);
+  }
 }
 if (fs.existsSync(path.join(root, "courses.js"))) {
   const catalogue = fs.readFileSync(path.join(root, "courses.js"), "utf8");
@@ -224,7 +232,7 @@ for (const [key, course] of Object.entries(essential)) {
     continue;
   }
   for (const [index, module] of course.modules.entries()) {
-    if (!Array.isArray(module) || module.length !== 7 || !Array.isArray(module[6]) || module[6].length < 2) {
+    if (!Array.isArray(module) || (module.length !== 7 && module.length !== 8) || !Array.isArray(module[6]) || module[6].length < 2) {
       fail(`Essential course "${key}" lesson ${index + 1} has an incomplete lesson/quiz structure.`);
     }
   }
