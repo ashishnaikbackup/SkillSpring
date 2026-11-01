@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Short field radar notes to help SkillSpring learners understand important technology and professional trends."><title>Field Radar · SkillSpring</title><link rel="stylesheet" href="course.css"></head><body><header class="top"><a class="brand" href="index.html">SkillSpring<span>.</span></a><nav><a href="index.html">Home</a><a href="courses.html">All courses</a></nav></header><main class="wrap"><section class="hero"><div class="eyebrow">FIELD RADAR · LEARN WHAT IS CHANGING</div><h1>What's moving<br><span>in the fields you learn.</span></h1><p>Short explainers about important tools, methods and industry directions. Each note tells you what it is, why it matters and what to learn next. These are educational trend notes, not a live news feed or investment advice.</p></section><div id="radar" class="radar-grid"></div><footer>SkillSpring · Field Radar <a href="index.html">Back to learning home</a></footer></main><script>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Evergreen learning notes and automatically collected headlines across technology, engineering, finance and professional tools."><title>Field Radar · SkillSpring</title><link rel="stylesheet" href="course.css"><link rel="stylesheet" href="field-radar-live.css"></head><body><header class="top"><a class="brand" href="index.html">SkillSpring<span>.</span></a><nav><a href="index.html">Home</a><a href="courses.html">All courses</a></nav></header><main class="wrap"><section class="hero"><div class="eyebrow">FIELD RADAR · LEARN WHAT IS CHANGING</div><h1>What's moving<br><span>in the fields you learn.</span></h1><p>Explore evergreen learning notes and a daily refreshed headline feed from allowlisted publisher, regulator and engineering sources. Headlines link to the original source; they are not endorsements or financial advice.</p></section><div id="radar" class="radar-grid"></div><section class="live-radar" aria-labelledby="liveRadarTitle"><div class="live-radar-head"><div><div class="eyebrow">AUTOMATIC FIELD UPDATES</div><h2 id="liveRadarTitle">Latest headlines from the field</h2><p>Publisher headlines and short excerpts, linked to their original sources.</p></div><div id="liveRadarStatus" class="live-radar-status" role="status">Loading the latest feed…</div></div><div id="liveNewsGrid" class="live-news-grid"><div class="live-news-empty">The live feed is loading. If this is your first visit, the scheduled collector may still be preparing its first refresh.</div></div><div class="live-source-status" id="liveSourceStatus"></div><p class="live-radar-disclaimer" id="liveRadarDisclaimer"></p></section><footer>SkillSpring · Field Radar <a href="index.html">Back to learning home</a></footer></main><script>
 const items=[
 {field:"AI & software",title:"AI agents and tool-using workflows",tag:"Understand the foundations",what:"AI systems are increasingly designed to do multi-step work: interpret a goal, call approved tools, inspect results and continue with guardrails.",why:"Developers need to understand tool permissions, evaluation, observability, failure handling and human review—not only prompt writing.",learn:"Study Python, APIs, JSON, function calling concepts, authentication, testing and responsible AI. Build a small assistant that can safely search a local sample dataset."},
 {field:"Software engineering",title:"Type safety, testing and maintainability",tag:"Professional practice",what:"As applications grow, teams put more emphasis on clear interfaces, automated tests, static analysis, dependency management and maintainable architecture.",why:"Readable code that can be tested and changed safely is more valuable than a quick demo that nobody can maintain.",learn:"Learn Git, unit tests, type hints, code review, logging, CI workflows and documentation. Add tests and type hints to your Python projects."},
@@ -12,4 +12,50 @@ const items=[
 {field:"Product & management",title:"Clear problem definition before choosing tools",tag:"A transferable skill",what:"Product and project teams use discovery, prioritisation, measurable outcomes and iterative delivery to avoid building features nobody needs.",why:"A polished solution to the wrong problem is still a poor outcome.",learn:"Practise writing problem statements, user stories, acceptance criteria, simple roadmaps, risk logs and retrospectives."}
 ];
 document.getElementById('radar').innerHTML=items.map((x,i)=>'<article class="lesson" style="margin-bottom:16px"><div class="eyebrow">'+x.field.toUpperCase()+' · NOTE '+String(i+1).padStart(2,'0')+'</div><h2 style="font-size:23px">'+x.title+'</h2><p><b>'+x.tag+'</b></p><h3>What is happening?</h3><p>'+x.what+'</p><h3>Why should you care?</h3><p>'+x.why+'</p><div class="callout"><b>What to learn next:</b> '+x.learn+'</div></article>').join('');
+
+async function loadLiveRadar(){
+ const grid=document.getElementById("liveNewsGrid");
+ const status=document.getElementById("liveRadarStatus");
+ const sourceStatus=document.getElementById("liveSourceStatus");
+ const disclaimer=document.getElementById("liveRadarDisclaimer");
+ try{
+  const response=await fetch("data/field-radar.json",{cache:"no-store"});
+  if(!response.ok)throw new Error("Feed request returned HTTP "+response.status);
+  const feed=await response.json();
+  const items=Array.isArray(feed.items)?feed.items:[];
+  const sources=Array.isArray(feed.sources)?feed.sources:[];
+  const succeeded=sources.filter(source=>source.status==="ok").length;
+  const restricted=sources.filter(source=>source.status==="restricted").length;
+  const failed=sources.filter(source=>source.status==="failed").length;
+  status.textContent=(feed.generatedAt?"Content updated "+new Date(feed.generatedAt).toLocaleString():"Feed not refreshed yet")+" · "+items.length+" headlines · "+succeeded+"/"+sources.length+" feeds refreshed";
+  grid.replaceChildren();
+  if(!items.length){
+   const empty=document.createElement("div");empty.className="live-news-empty";empty.textContent="No live headlines are available yet. The curated learning notes above remain available.";grid.append(empty);
+  }
+  for(const item of items.slice(0,40)){
+   if(!item||typeof item.title!=="string"||typeof item.url!=="string")continue;
+   let safeUrl;
+   try{safeUrl=new URL(item.url);if(safeUrl.protocol!=="https:")continue;}catch{continue;}
+   const card=document.createElement("article");card.className="live-news-card";
+   const meta=document.createElement("div");meta.className="live-news-meta";
+   const date=item.publishedAt?new Date(item.publishedAt):null;
+   const dateText=date&&Number.isFinite(date.getTime())?date.toLocaleDateString():"Date not supplied";
+   meta.textContent=[item.category,item.sourceName,dateText].filter(Boolean).join(" · ");
+   const heading=document.createElement("h3");heading.textContent=item.title;
+   const summary=document.createElement("p");summary.textContent=item.summary||"Open the publisher's original page for the full update.";
+   const link=document.createElement("a");link.href=safeUrl.href;link.target="_blank";link.rel="noopener noreferrer";link.textContent="Read original source ↗";
+   card.append(meta,heading,summary,link);grid.append(card);
+  }
+  sourceStatus.replaceChildren();
+  for(const source of sources.filter(item=>item.status!=="ok")){
+   const chip=document.createElement("span");chip.className="live-source-chip "+(source.status==="failed"?"failed":"");chip.textContent=source.name+": "+source.status;sourceStatus.append(chip);
+  }
+  disclaimer.textContent=feed.disclaimer||"Headlines and short excerpts are automatically collected. Original reporting remains with the publisher; read the source for full context.";
+ }catch(error){
+  status.textContent="Live feed is temporarily unavailable.";
+  const empty=document.createElement("div");empty.className="live-news-empty";empty.textContent="The live headlines could not be loaded right now. Please try again later; the curated learning notes above are still available.";
+  grid.replaceChildren(empty);
+ }
+}
+loadLiveRadar();
 </script></body></html>
