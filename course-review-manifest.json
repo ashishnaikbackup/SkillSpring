@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "description": "Initial review baseline. Courses are not represented as content-audited until a human reviewer records lastReviewed after checking lessons against official sources.",
+  "description": "Review checkpoint schedule for 24 published course entries. The initial 2026-11-01 dates record the catalogue/route/lesson-structure/reference-source baseline, not a line-by-line editorial sign-off of every lesson.",
   "courses": [
     {
       "slug": "python",
