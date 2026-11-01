@@ -86,3 +86,8 @@ A shared `ux-polish.css` layer is now applied exactly once across all 23 public 
 
 
 **Open completion tracker:** [Issue #3 — Complete the full 12-school curriculum and practice labs](https://github.com/ashishnaikbackup/SkillSpring/issues/3) tracks the remaining authoring, additional graded labs and release gates. The initial editorial audit of the 24 existing course entries remains separately tracked in [issue #2](https://github.com/ashishnaikbackup/SkillSpring/issues/2).
+
+
+## Professional mini-labs delivered — 1 November 2026
+
+The [Professional Practice Labs](../professional-labs.html) page now includes five browser-based starter labs: (1) spreadsheet invoice modelling with quantity, price, tax and total validation; (2) descriptive statistics for learner-supplied numeric samples; (3) ideal-resistor Ohm's law and power calculations with safety caveats; (4) IPv4 CIDR subnet/network/broadcast/host calculations; and (5) a UI/UX accessibility and usability review checklist with prioritisation guidance. These are entry-level interactive exercises. They do not replace full spreadsheet assignments, statistical investigations, circuit simulation/HDL verification, network troubleshooting labs or moderated usability testing.
