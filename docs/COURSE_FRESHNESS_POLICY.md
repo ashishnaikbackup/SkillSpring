@@ -9,9 +9,9 @@ The initial 1 November 2026 checkpoint verified the 24-course inventory, catalog
 ## What is automated
 
 - The course-review-manifest.json file lists published course families, official reference sources, review intervals and review status. New entries begin as initial-review-required; a date is recorded only after a human has checked the course.
-- The checker runs on a weekly GitHub Actions schedule and can also be started manually.
+- The checker runs on a weekly GitHub Actions schedule, on pushes and manually. On pushes it compares the before/after commits and maps changed lesson/course data files to the affected courses.
 - It flags courses with no verified content-review date, courses whose review interval has elapsed and official source URLs that could not be reached by both a HEAD and a small-range GET request.
-- GitHub Actions creates or refreshes one open review issue with affected courses, source links and a human reviewer checklist.
+- GitHub Actions creates or refreshes one open review issue with changed courses/files, courses due by age, restricted/failed source checks and a human reviewer checklist. An issue remains open until a human reviewer closes it after updating the review date.
 
 ## What is deliberately not automated
 
