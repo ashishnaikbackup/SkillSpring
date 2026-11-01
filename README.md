@@ -8,6 +8,7 @@ The public product and repository are named SkillSpring.
 
 - **[Course library](courses.html)** — browse all published self-paced courses.
 - **[Version 1 release status](docs/RELEASE_STATUS.md)** — live website, shipped features, automated checks, schedules and known limitations.
+- **[UI/UX audit](docs/UI_UX_AUDIT.md)** — cross-page responsive/accessibility polish, verification scope and remaining manual release QA.
 - **[Python: Zero to Professional Foundations](python-course.html)** — the most extensive course so far, with 16 modules from Hello World through programming fundamentals, data structures, functions, OOP, files, debugging, Git, APIs, SQLite and a portfolio capstone.
 - **[Python Coding Practice](python-practice.html)** — 10 browser-run challenges with automatic tests, feedback, hints, revealable solutions and local code/progress saving. Python runs through Pyodide in the learner’s browser.
 - **[Field Radar](field-radar.html)** — evergreen learning notes plus a daily refreshed, source-linked headline feed across programming, AI, Microsoft tools, Indian finance/regulation, cybersecurity, design and engineering.
