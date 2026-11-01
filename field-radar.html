@@ -49,7 +49,7 @@ async function loadLiveRadar(){
   for(const source of sources.filter(item=>item.status!=="ok")){
    const chip=document.createElement("span");chip.className="live-source-chip "+(source.status==="failed"?"failed":"");chip.textContent=source.name+": "+source.status;sourceStatus.append(chip);
   }
-  disclaimer.textContent=feed.disclaimer||"Headlines and short excerpts are automatically collected. Original reporting remains with the publisher; read the source for full context.";
+  disclaimer.textContent=feed.disclaimer||"Headlines and links are automatically collected. Original reporting remains with the publisher; read the source for full context.";
  }catch(error){
   status.textContent="Live feed is temporarily unavailable.";
   const empty=document.createElement("div");empty.className="live-news-empty";empty.textContent="The live headlines could not be loaded right now. Please try again later; the curated learning notes above are still available.";
