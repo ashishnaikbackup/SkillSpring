@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "description": "Review schedule for 24 published course entries. Existing courses start with lastReviewed=null and reviewStatus=initial-review-required until a human completes an initial content review.",
+  "description": "Review schedule for 25 published course entries. Existing courses start with lastReviewed=null and reviewStatus=initial-review-required until a human completes an initial content review.",
   "courses": [
     {
       "slug": "python",
@@ -336,6 +336,23 @@
       "reviewStatus": "initial-review-required",
       "contentFiles": [
         "essential-courses.js"
+      ]
+    },
+    {
+      "slug": "engineering",
+      "title": "Engineering Fundamentals: Electrical, Electronics & VLSI",
+      "lastReviewed": null,
+      "reviewIntervalDays": 180,
+      "sources": [
+        "https://www.allaboutcircuits.com/textbook/",
+        "https://www.nandland.com/",
+        "https://www.intel.com/content/www/us/en/docs/programmable/683236/current/overview.html",
+        "https://www.ti.com/lit/"
+      ],
+      "reviewStatus": "initial-review-required",
+      "contentFiles": [
+        "engineering-course-data.js",
+        "engineering-course.html"
       ]
     }
   ]
