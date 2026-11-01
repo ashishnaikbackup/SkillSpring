@@ -165,6 +165,8 @@ The [coding lab](polyglot.html) includes in-browser Python (Pyodide), JavaScript
 
 ## How SkillSpring teaches from zero to professional
 
+See the [Field-specific Fundamentals Map](docs/FIELD_FOUNDATIONS_MAP.md) for the prerequisites every school must teach, including the full mathematics, physics, circuits, semiconductors, embedded systems, HDL, FPGA and VLSI foundations for the electrical/electronics engineering pathway.
+
 Read the [Learning Design Standard](docs/LEARNING_DESIGN_STANDARD.md) for the eight-stage progression, lesson pattern, mastery gates, project rubrics and accessible motion principles. The curriculum map is a syllabus; individual course families are only complete after the full lesson, assessment, project and editorial-review standards are met.
 
 ## Learning order for a complete beginner
