@@ -84,6 +84,25 @@ if (!dashboardHtml.includes('id="sidebarBackdrop"') || !dashboardHtml.includes('
   fail("The dashboard mobile navigation is missing its accessible menu/backdrop controls.");
 }
 
+// Curriculum map and graded practice release contract.
+for (const page of ["curriculum-map.html", "advanced-practice.html"]) {
+  if (!fs.existsSync(path.join(root, page))) fail(`Required learning expansion page is missing: ${page}.`);
+}
+const dashboardForLearning = fs.readFileSync(path.join(root, "index.html"), "utf8");
+for (const href of ["curriculum-map.html", "advanced-practice.html"]) {
+  if (!dashboardForLearning.includes(`href="${href}"`)) fail(`Dashboard does not link to ${href}.`);
+}
+const practiceSource = fs.readFileSync(path.join(root, "advanced-practice.js"), "utf8");
+const jsBlock = practiceSource.split("const sqlTasks")[0] || "";
+const sqlBlock = practiceSource.split("const sqlTasks")[1] || "";
+const jsCount = (jsBlock.match(/id:"/g) || []).length;
+const sqlCount = (sqlBlock.match(/id:"/g) || []).length;
+if (jsCount < 8) fail(`JavaScript practice requires at least 8 challenges (found ${jsCount}).`);
+if (sqlCount < 8) fail(`SQL practice requires at least 8 challenges (found ${sqlCount}).`);
+const curriculumSource = fs.readFileSync(path.join(root, "curriculum-map.js"), "utf8");
+const schoolCount = (curriculumSource.match(/\{ id:"(?:programming|design|ai-data|electronics|office|finance|business|it|career|creative|productivity|maths)"/g) || []).length;
+if (schoolCount !== 12) fail(`Curriculum map must define all 12 learning schools (found ${schoolCount}).`);
+
 for (const file of files.filter((f) => f.endsWith(".md"))) {
   const markdown = fs.readFileSync(file, "utf8");
   for (const match of markdown.matchAll(/\[[^\]]*\]\(([^)]+)\)/g)) {
