@@ -2,6 +2,10 @@
 
 This guide is the recommended route for a learner starting with no programming or computer-science background. Do not skip foundations. Move forward when you can explain and use an idea without copying.
 
+## Explore the full curriculum and graded practice
+
+Use the [12-school curriculum map](../curriculum-map.html) to understand all course families and the eight-stage progression across programming, design, AI/data, electronics/VLSI, Office, finance, business, IT, career, creative media, productivity and mathematics/science. For hands-on JavaScript and SQL, use the [graded practice studio](../advanced-practice.html), which includes eight checked challenges per track. These supplement—not replace—the full courses below.
+
 ## The learning rule
 
 For every concept:
