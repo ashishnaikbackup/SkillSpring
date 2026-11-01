@@ -6,7 +6,7 @@ Field Radar now combines evergreen learning notes with a separately maintained h
 
 - The allowlist is stored in data/field-radar-sources.json.
 - A GitHub Actions workflow runs daily and after repository updates.
-- scripts/update-field-radar.mjs fetches the configured RSS/Atom feeds, keeps short headline/excerpt records and writes data/field-radar.json.
+- scripts/update-field-radar.mjs fetches the configured RSS/Atom feeds, keeps attributed headline records only and writes data/field-radar.json.
 - The static Field Radar page reads that JSON and renders headlines with the publisher name, category, publication date and original link.
 - The workflow keeps last-known-good items for a source when that source is temporarily unavailable. It commits and redeploys only when feed content or source status changes.
 
@@ -25,7 +25,7 @@ The sources file is the authoritative list. A source's inclusion does not mean S
 
 ## Editorial and safety rules
 
-- Headlines and short feed excerpts are automatically collected; the original article remains on the publisher's website.
+- Only short headlines, publisher names, dates and links are collected; article summaries, full text and images are not republished.
 - Do not copy full articles, paywalled text, images or long excerpts.
 - Render feed content as text, never as trusted HTML.
 - Use only HTTPS links and show the original source.
