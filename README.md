@@ -7,8 +7,9 @@ The public product and repository are named SkillSpring.
 ## Start learning
 
 - **[Course library](courses.html)** — browse all published self-paced courses.
-- **[Python: Zero to Professional Foundations](python-course.html)** — the most extensive course so far, with 16 modules from Hello World through programming fundamentals, data structures, functions, OOP, files, debugging, Git, APIs, SQLite and a portfolio capstone.\n- **[Python Coding Practice](python-practice.html)** — 10 browser-run challenges with automatic tests, feedback, hints, revealable solutions and local code/progress saving. Python runs through Pyodide in the learner’s browser.
-- **[Field Radar](field-radar.html)** — short educational explainers about changing tools, technology and professional skills. This is a curated learning resource, not a live news feed.
+- **[Python: Zero to Professional Foundations](python-course.html)** — the most extensive course so far, with 16 modules from Hello World through programming fundamentals, data structures, functions, OOP, files, debugging, Git, APIs, SQLite and a portfolio capstone.
+- **[Python Coding Practice](python-practice.html)** — 10 browser-run challenges with automatic tests, feedback, hints, revealable solutions and local code/progress saving. Python runs through Pyodide in the learner’s browser.
+- **[Field Radar](field-radar.html)** — evergreen learning notes plus a daily refreshed, source-linked headline feed across programming, AI, Microsoft tools, Indian finance/regulation, cybersecurity, design and engineering.
 - **[Learning dashboard](index.html)** — the main platform experience, subject schools, learning paths and Python playground.
 - **[Learning-platform benchmark](docs/LEARNING_PLATFORM_BENCHMARK.md)** — research notes and original teaching principles adapted from Mimo, Brilliant, freeCodeCamp, Microsoft Learn, Google Skillshop and Exercism.
 - **[Course freshness policy](docs/COURSE_FRESHNESS_POLICY.md)** — weekly review-date and official-source checks create a review issue when lessons need human verification; they do not silently rewrite content.
@@ -70,13 +71,16 @@ These schools are the long-term curriculum scope. A topic appearing in the catal
 - [x] Build the responsive learning dashboard and catalogue.
 - [x] Publish the 16-module Python course and 11 additional six-module foundation courses.
 - [x] Add the Field Radar learning section.
-- [x] Add an interactive Python practice path with 10 tested challenges, hints, solutions and local progress.\n- [x] Add a hands-on Power BI retail dashboard project with three fictional CSV datasets and a step-by-step DAX/model/report guide.\n- [ ] Deepen every course with more lessons, worked solutions, graded practice and larger projects.
-- [ ] Expand dedicated SQL, spreadsheet, data and electronics practice labs; the current multi-language lab includes SQLite practice.
-- [ ] Add full courses for the remaining programming languages and learning schools.
+- [x] Add an interactive Python practice path with 10 tested challenges, hints, solutions and local progress.
+- [x] Add a hands-on Power BI retail dashboard project with three fictional CSV datasets and a step-by-step DAX/model/report guide.
+- [ ] Continue expanding all courses to the full master-curriculum standard: deeper lessons, worked solutions, automated practice, multiple projects, assessments and role-specific portfolio rubrics.
+- [ ] Add dedicated graded practice labs for JavaScript, SQL, spreadsheets, data analysis and electronics; the current multi-language lab includes JavaScript and SQLite execution/preview but is not yet a full autograder for every language.
+- [ ] Build out the remaining course families across all 12 schools; the 24-entry catalogue is a starting library, not complete coverage of the full curriculum.
 - [x] Add automated static site validation for JavaScript syntax, local links, course catalogue routes and required lesson data.
-- [ ] Add more accessible graded assessments and improved course search.
+- [ ] Expand accessible graded assessments, progress analytics and course search.
 - [ ] Add optional accounts and secure cross-device progress sync.
-- [x] Add a weekly course freshness monitor with official reference-link checks and human review reminders.\n- [ ] Add a maintained, sourced technology-news feed alongside the curated Field Radar notes.
+- [x] Add a weekly course freshness monitor with official reference-link checks and human review reminders. Initial content audits are explicitly flagged rather than falsely marked complete.
+- [x] Add a maintained, sourced headline feed with a daily allowlisted RSS/Atom refresh, publisher links, publication dates and source-status handling.
 
 ## Local quality checks
 
@@ -98,7 +102,7 @@ Open `index.html` through a local web server such as VS Code Live Server. The Py
 
 See [docs/PRODUCT_VISION.md](docs/PRODUCT_VISION.md) for the product principles, architecture direction, safety rules and long-term roadmap.
 
-**Project status:** SkillSpring's public-facing rebrand, course library with 24 catalogue entries and Field Radar are committed to the public GitHub repository. A GitHub Pages deployment workflow has been added; its first successful run and public URL still need verification in the repository's Actions/Pages settings. The zero-to-hero logic, DSA and AI-assisted coding courses, Start Here guide and multi-language practice lab are now in the repository. The broader curriculum and live Pages deployment verification are still in progress.
+**Release status (1 November 2026):** The current SkillSpring v1 site is deployed successfully to GitHub Pages. The latest verified Actions run passed the static validator and post-deployment smoke tests for the homepage, Start Here, course catalogue, multi-language lab, Python practice page, Power BI project, Field Radar and key data/assets. The repository contains 24 catalogue entries, 12 detailed essential-course players (98 guided lessons), 12 foundational course pages (Python has 16 modules; the other 11 have six modules each), a 10-challenge in-browser Python practice path, a 25-language coding workspace (four browser execution/preview modes plus local-run guidance for the remaining languages), a practical Power BI capstone with fictional CSV data, and a daily source-linked Field Radar feed. This is a usable v1 release, not a claim that every topic across all 12 learning schools is already a complete professional textbook. The remaining curriculum gaps are listed below and in the master curriculum.
 
 ## Interactive topic roadmaps
 
