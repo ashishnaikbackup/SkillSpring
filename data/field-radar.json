@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-01T02:07:58.513Z",
+  "generatedAt": "2026-11-02T09:32:05.346Z",
   "disclaimer": "Automatically collected publisher headlines with original links. Read the publisher's source for full context. This is not financial, legal or security advice.",
   "sources": [
     {
@@ -21,7 +21,7 @@
       "status": "ok",
       "message": "Feed refreshed",
       "lastStatusChange": "2026-11-01T02:06:00.544Z",
-      "lastContentUpdate": "2026-11-01T02:07:58.513Z",
+      "lastContentUpdate": "2026-11-02T09:32:05.346Z",
       "itemCount": 1
     },
     {
@@ -109,7 +109,7 @@
       "status": "ok",
       "message": "Feed refreshed",
       "lastStatusChange": "2026-11-01T02:06:00.544Z",
-      "lastContentUpdate": "2026-11-01T02:07:58.513Z",
+      "lastContentUpdate": "2026-11-02T09:32:05.346Z",
       "itemCount": 1
     },
     {
@@ -153,16 +153,34 @@
       "status": "ok",
       "message": "Feed refreshed",
       "lastStatusChange": "2026-11-01T02:06:00.544Z",
-      "lastContentUpdate": "2026-11-01T02:07:58.513Z",
+      "lastContentUpdate": "2026-11-02T09:32:05.346Z",
       "itemCount": 1
     }
   ],
   "items": [
     {
-      "id": "https://spectrum.ieee.org/early-electric-vehicles",
-      "title": "When Electric Cars Were for Women",
-      "url": "https://spectrum.ieee.org/early-electric-vehicles",
-      "publishedAt": "2026-10-31T13:00:02.000Z",
+      "id": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63900",
+      "title": "Money Market Operations as on November 01, 2026",
+      "url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63900",
+      "publishedAt": "2026-11-02T12:10:00.000Z",
+      "sourceId": "rbi",
+      "sourceName": "Reserve Bank of India",
+      "category": "Finance & India"
+    },
+    {
+      "id": "https://github.blog/open-source/gaming/game-off-2026-the-theme-is-shift/",
+      "title": "Game Off 2026: The theme is SHIFT",
+      "url": "https://github.blog/open-source/gaming/game-off-2026-the-theme-is-shift/",
+      "publishedAt": "2026-11-01T21:36:00.000Z",
+      "sourceId": "github",
+      "sourceName": "GitHub Blog",
+      "category": "Software Development"
+    },
+    {
+      "id": "https://spectrum.ieee.org/ai-slop-trust-science",
+      "title": "Guarding the Gates of Knowledge",
+      "url": "https://spectrum.ieee.org/ai-slop-trust-science",
+      "publishedAt": "2026-11-01T14:00:01.000Z",
       "sourceId": "ieee-spectrum",
       "sourceName": "IEEE Spectrum",
       "category": "Engineering & Electronics"
@@ -184,15 +202,6 @@
       "sourceId": "m365-roadmap",
       "sourceName": "Microsoft 365 Roadmap",
       "category": "Office & Productivity"
-    },
-    {
-      "id": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63897",
-      "title": "Premature redemption under Sovereign Gold Bond (SGB) Scheme - Redemption Price for premature redemption of SGB 2021-22 Series VII due on November 02, 2026",
-      "url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63897",
-      "publishedAt": "2026-10-30T18:40:00.000Z",
-      "sourceId": "rbi",
-      "sourceName": "Reserve Bank of India",
-      "category": "Finance & India"
     },
     {
       "id": "https://huggingface.co/blog/nvidia/nemotron-halloween",
@@ -238,15 +247,6 @@
       "sourceId": "deepmind",
       "sourceName": "Google DeepMind",
       "category": "AI & Data"
-    },
-    {
-      "id": "https://github.blog/news-insights/company-news/github-universe-2026-evolving-every-layer-of-the-stack/",
-      "title": "GitHub Universe 2026: Evolving every layer of the stack",
-      "url": "https://github.blog/news-insights/company-news/github-universe-2026-evolving-every-layer-of-the-stack/",
-      "publishedAt": "2026-10-28T16:09:28.000Z",
-      "sourceId": "github",
-      "sourceName": "GitHub Blog",
-      "category": "Software Development"
     },
     {
       "id": "https://blog.google/products-and-platforms/products/education/ai-quests-polar-peaks/",
