@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-02T09:32:05.346Z",
+  "generatedAt": "2026-11-03T09:34:35.795Z",
   "disclaimer": "Automatically collected publisher headlines with original links. Read the publisher's source for full context. This is not financial, legal or security advice.",
   "sources": [
     {
@@ -43,7 +43,7 @@
       "status": "ok",
       "message": "Feed refreshed",
       "lastStatusChange": "2026-11-01T02:06:00.544Z",
-      "lastContentUpdate": "2026-11-01T02:07:58.513Z",
+      "lastContentUpdate": "2026-11-03T09:34:35.795Z",
       "itemCount": 1
     },
     {
@@ -54,7 +54,7 @@
       "status": "ok",
       "message": "Feed refreshed",
       "lastStatusChange": "2026-11-01T02:06:00.544Z",
-      "lastContentUpdate": "2026-11-01T02:07:58.513Z",
+      "lastContentUpdate": "2026-11-03T09:34:35.795Z",
       "itemCount": 1
     },
     {
@@ -65,7 +65,7 @@
       "status": "ok",
       "message": "Feed refreshed",
       "lastStatusChange": "2026-11-01T02:06:00.544Z",
-      "lastContentUpdate": "2026-11-01T02:07:58.513Z",
+      "lastContentUpdate": "2026-11-03T09:34:35.795Z",
       "itemCount": 1
     },
     {
@@ -76,7 +76,7 @@
       "status": "ok",
       "message": "Feed refreshed",
       "lastStatusChange": "2026-11-01T02:06:00.544Z",
-      "lastContentUpdate": "2026-11-01T02:07:58.513Z",
+      "lastContentUpdate": "2026-11-03T09:34:35.795Z",
       "itemCount": 1
     },
     {
@@ -98,7 +98,7 @@
       "status": "ok",
       "message": "Feed refreshed",
       "lastStatusChange": "2026-11-01T02:06:00.544Z",
-      "lastContentUpdate": "2026-11-01T02:07:58.513Z",
+      "lastContentUpdate": "2026-11-03T09:34:35.795Z",
       "itemCount": 1
     },
     {
@@ -109,7 +109,7 @@
       "status": "ok",
       "message": "Feed refreshed",
       "lastStatusChange": "2026-11-01T02:06:00.544Z",
-      "lastContentUpdate": "2026-11-02T09:32:05.346Z",
+      "lastContentUpdate": "2026-11-03T09:34:35.795Z",
       "itemCount": 1
     },
     {
@@ -120,7 +120,7 @@
       "status": "ok",
       "message": "Feed refreshed",
       "lastStatusChange": "2026-11-01T02:06:00.544Z",
-      "lastContentUpdate": "2026-11-01T02:07:58.513Z",
+      "lastContentUpdate": "2026-11-03T09:34:35.795Z",
       "itemCount": 1
     },
     {
@@ -142,7 +142,7 @@
       "status": "ok",
       "message": "Feed refreshed",
       "lastStatusChange": "2026-11-01T02:06:00.544Z",
-      "lastContentUpdate": "2026-11-01T02:07:58.513Z",
+      "lastContentUpdate": "2026-11-03T09:34:35.795Z",
       "itemCount": 1
     },
     {
@@ -153,19 +153,73 @@
       "status": "ok",
       "message": "Feed refreshed",
       "lastStatusChange": "2026-11-01T02:06:00.544Z",
-      "lastContentUpdate": "2026-11-02T09:32:05.346Z",
+      "lastContentUpdate": "2026-11-03T09:34:35.795Z",
       "itemCount": 1
     }
   ],
   "items": [
     {
-      "id": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63900",
-      "title": "Money Market Operations as on November 01, 2026",
-      "url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63900",
-      "publishedAt": "2026-11-02T12:10:00.000Z",
+      "id": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63905",
+      "title": "Result of the Overnight Variable Rate Reverse Repo (VRRR) auction held on November 03, 2026",
+      "url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63905",
+      "publishedAt": "2026-11-03T11:35:00.000Z",
       "sourceId": "rbi",
       "sourceName": "Reserve Bank of India",
       "category": "Finance & India"
+    },
+    {
+      "id": "https://www.microsoft.com/microsoft-365/roadmap?id=578898",
+      "title": "Dynamics 365 Sales: Autonomously generate quotes and drive sales with Sales Development Agent",
+      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=578898",
+      "publishedAt": "2026-11-03T00:14:11.000Z",
+      "sourceId": "m365-roadmap",
+      "sourceName": "Microsoft 365 Roadmap",
+      "category": "Office & Productivity"
+    },
+    {
+      "id": "https://huggingface.co/blog/transformers-mic",
+      "title": "Transformers Model Integration Contracts",
+      "url": "https://huggingface.co/blog/transformers-mic",
+      "publishedAt": "2026-11-03T00:00:00.000Z",
+      "sourceId": "huggingface",
+      "sourceName": "Hugging Face Blog",
+      "category": "AI & Data"
+    },
+    {
+      "id": "https://openai.com/index/preparing-our-next-security-sprint-to-harden-openai",
+      "title": "Preparing our next security sprint to harden OpenAI",
+      "url": "https://openai.com/index/preparing-our-next-security-sprint-to-harden-openai",
+      "publishedAt": "2026-11-02T18:00:00.000Z",
+      "sourceId": "openai",
+      "sourceName": "OpenAI News",
+      "category": "AI & Data"
+    },
+    {
+      "id": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-october-2026/",
+      "title": "The latest AI news we announced in October 2026",
+      "url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-october-2026/",
+      "publishedAt": "2026-11-02T17:45:00.000Z",
+      "sourceId": "google-ai",
+      "sourceName": "Google AI",
+      "category": "AI & Data"
+    },
+    {
+      "id": "https://www.figma.com/blog/hello-kitty-and-friends-in-figma/",
+      "title": "How we brought Hello Kitty® and Friends to Figma",
+      "url": "https://www.figma.com/blog/hello-kitty-and-friends-in-figma/",
+      "publishedAt": "2026-11-02T14:58:00.000Z",
+      "sourceId": "figma",
+      "sourceName": "Figma Blog",
+      "category": "Design & Creative"
+    },
+    {
+      "id": "https://spectrum.ieee.org/telecommunications-act-reform",
+      "title": "What Would a U.S. Telecommunications Act 2.0 Look Like?",
+      "url": "https://spectrum.ieee.org/telecommunications-act-reform",
+      "publishedAt": "2026-11-02T13:00:03.000Z",
+      "sourceId": "ieee-spectrum",
+      "sourceName": "IEEE Spectrum",
+      "category": "Engineering & Electronics"
     },
     {
       "id": "https://github.blog/open-source/gaming/game-off-2026-the-theme-is-shift/",
@@ -177,39 +231,12 @@
       "category": "Software Development"
     },
     {
-      "id": "https://spectrum.ieee.org/ai-slop-trust-science",
-      "title": "Guarding the Gates of Knowledge",
-      "url": "https://spectrum.ieee.org/ai-slop-trust-science",
-      "publishedAt": "2026-11-01T14:00:01.000Z",
-      "sourceId": "ieee-spectrum",
-      "sourceName": "IEEE Spectrum",
-      "category": "Engineering & Electronics"
-    },
-    {
-      "id": "https://www.figma.com/blog/the-tldr-on-figma-weave/",
-      "title": "The TL;DR on Figma Weave: Make your creative process repeatable",
-      "url": "https://www.figma.com/blog/the-tldr-on-figma-weave/",
-      "publishedAt": "2026-10-31T00:58:00.000Z",
-      "sourceId": "figma",
-      "sourceName": "Figma Blog",
-      "category": "Design & Creative"
-    },
-    {
-      "id": "https://www.microsoft.com/microsoft-365/roadmap?id=578225",
-      "title": "Microsoft 365: Frontier expands to public previews in Teams, Outlook, OneDrive, and SharePoint",
-      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=578225",
-      "publishedAt": "2026-10-30T22:08:34.000Z",
-      "sourceId": "m365-roadmap",
-      "sourceName": "Microsoft 365 Roadmap",
-      "category": "Office & Productivity"
-    },
-    {
-      "id": "https://huggingface.co/blog/nvidia/nemotron-halloween",
-      "title": "nemotron-halloween",
-      "url": "https://huggingface.co/blog/nvidia/nemotron-halloween",
-      "publishedAt": "2026-10-30T17:57:24.000Z",
-      "sourceId": "huggingface",
-      "sourceName": "Hugging Face Blog",
+      "id": "https://deepmind.google/blog/speeding-up-planning-decisions-with-ai/",
+      "title": "Speeding up planning decisions with AI",
+      "url": "https://deepmind.google/blog/speeding-up-planning-decisions-with-ai/",
+      "publishedAt": "2026-10-30T14:18:30.000Z",
+      "sourceId": "deepmind",
+      "sourceName": "Google DeepMind",
       "category": "AI & Data"
     },
     {
@@ -222,15 +249,6 @@
       "category": "Cybersecurity"
     },
     {
-      "id": "https://openai.com/index/helping-websites-express-ai-training-preferences",
-      "title": "Making it easier for websites to express AI training preferences",
-      "url": "https://openai.com/index/helping-websites-express-ai-training-preferences",
-      "publishedAt": "2026-10-30T09:30:00.000Z",
-      "sourceId": "openai",
-      "sourceName": "OpenAI News",
-      "category": "AI & Data"
-    },
-    {
       "id": "https://www.microsoft.com/en-us/power-platform/blog/2026/10/29/built-by-makers-five-years-of-power-platform-community-conference/",
       "title": "Built by makers: Five years of Power Platform Community Conference",
       "url": "https://www.microsoft.com/en-us/power-platform/blog/2026/10/29/built-by-makers-five-years-of-power-platform-community-conference/",
@@ -238,24 +256,6 @@
       "sourceId": "power-platform",
       "sourceName": "Microsoft Power Platform",
       "category": "Office & Analytics"
-    },
-    {
-      "id": "https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model/",
-      "title": "Gemini 4 Carbon: Our next frontier model",
-      "url": "https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model/",
-      "publishedAt": "2026-10-28T17:00:58.000Z",
-      "sourceId": "deepmind",
-      "sourceName": "Google DeepMind",
-      "category": "AI & Data"
-    },
-    {
-      "id": "https://blog.google/products-and-platforms/products/education/ai-quests-polar-peaks/",
-      "title": "Our newest AI Quest: Mapping the human brain",
-      "url": "https://blog.google/products-and-platforms/products/education/ai-quests-polar-peaks/",
-      "publishedAt": "2026-10-26T16:00:00.000Z",
-      "sourceId": "google-ai",
-      "sourceName": "Google AI",
-      "category": "AI & Data"
     },
     {
       "id": "https://blog.python.org/2026/10/python-3152-31410-31318-31216-31118/",
@@ -276,9 +276,9 @@
       "category": "Software Development"
     },
     {
-      "id": "https://www.sebi.gov.in/enforcement/orders/oct-2026/final-order-in-the-matter-of-eki-energy-services-ltd-_105524.html",
-      "title": "Final Order in the matter of EKI Energy Services Ltd.",
-      "url": "https://www.sebi.gov.in/enforcement/orders/oct-2026/final-order-in-the-matter-of-eki-energy-services-ltd-_105524.html",
+      "id": "https://www.sebi.gov.in/enforcement/recovery-proceedings/nov-2026/completion-of-recovery-certificate-no-rc9307-of-2026-in-respect-of-sri-salasar-suppliers-pvt-ltd-pan-aadcs8457r-in-the-matter-of-decillon-finance-limited_105568.html",
+      "title": "Completion of Recovery Certificate No. RC9307 of 2026 in respect of Sri Salasar Suppliers Pvt. Ltd (PAN: AADCS8457R) in the matter of Decillon Finance Limited",
+      "url": "https://www.sebi.gov.in/enforcement/recovery-proceedings/nov-2026/completion-of-recovery-certificate-no-rc9307-of-2026-in-respect-of-sri-salasar-suppliers-pvt-ltd-pan-aadcs8457r-in-the-matter-of-decillon-finance-limited_105568.html",
       "publishedAt": null,
       "sourceId": "sebi",
       "sourceName": "SEBI",
