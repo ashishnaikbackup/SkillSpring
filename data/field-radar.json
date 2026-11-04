@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-03T09:34:35.795Z",
+  "generatedAt": "2026-11-04T09:15:25.315Z",
   "disclaimer": "Automatically collected publisher headlines with original links. Read the publisher's source for full context. This is not financial, legal or security advice.",
   "sources": [
     {
@@ -21,7 +21,7 @@
       "status": "ok",
       "message": "Feed refreshed",
       "lastStatusChange": "2026-11-01T02:06:00.544Z",
-      "lastContentUpdate": "2026-11-02T09:32:05.346Z",
+      "lastContentUpdate": "2026-11-04T09:15:25.315Z",
       "itemCount": 1
     },
     {
@@ -32,7 +32,7 @@
       "status": "ok",
       "message": "Feed refreshed",
       "lastStatusChange": "2026-11-01T02:06:00.544Z",
-      "lastContentUpdate": "2026-11-01T02:07:58.513Z",
+      "lastContentUpdate": "2026-11-04T09:15:25.315Z",
       "itemCount": 1
     },
     {
@@ -43,7 +43,7 @@
       "status": "ok",
       "message": "Feed refreshed",
       "lastStatusChange": "2026-11-01T02:06:00.544Z",
-      "lastContentUpdate": "2026-11-03T09:34:35.795Z",
+      "lastContentUpdate": "2026-11-04T09:15:25.315Z",
       "itemCount": 1
     },
     {
@@ -65,7 +65,7 @@
       "status": "ok",
       "message": "Feed refreshed",
       "lastStatusChange": "2026-11-01T02:06:00.544Z",
-      "lastContentUpdate": "2026-11-03T09:34:35.795Z",
+      "lastContentUpdate": "2026-11-04T09:15:25.315Z",
       "itemCount": 1
     },
     {
@@ -76,7 +76,7 @@
       "status": "ok",
       "message": "Feed refreshed",
       "lastStatusChange": "2026-11-01T02:06:00.544Z",
-      "lastContentUpdate": "2026-11-03T09:34:35.795Z",
+      "lastContentUpdate": "2026-11-04T09:15:25.315Z",
       "itemCount": 1
     },
     {
@@ -98,7 +98,7 @@
       "status": "ok",
       "message": "Feed refreshed",
       "lastStatusChange": "2026-11-01T02:06:00.544Z",
-      "lastContentUpdate": "2026-11-03T09:34:35.795Z",
+      "lastContentUpdate": "2026-11-04T09:15:25.315Z",
       "itemCount": 1
     },
     {
@@ -109,7 +109,7 @@
       "status": "ok",
       "message": "Feed refreshed",
       "lastStatusChange": "2026-11-01T02:06:00.544Z",
-      "lastContentUpdate": "2026-11-03T09:34:35.795Z",
+      "lastContentUpdate": "2026-11-04T09:15:25.315Z",
       "itemCount": 1
     },
     {
@@ -120,7 +120,7 @@
       "status": "ok",
       "message": "Feed refreshed",
       "lastStatusChange": "2026-11-01T02:06:00.544Z",
-      "lastContentUpdate": "2026-11-03T09:34:35.795Z",
+      "lastContentUpdate": "2026-11-04T09:15:25.315Z",
       "itemCount": 1
     },
     {
@@ -131,7 +131,7 @@
       "status": "ok",
       "message": "Feed refreshed",
       "lastStatusChange": "2026-11-01T02:06:00.544Z",
-      "lastContentUpdate": "2026-11-01T02:07:58.513Z",
+      "lastContentUpdate": "2026-11-04T09:15:25.315Z",
       "itemCount": 1
     },
     {
@@ -153,46 +153,82 @@
       "status": "ok",
       "message": "Feed refreshed",
       "lastStatusChange": "2026-11-01T02:06:00.544Z",
-      "lastContentUpdate": "2026-11-03T09:34:35.795Z",
+      "lastContentUpdate": "2026-11-04T09:15:25.315Z",
       "itemCount": 1
     }
   ],
   "items": [
     {
-      "id": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63905",
-      "title": "Result of the Overnight Variable Rate Reverse Repo (VRRR) auction held on November 03, 2026",
-      "url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63905",
-      "publishedAt": "2026-11-03T11:35:00.000Z",
+      "id": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63917",
+      "title": "91-Day, 182-Day and 364-Day T-Bill Auction Result: Cut-off",
+      "url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63917",
+      "publishedAt": "2026-11-04T14:05:00.000Z",
       "sourceId": "rbi",
       "sourceName": "Reserve Bank of India",
       "category": "Finance & India"
     },
     {
-      "id": "https://www.microsoft.com/microsoft-365/roadmap?id=578898",
-      "title": "Dynamics 365 Sales: Autonomously generate quotes and drive sales with Sales Development Agent",
-      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=578898",
-      "publishedAt": "2026-11-03T00:14:11.000Z",
+      "id": "https://www.microsoft.com/microsoft-365/roadmap?id=578870",
+      "title": "Microsoft Viva: Engage - Improved shared messages end-user experience",
+      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=578870",
+      "publishedAt": "2026-11-04T00:02:09.000Z",
       "sourceId": "m365-roadmap",
       "sourceName": "Microsoft 365 Roadmap",
       "category": "Office & Productivity"
     },
     {
-      "id": "https://huggingface.co/blog/transformers-mic",
-      "title": "Transformers Model Integration Contracts",
-      "url": "https://huggingface.co/blog/transformers-mic",
-      "publishedAt": "2026-11-03T00:00:00.000Z",
+      "id": "https://huggingface.co/blog/allenai/statebench",
+      "title": "StateBench: Testing how language models track state changes over long documents",
+      "url": "https://huggingface.co/blog/allenai/statebench",
+      "publishedAt": "2026-11-03T17:15:21.000Z",
       "sourceId": "huggingface",
       "sourceName": "Hugging Face Blog",
       "category": "AI & Data"
     },
     {
-      "id": "https://openai.com/index/preparing-our-next-security-sprint-to-harden-openai",
-      "title": "Preparing our next security sprint to harden OpenAI",
-      "url": "https://openai.com/index/preparing-our-next-security-sprint-to-harden-openai",
-      "publishedAt": "2026-11-02T18:00:00.000Z",
+      "id": "https://deepmind.google/blog/agentic-cheminformatics-with-google-antigravity/",
+      "title": "Agentic cheminformatics with Google Antigravity",
+      "url": "https://deepmind.google/blog/agentic-cheminformatics-with-google-antigravity/",
+      "publishedAt": "2026-11-03T17:01:49.000Z",
+      "sourceId": "deepmind",
+      "sourceName": "Google DeepMind",
+      "category": "AI & Data"
+    },
+    {
+      "id": "https://github.blog/open-source/maintainers/arnis-turns-any-place-on-earth-into-a-minecraft-world/",
+      "title": "Arnis turns any place on Earth into a Minecraft world",
+      "url": "https://github.blog/open-source/maintainers/arnis-turns-any-place-on-earth-into-a-minecraft-world/",
+      "publishedAt": "2026-11-03T16:00:00.000Z",
+      "sourceId": "github",
+      "sourceName": "GitHub Blog",
+      "category": "Software Development"
+    },
+    {
+      "id": "https://spectrum.ieee.org/ai-small-business-mobile-money-startup",
+      "title": "How a Kenyan Startup Is Rethinking AI for Small Businesses",
+      "url": "https://spectrum.ieee.org/ai-small-business-mobile-money-startup",
+      "publishedAt": "2026-11-03T14:30:02.000Z",
+      "sourceId": "ieee-spectrum",
+      "sourceName": "IEEE Spectrum",
+      "category": "Engineering & Electronics"
+    },
+    {
+      "id": "https://openai.com/index/accelerating-engineering-for-the-physical-world",
+      "title": "Accelerating engineering for the physical world",
+      "url": "https://openai.com/index/accelerating-engineering-for-the-physical-world",
+      "publishedAt": "2026-11-03T12:00:00.000Z",
       "sourceId": "openai",
       "sourceName": "OpenAI News",
       "category": "AI & Data"
+    },
+    {
+      "id": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-307-01",
+      "title": "Subnet Solutions PowerSYSTEM Center",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-307-01",
+      "publishedAt": "2026-11-03T12:00:00.000Z",
+      "sourceId": "cisa",
+      "sourceName": "CISA Advisories",
+      "category": "Cybersecurity"
     },
     {
       "id": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-october-2026/",
@@ -213,42 +249,6 @@
       "category": "Design & Creative"
     },
     {
-      "id": "https://spectrum.ieee.org/telecommunications-act-reform",
-      "title": "What Would a U.S. Telecommunications Act 2.0 Look Like?",
-      "url": "https://spectrum.ieee.org/telecommunications-act-reform",
-      "publishedAt": "2026-11-02T13:00:03.000Z",
-      "sourceId": "ieee-spectrum",
-      "sourceName": "IEEE Spectrum",
-      "category": "Engineering & Electronics"
-    },
-    {
-      "id": "https://github.blog/open-source/gaming/game-off-2026-the-theme-is-shift/",
-      "title": "Game Off 2026: The theme is SHIFT",
-      "url": "https://github.blog/open-source/gaming/game-off-2026-the-theme-is-shift/",
-      "publishedAt": "2026-11-01T21:36:00.000Z",
-      "sourceId": "github",
-      "sourceName": "GitHub Blog",
-      "category": "Software Development"
-    },
-    {
-      "id": "https://deepmind.google/blog/speeding-up-planning-decisions-with-ai/",
-      "title": "Speeding up planning decisions with AI",
-      "url": "https://deepmind.google/blog/speeding-up-planning-decisions-with-ai/",
-      "publishedAt": "2026-10-30T14:18:30.000Z",
-      "sourceId": "deepmind",
-      "sourceName": "Google DeepMind",
-      "category": "AI & Data"
-    },
-    {
-      "id": "https://www.cisa.gov/news-events/alerts/2026/10/30/cisa-adds-two-known-exploited-vulnerabilities-catalog",
-      "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
-      "url": "https://www.cisa.gov/news-events/alerts/2026/10/30/cisa-adds-two-known-exploited-vulnerabilities-catalog",
-      "publishedAt": "2026-10-30T12:00:00.000Z",
-      "sourceId": "cisa",
-      "sourceName": "CISA Advisories",
-      "category": "Cybersecurity"
-    },
-    {
       "id": "https://www.microsoft.com/en-us/power-platform/blog/2026/10/29/built-by-makers-five-years-of-power-platform-community-conference/",
       "title": "Built by makers: Five years of Power Platform Community Conference",
       "url": "https://www.microsoft.com/en-us/power-platform/blog/2026/10/29/built-by-makers-five-years-of-power-platform-community-conference/",
@@ -267,18 +267,18 @@
       "category": "Programming"
     },
     {
-      "id": "https://developers.googleblog.com/devfest-is-back/",
-      "title": "DevFest is back!",
-      "url": "https://developers.googleblog.com/devfest-is-back/",
+      "id": "https://developers.googleblog.com/cost-per-task-using-cheap-classifiers-to-route-across-gemini-models-and-thinking-levels/",
+      "title": "Cost per task: Using cheap classifiers to route across Gemini models and thinking levels",
+      "url": "https://developers.googleblog.com/cost-per-task-using-cheap-classifiers-to-route-across-gemini-models-and-thinking-levels/",
       "publishedAt": null,
       "sourceId": "google-dev",
       "sourceName": "Google Developers",
       "category": "Software Development"
     },
     {
-      "id": "https://www.sebi.gov.in/enforcement/recovery-proceedings/nov-2026/completion-of-recovery-certificate-no-rc9307-of-2026-in-respect-of-sri-salasar-suppliers-pvt-ltd-pan-aadcs8457r-in-the-matter-of-decillon-finance-limited_105568.html",
-      "title": "Completion of Recovery Certificate No. RC9307 of 2026 in respect of Sri Salasar Suppliers Pvt. Ltd (PAN: AADCS8457R) in the matter of Decillon Finance Limited",
-      "url": "https://www.sebi.gov.in/enforcement/recovery-proceedings/nov-2026/completion-of-recovery-certificate-no-rc9307-of-2026-in-respect-of-sri-salasar-suppliers-pvt-ltd-pan-aadcs8457r-in-the-matter-of-decillon-finance-limited_105568.html",
+      "id": "https://www.sebi.gov.in/https://www.sebi.gov.in/sebi_data/attachdocs/nov-2026/exemption_order_embil.pdf",
+      "title": "Exemption Order in the matter of Emmbi Industries Limited",
+      "url": "https://www.sebi.gov.in/https://www.sebi.gov.in/sebi_data/attachdocs/nov-2026/exemption_order_embil.pdf",
       "publishedAt": null,
       "sourceId": "sebi",
       "sourceName": "SEBI",
