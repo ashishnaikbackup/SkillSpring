@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-04T09:15:25.315Z",
+  "generatedAt": "2026-11-05T09:30:27.531Z",
   "disclaimer": "Automatically collected publisher headlines with original links. Read the publisher's source for full context. This is not financial, legal or security advice.",
   "sources": [
     {
@@ -43,7 +43,7 @@
       "status": "ok",
       "message": "Feed refreshed",
       "lastStatusChange": "2026-11-01T02:06:00.544Z",
-      "lastContentUpdate": "2026-11-04T09:15:25.315Z",
+      "lastContentUpdate": "2026-11-05T09:30:27.531Z",
       "itemCount": 1
     },
     {
@@ -76,7 +76,7 @@
       "status": "ok",
       "message": "Feed refreshed",
       "lastStatusChange": "2026-11-01T02:06:00.544Z",
-      "lastContentUpdate": "2026-11-04T09:15:25.315Z",
+      "lastContentUpdate": "2026-11-05T09:30:27.531Z",
       "itemCount": 1
     },
     {
@@ -98,7 +98,7 @@
       "status": "ok",
       "message": "Feed refreshed",
       "lastStatusChange": "2026-11-01T02:06:00.544Z",
-      "lastContentUpdate": "2026-11-04T09:15:25.315Z",
+      "lastContentUpdate": "2026-11-05T09:30:27.531Z",
       "itemCount": 1
     },
     {
@@ -109,7 +109,7 @@
       "status": "ok",
       "message": "Feed refreshed",
       "lastStatusChange": "2026-11-01T02:06:00.544Z",
-      "lastContentUpdate": "2026-11-04T09:15:25.315Z",
+      "lastContentUpdate": "2026-11-05T09:30:27.531Z",
       "itemCount": 1
     },
     {
@@ -120,7 +120,7 @@
       "status": "ok",
       "message": "Feed refreshed",
       "lastStatusChange": "2026-11-01T02:06:00.544Z",
-      "lastContentUpdate": "2026-11-04T09:15:25.315Z",
+      "lastContentUpdate": "2026-11-05T09:30:27.531Z",
       "itemCount": 1
     },
     {
@@ -128,10 +128,10 @@
       "name": "CISA Advisories",
       "category": "Cybersecurity",
       "url": "https://www.cisa.gov/cybersecurity-advisories/all.xml",
-      "status": "ok",
-      "message": "Feed refreshed",
-      "lastStatusChange": "2026-11-01T02:06:00.544Z",
-      "lastContentUpdate": "2026-11-04T09:15:25.315Z",
+      "status": "restricted",
+      "message": "HTTP 403",
+      "lastStatusChange": "2026-11-05T09:30:27.531Z",
+      "lastContentUpdate": "2026-11-05T09:30:27.531Z",
       "itemCount": 1
     },
     {
@@ -142,7 +142,7 @@
       "status": "ok",
       "message": "Feed refreshed",
       "lastStatusChange": "2026-11-01T02:06:00.544Z",
-      "lastContentUpdate": "2026-11-03T09:34:35.795Z",
+      "lastContentUpdate": "2026-11-05T09:30:27.531Z",
       "itemCount": 1
     },
     {
@@ -153,36 +153,63 @@
       "status": "ok",
       "message": "Feed refreshed",
       "lastStatusChange": "2026-11-01T02:06:00.544Z",
-      "lastContentUpdate": "2026-11-04T09:15:25.315Z",
+      "lastContentUpdate": "2026-11-05T09:30:27.531Z",
       "itemCount": 1
     }
   ],
   "items": [
     {
-      "id": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63917",
-      "title": "91-Day, 182-Day and 364-Day T-Bill Auction Result: Cut-off",
-      "url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63917",
-      "publishedAt": "2026-11-04T14:05:00.000Z",
+      "id": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63924",
+      "title": "Directions under Section 35A read with Section 56 of the Banking Regulation Act, 1949 – The Pusad Urban Co-operative Bank Ltd., Pusad, Dist. Yavatmal, Maharashtra – Extension of Period",
+      "url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63924",
+      "publishedAt": "2026-11-05T12:45:00.000Z",
       "sourceId": "rbi",
       "sourceName": "Reserve Bank of India",
       "category": "Finance & India"
     },
     {
-      "id": "https://www.microsoft.com/microsoft-365/roadmap?id=578870",
-      "title": "Microsoft Viva: Engage - Improved shared messages end-user experience",
-      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=578870",
-      "publishedAt": "2026-11-04T00:02:09.000Z",
+      "id": "https://www.microsoft.com/microsoft-365/roadmap?id=579184",
+      "title": "Microsoft Teams: Multiple screen shares in Teams Rooms on Windows",
+      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=579184",
+      "publishedAt": "2026-11-04T23:59:50.000Z",
       "sourceId": "m365-roadmap",
       "sourceName": "Microsoft 365 Roadmap",
       "category": "Office & Productivity"
     },
     {
-      "id": "https://huggingface.co/blog/allenai/statebench",
-      "title": "StateBench: Testing how language models track state changes over long documents",
-      "url": "https://huggingface.co/blog/allenai/statebench",
-      "publishedAt": "2026-11-03T17:15:21.000Z",
+      "id": "https://www.figma.com/blog/workflow-lab-build-with-code-on-the-canvas-using-the-figma-agent-and-code-layers/",
+      "title": "Workflow lab: Test ideas with code layers and the Figma agent",
+      "url": "https://www.figma.com/blog/workflow-lab-build-with-code-on-the-canvas-using-the-figma-agent-and-code-layers/",
+      "publishedAt": "2026-11-04T22:12:00.000Z",
+      "sourceId": "figma",
+      "sourceName": "Figma Blog",
+      "category": "Design & Creative"
+    },
+    {
+      "id": "https://spectrum.ieee.org/drone-delivery-noise",
+      "title": "Are Drone Ports the Next Annoying Tech Neighbor?",
+      "url": "https://spectrum.ieee.org/drone-delivery-noise",
+      "publishedAt": "2026-11-04T18:47:21.000Z",
+      "sourceId": "ieee-spectrum",
+      "sourceName": "IEEE Spectrum",
+      "category": "Engineering & Electronics"
+    },
+    {
+      "id": "https://huggingface.co/blog/Dharma-AI/dharma-field-extractor",
+      "title": "Dharma Field Extractor: Any Document In, Structured Fields in JSON Out",
+      "url": "https://huggingface.co/blog/Dharma-AI/dharma-field-extractor",
+      "publishedAt": "2026-11-04T17:50:10.000Z",
       "sourceId": "huggingface",
       "sourceName": "Hugging Face Blog",
+      "category": "AI & Data"
+    },
+    {
+      "id": "https://openai.com/index/openai-to-acquire-pierre",
+      "title": "OpenAI to acquire Pierre Computer Company, Inc.",
+      "url": "https://openai.com/index/openai-to-acquire-pierre",
+      "publishedAt": "2026-11-04T14:30:00.000Z",
+      "sourceId": "openai",
+      "sourceName": "OpenAI News",
       "category": "AI & Data"
     },
     {
@@ -204,31 +231,14 @@
       "category": "Software Development"
     },
     {
-      "id": "https://spectrum.ieee.org/ai-small-business-mobile-money-startup",
-      "title": "How a Kenyan Startup Is Rethinking AI for Small Businesses",
-      "url": "https://spectrum.ieee.org/ai-small-business-mobile-money-startup",
-      "publishedAt": "2026-11-03T14:30:02.000Z",
-      "sourceId": "ieee-spectrum",
-      "sourceName": "IEEE Spectrum",
-      "category": "Engineering & Electronics"
-    },
-    {
-      "id": "https://openai.com/index/accelerating-engineering-for-the-physical-world",
-      "title": "Accelerating engineering for the physical world",
-      "url": "https://openai.com/index/accelerating-engineering-for-the-physical-world",
-      "publishedAt": "2026-11-03T12:00:00.000Z",
-      "sourceId": "openai",
-      "sourceName": "OpenAI News",
-      "category": "AI & Data"
-    },
-    {
       "id": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-307-01",
       "title": "Subnet Solutions PowerSYSTEM Center",
       "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-307-01",
       "publishedAt": "2026-11-03T12:00:00.000Z",
       "sourceId": "cisa",
       "sourceName": "CISA Advisories",
-      "category": "Cybersecurity"
+      "category": "Cybersecurity",
+      "summary": ""
     },
     {
       "id": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-october-2026/",
@@ -238,15 +248,6 @@
       "sourceId": "google-ai",
       "sourceName": "Google AI",
       "category": "AI & Data"
-    },
-    {
-      "id": "https://www.figma.com/blog/hello-kitty-and-friends-in-figma/",
-      "title": "How we brought Hello Kitty® and Friends to Figma",
-      "url": "https://www.figma.com/blog/hello-kitty-and-friends-in-figma/",
-      "publishedAt": "2026-11-02T14:58:00.000Z",
-      "sourceId": "figma",
-      "sourceName": "Figma Blog",
-      "category": "Design & Creative"
     },
     {
       "id": "https://www.microsoft.com/en-us/power-platform/blog/2026/10/29/built-by-makers-five-years-of-power-platform-community-conference/",
@@ -276,9 +277,9 @@
       "category": "Software Development"
     },
     {
-      "id": "https://www.sebi.gov.in/https://www.sebi.gov.in/sebi_data/attachdocs/nov-2026/exemption_order_embil.pdf",
-      "title": "Exemption Order in the matter of Emmbi Industries Limited",
-      "url": "https://www.sebi.gov.in/https://www.sebi.gov.in/sebi_data/attachdocs/nov-2026/exemption_order_embil.pdf",
+      "id": "https://www.sebi.gov.in/media-and-notifications/press-releases/nov-2026/sebi-constitutes-working-group-to-review-the-innovators-growth-platform-framework_105610.html",
+      "title": "SEBI Constitutes Working Group to Review the Innovators Growth Platform Framework",
+      "url": "https://www.sebi.gov.in/media-and-notifications/press-releases/nov-2026/sebi-constitutes-working-group-to-review-the-innovators-growth-platform-framework_105610.html",
       "publishedAt": null,
       "sourceId": "sebi",
       "sourceName": "SEBI",
