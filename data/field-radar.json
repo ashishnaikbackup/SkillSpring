@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-05T09:30:27.531Z",
+  "generatedAt": "2026-11-06T09:27:04.755Z",
   "disclaimer": "Automatically collected publisher headlines with original links. Read the publisher's source for full context. This is not financial, legal or security advice.",
   "sources": [
     {
@@ -21,7 +21,7 @@
       "status": "ok",
       "message": "Feed refreshed",
       "lastStatusChange": "2026-11-01T02:06:00.544Z",
-      "lastContentUpdate": "2026-11-04T09:15:25.315Z",
+      "lastContentUpdate": "2026-11-06T09:27:04.755Z",
       "itemCount": 1
     },
     {
@@ -43,7 +43,7 @@
       "status": "ok",
       "message": "Feed refreshed",
       "lastStatusChange": "2026-11-01T02:06:00.544Z",
-      "lastContentUpdate": "2026-11-05T09:30:27.531Z",
+      "lastContentUpdate": "2026-11-06T09:27:04.755Z",
       "itemCount": 1
     },
     {
@@ -54,7 +54,7 @@
       "status": "ok",
       "message": "Feed refreshed",
       "lastStatusChange": "2026-11-01T02:06:00.544Z",
-      "lastContentUpdate": "2026-11-03T09:34:35.795Z",
+      "lastContentUpdate": "2026-11-06T09:27:04.755Z",
       "itemCount": 1
     },
     {
@@ -65,7 +65,7 @@
       "status": "ok",
       "message": "Feed refreshed",
       "lastStatusChange": "2026-11-01T02:06:00.544Z",
-      "lastContentUpdate": "2026-11-04T09:15:25.315Z",
+      "lastContentUpdate": "2026-11-06T09:27:04.755Z",
       "itemCount": 1
     },
     {
@@ -76,7 +76,7 @@
       "status": "ok",
       "message": "Feed refreshed",
       "lastStatusChange": "2026-11-01T02:06:00.544Z",
-      "lastContentUpdate": "2026-11-05T09:30:27.531Z",
+      "lastContentUpdate": "2026-11-06T09:27:04.755Z",
       "itemCount": 1
     },
     {
@@ -98,7 +98,7 @@
       "status": "ok",
       "message": "Feed refreshed",
       "lastStatusChange": "2026-11-01T02:06:00.544Z",
-      "lastContentUpdate": "2026-11-05T09:30:27.531Z",
+      "lastContentUpdate": "2026-11-06T09:27:04.755Z",
       "itemCount": 1
     },
     {
@@ -109,7 +109,7 @@
       "status": "ok",
       "message": "Feed refreshed",
       "lastStatusChange": "2026-11-01T02:06:00.544Z",
-      "lastContentUpdate": "2026-11-05T09:30:27.531Z",
+      "lastContentUpdate": "2026-11-06T09:27:04.755Z",
       "itemCount": 1
     },
     {
@@ -120,7 +120,7 @@
       "status": "ok",
       "message": "Feed refreshed",
       "lastStatusChange": "2026-11-01T02:06:00.544Z",
-      "lastContentUpdate": "2026-11-05T09:30:27.531Z",
+      "lastContentUpdate": "2026-11-06T09:27:04.755Z",
       "itemCount": 1
     },
     {
@@ -128,10 +128,10 @@
       "name": "CISA Advisories",
       "category": "Cybersecurity",
       "url": "https://www.cisa.gov/cybersecurity-advisories/all.xml",
-      "status": "restricted",
-      "message": "HTTP 403",
-      "lastStatusChange": "2026-11-05T09:30:27.531Z",
-      "lastContentUpdate": "2026-11-05T09:30:27.531Z",
+      "status": "ok",
+      "message": "Feed refreshed",
+      "lastStatusChange": "2026-11-06T09:27:04.755Z",
+      "lastContentUpdate": "2026-11-06T09:27:04.755Z",
       "itemCount": 1
     },
     {
@@ -153,28 +153,91 @@
       "status": "ok",
       "message": "Feed refreshed",
       "lastStatusChange": "2026-11-01T02:06:00.544Z",
-      "lastContentUpdate": "2026-11-05T09:30:27.531Z",
+      "lastContentUpdate": "2026-11-06T09:27:04.755Z",
       "itemCount": 1
     }
   ],
   "items": [
     {
-      "id": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63924",
-      "title": "Directions under Section 35A read with Section 56 of the Banking Regulation Act, 1949 – The Pusad Urban Co-operative Bank Ltd., Pusad, Dist. Yavatmal, Maharashtra – Extension of Period",
-      "url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63924",
-      "publishedAt": "2026-11-05T12:45:00.000Z",
+      "id": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63936",
+      "title": "Government Stock - Auction Results: Cut-off",
+      "url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63936",
+      "publishedAt": "2026-11-06T14:20:00.000Z",
       "sourceId": "rbi",
       "sourceName": "Reserve Bank of India",
       "category": "Finance & India"
     },
     {
-      "id": "https://www.microsoft.com/microsoft-365/roadmap?id=579184",
-      "title": "Microsoft Teams: Multiple screen shares in Teams Rooms on Windows",
-      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=579184",
-      "publishedAt": "2026-11-04T23:59:50.000Z",
+      "id": "https://www.microsoft.com/microsoft-365/roadmap?id=578910",
+      "title": "OneDrive: Command-line tool for the OneDrive sync app",
+      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=578910",
+      "publishedAt": "2026-11-05T23:59:28.000Z",
       "sourceId": "m365-roadmap",
       "sourceName": "Microsoft 365 Roadmap",
       "category": "Office & Productivity"
+    },
+    {
+      "id": "https://github.blog/engineering/architecture-optimization/inside-githubs-new-git-storage-architecture/",
+      "title": "Inside GitHub’s new Git storage architecture",
+      "url": "https://github.blog/engineering/architecture-optimization/inside-githubs-new-git-storage-architecture/",
+      "publishedAt": "2026-11-05T20:23:21.000Z",
+      "sourceId": "github",
+      "sourceName": "GitHub Blog",
+      "category": "Software Development"
+    },
+    {
+      "id": "https://openai.com/index/cultfit-builds-with-codex",
+      "title": "Cult.fit builds operational muscle with Codex",
+      "url": "https://openai.com/index/cultfit-builds-with-codex",
+      "publishedAt": "2026-11-05T20:00:00.000Z",
+      "sourceId": "openai",
+      "sourceName": "OpenAI News",
+      "category": "AI & Data"
+    },
+    {
+      "id": "https://huggingface.co/blog/nvidia/cosmos-interactive-world-simulation",
+      "title": "New NVIDIA Cosmos 3 Open Models for Interactive World Simulation",
+      "url": "https://huggingface.co/blog/nvidia/cosmos-interactive-world-simulation",
+      "publishedAt": "2026-11-05T19:35:16.000Z",
+      "sourceId": "huggingface",
+      "sourceName": "Hugging Face Blog",
+      "category": "AI & Data"
+    },
+    {
+      "id": "https://deepmind.google/blog/gemini-omni-12-flash-fast-and-cost-effective-with-longer-clips/",
+      "title": "Gemini Omni 1.2 Flash: Fast and cost-effective with longer clips",
+      "url": "https://deepmind.google/blog/gemini-omni-12-flash-fast-and-cost-effective-with-longer-clips/",
+      "publishedAt": "2026-11-05T17:05:16.000Z",
+      "sourceId": "deepmind",
+      "sourceName": "Google DeepMind",
+      "category": "AI & Data"
+    },
+    {
+      "id": "https://spectrum.ieee.org/samphire-neuroscience-tdcs-pmdd-treatment",
+      "title": "Brain Stimulation Device Aims to Treat Women’s Health Conditions",
+      "url": "https://spectrum.ieee.org/samphire-neuroscience-tdcs-pmdd-treatment",
+      "publishedAt": "2026-11-05T17:00:03.000Z",
+      "sourceId": "ieee-spectrum",
+      "sourceName": "IEEE Spectrum",
+      "category": "Engineering & Electronics"
+    },
+    {
+      "id": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/",
+      "title": "Gemini Omni 1.2 Flash: Fast and cost-effective with longer clips",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/",
+      "publishedAt": "2026-11-05T17:00:00.000Z",
+      "sourceId": "google-ai",
+      "sourceName": "Google AI",
+      "category": "AI & Data"
+    },
+    {
+      "id": "https://www.cisa.gov/resources-tools/resources/post-quantum-questions-ask-your-vendors",
+      "title": "Post-Quantum Questions to Ask Your Vendors",
+      "url": "https://www.cisa.gov/resources-tools/resources/post-quantum-questions-ask-your-vendors",
+      "publishedAt": "2026-11-05T12:00:00.000Z",
+      "sourceId": "cisa",
+      "sourceName": "CISA Advisories",
+      "category": "Cybersecurity"
     },
     {
       "id": "https://www.figma.com/blog/workflow-lab-build-with-code-on-the-canvas-using-the-figma-agent-and-code-layers/",
@@ -184,70 +247,6 @@
       "sourceId": "figma",
       "sourceName": "Figma Blog",
       "category": "Design & Creative"
-    },
-    {
-      "id": "https://spectrum.ieee.org/drone-delivery-noise",
-      "title": "Are Drone Ports the Next Annoying Tech Neighbor?",
-      "url": "https://spectrum.ieee.org/drone-delivery-noise",
-      "publishedAt": "2026-11-04T18:47:21.000Z",
-      "sourceId": "ieee-spectrum",
-      "sourceName": "IEEE Spectrum",
-      "category": "Engineering & Electronics"
-    },
-    {
-      "id": "https://huggingface.co/blog/Dharma-AI/dharma-field-extractor",
-      "title": "Dharma Field Extractor: Any Document In, Structured Fields in JSON Out",
-      "url": "https://huggingface.co/blog/Dharma-AI/dharma-field-extractor",
-      "publishedAt": "2026-11-04T17:50:10.000Z",
-      "sourceId": "huggingface",
-      "sourceName": "Hugging Face Blog",
-      "category": "AI & Data"
-    },
-    {
-      "id": "https://openai.com/index/openai-to-acquire-pierre",
-      "title": "OpenAI to acquire Pierre Computer Company, Inc.",
-      "url": "https://openai.com/index/openai-to-acquire-pierre",
-      "publishedAt": "2026-11-04T14:30:00.000Z",
-      "sourceId": "openai",
-      "sourceName": "OpenAI News",
-      "category": "AI & Data"
-    },
-    {
-      "id": "https://deepmind.google/blog/agentic-cheminformatics-with-google-antigravity/",
-      "title": "Agentic cheminformatics with Google Antigravity",
-      "url": "https://deepmind.google/blog/agentic-cheminformatics-with-google-antigravity/",
-      "publishedAt": "2026-11-03T17:01:49.000Z",
-      "sourceId": "deepmind",
-      "sourceName": "Google DeepMind",
-      "category": "AI & Data"
-    },
-    {
-      "id": "https://github.blog/open-source/maintainers/arnis-turns-any-place-on-earth-into-a-minecraft-world/",
-      "title": "Arnis turns any place on Earth into a Minecraft world",
-      "url": "https://github.blog/open-source/maintainers/arnis-turns-any-place-on-earth-into-a-minecraft-world/",
-      "publishedAt": "2026-11-03T16:00:00.000Z",
-      "sourceId": "github",
-      "sourceName": "GitHub Blog",
-      "category": "Software Development"
-    },
-    {
-      "id": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-307-01",
-      "title": "Subnet Solutions PowerSYSTEM Center",
-      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-307-01",
-      "publishedAt": "2026-11-03T12:00:00.000Z",
-      "sourceId": "cisa",
-      "sourceName": "CISA Advisories",
-      "category": "Cybersecurity",
-      "summary": ""
-    },
-    {
-      "id": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-october-2026/",
-      "title": "The latest AI news we announced in October 2026",
-      "url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-october-2026/",
-      "publishedAt": "2026-11-02T17:45:00.000Z",
-      "sourceId": "google-ai",
-      "sourceName": "Google AI",
-      "category": "AI & Data"
     },
     {
       "id": "https://www.microsoft.com/en-us/power-platform/blog/2026/10/29/built-by-makers-five-years-of-power-platform-community-conference/",
@@ -277,9 +276,9 @@
       "category": "Software Development"
     },
     {
-      "id": "https://www.sebi.gov.in/media-and-notifications/press-releases/nov-2026/sebi-constitutes-working-group-to-review-the-innovators-growth-platform-framework_105610.html",
-      "title": "SEBI Constitutes Working Group to Review the Innovators Growth Platform Framework",
-      "url": "https://www.sebi.gov.in/media-and-notifications/press-releases/nov-2026/sebi-constitutes-working-group-to-review-the-innovators-growth-platform-framework_105610.html",
+      "id": "https://www.sebi.gov.in/enforcement/recovery-proceedings/nov-2026/notice-of-demand-under-recovery-certificate-number-9318-of-2026-dated-november-05-2026-issued-to-priyanka-jain-pan-bazpj9596e-defaulter-in-the-matter-of-vedic-ayurveda-ltd-formerly-known-as-k-_105626.html",
+      "title": "Notice of Demand under Recovery Certificate number 9318 of 2026 dated November 05, 2026, issued to Priyanka Jain (PAN: BAZPJ9596E) [Defaulter], in the matter of Vedic Ayurveda Ltd (formerly known as KD Leisures Ltd.): u…",
+      "url": "https://www.sebi.gov.in/enforcement/recovery-proceedings/nov-2026/notice-of-demand-under-recovery-certificate-number-9318-of-2026-dated-november-05-2026-issued-to-priyanka-jain-pan-bazpj9596e-defaulter-in-the-matter-of-vedic-ayurveda-ltd-formerly-known-as-k-_105626.html",
       "publishedAt": null,
       "sourceId": "sebi",
       "sourceName": "SEBI",
