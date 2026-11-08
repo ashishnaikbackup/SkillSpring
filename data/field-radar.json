@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-07T08:49:10.555Z",
+  "generatedAt": "2026-11-08T09:00:30.197Z",
   "disclaimer": "Automatically collected publisher headlines with original links. Read the publisher's source for full context. This is not financial, legal or security advice.",
   "sources": [
     {
@@ -153,11 +153,20 @@
       "status": "ok",
       "message": "Feed refreshed",
       "lastStatusChange": "2026-11-01T02:06:00.544Z",
-      "lastContentUpdate": "2026-11-07T08:49:10.555Z",
+      "lastContentUpdate": "2026-11-08T09:00:30.197Z",
       "itemCount": 1
     }
   ],
   "items": [
+    {
+      "id": "https://spectrum.ieee.org/solar-panel-cooling",
+      "title": "These Solar Panels Stay Cool in Hot Climates",
+      "url": "https://spectrum.ieee.org/solar-panel-cooling",
+      "publishedAt": "2026-11-07T14:00:01.000Z",
+      "sourceId": "ieee-spectrum",
+      "sourceName": "IEEE Spectrum",
+      "category": "Engineering & Electronics"
+    },
     {
       "id": "https://www.microsoft.com/microsoft-365/roadmap?id=578904",
       "title": "Dynamics 365 Project Operations: Set invoice limits for time and material billing",
@@ -193,15 +202,6 @@
       "sourceId": "rbi",
       "sourceName": "Reserve Bank of India",
       "category": "Finance & India"
-    },
-    {
-      "id": "https://spectrum.ieee.org/video-friday-home-cable-robot",
-      "title": "Video Friday: Room-Scale Cable-Driven Home Robot Tidies Up",
-      "url": "https://spectrum.ieee.org/video-friday-home-cable-robot",
-      "publishedAt": "2026-11-06T17:00:03.000Z",
-      "sourceId": "ieee-spectrum",
-      "sourceName": "IEEE Spectrum",
-      "category": "Engineering & Electronics"
     },
     {
       "id": "https://huggingface.co/blog/allenai/toyblocks",
