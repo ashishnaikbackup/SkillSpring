@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-08T09:00:30.197Z",
+  "generatedAt": "2026-11-09T09:50:19.471Z",
   "disclaimer": "Automatically collected publisher headlines with original links. Read the publisher's source for full context. This is not financial, legal or security advice.",
   "sources": [
     {
@@ -87,7 +87,7 @@
       "status": "ok",
       "message": "Feed refreshed",
       "lastStatusChange": "2026-11-01T02:06:00.544Z",
-      "lastContentUpdate": "2026-11-07T08:49:10.555Z",
+      "lastContentUpdate": "2026-11-09T09:50:19.471Z",
       "itemCount": 1
     },
     {
@@ -109,7 +109,7 @@
       "status": "ok",
       "message": "Feed refreshed",
       "lastStatusChange": "2026-11-01T02:06:00.544Z",
-      "lastContentUpdate": "2026-11-07T08:49:10.555Z",
+      "lastContentUpdate": "2026-11-09T09:50:19.471Z",
       "itemCount": 1
     },
     {
@@ -153,16 +153,25 @@
       "status": "ok",
       "message": "Feed refreshed",
       "lastStatusChange": "2026-11-01T02:06:00.544Z",
-      "lastContentUpdate": "2026-11-08T09:00:30.197Z",
+      "lastContentUpdate": "2026-11-09T09:50:19.471Z",
       "itemCount": 1
     }
   ],
   "items": [
     {
-      "id": "https://spectrum.ieee.org/solar-panel-cooling",
-      "title": "These Solar Panels Stay Cool in Hot Climates",
-      "url": "https://spectrum.ieee.org/solar-panel-cooling",
-      "publishedAt": "2026-11-07T14:00:01.000Z",
+      "id": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63948",
+      "title": "Result of Yield/Price Based Auction of State Government Securities",
+      "url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63948",
+      "publishedAt": "2026-11-09T14:55:00.000Z",
+      "sourceId": "rbi",
+      "sourceName": "Reserve Bank of India",
+      "category": "Finance & India"
+    },
+    {
+      "id": "https://spectrum.ieee.org/type-2-diabetes-electroceutical-implant",
+      "title": "Implant Zaps Excess Sugar Directly From Blood",
+      "url": "https://spectrum.ieee.org/type-2-diabetes-electroceutical-implant",
+      "publishedAt": "2026-11-08T14:00:02.000Z",
       "sourceId": "ieee-spectrum",
       "sourceName": "IEEE Spectrum",
       "category": "Engineering & Electronics"
@@ -195,13 +204,13 @@
       "category": "Design & Creative"
     },
     {
-      "id": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63943",
-      "title": "RBI to conduct 4-day Variable Rate Repo (VRR) auction under LAF on November 09, 2026",
-      "url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63943",
-      "publishedAt": "2026-11-06T19:10:00.000Z",
-      "sourceId": "rbi",
-      "sourceName": "Reserve Bank of India",
-      "category": "Finance & India"
+      "id": "https://www.microsoft.com/en-us/power-platform/blog/power-pages/create-and-edit-non-spa-power-pages-sites-with-agentic-coding-tools/",
+      "title": "Create and edit non-SPA Power Pages sites with Agentic Coding tools",
+      "url": "https://www.microsoft.com/en-us/power-platform/blog/power-pages/create-and-edit-non-spa-power-pages-sites-with-agentic-coding-tools/",
+      "publishedAt": "2026-11-06T17:26:59.000Z",
+      "sourceId": "power-platform",
+      "sourceName": "Microsoft Power Platform",
+      "category": "Office & Analytics"
     },
     {
       "id": "https://huggingface.co/blog/allenai/toyblocks",
@@ -247,15 +256,6 @@
       "sourceId": "google-ai",
       "sourceName": "Google AI",
       "category": "AI & Data"
-    },
-    {
-      "id": "https://www.microsoft.com/en-us/power-platform/blog/2026/11/02/dataverse-for-coding-agents-n8n-copilot-cowork/",
-      "title": "Dataverse goes where you build: Copilot Cowork, coding agents and n8n",
-      "url": "https://www.microsoft.com/en-us/power-platform/blog/2026/11/02/dataverse-for-coding-agents-n8n-copilot-cowork/",
-      "publishedAt": "2026-11-02T16:00:00.000Z",
-      "sourceId": "power-platform",
-      "sourceName": "Microsoft Power Platform",
-      "category": "Office & Analytics"
     },
     {
       "id": "https://blog.python.org/2026/10/python-3152-31410-31318-31216-31118/",
