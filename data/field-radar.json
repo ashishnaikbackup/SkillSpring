@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-09T09:50:19.471Z",
+  "generatedAt": "2026-11-10T09:52:52.487Z",
   "disclaimer": "Automatically collected publisher headlines with original links. Read the publisher's source for full context. This is not financial, legal or security advice.",
   "sources": [
     {
@@ -32,7 +32,7 @@
       "status": "ok",
       "message": "Feed refreshed",
       "lastStatusChange": "2026-11-01T02:06:00.544Z",
-      "lastContentUpdate": "2026-11-07T08:49:10.555Z",
+      "lastContentUpdate": "2026-11-10T09:52:52.487Z",
       "itemCount": 1
     },
     {
@@ -43,7 +43,7 @@
       "status": "ok",
       "message": "Feed refreshed",
       "lastStatusChange": "2026-11-01T02:06:00.544Z",
-      "lastContentUpdate": "2026-11-07T08:49:10.555Z",
+      "lastContentUpdate": "2026-11-10T09:52:52.487Z",
       "itemCount": 1
     },
     {
@@ -76,7 +76,7 @@
       "status": "ok",
       "message": "Feed refreshed",
       "lastStatusChange": "2026-11-01T02:06:00.544Z",
-      "lastContentUpdate": "2026-11-07T08:49:10.555Z",
+      "lastContentUpdate": "2026-11-10T09:52:52.487Z",
       "itemCount": 1
     },
     {
@@ -109,7 +109,7 @@
       "status": "ok",
       "message": "Feed refreshed",
       "lastStatusChange": "2026-11-01T02:06:00.544Z",
-      "lastContentUpdate": "2026-11-09T09:50:19.471Z",
+      "lastContentUpdate": "2026-11-10T09:52:52.487Z",
       "itemCount": 1
     },
     {
@@ -117,10 +117,10 @@
       "name": "SEBI",
       "category": "Finance & India",
       "url": "https://www.sebi.gov.in/sebirss.xml",
-      "status": "ok",
-      "message": "Feed refreshed",
-      "lastStatusChange": "2026-11-01T02:06:00.544Z",
-      "lastContentUpdate": "2026-11-07T08:49:10.555Z",
+      "status": "failed",
+      "message": "fetch failed",
+      "lastStatusChange": "2026-11-10T09:52:52.487Z",
+      "lastContentUpdate": "2026-11-10T09:52:52.487Z",
       "itemCount": 1
     },
     {
@@ -131,7 +131,7 @@
       "status": "ok",
       "message": "Feed refreshed",
       "lastStatusChange": "2026-11-06T09:27:04.755Z",
-      "lastContentUpdate": "2026-11-07T08:49:10.555Z",
+      "lastContentUpdate": "2026-11-10T09:52:52.487Z",
       "itemCount": 1
     },
     {
@@ -142,7 +142,7 @@
       "status": "ok",
       "message": "Feed refreshed",
       "lastStatusChange": "2026-11-01T02:06:00.544Z",
-      "lastContentUpdate": "2026-11-07T08:49:10.555Z",
+      "lastContentUpdate": "2026-11-10T09:52:52.487Z",
       "itemCount": 1
     },
     {
@@ -153,28 +153,64 @@
       "status": "ok",
       "message": "Feed refreshed",
       "lastStatusChange": "2026-11-01T02:06:00.544Z",
-      "lastContentUpdate": "2026-11-09T09:50:19.471Z",
+      "lastContentUpdate": "2026-11-10T09:52:52.487Z",
       "itemCount": 1
     }
   ],
   "items": [
     {
-      "id": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63948",
-      "title": "Result of Yield/Price Based Auction of State Government Securities",
-      "url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63948",
-      "publishedAt": "2026-11-09T14:55:00.000Z",
+      "id": "https://openai.com/index/closing-ai-guidance-gap-education",
+      "title": "Closing the AI guidance gap in education",
+      "url": "https://openai.com/index/closing-ai-guidance-gap-education",
+      "publishedAt": "2026-11-10T09:00:00.000Z",
+      "sourceId": "openai",
+      "sourceName": "OpenAI News",
+      "category": "AI & Data"
+    },
+    {
+      "id": "https://www.figma.com/blog/6-easy-ways-to-use-the-figma-agent-right-now/",
+      "title": "6 easy ways to use the Figma agent right now",
+      "url": "https://www.figma.com/blog/6-easy-ways-to-use-the-figma-agent-right-now/",
+      "publishedAt": "2026-11-09T21:46:00.000Z",
+      "sourceId": "figma",
+      "sourceName": "Figma Blog",
+      "category": "Design & Creative"
+    },
+    {
+      "id": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63952",
+      "title": "Auction of Government of India Dated Security",
+      "url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63952",
+      "publishedAt": "2026-11-09T18:55:00.000Z",
       "sourceId": "rbi",
       "sourceName": "Reserve Bank of India",
       "category": "Finance & India"
     },
     {
-      "id": "https://spectrum.ieee.org/type-2-diabetes-electroceutical-implant",
-      "title": "Implant Zaps Excess Sugar Directly From Blood",
-      "url": "https://spectrum.ieee.org/type-2-diabetes-electroceutical-implant",
-      "publishedAt": "2026-11-08T14:00:02.000Z",
+      "id": "https://huggingface.co/blog/nvidia/nemotron-personas-finance-japan",
+      "title": "Nemotron-Personas-Finance-Japan: A Synthetic Dataset Capturing Japan's Demographics and Financial Context",
+      "url": "https://huggingface.co/blog/nvidia/nemotron-personas-finance-japan",
+      "publishedAt": "2026-11-09T15:05:57.000Z",
+      "sourceId": "huggingface",
+      "sourceName": "Hugging Face Blog",
+      "category": "AI & Data"
+    },
+    {
+      "id": "https://spectrum.ieee.org/agentic-robotics",
+      "title": "Can Agentic Robotics Solve Robotics’ Data-Scaling Problem?",
+      "url": "https://spectrum.ieee.org/agentic-robotics",
+      "publishedAt": "2026-11-09T14:00:02.000Z",
       "sourceId": "ieee-spectrum",
       "sourceName": "IEEE Spectrum",
       "category": "Engineering & Electronics"
+    },
+    {
+      "id": "https://www.cisa.gov/news-events/alerts/2026/11/09/cisa-adds-four-known-exploited-vulnerabilities-catalog",
+      "title": "CISA Adds Four Known Exploited Vulnerabilities to Catalog",
+      "url": "https://www.cisa.gov/news-events/alerts/2026/11/09/cisa-adds-four-known-exploited-vulnerabilities-catalog",
+      "publishedAt": "2026-11-09T12:00:00.000Z",
+      "sourceId": "cisa",
+      "sourceName": "CISA Advisories",
+      "category": "Cybersecurity"
     },
     {
       "id": "https://www.microsoft.com/microsoft-365/roadmap?id=578904",
@@ -195,15 +231,6 @@
       "category": "Software Development"
     },
     {
-      "id": "https://www.figma.com/blog/in-conversation-dylan-field-and-david-friedberg/",
-      "title": "In conversation: Dylan Field and David Friedberg on the human role in creating with AI",
-      "url": "https://www.figma.com/blog/in-conversation-dylan-field-and-david-friedberg/",
-      "publishedAt": "2026-11-06T20:31:00.000Z",
-      "sourceId": "figma",
-      "sourceName": "Figma Blog",
-      "category": "Design & Creative"
-    },
-    {
       "id": "https://www.microsoft.com/en-us/power-platform/blog/power-pages/create-and-edit-non-spa-power-pages-sites-with-agentic-coding-tools/",
       "title": "Create and edit non-SPA Power Pages sites with Agentic Coding tools",
       "url": "https://www.microsoft.com/en-us/power-platform/blog/power-pages/create-and-edit-non-spa-power-pages-sites-with-agentic-coding-tools/",
@@ -211,33 +238,6 @@
       "sourceId": "power-platform",
       "sourceName": "Microsoft Power Platform",
       "category": "Office & Analytics"
-    },
-    {
-      "id": "https://huggingface.co/blog/allenai/toyblocks",
-      "title": "ToyBlocks: A controlled world for robot learning and evaluation",
-      "url": "https://huggingface.co/blog/allenai/toyblocks",
-      "publishedAt": "2026-11-06T14:00:48.000Z",
-      "sourceId": "huggingface",
-      "sourceName": "Hugging Face Blog",
-      "category": "AI & Data"
-    },
-    {
-      "id": "https://www.cisa.gov/news-events/alerts/2026/11/06/cisa-adds-one-known-exploited-vulnerability-catalog",
-      "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
-      "url": "https://www.cisa.gov/news-events/alerts/2026/11/06/cisa-adds-one-known-exploited-vulnerability-catalog",
-      "publishedAt": "2026-11-06T12:00:00.000Z",
-      "sourceId": "cisa",
-      "sourceName": "CISA Advisories",
-      "category": "Cybersecurity"
-    },
-    {
-      "id": "https://openai.com/index/partnering-with-hacktron",
-      "title": "Partnering with Hacktron to find vulnerabilities in OpenAI’s systems",
-      "url": "https://openai.com/index/partnering-with-hacktron",
-      "publishedAt": "2026-11-06T08:00:00.000Z",
-      "sourceId": "openai",
-      "sourceName": "OpenAI News",
-      "category": "AI & Data"
     },
     {
       "id": "https://deepmind.google/blog/gemini-omni-12-flash-fast-and-cost-effective-with-longer-clips/",
@@ -267,9 +267,9 @@
       "category": "Programming"
     },
     {
-      "id": "https://developers.googleblog.com/agent-distraction/",
-      "title": "Agent Distraction",
-      "url": "https://developers.googleblog.com/agent-distraction/",
+      "id": "https://developers.googleblog.com/what-is-pathways-single-controller-training-for-large-models/",
+      "title": "What is Pathways? Single-controller training for large models",
+      "url": "https://developers.googleblog.com/what-is-pathways-single-controller-training-for-large-models/",
       "publishedAt": null,
       "sourceId": "google-dev",
       "sourceName": "Google Developers",
@@ -282,7 +282,8 @@
       "publishedAt": null,
       "sourceId": "sebi",
       "sourceName": "SEBI",
-      "category": "Finance & India"
+      "category": "Finance & India",
+      "summary": ""
     }
   ]
 }
