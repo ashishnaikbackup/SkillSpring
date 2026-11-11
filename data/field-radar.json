@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-10T09:52:52.487Z",
+  "generatedAt": "2026-11-11T09:27:45.219Z",
   "disclaimer": "Automatically collected publisher headlines with original links. Read the publisher's source for full context. This is not financial, legal or security advice.",
   "sources": [
     {
@@ -10,7 +10,7 @@
       "status": "ok",
       "message": "Feed refreshed",
       "lastStatusChange": "2026-11-01T02:06:00.544Z",
-      "lastContentUpdate": "2026-11-01T02:07:58.513Z",
+      "lastContentUpdate": "2026-11-11T09:27:45.219Z",
       "itemCount": 1
     },
     {
@@ -21,7 +21,7 @@
       "status": "ok",
       "message": "Feed refreshed",
       "lastStatusChange": "2026-11-01T02:06:00.544Z",
-      "lastContentUpdate": "2026-11-07T08:49:10.555Z",
+      "lastContentUpdate": "2026-11-11T09:27:45.219Z",
       "itemCount": 1
     },
     {
@@ -32,7 +32,7 @@
       "status": "ok",
       "message": "Feed refreshed",
       "lastStatusChange": "2026-11-01T02:06:00.544Z",
-      "lastContentUpdate": "2026-11-10T09:52:52.487Z",
+      "lastContentUpdate": "2026-11-11T09:27:45.219Z",
       "itemCount": 1
     },
     {
@@ -43,7 +43,7 @@
       "status": "ok",
       "message": "Feed refreshed",
       "lastStatusChange": "2026-11-01T02:06:00.544Z",
-      "lastContentUpdate": "2026-11-10T09:52:52.487Z",
+      "lastContentUpdate": "2026-11-11T09:27:45.219Z",
       "itemCount": 1
     },
     {
@@ -54,7 +54,7 @@
       "status": "ok",
       "message": "Feed refreshed",
       "lastStatusChange": "2026-11-01T02:06:00.544Z",
-      "lastContentUpdate": "2026-11-06T09:27:04.755Z",
+      "lastContentUpdate": "2026-11-11T09:27:45.219Z",
       "itemCount": 1
     },
     {
@@ -65,7 +65,7 @@
       "status": "ok",
       "message": "Feed refreshed",
       "lastStatusChange": "2026-11-01T02:06:00.544Z",
-      "lastContentUpdate": "2026-11-06T09:27:04.755Z",
+      "lastContentUpdate": "2026-11-11T09:27:45.219Z",
       "itemCount": 1
     },
     {
@@ -76,7 +76,7 @@
       "status": "ok",
       "message": "Feed refreshed",
       "lastStatusChange": "2026-11-01T02:06:00.544Z",
-      "lastContentUpdate": "2026-11-10T09:52:52.487Z",
+      "lastContentUpdate": "2026-11-11T09:27:45.219Z",
       "itemCount": 1
     },
     {
@@ -87,7 +87,7 @@
       "status": "ok",
       "message": "Feed refreshed",
       "lastStatusChange": "2026-11-01T02:06:00.544Z",
-      "lastContentUpdate": "2026-11-09T09:50:19.471Z",
+      "lastContentUpdate": "2026-11-11T09:27:45.219Z",
       "itemCount": 1
     },
     {
@@ -98,7 +98,7 @@
       "status": "ok",
       "message": "Feed refreshed",
       "lastStatusChange": "2026-11-01T02:06:00.544Z",
-      "lastContentUpdate": "2026-11-07T08:49:10.555Z",
+      "lastContentUpdate": "2026-11-11T09:27:45.219Z",
       "itemCount": 1
     },
     {
@@ -109,7 +109,7 @@
       "status": "ok",
       "message": "Feed refreshed",
       "lastStatusChange": "2026-11-01T02:06:00.544Z",
-      "lastContentUpdate": "2026-11-10T09:52:52.487Z",
+      "lastContentUpdate": "2026-11-11T09:27:45.219Z",
       "itemCount": 1
     },
     {
@@ -117,10 +117,10 @@
       "name": "SEBI",
       "category": "Finance & India",
       "url": "https://www.sebi.gov.in/sebirss.xml",
-      "status": "failed",
-      "message": "fetch failed",
-      "lastStatusChange": "2026-11-10T09:52:52.487Z",
-      "lastContentUpdate": "2026-11-10T09:52:52.487Z",
+      "status": "ok",
+      "message": "Feed refreshed",
+      "lastStatusChange": "2026-11-11T09:27:45.219Z",
+      "lastContentUpdate": "2026-11-11T09:27:45.219Z",
       "itemCount": 1
     },
     {
@@ -131,7 +131,7 @@
       "status": "ok",
       "message": "Feed refreshed",
       "lastStatusChange": "2026-11-06T09:27:04.755Z",
-      "lastContentUpdate": "2026-11-10T09:52:52.487Z",
+      "lastContentUpdate": "2026-11-11T09:27:45.219Z",
       "itemCount": 1
     },
     {
@@ -153,19 +153,109 @@
       "status": "ok",
       "message": "Feed refreshed",
       "lastStatusChange": "2026-11-01T02:06:00.544Z",
-      "lastContentUpdate": "2026-11-10T09:52:52.487Z",
+      "lastContentUpdate": "2026-11-11T09:27:45.219Z",
       "itemCount": 1
     }
   ],
   "items": [
     {
-      "id": "https://openai.com/index/closing-ai-guidance-gap-education",
-      "title": "Closing the AI guidance gap in education",
-      "url": "https://openai.com/index/closing-ai-guidance-gap-education",
-      "publishedAt": "2026-11-10T09:00:00.000Z",
+      "id": "https://openai.com/index/gilbert-tobin-sam-nickless",
+      "title": "Gilbert + Tobin rethinks the business of law with AI",
+      "url": "https://openai.com/index/gilbert-tobin-sam-nickless",
+      "publishedAt": "2026-11-12T00:00:00.000Z",
       "sourceId": "openai",
       "sourceName": "OpenAI News",
       "category": "AI & Data"
+    },
+    {
+      "id": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63956",
+      "title": "Treasury Bills: Full Auction Result",
+      "url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63956",
+      "publishedAt": "2026-11-11T13:40:00.000Z",
+      "sourceId": "rbi",
+      "sourceName": "Reserve Bank of India",
+      "category": "Finance & India"
+    },
+    {
+      "id": "https://blog.google/company-news/outreach-and-initiatives/arts-culture/esther-mahlangu/",
+      "title": "Experience the art and legacy of Dr. Esther Mahlangu",
+      "url": "https://blog.google/company-news/outreach-and-initiatives/arts-culture/esther-mahlangu/",
+      "publishedAt": "2026-11-11T09:00:00.000Z",
+      "sourceId": "google-ai",
+      "sourceName": "Google AI",
+      "category": "AI & Data"
+    },
+    {
+      "id": "https://huggingface.co/blog/qvac/botpsy",
+      "title": "BotPsy: On-Device Personal Assistant with a Sub-Billion-Parameter Agentic Language Model",
+      "url": "https://huggingface.co/blog/qvac/botpsy",
+      "publishedAt": "2026-11-11T05:01:16.000Z",
+      "sourceId": "huggingface",
+      "sourceName": "Hugging Face Blog",
+      "category": "AI & Data"
+    },
+    {
+      "id": "https://www.microsoft.com/microsoft-365/roadmap?id=577876",
+      "title": "Dynamics 365 Project Operations: Optimize Project Operations - Allow to invoice future-dated transactions",
+      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=577876",
+      "publishedAt": "2026-11-11T01:20:59.000Z",
+      "sourceId": "m365-roadmap",
+      "sourceName": "Microsoft 365 Roadmap",
+      "category": "Office & Productivity"
+    },
+    {
+      "id": "https://github.blog/open-source/git/git-security-vulnerabilities-announced-7/",
+      "title": "Git security vulnerabilities announced",
+      "url": "https://github.blog/open-source/git/git-security-vulnerabilities-announced-7/",
+      "publishedAt": "2026-11-10T18:00:00.000Z",
+      "sourceId": "github",
+      "sourceName": "GitHub Blog",
+      "category": "Software Development"
+    },
+    {
+      "id": "https://deepmind.google/blog/gemini-4-carbon-is-now-available/",
+      "title": "Gemini 4 Carbon is now available",
+      "url": "https://deepmind.google/blog/gemini-4-carbon-is-now-available/",
+      "publishedAt": "2026-11-10T16:03:47.000Z",
+      "sourceId": "deepmind",
+      "sourceName": "Google DeepMind",
+      "category": "AI & Data"
+    },
+    {
+      "id": "https://www.microsoft.com/en-us/power-platform/blog/power-apps/whats-new-in-power-platform-october-2026-feature-update/",
+      "title": "What’s new in Power Platform: October/November 2026 feature update",
+      "url": "https://www.microsoft.com/en-us/power-platform/blog/power-apps/whats-new-in-power-platform-october-2026-feature-update/",
+      "publishedAt": "2026-11-10T16:00:37.000Z",
+      "sourceId": "power-platform",
+      "sourceName": "Microsoft Power Platform",
+      "category": "Office & Analytics"
+    },
+    {
+      "id": "https://spectrum.ieee.org/large-hadron-collider-superconducting-magnets",
+      "title": "How CERN Built the Large Hadron Collider’s Next-Gen Magnets",
+      "url": "https://spectrum.ieee.org/large-hadron-collider-superconducting-magnets",
+      "publishedAt": "2026-11-10T14:00:02.000Z",
+      "sourceId": "ieee-spectrum",
+      "sourceName": "IEEE Spectrum",
+      "category": "Engineering & Electronics"
+    },
+    {
+      "id": "https://www.cisa.gov/news-events/alerts/2026/11/10/cisa-adds-six-known-exploited-vulnerabilities-catalog",
+      "title": "CISA Adds Six Known Exploited Vulnerabilities to Catalog",
+      "url": "https://www.cisa.gov/news-events/alerts/2026/11/10/cisa-adds-six-known-exploited-vulnerabilities-catalog",
+      "publishedAt": "2026-11-10T12:00:00.000Z",
+      "sourceId": "cisa",
+      "sourceName": "CISA Advisories",
+      "category": "Cybersecurity"
+    },
+    {
+      "id": "https://blog.python.org/2026/11/python-3160-alpha-2-is-now-available/",
+      "title": "Python 3.16.0 alpha 2 is now available",
+      "url": "https://blog.python.org/2026/11/python-3160-alpha-2-is-now-available/",
+      "publishedAt": "2026-11-10T00:00:00.000Z",
+      "sourceId": "python",
+      "sourceName": "Python Insider",
+      "category": "Programming"
     },
     {
       "id": "https://www.figma.com/blog/6-easy-ways-to-use-the-figma-agent-right-now/",
@@ -177,113 +267,22 @@
       "category": "Design & Creative"
     },
     {
-      "id": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63952",
-      "title": "Auction of Government of India Dated Security",
-      "url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63952",
-      "publishedAt": "2026-11-09T18:55:00.000Z",
-      "sourceId": "rbi",
-      "sourceName": "Reserve Bank of India",
-      "category": "Finance & India"
-    },
-    {
-      "id": "https://huggingface.co/blog/nvidia/nemotron-personas-finance-japan",
-      "title": "Nemotron-Personas-Finance-Japan: A Synthetic Dataset Capturing Japan's Demographics and Financial Context",
-      "url": "https://huggingface.co/blog/nvidia/nemotron-personas-finance-japan",
-      "publishedAt": "2026-11-09T15:05:57.000Z",
-      "sourceId": "huggingface",
-      "sourceName": "Hugging Face Blog",
-      "category": "AI & Data"
-    },
-    {
-      "id": "https://spectrum.ieee.org/agentic-robotics",
-      "title": "Can Agentic Robotics Solve Robotics’ Data-Scaling Problem?",
-      "url": "https://spectrum.ieee.org/agentic-robotics",
-      "publishedAt": "2026-11-09T14:00:02.000Z",
-      "sourceId": "ieee-spectrum",
-      "sourceName": "IEEE Spectrum",
-      "category": "Engineering & Electronics"
-    },
-    {
-      "id": "https://www.cisa.gov/news-events/alerts/2026/11/09/cisa-adds-four-known-exploited-vulnerabilities-catalog",
-      "title": "CISA Adds Four Known Exploited Vulnerabilities to Catalog",
-      "url": "https://www.cisa.gov/news-events/alerts/2026/11/09/cisa-adds-four-known-exploited-vulnerabilities-catalog",
-      "publishedAt": "2026-11-09T12:00:00.000Z",
-      "sourceId": "cisa",
-      "sourceName": "CISA Advisories",
-      "category": "Cybersecurity"
-    },
-    {
-      "id": "https://www.microsoft.com/microsoft-365/roadmap?id=578904",
-      "title": "Dynamics 365 Project Operations: Set invoice limits for time and material billing",
-      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=578904",
-      "publishedAt": "2026-11-06T23:04:41.000Z",
-      "sourceId": "m365-roadmap",
-      "sourceName": "Microsoft 365 Roadmap",
-      "category": "Office & Productivity"
-    },
-    {
-      "id": "https://github.blog/ai-and-ml/github-copilot/beyond-code-generation-a-developers-guide-to-agentic-engineering/",
-      "title": "Beyond code generation: A developer’s guide to agentic engineering",
-      "url": "https://github.blog/ai-and-ml/github-copilot/beyond-code-generation-a-developers-guide-to-agentic-engineering/",
-      "publishedAt": "2026-11-06T22:15:59.000Z",
-      "sourceId": "github",
-      "sourceName": "GitHub Blog",
-      "category": "Software Development"
-    },
-    {
-      "id": "https://www.microsoft.com/en-us/power-platform/blog/power-pages/create-and-edit-non-spa-power-pages-sites-with-agentic-coding-tools/",
-      "title": "Create and edit non-SPA Power Pages sites with Agentic Coding tools",
-      "url": "https://www.microsoft.com/en-us/power-platform/blog/power-pages/create-and-edit-non-spa-power-pages-sites-with-agentic-coding-tools/",
-      "publishedAt": "2026-11-06T17:26:59.000Z",
-      "sourceId": "power-platform",
-      "sourceName": "Microsoft Power Platform",
-      "category": "Office & Analytics"
-    },
-    {
-      "id": "https://deepmind.google/blog/gemini-omni-12-flash-fast-and-cost-effective-with-longer-clips/",
-      "title": "Gemini Omni 1.2 Flash: Fast and cost-effective with longer clips",
-      "url": "https://deepmind.google/blog/gemini-omni-12-flash-fast-and-cost-effective-with-longer-clips/",
-      "publishedAt": "2026-11-05T17:05:16.000Z",
-      "sourceId": "deepmind",
-      "sourceName": "Google DeepMind",
-      "category": "AI & Data"
-    },
-    {
-      "id": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/",
-      "title": "Gemini Omni 1.2 Flash: Fast and cost-effective with longer clips",
-      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/",
-      "publishedAt": "2026-11-05T17:00:00.000Z",
-      "sourceId": "google-ai",
-      "sourceName": "Google AI",
-      "category": "AI & Data"
-    },
-    {
-      "id": "https://blog.python.org/2026/10/python-3152-31410-31318-31216-31118/",
-      "title": "Python 3.15.2, 3.14.10, 3.13.18, 3.12.16 and 3.11.18 are out",
-      "url": "https://blog.python.org/2026/10/python-3152-31410-31318-31216-31118/",
-      "publishedAt": "2026-10-26T00:00:00.000Z",
-      "sourceId": "python",
-      "sourceName": "Python Insider",
-      "category": "Programming"
-    },
-    {
-      "id": "https://developers.googleblog.com/what-is-pathways-single-controller-training-for-large-models/",
-      "title": "What is Pathways? Single-controller training for large models",
-      "url": "https://developers.googleblog.com/what-is-pathways-single-controller-training-for-large-models/",
+      "id": "https://developers.googleblog.com/on-device-speech-recognition-and-text-to-speech-in-google-ai-edge-gallery/",
+      "title": "On-Device Speech Recognition and Text-to-Speech in Google AI Edge Gallery",
+      "url": "https://developers.googleblog.com/on-device-speech-recognition-and-text-to-speech-in-google-ai-edge-gallery/",
       "publishedAt": null,
       "sourceId": "google-dev",
       "sourceName": "Google Developers",
       "category": "Software Development"
     },
     {
-      "id": "https://www.sebi.gov.in/media-and-notifications/press-releases/nov-2026/commencement-of-sebi-settlement-of-administrative-and-civil-proceedings-regulations-2026_105680.html",
-      "title": "Commencement of SEBI (Settlement of Administrative and Civil Proceedings) Regulations, 2026",
-      "url": "https://www.sebi.gov.in/media-and-notifications/press-releases/nov-2026/commencement-of-sebi-settlement-of-administrative-and-civil-proceedings-regulations-2026_105680.html",
+      "id": "https://www.sebi.gov.in/enforcement/recovery-proceedings/nov-2026/notice-of-attachment-dated-november-10-2026-issued-against-secunderabad-healthcare-limited-under-rc-no-7734-of-2024-in-the-matter-of-secunderabad-healthcare-limited_105698.html",
+      "title": "Notice of attachment dated November 10, 2026 issued against Secunderabad Healthcare Limited under RC No.7734 of 2024 in the matter of Secunderabad Healthcare Limited",
+      "url": "https://www.sebi.gov.in/enforcement/recovery-proceedings/nov-2026/notice-of-attachment-dated-november-10-2026-issued-against-secunderabad-healthcare-limited-under-rc-no-7734-of-2024-in-the-matter-of-secunderabad-healthcare-limited_105698.html",
       "publishedAt": null,
       "sourceId": "sebi",
       "sourceName": "SEBI",
-      "category": "Finance & India",
-      "summary": ""
+      "category": "Finance & India"
     }
   ]
 }
