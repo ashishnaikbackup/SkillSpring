@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-11T09:27:45.219Z",
+  "generatedAt": "2026-11-12T09:51:32.519Z",
   "disclaimer": "Automatically collected publisher headlines with original links. Read the publisher's source for full context. This is not financial, legal or security advice.",
   "sources": [
     {
@@ -32,7 +32,7 @@
       "status": "ok",
       "message": "Feed refreshed",
       "lastStatusChange": "2026-11-01T02:06:00.544Z",
-      "lastContentUpdate": "2026-11-11T09:27:45.219Z",
+      "lastContentUpdate": "2026-11-12T09:51:32.519Z",
       "itemCount": 1
     },
     {
@@ -54,7 +54,7 @@
       "status": "ok",
       "message": "Feed refreshed",
       "lastStatusChange": "2026-11-01T02:06:00.544Z",
-      "lastContentUpdate": "2026-11-11T09:27:45.219Z",
+      "lastContentUpdate": "2026-11-12T09:51:32.519Z",
       "itemCount": 1
     },
     {
@@ -65,7 +65,7 @@
       "status": "ok",
       "message": "Feed refreshed",
       "lastStatusChange": "2026-11-01T02:06:00.544Z",
-      "lastContentUpdate": "2026-11-11T09:27:45.219Z",
+      "lastContentUpdate": "2026-11-12T09:51:32.519Z",
       "itemCount": 1
     },
     {
@@ -98,7 +98,7 @@
       "status": "ok",
       "message": "Feed refreshed",
       "lastStatusChange": "2026-11-01T02:06:00.544Z",
-      "lastContentUpdate": "2026-11-11T09:27:45.219Z",
+      "lastContentUpdate": "2026-11-12T09:51:32.519Z",
       "itemCount": 1
     },
     {
@@ -109,7 +109,7 @@
       "status": "ok",
       "message": "Feed refreshed",
       "lastStatusChange": "2026-11-01T02:06:00.544Z",
-      "lastContentUpdate": "2026-11-11T09:27:45.219Z",
+      "lastContentUpdate": "2026-11-12T09:51:32.519Z",
       "itemCount": 1
     },
     {
@@ -120,7 +120,7 @@
       "status": "ok",
       "message": "Feed refreshed",
       "lastStatusChange": "2026-11-11T09:27:45.219Z",
-      "lastContentUpdate": "2026-11-11T09:27:45.219Z",
+      "lastContentUpdate": "2026-11-12T09:51:32.519Z",
       "itemCount": 1
     },
     {
@@ -153,11 +153,29 @@
       "status": "ok",
       "message": "Feed refreshed",
       "lastStatusChange": "2026-11-01T02:06:00.544Z",
-      "lastContentUpdate": "2026-11-11T09:27:45.219Z",
+      "lastContentUpdate": "2026-11-12T09:51:32.519Z",
       "itemCount": 1
     }
   ],
   "items": [
+    {
+      "id": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63963",
+      "title": "Underwriting Auction for sale of Government Security for ₹34,000 crore on November 13, 2026",
+      "url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63963",
+      "publishedAt": "2026-11-12T11:50:00.000Z",
+      "sourceId": "rbi",
+      "sourceName": "Reserve Bank of India",
+      "category": "Finance & India"
+    },
+    {
+      "id": "https://www.microsoft.com/microsoft-365/roadmap?id=579982",
+      "title": "Dynamics 365 Customer Insights - Journeys: Create event experience that match your business structure by supporting leads, contacts, or both​",
+      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=579982",
+      "publishedAt": "2026-11-12T01:35:00.000Z",
+      "sourceId": "m365-roadmap",
+      "sourceName": "Microsoft 365 Roadmap",
+      "category": "Office & Productivity"
+    },
     {
       "id": "https://openai.com/index/gilbert-tobin-sam-nickless",
       "title": "Gilbert + Tobin rethinks the business of law with AI",
@@ -168,22 +186,31 @@
       "category": "AI & Data"
     },
     {
-      "id": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63956",
-      "title": "Treasury Bills: Full Auction Result",
-      "url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63956",
-      "publishedAt": "2026-11-11T13:40:00.000Z",
-      "sourceId": "rbi",
-      "sourceName": "Reserve Bank of India",
-      "category": "Finance & India"
-    },
-    {
-      "id": "https://blog.google/company-news/outreach-and-initiatives/arts-culture/esther-mahlangu/",
-      "title": "Experience the art and legacy of Dr. Esther Mahlangu",
-      "url": "https://blog.google/company-news/outreach-and-initiatives/arts-culture/esther-mahlangu/",
-      "publishedAt": "2026-11-11T09:00:00.000Z",
+      "id": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
+      "title": "Gemini Decisions API: Fast, calibrated multimodal decisions",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
+      "publishedAt": "2026-11-11T18:00:00.000Z",
       "sourceId": "google-ai",
       "sourceName": "Google AI",
       "category": "AI & Data"
+    },
+    {
+      "id": "https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease/",
+      "title": "AlphaGenome 2: Deciphering how cells read DNA to better understand disease",
+      "url": "https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease/",
+      "publishedAt": "2026-11-11T15:00:15.000Z",
+      "sourceId": "deepmind",
+      "sourceName": "Google DeepMind",
+      "category": "AI & Data"
+    },
+    {
+      "id": "https://spectrum.ieee.org/electric-ship-batteries",
+      "title": "Xing Mobility Pitches Shipbuilders a Battery Proved Mostly on Land",
+      "url": "https://spectrum.ieee.org/electric-ship-batteries",
+      "publishedAt": "2026-11-11T15:00:03.000Z",
+      "sourceId": "ieee-spectrum",
+      "sourceName": "IEEE Spectrum",
+      "category": "Engineering & Electronics"
     },
     {
       "id": "https://huggingface.co/blog/qvac/botpsy",
@@ -195,15 +222,6 @@
       "category": "AI & Data"
     },
     {
-      "id": "https://www.microsoft.com/microsoft-365/roadmap?id=577876",
-      "title": "Dynamics 365 Project Operations: Optimize Project Operations - Allow to invoice future-dated transactions",
-      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=577876",
-      "publishedAt": "2026-11-11T01:20:59.000Z",
-      "sourceId": "m365-roadmap",
-      "sourceName": "Microsoft 365 Roadmap",
-      "category": "Office & Productivity"
-    },
-    {
       "id": "https://github.blog/open-source/git/git-security-vulnerabilities-announced-7/",
       "title": "Git security vulnerabilities announced",
       "url": "https://github.blog/open-source/git/git-security-vulnerabilities-announced-7/",
@@ -213,15 +231,6 @@
       "category": "Software Development"
     },
     {
-      "id": "https://deepmind.google/blog/gemini-4-carbon-is-now-available/",
-      "title": "Gemini 4 Carbon is now available",
-      "url": "https://deepmind.google/blog/gemini-4-carbon-is-now-available/",
-      "publishedAt": "2026-11-10T16:03:47.000Z",
-      "sourceId": "deepmind",
-      "sourceName": "Google DeepMind",
-      "category": "AI & Data"
-    },
-    {
       "id": "https://www.microsoft.com/en-us/power-platform/blog/power-apps/whats-new-in-power-platform-october-2026-feature-update/",
       "title": "What’s new in Power Platform: October/November 2026 feature update",
       "url": "https://www.microsoft.com/en-us/power-platform/blog/power-apps/whats-new-in-power-platform-october-2026-feature-update/",
@@ -229,15 +238,6 @@
       "sourceId": "power-platform",
       "sourceName": "Microsoft Power Platform",
       "category": "Office & Analytics"
-    },
-    {
-      "id": "https://spectrum.ieee.org/large-hadron-collider-superconducting-magnets",
-      "title": "How CERN Built the Large Hadron Collider’s Next-Gen Magnets",
-      "url": "https://spectrum.ieee.org/large-hadron-collider-superconducting-magnets",
-      "publishedAt": "2026-11-10T14:00:02.000Z",
-      "sourceId": "ieee-spectrum",
-      "sourceName": "IEEE Spectrum",
-      "category": "Engineering & Electronics"
     },
     {
       "id": "https://www.cisa.gov/news-events/alerts/2026/11/10/cisa-adds-six-known-exploited-vulnerabilities-catalog",
@@ -267,18 +267,18 @@
       "category": "Design & Creative"
     },
     {
-      "id": "https://developers.googleblog.com/on-device-speech-recognition-and-text-to-speech-in-google-ai-edge-gallery/",
-      "title": "On-Device Speech Recognition and Text-to-Speech in Google AI Edge Gallery",
-      "url": "https://developers.googleblog.com/on-device-speech-recognition-and-text-to-speech-in-google-ai-edge-gallery/",
+      "id": "https://developers.googleblog.com/a2ui-10-build-delightful-fast-reliable-agentic-experiences/",
+      "title": "A2UI 1.0: Build delightful, fast, reliable, agentic experiences",
+      "url": "https://developers.googleblog.com/a2ui-10-build-delightful-fast-reliable-agentic-experiences/",
       "publishedAt": null,
       "sourceId": "google-dev",
       "sourceName": "Google Developers",
       "category": "Software Development"
     },
     {
-      "id": "https://www.sebi.gov.in/enforcement/recovery-proceedings/nov-2026/notice-of-attachment-dated-november-10-2026-issued-against-secunderabad-healthcare-limited-under-rc-no-7734-of-2024-in-the-matter-of-secunderabad-healthcare-limited_105698.html",
-      "title": "Notice of attachment dated November 10, 2026 issued against Secunderabad Healthcare Limited under RC No.7734 of 2024 in the matter of Secunderabad Healthcare Limited",
-      "url": "https://www.sebi.gov.in/enforcement/recovery-proceedings/nov-2026/notice-of-attachment-dated-november-10-2026-issued-against-secunderabad-healthcare-limited-under-rc-no-7734-of-2024-in-the-matter-of-secunderabad-healthcare-limited_105698.html",
+      "id": "https://www.sebi.gov.in/enforcement/recovery-proceedings/nov-2026/cancellation-of-recovery-certificate-no-9290-of-2026-issued-against-harsha-ishvarbhai-solanki-pan-dcxps3726r-khushbu-arjunbhai-padhiyar-pan-ebfpp6804k-nitaben-babulal-khalas-pan-bzvpk9515p-_105712.html",
+      "title": "Cancellation of Recovery Certificate No. 9290 of 2026 issued against Harsha Ishvarbhai Solanki (PAN: DCXPS3726R), Khushbu Arjunbhai Padhiyar (PAN: EBFPP6804K), Nitaben Babulal Khalas (PAN: BZVPK9515P), Nimeshkumar Balde…",
+      "url": "https://www.sebi.gov.in/enforcement/recovery-proceedings/nov-2026/cancellation-of-recovery-certificate-no-9290-of-2026-issued-against-harsha-ishvarbhai-solanki-pan-dcxps3726r-khushbu-arjunbhai-padhiyar-pan-ebfpp6804k-nitaben-babulal-khalas-pan-bzvpk9515p-_105712.html",
       "publishedAt": null,
       "sourceId": "sebi",
       "sourceName": "SEBI",
