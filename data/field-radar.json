@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-12T09:51:32.519Z",
+  "generatedAt": "2026-11-13T09:33:20.861Z",
   "disclaimer": "Automatically collected publisher headlines with original links. Read the publisher's source for full context. This is not financial, legal or security advice.",
   "sources": [
     {
@@ -21,7 +21,7 @@
       "status": "ok",
       "message": "Feed refreshed",
       "lastStatusChange": "2026-11-01T02:06:00.544Z",
-      "lastContentUpdate": "2026-11-11T09:27:45.219Z",
+      "lastContentUpdate": "2026-11-13T09:33:20.861Z",
       "itemCount": 1
     },
     {
@@ -32,7 +32,7 @@
       "status": "ok",
       "message": "Feed refreshed",
       "lastStatusChange": "2026-11-01T02:06:00.544Z",
-      "lastContentUpdate": "2026-11-12T09:51:32.519Z",
+      "lastContentUpdate": "2026-11-13T09:33:20.861Z",
       "itemCount": 1
     },
     {
@@ -43,7 +43,7 @@
       "status": "ok",
       "message": "Feed refreshed",
       "lastStatusChange": "2026-11-01T02:06:00.544Z",
-      "lastContentUpdate": "2026-11-11T09:27:45.219Z",
+      "lastContentUpdate": "2026-11-13T09:33:20.861Z",
       "itemCount": 1
     },
     {
@@ -54,7 +54,7 @@
       "status": "ok",
       "message": "Feed refreshed",
       "lastStatusChange": "2026-11-01T02:06:00.544Z",
-      "lastContentUpdate": "2026-11-12T09:51:32.519Z",
+      "lastContentUpdate": "2026-11-13T09:33:20.861Z",
       "itemCount": 1
     },
     {
@@ -65,7 +65,7 @@
       "status": "ok",
       "message": "Feed refreshed",
       "lastStatusChange": "2026-11-01T02:06:00.544Z",
-      "lastContentUpdate": "2026-11-12T09:51:32.519Z",
+      "lastContentUpdate": "2026-11-13T09:33:20.861Z",
       "itemCount": 1
     },
     {
@@ -76,7 +76,7 @@
       "status": "ok",
       "message": "Feed refreshed",
       "lastStatusChange": "2026-11-01T02:06:00.544Z",
-      "lastContentUpdate": "2026-11-11T09:27:45.219Z",
+      "lastContentUpdate": "2026-11-13T09:33:20.861Z",
       "itemCount": 1
     },
     {
@@ -109,7 +109,7 @@
       "status": "ok",
       "message": "Feed refreshed",
       "lastStatusChange": "2026-11-01T02:06:00.544Z",
-      "lastContentUpdate": "2026-11-12T09:51:32.519Z",
+      "lastContentUpdate": "2026-11-13T09:33:20.861Z",
       "itemCount": 1
     },
     {
@@ -120,7 +120,7 @@
       "status": "ok",
       "message": "Feed refreshed",
       "lastStatusChange": "2026-11-11T09:27:45.219Z",
-      "lastContentUpdate": "2026-11-12T09:51:32.519Z",
+      "lastContentUpdate": "2026-11-13T09:33:20.861Z",
       "itemCount": 1
     },
     {
@@ -131,7 +131,7 @@
       "status": "ok",
       "message": "Feed refreshed",
       "lastStatusChange": "2026-11-06T09:27:04.755Z",
-      "lastContentUpdate": "2026-11-11T09:27:45.219Z",
+      "lastContentUpdate": "2026-11-13T09:33:20.861Z",
       "itemCount": 1
     },
     {
@@ -142,7 +142,7 @@
       "status": "ok",
       "message": "Feed refreshed",
       "lastStatusChange": "2026-11-01T02:06:00.544Z",
-      "lastContentUpdate": "2026-11-10T09:52:52.487Z",
+      "lastContentUpdate": "2026-11-13T09:33:20.861Z",
       "itemCount": 1
     },
     {
@@ -153,19 +153,91 @@
       "status": "ok",
       "message": "Feed refreshed",
       "lastStatusChange": "2026-11-01T02:06:00.544Z",
-      "lastContentUpdate": "2026-11-12T09:51:32.519Z",
+      "lastContentUpdate": "2026-11-13T09:33:20.861Z",
       "itemCount": 1
     }
   ],
   "items": [
     {
-      "id": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63963",
-      "title": "Underwriting Auction for sale of Government Security for ₹34,000 crore on November 13, 2026",
-      "url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63963",
-      "publishedAt": "2026-11-12T11:50:00.000Z",
+      "id": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63971",
+      "title": "Scheduled Banks’ Statement of Position in India as on October 31, 2026",
+      "url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63971",
+      "publishedAt": "2026-11-13T14:55:00.000Z",
       "sourceId": "rbi",
       "sourceName": "Reserve Bank of India",
       "category": "Finance & India"
+    },
+    {
+      "id": "https://github.blog/news-insights/company-news/github-availability-report-october-2026/",
+      "title": "GitHub availability report: October 2026",
+      "url": "https://github.blog/news-insights/company-news/github-availability-report-october-2026/",
+      "publishedAt": "2026-11-13T00:20:16.000Z",
+      "sourceId": "github",
+      "sourceName": "GitHub Blog",
+      "category": "Software Development"
+    },
+    {
+      "id": "https://openai.com/business/customer-stories/amplitude",
+      "title": "How Amplitude ships product improvements in 1–2 days with OpenAI",
+      "url": "https://openai.com/business/customer-stories/amplitude",
+      "publishedAt": "2026-11-12T20:00:00.000Z",
+      "sourceId": "openai",
+      "sourceName": "OpenAI News",
+      "category": "AI & Data"
+    },
+    {
+      "id": "https://huggingface.co/blog/ibm-granite/llmon-an-llm-native-markup-language-now-in-granite",
+      "title": "LLMON: An LLM-Native Markup Language, now in Granite 4.1 3B and 8B",
+      "url": "https://huggingface.co/blog/ibm-granite/llmon-an-llm-native-markup-language-now-in-granite",
+      "publishedAt": "2026-11-12T19:07:35.000Z",
+      "sourceId": "huggingface",
+      "sourceName": "Hugging Face Blog",
+      "category": "AI & Data"
+    },
+    {
+      "id": "https://deepmind.google/blog/introducing-gemini-4-hydrogen/",
+      "title": "Introducing Gemini 4 Hydrogen",
+      "url": "https://deepmind.google/blog/introducing-gemini-4-hydrogen/",
+      "publishedAt": "2026-11-12T18:00:50.000Z",
+      "sourceId": "deepmind",
+      "sourceName": "Google DeepMind",
+      "category": "AI & Data"
+    },
+    {
+      "id": "https://blog.google/products-and-platforms/products/search/gemini-4-hydrogen-search-upgrade/",
+      "title": "Google Search gets a major upgrade with Gemini 4 Hydrogen",
+      "url": "https://blog.google/products-and-platforms/products/search/gemini-4-hydrogen-search-upgrade/",
+      "publishedAt": "2026-11-12T18:00:00.000Z",
+      "sourceId": "google-ai",
+      "sourceName": "Google AI",
+      "category": "AI & Data"
+    },
+    {
+      "id": "https://spectrum.ieee.org/undersea-cables-arctic-european-commission",
+      "title": "What Will It Take to Lay Fiber Optic Cables Across the Arctic?",
+      "url": "https://spectrum.ieee.org/undersea-cables-arctic-european-commission",
+      "publishedAt": "2026-11-12T17:06:44.000Z",
+      "sourceId": "ieee-spectrum",
+      "sourceName": "IEEE Spectrum",
+      "category": "Engineering & Electronics"
+    },
+    {
+      "id": "https://www.figma.com/blog/how-3d-transforms-and-figmas-agent-brought-a-launch-video-to-life/",
+      "title": "How 3D transforms and Figma’s agent brought a launch video to life",
+      "url": "https://www.figma.com/blog/how-3d-transforms-and-figmas-agent-brought-a-launch-video-to-life/",
+      "publishedAt": "2026-11-12T14:00:00.000Z",
+      "sourceId": "figma",
+      "sourceName": "Figma Blog",
+      "category": "Design & Creative"
+    },
+    {
+      "id": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-02",
+      "title": "Siemens Desigo, Gridscale",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-02",
+      "publishedAt": "2026-11-12T12:00:00.000Z",
+      "sourceId": "cisa",
+      "sourceName": "CISA Advisories",
+      "category": "Cybersecurity"
     },
     {
       "id": "https://www.microsoft.com/microsoft-365/roadmap?id=579982",
@@ -177,60 +249,6 @@
       "category": "Office & Productivity"
     },
     {
-      "id": "https://openai.com/index/gilbert-tobin-sam-nickless",
-      "title": "Gilbert + Tobin rethinks the business of law with AI",
-      "url": "https://openai.com/index/gilbert-tobin-sam-nickless",
-      "publishedAt": "2026-11-12T00:00:00.000Z",
-      "sourceId": "openai",
-      "sourceName": "OpenAI News",
-      "category": "AI & Data"
-    },
-    {
-      "id": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
-      "title": "Gemini Decisions API: Fast, calibrated multimodal decisions",
-      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
-      "publishedAt": "2026-11-11T18:00:00.000Z",
-      "sourceId": "google-ai",
-      "sourceName": "Google AI",
-      "category": "AI & Data"
-    },
-    {
-      "id": "https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease/",
-      "title": "AlphaGenome 2: Deciphering how cells read DNA to better understand disease",
-      "url": "https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease/",
-      "publishedAt": "2026-11-11T15:00:15.000Z",
-      "sourceId": "deepmind",
-      "sourceName": "Google DeepMind",
-      "category": "AI & Data"
-    },
-    {
-      "id": "https://spectrum.ieee.org/electric-ship-batteries",
-      "title": "Xing Mobility Pitches Shipbuilders a Battery Proved Mostly on Land",
-      "url": "https://spectrum.ieee.org/electric-ship-batteries",
-      "publishedAt": "2026-11-11T15:00:03.000Z",
-      "sourceId": "ieee-spectrum",
-      "sourceName": "IEEE Spectrum",
-      "category": "Engineering & Electronics"
-    },
-    {
-      "id": "https://huggingface.co/blog/qvac/botpsy",
-      "title": "BotPsy: On-Device Personal Assistant with a Sub-Billion-Parameter Agentic Language Model",
-      "url": "https://huggingface.co/blog/qvac/botpsy",
-      "publishedAt": "2026-11-11T05:01:16.000Z",
-      "sourceId": "huggingface",
-      "sourceName": "Hugging Face Blog",
-      "category": "AI & Data"
-    },
-    {
-      "id": "https://github.blog/open-source/git/git-security-vulnerabilities-announced-7/",
-      "title": "Git security vulnerabilities announced",
-      "url": "https://github.blog/open-source/git/git-security-vulnerabilities-announced-7/",
-      "publishedAt": "2026-11-10T18:00:00.000Z",
-      "sourceId": "github",
-      "sourceName": "GitHub Blog",
-      "category": "Software Development"
-    },
-    {
       "id": "https://www.microsoft.com/en-us/power-platform/blog/power-apps/whats-new-in-power-platform-october-2026-feature-update/",
       "title": "What’s new in Power Platform: October/November 2026 feature update",
       "url": "https://www.microsoft.com/en-us/power-platform/blog/power-apps/whats-new-in-power-platform-october-2026-feature-update/",
@@ -238,15 +256,6 @@
       "sourceId": "power-platform",
       "sourceName": "Microsoft Power Platform",
       "category": "Office & Analytics"
-    },
-    {
-      "id": "https://www.cisa.gov/news-events/alerts/2026/11/10/cisa-adds-six-known-exploited-vulnerabilities-catalog",
-      "title": "CISA Adds Six Known Exploited Vulnerabilities to Catalog",
-      "url": "https://www.cisa.gov/news-events/alerts/2026/11/10/cisa-adds-six-known-exploited-vulnerabilities-catalog",
-      "publishedAt": "2026-11-10T12:00:00.000Z",
-      "sourceId": "cisa",
-      "sourceName": "CISA Advisories",
-      "category": "Cybersecurity"
     },
     {
       "id": "https://blog.python.org/2026/11/python-3160-alpha-2-is-now-available/",
@@ -258,27 +267,18 @@
       "category": "Programming"
     },
     {
-      "id": "https://www.figma.com/blog/6-easy-ways-to-use-the-figma-agent-right-now/",
-      "title": "6 easy ways to use the Figma agent right now",
-      "url": "https://www.figma.com/blog/6-easy-ways-to-use-the-figma-agent-right-now/",
-      "publishedAt": "2026-11-09T21:46:00.000Z",
-      "sourceId": "figma",
-      "sourceName": "Figma Blog",
-      "category": "Design & Creative"
-    },
-    {
-      "id": "https://developers.googleblog.com/a2ui-10-build-delightful-fast-reliable-agentic-experiences/",
-      "title": "A2UI 1.0: Build delightful, fast, reliable, agentic experiences",
-      "url": "https://developers.googleblog.com/a2ui-10-build-delightful-fast-reliable-agentic-experiences/",
+      "id": "https://developers.googleblog.com/catch-go-bugs-that-fuzzing-misses-with-gemini-and-a-constraint-solver/",
+      "title": "Catch Go bugs that fuzzing misses with Gemini and a constraint solver",
+      "url": "https://developers.googleblog.com/catch-go-bugs-that-fuzzing-misses-with-gemini-and-a-constraint-solver/",
       "publishedAt": null,
       "sourceId": "google-dev",
       "sourceName": "Google Developers",
       "category": "Software Development"
     },
     {
-      "id": "https://www.sebi.gov.in/enforcement/recovery-proceedings/nov-2026/cancellation-of-recovery-certificate-no-9290-of-2026-issued-against-harsha-ishvarbhai-solanki-pan-dcxps3726r-khushbu-arjunbhai-padhiyar-pan-ebfpp6804k-nitaben-babulal-khalas-pan-bzvpk9515p-_105712.html",
-      "title": "Cancellation of Recovery Certificate No. 9290 of 2026 issued against Harsha Ishvarbhai Solanki (PAN: DCXPS3726R), Khushbu Arjunbhai Padhiyar (PAN: EBFPP6804K), Nitaben Babulal Khalas (PAN: BZVPK9515P), Nimeshkumar Balde…",
-      "url": "https://www.sebi.gov.in/enforcement/recovery-proceedings/nov-2026/cancellation-of-recovery-certificate-no-9290-of-2026-issued-against-harsha-ishvarbhai-solanki-pan-dcxps3726r-khushbu-arjunbhai-padhiyar-pan-ebfpp6804k-nitaben-babulal-khalas-pan-bzvpk9515p-_105712.html",
+      "id": "https://www.sebi.gov.in/media-and-notifications/press-releases/nov-2026/niveshak-shivir-to-be-held-on-november-17-2026-at-new-delhi_105731.html",
+      "title": "Niveshak Shivir to be held on November 17, 2026 at New Delhi",
+      "url": "https://www.sebi.gov.in/media-and-notifications/press-releases/nov-2026/niveshak-shivir-to-be-held-on-november-17-2026-at-new-delhi_105731.html",
       "publishedAt": null,
       "sourceId": "sebi",
       "sourceName": "SEBI",
