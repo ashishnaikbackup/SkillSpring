@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-13T09:33:20.861Z",
+  "generatedAt": "2026-11-14T08:59:17.643Z",
   "disclaimer": "Automatically collected publisher headlines with original links. Read the publisher's source for full context. This is not financial, legal or security advice.",
   "sources": [
     {
@@ -43,7 +43,7 @@
       "status": "ok",
       "message": "Feed refreshed",
       "lastStatusChange": "2026-11-01T02:06:00.544Z",
-      "lastContentUpdate": "2026-11-13T09:33:20.861Z",
+      "lastContentUpdate": "2026-11-14T08:59:17.643Z",
       "itemCount": 1
     },
     {
@@ -76,7 +76,7 @@
       "status": "ok",
       "message": "Feed refreshed",
       "lastStatusChange": "2026-11-01T02:06:00.544Z",
-      "lastContentUpdate": "2026-11-13T09:33:20.861Z",
+      "lastContentUpdate": "2026-11-14T08:59:17.643Z",
       "itemCount": 1
     },
     {
@@ -87,7 +87,7 @@
       "status": "ok",
       "message": "Feed refreshed",
       "lastStatusChange": "2026-11-01T02:06:00.544Z",
-      "lastContentUpdate": "2026-11-11T09:27:45.219Z",
+      "lastContentUpdate": "2026-11-14T08:59:17.643Z",
       "itemCount": 1
     },
     {
@@ -98,7 +98,7 @@
       "status": "ok",
       "message": "Feed refreshed",
       "lastStatusChange": "2026-11-01T02:06:00.544Z",
-      "lastContentUpdate": "2026-11-12T09:51:32.519Z",
+      "lastContentUpdate": "2026-11-14T08:59:17.643Z",
       "itemCount": 1
     },
     {
@@ -109,7 +109,7 @@
       "status": "ok",
       "message": "Feed refreshed",
       "lastStatusChange": "2026-11-01T02:06:00.544Z",
-      "lastContentUpdate": "2026-11-13T09:33:20.861Z",
+      "lastContentUpdate": "2026-11-14T08:59:17.643Z",
       "itemCount": 1
     },
     {
@@ -120,7 +120,7 @@
       "status": "ok",
       "message": "Feed refreshed",
       "lastStatusChange": "2026-11-11T09:27:45.219Z",
-      "lastContentUpdate": "2026-11-13T09:33:20.861Z",
+      "lastContentUpdate": "2026-11-14T08:59:17.643Z",
       "itemCount": 1
     },
     {
@@ -131,7 +131,7 @@
       "status": "ok",
       "message": "Feed refreshed",
       "lastStatusChange": "2026-11-06T09:27:04.755Z",
-      "lastContentUpdate": "2026-11-13T09:33:20.861Z",
+      "lastContentUpdate": "2026-11-14T08:59:17.643Z",
       "itemCount": 1
     },
     {
@@ -142,7 +142,7 @@
       "status": "ok",
       "message": "Feed refreshed",
       "lastStatusChange": "2026-11-01T02:06:00.544Z",
-      "lastContentUpdate": "2026-11-13T09:33:20.861Z",
+      "lastContentUpdate": "2026-11-14T08:59:17.643Z",
       "itemCount": 1
     },
     {
@@ -153,19 +153,73 @@
       "status": "ok",
       "message": "Feed refreshed",
       "lastStatusChange": "2026-11-01T02:06:00.544Z",
-      "lastContentUpdate": "2026-11-13T09:33:20.861Z",
+      "lastContentUpdate": "2026-11-14T08:59:17.643Z",
       "itemCount": 1
     }
   ],
   "items": [
     {
-      "id": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63971",
-      "title": "Scheduled Banks’ Statement of Position in India as on October 31, 2026",
-      "url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63971",
-      "publishedAt": "2026-11-13T14:55:00.000Z",
+      "id": "https://www.microsoft.com/microsoft-365/roadmap?id=579917",
+      "title": "Dynamics 365 Project Operations: Enable caching of role prices when pricing estimates",
+      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=579917",
+      "publishedAt": "2026-11-14T00:06:56.000Z",
+      "sourceId": "m365-roadmap",
+      "sourceName": "Microsoft 365 Roadmap",
+      "category": "Office & Productivity"
+    },
+    {
+      "id": "https://www.figma.com/blog/ai-role-in-the-creative-process/",
+      "title": "AI’s role in the creative process",
+      "url": "https://www.figma.com/blog/ai-role-in-the-creative-process/",
+      "publishedAt": "2026-11-13T20:00:00.000Z",
+      "sourceId": "figma",
+      "sourceName": "Figma Blog",
+      "category": "Design & Creative"
+    },
+    {
+      "id": "https://huggingface.co/blog/nvidia/simready-assets-robot-pick-and-place",
+      "title": "Build a Robot Pick-and-Place Simulation with SimReady Assets",
+      "url": "https://huggingface.co/blog/nvidia/simready-assets-robot-pick-and-place",
+      "publishedAt": "2026-11-13T18:00:39.000Z",
+      "sourceId": "huggingface",
+      "sourceName": "Hugging Face Blog",
+      "category": "AI & Data"
+    },
+    {
+      "id": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63976",
+      "title": "Auction of State Government Securities",
+      "url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63976",
+      "publishedAt": "2026-11-13T17:50:00.000Z",
       "sourceId": "rbi",
       "sourceName": "Reserve Bank of India",
       "category": "Finance & India"
+    },
+    {
+      "id": "https://spectrum.ieee.org/video-friday-moon-rover-promise",
+      "title": "Video Friday: NASA PROMISEs a New Moon Rover",
+      "url": "https://spectrum.ieee.org/video-friday-moon-rover-promise",
+      "publishedAt": "2026-11-13T17:30:03.000Z",
+      "sourceId": "ieee-spectrum",
+      "sourceName": "IEEE Spectrum",
+      "category": "Engineering & Electronics"
+    },
+    {
+      "id": "https://openai.com/index/introducing-chatgpt-wallet",
+      "title": "Introducing ChatGPT Wallet",
+      "url": "https://openai.com/index/introducing-chatgpt-wallet",
+      "publishedAt": "2026-11-13T15:00:00.000Z",
+      "sourceId": "openai",
+      "sourceName": "OpenAI News",
+      "category": "AI & Data"
+    },
+    {
+      "id": "https://www.cisa.gov/news-events/alerts/2026/11/13/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+      "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
+      "url": "https://www.cisa.gov/news-events/alerts/2026/11/13/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+      "publishedAt": "2026-11-13T12:00:00.000Z",
+      "sourceId": "cisa",
+      "sourceName": "CISA Advisories",
+      "category": "Cybersecurity"
     },
     {
       "id": "https://github.blog/news-insights/company-news/github-availability-report-october-2026/",
@@ -175,24 +229,6 @@
       "sourceId": "github",
       "sourceName": "GitHub Blog",
       "category": "Software Development"
-    },
-    {
-      "id": "https://openai.com/business/customer-stories/amplitude",
-      "title": "How Amplitude ships product improvements in 1–2 days with OpenAI",
-      "url": "https://openai.com/business/customer-stories/amplitude",
-      "publishedAt": "2026-11-12T20:00:00.000Z",
-      "sourceId": "openai",
-      "sourceName": "OpenAI News",
-      "category": "AI & Data"
-    },
-    {
-      "id": "https://huggingface.co/blog/ibm-granite/llmon-an-llm-native-markup-language-now-in-granite",
-      "title": "LLMON: An LLM-Native Markup Language, now in Granite 4.1 3B and 8B",
-      "url": "https://huggingface.co/blog/ibm-granite/llmon-an-llm-native-markup-language-now-in-granite",
-      "publishedAt": "2026-11-12T19:07:35.000Z",
-      "sourceId": "huggingface",
-      "sourceName": "Hugging Face Blog",
-      "category": "AI & Data"
     },
     {
       "id": "https://deepmind.google/blog/introducing-gemini-4-hydrogen/",
@@ -213,46 +249,10 @@
       "category": "AI & Data"
     },
     {
-      "id": "https://spectrum.ieee.org/undersea-cables-arctic-european-commission",
-      "title": "What Will It Take to Lay Fiber Optic Cables Across the Arctic?",
-      "url": "https://spectrum.ieee.org/undersea-cables-arctic-european-commission",
-      "publishedAt": "2026-11-12T17:06:44.000Z",
-      "sourceId": "ieee-spectrum",
-      "sourceName": "IEEE Spectrum",
-      "category": "Engineering & Electronics"
-    },
-    {
-      "id": "https://www.figma.com/blog/how-3d-transforms-and-figmas-agent-brought-a-launch-video-to-life/",
-      "title": "How 3D transforms and Figma’s agent brought a launch video to life",
-      "url": "https://www.figma.com/blog/how-3d-transforms-and-figmas-agent-brought-a-launch-video-to-life/",
-      "publishedAt": "2026-11-12T14:00:00.000Z",
-      "sourceId": "figma",
-      "sourceName": "Figma Blog",
-      "category": "Design & Creative"
-    },
-    {
-      "id": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-02",
-      "title": "Siemens Desigo, Gridscale",
-      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-02",
-      "publishedAt": "2026-11-12T12:00:00.000Z",
-      "sourceId": "cisa",
-      "sourceName": "CISA Advisories",
-      "category": "Cybersecurity"
-    },
-    {
-      "id": "https://www.microsoft.com/microsoft-365/roadmap?id=579982",
-      "title": "Dynamics 365 Customer Insights - Journeys: Create event experience that match your business structure by supporting leads, contacts, or both​",
-      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=579982",
-      "publishedAt": "2026-11-12T01:35:00.000Z",
-      "sourceId": "m365-roadmap",
-      "sourceName": "Microsoft 365 Roadmap",
-      "category": "Office & Productivity"
-    },
-    {
-      "id": "https://www.microsoft.com/en-us/power-platform/blog/power-apps/whats-new-in-power-platform-october-2026-feature-update/",
-      "title": "What’s new in Power Platform: October/November 2026 feature update",
-      "url": "https://www.microsoft.com/en-us/power-platform/blog/power-apps/whats-new-in-power-platform-october-2026-feature-update/",
-      "publishedAt": "2026-11-10T16:00:37.000Z",
+      "id": "https://www.microsoft.com/en-us/power-platform/blog/2026/11/11/act-faster-hourly-alerts-for-your-critical-flows-apps-and-agents/",
+      "title": "Act faster: hourly alerts for your critical flows, apps, and agents",
+      "url": "https://www.microsoft.com/en-us/power-platform/blog/2026/11/11/act-faster-hourly-alerts-for-your-critical-flows-apps-and-agents/",
+      "publishedAt": "2026-11-11T17:00:00.000Z",
       "sourceId": "power-platform",
       "sourceName": "Microsoft Power Platform",
       "category": "Office & Analytics"
@@ -276,9 +276,9 @@
       "category": "Software Development"
     },
     {
-      "id": "https://www.sebi.gov.in/media-and-notifications/press-releases/nov-2026/niveshak-shivir-to-be-held-on-november-17-2026-at-new-delhi_105731.html",
-      "title": "Niveshak Shivir to be held on November 17, 2026 at New Delhi",
-      "url": "https://www.sebi.gov.in/media-and-notifications/press-releases/nov-2026/niveshak-shivir-to-be-held-on-november-17-2026-at-new-delhi_105731.html",
+      "id": "https://www.sebi.gov.in/enforcement/recovery-proceedings/nov-2026/general-remittance-order-dated-november-13-2026-issued-against-subhalakshmi-m-s-under-rc-no-7712-of-2024-in-the-matter-of-arvind-remedies-ltd-_105772.html",
+      "title": "General Remittance Order dated November 13, 2026 issued against Subhalakshmi M S under RC No. 7712 of 2024 in the matter of Arvind Remedies Ltd.",
+      "url": "https://www.sebi.gov.in/enforcement/recovery-proceedings/nov-2026/general-remittance-order-dated-november-13-2026-issued-against-subhalakshmi-m-s-under-rc-no-7712-of-2024-in-the-matter-of-arvind-remedies-ltd-_105772.html",
       "publishedAt": null,
       "sourceId": "sebi",
       "sourceName": "SEBI",
