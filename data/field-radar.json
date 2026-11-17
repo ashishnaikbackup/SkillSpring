@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-16T09:46:29.138Z",
+  "generatedAt": "2026-11-17T10:44:56.884Z",
   "disclaimer": "Automatically collected publisher headlines with original links. Read the publisher's source for full context. This is not financial, legal or security advice.",
   "sources": [
     {
@@ -10,7 +10,7 @@
       "status": "ok",
       "message": "Feed refreshed",
       "lastStatusChange": "2026-11-01T02:06:00.544Z",
-      "lastContentUpdate": "2026-11-11T09:27:45.219Z",
+      "lastContentUpdate": "2026-11-17T10:44:56.884Z",
       "itemCount": 1
     },
     {
@@ -32,7 +32,7 @@
       "status": "ok",
       "message": "Feed refreshed",
       "lastStatusChange": "2026-11-01T02:06:00.544Z",
-      "lastContentUpdate": "2026-11-13T09:33:20.861Z",
+      "lastContentUpdate": "2026-11-17T10:44:56.884Z",
       "itemCount": 1
     },
     {
@@ -43,7 +43,7 @@
       "status": "ok",
       "message": "Feed refreshed",
       "lastStatusChange": "2026-11-01T02:06:00.544Z",
-      "lastContentUpdate": "2026-11-16T09:46:29.138Z",
+      "lastContentUpdate": "2026-11-17T10:44:56.884Z",
       "itemCount": 1
     },
     {
@@ -54,7 +54,7 @@
       "status": "ok",
       "message": "Feed refreshed",
       "lastStatusChange": "2026-11-01T02:06:00.544Z",
-      "lastContentUpdate": "2026-11-13T09:33:20.861Z",
+      "lastContentUpdate": "2026-11-17T10:44:56.884Z",
       "itemCount": 1
     },
     {
@@ -76,7 +76,7 @@
       "status": "ok",
       "message": "Feed refreshed",
       "lastStatusChange": "2026-11-01T02:06:00.544Z",
-      "lastContentUpdate": "2026-11-14T08:59:17.643Z",
+      "lastContentUpdate": "2026-11-17T10:44:56.884Z",
       "itemCount": 1
     },
     {
@@ -109,7 +109,7 @@
       "status": "ok",
       "message": "Feed refreshed",
       "lastStatusChange": "2026-11-01T02:06:00.544Z",
-      "lastContentUpdate": "2026-11-16T09:46:29.138Z",
+      "lastContentUpdate": "2026-11-17T10:44:56.884Z",
       "itemCount": 1
     },
     {
@@ -142,7 +142,7 @@
       "status": "ok",
       "message": "Feed refreshed",
       "lastStatusChange": "2026-11-01T02:06:00.544Z",
-      "lastContentUpdate": "2026-11-14T08:59:17.643Z",
+      "lastContentUpdate": "2026-11-17T10:44:56.884Z",
       "itemCount": 1
     },
     {
@@ -153,37 +153,73 @@
       "status": "ok",
       "message": "Feed refreshed",
       "lastStatusChange": "2026-11-01T02:06:00.544Z",
-      "lastContentUpdate": "2026-11-16T09:46:29.138Z",
+      "lastContentUpdate": "2026-11-17T10:44:56.884Z",
       "itemCount": 1
     }
   ],
   "items": [
     {
-      "id": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63982",
-      "title": "Result: Conversion/Switch Auction of Government of India Securities",
-      "url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63982",
-      "publishedAt": "2026-11-16T14:55:00.000Z",
+      "id": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63988",
+      "title": "Directions under Section 35A read with Section 56 of the Banking Regulation Act, 1949 – Nagar Sahakari Bank Ltd., Etawah – Extension of Period",
+      "url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63988",
+      "publishedAt": "2026-11-17T15:15:00.000Z",
       "sourceId": "rbi",
       "sourceName": "Reserve Bank of India",
       "category": "Finance & India"
     },
     {
-      "id": "https://openai.com/index/step-toward-defining-the-standard-model",
-      "title": "A step toward defining the Standard Model on a lattice",
-      "url": "https://openai.com/index/step-toward-defining-the-standard-model",
-      "publishedAt": "2026-11-15T22:00:01.000Z",
+      "id": "https://openai.com/index/strengthening-nato-allied-cyber-defences-ai",
+      "title": "Strengthening NATO and allied cyber defenses with AI",
+      "url": "https://openai.com/index/strengthening-nato-allied-cyber-defences-ai",
+      "publishedAt": "2026-11-17T00:00:00.000Z",
       "sourceId": "openai",
       "sourceName": "OpenAI News",
       "category": "AI & Data"
     },
     {
-      "id": "https://spectrum.ieee.org/skydio-f10-lightrunner-asymmetrical-drone",
-      "title": "Why Skydio Built a Lopsided Drone",
-      "url": "https://spectrum.ieee.org/skydio-f10-lightrunner-asymmetrical-drone",
-      "publishedAt": "2026-11-15T14:00:02.000Z",
+      "id": "https://www.figma.com/blog/1password-figma-make/",
+      "title": "How 1Password uses Figma Make to design for trust and certainty",
+      "url": "https://www.figma.com/blog/1password-figma-make/",
+      "publishedAt": "2026-11-16T18:03:00.000Z",
+      "sourceId": "figma",
+      "sourceName": "Figma Blog",
+      "category": "Design & Creative"
+    },
+    {
+      "id": "https://spectrum.ieee.org/typesafe-ai-hallucination-decision-models",
+      "title": "AI Companies Develop Decision Models to Avoid Hallucinations",
+      "url": "https://spectrum.ieee.org/typesafe-ai-hallucination-decision-models",
+      "publishedAt": "2026-11-16T17:00:54.000Z",
       "sourceId": "ieee-spectrum",
       "sourceName": "IEEE Spectrum",
       "category": "Engineering & Electronics"
+    },
+    {
+      "id": "https://blog.google/products-and-platforms/products/maps/ask-maps-holiday-travel-features-2026/",
+      "title": "New Ask Maps features to help with holiday travel and prep",
+      "url": "https://blog.google/products-and-platforms/products/maps/ask-maps-holiday-travel-features-2026/",
+      "publishedAt": "2026-11-16T14:00:00.000Z",
+      "sourceId": "google-ai",
+      "sourceName": "Google AI",
+      "category": "AI & Data"
+    },
+    {
+      "id": "https://blog.python.org/2026/11/transifex-sponsors-python-docs/",
+      "title": "XTM Transifex sponsors Python’s documentation translations",
+      "url": "https://blog.python.org/2026/11/transifex-sponsors-python-docs/",
+      "publishedAt": "2026-11-16T00:00:00.000Z",
+      "sourceId": "python",
+      "sourceName": "Python Insider",
+      "category": "Programming"
+    },
+    {
+      "id": "https://huggingface.co/blog/openrouter",
+      "title": "Hugging Face and OpenRouter join forces to make open-weight models easy to run",
+      "url": "https://huggingface.co/blog/openrouter",
+      "publishedAt": "2026-11-16T00:00:00.000Z",
+      "sourceId": "huggingface",
+      "sourceName": "Hugging Face Blog",
+      "category": "AI & Data"
     },
     {
       "id": "https://www.microsoft.com/microsoft-365/roadmap?id=579917",
@@ -193,24 +229,6 @@
       "sourceId": "m365-roadmap",
       "sourceName": "Microsoft 365 Roadmap",
       "category": "Office & Productivity"
-    },
-    {
-      "id": "https://www.figma.com/blog/ai-role-in-the-creative-process/",
-      "title": "AI’s role in the creative process",
-      "url": "https://www.figma.com/blog/ai-role-in-the-creative-process/",
-      "publishedAt": "2026-11-13T20:00:00.000Z",
-      "sourceId": "figma",
-      "sourceName": "Figma Blog",
-      "category": "Design & Creative"
-    },
-    {
-      "id": "https://huggingface.co/blog/nvidia/simready-assets-robot-pick-and-place",
-      "title": "Build a Robot Pick-and-Place Simulation with SimReady Assets",
-      "url": "https://huggingface.co/blog/nvidia/simready-assets-robot-pick-and-place",
-      "publishedAt": "2026-11-13T18:00:39.000Z",
-      "sourceId": "huggingface",
-      "sourceName": "Hugging Face Blog",
-      "category": "AI & Data"
     },
     {
       "id": "https://www.cisa.gov/news-events/alerts/2026/11/13/cisa-adds-two-known-exploited-vulnerabilities-catalog",
@@ -240,15 +258,6 @@
       "category": "AI & Data"
     },
     {
-      "id": "https://blog.google/products-and-platforms/products/search/gemini-4-hydrogen-search-upgrade/",
-      "title": "Google Search gets a major upgrade with Gemini 4 Hydrogen",
-      "url": "https://blog.google/products-and-platforms/products/search/gemini-4-hydrogen-search-upgrade/",
-      "publishedAt": "2026-11-12T18:00:00.000Z",
-      "sourceId": "google-ai",
-      "sourceName": "Google AI",
-      "category": "AI & Data"
-    },
-    {
       "id": "https://www.microsoft.com/en-us/power-platform/blog/2026/11/11/act-faster-hourly-alerts-for-your-critical-flows-apps-and-agents/",
       "title": "Act faster: hourly alerts for your critical flows, apps, and agents",
       "url": "https://www.microsoft.com/en-us/power-platform/blog/2026/11/11/act-faster-hourly-alerts-for-your-critical-flows-apps-and-agents/",
@@ -258,18 +267,9 @@
       "category": "Office & Analytics"
     },
     {
-      "id": "https://blog.python.org/2026/11/python-3160-alpha-2-is-now-available/",
-      "title": "Python 3.16.0 alpha 2 is now available",
-      "url": "https://blog.python.org/2026/11/python-3160-alpha-2-is-now-available/",
-      "publishedAt": "2026-11-10T00:00:00.000Z",
-      "sourceId": "python",
-      "sourceName": "Python Insider",
-      "category": "Programming"
-    },
-    {
-      "id": "https://developers.googleblog.com/catch-go-bugs-that-fuzzing-misses-with-gemini-and-a-constraint-solver/",
-      "title": "Catch Go bugs that fuzzing misses with Gemini and a constraint solver",
-      "url": "https://developers.googleblog.com/catch-go-bugs-that-fuzzing-misses-with-gemini-and-a-constraint-solver/",
+      "id": "https://developers.googleblog.com/unlocking-stable-on-policy-rl-on-tpu-with-bitwise-zero-traininference-mismatch/",
+      "title": "Unlocking Stable On-Policy RL on TPU with Bitwise-Zero Train–Inference Mismatch",
+      "url": "https://developers.googleblog.com/unlocking-stable-on-policy-rl-on-tpu-with-bitwise-zero-traininference-mismatch/",
       "publishedAt": null,
       "sourceId": "google-dev",
       "sourceName": "Google Developers",
