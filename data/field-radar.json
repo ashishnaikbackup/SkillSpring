@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-18T10:12:16.794Z",
+  "generatedAt": "2026-11-19T10:23:04.134Z",
   "disclaimer": "Automatically collected publisher headlines with original links. Read the publisher's source for full context. This is not financial, legal or security advice.",
   "sources": [
     {
@@ -43,7 +43,7 @@
       "status": "ok",
       "message": "Feed refreshed",
       "lastStatusChange": "2026-11-01T02:06:00.544Z",
-      "lastContentUpdate": "2026-11-18T10:12:16.794Z",
+      "lastContentUpdate": "2026-11-19T10:23:04.134Z",
       "itemCount": 1
     },
     {
@@ -54,7 +54,7 @@
       "status": "ok",
       "message": "Feed refreshed",
       "lastStatusChange": "2026-11-01T02:06:00.544Z",
-      "lastContentUpdate": "2026-11-18T10:12:16.794Z",
+      "lastContentUpdate": "2026-11-19T10:23:04.134Z",
       "itemCount": 1
     },
     {
@@ -65,7 +65,7 @@
       "status": "ok",
       "message": "Feed refreshed",
       "lastStatusChange": "2026-11-01T02:06:00.544Z",
-      "lastContentUpdate": "2026-11-13T09:33:20.861Z",
+      "lastContentUpdate": "2026-11-19T10:23:04.134Z",
       "itemCount": 1
     },
     {
@@ -76,7 +76,7 @@
       "status": "ok",
       "message": "Feed refreshed",
       "lastStatusChange": "2026-11-01T02:06:00.544Z",
-      "lastContentUpdate": "2026-11-17T10:44:56.884Z",
+      "lastContentUpdate": "2026-11-19T10:23:04.134Z",
       "itemCount": 1
     },
     {
@@ -98,7 +98,7 @@
       "status": "ok",
       "message": "Feed refreshed",
       "lastStatusChange": "2026-11-01T02:06:00.544Z",
-      "lastContentUpdate": "2026-11-18T10:12:16.794Z",
+      "lastContentUpdate": "2026-11-19T10:23:04.134Z",
       "itemCount": 1
     },
     {
@@ -109,7 +109,7 @@
       "status": "ok",
       "message": "Feed refreshed",
       "lastStatusChange": "2026-11-01T02:06:00.544Z",
-      "lastContentUpdate": "2026-11-18T10:12:16.794Z",
+      "lastContentUpdate": "2026-11-19T10:23:04.134Z",
       "itemCount": 1
     },
     {
@@ -131,7 +131,7 @@
       "status": "ok",
       "message": "Feed refreshed",
       "lastStatusChange": "2026-11-06T09:27:04.755Z",
-      "lastContentUpdate": "2026-11-18T10:12:16.794Z",
+      "lastContentUpdate": "2026-11-19T10:23:04.134Z",
       "itemCount": 1
     },
     {
@@ -142,7 +142,7 @@
       "status": "ok",
       "message": "Feed refreshed",
       "lastStatusChange": "2026-11-01T02:06:00.544Z",
-      "lastContentUpdate": "2026-11-17T10:44:56.884Z",
+      "lastContentUpdate": "2026-11-19T10:23:04.134Z",
       "itemCount": 1
     },
     {
@@ -153,34 +153,88 @@
       "status": "ok",
       "message": "Feed refreshed",
       "lastStatusChange": "2026-11-01T02:06:00.544Z",
-      "lastContentUpdate": "2026-11-18T10:12:16.794Z",
+      "lastContentUpdate": "2026-11-19T10:23:04.134Z",
       "itemCount": 1
     }
   ],
   "items": [
     {
-      "id": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63995",
-      "title": "Treasury Bills: Full Auction Result",
-      "url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63995",
-      "publishedAt": "2026-11-18T14:40:00.000Z",
+      "id": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=64000",
+      "title": "Result of the Overnight Variable Rate Reverse Repo (VRRR) auction held on November 19, 2026",
+      "url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=64000",
+      "publishedAt": "2026-11-19T11:25:00.000Z",
       "sourceId": "rbi",
       "sourceName": "Reserve Bank of India",
       "category": "Finance & India"
     },
     {
-      "id": "https://www.microsoft.com/microsoft-365/roadmap?id=577850",
-      "title": "Dynamics 365 Commerce: Unified pricing management - manage procurement charges with attribute-based pricing",
-      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=577850",
-      "publishedAt": "2026-11-18T00:49:47.000Z",
+      "id": "https://www.microsoft.com/microsoft-365/roadmap?id=581739",
+      "title": "Microsoft Purview: Information Protection-Sensitivity label inheritance for Teams meeting artifacts",
+      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=581739",
+      "publishedAt": "2026-11-19T00:35:27.000Z",
       "sourceId": "m365-roadmap",
       "sourceName": "Microsoft 365 Roadmap",
       "category": "Office & Productivity"
     },
     {
-      "id": "https://openai.com/index/le-groupe-figaro-and-openai-announce-partnership",
-      "title": "Le Groupe Figaro and OpenAI partner to bring Le Figaro journalism to ChatGPT",
-      "url": "https://openai.com/index/le-groupe-figaro-and-openai-announce-partnership",
-      "publishedAt": "2026-11-18T00:00:00.000Z",
+      "id": "https://deepmind.google/blog/introducing-gemini-4-neon/",
+      "title": "Introducing Gemini 4 Neon",
+      "url": "https://deepmind.google/blog/introducing-gemini-4-neon/",
+      "publishedAt": "2026-11-18T21:35:43.000Z",
+      "sourceId": "deepmind",
+      "sourceName": "Google DeepMind",
+      "category": "AI & Data"
+    },
+    {
+      "id": "https://huggingface.co/blog/RadixArk/daisyrose-27b-pushing-the-frontier-of-post-trainin",
+      "title": "DaisyRose-27B: Pushing the Frontier of Post-Training Efficiency",
+      "url": "https://huggingface.co/blog/RadixArk/daisyrose-27b-pushing-the-frontier-of-post-trainin",
+      "publishedAt": "2026-11-18T19:54:56.000Z",
+      "sourceId": "huggingface",
+      "sourceName": "Hugging Face Blog",
+      "category": "AI & Data"
+    },
+    {
+      "id": "https://www.figma.com/blog/source-material-chase-rutherford/",
+      "title": "Source material: Creative Director Chase Rutherford on what makes something iconic",
+      "url": "https://www.figma.com/blog/source-material-chase-rutherford/",
+      "publishedAt": "2026-11-18T19:43:00.000Z",
+      "sourceId": "figma",
+      "sourceName": "Figma Blog",
+      "category": "Design & Creative"
+    },
+    {
+      "id": "https://spectrum.ieee.org/personal-branding-for-engineers",
+      "title": "Build a Personal Brand to Help Employers Find You",
+      "url": "https://spectrum.ieee.org/personal-branding-for-engineers",
+      "publishedAt": "2026-11-18T17:33:26.000Z",
+      "sourceId": "ieee-spectrum",
+      "sourceName": "IEEE Spectrum",
+      "category": "Engineering & Electronics"
+    },
+    {
+      "id": "https://blog.google/innovation-and-ai/products/gemini-app/gemini-lower-memory-devices/",
+      "title": "The Gemini app is now available on lower-memory Android devices.",
+      "url": "https://blog.google/innovation-and-ai/products/gemini-app/gemini-lower-memory-devices/",
+      "publishedAt": "2026-11-18T17:00:00.000Z",
+      "sourceId": "google-ai",
+      "sourceName": "Google AI",
+      "category": "AI & Data"
+    },
+    {
+      "id": "https://www.cisa.gov/news-events/alerts/2026/11/18/cisa-adds-four-known-exploited-vulnerabilities-catalog",
+      "title": "CISA Adds Four Known Exploited Vulnerabilities to Catalog",
+      "url": "https://www.cisa.gov/news-events/alerts/2026/11/18/cisa-adds-four-known-exploited-vulnerabilities-catalog",
+      "publishedAt": "2026-11-18T12:00:00.000Z",
+      "sourceId": "cisa",
+      "sourceName": "CISA Advisories",
+      "category": "Cybersecurity"
+    },
+    {
+      "id": "https://openai.com/index/the-silent-consensus",
+      "title": "The Silent Consensus",
+      "url": "https://openai.com/index/the-silent-consensus",
+      "publishedAt": "2026-11-18T10:00:00.000Z",
       "sourceId": "openai",
       "sourceName": "OpenAI News",
       "category": "AI & Data"
@@ -195,42 +249,6 @@
       "category": "Software Development"
     },
     {
-      "id": "https://spectrum.ieee.org/40-hz-therapy-alzheimers",
-      "title": "Can Flashing Lights Slow Alzheimer’s? Only if You Start Early",
-      "url": "https://spectrum.ieee.org/40-hz-therapy-alzheimers",
-      "publishedAt": "2026-11-17T17:00:04.000Z",
-      "sourceId": "ieee-spectrum",
-      "sourceName": "IEEE Spectrum",
-      "category": "Engineering & Electronics"
-    },
-    {
-      "id": "https://blog.google/innovation-and-ai/products/gemini-app/tasks-in-gemini-free-new-features/",
-      "title": "Put Gemini to work for you",
-      "url": "https://blog.google/innovation-and-ai/products/gemini-app/tasks-in-gemini-free-new-features/",
-      "publishedAt": "2026-11-17T17:00:00.000Z",
-      "sourceId": "google-ai",
-      "sourceName": "Google AI",
-      "category": "AI & Data"
-    },
-    {
-      "id": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-06",
-      "title": "Siemens ROS#",
-      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-06",
-      "publishedAt": "2026-11-17T12:00:00.000Z",
-      "sourceId": "cisa",
-      "sourceName": "CISA Advisories",
-      "category": "Cybersecurity"
-    },
-    {
-      "id": "https://www.figma.com/blog/1password-figma-make/",
-      "title": "How 1Password uses Figma Make to design for trust and certainty",
-      "url": "https://www.figma.com/blog/1password-figma-make/",
-      "publishedAt": "2026-11-16T18:03:00.000Z",
-      "sourceId": "figma",
-      "sourceName": "Figma Blog",
-      "category": "Design & Creative"
-    },
-    {
       "id": "https://blog.python.org/2026/11/transifex-sponsors-python-docs/",
       "title": "XTM Transifex sponsors Python’s documentation translations",
       "url": "https://blog.python.org/2026/11/transifex-sponsors-python-docs/",
@@ -238,24 +256,6 @@
       "sourceId": "python",
       "sourceName": "Python Insider",
       "category": "Programming"
-    },
-    {
-      "id": "https://huggingface.co/blog/openrouter",
-      "title": "Hugging Face and OpenRouter join forces to make open-weight models easy to run",
-      "url": "https://huggingface.co/blog/openrouter",
-      "publishedAt": "2026-11-16T00:00:00.000Z",
-      "sourceId": "huggingface",
-      "sourceName": "Hugging Face Blog",
-      "category": "AI & Data"
-    },
-    {
-      "id": "https://deepmind.google/blog/introducing-gemini-4-hydrogen/",
-      "title": "Introducing Gemini 4 Hydrogen",
-      "url": "https://deepmind.google/blog/introducing-gemini-4-hydrogen/",
-      "publishedAt": "2026-11-12T18:00:50.000Z",
-      "sourceId": "deepmind",
-      "sourceName": "Google DeepMind",
-      "category": "AI & Data"
     },
     {
       "id": "https://www.microsoft.com/en-us/power-platform/blog/2026/11/11/act-faster-hourly-alerts-for-your-critical-flows-apps-and-agents/",
