@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-19T10:23:04.134Z",
+  "generatedAt": "2026-11-20T10:03:04.503Z",
   "disclaimer": "Automatically collected publisher headlines with original links. Read the publisher's source for full context. This is not financial, legal or security advice.",
   "sources": [
     {
@@ -21,7 +21,7 @@
       "status": "ok",
       "message": "Feed refreshed",
       "lastStatusChange": "2026-11-01T02:06:00.544Z",
-      "lastContentUpdate": "2026-11-18T10:12:16.794Z",
+      "lastContentUpdate": "2026-11-20T10:03:04.503Z",
       "itemCount": 1
     },
     {
@@ -32,7 +32,7 @@
       "status": "ok",
       "message": "Feed refreshed",
       "lastStatusChange": "2026-11-01T02:06:00.544Z",
-      "lastContentUpdate": "2026-11-18T10:12:16.794Z",
+      "lastContentUpdate": "2026-11-20T10:03:04.503Z",
       "itemCount": 1
     },
     {
@@ -43,7 +43,7 @@
       "status": "ok",
       "message": "Feed refreshed",
       "lastStatusChange": "2026-11-01T02:06:00.544Z",
-      "lastContentUpdate": "2026-11-19T10:23:04.134Z",
+      "lastContentUpdate": "2026-11-20T10:03:04.503Z",
       "itemCount": 1
     },
     {
@@ -54,7 +54,7 @@
       "status": "ok",
       "message": "Feed refreshed",
       "lastStatusChange": "2026-11-01T02:06:00.544Z",
-      "lastContentUpdate": "2026-11-19T10:23:04.134Z",
+      "lastContentUpdate": "2026-11-20T10:03:04.503Z",
       "itemCount": 1
     },
     {
@@ -87,7 +87,7 @@
       "status": "ok",
       "message": "Feed refreshed",
       "lastStatusChange": "2026-11-01T02:06:00.544Z",
-      "lastContentUpdate": "2026-11-14T08:59:17.643Z",
+      "lastContentUpdate": "2026-11-20T10:03:04.503Z",
       "itemCount": 1
     },
     {
@@ -98,7 +98,7 @@
       "status": "ok",
       "message": "Feed refreshed",
       "lastStatusChange": "2026-11-01T02:06:00.544Z",
-      "lastContentUpdate": "2026-11-19T10:23:04.134Z",
+      "lastContentUpdate": "2026-11-20T10:03:04.503Z",
       "itemCount": 1
     },
     {
@@ -109,7 +109,7 @@
       "status": "ok",
       "message": "Feed refreshed",
       "lastStatusChange": "2026-11-01T02:06:00.544Z",
-      "lastContentUpdate": "2026-11-19T10:23:04.134Z",
+      "lastContentUpdate": "2026-11-20T10:03:04.503Z",
       "itemCount": 1
     },
     {
@@ -120,8 +120,8 @@
       "status": "ok",
       "message": "Feed refreshed",
       "lastStatusChange": "2026-11-11T09:27:45.219Z",
-      "lastContentUpdate": "2026-11-15T09:28:23.678Z",
-      "itemCount": 0
+      "lastContentUpdate": "2026-11-20T10:03:04.503Z",
+      "itemCount": 1
     },
     {
       "id": "cisa",
@@ -131,7 +131,7 @@
       "status": "ok",
       "message": "Feed refreshed",
       "lastStatusChange": "2026-11-06T09:27:04.755Z",
-      "lastContentUpdate": "2026-11-19T10:23:04.134Z",
+      "lastContentUpdate": "2026-11-20T10:03:04.503Z",
       "itemCount": 1
     },
     {
@@ -153,28 +153,73 @@
       "status": "ok",
       "message": "Feed refreshed",
       "lastStatusChange": "2026-11-01T02:06:00.544Z",
-      "lastContentUpdate": "2026-11-19T10:23:04.134Z",
+      "lastContentUpdate": "2026-11-20T10:03:04.503Z",
       "itemCount": 1
     }
   ],
   "items": [
     {
-      "id": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=64000",
-      "title": "Result of the Overnight Variable Rate Reverse Repo (VRRR) auction held on November 19, 2026",
-      "url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=64000",
-      "publishedAt": "2026-11-19T11:25:00.000Z",
+      "id": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=64011",
+      "title": "Government Stock - Auction Results: Cut-off",
+      "url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=64011",
+      "publishedAt": "2026-11-20T14:00:00.000Z",
       "sourceId": "rbi",
       "sourceName": "Reserve Bank of India",
       "category": "Finance & India"
     },
     {
-      "id": "https://www.microsoft.com/microsoft-365/roadmap?id=581739",
-      "title": "Microsoft Purview: Information Protection-Sensitivity label inheritance for Teams meeting artifacts",
-      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=581739",
-      "publishedAt": "2026-11-19T00:35:27.000Z",
+      "id": "https://www.microsoft.com/microsoft-365/roadmap?id=579890",
+      "title": "Microsoft Teams: Pick up where you left off in channels on desktop",
+      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=579890",
+      "publishedAt": "2026-11-20T01:24:53.000Z",
       "sourceId": "m365-roadmap",
       "sourceName": "Microsoft 365 Roadmap",
       "category": "Office & Productivity"
+    },
+    {
+      "id": "https://spectrum.ieee.org/it-outage",
+      "title": "Systems and Software Outages Explained: Who or What Is Responsible?",
+      "url": "https://spectrum.ieee.org/it-outage",
+      "publishedAt": "2026-11-19T21:12:48.000Z",
+      "sourceId": "ieee-spectrum",
+      "sourceName": "IEEE Spectrum",
+      "category": "Engineering & Electronics"
+    },
+    {
+      "id": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/",
+      "title": "Introducing Tool Retrieval in the Gemini API",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/",
+      "publishedAt": "2026-11-19T18:00:00.000Z",
+      "sourceId": "google-ai",
+      "sourceName": "Google AI",
+      "category": "AI & Data"
+    },
+    {
+      "id": "https://github.blog/open-source/maintainers/the-best-things-in-open-source-are-built-together/",
+      "title": "The best things in open source are built together",
+      "url": "https://github.blog/open-source/maintainers/the-best-things-in-open-source-are-built-together/",
+      "publishedAt": "2026-11-19T16:00:00.000Z",
+      "sourceId": "github",
+      "sourceName": "GitHub Blog",
+      "category": "Software Development"
+    },
+    {
+      "id": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-323-02",
+      "title": "Elecbrakes EB2, VM1, ELBC2000",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-323-02",
+      "publishedAt": "2026-11-19T12:00:00.000Z",
+      "sourceId": "cisa",
+      "sourceName": "CISA Advisories",
+      "category": "Cybersecurity"
+    },
+    {
+      "id": "https://openai.com/index/how-openai-performance-factory-keeps-chatgpt-fast",
+      "title": "How OpenAI’s Performance Factory keeps ChatGPT fast",
+      "url": "https://openai.com/index/how-openai-performance-factory-keeps-chatgpt-fast",
+      "publishedAt": "2026-11-19T08:00:00.000Z",
+      "sourceId": "openai",
+      "sourceName": "OpenAI News",
+      "category": "AI & Data"
     },
     {
       "id": "https://deepmind.google/blog/introducing-gemini-4-neon/",
@@ -204,49 +249,13 @@
       "category": "Design & Creative"
     },
     {
-      "id": "https://spectrum.ieee.org/personal-branding-for-engineers",
-      "title": "Build a Personal Brand to Help Employers Find You",
-      "url": "https://spectrum.ieee.org/personal-branding-for-engineers",
-      "publishedAt": "2026-11-18T17:33:26.000Z",
-      "sourceId": "ieee-spectrum",
-      "sourceName": "IEEE Spectrum",
-      "category": "Engineering & Electronics"
-    },
-    {
-      "id": "https://blog.google/innovation-and-ai/products/gemini-app/gemini-lower-memory-devices/",
-      "title": "The Gemini app is now available on lower-memory Android devices.",
-      "url": "https://blog.google/innovation-and-ai/products/gemini-app/gemini-lower-memory-devices/",
-      "publishedAt": "2026-11-18T17:00:00.000Z",
-      "sourceId": "google-ai",
-      "sourceName": "Google AI",
-      "category": "AI & Data"
-    },
-    {
-      "id": "https://www.cisa.gov/news-events/alerts/2026/11/18/cisa-adds-four-known-exploited-vulnerabilities-catalog",
-      "title": "CISA Adds Four Known Exploited Vulnerabilities to Catalog",
-      "url": "https://www.cisa.gov/news-events/alerts/2026/11/18/cisa-adds-four-known-exploited-vulnerabilities-catalog",
-      "publishedAt": "2026-11-18T12:00:00.000Z",
-      "sourceId": "cisa",
-      "sourceName": "CISA Advisories",
-      "category": "Cybersecurity"
-    },
-    {
-      "id": "https://openai.com/index/the-silent-consensus",
-      "title": "The Silent Consensus",
-      "url": "https://openai.com/index/the-silent-consensus",
-      "publishedAt": "2026-11-18T10:00:00.000Z",
-      "sourceId": "openai",
-      "sourceName": "OpenAI News",
-      "category": "AI & Data"
-    },
-    {
-      "id": "https://github.blog/open-source/maintainers/maintainers-dont-need-more-ai-bug-reports-they-need-fixes/",
-      "title": "Maintainers don’t need more AI bug reports. They need fixes.",
-      "url": "https://github.blog/open-source/maintainers/maintainers-dont-need-more-ai-bug-reports-they-need-fixes/",
-      "publishedAt": "2026-11-17T18:29:29.000Z",
-      "sourceId": "github",
-      "sourceName": "GitHub Blog",
-      "category": "Software Development"
+      "id": "https://www.microsoft.com/en-us/power-platform/blog/2026/11/18/turn-ai-ambition-into-real-business-value-with-power-platform/",
+      "title": "Turn AI ambition into real business value with Power Platform",
+      "url": "https://www.microsoft.com/en-us/power-platform/blog/2026/11/18/turn-ai-ambition-into-real-business-value-with-power-platform/",
+      "publishedAt": "2026-11-18T19:00:00.000Z",
+      "sourceId": "power-platform",
+      "sourceName": "Microsoft Power Platform",
+      "category": "Office & Analytics"
     },
     {
       "id": "https://blog.python.org/2026/11/transifex-sponsors-python-docs/",
@@ -258,22 +267,22 @@
       "category": "Programming"
     },
     {
-      "id": "https://www.microsoft.com/en-us/power-platform/blog/2026/11/11/act-faster-hourly-alerts-for-your-critical-flows-apps-and-agents/",
-      "title": "Act faster: hourly alerts for your critical flows, apps, and agents",
-      "url": "https://www.microsoft.com/en-us/power-platform/blog/2026/11/11/act-faster-hourly-alerts-for-your-critical-flows-apps-and-agents/",
-      "publishedAt": "2026-11-11T17:00:00.000Z",
-      "sourceId": "power-platform",
-      "sourceName": "Microsoft Power Platform",
-      "category": "Office & Analytics"
-    },
-    {
-      "id": "https://developers.googleblog.com/accelerating-development-for-massive-git-repositories/",
-      "title": "Accelerating development for massive Git repositories",
-      "url": "https://developers.googleblog.com/accelerating-development-for-massive-git-repositories/",
+      "id": "https://developers.googleblog.com/multi-turn-agentic-reinforcement-learning-with-tunix-and-gemma-4-on-google-tpus/",
+      "title": "Multi-Turn Agentic Reinforcement Learning with Tunix and Gemma 4 on Google TPUs",
+      "url": "https://developers.googleblog.com/multi-turn-agentic-reinforcement-learning-with-tunix-and-gemma-4-on-google-tpus/",
       "publishedAt": null,
       "sourceId": "google-dev",
       "sourceName": "Google Developers",
       "category": "Software Development"
+    },
+    {
+      "id": "https://www.sebi.gov.in/enforcement/orders/nov-2026/adjudication-order-in-the-matter-of-intelligent-money-managers-private-limited_105852.html",
+      "title": "Adjudication Order in the matter of Intelligent Money Managers Private Limited",
+      "url": "https://www.sebi.gov.in/enforcement/orders/nov-2026/adjudication-order-in-the-matter-of-intelligent-money-managers-private-limited_105852.html",
+      "publishedAt": null,
+      "sourceId": "sebi",
+      "sourceName": "SEBI",
+      "category": "Finance & India"
     }
   ]
 }
