@@ -1,6 +1,6 @@
 # Review packet: Creative Media, Design & Communication Foundations
 
-- Course key: `creative`  ·  Lessons: 6  ·  Review interval: 180 days
+- Course key: `creative`  ·  Lessons: 7  ·  Review interval: 180 days
 - Current status: `initial-review-required`  ·  Last reviewed: never
 - Content files: `essential-courses.js`
 - Official sources to check against:
@@ -131,7 +131,34 @@ A factual explainer separates what is confirmed, what is alleged and what remain
 
 **Findings:** _none yet_
 
-### 6. Portfolio, licensing and professional delivery
+### 6. Accessible and inclusive creative work
+
+**Concept.** Creative work should be usable by as many people as possible. Check colour contrast between text and background, avoid using colour alone to carry meaning, and use readable type sizes. Add alt text to meaningful images, captions or transcripts to video and audio, and keep a logical reading order in documents and slides. Plain language and clear structure help everyone. Test with real users where possible, and include accessibility notes in your portfolio because employers value it.
+
+**Example**
+
+```
+Accessibility checklist for a poster or slide
+  [ ] Text contrast is clear in a greyscale preview
+  [ ] Key information is not shown by colour alone
+  [ ] Text is large enough to read from the expected distance
+  [ ] Images have meaningful alt text in the digital version
+  [ ] Video has captions; audio has a transcript
+  [ ] Reading order follows the visual order
+```
+
+**Explanation / note.** Captions improve access and also help in noisy places or when sound is off.
+
+**Task.** Take one of your own designs and audit it with the checklist. Fix three problems and record before and after screenshots with one sentence explaining each change.
+
+**Quiz.** Why add captions to a video?
+- Correct: They help people who are deaf or hard of hearing and anyone watching without sound
+- Wrong: They make the video file smaller
+- Wrong: They replace the need to record audio
+
+**Findings:** _none yet_
+
+### 7. Portfolio, licensing and professional delivery
 
 **Concept.** A creative portfolio shows the brief, role, process, iterations, final work and reflection. Respect copyright, licences, releases, privacy and platform rules. Export accessible formats and retain editable source files.
 

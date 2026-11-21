@@ -1,6 +1,6 @@
 # Review packet: Microsoft Power Automate: Workflow Automation Foundations
 
-- Course key: `powerautomate`  ·  Lessons: 6  ·  Review interval: 30 days
+- Course key: `powerautomate`  ·  Lessons: 7  ·  Review interval: 30 days
 - Current status: `initial-review-required`  ·  Last reviewed: never
 - Content files: `essential-courses.js`
 - Official sources to check against:
@@ -120,7 +120,32 @@ Simulate a failed action and document how to diagnose it. Add a failure notifica
 
 **Findings:** _none yet_
 
-### 6. Professional automation capstone
+### 6. Expressions, dynamic content & testing
+
+**Concept.** Flows pass data between steps as dynamic content, such as the sender or a file name from a trigger. Expressions transform that data: formatDateTime changes a date format, concat joins text, coalesce supplies a fallback when a value is empty and if chooses between two values. Avoid hard-coded values that will change. Test with sample data, including empty and unexpected values, and read the run history, which shows each step's inputs, outputs and any error. Keep flow names and step names meaningful so a colleague can maintain them.
+
+**Example**
+
+```
+Examples of expressions (fictional flow):
+  formatDateTime(utcNow(), 'yyyy-MM-dd')
+  concat('Invoice-', triggerOutputs()?['body/id'])
+  coalesce(triggerOutputs()?['body/subject'], 'No subject')
+  if(equals(variables('amount'), 0), 'Review', 'Approved')
+```
+
+**Explanation / note.** Run history is the first place to look because it shows exactly which step failed and why.
+
+**Task.** Build a practice flow that triggers manually, creates a text value with today's date and a fallback for an empty field, and sends a notification. Run it with normal and empty input and use the run history to confirm each step.
+
+**Quiz.** Where can you see why a particular flow run failed?
+- Correct: In the flow's run history, which shows each step's inputs, outputs and errors
+- Wrong: Only in your email inbox
+- Wrong: In the Windows Start menu
+
+**Findings:** _none yet_
+
+### 7. Professional automation capstone
 
 **Concept.** Choose a repeatable low-risk workflow, document current effort, design triggers and actions, test edge cases, assign an owner and define a manual fallback.
 
