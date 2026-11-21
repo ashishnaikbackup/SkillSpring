@@ -1,6 +1,6 @@
 # Review packet: Java: Programming & Object-Oriented Foundations
 
-- Course key: `java`  ·  Lessons: 7  ·  Review interval: 90 days
+- Course key: `java`  ·  Lessons: 9  ·  Review interval: 90 days
 - Current status: `initial-review-required`  ·  Last reviewed: never
 - Content files: `course-engine.js`
 - Official sources to check against:
@@ -203,7 +203,85 @@ class PriceCalculatorTest {
 
 **Findings:** _none yet_
 
-### 7. Exceptions, files & project
+### 7. Generics, collections & streams
+
+**Concept.** Generics let a collection state the type of its elements, so the compiler rejects the wrong type before the program runs. The main collections are List for ordered items, Set for unique items and Map for key and value pairs. Streams describe a pipeline over a collection: filter keeps matching items, map transforms each item, sorted orders them and collect gathers the result. Streams make intent clear for transformations, but a plain loop is still better when the logic is complex or needs to change state. Avoid modifying a collection while looping over it.
+
+**Example**
+
+```
+import java.util.*;
+import java.util.stream.*;
+
+public class Main {
+    public static void main(String[] args) {
+        List<String> names = List.of("Asha", "Ravi", "Anika", "Dev");
+        List<String> aNames = names.stream()
+            .filter(n -> n.startsWith("A"))
+            .map(String::toUpperCase)
+            .sorted()
+            .collect(Collectors.toList());
+        System.out.println(aNames);
+
+        Map<Integer, Long> byLength = names.stream()
+            .collect(Collectors.groupingBy(String::length, Collectors.counting()));
+        System.out.println(byLength);
+    }
+}
+```
+
+**Explanation / note.** The first pipeline keeps names starting with A, converts them to upper case and sorts them, printing [ANIKA, ASHA]. The second groups names by length and counts each group, printing {3=1, 4=2, 5=1}.
+
+**Task.** Create a list of ten fictional student records. Use a stream to find students above a mark threshold, sort them by name and count how many fall in each grade band. Then rewrite one pipeline as a loop and compare readability.
+
+**Quiz.** What does the filter step in a stream pipeline do?
+- Correct: Keeps only the items that match a condition
+- Wrong: Sorts the items alphabetically
+- Wrong: Removes the collection from memory
+
+**Findings:** _none yet_
+
+### 8. Records, enums & clear modelling
+
+**Concept.** A record is a short way to declare an immutable data carrier: the compiler creates the constructor, accessors, equals, hashCode and toString for you. An enum defines a fixed set of named values, which prevents invalid strings such as typos. A switch expression with an enum returns a value and the compiler can warn when a case is missing. Choose records and enums to make illegal states hard to represent. Records and switch expressions need a recent Java version, so check which version your course or employer uses.
+
+**Example**
+
+```
+public class Main {
+    record Point(int x, int y) {
+        double distanceFromOrigin() { return Math.sqrt(x * x + y * y); }
+    }
+    enum Level { LOW, MEDIUM, HIGH }
+
+    static String label(Level level) {
+        return switch (level) {
+            case LOW -> "Relax";
+            case MEDIUM -> "Plan";
+            case HIGH -> "Act now";
+        };
+    }
+
+    public static void main(String[] args) {
+        Point p = new Point(3, 4);
+        System.out.println(p + " " + p.distanceFromOrigin());
+        System.out.println(label(Level.HIGH));
+    }
+}
+```
+
+**Explanation / note.** The record prints as Point[x=3, y=4] and the distance method returns 5.0. The enum switch returns Act now, and adding a new enum value without a case would make the switch fail to compile.
+
+**Task.** Model a fictional order with a record and a status enum (NEW, PAID, SHIPPED). Write a method that returns the next allowed status using a switch expression, and explain how the design prevents invalid statuses.
+
+**Quiz.** What is the main benefit of using an enum instead of text for a status?
+- Correct: Only the defined values are possible, so typos are caught early
+- Wrong: It makes the program run on any Java version
+- Wrong: It stores the value in the database automatically
+
+**Findings:** _none yet_
+
+### 9. Exceptions, files & project
 
 **Concept.** Exceptions represent exceptional conditions. Use try/catch for expected failures and close resources with try-with-resources. Split code into classes with clear responsibilities and write tests.
 

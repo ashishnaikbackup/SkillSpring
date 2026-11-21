@@ -1,6 +1,6 @@
 # Review packet: Microsoft Excel: Beginner to Advanced Workplace Skills
 
-- Course key: `excel`  ·  Lessons: 8  ·  Review interval: 60 days
+- Course key: `excel`  ·  Lessons: 10  ·  Review interval: 60 days
 - Current status: `initial-review-required`  ·  Last reviewed: never
 - Content files: `essential-courses.js`
 - Official sources to check against:
@@ -158,7 +158,59 @@ Import a CSV with Power Query, change data types, remove blank rows and refresh 
 
 **Findings:** _none yet_
 
-### 8. Excel professional capstone
+### 8. Dynamic arrays, XLOOKUP & LET
+
+**Concept.** Dynamic array functions return several results that spill into neighbouring cells, so one formula can create a whole list. FILTER keeps rows that meet a condition, SORT orders them, UNIQUE removes duplicates and XLOOKUP finds a match with a clear not-found value. LET gives names to calculations inside a formula so it is easier to read and avoids repeating work. These functions are available in current Microsoft 365 and recent Excel versions, but not older ones, so check before sharing a workbook. Keep a clear area for spill results and avoid typing over it.
+
+**Example**
+
+```
+=FILTER(Sales[Amount], Sales[Region]="West")
+=SORT(UNIQUE(Sales[Product]))
+=XLOOKUP(G2, Products[ID], Products[Price], "Not found")
+=LET(total, SUM(Sales[Amount]), target, 100000, IF(total>=target, "On target", "Below target"))
+```
+
+**Explanation / note.** The spill range must be clear, otherwise Excel shows a spill error.
+
+**Task.** Create a fictional sales table. Build a filtered list, a sorted unique product list, a price lookup with a not-found message and one LET formula. Test what happens when new rows are added and when the spill area is blocked.
+
+**Quiz.** What happens when a dynamic array formula returns several values?
+- Correct: The results spill into the neighbouring cells automatically
+- Wrong: Excel deletes the extra values
+- Wrong: Only the first value is ever shown
+
+**Findings:** _none yet_
+
+### 9. What-if analysis: Goal Seek, scenarios & sensitivity
+
+**Concept.** What-if analysis tests how results change when assumptions change. Goal Seek changes one input until a formula reaches a target value, for example the sales needed to reach a profit. A one-variable or two-variable data table shows results across a range of inputs, and scenarios compare best, expected and worst cases. Keep assumptions in clearly labelled input cells, not inside formulas, so they can be reviewed. Treat the output as a decision aid: a model is only as good as its assumptions, so record the source of each one.
+
+**Example**
+
+```
+Assumptions (inputs):  Price 20   Variable cost 8   Fixed costs 12,000
+Profit = (Price - Variable cost) x Units - Fixed costs
+
+Goal Seek:
+  Set cell: Profit   To value: 5,000   By changing: Units
+  Result: Units = 1,417 (rounded)
+
+Sensitivity table (units across, price down) shows profit for each combination.
+```
+
+**Explanation / note.** It works backward from the result you want to the input that produces it.
+
+**Task.** Build a small profit model with separate input cells. Use Goal Seek to find the units needed for a target profit, then build a two-variable data table for price and units. Write three lines on which assumption changes the result most.
+
+**Quiz.** What does Goal Seek do?
+- Correct: Changes one input until a formula reaches a chosen target value
+- Wrong: Sorts a table by a chosen column
+- Wrong: Removes duplicates from a list
+
+**Findings:** _none yet_
+
+### 10. Excel professional capstone
 
 **Concept.** Build a decision-ready model: clearly labelled inputs, calculations, outputs, checks, assumptions, scenario controls and a dashboard. Separate inputs from formulas and test edge cases.
 
