@@ -120,3 +120,8 @@ The [Professional Practice Labs](../professional-labs.html) page now includes fi
 
 - **Light/dark theme** on all 26 pages: a toggle (bottom-right) remembers the choice on the device and follows the system setting until the learner picks one. `theme.js` sets the theme before first paint; the light theme flips page lightness while preserving hue and leaves images, video and canvas unchanged. The validator requires `theme.js` on every page. Checked visually on the dashboard, a lesson-engine course, an essential course and the Python practice page; the full manual contrast and screen-reader pass is still outstanding.
 - **New lessons (one each):** SQL (subqueries, CTEs and window functions), JavaScript (testing and debugging), Data Science (correlation, sampling and simple models), C (multiple files, headers and building), HTML & CSS (responsive images, performance and search basics). Java and TypeScript were expanded earlier today. These lessons are AI-drafted and await human subject-expert review before `lastReviewed` is set.
+
+
+## More lesson depth — 21 November 2026
+
+C++ (templates, lambdas and STL algorithms), UI/UX (content design, microcopy and error states), Spreadsheets (lookups, dynamic arrays and error handling) and Personal Finance (tax basics, records and fraud safety; education only, not tax advice) each gain a lesson. All 11 lesson-engine courses now have 7 lessons; the platform has about 242 lessons across 30 courses. These lessons are AI-drafted and await human subject-expert review; no `lastReviewed` dates were set.
