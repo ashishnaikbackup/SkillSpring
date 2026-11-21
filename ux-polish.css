@@ -127,3 +127,11 @@ footer{flex-wrap:wrap;align-items:center;gap:10px}
 .lesson-standard strong{color:#f0edff}
 @media(max-width:600px){.learning-ladder{grid-template-columns:repeat(2,minmax(0,1fr))}.learning-ladder article{padding:11px}}
 @media(prefers-reduced-motion:reduce){.page.active,.hero,.page-intro,.hero-art .orbit-one,.hero-art .orbit-two,.hero-art .hero-core,.hero-art .float-card,.progress-line i,#progressBar{animation:none!important}.school-card:hover,.catalogue-card:hover,.feature-card:hover,.lab-card:hover,.project-card:hover,.workspace-card:hover,.path-card:hover,.module-card:hover{transform:none}}
+
+/* Final (cumulative) assessment */
+.final-form{display:grid;gap:1rem;margin-top:1rem}
+.final-q{border:1px solid rgba(127,127,127,.35);border-radius:12px;padding:1rem;margin:0}
+.final-q legend{font-weight:700;padding:0 .4rem}
+.final-q label{display:block;padding:.35rem 0;cursor:pointer}
+.final-result{margin-top:1.25rem;padding:1rem;border-radius:12px;border:1px solid rgba(127,127,127,.35)}
+.final-link{border-top:1px dashed rgba(127,127,127,.5);margin-top:.5rem}

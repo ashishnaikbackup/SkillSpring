@@ -346,8 +346,7 @@
       "sources": [
         "https://www.allaboutcircuits.com/textbook/",
         "https://www.nandland.com/",
-        "https://www.intel.com/content/www/us/en/docs/programmable/683236/current/overview.html",
-        "https://www.ti.com/lit/"
+        "https://www.intel.com/content/www/us/en/docs/programmable/683236/current/overview.html"
       ],
       "reviewStatus": "initial-review-required",
       "contentFiles": [

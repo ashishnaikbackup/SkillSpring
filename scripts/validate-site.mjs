@@ -224,6 +224,28 @@ const essentialPlayer = fs.readFileSync(path.join(root, "essential-course.js"), 
 if (!essentialPlayer.includes('store+"-passed"') || !essentialPlayer.includes('document.getElementById("done").disabled')) {
   fail("Essential course lessons must track knowledge-check passes before completion.");
 }
+// Lesson-engine courses (C, Java, SQL, ...): every module must be [title, concept, example, explanation, task, question, correct, wrongChoices[], ...].
+// A shape mismatch here previously made 11 course pages crash in the browser without failing CI.
+{
+  const engineSource = fs.readFileSync(path.join(root, "course-engine.js"), "utf8");
+  const engineContext = { document: new Proxy({}, { get: () => () => ({}) }), localStorage: { getItem: () => null, setItem() {}, removeItem() {} }, window: {} };
+  try {
+    vm.runInNewContext(engineSource.split("\nconst slug=document.body")[0].replace(/^const C=/m, "var C=") + "\nglobalThis.__engine = C;", engineContext);
+    const engine = engineContext.__engine || {};
+    if (Object.keys(engine).length < 11) fail("course-engine.js should define at least 11 lesson-engine courses.");
+    for (const [slug, course] of Object.entries(engine)) {
+      (course.modules || []).forEach((m, i) => {
+        if (typeof m[5] !== "string" || typeof m[6] !== "string" || !Array.isArray(m[7]) || m[7].length < 2) fail(`Engine course ${slug} module ${i + 1} must be [..., question, correctAnswer, wrongAnswers[]].`);
+      });
+      if ((course.modules || []).length < 5) fail(`Engine course ${slug} has fewer than five modules.`);
+    }
+  } catch (error) { fail("Could not load course-engine.js data: " + error.message); }
+  if (!fs.existsSync(path.join(root, "assessment.js"))) fail("assessment.js (shared quiz shuffling and final assessment) is missing.");
+  for (const page of files.filter((f) => f.endsWith(".html"))) {
+    const html = fs.readFileSync(page, "utf8");
+    if ((html.includes("course-engine.js") || html.includes("essential-course.js")) && !html.includes("assessment.js")) fail(`${path.relative(root, page)} loads a course player but not assessment.js.`);
+  }
+}
 for (const key of Object.keys(essential)) {
   if (!courses.some((course) => course.href === `essential-course.html?course=${key}` || (key === "engineering" && course.href === "engineering-course.html"))) fail(`Essential course "${key}" is not linked from the course catalogue.`);
 }
