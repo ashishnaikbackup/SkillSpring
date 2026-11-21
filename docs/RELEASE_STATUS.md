@@ -141,3 +141,8 @@ Added `scripts/export-review-packets.mjs`, `docs/REVIEWER_GUIDE.md` and 30 gener
 ## Four more lessons — 21 November 2026
 
 Outlook (rules, search and shared mailboxes), Power Automate (expressions, dynamic content and testing), Productivity (weekly review and habit design) and Creative Skills (accessible and inclusive creative work) each gain a lesson, bringing the platform to about 251 lessons across 30 courses. AI-drafted, pending expert review; review packets regenerated.
+
+
+## Eight more lessons for placement-critical courses — 21 November 2026
+
+SQL (data modelling and constraints; performance, EXPLAIN and set operations), JavaScript (scope, closures and classes; JSON, storage and a small app), C (dynamic memory and ownership; safe strings, sorting and function pointers) and Data Science (combining tables and tidy data; experiments, A/B tests and dashboards) each gain two lessons, bringing the platform to about 259 lessons. The C, JavaScript, SQLite and pandas examples were executed and their stated outputs confirmed. Still AI-drafted and pending expert review; packets regenerated.

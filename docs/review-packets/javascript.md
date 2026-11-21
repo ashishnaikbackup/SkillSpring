@@ -1,6 +1,6 @@
 # Review packet: JavaScript: Beginner to Browser Applications
 
-- Course key: `javascript`  ·  Lessons: 7  ·  Review interval: 90 days
+- Course key: `javascript`  ·  Lessons: 9  ·  Review interval: 90 days
 - Current status: `initial-review-required`  ·  Last reviewed: never
 - Content files: `course-engine.js`
 - Official sources to check against:
@@ -174,7 +174,77 @@ test('empty list is zero', () => assert.equal(sum([]), 0));
 
 **Findings:** _none yet_
 
-### 7. Async JavaScript, APIs & modules
+### 7. Scope, closures & classes
+
+**Concept.** Scope decides where a variable can be used: let and const are limited to their block, which is safer than old var. A closure is a function that remembers the variables around it even after the outer function has finished, which lets you keep private state. Classes give a tidy way to create many objects with the same fields and methods; the constructor sets up each object and this refers to the object being used. Prefer small functions and simple objects, and use a class when you need several objects sharing behaviour.
+
+**Example**
+
+```
+function makeCounter() {
+  let count = 0;
+  return () => ++count;
+}
+const next = makeCounter();
+console.log(next(), next(), next()); // 1 2 3
+
+class Account {
+  #balance = 0;
+  deposit(amount) {
+    if (amount <= 0) throw new Error('Amount must be positive');
+    this.#balance += amount;
+  }
+  get balance() { return this.#balance; }
+}
+const a = new Account();
+a.deposit(500);
+console.log(a.balance); // 500
+```
+
+**Explanation / note.** The counter keeps its own count between calls because the inner function remembers it. The class hides the balance behind a private field and validates deposits.
+
+**Task.** Write a closure that creates separate counters and show that two counters do not interfere. Then write a class with validation and a method, and explain what this refers to in one of its methods.
+
+**Quiz.** What is a closure in JavaScript?
+- Correct: A function that remembers variables from where it was created
+- Wrong: A way to close the browser window
+- Wrong: A loop that never finishes
+
+**Findings:** _none yet_
+
+### 8. JSON, browser storage & a small app
+
+**Concept.** JSON is a text format for data. JSON.stringify turns a value into text and JSON.parse turns text back into a value, and parsing invalid text throws an error, so wrap it in try and catch. The browser's localStorage keeps strings on one device and one site; it is simple but not private or secure, so never store passwords or personal secrets in it. A small app should keep its data in one state object, update the state when the user acts, save it, then redraw the screen from the state.
+
+**Example**
+
+```
+const KEY = 'tasks';
+function load() {
+  try { return JSON.parse(localStorage.getItem(KEY)) ?? []; }
+  catch { return []; }
+}
+function save(tasks) {
+  localStorage.setItem(KEY, JSON.stringify(tasks));
+}
+
+const tasks = load();
+tasks.push({ id: Date.now(), title: 'Revise SQL', done: false });
+save(tasks);
+```
+
+**Explanation / note.** Loading falls back to an empty list when nothing is stored or the stored text is damaged. Saving writes the whole list as JSON.
+
+**Task.** Build a task list with add, complete and delete actions that saves to localStorage and survives a page reload. Test what happens when the stored text is damaged and explain why secrets must never be stored this way.
+
+**Quiz.** Why should you never keep passwords in localStorage?
+- Correct: Any script on the page can read it and it is not protected
+- Wrong: It deletes itself every minute
+- Wrong: Browsers cannot store text
+
+**Findings:** _none yet_
+
+### 9. Async JavaScript, APIs & modules
 
 **Concept.** Promises represent work that may finish later. async/await makes promise-based code easier to read. fetch requests resources; check response.ok and handle network errors. Modules split code using export and import.
 

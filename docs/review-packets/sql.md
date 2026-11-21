@@ -1,6 +1,6 @@
 # Review packet: SQL: Databases from Zero
 
-- Course key: `sql`  ·  Lessons: 7  ·  Review interval: 90 days
+- Course key: `sql`  ·  Lessons: 9  ·  Review interval: 90 days
 - Current status: `initial-review-required`  ·  Last reviewed: never
 - Content files: `course-engine.js`
 - Official sources to check against:
@@ -174,7 +174,69 @@ FROM totals;
 
 **Findings:** _none yet_
 
-### 7. Safe SQL, indexes & project
+### 7. Data modelling, constraints & normalisation
+
+**Concept.** Good design prevents bad data. A primary key uniquely identifies each row; a foreign key links a row to a row in another table. Constraints such as NOT NULL, UNIQUE and CHECK make the database reject invalid values, so the rules do not depend on every application remembering them. Normalisation means storing each fact once: put customers in one table and orders in another instead of repeating customer details on every order. This avoids update mistakes, but very heavy normalisation can make queries more complex, so balance clarity and practicality.
+
+**Example**
+
+```
+CREATE TABLE customers (
+  customer_id INTEGER PRIMARY KEY,
+  email TEXT NOT NULL UNIQUE,
+  name TEXT NOT NULL
+);
+
+CREATE TABLE orders (
+  order_id INTEGER PRIMARY KEY,
+  customer_id INTEGER NOT NULL REFERENCES customers(customer_id),
+  amount REAL NOT NULL CHECK (amount >= 0),
+  placed_on TEXT NOT NULL
+);
+```
+
+**Explanation / note.** The email must be present and unique, every order must point to a real customer, and a negative amount is rejected. In SQLite, foreign key enforcement must be switched on with PRAGMA foreign_keys = ON.
+
+**Task.** Design tables for a fictional library with books, members and loans. Choose keys and constraints, then try to insert one invalid row for each constraint and record the error message you receive.
+
+**Quiz.** What does a foreign key do?
+- Correct: Links a row to a matching row in another table
+- Wrong: Makes a column automatically faster to search
+- Wrong: Encrypts the values in a column
+
+**Findings:** _none yet_
+
+### 8. Query performance, EXPLAIN & set operations
+
+**Concept.** A query can be correct and still slow. An index helps the database find rows without scanning the whole table, mainly for columns used in WHERE, JOIN and ORDER BY, but every index costs storage and slows writes, so add them for real queries. Select only the columns you need instead of SELECT star. Use EXPLAIN, or EXPLAIN QUERY PLAN in SQLite, to see whether an index is used. UNION combines results and removes duplicates; UNION ALL keeps duplicates and is usually faster when duplicates are impossible or acceptable. Measure before and after instead of guessing.
+
+**Example**
+
+```
+CREATE INDEX idx_orders_customer ON orders(customer_id);
+
+EXPLAIN QUERY PLAN
+SELECT order_id, amount
+FROM orders
+WHERE customer_id = 42;
+
+SELECT email FROM customers
+UNION
+SELECT email FROM newsletter_signups;
+```
+
+**Explanation / note.** The plan should report a search using idx_orders_customer instead of a full scan. The last query returns each email once even if it appears in both tables.
+
+**Task.** Create a table with at least 10,000 fictional rows, time a filtered query before and after adding an index, and read the query plan each time. Write two sentences on what changed and what the index costs.
+
+**Quiz.** Why not add an index to every column?
+- Correct: Indexes use storage and slow down inserts and updates
+- Wrong: Indexes make queries return wrong results
+- Wrong: Databases only allow one index per table
+
+**Findings:** _none yet_
+
+### 9. Safe SQL, indexes & project
 
 **Concept.** Use parameterised queries in applications; never concatenate untrusted input into SQL. Indexes can speed up reads but add storage and write costs. Use EXPLAIN to inspect query plans. Back up important data and apply least privilege.
 
