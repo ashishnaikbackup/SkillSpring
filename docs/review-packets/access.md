@@ -1,6 +1,6 @@
 # Review packet: Microsoft Access: Relational Database Foundations
 
-- Course key: `access`  ·  Lessons: 6  ·  Review interval: 90 days
+- Course key: `access`  ·  Lessons: 7  ·  Review interval: 90 days
 - Current status: `initial-review-required`  ·  Last reviewed: never
 - Content files: `essential-courses.js`
 - Official sources to check against:
@@ -121,7 +121,33 @@ Build a customer entry form and a grouped order report with totals. Test invalid
 
 **Findings:** _none yet_
 
-### 6. Security, maintenance & capstone
+### 6. Query design: joins, totals & parameters
+
+**Concept.** Queries answer questions from related tables. A join combines rows that match on a key field: an inner join keeps only matching rows, while a left join keeps every row from the first table even without a match. A totals query groups rows and calculates values such as Sum, Count or Average. A parameter query asks the user for a value each time it runs, written in square brackets in the criteria row. Test queries on a small known dataset, check row counts against expectations and save useful queries with clear names. The query joins customers to their orders, asks for a start date, totals spending per customer and lists the highest first. Customers without orders are not shown because it is an inner join.
+
+**Example**
+
+```
+SELECT Customers.CustomerName, Sum(Orders.Amount) AS TotalSpent
+FROM Customers INNER JOIN Orders
+  ON Customers.CustomerID = Orders.CustomerID
+WHERE Orders.OrderDate >= [Enter start date]
+GROUP BY Customers.CustomerName
+ORDER BY Sum(Orders.Amount) DESC;
+```
+
+**Explanation / note.** A left join is useful for finding records, such as customers, that have no related rows.
+
+**Task.** In a fictional database with Customers and Orders tables, build an inner-join query, change it to a left join to find customers with no orders, and create a parameter query for a date range. Compare the row counts and explain each difference.
+
+**Quiz.** How does a left join differ from an inner join?
+- Correct: It keeps every row from the first table, even without a match
+- Wrong: It keeps only rows that match in both tables
+- Wrong: It deletes unmatched rows from the database
+
+**Findings:** _none yet_
+
+### 7. Security, maintenance & capstone
 
 **Concept.** Understand file protection limits, backups, compact/repair, split database concepts and multi-user limitations. Access is useful for small desktop database scenarios, not every enterprise workload.
 

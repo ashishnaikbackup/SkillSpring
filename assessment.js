@@ -81,8 +81,42 @@
         '<button type="button" class="secondary" id="finalRetry">Try again with a new order</button>';
       container.querySelector("#finalRetry").onclick = () => finalAssessment(container, items, storeKey, title);
       container.querySelector("#finalResult").scrollIntoView({ behavior: "smooth", block: "nearest" });
-    };
+    };    rubric(container, storeKey + "-rubric");
   }
 
-  window.SkillSpringAssessment = { options, finalAssessment, passMark: PASS_MARK };
+  const RUBRIC = [
+    ["Meets the brief", "The project does what the task asked, with a clear scope and a working result."],
+    ["Correctness and evidence", "Outputs, tests, screenshots or calculations show that it works, including an edge case."],
+    ["Quality and clarity", "Names, structure and layout are tidy and consistent; someone else could follow it."],
+    ["Explanation", "A short README or write-up states the purpose, how to run or use it, and key decisions."],
+    ["Reflection and next steps", "Mistakes, trade-offs and what you would improve are described honestly."]
+  ];
+  const LEVELS = ["Not yet", "Developing", "Proficient", "Strong"];
+
+  // Practical capstone self-assessment, saved on this device. A mentor should confirm the scores.
+  function rubric(container, storeKey) {
+    const saved = readJson(storeKey, {});
+    const wrap = document.createElement("section");
+    wrap.className = "rubric";
+    wrap.innerHTML = '<h3>Practical project rubric</h3><p>Score your capstone project honestly. Evidence from a real project matters more than a quiz score, so ask a mentor or peer to confirm your ratings. Aim for at least Proficient in every row.</p>' +
+      '<div class="rubric-rows">' + RUBRIC.map((r, i) =>
+        '<fieldset class="rubric-row"><legend>' + esc(r[0]) + '</legend><p>' + esc(r[1]) + '</p>' +
+        LEVELS.map((lv, k) => '<label><input type="radio" name="rb' + i + '" value="' + k + '"' + (saved[i] === k ? " checked" : "") + '> ' + esc(lv) + '</label>').join("") + '</fieldset>').join("") +
+      '</div><p class="rubric-total" aria-live="polite"></p>';
+    const total = wrap.querySelector(".rubric-total");
+    function update() {
+      const picked = {};
+      RUBRIC.forEach((r, i) => { const c = wrap.querySelector('input[name="rb' + i + '"]:checked'); if (c) picked[i] = +c.value; });
+      try { localStorage.setItem(storeKey, JSON.stringify(picked)); } catch (e) {}
+      const n = Object.keys(picked).length;
+      const sum = Object.values(picked).reduce((a, b) => a + b, 0);
+      const ready = n === RUBRIC.length && Object.values(picked).every((v) => v >= 2);
+      total.textContent = n === 0 ? "" : "Rated " + n + " of " + RUBRIC.length + " · score " + sum + " / " + RUBRIC.length * 3 + (n === RUBRIC.length ? (ready ? " · Ready to show as portfolio evidence once a mentor confirms." : " · Improve rows below Proficient, then rate again.") : "");
+    }
+    wrap.addEventListener("change", update);
+    update();
+    container.appendChild(wrap);
+  }
+
+  window.SkillSpringAssessment = { options, finalAssessment, rubric, passMark: PASS_MARK };
 })();

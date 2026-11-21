@@ -1,6 +1,6 @@
 # Review packet: Git & GitHub: Version Control and Collaboration
 
-- Course key: `git`  ·  Lessons: 6  ·  Review interval: 60 days
+- Course key: `git`  ·  Lessons: 7  ·  Review interval: 60 days
 - Current status: `initial-review-required`  ·  Last reviewed: never
 - Content files: `essential-courses.js`
 - Official sources to check against:
@@ -121,7 +121,41 @@ Create a .gitignore for build outputs and local environment files. Practise a co
 
 **Findings:** _none yet_
 
-### 6. Professional repository & collaboration
+### 6. Undoing mistakes: stash, amend, revert & reset
+
+**Concept.** Everyone makes mistakes in version control; what matters is choosing the safe tool. git stash shelves uncommitted work so you can switch tasks. git commit --amend fixes the last commit and should only be used before it is pushed, because it rewrites history. git revert creates a new commit that undoes an earlier one, so it is safe on shared branches. git reset moves a branch pointer: --soft keeps changes staged, --mixed keeps them unstaged, and --hard discards them, so use it with care. git reflog lists where HEAD has been and can often recover work that seems lost. Stash saves work without committing. Revert adds a new commit that cancels a pushed one, keeping shared history intact. Amend is safe only while nobody else has the commit.
+
+**Example**
+
+```
+git stash push -m "half-finished header"
+git switch main
+# ...fix something urgent, commit it...
+git switch feature
+git stash pop
+
+# undo a commit that is already pushed
+git revert a1b2c3d
+
+# fix the message of the last, unpushed commit
+git commit --amend -m "Add login validation"
+
+# find a lost commit
+git reflog
+```
+
+**Explanation / note.** Revert preserves history, so teammates who already have the commit are not disrupted.
+
+**Task.** In a practice repository, make three commits. Revert the middle one, amend the last message, stash a change and restore it, and use git reflog to recover a commit after a reset. Write one sentence on when each command is safe.
+
+**Quiz.** Which command safely undoes a commit that has already been pushed to a shared branch?
+- Correct: git revert, which adds a new commit that reverses it
+- Wrong: git reset --hard, which discards the history
+- Wrong: git stash, which deletes the commit
+
+**Findings:** _none yet_
+
+### 7. Professional repository & collaboration
 
 **Concept.** Use issues, milestones, README, licence awareness, releases, tags, actions and contribution guidance. Keep commits reviewable and documentation reproducible.
 

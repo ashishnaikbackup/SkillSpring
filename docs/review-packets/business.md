@@ -1,6 +1,6 @@
 # Review packet: Business & Accounting Foundations
 
-- Course key: `business`  ·  Lessons: 6  ·  Review interval: 180 days
+- Course key: `business`  ·  Lessons: 7  ·  Review interval: 180 days
 - Current status: `initial-review-required`  ·  Last reviewed: never
 - Content files: `essential-courses.js`
 - Official sources to check against:
@@ -131,7 +131,35 @@ A neutral interview asks: 'Tell me about the last time you tried to solve this p
 
 **Findings:** _none yet_
 
-### 6. Operations, controls and business recommendation
+### 6. Pricing, break-even & simple forecasting
+
+**Concept.** Pricing must cover costs and still be acceptable to customers. Fixed costs stay the same in the short run, such as rent; variable costs change with each unit sold, such as materials. Contribution per unit is price minus variable cost. Break-even units equal fixed costs divided by contribution per unit; selling above that point produces profit. A simple forecast states its assumptions clearly, such as expected units, price and cost, and tests a best case, expected case and worst case. A forecast is a decision aid, not a promise. Below 1,000 cups the stall loses money; above it every extra cup adds 12 of profit. Changing the price or costs changes the break-even point, so test several cases.
+
+**Example**
+
+```
+Fictional tea stall (monthly):
+  Fixed costs: 12,000
+  Price per cup: 20
+  Variable cost per cup: 8
+  Contribution per cup: 20 - 8 = 12
+  Break-even cups: 12,000 / 12 = 1,000
+
+Scenarios: 800 cups = loss of 2,400; 1,000 cups = 0; 1,400 cups = profit of 4,800
+```
+
+**Explanation / note.** Contribution per unit is the amount each sale contributes toward covering fixed costs.
+
+**Task.** Choose a small fictional product. List fixed and variable costs, calculate break-even units, then show what happens to break-even if the price rises by 10 percent or variable cost rises by 10 percent. Write a three-line recommendation with your assumptions.
+
+**Quiz.** How is break-even in units calculated?
+- Correct: Fixed costs divided by contribution per unit
+- Wrong: Price divided by variable cost
+- Wrong: Total revenue minus total customers
+
+**Findings:** _none yet_
+
+### 7. Operations, controls and business recommendation
 
 **Concept.** Operations turn inputs into repeatable products or services. Map a process, identify bottlenecks, define service measures and controls. A useful recommendation states the problem, evidence, options, costs, risks, owner and success measure.
 

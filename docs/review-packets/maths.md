@@ -1,6 +1,6 @@
 # Review packet: Mathematics, Science & Research Foundations
 
-- Course key: `maths`  ·  Lessons: 6  ·  Review interval: 180 days
+- Course key: `maths`  ·  Lessons: 7  ·  Review interval: 180 days
 - Current status: `initial-review-required`  ·  Last reviewed: never
 - Content files: `essential-courses.js`
 - Official sources to check against:
@@ -131,7 +131,35 @@ If position is s(t)=3t² metres, velocity is ds/dt=6t m/s. At t=2 s, velocity is
 
 **Findings:** _none yet_
 
-### 6. Scientific method and evidence
+### 6. Growth, exponents & logarithms
+
+**Concept.** Many real quantities change by a percentage each period, which is exponential growth or decay: compound interest, inflation, population and signal loss all follow it. After n periods at rate r, a starting value grows by the factor (1 + r) raised to the power n. A logarithm is the inverse of an exponent: it answers how many periods are needed, or what power produces a number. The rule of 72 gives a quick estimate of the doubling time: about 72 divided by the percentage rate per period. Always check units, and remember it is an estimate. Growth compounds, so each year adds more than the last. The logarithm solves for time, and the rule of 72 gives a fast check that the answer is sensible.
+
+**Example**
+
+```
+Start with 10,000 at 8% per year:
+  after 1 year : 10,000 x 1.08  = 10,800
+  after 10 years: 10,000 x 1.08^10 = about 21,589
+
+Rule of 72: 72 / 8 = 9 years to double (exact answer is about 9.01)
+
+How many years to reach 20,000?
+  1.08^n = 2  ->  n = log(2) / log(1.08) = about 9.0
+```
+
+**Explanation / note.** It divides 72 by the percentage growth rate per period as a quick approximation.
+
+**Task.** Using a fictional loan or savings amount, calculate the value after 5, 10 and 20 years at two different rates. Compare the rule of 72 estimate with the exact logarithm result and explain the difference in one sentence.
+
+**Quiz.** What does the rule of 72 estimate?
+- Correct: Approximately how many periods it takes for a value to double
+- Wrong: The exact tax owed on an investment
+- Wrong: The number of days in a leap year
+
+**Findings:** _none yet_
+
+### 7. Scientific method and evidence
 
 **Concept.** A scientific investigation states a question, hypothesis, method, variables, observations and limitations. Correlation is not proof of causation. Reproducibility requires enough detail to repeat the method. Distinguish measurement, inference and opinion.
 
