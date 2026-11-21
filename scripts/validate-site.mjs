@@ -240,6 +240,12 @@ if (!essentialPlayer.includes('store+"-passed"') || !essentialPlayer.includes('d
       if ((course.modules || []).length < 5) fail(`Engine course ${slug} has fewer than five modules.`);
     }
   } catch (error) { fail("Could not load course-engine.js data: " + error.message); }
+  {
+    const manifestCourses = JSON.parse(fs.readFileSync(path.join(root, "course-review-manifest.json"), "utf8")).courses;
+    for (const entry of manifestCourses) {
+      if (!fs.existsSync(path.join(root, "docs", "review-packets", `${entry.slug}.md`))) fail(`Missing review packet for ${entry.slug}; run node scripts/export-review-packets.mjs.`);
+    }
+  }
   if (!fs.existsSync(path.join(root, "theme.js"))) fail("theme.js (light/dark theme) is missing.");
   for (const page of files.filter((f) => f.endsWith(".html"))) {
     if (!fs.readFileSync(page, "utf8").includes("theme.js")) fail(`${path.relative(root, page)} does not load theme.js.`);

@@ -125,3 +125,8 @@ The [Professional Practice Labs](../professional-labs.html) page now includes fi
 ## More lesson depth — 21 November 2026
 
 C++ (templates, lambdas and STL algorithms), UI/UX (content design, microcopy and error states), Spreadsheets (lookups, dynamic arrays and error handling) and Personal Finance (tax basics, records and fraud safety; education only, not tax advice) each gain a lesson. All 11 lesson-engine courses now have 7 lessons; the platform has about 242 lessons across 30 courses. These lessons are AI-drafted and await human subject-expert review; no `lastReviewed` dates were set.
+
+
+## Reviewer packets — 21 November 2026
+
+Added `scripts/export-review-packets.mjs`, `docs/REVIEWER_GUIDE.md` and 30 generated packets in `docs/review-packets/` (one per course: all lessons, examples, tasks, quiz answers, official sources and a checklist). This removes the setup work for the human review in issue #2. No course has been marked reviewed; the validator requires a packet for every course in the manifest.
