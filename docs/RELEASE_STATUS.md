@@ -114,3 +114,9 @@ The [Professional Practice Labs](../professional-labs.html) page now includes fi
 - Verified with a headless-browser pass over all 29 lesson-player pages (no page errors, correct answer position varies, final assessment scores and saves). This is automated checking, not the manual device and screen-reader QA still outstanding.
 - **Fixed: Python module 2 never rendered.** A quiz option containing the text `<!--` was inserted as raw HTML and swallowed the rest of the page. Quiz text is now escaped, and the Python course also gets shuffled options and the final assessment.
 - **Expanded:** Java and TypeScript each gain two lessons (Java: inheritance/interfaces/polymorphism and JUnit testing/debugging; TypeScript: classes/enums/utility types and typing APIs and errors safely), now 7 lessons each. Like all course content, these still await human subject-expert review.
+
+
+## Light mode and further course depth — 21 November 2026
+
+- **Light/dark theme** on all 26 pages: a toggle (bottom-right) remembers the choice on the device and follows the system setting until the learner picks one. `theme.js` sets the theme before first paint; the light theme flips page lightness while preserving hue and leaves images, video and canvas unchanged. The validator requires `theme.js` on every page. Checked visually on the dashboard, a lesson-engine course, an essential course and the Python practice page; the full manual contrast and screen-reader pass is still outstanding.
+- **New lessons (one each):** SQL (subqueries, CTEs and window functions), JavaScript (testing and debugging), Data Science (correlation, sampling and simple models), C (multiple files, headers and building), HTML & CSS (responsive images, performance and search basics). Java and TypeScript were expanded earlier today. These lessons are AI-drafted and await human subject-expert review before `lastReviewed` is set.
