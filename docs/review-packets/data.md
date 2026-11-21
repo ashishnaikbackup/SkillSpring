@@ -1,6 +1,6 @@
 # Review packet: Data Science Foundations: Python, Statistics & Insight
 
-- Course key: `data`  ·  Lessons: 7  ·  Review interval: 90 days
+- Course key: `data`  ·  Lessons: 9  ·  Review interval: 90 days
 - Current status: `initial-review-required`  ·  Last reviewed: never
 - Content files: `course-engine.js`
 - Official sources to check against:
@@ -178,7 +178,64 @@ print('Baseline MAE:', mean_absolute_error(y_test, [y_train.mean()] * len(y_test
 
 **Findings:** _none yet_
 
-### 7. Responsible analysis & capstone
+### 7. Combining tables & tidy data
+
+**Concept.** Real analysis usually needs several tables. A merge or join matches rows on a key, and the join type decides what happens to unmatched rows. Check the number of rows before and after a join, because duplicate keys can multiply rows silently. Tidy data has one variable per column, one observation per row and one table per kind of observation; this makes grouping and plotting simple. Use groupby to summarise, and keep the steps in a script so another person can repeat them.
+
+**Example**
+
+```
+import pandas as pd
+
+customers = pd.DataFrame({'customer_id': [1, 2, 3], 'city': ['Goa', 'Pune', 'Goa']})
+orders = pd.DataFrame({'customer_id': [1, 1, 2, 4], 'amount': [500, 300, 700, 200]})
+
+merged = orders.merge(customers, on='customer_id', how='left', validate='many_to_one')
+print(len(orders), len(merged))
+print(merged.groupby('city', dropna=False)['amount'].sum())
+```
+
+**Explanation / note.** A left join keeps every order, and customer 4 has no city so it appears as missing. The validate option raises an error if the customer table unexpectedly has duplicate keys. Row counts are checked before and after.
+
+**Task.** Create two small fictional tables, join them in three ways, compare row counts and explain what each join keeps. Then group the result and write one sentence on what the summary shows.
+
+**Quiz.** Why check row counts before and after a join?
+- Correct: Duplicate keys or unmatched rows can silently change the number of rows
+- Wrong: Joins always return the same number of rows
+- Wrong: Row counts are only needed for text data
+
+**Findings:** _none yet_
+
+### 8. Experiments, A/B tests & dashboards
+
+**Concept.** An experiment compares groups that differ by one change. Randomly assigning people to groups makes the groups comparable, so a difference is more likely to come from the change. Decide the measure, the group size and the stopping rule before starting, because stopping early when the result looks good inflates false positives. A statistically clear difference can still be too small to matter, so report the size of the effect with its uncertainty. A dashboard should answer a specific question for a specific audience, show the definition of each measure and avoid decoration that hides the message.
+
+**Example**
+
+```
+Fictional test of a new sign-up button
+  Group A (old): 2,000 visitors, 200 sign-ups = 10.0%
+  Group B (new): 2,000 visitors, 240 sign-ups = 12.0%
+  Difference: 2.0 percentage points
+
+Questions to ask before acting
+  Was assignment random?  Was the sample size planned?
+  Is the gain large enough to matter? What is the uncertainty?
+  Did anything else change during the test?
+```
+
+**Explanation / note.** The new button shows a higher rate in this fictional data, but the decision should consider the uncertainty and whether the difference matters in practice, not only the percentages.
+
+**Task.** Design a fictional experiment on a study app feature. State the question, measure, group sizes and stopping rule in advance, simulate results, and write a short recommendation that includes the uncertainty and limits.
+
+**Quiz.** Why decide the stopping rule before starting an A/B test?
+- Correct: Stopping when the result looks good makes false positives more likely
+- Wrong: It makes the test finish faster
+- Wrong: It removes the need for random assignment
+
+**Findings:** _none yet_
+
+### 9. Responsible analysis & capstone
 
 **Concept.** Check privacy, consent, representativeness, uncertainty and limitations. Separate observation from interpretation. Do not publish sensitive personal data. Communicate uncertainty honestly and avoid claiming a model is fair or accurate without evaluation.
 

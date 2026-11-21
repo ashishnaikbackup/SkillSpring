@@ -1,6 +1,6 @@
 # Review packet: C Programming: Zero to Systems Foundations
 
-- Course key: `c`  ·  Lessons: 7  ·  Review interval: 180 days
+- Course key: `c`  ·  Lessons: 9  ·  Review interval: 180 days
 - Current status: `initial-review-required`  ·  Last reviewed: never
 - Content files: `course-engine.js`
 - Official sources to check against:
@@ -194,7 +194,83 @@ int main(void) {
 
 **Findings:** _none yet_
 
-### 7. Files, debugging & final project
+### 7. Dynamic memory & ownership
+
+**Concept.** Local variables disappear when a function ends, but data created with malloc stays until you release it with free. Always check that malloc did not return NULL, use each block only while it is valid, and free it exactly once. Common bugs are leaks (never freeing), use after free, double free and writing past the end of a block. A useful rule is that every allocation has one clear owner responsible for freeing it. After freeing a pointer you no longer need, setting it to NULL helps prevent accidental use. Tools such as AddressSanitizer and Valgrind find these mistakes.
+
+**Example**
+
+```
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+    size_t n = 5;
+    int *values = malloc(n * sizeof *values);
+    if (values == NULL) {
+        fprintf(stderr, "Out of memory\n");
+        return 1;
+    }
+    for (size_t i = 0; i < n; i++) values[i] = (int)(i * i);
+    for (size_t i = 0; i < n; i++) printf("%d ", values[i]);
+    printf("\n");
+    free(values);
+    values = NULL;
+    return 0;
+}
+```
+
+**Explanation / note.** The program allocates room for five integers, checks the result, uses the memory and frees it once. It prints 0 1 4 9 16.
+
+**Task.** Write a function that reads n numbers into a dynamically allocated array and returns the average. Decide who frees the array, then use AddressSanitizer to confirm there are no leaks or invalid accesses.
+
+**Quiz.** What must a program do with memory obtained from malloc when it no longer needs it?
+- Correct: Release it with free exactly once
+- Wrong: Nothing, because it is freed when the line ends
+- Wrong: Call malloc again to clear it
+
+**Findings:** _none yet_
+
+### 8. Strings safely, sorting & function pointers
+
+**Concept.** A C string is an array of characters ending with a zero byte, so every string needs room for that extra byte. Functions that copy without checking size, such as strcpy and gets, cause buffer overflows; prefer snprintf or check lengths before copying. A function pointer stores the address of a function, which lets you pass behaviour to another function. The standard qsort function sorts any array when you give it a comparison function that returns negative, zero or positive. Write comparison functions carefully and avoid subtracting integers, which can overflow.
+
+**Example**
+
+```
+#include <stdio.h>
+#include <stdlib.h>
+
+static int compare_ints(const void *a, const void *b) {
+    int x = *(const int *)a, y = *(const int *)b;
+    return (x > y) - (x < y);
+}
+
+int main(void) {
+    int nums[] = {42, 7, 19, 3};
+    qsort(nums, 4, sizeof nums[0], compare_ints);
+    for (int i = 0; i < 4; i++) printf("%d ", nums[i]);
+    printf("\n");
+
+    char label[16];
+    snprintf(label, sizeof label, "Item %d", 7);
+    puts(label);
+    return 0;
+}
+```
+
+**Explanation / note.** qsort calls the comparison function to order the numbers, printing 3 7 19 42. snprintf never writes more than the buffer size, so the label is safe.
+
+**Task.** Sort an array of strings with qsort and strcmp. Then write a small program that builds a label with snprintf and show what happens when the text is longer than the buffer.
+
+**Quiz.** Why is gets considered unsafe?
+- Correct: It cannot limit how much input is written, so buffers can overflow
+- Wrong: It is slower than printf
+- Wrong: It only reads numbers
+
+**Findings:** _none yet_
+
+### 9. Files, debugging & final project
 
 **Concept.** Use fopen, fgets/fprintf and fclose for file work; check errors. Compile with warnings enabled, for example gcc -Wall -Wextra -Wpedantic. Use a debugger and sanitizers where available. Keep functions small and document assumptions.
 
