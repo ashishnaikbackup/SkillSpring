@@ -130,3 +130,9 @@ C++ (templates, lambdas and STL algorithms), UI/UX (content design, microcopy an
 ## Reviewer packets — 21 November 2026
 
 Added `scripts/export-review-packets.mjs`, `docs/REVIEWER_GUIDE.md` and 30 generated packets in `docs/review-packets/` (one per course: all lessons, examples, tasks, quiz answers, official sources and a checklist). This removes the setup work for the human review in issue #2. No course has been marked reviewed; the validator requires a packet for every course in the manifest.
+
+
+## Practical rubric and five more lessons — 21 November 2026
+
+- **Practical project rubric** under every course's final assessment: five criteria (meets the brief, correctness and evidence, quality and clarity, explanation, reflection) rated Not yet to Strong, saved on the device, with advice to have a mentor confirm. It is a self-assessment; it does not replace human judgement of the project. Checked in all three players and in both themes (axe: no serious violations).
+- **New lessons:** Git (undoing mistakes: stash, amend, revert, reset), IT Foundations (Linux command line), Foundational Maths (growth, exponents and logarithms), Business (pricing, break-even and forecasting) and Microsoft Access (joins, totals and parameter queries). AI-drafted, pending expert review; review packets regenerated.

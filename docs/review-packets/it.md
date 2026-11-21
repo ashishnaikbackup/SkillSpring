@@ -1,6 +1,6 @@
 # Review packet: IT Support, Networking & Cloud Foundations
 
-- Course key: `it`  ·  Lessons: 6  ·  Review interval: 90 days
+- Course key: `it`  ·  Lessons: 7  ·  Review interval: 90 days
 - Current status: `initial-review-required`  ·  Last reviewed: never
 - Content files: `essential-courses.js`
 - Official sources to check against:
@@ -131,7 +131,39 @@ A SaaS email provider manages the application platform, but the organisation sti
 
 **Findings:** _none yet_
 
-### 6. Defensive security and incident response
+### 6. Linux command line & shell basics
+
+**Concept.** The command line lets you inspect and control a system quickly and repeat tasks as scripts. Learn the core commands: pwd shows the current folder, ls lists files, cd changes folder, cat shows a file, grep searches text, chmod changes permissions and sudo runs a command as an administrator. The pipe | sends one command's output into another, and > writes output to a file. Read the manual with man or --help before running an unfamiliar command, and never paste commands you do not understand, especially with sudo or rm. The grep line searches a log for failed events and shows the first twenty; the pipe connects the two commands. chmod 640 gives the owner read and write, the group read and others nothing. The script stops on errors instead of continuing silently.
+
+**Example**
+
+```
+pwd
+ls -l
+cd /var/log
+grep -i "failed" auth.log | head -n 20
+ls -l | wc -l
+chmod 640 report.txt
+
+# a tiny script
+#!/usr/bin/env bash
+set -euo pipefail
+echo "Disk usage:"
+df -h /
+```
+
+**Explanation / note.** Pipes let small commands be combined into useful workflows.
+
+**Task.** In a Linux virtual machine or WSL, create a practice folder, create three files, list them, search them with grep, count the results with a pipe, set permissions on one file and write a short script that prints today's date and free disk space.
+
+**Quiz.** What does the pipe symbol do in a command such as ls | wc -l?
+- Correct: It sends the output of the first command into the second command
+- Wrong: It deletes the output of the first command
+- Wrong: It runs both commands on different computers
+
+**Findings:** _none yet_
+
+### 7. Defensive security and incident response
 
 **Concept.** Security protects confidentiality, integrity and availability. Learn patching, backups, MFA, phishing awareness, endpoint protection, logging and incident response. Never scan, exploit or access systems without explicit authorisation.
 

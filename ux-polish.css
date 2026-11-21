@@ -142,3 +142,11 @@ html[data-theme="light"] :where(img,video,canvas,iframe,picture){filter:invert(1
 .theme-toggle{position:fixed;right:16px;bottom:16px;z-index:1000;min-height:44px;padding:0 16px;border-radius:999px;border:1px solid #4a5a78;background:#1b2940;color:#eef3fb;font:700 13px "DM Sans",system-ui,sans-serif;cursor:pointer;box-shadow:0 8px 24px rgba(0,0,0,.35)}
 .theme-toggle:hover{filter:brightness(1.15)}
 @media(max-width:760px){.theme-toggle{right:12px;bottom:12px}}
+
+/* Practical project rubric */
+.rubric{margin-top:2rem;padding:1.25rem;border:1px solid rgba(127,127,127,.35);border-radius:12px}
+.rubric-rows{display:grid;gap:.75rem}
+.rubric-row{border:1px solid rgba(127,127,127,.3);border-radius:10px;padding:.75rem 1rem;margin:0}
+.rubric-row legend{font-weight:700;padding:0 .4rem}
+.rubric-row p{margin:.25rem 0 .5rem}
+.rubric-row label{display:inline-block;margin-right:1rem;cursor:pointer}
