@@ -1,6 +1,6 @@
 # Review packet: Microsoft Outlook & Teams: Professional Communication
 
-- Course key: `outlook`  ·  Lessons: 6  ·  Review interval: 60 days
+- Course key: `outlook`  ·  Lessons: 7  ·  Review interval: 60 days
 - Current status: `initial-review-required`  ·  Last reviewed: never
 - Content files: `essential-courses.js`
 - Official sources to check against:
@@ -121,7 +121,35 @@ Review a simulated suspicious email. Identify sender mismatch, urgency, unexpect
 
 **Findings:** _none yet_
 
-### 6. Professional workflow capstone
+### 6. Rules, search & shared mailboxes
+
+**Concept.** Rules apply actions automatically to messages that meet conditions, such as moving newsletters to a folder or flagging messages from your manager. Test a rule on a few messages before relying on it, and review rules regularly so important mail is not hidden. Search is faster than browsing: filters such as from:, subject: and hasattachments:yes narrow results. Categories and flags show what needs action. In many organisations, shared mailboxes and delegate access let a team handle a common address; what is available depends on your organisation's settings, so ask your administrator.
+
+**Example**
+
+```
+Search examples:
+  from:priya subject:invoice
+  hasattachments:yes received:last week
+
+Rule idea (fictional):
+  When a message arrives from newsletters@example.com
+  Then move it to the folder Reading and mark it as read
+  Except if my name is in the subject
+```
+
+**Explanation / note.** Rules save time but should be tested and reviewed so nothing important is hidden.
+
+**Task.** Create two folders and one rule that files a fictional newsletter automatically. Send yourself three test messages, check the rule works, then write down one risk of automating mail and how you would reduce it.
+
+**Quiz.** What is an inbox rule?
+- Correct: An automatic action applied to messages that meet conditions you set
+- Wrong: A policy that deletes all email after a week
+- Wrong: A way to block every sender at once
+
+**Findings:** _none yet_
+
+### 7. Professional workflow capstone
 
 **Concept.** Combine email, calendar and team collaboration into a clear workflow: request, schedule, meeting, decisions, actions and follow-up.
 

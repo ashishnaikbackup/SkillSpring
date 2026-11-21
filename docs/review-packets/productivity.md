@@ -1,6 +1,6 @@
 # Review packet: Personal Productivity & Knowledge Management
 
-- Course key: `productivity`  ·  Lessons: 6  ·  Review interval: 180 days
+- Course key: `productivity`  ·  Lessons: 7  ·  Review interval: 180 days
 - Current status: `initial-review-required`  ·  Last reviewed: never
 - Content files: `essential-courses.js`
 - Official sources to check against:
@@ -131,7 +131,36 @@ A project folder can contain /docs, /data, /src and /exports, with README and da
 
 **Findings:** _none yet_
 
-### 6. Workflow improvement and automation
+### 6. Weekly review & habit design
+
+**Concept.** A weekly review keeps plans connected to reality. Choose a fixed time, review last week's results, clear inboxes and notes, check the calendar for the next two weeks, choose the top three outcomes and schedule the work. Habits are easier when the action is small, specific and attached to an existing cue, for example after morning tea, open the study plan for five minutes. Track a simple yes or no each day, adjust when a habit keeps failing instead of blaming yourself, and increase difficulty only after the habit is stable.
+
+**Example**
+
+```
+Weekly review checklist (30 minutes)
+  1. What did I finish? What slipped, and why?
+  2. Clear: inbox, notes, downloads, to-do list
+  3. Check the next 14 days of the calendar
+  4. Pick the top 3 outcomes for next week
+  5. Block time for each outcome
+
+Habit plan
+  After I finish breakfast, I will solve one practice question.
+```
+
+**Explanation / note.** Consistency matters more at the start than the size of the action.
+
+**Task.** Run one weekly review using the checklist and write a habit plan using the format after cue, I will tiny action. Track it for seven days and note what made it easier or harder.
+
+**Quiz.** Why start a new habit with a very small action?
+- Correct: It is easy enough to repeat consistently, so the routine can grow
+- Wrong: Small actions always give faster results
+- Wrong: It removes the need to plan
+
+**Findings:** _none yet_
+
+### 7. Workflow improvement and automation
 
 **Concept.** A workflow is a repeatable sequence of steps. Map inputs, decisions, outputs and exceptions before automating. Automate stable repetitive tasks; keep human approval for consequential decisions and check failure paths.
 

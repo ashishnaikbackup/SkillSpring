@@ -136,3 +136,8 @@ Added `scripts/export-review-packets.mjs`, `docs/REVIEWER_GUIDE.md` and 30 gener
 
 - **Practical project rubric** under every course's final assessment: five criteria (meets the brief, correctness and evidence, quality and clarity, explanation, reflection) rated Not yet to Strong, saved on the device, with advice to have a mentor confirm. It is a self-assessment; it does not replace human judgement of the project. Checked in all three players and in both themes (axe: no serious violations).
 - **New lessons:** Git (undoing mistakes: stash, amend, revert, reset), IT Foundations (Linux command line), Foundational Maths (growth, exponents and logarithms), Business (pricing, break-even and forecasting) and Microsoft Access (joins, totals and parameter queries). AI-drafted, pending expert review; review packets regenerated.
+
+
+## Four more lessons — 21 November 2026
+
+Outlook (rules, search and shared mailboxes), Power Automate (expressions, dynamic content and testing), Productivity (weekly review and habit design) and Creative Skills (accessible and inclusive creative work) each gain a lesson, bringing the platform to about 251 lessons across 30 courses. AI-drafted, pending expert review; review packets regenerated.
