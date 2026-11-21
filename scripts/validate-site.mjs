@@ -161,7 +161,8 @@ const schoolCount = (curriculumSource.match(/\{ id:"(?:programming|design|ai-dat
 if (schoolCount !== 12) fail(`Curriculum map must define all 12 learning schools (found ${schoolCount}).`);
 
 for (const file of files.filter((f) => f.endsWith(".md"))) {
-  const markdown = fs.readFileSync(file, "utf8");
+  // Fenced code blocks may legitimately contain text such as a C++ lambda "[](int a)" that is not a link.
+  const markdown = fs.readFileSync(file, "utf8").replace(/```[\s\S]*?```/g, "");
   for (const match of markdown.matchAll(/\[[^\]]*\]\(([^)]+)\)/g)) {
     const raw = match[1].trim().split(/\s+["']/)[0];
     if (!raw || raw.startsWith("#") || /^(?:[a-z]+:|\/\/)/i.test(raw)) continue;
