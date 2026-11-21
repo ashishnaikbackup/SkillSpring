@@ -146,3 +146,8 @@ Outlook (rules, search and shared mailboxes), Power Automate (expressions, dynam
 ## Eight more lessons for placement-critical courses — 21 November 2026
 
 SQL (data modelling and constraints; performance, EXPLAIN and set operations), JavaScript (scope, closures and classes; JSON, storage and a small app), C (dynamic memory and ownership; safe strings, sorting and function pointers) and Data Science (combining tables and tidy data; experiments, A/B tests and dashboards) each gain two lessons, bringing the platform to about 259 lessons. The C, JavaScript, SQLite and pandas examples were executed and their stated outputs confirmed. Still AI-drafted and pending expert review; packets regenerated.
+
+
+## Seven more lessons — 22 November 2026
+
+Java (generics, collections and streams; records, enums and clear modelling), TypeScript (generics and discriminated unions; tooling: tsconfig, linting and tests), HTML & CSS (maintainable CSS: variables, themes and DevTools) and Excel (dynamic arrays, XLOOKUP and LET; what-if analysis) gain lessons, bringing the platform to about 266 lessons. The Java and TypeScript examples were compiled and run and their stated outputs confirmed; the Goal Seek figure was recalculated. Still AI-drafted and pending expert review; packets regenerated.

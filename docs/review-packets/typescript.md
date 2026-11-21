@@ -1,6 +1,6 @@
 # Review packet: TypeScript: Safer JavaScript Applications
 
-- Course key: `typescript`  ·  Lessons: 7  ·  Review interval: 60 days
+- Course key: `typescript`  ·  Lessons: 9  ·  Review interval: 60 days
 - Current status: `initial-review-required`  ·  Last reviewed: never
 - Content files: `course-engine.js`
 - Official sources to check against:
@@ -186,7 +186,85 @@ async function loadUser(url: string): Promise<User> {
 
 **Findings:** _none yet_
 
-### 7. Project setup, tests & capstone
+### 7. Generics in practice & discriminated unions
+
+**Concept.** A generic function or type works with a type that is chosen when it is used, so one definition can stay type safe for many cases. A discriminated union is a union where each member has a shared literal field, such as ok set to true or false. Checking that field narrows the type, so the compiler knows which other fields exist. This is a clear way to return success or failure without throwing for ordinary problems. Keep generic types simple, and name type parameters meaningfully when there is more than one.
+
+**Example**
+
+```
+type Result<T> = { ok: true; value: T } | { ok: false; error: string };
+
+function parseAge(input: string): Result<number> {
+  const n = Number(input);
+  if (!Number.isInteger(n) || n < 0 || n > 120) {
+    return { ok: false, error: "Age must be a whole number from 0 to 120" };
+  }
+  return { ok: true, value: n };
+}
+
+function describe(r: Result<number>): string {
+  if (r.ok) return "Age " + r.value;
+  return "Error: " + r.error;
+}
+
+function firstOr<T>(items: T[], fallback: T): T {
+  return items[0] ?? fallback;
+}
+
+console.log(describe(parseAge("21")));
+console.log(describe(parseAge("abc")));
+console.log(firstOr<string>([], "none"));
+```
+
+**Explanation / note.** Checking r.ok narrows the type, so r.value is only available in the success branch. The program prints Age 21, then the error message, then none.
+
+**Task.** Write a Result type and a function that parses a date or an email address. Return a success or failure value, then write code that handles both cases. Try accessing the value without checking and read the compiler message.
+
+**Quiz.** Why is a shared literal field useful in a discriminated union?
+- Correct: Checking it lets the compiler narrow to the correct member type
+- Wrong: It makes the union faster at runtime
+- Wrong: It converts the union into a class
+
+**Findings:** _none yet_
+
+### 8. Tooling: tsconfig, linting & tests
+
+**Concept.** The tsconfig.json file tells the compiler how strictly to check and where files live. Turn on strict mode for new projects, and consider noUncheckedIndexedAccess so reading an array item may be undefined until you check it. A linter such as ESLint finds suspicious patterns that types alone do not catch, and a formatter keeps style consistent so reviews focus on logic. Add a test runner and run type checking, linting and tests in the same command or pipeline before merging. Settings and versions change, so follow the official documentation for your tools.
+
+**Example**
+
+```
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "noImplicitOverride": true,
+    "skipLibCheck": true,
+    "outDir": "dist"
+  },
+  "include": ["src"]
+}
+
+// package.json scripts (example)
+// "check": "tsc --noEmit && eslint . && vitest run"
+```
+
+**Explanation / note.** Strict options catch mistakes early, and one check command makes the same quality gate easy to run locally and in automation.
+
+**Task.** Set up a tiny TypeScript project with a strict tsconfig, a linter and one test. Add a script that runs all three, introduce a deliberate type error, and show that the check fails.
+
+**Quiz.** Why run type checking, linting and tests together before merging?
+- Correct: Each finds different kinds of problems, so together they catch more
+- Wrong: They make the code run faster in production
+- Wrong: They remove the need for code review
+
+**Findings:** _none yet_
+
+### 9. Project setup, tests & capstone
 
 **Concept.** Use strict compiler settings, linting, tests and small modules. Types improve developer feedback but do not replace runtime validation, security checks or tests. Avoid any when unknown is more appropriate.
 

@@ -1,6 +1,6 @@
 # Review packet: HTML & CSS: Build Responsive Websites
 
-- Course key: `web`  ·  Lessons: 7  ·  Review interval: 90 days
+- Course key: `web`  ·  Lessons: 8  ·  Review interval: 90 days
 - Current status: `initial-review-required`  ·  Last reviewed: never
 - Content files: `course-engine.js`
 - Official sources to check against:
@@ -173,7 +173,47 @@ img { max-width:100%; height:auto; }
 
 **Findings:** _none yet_
 
-### 7. Accessibility, polish & publish
+### 7. Maintainable CSS: variables, themes & DevTools
+
+**Concept.** CSS custom properties, written with two dashes, store values such as colours and spacing once so a change happens in one place. They make themes simple: change the variables inside a media query for prefers-color-scheme or for a class. Respect user settings: prefers-reduced-motion asks you to reduce animation, and text should still be readable when zoomed. Name classes by purpose, keep selectors short and avoid fighting specificity. When a style does not apply, open DevTools, inspect the element, read the Styles pane and see which rule wins and which is crossed out.
+
+**Example**
+
+```
+:root {
+  --bg: #ffffff;
+  --text: #1b2430;
+  --accent: #0b5cad;
+  --space: 1rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #10161f; --text: #e8eef6; --accent: #7db7ff; }
+}
+
+body { background: var(--bg); color: var(--text); padding: var(--space); }
+a { color: var(--accent); }
+
+.card { transition: transform 200ms ease; }
+.card:hover { transform: translateY(-2px); }
+
+@media (prefers-reduced-motion: reduce) {
+  .card { transition: none; }
+}
+```
+
+**Explanation / note.** The variables define a light and a dark theme from one set of rules, and the hover movement is switched off for users who ask for reduced motion.
+
+**Task.** Add light and dark themes to a small page using variables. Check text contrast in both themes with a browser tool, add a reduced-motion rule, and use DevTools to find which rule controls one element's colour.
+
+**Quiz.** What does prefers-reduced-motion allow a page to do?
+- Correct: Reduce or remove animation for users who ask for less motion
+- Wrong: Force all users to see animations
+- Wrong: Make the page load faster automatically
+
+**Findings:** _none yet_
+
+### 8. Accessibility, polish & publish
 
 **Concept.** Accessibility includes keyboard use, contrast, visible focus, semantic structure, labels and reduced-motion considerations. Test with keyboard navigation and browser tools. Optimise images and keep CSS organised.
 
