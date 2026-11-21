@@ -6,6 +6,7 @@ The public product and repository are named SkillSpring.
 
 ## Start learning
 
+- **Light and dark mode** — use the toggle at the bottom-right of any page; your choice is remembered on this device.
 - **[Mastery Hub](mastery-hub.html)** — personal learning plan, six-step mastery loop, spaced-revision queue, deliberate-practice log, weekly checklist and portfolio evidence gate. Saves locally in your browser.
 
 - **[Career Launchpad](career-launchpad.html)** — 30 course-specific portfolio capstones with beginner steps, expected evidence, role directions and interview practice across programming, web, data, finance, office tools, career, creative media, productivity and engineering.

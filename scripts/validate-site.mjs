@@ -240,6 +240,10 @@ if (!essentialPlayer.includes('store+"-passed"') || !essentialPlayer.includes('d
       if ((course.modules || []).length < 5) fail(`Engine course ${slug} has fewer than five modules.`);
     }
   } catch (error) { fail("Could not load course-engine.js data: " + error.message); }
+  if (!fs.existsSync(path.join(root, "theme.js"))) fail("theme.js (light/dark theme) is missing.");
+  for (const page of files.filter((f) => f.endsWith(".html"))) {
+    if (!fs.readFileSync(page, "utf8").includes("theme.js")) fail(`${path.relative(root, page)} does not load theme.js.`);
+  }
   if (!fs.existsSync(path.join(root, "assessment.js"))) fail("assessment.js (shared quiz shuffling and final assessment) is missing.");
   for (const page of files.filter((f) => f.endsWith(".html"))) {
     const html = fs.readFileSync(page, "utf8");
