@@ -102,3 +102,15 @@ A shared `ux-polish.css` layer is now applied exactly once across all 26 public 
 ## Professional mini-labs delivered — 1 November 2026
 
 The [Professional Practice Labs](../professional-labs.html) page now includes five browser-based starter labs: (1) spreadsheet invoice modelling with quantity, price, tax and total validation; (2) descriptive statistics for learner-supplied numeric samples; (3) ideal-resistor Ohm's law and power calculations with safety caveats; (4) IPv4 CIDR subnet/network/broadcast/host calculations; and (5) a UI/UX accessibility and usability review checklist with prioritisation guidance. These are entry-level interactive exercises. They do not replace full spreadsheet assignments, statistical investigations, circuit simulation/HDL verification, network troubleshooting labs or moderated usability testing.
+
+
+## Course-player fixes and cumulative final assessment — 21 November 2026
+
+- **Fixed: 11 course pages did not render.** C, C++, Java, JavaScript, TypeScript, HTML & CSS, SQL, Personal Finance, Data Science, UI/UX and Spreadsheets crashed in the browser (`m[6].map is not a function`) because the lesson data and the lesson player disagreed on the quiz format. The player now reads the data correctly and gates lesson completion on a passed knowledge check, as the other courses already did.
+- **Fixed: the correct quiz answer was always option A** in the essential courses. Option order is now shuffled deterministically per lesson (`assessment.js`).
+- **Added: cumulative final assessment** for every course (the lesson-engine, essential-course and Python players). It draws one question from every lesson, reshuffles on each attempt, uses a 70% pass mark, lists lessons to review and stores the best result in the browser. It tests recall only; it is not a certificate and does not replace practical projects.
+- **Added: validator guard.** `scripts/validate-site.mjs` now checks the lesson-engine data shape and that every course page loads `assessment.js`, so this class of silent breakage fails CI.
+- **Removed a dead reference** (`https://www.ti.com/lit/`, HTTP 404) from the engineering course's review sources. Replace it with a verified TI or equivalent source during the human review.
+- Verified with a headless-browser pass over all 29 lesson-player pages (no page errors, correct answer position varies, final assessment scores and saves). This is automated checking, not the manual device and screen-reader QA still outstanding.
+- **Fixed: Python module 2 never rendered.** A quiz option containing the text `<!--` was inserted as raw HTML and swallowed the rest of the page. Quiz text is now escaped, and the Python course also gets shuffled options and the final assessment.
+- **Expanded:** Java and TypeScript each gain two lessons (Java: inheritance/interfaces/polymorphism and JUnit testing/debugging; TypeScript: classes/enums/utility types and typing APIs and errors safely), now 7 lessons each. Like all course content, these still await human subject-expert review.
