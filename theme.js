@@ -6,7 +6,6 @@
   function systemTheme() { return window.matchMedia && window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark"; }
   function apply(theme) {
     root.setAttribute("data-theme", theme);
-    root.style.colorScheme = theme;
     var btn = document.getElementById("themeToggle");
     if (btn) {
       btn.setAttribute("aria-pressed", String(theme === "light"));
