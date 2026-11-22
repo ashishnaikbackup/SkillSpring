@@ -161,3 +161,10 @@ C++ (classes, RAII and smart pointers; compiled and run under AddressSanitizer),
 ## Nine more lessons — 22 November 2026 (third batch)
 
 Every essential course that had only 7 lessons gains one: Outlook (high-volume email), Access (importing, linking and data quality), Power Automate (connectors, data operations and reusable patterns), Git (branching strategies, reviews and releases; commands run in a sandbox repository), Business (marketing funnels and customer metrics; figures recalculated), IT Foundations (DNS, DHCP and network troubleshooting), Maths (statistics in practice; mean and median recalculated), Creative Skills (video and audio editing workflow) and Productivity (deliberate practice and feedback). The platform now has about 282 lessons and every course has at least 8. Still AI-drafted and pending expert review; packets regenerated.
+
+
+## Capstone project briefs and an engineering-page fix — 22 November 2026
+
+- **Capstone project briefs for all 30 courses** (`capstone-briefs.js`), shown under each final assessment above the rubric: a fictional scenario, what to build, the evidence to submit and a stretch goal. The validator requires a complete brief for every course in the manifest. Briefs are AI-drafted and pending expert review, like the lessons.
+- **Fixed: the Engineering course page opened the Microsoft Word course.** `engineering-course.html` had no course parameter, so the shared player fell back to Word. The page now declares its course, and the validator checks it.
+- Browser checks: all 30 course pages show the brief and rubric; axe reports no serious violations in light and dark on sampled pages.

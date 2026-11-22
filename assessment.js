@@ -35,7 +35,7 @@
   }
 
   // items: [{ lesson, question, correct, wrong: [] }]
-  function finalAssessment(container, items, storeKey, title) {
+  function finalAssessment(container, items, storeKey, title, slug) {
     const saved = readJson(storeKey, null);
     const need = Math.ceil(items.length * PASS_MARK);
     const attempt = Math.random().toString(36).slice(2);
@@ -79,9 +79,24 @@
       container.querySelector("#finalResult").innerHTML =
         '<h3>' + (passed ? "Passed" : "Not passed yet") + ': ' + score + ' / ' + items.length + '</h3>' + review +
         '<button type="button" class="secondary" id="finalRetry">Try again with a new order</button>';
-      container.querySelector("#finalRetry").onclick = () => finalAssessment(container, items, storeKey, title);
+      container.querySelector("#finalRetry").onclick = () => finalAssessment(container, items, storeKey, title, slug);
       container.querySelector("#finalResult").scrollIntoView({ behavior: "smooth", block: "nearest" });
-    };    rubric(container, storeKey + "-rubric");
+    };    brief(container, slug);
+    rubric(container, storeKey + "-rubric");
+  }
+
+  // Capstone brief for the course, from capstone-briefs.js (loaded separately; optional).
+  function brief(container, slug) {
+    const b = window.SkillSpringBriefs && window.SkillSpringBriefs[slug];
+    if (!b) return;
+    const list = (items) => "<ul>" + items.map((i) => "<li>" + esc(i) + "</li>").join("") + "</ul>";
+    const wrap = document.createElement("section");
+    wrap.className = "brief";
+    wrap.innerHTML = '<h3>Capstone project brief: ' + esc(b.title) + '</h3><p>' + esc(b.scenario) + '</p>' +
+      '<h4>Build</h4>' + list(b.build) + '<h4>Evidence to submit</h4>' + list(b.evidence) +
+      '<p><strong>Stretch goal:</strong> ' + esc(b.stretch) + '</p>' +
+      '<p class="brief-note">Use fictional or properly licensed data only, keep your work in a place a reviewer can open, and score it with the rubric below.</p>';
+    container.appendChild(wrap);
   }
 
   const RUBRIC = [
