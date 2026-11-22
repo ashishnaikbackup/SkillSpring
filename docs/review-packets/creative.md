@@ -1,6 +1,6 @@
 # Review packet: Creative Media, Design & Communication Foundations
 
-- Course key: `creative`  ·  Lessons: 7  ·  Review interval: 180 days
+- Course key: `creative`  ·  Lessons: 8  ·  Review interval: 180 days
 - Current status: `initial-review-required`  ·  Last reviewed: never
 - Content files: `essential-courses.js`
 - Official sources to check against:
@@ -158,7 +158,40 @@ Accessibility checklist for a poster or slide
 
 **Findings:** _none yet_
 
-### 7. Portfolio, licensing and professional delivery
+### 7. Video and audio editing workflow
+
+**Concept.** A clear workflow saves time. Organise footage and audio into named folders, keep the original files untouched and back them up. Make a rough cut that follows the story first, then refine pacing, add b-roll, titles and music. Dialogue must be clear: keep voice levels consistent and make sure music never covers speech. Use only music, images and clips you have the right to use, and keep a note of licences. Export in a widely supported format such as MP4 with H.264 video, add captions, and check the final file on a phone and a computer before sharing.
+
+**Example**
+
+```
+Folder structure
+  /01_source  (originals, read-only)
+  /02_audio
+  /03_graphics
+  /04_project
+  /05_exports
+
+Checklist
+  [ ] Rough cut matches the script and time limit
+  [ ] Dialogue clear; music lower than speech
+  [ ] Licences noted for every asset
+  [ ] Captions added and checked
+  [ ] Exported MP4 tested on two devices
+```
+
+**Explanation / note.** Editing should be non-destructive: the source stays safe and the project records the changes.
+
+**Task.** Edit a 60-second fictional video using only assets you own or licensed material. Keep the folder structure, record licences, add captions and test the export on two devices. Write what you would change after feedback.
+
+**Quiz.** Why keep original files untouched while editing?
+- Correct: So you can always return to the unedited source if a change goes wrong
+- Wrong: Because edited files cannot be exported
+- Wrong: To make the project run faster
+
+**Findings:** _none yet_
+
+### 8. Portfolio, licensing and professional delivery
 
 **Concept.** A creative portfolio shows the brief, role, process, iterations, final work and reflection. Respect copyright, licences, releases, privacy and platform rules. Export accessible formats and retain editable source files.
 

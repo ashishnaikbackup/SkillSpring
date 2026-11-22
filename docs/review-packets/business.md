@@ -1,6 +1,6 @@
 # Review packet: Business & Accounting Foundations
 
-- Course key: `business`  ·  Lessons: 7  ·  Review interval: 180 days
+- Course key: `business`  ·  Lessons: 8  ·  Review interval: 180 days
 - Current status: `initial-review-required`  ·  Last reviewed: never
 - Content files: `essential-courses.js`
 - Official sources to check against:
@@ -159,7 +159,34 @@ Scenarios: 800 cups = loss of 2,400; 1,000 cups = 0; 1,400 cups = profit of 4,80
 
 **Findings:** _none yet_
 
-### 7. Operations, controls and business recommendation
+### 7. Marketing, sales funnels & customer metrics
+
+**Concept.** A funnel shows how many people move from one stage to the next: visit, sign up, buy, stay. Conversion rate is the share that reaches the next stage. Customer acquisition cost is spending divided by customers won. Churn is the share of customers lost in a period, and retention is its opposite. A simple lifetime value estimate is monthly margin per customer divided by monthly churn, but it relies on assumptions that change, so test it with best and worst cases. Healthy growth needs lifetime value comfortably above acquisition cost, not just more sign-ups.
+
+**Example**
+
+```
+Fictional subscription app (one month)
+  Visitors 10,000 -> sign-ups at 2% = 200
+  Paying at 25% of sign-ups = 50
+  Marketing spend 25,000 -> acquisition cost = 25,000 / 50 = 500
+  Price 300 a month, margin 70% = 210 a month
+  Monthly churn 5% -> lifetime value = 210 / 0.05 = 4,200
+  Ratio of value to cost = 4,200 / 500 = 8.4
+```
+
+**Explanation / note.** It tells you how much it costs, on average, to win one paying customer.
+
+**Task.** Build the funnel and unit economics for a fictional product. Then lower conversion or raise churn and show how the ratio changes. Write a three-line recommendation that states which assumption is least certain.
+
+**Quiz.** How is customer acquisition cost calculated?
+- Correct: Marketing and sales spending divided by the number of customers won
+- Wrong: Revenue divided by profit
+- Wrong: Visitors divided by sign-ups
+
+**Findings:** _none yet_
+
+### 8. Operations, controls and business recommendation
 
 **Concept.** Operations turn inputs into repeatable products or services. Map a process, identify bottlenecks, define service measures and controls. A useful recommendation states the problem, evidence, options, costs, risks, owner and success measure.
 

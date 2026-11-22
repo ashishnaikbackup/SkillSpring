@@ -1,6 +1,6 @@
 # Review packet: Git & GitHub: Version Control and Collaboration
 
-- Course key: `git`  ·  Lessons: 7  ·  Review interval: 60 days
+- Course key: `git`  ·  Lessons: 8  ·  Review interval: 60 days
 - Current status: `initial-review-required`  ·  Last reviewed: never
 - Content files: `essential-courses.js`
 - Official sources to check against:
@@ -155,7 +155,39 @@ git reflog
 
 **Findings:** _none yet_
 
-### 7. Professional repository & collaboration
+### 7. Branching strategies, reviews & releases
+
+**Concept.** Teams agree how work flows. In feature branching each change lives on a short-lived branch and returns through a pull request; in trunk-based work changes are very small and merge to the main branch often. Whichever you choose, keep pull requests small, describe the purpose and test evidence, and review for correctness, clarity, security and tests, not personal style. Tag releases so a version can always be found again. Semantic versioning uses MAJOR.MINOR.PATCH: increase PATCH for fixes, MINOR for compatible features and MAJOR for breaking changes. Protect the main branch so changes need review and passing checks.
+
+**Example**
+
+```
+git switch -c feature/login
+# ...commit work...
+git switch main
+git merge --no-ff feature/login -m "Merge feature/login"
+git tag -a v1.2.0 -m "Release 1.2.0"
+git tag -l -n1
+
+Review checklist
+  [ ] Does it do what the description says?
+  [ ] Are there tests for new behaviour?
+  [ ] Any secrets, security or performance concerns?
+  [ ] Is the change small enough to understand?
+```
+
+**Explanation / note.** A fix that does not change behaviour that others depend on is a patch release.
+
+**Task.** In a practice repository, create a feature branch, merge it with a merge commit, tag a release, and write a pull request description and review checklist. Decide which version number a bug fix would get and why.
+
+**Quiz.** In semantic versioning, which part increases for a backward-compatible bug fix?
+- Correct: The PATCH number
+- Wrong: The MAJOR number
+- Wrong: The repository name
+
+**Findings:** _none yet_
+
+### 8. Professional repository & collaboration
 
 **Concept.** Use issues, milestones, README, licence awareness, releases, tags, actions and contribution guidance. Keep commits reviewable and documentation reproducible.
 

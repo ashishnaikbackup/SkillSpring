@@ -1,6 +1,6 @@
 # Review packet: IT Support, Networking & Cloud Foundations
 
-- Course key: `it`  ·  Lessons: 7  ·  Review interval: 90 days
+- Course key: `it`  ·  Lessons: 8  ·  Review interval: 90 days
 - Current status: `initial-review-required`  ·  Last reviewed: never
 - Content files: `essential-courses.js`
 - Official sources to check against:
@@ -163,7 +163,34 @@ df -h /
 
 **Findings:** _none yet_
 
-### 7. Defensive security and incident response
+### 7. DNS, DHCP & network troubleshooting
+
+**Concept.** DHCP automatically gives a device an IP address, subnet mask, gateway and DNS server. DNS translates names such as example.com into IP addresses. Many network problems can be found by working up the layers: is the cable or Wi-Fi connected, does the device have a valid address, can it reach the gateway, can it reach an outside address, and can it resolve names? Tools help: ping tests reachability, nslookup or dig checks DNS, and traceroute shows the path. Change one thing at a time, record what you tried, and escalate with evidence.
+
+**Example**
+
+```
+Troubleshooting ladder (cannot open a website)
+  1. Link: Wi-Fi connected? cable plugged in?
+  2. Address: ipconfig (Windows) or ip addr (Linux) shows a valid address?
+  3. Gateway: ping the default gateway
+  4. Internet: ping 8.8.8.8 works? -> routing is probably fine
+  5. DNS: nslookup example.com fails? -> name resolution is the problem
+  6. Path: traceroute or tracert shows where packets stop
+```
+
+**Explanation / note.** Reaching an IP address but not a name points to DNS.
+
+**Task.** In a lab or virtual machine, work through the ladder and write down what each result would mean. Then change the DNS server to a wrong address and show how step 5 reveals the fault, and restore the original setting.
+
+**Quiz.** A device can ping 8.8.8.8 but cannot open websites by name. What is the most likely problem?
+- Correct: DNS name resolution
+- Wrong: The network cable is unplugged
+- Wrong: The device has no IP address
+
+**Findings:** _none yet_
+
+### 8. Defensive security and incident response
 
 **Concept.** Security protects confidentiality, integrity and availability. Learn patching, backups, MFA, phishing awareness, endpoint protection, logging and incident response. Never scan, exploit or access systems without explicit authorisation.
 
