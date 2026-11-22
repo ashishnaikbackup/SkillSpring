@@ -33,7 +33,7 @@ The new [Mastery Hub](https://ashishnaikbackup.github.io/SkillSpring/mastery-hub
 | Public website | Static SkillSpring site deployed on GitHub Pages | Deployment workflow succeeded and its HTTP smoke tests passed. |
 | Learning library | 30 course catalogue entries across 12 learning schools | Catalogue routes, required course data and local links are checked by the static validator. Not every school has a full course yet. |
 | Beginner path | Start Here guide, programming logic, 17-module Python course and DSA progression | Dependency order is documented; DSA follows programming fundamentals. |
-| Coding practice | 10 Python, 8 JavaScript and 8 SQL/SQLite graded challenges | Python runs through Pyodide; JavaScript runs in a sandboxed browser frame; SQL uses SQLite in the browser. Tracks include checks, hints, example solutions and local progress. |
+| Coding practice | 15 Python, 13 JavaScript and 13 SQL/SQLite graded challenges | Python runs through Pyodide; JavaScript runs in a sandboxed browser frame; SQL uses SQLite in the browser. Tracks include checks, hints, example solutions and local progress. |
 | Multi-language lab | 26 language/tool choices | Python, JavaScript, HTML/CSS preview and SQLite run in the browser. Twenty-two additional languages have starter files, download and local run instructions; they are not remotely compiled by SkillSpring. |
 | Microsoft / workplace tools | Word, PowerPoint, Excel, Power BI, Outlook & Teams, Access and Power Automate courses | Lesson-based introductions and workplace tasks. Power BI also has a separate hands-on retail dashboard project. |
 | Power BI project | Three fictional CSV datasets, 36 transactions, modelling and DAX/report brief | Dataset keys and arithmetic are checked by the site validator; project totals are documented for reconciliation. Learners create the PBIX in Power BI Desktop. |
@@ -77,7 +77,7 @@ A shared `ux-polish.css` layer is now applied exactly once across all 26 public 
 1. Open **Start Here** and follow the sequence from digital basics to programming logic.
 2. Complete the logic course before rushing into Python syntax or DSA.
 3. Work through the Python course and type the examples yourself.
-4. Complete the ten Python practice challenges without copying the solutions.
+4. Complete the fifteen Python practice challenges without copying the solutions.
 5. Learn Git/GitHub and publish small, explained projects.
 6. Choose a role pathway; for data/business analysis, complete Excel and the Power BI retail capstone.
 7. Use Field Radar to discover changes, but verify important claims at the original source.
@@ -180,3 +180,8 @@ Every essential course that had only 7 lessons gains one: Outlook (high-volume e
 
 - **Advanced practice now has 13 JavaScript and 13 SQL challenges** (was 8 each). New JavaScript: unique sorted values, safe average, word frequency, palindrome check and async fallback on rejection. New SQL: ROUND/AVG, top-N with LIMIT, HAVING, subquery and JOIN + aggregate.
 - **Verified before shipping:** every reference solution passes its own tests (JavaScript run under Node; SQL run in SQLite against the same seed data as the in-browser sql.js database) and every starter fails them, so a learner cannot pass without writing code. Not yet exercised in a real browser against the CDN-hosted sql.js; reviewer should click through each new challenge once.
+
+
+## Python practice: 5 more graded challenges — 22 November 2026
+
+- **Python practice now has 15 challenges** (was 10): text cleaning, list comprehensions, dictionary counting, exception handling and sorting records. Each reference solution passes its tests and each starter fails them (checked in CPython with the same assertion style the page uses). Not yet run through Pyodide in a browser; a reviewer should click through each new challenge once.
