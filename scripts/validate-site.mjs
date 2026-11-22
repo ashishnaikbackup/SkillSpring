@@ -255,6 +255,7 @@ if (!essentialPlayer.includes('store+"-passed"') || !essentialPlayer.includes('d
       const b = briefs[entry.slug];
       if (!b) { fail(`Missing capstone brief for ${entry.slug}.`); continue; }
       for (const field of ["title", "scenario", "stretch"]) if (typeof b[field] !== "string" || b[field].length < 10) fail(`Capstone brief ${entry.slug} needs a ${field}.`);
+      if (b.example && (!b.example.note || !b.example.output || !Array.isArray(b.example.files) || !b.example.files.length || b.example.files.some((f) => !f.name || !f.code))) fail(`Capstone brief ${entry.slug} has an incomplete worked example.`);
       for (const field of ["build", "evidence"]) if (!Array.isArray(b[field]) || b[field].length < 3) fail(`Capstone brief ${entry.slug} needs at least three ${field} items.`);
     }
     for (const page of files.filter((f) => /-course\.html$/.test(f))) {

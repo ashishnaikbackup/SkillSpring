@@ -156,3 +156,5 @@ html[data-theme="light"] :where(img,video,canvas,iframe,picture){filter:invert(1
 .brief h4{margin:1rem 0 .25rem}
 .brief ul{margin:.25rem 0 .75rem 1.25rem}
 .brief-note{opacity:.85;font-size:.95em}
+
+.brief-example{margin-top:1rem;border-top:1px solid rgba(127,127,127,.35);padding-top:.75rem}.brief-example summary{cursor:pointer;font-weight:600}.brief-example pre{overflow:auto;max-height:22rem;padding:.75rem;border:1px solid rgba(127,127,127,.35);border-radius:8px;font-size:.9em}.brief-example h5{margin:.75rem 0 .25rem}
