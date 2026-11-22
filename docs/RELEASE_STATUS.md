@@ -174,3 +174,9 @@ Every essential course that had only 7 lessons gains one: Outlook (high-volume e
 
 - **Review packets now include each course's capstone brief** and a checklist item asking the reviewer to judge whether it is realistic, clear and fairly assessable.
 - **Eight new lessons:** C++ (inheritance, virtual functions and polymorphism; compiled and run under AddressSanitizer), Personal Finance (credit, loans and EMI mathematics; education only; EMI figures recalculated), UI/UX (information architecture and navigation), Spreadsheets (validation, protection and collaboration), Word (forms, content controls and macro safety), PowerPoint (pitching a proposal), Power BI (time intelligence and date tables in DAX) and Interview Skills (networking, referrals and follow-up). The platform has about 290 lessons and every course has at least 9. Still AI-drafted and pending expert review; the DAX has not been run in Power BI Desktop and should be tested by the reviewer.
+
+
+## Graded practice labs: 5 JavaScript and 5 SQL challenges added — 22 November 2026
+
+- **Advanced practice now has 13 JavaScript and 13 SQL challenges** (was 8 each). New JavaScript: unique sorted values, safe average, word frequency, palindrome check and async fallback on rejection. New SQL: ROUND/AVG, top-N with LIMIT, HAVING, subquery and JOIN + aggregate.
+- **Verified before shipping:** every reference solution passes its own tests (JavaScript run under Node; SQL run in SQLite against the same seed data as the in-browser sql.js database) and every starter fails them, so a learner cannot pass without writing code. Not yet exercised in a real browser against the CDN-hosted sql.js; reviewer should click through each new challenge once.

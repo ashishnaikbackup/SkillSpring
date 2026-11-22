@@ -17,7 +17,7 @@ The public product and repository are named SkillSpring.
 
 - **[Course library](courses.html)** — browse all published self-paced courses.
 - **[Full 12-school curriculum map](curriculum-map.html)** — inspect the complete learning-school scope, course families, eight progressive stages, assessment standards and portfolio projects. This is a syllabus map, not a claim that every lesson is fully authored.
-- **[Graded JavaScript & SQL practice](advanced-practice.html)** — eight JavaScript and eight SQL challenges with browser-based checks, hints, example solutions and local progress.
+- **[Graded JavaScript & SQL practice](advanced-practice.html)** — thirteen JavaScript and thirteen SQL challenges with browser-based checks, hints, example solutions and local progress.
 - **[Professional practice labs](professional-labs.html)** — interactive spreadsheet modelling, descriptive statistics, Ohm’s law/power, IPv4 subnetting, UI/UX accessibility review, personal cash-flow modelling and business unit economics.
 - **[Engineering Field Practice Studio](engineering-field-studio.html)** — worked and auto-checked beginner simulations for mechanical statics, civil quantity take-off, chemical mass balance, 4–20 mA instrumentation and biomedical dilution mathematics.
 - **[Version 1 release status](docs/RELEASE_STATUS.md)** — live website, shipped features, automated checks, schedules and known limitations.
@@ -94,10 +94,10 @@ These schools are the long-term curriculum scope. A topic appearing in the catal
 - [x] Add an interactive Python practice path with 10 tested challenges, hints, solutions and local progress.
 - [x] Add a hands-on Power BI retail dashboard project with three fictional CSV datasets and a step-by-step DAX/model/report guide.
 - [x] Publish an explicit 12-school curriculum map with course families, progressive stages, examples, practice outcomes, assessment standards and portfolio capstones. This makes the remaining authoring scope visible; it does not count as authored lessons.
-- [x] Add graded JavaScript and SQL tracks with eight challenges each, browser-based checks, hints and solutions.
+- [x] Add graded JavaScript and SQL tracks (now thirteen challenges each), browser-based checks, hints and solutions.
 - [x] Add five interactive professional mini-labs for spreadsheet modelling, data analysis, electronics, networking and UI/UX evaluation.
 - [ ] Continue expanding all courses to the full master-curriculum standard: deeper lessons, worked solutions, automated practice, multiple projects, assessments and role-specific portfolio rubrics.
-- [ ] Expand the five starter professional labs into full graded practice tracks with multi-stage assignments and detailed rubrics. JavaScript and SQL already have dedicated eight-challenge tracks; the multi-language lab remains a lightweight practice workspace, not a universal compiler.
+- [ ] Expand the five starter professional labs into full graded practice tracks with multi-stage assignments and detailed rubrics. JavaScript and SQL already have dedicated thirteen-challenge tracks; the multi-language lab remains a lightweight practice workspace, not a universal compiler.
 - [ ] Build out the remaining course families across all 12 schools; the 30-entry catalogue is a starting library, not complete coverage of the full curriculum.
 - [x] Add automated static site validation for JavaScript syntax, local links, course catalogue routes and required lesson data.
 - [x] Apply a shared responsive UI/UX and accessibility polish layer across public pages; manual device/screen-reader QA is documented separately.
@@ -126,7 +126,7 @@ Open `index.html` through a local web server such as VS Code Live Server. The Py
 
 See [docs/PRODUCT_VISION.md](docs/PRODUCT_VISION.md) for the product principles, architecture direction, safety rules and long-term roadmap.
 
-**Curriculum expansion (1 November 2026):** The [full curriculum map](curriculum-map.html) now makes all 12 school syllabi explicit, with eight progressive stages per school, course families, practical outcomes, worked-example expectations, assessments and portfolio capstones. The [graded practice studio](advanced-practice.html) adds eight JavaScript and eight SQL challenges with browser-based checking, hints and example solutions. These are substantive additions, but a curriculum map is not a substitute for authored lesson material. The full course-by-course editorial and depth requirements remain open.
+**Curriculum expansion (1 November 2026):** The [full curriculum map](curriculum-map.html) now makes all 12 school syllabi explicit, with eight progressive stages per school, course families, practical outcomes, worked-example expectations, assessments and portfolio capstones. The [graded practice studio](advanced-practice.html) adds thirteen JavaScript and thirteen SQL challenges with browser-based checking, hints and example solutions. These are substantive additions, but a curriculum map is not a substitute for authored lesson material. The full course-by-course editorial and depth requirements remain open.
 
 **Release status (1 November 2026):** The current SkillSpring v1 site is deployed successfully to GitHub Pages. The latest verified Actions run passed the static validator and post-deployment smoke tests for the homepage, Start Here, course catalogue, multi-language lab, Python practice page, Power BI project, Field Radar and key data/assets. The repository contains 30 catalogue entries, 17 essential-course players (134 guided lessons), 12 foundational course pages (Python has 17 modules; the other 11 have five or six modules each), a 10-challenge in-browser Python practice path, a 26-selectable-language/toolchain coding workspace (four browser execution/preview modes plus local-run guidance for the remaining languages), a practical Power BI capstone with fictional CSV data, and a daily source-linked Field Radar feed. This is a usable v1 release, not a claim that every topic across all 12 learning schools is already a complete professional textbook. The remaining curriculum gaps are listed below and in the master curriculum.
 
