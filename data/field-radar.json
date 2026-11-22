@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-21T09:51:16.638Z",
+  "generatedAt": "2026-11-22T09:48:35.432Z",
   "disclaimer": "Automatically collected publisher headlines with original links. Read the publisher's source for full context. This is not financial, legal or security advice.",
   "sources": [
     {
@@ -29,10 +29,10 @@
       "name": "Google Developers",
       "category": "Software Development",
       "url": "https://developers.googleblog.com/feeds/posts/default/",
-      "status": "ok",
-      "message": "Feed refreshed",
-      "lastStatusChange": "2026-11-01T02:06:00.544Z",
-      "lastContentUpdate": "2026-11-21T09:51:16.638Z",
+      "status": "failed",
+      "message": "fetch failed",
+      "lastStatusChange": "2026-11-22T09:48:35.432Z",
+      "lastContentUpdate": "2026-11-22T09:48:35.432Z",
       "itemCount": 1
     },
     {
@@ -153,11 +153,20 @@
       "status": "ok",
       "message": "Feed refreshed",
       "lastStatusChange": "2026-11-01T02:06:00.544Z",
-      "lastContentUpdate": "2026-11-21T09:51:16.638Z",
+      "lastContentUpdate": "2026-11-22T09:48:35.432Z",
       "itemCount": 1
     }
   ],
   "items": [
+    {
+      "id": "https://spectrum.ieee.org/sram-memory-z2ram",
+      "title": "Z2RAM Claims SRAM Memory Speeds at Much Greater Density",
+      "url": "https://spectrum.ieee.org/sram-memory-z2ram",
+      "publishedAt": "2026-11-21T14:00:02.000Z",
+      "sourceId": "ieee-spectrum",
+      "sourceName": "IEEE Spectrum",
+      "category": "Engineering & Electronics"
+    },
     {
       "id": "https://www.microsoft.com/microsoft-365/roadmap?id=581992",
       "title": "Manage workforce requests in Microsoft 365 Copilot",
@@ -184,15 +193,6 @@
       "sourceId": "rbi",
       "sourceName": "Reserve Bank of India",
       "category": "Finance & India"
-    },
-    {
-      "id": "https://spectrum.ieee.org/video-friday-morphing-robots-quadrotor",
-      "title": "Video Friday: Drone Squeezes Itself to Fit Through Tight Spaces",
-      "url": "https://spectrum.ieee.org/video-friday-morphing-robots-quadrotor",
-      "publishedAt": "2026-11-20T17:30:03.000Z",
-      "sourceId": "ieee-spectrum",
-      "sourceName": "IEEE Spectrum",
-      "category": "Engineering & Electronics"
     },
     {
       "id": "https://www.cisa.gov/news-events/alerts/2026/11/20/cisa-adds-four-known-exploited-vulnerabilities-catalog",
@@ -273,7 +273,8 @@
       "publishedAt": null,
       "sourceId": "google-dev",
       "sourceName": "Google Developers",
-      "category": "Software Development"
+      "category": "Software Development",
+      "summary": ""
     }
   ]
 }
