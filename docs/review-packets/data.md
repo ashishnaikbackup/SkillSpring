@@ -1,6 +1,6 @@
 # Review packet: Data Science Foundations: Python, Statistics & Insight
 
-- Course key: `data`  ·  Lessons: 9  ·  Review interval: 90 days
+- Course key: `data`  ·  Lessons: 10  ·  Review interval: 90 days
 - Current status: `initial-review-required`  ·  Last reviewed: never
 - Content files: `course-engine.js`
 - Official sources to check against:
@@ -236,7 +236,41 @@ Questions to ask before acting
 
 **Findings:** _none yet_
 
-### 9. Responsible analysis & capstone
+### 9. Dates, time series & rolling averages
+
+**Concept.** Many datasets are ordered in time, such as sales, sensor readings and visits. Convert text dates to real datetimes before analysing them, otherwise sorting and grouping behave as text. Resampling groups the data into regular periods such as months, and aggregating each period shows the trend. Percentage change compares one period with the previous one, and a rolling average smooths noise by averaging a moving window. Always state the period, check for missing dates, and be careful with the first rows where the window is incomplete.
+
+**Example**
+
+```
+import pandas as pd
+
+df = pd.DataFrame({
+    "date": ["2026-01-03", "2026-01-20", "2026-02-02", "2026-02-27", "2026-03-15"],
+    "sales": [100, 150, 120, 80, 200],
+})
+df["date"] = pd.to_datetime(df["date"])
+monthly = df.set_index("date")["sales"].resample("MS").sum()
+print(monthly.to_string())
+print(monthly.pct_change().round(3).to_string())
+print(df.set_index("date")["sales"].rolling(2).mean().to_string())
+# Monthly sums: Jan 250, Feb 200, Mar 200
+# Month on month change: Feb -0.2, Mar 0.0
+# 2-row rolling mean: first row missing (NaN), then 125.0, 135.0, 100.0, 140.0
+```
+
+**Explanation / note.** pd.to_datetime makes real dates, and resample with MS groups the rows by month start. The January total is 100 plus 150, so 250; February falls by 20 percent to 200 and March is unchanged. The rolling mean has no value for the first row because it needs two observations. The code was run with pandas and the printed values match.
+
+**Task.** Use a fictional daily dataset of at least 60 rows. Compute weekly totals, the week-on-week percentage change and a 7-day rolling average. Plot both series, label the axes and write two sentences on what the smoothing hides.
+
+**Quiz.** What does resampling do to a time series?
+- Correct: Groups it into regular periods and aggregates each one
+- Wrong: Randomly removes rows
+- Wrong: Sorts it alphabetically
+
+**Findings:** _none yet_
+
+### 10. Responsible analysis & capstone
 
 **Concept.** Check privacy, consent, representativeness, uncertainty and limitations. Separate observation from interpretation. Do not publish sensitive personal data. Communicate uncertainty honestly and avoid claiming a model is fair or accurate without evaluation.
 

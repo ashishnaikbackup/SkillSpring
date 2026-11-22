@@ -1,6 +1,6 @@
 # Review packet: TypeScript: Safer JavaScript Applications
 
-- Course key: `typescript`  ·  Lessons: 9  ·  Review interval: 60 days
+- Course key: `typescript`  ·  Lessons: 10  ·  Review interval: 60 days
 - Current status: `initial-review-required`  ·  Last reviewed: never
 - Content files: `course-engine.js`
 - Official sources to check against:
@@ -265,7 +265,48 @@ console.log(firstOr<string>([], "none"));
 
 **Findings:** _none yet_
 
-### 9. Project setup, tests & capstone
+### 9. Mapped and conditional types
+
+**Concept.** TypeScript can build new types from existing ones. A mapped type loops over the keys of a type with in keyof and changes each property, for example adding readonly or making every property optional; the built-in Readonly and Partial are mapped types. A conditional type picks one type or another with extends, like an if statement for types. These tools remove duplicated type definitions, so changing the original interface updates every derived type. Keep them simple: if a type needs a comment to explain it, a plain interface may be clearer.
+
+**Example**
+
+```
+interface Profile {
+  name: string;
+  age: number;
+}
+
+type ReadonlyProfile = { readonly [K in keyof Profile]: Profile[K] };
+type Optionalised<T> = { [K in keyof T]?: T[K] };
+type NameOrNumber<T> = T extends string ? 'text' : T extends number ? 'number' : 'other';
+
+function update(p: Profile, changes: Optionalised<Profile>): Profile {
+  return { ...p, ...changes };
+}
+
+const a: ReadonlyProfile = { name: 'Asha', age: 20 };
+const b = update(a, { age: 21 });
+const kind1: NameOrNumber<string> = 'text';
+const kind2: NameOrNumber<boolean> = 'other';
+console.log(b, kind1, kind2);
+// Prints: { name: 'Asha', age: 21 } text other
+// Assigning to a readonly property fails to compile:
+// error TS2540: Cannot assign to 'age' because it is a read-only property.
+```
+
+**Explanation / note.** ReadonlyProfile copies every key of Profile and marks it readonly. Optionalised makes every property optional, so update accepts only the fields that change. NameOrNumber resolves to text for string and other for boolean at compile time, with no runtime cost. The file compiles under strict mode and the readonly error was reproduced with a separate test file.
+
+**Task.** Create an interface with five fields. Derive a read-only version, a version where every field is optional and a type that picks only two fields with Pick. Write one line of code that each type should accept and one it should reject.
+
+**Quiz.** What does a mapped type do?
+- Correct: Builds a new type by transforming each property of another type
+- Wrong: Maps a value to a place in memory
+- Wrong: Converts data to JSON at runtime
+
+**Findings:** _none yet_
+
+### 10. Project setup, tests & capstone
 
 **Concept.** Use strict compiler settings, linting, tests and small modules. Types improve developer feedback but do not replace runtime validation, security checks or tests. Avoid any when unknown is more appropriate.
 
