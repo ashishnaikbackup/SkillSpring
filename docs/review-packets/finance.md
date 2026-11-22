@@ -1,6 +1,6 @@
 # Review packet: Personal Finance: Foundations & Decision Skills
 
-- Course key: `finance`  ·  Lessons: 7  ·  Review interval: 60 days
+- Course key: `finance`  ·  Lessons: 8  ·  Review interval: 60 days
 - Current status: `initial-review-required`  ·  Last reviewed: never
 - Content files: `course-engine.js`
 - Official sources to check against:
@@ -164,7 +164,37 @@ Monthly 15-minute check
 
 **Findings:** _none yet_
 
-### 7. Financial plan & decision project
+### 7. Investing basics: risk, diversification & costs
+
+**Concept.** This lesson is education, not investment advice. Investments carry risk: returns are not guaranteed and values can fall. Higher possible returns usually come with higher risk. Diversification means not relying on one asset or company. Costs matter because they compound: a small yearly difference in return or fees changes the final amount greatly over many years. Build an emergency fund and clear high-interest debt before taking investment risk, match the time horizon to the goal, and be sceptical of promised guaranteed high returns, which are a common sign of fraud. Check that any adviser or platform is registered with the relevant regulator, such as SEBI in India, and read the official documents.
+
+**Example**
+
+```
+Fictional example: 1,00,000 invested for 20 years
+  at 7% a year after costs : about 3,86,968
+  at 6% a year after costs : about 3,20,714
+  Difference from one percentage point: about 66,255
+
+Questions before investing
+  What is the goal and the time horizon?
+  What can I afford to lose or leave untouched?
+  What are the total costs each year?
+  Is the seller registered? Where are the official documents?
+```
+
+**Explanation / note.** A single percentage point of yearly cost or return changes the outcome by about a fifth over 20 years. The numbers are an illustration of compounding, not a forecast.
+
+**Task.** Make a one-page checklist of questions you will ask before using any investment product. Recalculate the cost example with your own fictional amounts and years, and write three red flags that suggest a scam.
+
+**Quiz.** Which is a common warning sign of an investment scam?
+- Correct: A promise of guaranteed high returns with little or no risk
+- Wrong: A clear explanation of costs and risks
+- Wrong: A seller who is registered with the regulator
+
+**Findings:** _none yet_
+
+### 8. Financial plan & decision project
 
 **Concept.** A useful financial plan connects goals, time horizon, cash needs, risk and review dates. Keep records secure, use trusted institutions and understand fees. Never share OTPs, passwords, seed phrases or remote-access permissions.
 

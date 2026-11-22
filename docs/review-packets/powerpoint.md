@@ -1,6 +1,6 @@
 # Review packet: Microsoft PowerPoint: Beginner to Professional Presentations
 
-- Course key: `powerpoint`  ·  Lessons: 7  ·  Review interval: 90 days
+- Course key: `powerpoint`  ·  Lessons: 8  ·  Review interval: 90 days
 - Current status: `initial-review-required`  ·  Last reviewed: never
 - Content files: `essential-courses.js`
 - Official sources to check against:
@@ -139,7 +139,38 @@ Create a theme with master title/content layouts, consistent footer and accessib
 
 **Findings:** _none yet_
 
-### 7. Professional presentation capstone
+### 7. Presenting: timing, presenter view & handouts
+
+**Concept.** A presentation succeeds when it is delivered, not only designed. Decide the single message and the time limit, then plan the time for each section and leave room for questions. Use presenter view so you can see notes and the next slide while the audience sees only the slide. Keep slides as visual support and put detail in a handout or notes page. Rehearse aloud at least twice with a timer, prepare answers to the three hardest questions, test the equipment and have a backup copy. Slides should be readable from the back of the room and accessible to people with different needs.
+
+**Example**
+
+```
+Delivery plan (10-minute talk)
+  Opening and problem: 1 min
+  Evidence and options: 5 min
+  Recommendation: 2 min
+  Questions: 2 min
+
+Checklist
+  [ ] Rehearsed twice with a timer
+  [ ] Notes in presenter view; handout prepared
+  [ ] Backup copy on a USB drive and in cloud storage
+  [ ] Tested projector, audio and slide clicker
+```
+
+**Explanation / note.** Rehearsal reveals problems with timing and flow that are invisible when only reading the slides.
+
+**Task.** Choose one of your slide decks and prepare a timed delivery plan, speaker notes and a one-page handout. Rehearse twice, record the timings and cut or move slides until the talk fits the time limit.
+
+**Quiz.** Why rehearse a presentation aloud with a timer?
+- Correct: To check the timing and find unclear parts before the audience does
+- Wrong: To memorise every word exactly
+- Wrong: Because slides cannot be changed later
+
+**Findings:** _none yet_
+
+### 8. Professional presentation capstone
 
 **Concept.** A professional deck supports a talk: opening, context, evidence, analysis, recommendation, risks and call to action. Keep backup files and prepare to answer questions with evidence.
 

@@ -1,6 +1,6 @@
 # Review packet: C++: Fundamentals to Object-Oriented Programming
 
-- Course key: `cpp`  ·  Lessons: 7  ·  Review interval: 90 days
+- Course key: `cpp`  ·  Lessons: 8  ·  Review interval: 90 days
 - Current status: `initial-review-required`  ·  Last reviewed: never
 - Content files: `course-engine.js`
 - Official sources to check against:
@@ -184,7 +184,50 @@ int main() {
 
 **Findings:** _none yet_
 
-### 7. Files, testing & capstone
+### 7. Classes, RAII & smart pointers
+
+**Concept.** In C++ an object's constructor acquires a resource and its destructor releases it. This idea is called RAII, resource acquisition is initialisation, and it makes cleanup automatic when the object goes out of scope, even if an error occurs. Prefer standard containers such as vector and string to raw arrays. When you must allocate on the heap, use std::make_unique to create a unique_ptr, which deletes the object automatically and cannot be copied, only moved. Avoid raw new and delete in application code, and use shared_ptr only when ownership is genuinely shared.
+
+**Example**
+
+```
+#include <iostream>
+#include <memory>
+#include <string>
+#include <vector>
+
+class Logger {
+public:
+    explicit Logger(std::string name) : name_(std::move(name)) { std::cout << "open " << name_ << '\n'; }
+    ~Logger() { std::cout << "close " << name_ << '\n'; }
+    void write(const std::string& msg) const { std::cout << name_ << ": " << msg << '\n'; }
+private:
+    std::string name_;
+};
+
+int main() {
+    Logger local("local");
+    local.write("starting");
+    auto heap = std::make_unique<Logger>("heap");
+    heap->write("allocated safely");
+    std::vector<std::unique_ptr<Logger>> loggers;
+    loggers.push_back(std::move(heap));
+    std::cout << "end of main\n";
+}
+```
+
+**Explanation / note.** Both loggers are closed automatically when main ends, in reverse order of creation, so the output ends with close heap and then close local. No delete is written anywhere.
+
+**Task.** Write a class that opens a fictional resource in its constructor and releases it in its destructor. Create it on the stack and through make_unique, and use AddressSanitizer to confirm there are no leaks. Explain why unique_ptr cannot be copied.
+
+**Quiz.** What does a unique_ptr do when it goes out of scope?
+- Correct: Deletes the object it owns automatically
+- Wrong: Copies the object to a new location
+- Wrong: Leaves the object in memory for later
+
+**Findings:** _none yet_
+
+### 8. Files, testing & capstone
 
 **Concept.** Use streams such as ifstream and ofstream for files. Separate program logic from input/output so functions can be tested. Compile with warnings, write tests and use version control.
 

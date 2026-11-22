@@ -1,6 +1,6 @@
 # Review packet: Microsoft Word: Beginner to Professional Documents
 
-- Course key: `word`  ·  Lessons: 7  ·  Review interval: 90 days
+- Course key: `word`  ·  Lessons: 8  ·  Review interval: 90 days
 - Current status: `initial-review-required`  ·  Last reviewed: never
 - Content files: `essential-courses.js`
 - Official sources to check against:
@@ -139,7 +139,33 @@ Use the accessibility checker, set document properties, inspect reading order an
 
 **Findings:** _none yet_
 
-### 7. Workplace capstone
+### 7. Templates, styles & mail merge
+
+**Concept.** Repeatable documents should be built from styles and templates, not manual formatting. A template (.dotx) stores page setup, styles and placeholder text so every new document starts consistent. Mail merge combines one main document with a list of records, such as names and addresses in an Excel sheet, to create personalised letters, labels or emails. Prepare the list first: one header row, one record per row, no blank rows and correct formats. Preview the results and test with a few records before merging everyone, and protect personal data in the source list.
+
+**Example**
+
+```
+Mail merge steps (fictional offer letters)
+  1. Prepare Excel list: Name, Role, StartDate, Salary (header row, no blanks)
+  2. Word: Mailings > Start Mail Merge > Letters
+  3. Select Recipients > Use an Existing List > choose the workbook
+  4. Insert Merge Field for each placeholder
+  5. Preview Results, check three records, then Finish & Merge
+```
+
+**Explanation / note.** A merge combines fixed text with fields from each record in the data source.
+
+**Task.** Create a letter template with styles and a mail merge from a fictional list of five people. Preview each record, fix one deliberately wrong date format in the list, and save the template for reuse.
+
+**Quiz.** What is the main purpose of a mail merge?
+- Correct: To create personalised documents from a main document and a data list
+- Wrong: To compress a document before emailing it
+- Wrong: To translate a document into another language
+
+**Findings:** _none yet_
+
+### 8. Workplace capstone
 
 **Concept.** Create a complete professional report: cover, executive summary, contents, problem, method, findings, recommendations, references and appendix. Keep claims evidence-based and distinguish facts from assumptions.
 

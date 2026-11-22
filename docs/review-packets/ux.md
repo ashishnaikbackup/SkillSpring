@@ -1,6 +1,6 @@
 # Review packet: UI/UX Design Foundations
 
-- Course key: `ux`  ·  Lessons: 7  ·  Review interval: 180 days
+- Course key: `ux`  ·  Lessons: 8  ·  Review interval: 180 days
 - Current status: `initial-review-required`  ·  Last reviewed: never
 - Content files: `course-engine.js`
 - Official sources to check against:
@@ -160,7 +160,36 @@ Better button: Delete account
 
 **Findings:** _none yet_
 
-### 7. Accessibility, iteration & case study
+### 7. Research, usability testing & success measures
+
+**Concept.** Design decisions need evidence. Interviews reveal needs and context; usability tests show where people struggle with a real prototype. A test session gives the participant realistic tasks, asks them to think aloud, and observes without helping. Small rounds with a handful of participants often reveal the most serious problems, so test, fix and test again instead of one large study. Choose measures in advance: task success, time taken, errors and the participant's own comments. Record what you saw separately from your interpretation, and share findings with severity and a suggested next step.
+
+**Example**
+
+```
+Usability test plan (fictional library app)
+  Goal: can a student renew a borrowed book?
+  Participants: 5 students, mixed devices
+  Tasks:
+    1. Find the book you borrowed last week
+    2. Renew it for two more weeks
+  Measures: completed without help (yes/no), time, errors, comments
+  Script: please think aloud; there are no wrong answers; we are testing the app, not you
+  Output: list of issues with severity (blocker, major, minor) and fix ideas
+```
+
+**Explanation / note.** The plan keeps the task realistic and the measures defined before testing starts, so results can be compared after the design is changed.
+
+**Task.** Write a test plan for a fictional app and run it with two or three people on a paper or clickable prototype. Record each issue with what you observed, its severity and one fix, then retest after changing the design.
+
+**Quiz.** Why ask participants to think aloud during a usability test?
+- Correct: It reveals what they expect and where they get confused
+- Wrong: It makes the test finish faster
+- Wrong: It lets the designer explain the interface
+
+**Findings:** _none yet_
+
+### 8. Accessibility, iteration & case study
 
 **Concept.** Accessible design considers keyboard use, contrast, text size, labels, focus, motion and assistive technologies. Iterate based on evidence. A case study explains the problem, role, process, decisions, outcome and limitations.
 

@@ -1,6 +1,6 @@
 # Review packet: Spreadsheets: Excel & Google Sheets Foundations
 
-- Course key: `sheets`  ·  Lessons: 7  ·  Review interval: 90 days
+- Course key: `sheets`  ·  Lessons: 8  ·  Review interval: 90 days
 - Current status: `initial-review-required`  ·  Last reviewed: never
 - Content files: `course-engine.js`
 - Official sources to check against:
@@ -160,7 +160,32 @@ Average transaction = AVERAGE(Amount)
 
 **Findings:** _none yet_
 
-### 7. Modelling, audit & capstone
+### 7. Charts, pivot summaries & dashboards
+
+**Concept.** A pivot table summarises a dataset by grouping rows and totalling values without changing the source data. Charts turn the summary into a picture: use a line for change over time, bars to compare categories and avoid decoration that hides the message. Choose clear titles that state the finding, label axes and units, and keep the source data in a separate sheet. Slicers or filters let a reader explore a dashboard. Check totals against the raw data, and keep one cell block for assumptions and the date of the last update.
+
+**Example**
+
+```
+Source sheet: Sales (Date, Region, Product, Amount)
+Pivot: Rows = Region, Columns = Month, Values = Sum of Amount
+Chart: clustered columns by Region with title "West led sales in October"
+Filter: slicer on Product
+Check: pivot grand total = SUM of Amount column in the source sheet
+```
+
+**Explanation / note.** The final check compares the pivot total with a simple SUM, which catches missing rows or wrong ranges before the chart is shared.
+
+**Task.** Create a fictional sales sheet with at least 50 rows, build a pivot summary and two charts, add a filter and write a one-line finding as each chart title. Verify the pivot total against the source.
+
+**Quiz.** Why should a pivot table total be checked against the source data?
+- Correct: To catch missing rows, wrong ranges or duplicated records
+- Wrong: Pivot tables never need checking
+- Wrong: Because totals change when you add a chart
+
+**Findings:** _none yet_
+
+### 8. Modelling, audit & capstone
 
 **Concept.** Separate inputs, calculations and outputs. Document assumptions, protect formula cells where appropriate and test scenarios. Avoid hard-coded values hidden inside formulas. Review errors and access permissions before sharing.
 

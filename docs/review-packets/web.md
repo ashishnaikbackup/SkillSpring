@@ -1,6 +1,6 @@
 # Review packet: HTML & CSS: Build Responsive Websites
 
-- Course key: `web`  ·  Lessons: 8  ·  Review interval: 90 days
+- Course key: `web`  ·  Lessons: 9  ·  Review interval: 90 days
 - Current status: `initial-review-required`  ·  Last reviewed: never
 - Content files: `course-engine.js`
 - Official sources to check against:
@@ -213,7 +213,40 @@ a { color: var(--accent); }
 
 **Findings:** _none yet_
 
-### 8. Accessibility, polish & publish
+### 8. Layout patterns: navigation, cards & responsive components
+
+**Concept.** Most pages reuse a few patterns. A navigation bar is a list of links, often laid out with flexbox and collapsing on small screens. A card grid can adapt without many media queries: CSS Grid with auto-fit and minmax creates as many columns as fit. Build each component once with clear class names, test it at narrow and wide widths and with the keyboard, and make sure links and buttons are large enough to tap. Prefer relative units such as rem so text respects the user's size setting, and avoid fixed heights that clip content.
+
+**Example**
+
+```
+<nav aria-label="Main">
+  <ul class="nav">
+    <li><a href="/">Home</a></li>
+    <li><a href="/courses">Courses</a></li>
+  </ul>
+</nav>
+
+<style>
+  .nav { display: flex; gap: 1rem; list-style: none; padding: 0; flex-wrap: wrap; }
+  .cards { display: grid; gap: 1rem;
+           grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr)); }
+  .card { padding: 1rem; border: 1px solid #ccc; border-radius: 0.5rem; }
+</style>
+```
+
+**Explanation / note.** The grid creates as many 16rem-or-wider columns as fit the screen, so cards reflow from one column on a phone to several on a desktop without extra rules.
+
+**Task.** Build a navigation bar and a grid of six cards. Test at 320, 768 and 1280 pixels wide, with 200 percent zoom and with the keyboard only. Fix anything that overflows or cannot be reached.
+
+**Quiz.** What does repeat(auto-fit, minmax(16rem, 1fr)) do in a grid?
+- Correct: Creates as many flexible columns as fit the available width
+- Wrong: Forces exactly sixteen columns
+- Wrong: Makes every card exactly 16rem tall
+
+**Findings:** _none yet_
+
+### 9. Accessibility, polish & publish
 
 **Concept.** Accessibility includes keyboard use, contrast, visible focus, semantic structure, labels and reduced-motion considerations. Test with keyboard navigation and browser tools. Optimise images and keep CSS organised.
 

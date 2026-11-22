@@ -151,3 +151,8 @@ SQL (data modelling and constraints; performance, EXPLAIN and set operations), J
 ## Seven more lessons — 22 November 2026
 
 Java (generics, collections and streams; records, enums and clear modelling), TypeScript (generics and discriminated unions; tooling: tsconfig, linting and tests), HTML & CSS (maintainable CSS: variables, themes and DevTools) and Excel (dynamic arrays, XLOOKUP and LET; what-if analysis) gain lessons, bringing the platform to about 266 lessons. The Java and TypeScript examples were compiled and run and their stated outputs confirmed; the Goal Seek figure was recalculated. Still AI-drafted and pending expert review; packets regenerated.
+
+
+## Seven more lessons — 22 November 2026 (second batch)
+
+C++ (classes, RAII and smart pointers; compiled and run under AddressSanitizer), UI/UX (research, usability testing and success measures), Spreadsheets (charts, pivot summaries and dashboards), Personal Finance (investing basics: risk, diversification and costs; education only, not advice; the compounding figures were recalculated), HTML & CSS (layout patterns), Word (templates, styles and mail merge) and PowerPoint (presenting: timing, presenter view and handouts) each gain a lesson, bringing the platform to about 273 lessons. Still AI-drafted and pending expert review; packets regenerated. No human review had been recorded as of this update.
