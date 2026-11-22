@@ -185,3 +185,10 @@ Every essential course that had only 7 lessons gains one: Outlook (high-volume e
 ## Python practice: 5 more graded challenges — 22 November 2026
 
 - **Python practice now has 15 challenges** (was 10): text cleaning, list comprehensions, dictionary counting, exception handling and sorting records. Each reference solution passes its tests and each starter fails them (checked in CPython with the same assertion style the page uses). Not yet run through Pyodide in a browser; a reviewer should click through each new challenge once.
+
+
+## Three more lessons (SQL, JavaScript) — 22 November 2026
+
+- **SQL gains two lessons:** dates, text functions and CASE; views, transactions and safe data changes. The example queries were run in SQLite and the stated outputs match (monthly paid totals, view contents, CHECK-constraint rejection).
+- **JavaScript gains one lesson:** errors, validation and defensive code (try/catch/finally, custom Error subclass, re-throwing). The example was run in Node and the printed output matches.
+- SQL now has 11 lessons and JavaScript 10; the platform has about 293. All browser checks pass on all 30 course pages. Still AI-drafted and pending expert review; review packets regenerated.

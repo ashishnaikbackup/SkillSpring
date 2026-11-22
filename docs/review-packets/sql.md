@@ -1,6 +1,6 @@
 # Review packet: SQL: Databases from Zero
 
-- Course key: `sql`  ·  Lessons: 9  ·  Review interval: 90 days
+- Course key: `sql`  ·  Lessons: 11  ·  Review interval: 90 days
 - Current status: `initial-review-required`  ·  Last reviewed: never
 - Content files: `course-engine.js`
 - Official sources to check against:
@@ -237,7 +237,63 @@ SELECT email FROM newsletter_signups;
 
 **Findings:** _none yet_
 
-### 9. Safe SQL, indexes & project
+### 9. Dates, text & CASE expressions
+
+**Concept.** Real data needs reshaping before it is useful. Text functions such as UPPER, SUBSTR, LENGTH and REPLACE clean and format strings. SQLite stores dates as text in ISO format (YYYY-MM-DD), so strftime can extract a year or month for grouping. CASE adds if-then logic inside a query, and wrapping it in SUM gives a conditional total. Other databases name the date functions differently, so check your database's documentation.
+
+**Example**
+
+```
+SELECT strftime('%Y-%m', placed_on) AS month,
+       SUM(CASE WHEN status = 'paid' THEN amount ELSE 0 END) AS paid_total,
+       COUNT(*) AS orders
+FROM orders
+GROUP BY month
+ORDER BY month;
+-- With four sample orders: 2026-01 has 120.0 paid and 2 orders; 2026-02 has 200.0 paid and 2 orders
+```
+
+**Explanation / note.** strftime turns each date into a year-month label, which GROUP BY uses to make one row per month. CASE counts an order's amount only when its status is paid, so refunded and pending orders are in the order count but not in the paid total. Always store dates in ISO format so that sorting as text also sorts by date.
+
+**Task.** Create a fictional orders table with at least eight rows across three months and a mix of statuses. Report paid total and order count per month, then add a column showing the share of orders that were refunded.
+
+**Quiz.** What does CASE do inside a query?
+- Correct: Applies if-then logic to each row
+- Wrong: Permanently changes the stored data
+- Wrong: Creates a new table
+
+**Findings:** _none yet_
+
+### 10. Views, transactions & safe data changes
+
+**Concept.** A view is a saved query that behaves like a read-only table. It hides complexity and lets you give people access to a safe subset of columns. A transaction groups changes so they all succeed or all roll back. Constraints such as CHECK stop invalid values, and a failed statement inside a transaction should be followed by ROLLBACK. Before any UPDATE or DELETE, run the same WHERE clause as a SELECT to preview the rows it will touch.
+
+**Example**
+
+```
+CREATE VIEW paid_orders AS
+SELECT id, amount FROM orders WHERE status = 'paid';
+
+BEGIN;
+UPDATE accounts SET balance = balance - 150 WHERE id = 1;
+UPDATE accounts SET balance = balance + 150 WHERE id = 2;
+-- If balance has CHECK (balance >= 0) and account 1 holds 100,
+-- the first UPDATE fails: run ROLLBACK and both balances stay unchanged.
+ROLLBACK;
+```
+
+**Explanation / note.** The view always shows current paid orders without repeating the filter. In the transfer, both updates must succeed together; because account 1 would go below zero, the CHECK constraint rejects the change and the rollback leaves the data as it was.
+
+**Task.** Create an accounts table with a CHECK constraint, perform one transfer that succeeds with COMMIT and one that fails and is rolled back. Write down the balances after each step.
+
+**Quiz.** Why use a transaction for a money transfer?
+- Correct: So both updates succeed together or neither is kept
+- Wrong: To make the query run faster
+- Wrong: To avoid writing a WHERE clause
+
+**Findings:** _none yet_
+
+### 11. Safe SQL, indexes & project
 
 **Concept.** Use parameterised queries in applications; never concatenate untrusted input into SQL. Indexes can speed up reads but add storage and write costs. Use EXPLAIN to inspect query plans. Back up important data and apply least privilege.
 

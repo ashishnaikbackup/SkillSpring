@@ -1,6 +1,6 @@
 # Review packet: JavaScript: Beginner to Browser Applications
 
-- Course key: `javascript`  ·  Lessons: 9  ·  Review interval: 90 days
+- Course key: `javascript`  ·  Lessons: 10  ·  Review interval: 90 days
 - Current status: `initial-review-required`  ·  Last reviewed: never
 - Content files: `course-engine.js`
 - Official sources to check against:
@@ -245,7 +245,54 @@ save(tasks);
 
 **Findings:** _none yet_
 
-### 9. Async JavaScript, APIs & modules
+### 9. Errors, validation & defensive code
+
+**Concept.** Programs fail in expected ways: bad input, missing data, a network problem. try/catch handles an error instead of crashing, and finally runs cleanup whether or not an error happened. throw lets your own code report a problem, and a custom Error subclass lets callers tell your validation errors apart from real bugs. Catch only what you can handle, and re-throw the rest so genuine bugs stay visible. Never show raw error details to end users; show a clear message and log the details.
+
+**Example**
+
+```
+class ValidationError extends Error {
+  constructor(field, message) {
+    super(message);
+    this.name = 'ValidationError';
+    this.field = field;
+  }
+}
+
+function parseAge(value) {
+  const n = Number(value);
+  if (!Number.isInteger(n) || n < 0) {
+    throw new ValidationError('age', 'Age must be a whole number, 0 or more.');
+  }
+  return n;
+}
+
+for (const v of ['21', 'abc', '-1']) {
+  try {
+    console.log(parseAge(v));
+  } catch (e) {
+    if (e instanceof ValidationError) console.log(e.name, e.field, e.message);
+    else throw e;
+  } finally {
+    console.log('checked', v);
+  }
+}
+// Prints: 21 / checked 21 / ValidationError age Age must be a whole number, 0 or more. / checked abc / the same message / checked -1
+```
+
+**Explanation / note.** Valid input returns a number. Invalid input throws a ValidationError that the loop catches and reports, and finally always logs the check. Any other kind of error is re-thrown so it is not hidden. JSON.parse of broken text throws a SyntaxError, which is the same pattern for external data.
+
+**Task.** Write parsePrice(text) that returns a non-negative number or throws a ValidationError with a helpful message. Test it with five good and five bad inputs and record what each does.
+
+**Quiz.** Why re-throw errors you cannot handle?
+- Correct: So real bugs are not silently hidden
+- Wrong: To make the program run faster
+- Wrong: To avoid using try/catch
+
+**Findings:** _none yet_
+
+### 10. Async JavaScript, APIs & modules
 
 **Concept.** Promises represent work that may finish later. async/await makes promise-based code easier to read. fetch requests resources; check response.ok and handle network errors. Modules split code using export and import.
 
