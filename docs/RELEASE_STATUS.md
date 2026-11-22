@@ -222,3 +222,9 @@ Every essential course that had only 7 lessons gains one: Outlook (high-volume e
 
 - **Three more briefs have worked reference examples (13 of 30):** Web (a portfolio page checked with axe-core in light and dark at 320 pixels: no violations, no horizontal scroll), Personal Finance (fictional figures with spreadsheet formulas recalculated in Python: 20% savings rate, 17 months to a six-month emergency fund, compound growth, EMI 10,379.18; education only) and Git (a command sequence that was run in a scratch repository and produces a real merge conflict).
 - Still partial by design; the other 17 briefs have no example. AI-drafted, pending expert review.
+
+
+## Four more lessons (C, Java, TypeScript, Data) — 22 November 2026
+
+- **C:** enums, bit flags and compact state (compiled with `-Wall -Wextra`, run under AddressSanitizer and UBSan). **Java:** Optional and null safety (compiled and run). **TypeScript:** mapped and conditional types (`tsc --strict`, with a reproduced readonly compile error). **Data:** dates, time series and rolling averages (run with pandas; printed values match).
+- C, Java, TypeScript and Data now have 10 lessons each; the platform has about 297. All 30 course pages pass the browser checks. AI-drafted, pending expert review; packets regenerated.

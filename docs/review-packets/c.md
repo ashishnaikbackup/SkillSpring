@@ -1,6 +1,6 @@
 # Review packet: C Programming: Zero to Systems Foundations
 
-- Course key: `c`  ·  Lessons: 9  ·  Review interval: 180 days
+- Course key: `c`  ·  Lessons: 10  ·  Review interval: 180 days
 - Current status: `initial-review-required`  ·  Last reviewed: never
 - Content files: `course-engine.js`
 - Official sources to check against:
@@ -271,7 +271,48 @@ int main(void) {
 
 **Findings:** _none yet_
 
-### 9. Files, debugging & final project
+### 9. Enums, bit flags & compact state
+
+**Concept.** An enum gives names to related integer constants, which reads better than unexplained numbers. When each constant is a separate power of two, several options can be packed into one unsigned integer called a set of flags. The bitwise OR operator turns a flag on, AND with a flag tests it, AND with the NOT of a flag turns it off, and XOR toggles it. Use unsigned types for bit work, because shifting signed values can cause undefined behaviour. This pattern appears in file permissions, hardware registers and compact settings.
+
+**Example**
+
+```
+#include <stdio.h>
+
+enum Permission { READ = 1u << 0, WRITE = 1u << 1, EXEC = 1u << 2 };
+
+static void show(unsigned perms) {
+    printf("%c%c%c\n", (perms & READ) ? 'r' : '-', (perms & WRITE) ? 'w' : '-', (perms & EXEC) ? 'x' : '-');
+}
+
+int main(void) {
+    unsigned perms = READ | WRITE;
+    show(perms);
+    perms |= EXEC;
+    show(perms);
+    perms &= ~WRITE;
+    show(perms);
+    perms ^= READ;
+    show(perms);
+    printf("%u\n", perms);
+    return 0;
+}
+// Prints: rw- / rwx / r-x / --x / 4
+```
+
+**Explanation / note.** READ, WRITE and EXEC are bits 0, 1 and 2. OR sets a bit, so rw- becomes rwx. AND with the NOT of WRITE clears that bit, leaving r-x. XOR toggles READ off, leaving --x, which is the single bit with value 4. The program compiles without warnings and runs clean under AddressSanitizer and UBSan.
+
+**Task.** Define an enum of four feature flags. Write functions to set, clear, toggle and test a flag, and print the state as a string of letters. Test every function with at least three combinations.
+
+**Quiz.** Which operator turns a flag on without changing other flags?
+- Correct: Bitwise OR
+- Wrong: Bitwise AND on its own
+- Wrong: The equals sign
+
+**Findings:** _none yet_
+
+### 10. Files, debugging & final project
 
 **Concept.** Use fopen, fgets/fprintf and fclose for file work; check errors. Compile with warnings enabled, for example gcc -Wall -Wextra -Wpedantic. Use a debugger and sanitizers where available. Keep functions small and document assumptions.
 

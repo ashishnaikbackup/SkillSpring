@@ -1,6 +1,6 @@
 # Review packet: Java: Programming & Object-Oriented Foundations
 
-- Course key: `java`  ·  Lessons: 9  ·  Review interval: 90 days
+- Course key: `java`  ·  Lessons: 10  ·  Review interval: 90 days
 - Current status: `initial-review-required`  ·  Last reviewed: never
 - Content files: `course-engine.js`
 - Official sources to check against:
@@ -282,7 +282,45 @@ public class Main {
 
 **Findings:** _none yet_
 
-### 9. Exceptions, files & project
+### 9. Optional, null safety & clear absence
+
+**Concept.** A null reference that is used by mistake throws a NullPointerException, one of the most common Java bugs. Optional is a small container that says clearly that a value may be absent. A method that might find nothing can return Optional instead of null, and the caller must decide what to do: map transforms a present value, filter keeps it only if a condition holds, and orElse supplies a default. Use Optional for return values, not for fields or parameters, and do not call get without checking. Records give short immutable data carriers that pair well with it.
+
+**Example**
+
+```
+import java.util.*;
+
+public class Opt {
+    record User(String name, String email) {}
+
+    static Optional<User> find(Map<Integer, User> db, int id) {
+        return Optional.ofNullable(db.get(id));
+    }
+
+    public static void main(String[] args) {
+        Map<Integer, User> db = Map.of(1, new User("Asha", "asha@example.test"));
+        System.out.println(find(db, 1).map(User::email).orElse("no email"));
+        System.out.println(find(db, 2).map(User::email).orElse("no email"));
+        System.out.println(find(db, 2).isPresent());
+        System.out.println(find(db, 1).filter(u -> u.name().startsWith("A")).isPresent());
+    }
+}
+// Prints: asha@example.test / no email / false / true
+```
+
+**Explanation / note.** find returns Optional.ofNullable of the map lookup, so a missing id gives an empty Optional rather than null. map extracts the email only when the user is present and orElse supplies the default. filter keeps the user only if the name starts with A, so isPresent reports true for Asha. Compiled and run with a current JDK.
+
+**Task.** Write a method that looks up a book by title in a list and returns Optional. Print its author with a default when it is missing, and add three tests for found, missing and empty-list cases.
+
+**Quiz.** Why return Optional instead of null?
+- Correct: It makes possible absence explicit to the caller
+- Wrong: It makes the method run faster
+- Wrong: It removes the need for classes
+
+**Findings:** _none yet_
+
+### 10. Exceptions, files & project
 
 **Concept.** Exceptions represent exceptional conditions. Use try/catch for expected failures and close resources with try-with-resources. Split code into classes with clear responsibilities and write tests.
 
