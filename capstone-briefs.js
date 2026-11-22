@@ -32,3 +32,56 @@ window.SkillSpringBriefs = {
   productivity: { title: "Personal productivity system", scenario: "Design and test a system for a fictional or real study week.", build: ["Define goals and priorities", "Set up planning, notes and review routines", "Track a small habit for seven days", "Review results and adjust"], evidence: ["Weekly plan", "Habit tracker", "Review notes with what changed", "Before and after reflection"], stretch: "Automate one repeated task." },
   engineering: { title: "Electronics or systems lab report", scenario: "Document a simulation or measured circuit exercise to a professional standard.", build: ["State the objective, theory and assumptions", "Show the design with calculations", "Simulate or measure and tabulate results", "Compare with theory and explain differences and sources of error"], evidence: ["Circuit or block diagram", "Calculations with units", "Results table and graph", "Safety note and references"], stretch: "Repeat with different component values and analyse the trend." }
 };
+
+/* Worked reference examples for some briefs: core logic only, run and checked before publishing. */
+const workedExamples = {
+ "python": {
+  "note": "A compact reference for the core logic only. Your project should add tests, a README and the output file. Run: python3 expenses.py sample.csv",
+  "files": [
+   {
+    "name": "expenses.py",
+    "code": "import csv\nimport sys\nfrom collections import defaultdict\n\n\ndef summarise(path):\n    totals = defaultdict(float)\n    rows, bad = [], []\n    with open(path, newline=\"\") as f:\n        for n, row in enumerate(csv.DictReader(f), start=2):\n            try:\n                amount = float(row[\"amount\"])\n                if amount < 0:\n                    raise ValueError(\"negative amount\")\n                rows.append((row[\"date\"], row[\"category\"], amount))\n                totals[row[\"category\"]] += amount\n            except (KeyError, ValueError) as err:\n                bad.append(f\"line {n}: {err}\")\n    top = sorted(rows, key=lambda r: r[2], reverse=True)[:3]\n    return dict(totals), top, bad\n\n\nif __name__ == \"__main__\":\n    totals, top, bad = summarise(sys.argv[1])\n    for category, total in sorted(totals.items()):\n        print(f\"{category}: {total:.2f}\")\n    print(\"Largest:\", [f\"{c} {a:.2f}\" for _, c, a in top])\n    for message in bad:\n        print(\"Skipped\", message)"
+   }
+  ],
+  "output": "food: 42.50\nrent: 500.00\ntravel: 40.00\nLargest: ['rent 500.00', 'travel 40.00', 'food 30.00']\nSkipped line 4: could not convert string to float: 'abc'"
+ },
+ "c": {
+  "note": "A single-file reference for the core logic. Your project must split it across at least two files with a header and add a README. Verified with gcc -Wall -Wextra and AddressSanitizer.",
+  "files": [
+   {
+    "name": "marks.c",
+    "code": "#include <stdio.h>\n#include <stdlib.h>\n\nint main(void) {\n    size_t cap = 4, n = 0;\n    double *marks = malloc(cap * sizeof *marks);\n    if (!marks) return 1;\n    double v;\n    while (scanf(\"%lf\", &v) == 1) {\n        if (v < 0 || v > 100) { fprintf(stderr, \"Ignored out-of-range mark %.1f\\n\", v); continue; }\n        if (n == cap) {\n            double *bigger = realloc(marks, cap * 2 * sizeof *marks);\n            if (!bigger) { free(marks); return 1; }\n            marks = bigger; cap *= 2;\n        }\n        marks[n++] = v;\n    }\n    if (n == 0) { puts(\"No valid marks.\"); free(marks); return 0; }\n    double sum = 0, lo = marks[0], hi = marks[0];\n    for (size_t i = 0; i < n; i++) {\n        sum += marks[i];\n        if (marks[i] < lo) lo = marks[i];\n        if (marks[i] > hi) hi = marks[i];\n    }\n    printf(\"Count %zu, average %.2f, highest %.1f, lowest %.1f\\n\", n, sum / n, hi, lo);\n    free(marks);\n    return 0;\n}"
+   }
+  ],
+  "output": "Input: 70 85 120 55 90 40 61\nIgnored out-of-range mark 120.0\nCount 6, average 66.83, highest 90.0, lowest 40.0"
+ },
+ "javascript": {
+  "note": "Only the testable core logic, not the DOM, accessibility or storage wiring. Run the test with node t.js.",
+  "files": [
+   {
+    "name": "tasks.js",
+    "code": "function addTask(tasks, text) {\n  const clean = String(text).trim();\n  if (!clean) throw new Error('Task text is required.');\n  return [...tasks, { id: tasks.length + 1, text: clean, done: false }];\n}\nfunction toggleTask(tasks, id) {\n  return tasks.map((t) => (t.id === id ? { ...t, done: !t.done } : t));\n}\nfunction loadTasks(json) {\n  try {\n    const data = JSON.parse(json);\n    return Array.isArray(data) ? data : [];\n  } catch (e) {\n    return [];\n  }\n}\nmodule.exports = { addTask, toggleTask, loadTasks };"
+   },
+   {
+    "name": "t.js",
+    "code": "const assert = require('assert');\nconst { addTask, toggleTask, loadTasks } = require('./tasks.js');\nlet t = addTask([], '  Read chapter 1 ');\nassert.deepStrictEqual(t, [{ id: 1, text: 'Read chapter 1', done: false }]);\nassert.throws(() => addTask(t, '   '));\nt = toggleTask(t, 1); assert.strictEqual(t[0].done, true);\nassert.deepStrictEqual(loadTasks('{bad'), []);\nassert.deepStrictEqual(loadTasks(null), []);\nconsole.log('All tests passed.');"
+   }
+  ],
+  "output": "All tests passed."
+ },
+ "sql": {
+  "note": "A small schema and one ranking query using a CTE and a window function. You still need five business questions, realistic data, and a before-and-after plan comparison. Verified in SQLite.",
+  "files": [
+   {
+    "name": "shop.sql",
+    "code": "CREATE TABLE customers(customer_id INTEGER PRIMARY KEY, name TEXT NOT NULL, city TEXT NOT NULL);\nCREATE TABLE products(product_id INTEGER PRIMARY KEY, title TEXT NOT NULL, price REAL NOT NULL CHECK (price >= 0));\nCREATE TABLE orders(order_id INTEGER PRIMARY KEY, customer_id INTEGER NOT NULL REFERENCES customers(customer_id), placed_on TEXT NOT NULL);\nCREATE TABLE order_items(order_id INTEGER NOT NULL REFERENCES orders(order_id), product_id INTEGER NOT NULL REFERENCES products(product_id), qty INTEGER NOT NULL CHECK (qty > 0), PRIMARY KEY (order_id, product_id));\nINSERT INTO customers VALUES (1,'Asha','Ponda'),(2,'Dev','Mapusa'),(3,'Mira','Margao');\nINSERT INTO products VALUES (1,'Notebook',50),(2,'Pen',10),(3,'Bag',400);\nINSERT INTO orders VALUES (1,1,'2026-01-10'),(2,1,'2026-02-05'),(3,2,'2026-02-11');\nINSERT INTO order_items VALUES (1,1,2),(1,2,5),(2,3,1),(3,1,1);"
+   },
+   {
+    "name": "query.sql",
+    "code": "WITH spend AS (\n  SELECT c.name, SUM(p.price * oi.qty) AS total\n  FROM customers c\n  JOIN orders o ON o.customer_id = c.customer_id\n  JOIN order_items oi ON oi.order_id = o.order_id\n  JOIN products p ON p.product_id = oi.product_id\n  GROUP BY c.customer_id\n)\nSELECT name, total, RANK() OVER (ORDER BY total DESC) AS spend_rank\nFROM spend;"
+   }
+  ],
+  "output": "Asha | 550.0 | rank 1\nDev | 50.0 | rank 2\nAfter CREATE INDEX idx_orders_customer, the plan reads: SEARCH orders USING COVERING INDEX idx_orders_customer (customer_id=?)"
+ }
+};
+for (const slug in workedExamples) if (window.SkillSpringBriefs[slug]) window.SkillSpringBriefs[slug].example = workedExamples[slug];

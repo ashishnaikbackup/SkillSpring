@@ -96,6 +96,33 @@
       '<h4>Build</h4>' + list(b.build) + '<h4>Evidence to submit</h4>' + list(b.evidence) +
       '<p><strong>Stretch goal:</strong> ' + esc(b.stretch) + '</p>' +
       '<p class="brief-note">Use fictional or properly licensed data only, keep your work in a place a reviewer can open, and score it with the rubric below.</p>';
+    if (b.example) {
+      const det = document.createElement("details");
+      det.className = "brief-example";
+      const sum = document.createElement("summary");
+      sum.textContent = "Worked reference example (try the brief yourself first)";
+      det.appendChild(sum);
+      const note = document.createElement("p");
+      note.textContent = b.example.note;
+      det.appendChild(note);
+      b.example.files.forEach((f) => {
+        const h = document.createElement("h5");
+        h.textContent = f.name;
+        const pre = document.createElement("pre");
+        pre.tabIndex = 0;
+        pre.textContent = f.code;
+        det.appendChild(h);
+        det.appendChild(pre);
+      });
+      const oh = document.createElement("h5");
+      oh.textContent = "Output";
+      const op = document.createElement("pre");
+      op.tabIndex = 0;
+      op.textContent = b.example.output;
+      det.appendChild(oh);
+      det.appendChild(op);
+      wrap.appendChild(det);
+    }
     container.appendChild(wrap);
   }
 

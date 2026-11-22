@@ -197,3 +197,9 @@ Every essential course that had only 7 lessons gains one: Outlook (high-volume e
 ## Deploy workflow: unique artifact name per attempt — 22 November 2026
 
 - Re-running only the failed jobs of the Pages deploy repeatedly failed with "Multiple artifacts named github-pages". The upload and deploy steps now use `github-pages-<run_attempt>`, so a re-run no longer collides with the first attempt's artifact. Untested until the next failed-then-retried deploy; if this merge's own deploy fails for a different reason, revert this change.
+
+
+## Worked reference examples for four capstone briefs — 22 November 2026
+
+- **Python, C, JavaScript and SQL briefs now include a collapsible worked reference example** (core logic only, shown after the learner reads the brief). All code was run before publishing: the Python summary on a CSV with a bad row, the C marks manager under `-Wall -Wextra` with AddressSanitizer and UBSan, the JavaScript task logic with a Node assertion test, and the SQL schema, window-function query and index plan in SQLite. Outputs shown on the page are the real outputs.
+- Examples are deliberately partial (no README, tests for Python, DOM wiring, or the full set of five SQL questions) so the project stays the learner's to build. The validator checks that any example is complete. Other 26 briefs have no example yet; still AI-drafted and pending expert review.
