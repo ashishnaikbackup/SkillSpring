@@ -1,6 +1,6 @@
 # Review packet: Microsoft Power Automate: Workflow Automation Foundations
 
-- Course key: `powerautomate`  ·  Lessons: 7  ·  Review interval: 30 days
+- Course key: `powerautomate`  ·  Lessons: 8  ·  Review interval: 30 days
 - Current status: `initial-review-required`  ·  Last reviewed: never
 - Content files: `essential-courses.js`
 - Official sources to check against:
@@ -145,7 +145,35 @@ Examples of expressions (fictional flow):
 
 **Findings:** _none yet_
 
-### 7. Professional automation capstone
+### 7. Connectors, data operations & reusable patterns
+
+**Concept.** Connectors link a flow to services such as email, SharePoint, Teams and Excel online. Some connectors are premium and need suitable licences, so check licensing before designing a solution. Data operations such as Select, Filter array and Compose reshape lists without writing many steps, and they are usually clearer than a loop that processes items one at a time. Use Apply to each only when each item needs an action. Give every action a clear name, keep secrets out of flow text, and package related flows in a solution so they can be moved, versioned and reused.
+
+**Example**
+
+```
+Pattern: new rows to a weekly summary (fictional)
+  Trigger: Recurrence every Monday 09:00
+  Get rows from the Tasks table
+  Filter array: status is not Done
+  Select: keep Title and Owner
+  Create HTML table, then send by email
+
+Naming: Get open tasks, Keep title and owner, Email weekly summary
+```
+
+**Explanation / note.** Built-in data operations reduce steps and make flows easier to read and maintain.
+
+**Task.** Build a practice flow that reads a small fictional table, filters it, shapes the output and emails a summary. Compare it with a version using Apply to each and note which is clearer, and check which connectors need premium licences.
+
+**Quiz.** Why use Filter array instead of a loop for selecting matching items?
+- Correct: It is usually simpler and clearer than processing each item in a loop
+- Wrong: It deletes the original data
+- Wrong: It works only for text values
+
+**Findings:** _none yet_
+
+### 8. Professional automation capstone
 
 **Concept.** Choose a repeatable low-risk workflow, document current effort, design triggers and actions, test edge cases, assign an owner and define a manual fallback.
 

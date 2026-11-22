@@ -156,3 +156,8 @@ Java (generics, collections and streams; records, enums and clear modelling), Ty
 ## Seven more lessons — 22 November 2026 (second batch)
 
 C++ (classes, RAII and smart pointers; compiled and run under AddressSanitizer), UI/UX (research, usability testing and success measures), Spreadsheets (charts, pivot summaries and dashboards), Personal Finance (investing basics: risk, diversification and costs; education only, not advice; the compounding figures were recalculated), HTML & CSS (layout patterns), Word (templates, styles and mail merge) and PowerPoint (presenting: timing, presenter view and handouts) each gain a lesson, bringing the platform to about 273 lessons. Still AI-drafted and pending expert review; packets regenerated. No human review had been recorded as of this update.
+
+
+## Nine more lessons — 22 November 2026 (third batch)
+
+Every essential course that had only 7 lessons gains one: Outlook (high-volume email), Access (importing, linking and data quality), Power Automate (connectors, data operations and reusable patterns), Git (branching strategies, reviews and releases; commands run in a sandbox repository), Business (marketing funnels and customer metrics; figures recalculated), IT Foundations (DNS, DHCP and network troubleshooting), Maths (statistics in practice; mean and median recalculated), Creative Skills (video and audio editing workflow) and Productivity (deliberate practice and feedback). The platform now has about 282 lessons and every course has at least 8. Still AI-drafted and pending expert review; packets regenerated.

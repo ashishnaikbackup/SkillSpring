@@ -1,6 +1,6 @@
 # Review packet: Personal Productivity & Knowledge Management
 
-- Course key: `productivity`  ·  Lessons: 7  ·  Review interval: 180 days
+- Course key: `productivity`  ·  Lessons: 8  ·  Review interval: 180 days
 - Current status: `initial-review-required`  ·  Last reviewed: never
 - Content files: `essential-courses.js`
 - Official sources to check against:
@@ -160,7 +160,34 @@ Habit plan
 
 **Findings:** _none yet_
 
-### 7. Workflow improvement and automation
+### 7. Learning efficiently: projects, feedback & deliberate practice
+
+**Concept.** Skill grows through practice that is slightly beyond your current level and followed by feedback. Deliberate practice names a specific weakness, repeats a focused exercise, checks the result against a standard and adjusts. Projects connect separate ideas and show evidence of learning, but they need a clear scope and a finish line. Ask for feedback early and specifically, for example whether a part is clear or correct, and keep a log of mistakes and corrections. Review the log before starting the next session, and balance new material with revisiting what you have learned.
+
+**Example**
+
+```
+Practice plan for one week (fictional SQL skill)
+  Weakness: joins keep returning duplicate rows
+  Exercise: 5 join questions a day, each with an expected row count
+  Standard: row counts match the answer key
+  Feedback: mentor reviews two queries on Friday
+  Log: mistake, cause, fix, new rule
+  Project: small report that uses three joins
+```
+
+**Explanation / note.** Deliberate practice targets a specific weakness and uses feedback to improve it.
+
+**Task.** Choose one weakness. Write a one-week practice plan with exercises, a standard, a feedback moment and a mistake log. Complete it, then record what changed and what you will practise next.
+
+**Quiz.** What makes practice deliberate?
+- Correct: A specific target, focused repetition, feedback and adjustment
+- Wrong: Repeating whatever feels easy
+- Wrong: Studying for longer without a goal
+
+**Findings:** _none yet_
+
+### 8. Workflow improvement and automation
 
 **Concept.** A workflow is a repeatable sequence of steps. Map inputs, decisions, outputs and exceptions before automating. Automate stable repetitive tasks; keep human approval for consequential decisions and check failure paths.
 

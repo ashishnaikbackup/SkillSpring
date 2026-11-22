@@ -1,6 +1,6 @@
 # Review packet: Microsoft Outlook & Teams: Professional Communication
 
-- Course key: `outlook`  ·  Lessons: 7  ·  Review interval: 60 days
+- Course key: `outlook`  ·  Lessons: 8  ·  Review interval: 60 days
 - Current status: `initial-review-required`  ·  Last reviewed: never
 - Content files: `essential-courses.js`
 - Official sources to check against:
@@ -149,7 +149,37 @@ Rule idea (fictional):
 
 **Findings:** _none yet_
 
-### 7. Professional workflow capstone
+### 7. High-volume email: triage, templates & delegation
+
+**Concept.** When mail volume grows, a system matters more than speed. Triage each message once: delete or archive it, do it now if it takes about two minutes, delegate it, or defer it by scheduling time and flagging it. Quick Steps and saved templates handle repeated replies, and scheduled send lets you write now and deliver at a sensible time. Set an out-of-office reply when away and name a contact. Check that templates never contain private data from earlier messages, and keep a short list of reply times you promise so people know what to expect.
+
+**Example**
+
+```
+Triage routine (20 minutes, twice a day)
+  1. Archive or delete: newsletters, notifications already read
+  2. Do now: anything that takes about two minutes
+  3. Delegate: forward with a clear request and deadline
+  4. Defer: flag, set a calendar block, move to an Action folder
+
+Template example (fictional)
+  Subject: Re: Meeting request
+  Thank you for your message. I can meet on [day] at [time] for [duration].
+  Please confirm and share the agenda by [date].
+```
+
+**Explanation / note.** Triage turns an inbox into a short list of decisions and scheduled work.
+
+**Task.** Set up a Quick Step or template for one repeated reply and a triage routine. Run it on a week of fictional or real mail, and note how many messages you handled once instead of reopening.
+
+**Quiz.** What is the purpose of triaging email?
+- Correct: To decide once what to do with each message instead of rereading it
+- Wrong: To answer every message instantly
+- Wrong: To keep all messages in the inbox
+
+**Findings:** _none yet_
+
+### 8. Professional workflow capstone
 
 **Concept.** Combine email, calendar and team collaboration into a clear workflow: request, schedule, meeting, decisions, actions and follow-up.
 

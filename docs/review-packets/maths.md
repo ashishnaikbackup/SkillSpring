@@ -1,6 +1,6 @@
 # Review packet: Mathematics, Science & Research Foundations
 
-- Course key: `maths`  ·  Lessons: 7  ·  Review interval: 180 days
+- Course key: `maths`  ·  Lessons: 8  ·  Review interval: 180 days
 - Current status: `initial-review-required`  ·  Last reviewed: never
 - Content files: `essential-courses.js`
 - Official sources to check against:
@@ -159,7 +159,34 @@ How many years to reach 20,000?
 
 **Findings:** _none yet_
 
-### 7. Scientific method and evidence
+### 7. Statistics in practice: bias, outliers & misleading graphs
+
+**Concept.** Summaries can mislead. The mean is pulled by extreme values, while the median is the middle value and resists them, so income and house prices are usually described with the median. A sample must represent the population; self-selected or convenient samples are often biased. A graph can mislead through a truncated axis, uneven scales or selective time windows. Ask what was measured, how many were measured, who was left out and what the scale is. Show the data, the uncertainty and the method so others can judge the claim.
+
+**Example**
+
+```
+Fictional monthly salaries (thousands): 20, 22, 25, 26, 28, 30, 250
+  Mean   = 401 / 7 = about 57.3
+  Median = the 4th of 7 sorted values = 26
+
+The single value 250 lifts the mean far above what most people earn, so the median describes the typical person better.
+
+Graph check: does the vertical axis start at zero for bars? Are all scales equal?
+```
+
+**Explanation / note.** The median is resistant to outliers, so it describes the typical case better.
+
+**Task.** Find a news chart or claim and audit it: sample, scale, missing context and summary used. Recalculate a mean and a median from a small set of numbers with one outlier, and rewrite the claim more accurately.
+
+**Quiz.** Why is the median often better than the mean for incomes?
+- Correct: A few very large values do not pull it far from the typical value
+- Wrong: It is always larger than the mean
+- Wrong: It ignores half of the people
+
+**Findings:** _none yet_
+
+### 8. Scientific method and evidence
 
 **Concept.** A scientific investigation states a question, hypothesis, method, variables, observations and limitations. Correlation is not proof of causation. Reproducibility requires enough detail to repeat the method. Distinguish measurement, inference and opinion.
 

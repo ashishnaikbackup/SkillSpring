@@ -1,6 +1,6 @@
 # Review packet: Microsoft Access: Relational Database Foundations
 
-- Course key: `access`  ·  Lessons: 7  ·  Review interval: 90 days
+- Course key: `access`  ·  Lessons: 8  ·  Review interval: 90 days
 - Current status: `initial-review-required`  ·  Last reviewed: never
 - Content files: `essential-courses.js`
 - Official sources to check against:
@@ -147,7 +147,35 @@ ORDER BY Sum(Orders.Amount) DESC;
 
 **Findings:** _none yet_
 
-### 7. Security, maintenance & capstone
+### 7. Importing, linking & data quality
+
+**Concept.** Data often starts in Excel or CSV files. Import copies the data into an Access table; linking keeps the data in the original file and reads it live, which suits a shared source but depends on that file staying in place. Before importing, clean the source: one header row, one type of value per column, no merged cells. After importing, check data types, row counts and key fields. Use validation rules, required fields and lookup lists to stop bad data entering, and run a find-duplicates query. Keep a backup before large imports so you can restore the database.
+
+**Example**
+
+```
+Import checklist (fictional students.csv)
+  1. Source: one header row, no blank rows, dates in one format
+  2. Import into a new table; choose a primary key
+  3. Compare row count: file 1,250 rows = table 1,250 records
+  4. Check data types: dates are Date/Time, marks are Number
+  5. Add rules: Mark between 0 and 100; Email required
+  6. Run Find Duplicates on StudentID and fix matches
+  7. Compact and back up the database
+```
+
+**Explanation / note.** A linked source is convenient but fragile if the file moves or its columns change.
+
+**Task.** Import a fictional CSV with a few deliberate errors. Compare row counts, find the wrong data types and duplicate keys, add validation rules and write down what you fixed.
+
+**Quiz.** What is a risk of linking to an external Excel file instead of importing it?
+- Correct: The data depends on the file staying available and unchanged in structure
+- Wrong: Access cannot read the data at all
+- Wrong: The data is copied twice
+
+**Findings:** _none yet_
+
+### 8. Security, maintenance & capstone
 
 **Concept.** Understand file protection limits, backups, compact/repair, split database concepts and multi-user limitations. Access is useful for small desktop database scenarios, not every enterprise workload.
 
