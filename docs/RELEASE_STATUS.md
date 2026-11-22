@@ -203,3 +203,16 @@ Every essential course that had only 7 lessons gains one: Outlook (high-volume e
 
 - **Python, C, JavaScript and SQL briefs now include a collapsible worked reference example** (core logic only, shown after the learner reads the brief). All code was run before publishing: the Python summary on a CSV with a bad row, the C marks manager under `-Wall -Wextra` with AddressSanitizer and UBSan, the JavaScript task logic with a Node assertion test, and the SQL schema, window-function query and index plan in SQLite. Outputs shown on the page are the real outputs.
 - Examples are deliberately partial (no README, tests for Python, DOM wiring, or the full set of five SQL questions) so the project stays the learner's to build. The validator checks that any example is complete. Other 26 briefs have no example yet; still AI-drafted and pending expert review.
+
+
+## Worked examples for C++, Java, TypeScript and Data; wrap-up status — 22 November 2026
+
+- **Four more capstone briefs have a worked reference example** (10 of 30 now): C++ (class, vector, lambdas; g++ with AddressSanitizer/UBSan), Java (encapsulation and a checked exception; compiled and run), TypeScript (union, type guard, generic store, Result type; `tsc --strict`, plus a real compile error the types prevent) and Data (pandas cleaning and summary; run). Outputs on the page are the real outputs.
+
+### Where the project stands (wrap-up)
+
+**Done and verified by automation:** platform and navigation, light/dark theme, 30 courses with 9–11+ lessons each (about 293 lessons), a cumulative final assessment with review list and a capstone brief and rubric on every course, 41 graded practice challenges (15 Python, 13 JavaScript, 13 SQL), worked examples for 10 briefs, reviewer packets for all 30 courses, validator, browser/accessibility QA and deploy workflows.
+
+**Cannot be finished by an AI in this repository (needs people):** expert review of all 30 courses (only a human sets `lastReviewed`/`reviewStatus`), manual phone and screen-reader testing, and mentor feedback on real learner projects. Until then every lesson, quiz and brief is AI-drafted and pending review, and the site says so.
+
+**Optional later expansion (not required for v1):** lessons toward 14 per course, worked examples for the other 20 briefs, and new course families (frontend frameworks, ML basics, cloud security).

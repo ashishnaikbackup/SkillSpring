@@ -85,3 +85,50 @@ const workedExamples = {
  }
 };
 for (const slug in workedExamples) if (window.SkillSpringBriefs[slug]) window.SkillSpringBriefs[slug].example = workedExamples[slug];
+const workedExamples2 = {
+ "cpp": {
+  "note": "Core logic only: a class, std::vector, lambdas and file saving. Loading from file, tests and the README are yours to write. Verified with g++ -std=c++17 -Wall -Wextra and AddressSanitizer/UBSan.",
+  "files": [
+   {
+    "name": "inventory.cpp",
+    "code": "#include <algorithm>\n#include <fstream>\n#include <iostream>\n#include <string>\n#include <vector>\n\nstruct Item {\n    std::string name;\n    int qty;\n};\n\nclass Inventory {\n    std::vector<Item> items_;\npublic:\n    void add(const std::string& name, int qty) {\n        for (auto& it : items_) if (it.name == name) { it.qty += qty; return; }\n        items_.push_back({name, qty});\n    }\n    bool remove(const std::string& name) {\n        auto it = std::remove_if(items_.begin(), items_.end(),\n                                 [&](const Item& i) { return i.name == name; });\n        bool found = it != items_.end();\n        items_.erase(it, items_.end());\n        return found;\n    }\n    std::vector<Item> lowStock(int limit) const {\n        std::vector<Item> out;\n        std::copy_if(items_.begin(), items_.end(), std::back_inserter(out),\n                     [&](const Item& i) { return i.qty < limit; });\n        std::sort(out.begin(), out.end(),\n                  [](const Item& a, const Item& b) { return a.qty < b.qty; });\n        return out;\n    }\n    void save(const std::string& path) const {\n        std::ofstream f(path);\n        for (const auto& i : items_) f << i.name << ' ' << i.qty << '\\n';\n    }\n};\n\nint main() {\n    Inventory inv;\n    inv.add(\"pen\", 40);\n    inv.add(\"book\", 3);\n    inv.add(\"bag\", 1);\n    inv.add(\"book\", 2);\n    std::cout << \"Removed bag: \" << std::boolalpha << inv.remove(\"bag\") << '\\n';\n    std::cout << \"Removed ghost: \" << inv.remove(\"ghost\") << '\\n';\n    for (const auto& i : inv.lowStock(10)) std::cout << \"Low: \" << i.name << ' ' << i.qty << '\\n';\n    inv.save(\"stock.txt\");\n}"
+   }
+  ],
+  "output": "Removed bag: true\nRemoved ghost: false\nLow: book 5\n(stock.txt then contains: pen 40 and book 5)"
+ },
+ "java": {
+  "note": "Core logic only: encapsulation and a custom checked exception in one file. Your project needs separate Member and Loan classes, a build file and at least five JUnit tests. Compiled and run with a current JDK.",
+  "files": [
+   {
+    "name": "Loans.java",
+    "code": "import java.util.*;\n\npublic class Loans {\n    static class LoanException extends Exception {\n        LoanException(String message) { super(message); }\n    }\n\n    static class Book {\n        private final String title;\n        private boolean onLoan;\n        Book(String title) { this.title = title; }\n        String title() { return title; }\n        boolean onLoan() { return onLoan; }\n        void lend() throws LoanException {\n            if (onLoan) throw new LoanException(title + \" is already on loan.\");\n            onLoan = true;\n        }\n        void giveBack() { onLoan = false; }\n    }\n\n    public static void main(String[] args) {\n        Map<String, Book> shelf = new LinkedHashMap<>();\n        for (String t : List.of(\"Maths\", \"Physics\", \"Poetry\")) shelf.put(t, new Book(t));\n        try {\n            shelf.get(\"Maths\").lend();\n            shelf.get(\"Maths\").lend();\n        } catch (LoanException e) {\n            System.out.println(\"Error: \" + e.getMessage());\n        }\n        shelf.get(\"Maths\").giveBack();\n        long available = shelf.values().stream().filter(b -> !b.onLoan()).count();\n        System.out.println(\"Available: \" + available);\n        System.out.println(shelf.values().stream().map(Book::title).sorted().toList());\n    }\n}"
+   }
+  ],
+  "output": "Error: Maths is already on loan.\nAvailable: 3\n[Maths, Physics, Poetry]"
+ },
+ "typescript": {
+  "note": "A union type, interface, type guard, generic store and a Result type under strict mode. Run: tsc --strict --target es2020 --module commonjs tracker.ts, then node tracker.js.",
+  "files": [
+   {
+    "name": "tracker.ts",
+    "code": "type Category = 'food' | 'travel' | 'study';\n\ninterface Expense {\n  readonly id: number;\n  category: Category;\n  amount: number;\n}\n\ntype Result<T> = { ok: true; value: T } | { ok: false; error: string };\n\nfunction isExpense(x: unknown): x is Expense {\n  if (typeof x !== 'object' || x === null) return false;\n  const e = x as Record<string, unknown>;\n  return (\n    typeof e.id === 'number' &&\n    (e.category === 'food' || e.category === 'travel' || e.category === 'study') &&\n    typeof e.amount === 'number' &&\n    e.amount >= 0\n  );\n}\n\nfunction parseExpenses(json: string): Result<Expense[]> {\n  let data: unknown;\n  try {\n    data = JSON.parse(json);\n  } catch {\n    return { ok: false, error: 'Not valid JSON' };\n  }\n  if (!Array.isArray(data) || !data.every(isExpense)) {\n    return { ok: false, error: 'Data does not match Expense[]' };\n  }\n  return { ok: true, value: data };\n}\n\nclass Store<T extends { id: number }> {\n  private items: T[] = [];\n  add(item: T): void { this.items.push(item); }\n  total(pick: (item: T) => number): number {\n    return this.items.reduce((sum, i) => sum + pick(i), 0);\n  }\n}\n\nconst parsed = parseExpenses('[{\"id\":1,\"category\":\"food\",\"amount\":12.5},{\"id\":2,\"category\":\"study\",\"amount\":30}]');\nif (parsed.ok) {\n  const store = new Store<Expense>();\n  parsed.value.forEach((e) => store.add(e));\n  console.log('Total:', store.total((e) => e.amount));\n}\nconsole.log(parseExpenses('{bad'));\nconsole.log(parseExpenses('[{\"id\":1,\"category\":\"games\",\"amount\":5}]'));"
+   },
+   {
+    "name": "bad.ts (a compile error the types prevent)",
+    "code": "type Category = 'food' | 'travel' | 'study';\nconst c: Category = 'games';"
+   }
+  ],
+  "output": "Total: 42.5\n{ ok: false, error: 'Not valid JSON' }\n{ ok: false, error: 'Data does not match Expense[]' }\nCompiling bad.ts fails: error TS2322: Type '\"games\"' is not assignable to type 'Category'."
+ },
+ "data": {
+  "note": "Only the cleaning-and-summary core with a tiny inline dataset, using pandas. A real report needs a stated question, real data, charts, a data dictionary and a plain-language summary. Run with pandas installed.",
+  "files": [
+   {
+    "name": "analyse.py",
+    "code": "import pandas as pd\nfrom io import StringIO\n\nRAW = \"\"\"city,month,sales\nPanaji,Jan,120\nPanaji,Feb,\nMargao,Jan,90\nMargao,Feb,110\nMargao,Feb,110\nPonda,Jan,abc\n\"\"\"\n\ndf = pd.read_csv(StringIO(RAW))\nprint(\"Rows read:\", len(df))\ndf = df.drop_duplicates()\ndf[\"sales\"] = pd.to_numeric(df[\"sales\"], errors=\"coerce\")\ndropped = df[\"sales\"].isna().sum()\ndf = df.dropna(subset=[\"sales\"])\nprint(\"Rows dropped (missing or non-numeric sales):\", int(dropped))\nprint(df.groupby(\"city\")[\"sales\"].sum().sort_values(ascending=False).to_string())"
+   }
+  ],
+  "output": "Rows read: 6\nRows dropped (missing or non-numeric sales): 2\ncity\nMargao    200.0\nPanaji    120.0"
+ }
+};
+for (const slug in workedExamples2) if (window.SkillSpringBriefs[slug]) window.SkillSpringBriefs[slug].example = workedExamples2[slug];
