@@ -247,6 +247,21 @@ if (!essentialPlayer.includes('store+"-passed"') || !essentialPlayer.includes('d
       if (!fs.existsSync(path.join(root, "docs", "review-packets", `${entry.slug}.md`))) fail(`Missing review packet for ${entry.slug}; run node scripts/export-review-packets.mjs.`);
     }
   }
+  {
+    const briefContext = { window: {} };
+    vm.runInNewContext(fs.readFileSync(path.join(root, "capstone-briefs.js"), "utf8"), briefContext);
+    const briefs = briefContext.window.SkillSpringBriefs || {};
+    for (const entry of JSON.parse(fs.readFileSync(path.join(root, "course-review-manifest.json"), "utf8")).courses) {
+      const b = briefs[entry.slug];
+      if (!b) { fail(`Missing capstone brief for ${entry.slug}.`); continue; }
+      for (const field of ["title", "scenario", "stretch"]) if (typeof b[field] !== "string" || b[field].length < 10) fail(`Capstone brief ${entry.slug} needs a ${field}.`);
+      for (const field of ["build", "evidence"]) if (!Array.isArray(b[field]) || b[field].length < 3) fail(`Capstone brief ${entry.slug} needs at least three ${field} items.`);
+    }
+    for (const page of files.filter((f) => /-course\.html$/.test(f))) {
+      if (!fs.readFileSync(page, "utf8").includes("capstone-briefs.js")) fail(`${path.relative(root, page)} does not load capstone-briefs.js.`);
+    }
+  }
+  if (!fs.readFileSync(path.join(root, "engineering-course.html"), "utf8").includes('data-course="engineering"')) fail("engineering-course.html must set data-course=\"engineering\" so it does not fall back to the Word course.");
   if (!fs.existsSync(path.join(root, "theme.js"))) fail("theme.js (light/dark theme) is missing.");
   for (const page of files.filter((f) => f.endsWith(".html"))) {
     if (!fs.readFileSync(page, "utf8").includes("theme.js")) fail(`${path.relative(root, page)} does not load theme.js.`);
