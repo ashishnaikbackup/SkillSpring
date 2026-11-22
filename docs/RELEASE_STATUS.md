@@ -192,3 +192,8 @@ Every essential course that had only 7 lessons gains one: Outlook (high-volume e
 - **SQL gains two lessons:** dates, text functions and CASE; views, transactions and safe data changes. The example queries were run in SQLite and the stated outputs match (monthly paid totals, view contents, CHECK-constraint rejection).
 - **JavaScript gains one lesson:** errors, validation and defensive code (try/catch/finally, custom Error subclass, re-throwing). The example was run in Node and the printed output matches.
 - SQL now has 11 lessons and JavaScript 10; the platform has about 293. All browser checks pass on all 30 course pages. Still AI-drafted and pending expert review; review packets regenerated.
+
+
+## Deploy workflow: unique artifact name per attempt — 22 November 2026
+
+- Re-running only the failed jobs of the Pages deploy repeatedly failed with "Multiple artifacts named github-pages". The upload and deploy steps now use `github-pages-<run_attempt>`, so a re-run no longer collides with the first attempt's artifact. Untested until the next failed-then-retried deploy; if this merge's own deploy fails for a different reason, revert this change.
