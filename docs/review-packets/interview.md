@@ -1,6 +1,6 @@
 # Review packet: Job Interview & Career Readiness: Beginner to Confident Candidate
 
-- Course key: `interview`  ·  Lessons: 8  ·  Review interval: 90 days
+- Course key: `interview`  ·  Lessons: 9  ·  Review interval: 90 days
 - Current status: `initial-review-required`  ·  Last reviewed: never
 - Content files: `essential-courses.js`
 - Official sources to check against:
@@ -17,6 +17,7 @@
 - [ ] No unsafe, legal, tax or medical advice presented as professional advice
 - [ ] India-specific statements (laws, exams, tools, salaries) are accurate or removed
 - [ ] Nothing important for a job-ready beginner is missing (list gaps below)
+- [ ] The capstone brief is realistic, clear and fairly assessable with the rubric
 
 Reviewer name: ________   Date: ________   Outcome: approve / approve with fixes / rewrite
 
@@ -159,7 +160,31 @@ Practise answers to why this role, strengths, a learning challenge, joining time
 
 **Findings:** _none yet_
 
-### 8. Mock interviews, assessment & 30-60-90 plan
+### 8. Networking, referrals & follow-up
+
+**Concept.** Many opportunities come through people. Networking means building honest professional relationships, not asking strangers for jobs. Make a clear profile, join relevant communities, and send short, specific messages that show you read their work. Ask for advice or a conversation about their path before asking for a referral, and always make it easy to say no. Prepare a short introduction of who you are, what you are learning and what you are looking for. After every conversation or interview send a thank-you message within a day, record what you learned and keep a simple tracker of contacts and dates.
+
+**Example**
+
+```
+Message template (fictional)
+  Hello Priya, I read your article on data cleaning and used its checklist in my project (link). I am a final-year student building a data portfolio. May I ask two short questions about how you started in analytics? Thank you for your time.
+
+Tracker columns: Name | Where we met | Date | What I asked | Next step | Follow-up date
+```
+
+**Explanation / note.** Specific, polite requests respect the other person's time and build trust.
+
+**Task.** Write three short outreach messages for fictional people, build a contact tracker, send one real thank-you note after a conversation or event and record the response. Write what you would change in each message.
+
+**Quiz.** What is a good first request when you contact a professional you do not know?
+- Correct: A short, specific request for advice that is easy to decline
+- Wrong: A request for a job referral right away
+- Wrong: A long message about everything you have done
+
+**Findings:** _none yet_
+
+### 9. Mock interviews, assessment & 30-60-90 plan
 
 **Concept.** Practise under realistic time limits. Review answer quality, technical accuracy, clarity and evidence. After an interview, reflect on gaps and plan focused improvement. A course cannot guarantee selection.
 
@@ -177,3 +202,15 @@ Run a mock interview with a peer or recording. Score answers against a rubric: a
 - Wrong: Memorise one script for every question
 
 **Findings:** _none yet_
+
+## Capstone project brief
+
+**.** 
+
+Build:
+
+Evidence to submit:
+
+Stretch goal: 
+
+**Brief findings (is it realistic, clear and fairly assessable?):** _none yet_

@@ -1,6 +1,6 @@
 # Review packet: Microsoft Power BI: Beginner to Professional Business Intelligence
 
-- Course key: `powerbi`  ·  Lessons: 8  ·  Review interval: 30 days
+- Course key: `powerbi`  ·  Lessons: 9  ·  Review interval: 30 days
 - Current status: `initial-review-required`  ·  Last reviewed: never
 - Content files: `essential-courses.js`, `powerbi-project.html`, `docs/POWER_BI_RETAIL_PROJECT.md`, `data/powerbi-sales.csv`, `data/powerbi-products.csv`, `data/powerbi-regions.csv`
 - Official sources to check against:
@@ -17,6 +17,7 @@
 - [ ] No unsafe, legal, tax or medical advice presented as professional advice
 - [ ] India-specific statements (laws, exams, tools, salaries) are accurate or removed
 - [ ] Nothing important for a job-ready beginner is missing (list gaps below)
+- [ ] The capstone brief is realistic, clear and fairly assessable with the rubric
 
 Reviewer name: ________   Date: ________   Outcome: approve / approve with fixes / rewrite
 
@@ -159,7 +160,34 @@ Publish only a safe sample report if you have access. Configure a refresh plan c
 
 **Findings:** _none yet_
 
-### 8. Professional BI capstone & interview readiness
+### 8. Time intelligence & date tables in DAX
+
+**Concept.** Business reports compare periods: year to date, same period last year and growth. Time intelligence functions need a proper date table with one row per day, no gaps and a relationship to your fact table, and the table should be marked as a date table. Create base measures first, then build time measures from them. Use CALCULATE to change the filter context, and test every measure with a table visual against known values. Name measures clearly and format them with the right units. Check results at different filters, such as a single month and a full year.
+
+**Example**
+
+```
+Total Sales = SUM(Sales[Amount])
+
+Sales YTD = TOTALYTD([Total Sales], 'Date'[Date])
+
+Sales Last Year = CALCULATE([Total Sales], SAMEPERIODLASTYEAR('Date'[Date]))
+
+YoY Growth % = DIVIDE([Total Sales] - [Sales Last Year], [Sales Last Year])
+```
+
+**Explanation / note.** A date table with no gaps lets year to date and same-period calculations behave correctly.
+
+**Task.** Create a date table for three fictional years, relate it to a sales table, and build the four measures. Compare them with a hand calculation for one month and explain what happens when the date table has a missing day.
+
+**Quiz.** Why do time intelligence functions need a complete date table?
+- Correct: They rely on continuous dates to compare periods correctly
+- Wrong: They only work with text columns
+- Wrong: They replace the need for relationships
+
+**Findings:** _none yet_
+
+### 9. Professional BI capstone & interview readiness
 
 **Concept.** A professional BI project starts with stakeholder questions and metric definitions. Document grain, source, transformations, model, measures, validation and limitations. Prepare to explain why you chose each visual and measure.
 
@@ -177,3 +205,15 @@ Use a fictional retail dataset. Define KPIs, build a star schema, clean data, cr
 - Wrong: Only how to open the file
 
 **Findings:** _none yet_
+
+## Capstone project brief
+
+**.** 
+
+Build:
+
+Evidence to submit:
+
+Stretch goal: 
+
+**Brief findings (is it realistic, clear and fairly assessable?):** _none yet_

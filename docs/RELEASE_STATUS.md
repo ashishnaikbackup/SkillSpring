@@ -168,3 +168,9 @@ Every essential course that had only 7 lessons gains one: Outlook (high-volume e
 - **Capstone project briefs for all 30 courses** (`capstone-briefs.js`), shown under each final assessment above the rubric: a fictional scenario, what to build, the evidence to submit and a stretch goal. The validator requires a complete brief for every course in the manifest. Briefs are AI-drafted and pending expert review, like the lessons.
 - **Fixed: the Engineering course page opened the Microsoft Word course.** `engineering-course.html` had no course parameter, so the shared player fell back to Word. The page now declares its course, and the validator checks it.
 - Browser checks: all 30 course pages show the brief and rubric; axe reports no serious violations in light and dark on sampled pages.
+
+
+## Eight more lessons and briefs in review packets — 22 November 2026
+
+- **Review packets now include each course's capstone brief** and a checklist item asking the reviewer to judge whether it is realistic, clear and fairly assessable.
+- **Eight new lessons:** C++ (inheritance, virtual functions and polymorphism; compiled and run under AddressSanitizer), Personal Finance (credit, loans and EMI mathematics; education only; EMI figures recalculated), UI/UX (information architecture and navigation), Spreadsheets (validation, protection and collaboration), Word (forms, content controls and macro safety), PowerPoint (pitching a proposal), Power BI (time intelligence and date tables in DAX) and Interview Skills (networking, referrals and follow-up). The platform has about 290 lessons and every course has at least 9. Still AI-drafted and pending expert review; the DAX has not been run in Power BI Desktop and should be tested by the reviewer.

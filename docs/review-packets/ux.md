@@ -1,6 +1,6 @@
 # Review packet: UI/UX Design Foundations
 
-- Course key: `ux`  ·  Lessons: 8  ·  Review interval: 180 days
+- Course key: `ux`  ·  Lessons: 9  ·  Review interval: 180 days
 - Current status: `initial-review-required`  ·  Last reviewed: never
 - Content files: `course-engine.js`
 - Official sources to check against:
@@ -17,6 +17,7 @@
 - [ ] No unsafe, legal, tax or medical advice presented as professional advice
 - [ ] India-specific statements (laws, exams, tools, salaries) are accurate or removed
 - [ ] Nothing important for a job-ready beginner is missing (list gaps below)
+- [ ] The capstone brief is realistic, clear and fairly assessable with the rubric
 
 Reviewer name: ________   Date: ________   Outcome: approve / approve with fixes / rewrite
 
@@ -189,7 +190,32 @@ Usability test plan (fictional library app)
 
 **Findings:** _none yet_
 
-### 8. Accessibility, iteration & case study
+### 8. Information architecture & navigation
+
+**Concept.** Information architecture organises content so people can find it. Start with the tasks people want to do and the words they use, not your organisation chart. Card sorting asks people to group topics and name the groups, and tree testing checks whether people can find items in a proposed menu. Keep navigation labels clear and consistent, avoid hiding important items, and prefer a shallow, scannable structure over deep nesting. Provide search, breadcrumbs and a visible current location. Measure findability with task success and the number of wrong turns.
+
+**Example**
+
+```
+Tree test task (fictional college site)
+  Task: Where would you find the exam timetable?
+  Menu: Admissions | Courses | Students > Timetables, Results, Fees | Contact
+  Record: first click, final answer, correct (yes/no), time
+  Result rule: if fewer than most participants succeed, rename or move the item and test again
+```
+
+**Explanation / note.** A tree test isolates structure from visual design, so a failed task points to a label or placement problem.
+
+**Task.** Take a fictional or real site with at least 20 pages. Run a card sort with three people, propose a menu, then run a tree test with five tasks. Record success rates and revise the labels that failed.
+
+**Quiz.** What does a tree test measure?
+- Correct: Whether people can find items in a proposed menu structure
+- Wrong: How fast the site loads
+- Wrong: Which colours people prefer
+
+**Findings:** _none yet_
+
+### 9. Accessibility, iteration & case study
 
 **Concept.** Accessible design considers keyboard use, contrast, text size, labels, focus, motion and assistive technologies. Iterate based on evidence. A case study explains the problem, role, process, decisions, outcome and limitations.
 
@@ -209,3 +235,15 @@ Case study structure: Context → Problem → Research → Options → Prototype
 - Wrong: Unverified impact claims
 
 **Findings:** _none yet_
+
+## Capstone project brief
+
+**.** 
+
+Build:
+
+Evidence to submit:
+
+Stretch goal: 
+
+**Brief findings (is it realistic, clear and fairly assessable?):** _none yet_
