@@ -1,6 +1,6 @@
 # Review packet: Microsoft Word: Beginner to Professional Documents
 
-- Course key: `word`  ·  Lessons: 8  ·  Review interval: 90 days
+- Course key: `word`  ·  Lessons: 9  ·  Review interval: 90 days
 - Current status: `initial-review-required`  ·  Last reviewed: never
 - Content files: `essential-courses.js`
 - Official sources to check against:
@@ -16,6 +16,7 @@
 - [ ] No unsafe, legal, tax or medical advice presented as professional advice
 - [ ] India-specific statements (laws, exams, tools, salaries) are accurate or removed
 - [ ] Nothing important for a job-ready beginner is missing (list gaps below)
+- [ ] The capstone brief is realistic, clear and fairly assessable with the rubric
 
 Reviewer name: ________   Date: ________   Outcome: approve / approve with fixes / rewrite
 
@@ -165,7 +166,34 @@ Mail merge steps (fictional offer letters)
 
 **Findings:** _none yet_
 
-### 8. Workplace capstone
+### 8. Forms, content controls & macro safety
+
+**Concept.** Word can collect structured information. Content controls such as text boxes, dropdown lists and date pickers create fill-in forms, and restricting editing protects everything except the controls. Fields and cross-references update document content automatically; update fields before sending. Macros automate tasks but can also carry malware, so only enable macros from sources you trust, never open unexpected macro-enabled files, and prefer built-in features or Power Automate when possible. Test any form on a clean copy, include instructions and check it works with a keyboard and screen reader.
+
+**Example**
+
+```
+Form steps (fictional leave request)
+  1. Developer tab: insert Plain Text controls for Name and Reason
+  2. Insert a Drop-Down List for Leave Type (Casual, Sick, Earned)
+  3. Insert a Date Picker for Start Date
+  4. Review > Restrict Editing > Filling in forms only
+  5. Test: tab through controls; save as .docx and as PDF
+Security: keep macros disabled unless the source is trusted and the file is expected
+```
+
+**Explanation / note.** Attackers often hide malware in macros, so treat unexpected macro files as suspicious.
+
+**Task.** Create a one-page request form with at least four content controls and editing restrictions. Test it with a colleague using only the keyboard, fix confusing labels and write a short rule for when macros are acceptable.
+
+**Quiz.** Why should you be careful with macro-enabled documents from unknown senders?
+- Correct: Macros can run harmful code on your computer
+- Wrong: Macros always delete the document
+- Wrong: Macros cannot be disabled
+
+**Findings:** _none yet_
+
+### 9. Workplace capstone
 
 **Concept.** Create a complete professional report: cover, executive summary, contents, problem, method, findings, recommendations, references and appendix. Keep claims evidence-based and distinguish facts from assumptions.
 
@@ -183,3 +211,15 @@ Use a fictional project brief. Create the report, add tables and figures, use st
 - Wrong: A file with no title or date
 
 **Findings:** _none yet_
+
+## Capstone project brief
+
+**.** 
+
+Build:
+
+Evidence to submit:
+
+Stretch goal: 
+
+**Brief findings (is it realistic, clear and fairly assessable?):** _none yet_

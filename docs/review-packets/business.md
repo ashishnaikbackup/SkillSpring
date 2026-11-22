@@ -17,6 +17,7 @@
 - [ ] No unsafe, legal, tax or medical advice presented as professional advice
 - [ ] India-specific statements (laws, exams, tools, salaries) are accurate or removed
 - [ ] Nothing important for a job-ready beginner is missing (list gaps below)
+- [ ] The capstone brief is realistic, clear and fairly assessable with the rubric
 
 Reviewer name: ________   Date: ________   Outcome: approve / approve with fixes / rewrite
 
@@ -206,3 +207,15 @@ A fictional order process takes 2 days in approval and 1 day in fulfilment. The 
 - Wrong: A target with no baseline
 
 **Findings:** _none yet_
+
+## Capstone project brief
+
+**.** 
+
+Build:
+
+Evidence to submit:
+
+Stretch goal: 
+
+**Brief findings (is it realistic, clear and fairly assessable?):** _none yet_

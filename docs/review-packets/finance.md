@@ -1,6 +1,6 @@
 # Review packet: Personal Finance: Foundations & Decision Skills
 
-- Course key: `finance`  ·  Lessons: 8  ·  Review interval: 60 days
+- Course key: `finance`  ·  Lessons: 9  ·  Review interval: 60 days
 - Current status: `initial-review-required`  ·  Last reviewed: never
 - Content files: `course-engine.js`
 - Official sources to check against:
@@ -18,6 +18,7 @@
 - [ ] No unsafe, legal, tax or medical advice presented as professional advice
 - [ ] India-specific statements (laws, exams, tools, salaries) are accurate or removed
 - [ ] Nothing important for a job-ready beginner is missing (list gaps below)
+- [ ] The capstone brief is realistic, clear and fairly assessable with the rubric
 
 Reviewer name: ________   Date: ________   Outcome: approve / approve with fixes / rewrite
 
@@ -194,7 +195,37 @@ Questions before investing
 
 **Findings:** _none yet_
 
-### 8. Financial plan & decision project
+### 8. Credit, loans & EMI mathematics
+
+**Concept.** A loan lets you spend now and repay later with interest. An equated monthly instalment, or EMI, is a fixed payment that covers interest and part of the principal each month. Early payments are mostly interest, and later payments are mostly principal. Total interest depends on the rate, the amount and the number of months, so a longer term lowers the EMI but increases total interest. Compare offers by the total amount repaid, fees and the effective rate, and read the lender's repayment schedule and agreement. A credit score summarises repayment history, so paying on time and keeping balances manageable matters. This is education, not advice about any loan.
+
+**Example**
+
+```
+EMI formula: EMI = P x r x (1 + r)^n / ((1 + r)^n - 1)
+  P = amount borrowed, r = monthly rate (annual rate / 12), n = number of months
+
+Fictional loan: P = 5,00,000, annual rate 10%, n = 60 months
+  r = 0.10 / 12 = 0.008333
+  EMI = about 10,623.52
+  Total repaid = about 6,37,411
+  Total interest = about 1,37,411
+
+Checklist: interest rate type (fixed or floating), processing fees, prepayment rules, penalties, total cost
+```
+
+**Explanation / note.** The EMI and totals follow from the formula. Compare lenders by total cost and terms, not only the monthly payment.
+
+**Task.** Recalculate the loan for 36, 60 and 84 months. Build a table of EMI, total repaid and total interest, and write two sentences on the trade-off between a lower monthly payment and a higher total cost. Add your own fictional fees.
+
+**Quiz.** What happens to the EMI and the total interest when a loan term is lengthened?
+- Correct: The EMI falls but the total interest paid rises
+- Wrong: Both the EMI and total interest fall
+- Wrong: The EMI rises and total interest falls
+
+**Findings:** _none yet_
+
+### 9. Financial plan & decision project
 
 **Concept.** A useful financial plan connects goals, time horizon, cash needs, risk and review dates. Keep records secure, use trusted institutions and understand fees. Never share OTPs, passwords, seed phrases or remote-access permissions.
 
@@ -214,3 +245,15 @@ Goal worksheet: goal · target amount · date · monthly contribution · assumpt
 - Wrong: Only the best-case result
 
 **Findings:** _none yet_
+
+## Capstone project brief
+
+**.** 
+
+Build:
+
+Evidence to submit:
+
+Stretch goal: 
+
+**Brief findings (is it realistic, clear and fairly assessable?):** _none yet_

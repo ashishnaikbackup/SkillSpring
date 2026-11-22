@@ -1,6 +1,6 @@
 # Review packet: Spreadsheets: Excel & Google Sheets Foundations
 
-- Course key: `sheets`  ·  Lessons: 8  ·  Review interval: 90 days
+- Course key: `sheets`  ·  Lessons: 9  ·  Review interval: 90 days
 - Current status: `initial-review-required`  ·  Last reviewed: never
 - Content files: `course-engine.js`
 - Official sources to check against:
@@ -17,6 +17,7 @@
 - [ ] No unsafe, legal, tax or medical advice presented as professional advice
 - [ ] India-specific statements (laws, exams, tools, salaries) are accurate or removed
 - [ ] Nothing important for a job-ready beginner is missing (list gaps below)
+- [ ] The capstone brief is realistic, clear and fairly assessable with the rubric
 
 Reviewer name: ________   Date: ________   Outcome: approve / approve with fixes / rewrite
 
@@ -185,7 +186,32 @@ Check: pivot grand total = SUM of Amount column in the source sheet
 
 **Findings:** _none yet_
 
-### 8. Modelling, audit & capstone
+### 8. Validation, protection & collaboration
+
+**Concept.** Shared spreadsheets need guard rails. Data validation limits what can be typed, for example a dropdown list or a number range with an input message. Named ranges make formulas readable and reduce reference errors. Protect cells that contain formulas and leave only input cells editable. Use comments or notes to explain assumptions, and use version history to see and restore earlier versions. Give people the lowest access they need, such as view or comment instead of edit, and keep sensitive data in a separate controlled file. Test the sheet by entering wrong values on purpose.
+
+**Example**
+
+```
+Input cell B2: Data validation = list (Low, Medium, High); show error on invalid entry
+Input cell B3: Whole number between 0 and 100; input message "Enter a mark from 0 to 100"
+Named range: TaxRate refers to Assumptions!B1
+Protect: lock the Calculations sheet, allow editing in B2:B20 only
+Sharing: teammates comment only; owner edits
+```
+
+**Explanation / note.** Validation and protection reduce accidental errors, but they do not replace testing and clear ownership.
+
+**Task.** Build a small marks sheet with validation, a named range and protected formula cells. Ask someone to try to break it with wrong entries, record what they managed to enter and tighten the rules.
+
+**Quiz.** What is the purpose of data validation in a shared sheet?
+- Correct: To restrict entries to valid values and reduce input mistakes
+- Wrong: To hide the sheet from all users
+- Wrong: To make formulas calculate faster
+
+**Findings:** _none yet_
+
+### 9. Modelling, audit & capstone
 
 **Concept.** Separate inputs, calculations and outputs. Document assumptions, protect formula cells where appropriate and test scenarios. Avoid hard-coded values hidden inside formulas. Review errors and access permissions before sharing.
 
@@ -205,3 +231,15 @@ Scenario design: Base case · Lower-income case · Higher-cost case. Show assump
 - Wrong: Only the final total
 
 **Findings:** _none yet_
+
+## Capstone project brief
+
+**.** 
+
+Build:
+
+Evidence to submit:
+
+Stretch goal: 
+
+**Brief findings (is it realistic, clear and fairly assessable?):** _none yet_

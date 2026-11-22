@@ -1,6 +1,6 @@
 # Review packet: C++: Fundamentals to Object-Oriented Programming
 
-- Course key: `cpp`  ·  Lessons: 8  ·  Review interval: 90 days
+- Course key: `cpp`  ·  Lessons: 9  ·  Review interval: 90 days
 - Current status: `initial-review-required`  ·  Last reviewed: never
 - Content files: `course-engine.js`
 - Official sources to check against:
@@ -17,6 +17,7 @@
 - [ ] No unsafe, legal, tax or medical advice presented as professional advice
 - [ ] India-specific statements (laws, exams, tools, salaries) are accurate or removed
 - [ ] Nothing important for a job-ready beginner is missing (list gaps below)
+- [ ] The capstone brief is realistic, clear and fairly assessable with the rubric
 
 Reviewer name: ________   Date: ________   Outcome: approve / approve with fixes / rewrite
 
@@ -227,7 +228,63 @@ int main() {
 
 **Findings:** _none yet_
 
-### 8. Files, testing & capstone
+### 8. Inheritance, virtual functions & polymorphism
+
+**Concept.** Inheritance lets a derived class reuse and specialise a base class. A virtual function chooses the correct version at run time based on the real object, so code that holds a pointer or reference to the base class can work with any derived class. Mark overrides with the override keyword so the compiler checks them. A base class used polymorphically needs a virtual destructor, otherwise deleting through a base pointer can leave the derived part uncleaned. A pure virtual function, written with equals zero, makes a class abstract and defines an interface. Prefer composition when the relationship is not truly is-a.
+
+**Example**
+
+```
+#include <iostream>
+#include <memory>
+#include <vector>
+
+class Shape {
+public:
+    virtual ~Shape() = default;
+    virtual double area() const = 0;
+    virtual const char* name() const = 0;
+};
+
+class Circle : public Shape {
+public:
+    explicit Circle(double r) : r_(r) {}
+    double area() const override { return 3.14159265358979 * r_ * r_; }
+    const char* name() const override { return "circle"; }
+private:
+    double r_;
+};
+
+class Rectangle : public Shape {
+public:
+    Rectangle(double w, double h) : w_(w), h_(h) {}
+    double area() const override { return w_ * h_; }
+    const char* name() const override { return "rectangle"; }
+private:
+    double w_, h_;
+};
+
+int main() {
+    std::vector<std::unique_ptr<Shape>> shapes;
+    shapes.push_back(std::make_unique<Circle>(1.0));
+    shapes.push_back(std::make_unique<Rectangle>(2.0, 3.0));
+    for (const auto& s : shapes)
+        std::cout << s->name() << " " << s->area() << '\n';
+}
+```
+
+**Explanation / note.** The loop calls the correct area function for each real object, printing circle 3.14159 and rectangle 6. The virtual destructor makes deletion through the base class safe, and unique_ptr handles it automatically.
+
+**Task.** Add a Triangle class to the example without changing the loop. Then remove the virtual destructor, run under AddressSanitizer with a raw pointer to see the problem, and restore it. Explain in two sentences when composition is better than inheritance.
+
+**Quiz.** Why does a base class used polymorphically need a virtual destructor?
+- Correct: So deleting a derived object through a base pointer cleans up correctly
+- Wrong: So the class can be copied faster
+- Wrong: So its functions cannot be overridden
+
+**Findings:** _none yet_
+
+### 9. Files, testing & capstone
 
 **Concept.** Use streams such as ifstream and ofstream for files. Separate program logic from input/output so functions can be tested. Compile with warnings, write tests and use version control.
 
@@ -249,3 +306,15 @@ if (out) out << "Practice complete\n";
 - Wrong: Only screen colours
 
 **Findings:** _none yet_
+
+## Capstone project brief
+
+**.** 
+
+Build:
+
+Evidence to submit:
+
+Stretch goal: 
+
+**Brief findings (is it realistic, clear and fairly assessable?):** _none yet_

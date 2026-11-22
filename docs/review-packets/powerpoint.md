@@ -1,6 +1,6 @@
 # Review packet: Microsoft PowerPoint: Beginner to Professional Presentations
 
-- Course key: `powerpoint`  ·  Lessons: 8  ·  Review interval: 90 days
+- Course key: `powerpoint`  ·  Lessons: 9  ·  Review interval: 90 days
 - Current status: `initial-review-required`  ·  Last reviewed: never
 - Content files: `essential-courses.js`
 - Official sources to check against:
@@ -16,6 +16,7 @@
 - [ ] No unsafe, legal, tax or medical advice presented as professional advice
 - [ ] India-specific statements (laws, exams, tools, salaries) are accurate or removed
 - [ ] Nothing important for a job-ready beginner is missing (list gaps below)
+- [ ] The capstone brief is realistic, clear and fairly assessable with the rubric
 
 Reviewer name: ________   Date: ________   Outcome: approve / approve with fixes / rewrite
 
@@ -170,7 +171,38 @@ Checklist
 
 **Findings:** _none yet_
 
-### 8. Professional presentation capstone
+### 8. Pitching a proposal: problem, solution & ask
+
+**Concept.** A proposal presentation helps a decision maker say yes or no. Structure it as problem, evidence, options, recommendation and a specific ask: the approval, budget, time or people you need. State the cost, benefit, risk and timeline in numbers the audience understands, and show what happens if nothing changes. Anticipate objections and answer them in the talk or a backup slide. End with the decision requested and the next step with a date. Keep the main deck short and place detail in an appendix.
+
+**Example**
+
+```
+Proposal outline (10 slides)
+  1. Decision requested (one line)
+  2. The problem with one number
+  3. Evidence and customer or user quotes
+  4. Options considered, including doing nothing
+  5. Recommendation and why
+  6. Cost, benefit and payback
+  7. Risks and how they are reduced
+  8. Timeline and owners
+  9. The ask and next step with a date
+  10. Appendix: assumptions and detail
+```
+
+**Explanation / note.** A decision maker needs to know exactly what you are asking them to approve.
+
+**Task.** Choose a fictional improvement idea. Write the one-line ask, build the ten-slide outline with evidence and a backup slide for the hardest objection, and rehearse it in six minutes.
+
+**Quiz.** What should the end of a proposal presentation make clear?
+- Correct: The specific decision requested and the next step
+- Wrong: A list of every slide in the deck
+- Wrong: An apology for the length of the talk
+
+**Findings:** _none yet_
+
+### 9. Professional presentation capstone
 
 **Concept.** A professional deck supports a talk: opening, context, evidence, analysis, recommendation, risks and call to action. Keep backup files and prepare to answer questions with evidence.
 
@@ -188,3 +220,15 @@ Build a 10-slide project or business proposal deck. Add speaker notes, sources, 
 - Wrong: Remove all speaker notes
 
 **Findings:** _none yet_
+
+## Capstone project brief
+
+**.** 
+
+Build:
+
+Evidence to submit:
+
+Stretch goal: 
+
+**Brief findings (is it realistic, clear and fairly assessable?):** _none yet_

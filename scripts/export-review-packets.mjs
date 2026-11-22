@@ -23,6 +23,7 @@ const manifest = JSON.parse(fs.readFileSync(path.join(root, "course-review-manif
 const engine = load(["course-engine.js"], "C");
 const essential = load(["essential-courses.js", "engineering-course-data.js"], "essentialCourses");
 const pythonModules = load(["course.js"], "modules");
+const briefs = load(["capstone-briefs.js"], "window.SkillSpringBriefs");
 
 const fence = (code) => "```\n" + String(code).replace(/```/g, "'''") + "\n```";
 const lessons = {}; // slug -> { title, intro, items:[{n,title,concept,example,task,question,correct,wrong,notes}] }
@@ -62,6 +63,7 @@ for (const entry of manifest.courses) {
     "- [ ] No unsafe, legal, tax or medical advice presented as professional advice",
     "- [ ] India-specific statements (laws, exams, tools, salaries) are accurate or removed",
     "- [ ] Nothing important for a job-ready beginner is missing (list gaps below)",
+    "- [ ] The capstone brief is realistic, clear and fairly assessable with the rubric",
     "",
     "Reviewer name: ________   Date: ________   Outcome: approve / approve with fixes / rewrite",
     "",
@@ -75,6 +77,8 @@ for (const entry of manifest.courses) {
     if (l.why) md.push(`**Why the answer is correct.** ${l.why}`, "");
     md.push(`**Task.** ${l.task}`, "", `**Quiz.** ${l.question}`, `- Correct: ${l.correct}`, ...l.wrong.map((w) => `- Wrong: ${w}`), "", "**Findings:** _none yet_", "");
   }
+  const brief = briefs[entry.slug];
+  if (brief) md.push("## Capstone project brief", "", `**${brief.title}.** ${brief.scenario}`, "", "Build:", ...brief.build.map((x) => `- ${x}`), "", "Evidence to submit:", ...brief.evidence.map((x) => `- ${x}`), "", `Stretch goal: ${brief.stretch}`, "", "**Brief findings (is it realistic, clear and fairly assessable?):** _none yet_", "");
   fs.writeFileSync(path.join(out, `${entry.slug}.md`), md.join("\n"));
   rows.push(`| [${c.title}](${entry.slug}.md) | ${c.items.length} | ${entry.reviewStatus} | ${entry.lastReviewed ?? "never"} |`);
 }
