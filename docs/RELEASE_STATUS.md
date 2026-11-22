@@ -216,3 +216,9 @@ Every essential course that had only 7 lessons gains one: Outlook (high-volume e
 **Cannot be finished by an AI in this repository (needs people):** expert review of all 30 courses (only a human sets `lastReviewed`/`reviewStatus`), manual phone and screen-reader testing, and mentor feedback on real learner projects. Until then every lesson, quiz and brief is AI-drafted and pending review, and the site says so.
 
 **Optional later expansion (not required for v1):** lessons toward 14 per course, worked examples for the other 20 briefs, and new course families (frontend frameworks, ML basics, cloud security).
+
+
+## Worked examples for Web, Finance and Git briefs — 22 November 2026
+
+- **Three more briefs have worked reference examples (13 of 30):** Web (a portfolio page checked with axe-core in light and dark at 320 pixels: no violations, no horizontal scroll), Personal Finance (fictional figures with spreadsheet formulas recalculated in Python: 20% savings rate, 17 months to a six-month emergency fund, compound growth, EMI 10,379.18; education only) and Git (a command sequence that was run in a scratch repository and produces a real merge conflict).
+- Still partial by design; the other 17 briefs have no example. AI-drafted, pending expert review.

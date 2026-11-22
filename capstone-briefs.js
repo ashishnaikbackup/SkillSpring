@@ -132,3 +132,36 @@ const workedExamples2 = {
  }
 };
 for (const slug in workedExamples2) if (window.SkillSpringBriefs[slug]) window.SkillSpringBriefs[slug].example = workedExamples2[slug];
+const workedExamples3 = {
+ "web": {
+  "note": "A minimal structure to compare with your own: one h1, ordered headings, a labelled form, grid layout and automatic dark colours with CSS variables. Checked with axe-core in light and dark at 320 pixels wide: no violations and no horizontal scroll. Your page still needs images, a published link, screenshots and keyboard notes.",
+  "files": [
+   {
+    "name": "portfolio.html",
+    "code": "<!doctype html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n  <title>Riya Sharma - Portfolio (fictional)</title>\n  <style>\n    :root { --bg: #ffffff; --fg: #1a1a1a; --accent: #0b5cad; }\n    @media (prefers-color-scheme: dark) {\n      :root { --bg: #14181f; --fg: #f2f2f2; --accent: #8ec5ff; }\n    }\n    body { margin: 0; font-family: system-ui, sans-serif; background: var(--bg); color: var(--fg); line-height: 1.6; }\n    main { max-width: 60rem; margin: 0 auto; padding: 1rem; }\n    a { color: var(--accent); }\n    .cards { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr)); }\n    .card { border: 1px solid currentColor; border-radius: 8px; padding: 1rem; }\n    label, input, textarea, button { display: block; margin: .5rem 0; font: inherit; }\n    input, textarea { width: 100%; max-width: 28rem; }\n  </style>\n</head>\n<body>\n  <main>\n    <h1>Riya Sharma</h1>\n    <p>Student building small, accessible web pages.</p>\n    <h2>Projects</h2>\n    <div class=\"cards\">\n      <article class=\"card\"><h3>Study planner</h3><p>A to-do list that remembers tasks.</p></article>\n      <article class=\"card\"><h3>Recipe finder</h3><p>Search recipes by ingredient.</p></article>\n      <article class=\"card\"><h3>Weather tile</h3><p>A small forecast widget.</p></article>\n    </div>\n    <h2>Contact</h2>\n    <form>\n      <label for=\"email\">Email</label>\n      <input id=\"email\" name=\"email\" type=\"email\" required autocomplete=\"email\">\n      <label for=\"msg\">Message</label>\n      <textarea id=\"msg\" name=\"msg\" rows=\"4\" required></textarea>\n      <button type=\"submit\">Send</button>\n    </form>\n  </main>\n</body>\n</html>"
+   }
+  ],
+  "output": "axe-core violations: none (light and dark)\nh1 count: 1\nHorizontal scroll at 320px: no"
+ },
+ "finance": {
+  "note": "Fictional numbers and spreadsheet formulas, checked by recalculating in Python. Education only, not advice. Real plans must state their own assumptions, sources and taxes.",
+  "files": [
+   {
+    "name": "plan-formulas.txt",
+    "code": "Fictional graduate: take-home 40,000 a month, needs 22,000, wants 10,000.\nSaving          =B1-B2-B3                 -> 8,000   (B1 income, B2 needs, B3 wants)\nSavings rate    =B4/B1                    -> 20%\nEmergency goal  =6*B2                     -> 132,000\nMonths to goal  =ROUNDUP(B6/B4,0)         -> 17      (16.5 rounded up)\nCompound value  =10000*(1+0.06)^5         -> 13,382.26  (assumed 6% a year, no tax or fees)\nLoan EMI        =PMT(0.09/12,60,-500000)  -> 10,379.18  (total interest 122,750.66 over 60 months)"
+   }
+  ],
+  "output": "Savings 8,000 (20%); emergency goal 132,000 reached in 17 months; 10,000 grows to 13,382.26 at 6% for 5 years; EMI 10,379.18"
+ },
+ "git": {
+  "note": "A command sequence that creates a real merge conflict and resolves it, run in a scratch repository. For the capstone you also need a remote, pull requests with reviews and written release notes.",
+  "files": [
+   {
+    "name": "conflict-demo.sh",
+    "code": "git init -b main && echo \"# Demo\" > README.md\ngit add . && git commit -m \"Add README\"\ngit switch -c feature/title\necho \"Title: Alpha\" >> README.md && git commit -am \"Set title Alpha\"\ngit switch main\necho \"Title: Beta\" >> README.md && git commit -am \"Set title Beta\"\ngit merge feature/title          # CONFLICT (content): Merge conflict in README.md\n# Edit README.md to keep the line you want, remove the markers, then:\ngit add README.md && git commit  # completes the merge\ngit tag -a v0.1.0 -m \"First release\"\ngit log --oneline --graph"
+   }
+  ],
+  "output": "CONFLICT (content): Merge conflict in README.md\nREADME.md now shows <<<<<<< HEAD / Title: Beta / ======= / Title: Alpha / >>>>>>> feature/title until you edit it"
+ }
+};
+for (const slug in workedExamples3) if (window.SkillSpringBriefs[slug]) window.SkillSpringBriefs[slug].example = workedExamples3[slug];
