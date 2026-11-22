@@ -23,7 +23,7 @@ The public product and repository are named SkillSpring.
 - **[Version 1 release status](docs/RELEASE_STATUS.md)** — live website, shipped features, automated checks, schedules and known limitations.
 - **[UI/UX audit](docs/UI_UX_AUDIT.md)** — cross-page responsive/accessibility polish, verification scope and remaining manual release QA.
 - **[Python: Zero to Professional Foundations](python-course.html)** — the most extensive course so far, with 17 modules from Hello World through programming fundamentals, data structures, functions, OOP, files, debugging, Git, APIs, SQLite and a portfolio capstone.
-- **[Python Coding Practice](python-practice.html)** — 10 browser-run challenges with automatic tests, feedback, hints, revealable solutions and local code/progress saving. Python runs through Pyodide in the learner’s browser.
+- **[Python Coding Practice](python-practice.html)** — 15 browser-run challenges with automatic tests, feedback, hints, revealable solutions and local code/progress saving. Python runs through Pyodide in the learner’s browser.
 - **[Field Radar](field-radar.html)** — evergreen learning notes plus a daily refreshed, source-linked headline feed across programming, AI, Microsoft tools, Indian finance/regulation, cybersecurity, design and engineering.
 - **[Learning dashboard](index.html)** — the main platform experience, subject schools, learning paths and Python playground.
 - **[Learning-platform benchmark](docs/LEARNING_PLATFORM_BENCHMARK.md)** — research notes and original teaching principles adapted from Mimo, Brilliant, freeCodeCamp, Microsoft Learn, Google Skillshop and Exercism.
@@ -91,7 +91,7 @@ These schools are the long-term curriculum scope. A topic appearing in the catal
 - [x] Build the responsive learning dashboard and catalogue.
 - [x] Publish the 17-module Python course and 11 additional five-to-six-module foundation courses.
 - [x] Add the Field Radar learning section.
-- [x] Add an interactive Python practice path with 10 tested challenges, hints, solutions and local progress.
+- [x] Add an interactive Python practice path with 15 tested challenges, hints, solutions and local progress.
 - [x] Add a hands-on Power BI retail dashboard project with three fictional CSV datasets and a step-by-step DAX/model/report guide.
 - [x] Publish an explicit 12-school curriculum map with course families, progressive stages, examples, practice outcomes, assessment standards and portfolio capstones. This makes the remaining authoring scope visible; it does not count as authored lessons.
 - [x] Add graded JavaScript and SQL tracks (now thirteen challenges each), browser-based checks, hints and solutions.
