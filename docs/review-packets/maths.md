@@ -1,6 +1,6 @@
 # Review packet: Mathematics, Science & Research Foundations
 
-- Course key: `maths`  ·  Lessons: 8  ·  Review interval: 180 days
+- Course key: `maths`  ·  Lessons: 9  ·  Review interval: 180 days
 - Current status: `initial-review-required`  ·  Last reviewed: never
 - Content files: `essential-courses.js`
 - Official sources to check against:
@@ -187,7 +187,35 @@ Graph check: does the vertical axis start at zero for bars? Are all scales equal
 
 **Findings:** _none yet_
 
-### 8. Scientific method and evidence
+### 8. Counting, combinations & the binomial model
+
+**Concept.** Probability often starts with counting. Multiplying choices counts ordered outcomes, and the number of ways to choose k items from n without regard to order is written C(n, k) and called a combination. When an event has two outcomes, such as success or failure, repeats independently and has the same chance p each time, the number of successes follows a binomial pattern: the probability of exactly k successes in n trials is C(n, k) times p to the power k times (1 minus p) to the power (n minus k). Check that the trials really are independent before using it. Also check results make sense: all possible probabilities must add up to 1.
+
+**Example**
+
+```
+Fair coin, 5 tosses, exactly 2 heads:
+C(5, 2) = 5! / (2! x 3!) = 10 ways
+P = 10 x 0.5^2 x 0.5^3 = 10 / 32 = 0.3125
+
+At least one head in 3 tosses:
+1 - 0.5^3 = 0.875
+
+Two fair dice sum to 7: 6 of 36 pairs = 1/6 (about 0.167)
+```
+
+**Explanation / note.** The example values were recalculated: C(5,2) is 10, the exactly-two-heads probability is 0.3125 and at least one head in three tosses is 0.875.
+
+**Task.** Use a fictional multiple-choice quiz with 5 questions and 4 options each, guessing randomly. Calculate the chance of exactly 2 correct answers and of at least 1 correct answer, show the working, and check that the probabilities for 0 to 5 correct add up to 1.
+
+**Quiz.** What does C(5, 2) = 10 count?
+- Correct: The ways to choose 2 items from 5 when order does not matter
+- Wrong: The probability of two heads
+- Wrong: The number of items in 2 groups of 5
+
+**Findings:** _none yet_
+
+### 9. Scientific method and evidence
 
 **Concept.** A scientific investigation states a question, hypothesis, method, variables, observations and limitations. Correlation is not proof of causation. Reproducibility requires enough detail to repeat the method. Distinguish measurement, inference and opinion.
 

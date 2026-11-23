@@ -245,3 +245,8 @@ Every essential course that had only 7 lessons gains one: Outlook (high-volume e
 ## Project wrapped for v1 — 23 November 2026
 
 Authoring is paused at a stable v1. See [HANDOFF.md](HANDOFF.md) for what exists, what only people can do, and known notes.
+
+
+## Two more lessons (Git, Maths) — 23 November 2026
+
+- **Git:** finding bugs with bisect, tags and releases; the bisect run was reproduced in a scratch repository and found the planted bad commit. **Maths:** counting, combinations and the binomial model; every figure (C(5,2) = 10, 0.3125, 0.875, 1/6) was recalculated. Both courses now have 9 lessons and a 9-question final assessment; the platform has about 303 lessons. All 30 course pages pass the browser checks. AI-drafted, pending expert review; packets regenerated.
