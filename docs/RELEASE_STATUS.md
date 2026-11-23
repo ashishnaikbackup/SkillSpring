@@ -240,3 +240,8 @@ Every essential course that had only 7 lessons gains one: Outlook (high-volume e
 
 - **C:** linked lists and pointer manipulation (gcc `-Wall -Wextra` with AddressSanitizer and UBSan, no errors). **C++:** copy, move semantics and the rule of five (same sanitizer run; printed output matches). **Java:** sorting with comparators and functional interfaces (compiled and run). **Web:** motion, transitions and `prefers-reduced-motion` (checked in headless Chromium with the preference set both ways).
 - C, C++, Java and Web now have 11, 11, 11 and 10 lessons; the platform has about 301. All 30 course pages pass the browser checks. AI-drafted, pending expert review; packets regenerated.
+
+
+## Project wrapped for v1 — 23 November 2026
+
+Authoring is paused at a stable v1. See [HANDOFF.md](HANDOFF.md) for what exists, what only people can do, and known notes.
