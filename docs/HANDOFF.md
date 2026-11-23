@@ -3,7 +3,7 @@
 **Status:** the site is complete for v1 and deployed. All remaining work needs people. Every lesson, quiz, brief and example is AI-drafted and marked pending expert review; the site says so.
 
 ## What exists
-- 30 courses (about 301 lessons), each with a cumulative final assessment, a capstone brief and a self-assessment rubric.
+- 30 courses (about 307 lessons), each with a cumulative final assessment, a capstone brief and a self-assessment rubric.
 - 41 graded practice challenges: 15 Python, 13 JavaScript, 13 SQL.
 - Worked reference examples for 16 of 30 capstone briefs (code run before publishing).
 - Light and dark themes, a static validator, browser and accessibility QA, a freshness-review workflow and a Pages deploy workflow.
