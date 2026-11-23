@@ -255,3 +255,8 @@ Authoring is paused at a stable v1. See [HANDOFF.md](HANDOFF.md) for what exists
 ## One more lesson (Excel) — 23 November 2026
 
 - **Excel:** conditional totals, SUMPRODUCT and INDEX/MATCH. The sample formulas were built in a workbook, recalculated in LibreOffice and matched an independent Python check (13 North units, revenue 790, book price 40, a not-found message and one zero-unit row). Excel now has 11 lessons and an 11-question final assessment. Not opened in Microsoft Excel itself; a reviewer should confirm. AI-drafted, pending expert review; packets regenerated.
+
+
+## Two more lessons (Access, Business) — 23 November 2026
+
+- **Access:** unmatched records, outer joins and summary queries (logic run in SQLite on sample data; Nz is Access's COALESCE; not opened in Microsoft Access itself). **Business:** cash flow, working capital and runway (all figures recalculated; education only, not financial advice). Both courses now have 9 lessons and a 9-question final assessment; the platform has about 306 lessons. All 30 course pages pass the browser checks. AI-drafted, pending expert review; packets regenerated.

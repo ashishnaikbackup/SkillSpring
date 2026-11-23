@@ -1,6 +1,6 @@
 # Review packet: Microsoft Access: Relational Database Foundations
 
-- Course key: `access`  ·  Lessons: 8  ·  Review interval: 90 days
+- Course key: `access`  ·  Lessons: 9  ·  Review interval: 90 days
 - Current status: `initial-review-required`  ·  Last reviewed: never
 - Content files: `essential-courses.js`
 - Official sources to check against:
@@ -176,7 +176,34 @@ Import checklist (fictional students.csv)
 
 **Findings:** _none yet_
 
-### 8. Security, maintenance & capstone
+### 8. Unmatched records, outer joins & summary queries
+
+**Concept.** Access queries answer questions across related tables. An inner join returns only rows that match in both tables, so customers with no orders disappear. A left outer join keeps every row from the first table and shows empty values where there is no match, which is how you list customers with no orders: join, then filter for a missing value on the order side. A totals query groups rows and adds Count or Sum, and an empty total should be shown as zero with Nz so reports do not display blanks. Relationships with referential integrity stop an order from pointing at a customer that does not exist. In the query designer, double-click a join line and choose the option that includes all records from the table you want to keep.
+
+**Example**
+
+```
+SQL view of the same ideas (Access SQL is very similar):
+SELECT c.Name, COUNT(o.OrderID) AS Orders, Nz(SUM(o.Total), 0) AS Spend
+FROM Customers AS c LEFT JOIN Orders AS o ON o.CustomerID = c.CustomerID
+GROUP BY c.CustomerID, c.Name;
+
+-- Sample result: Asha 2 orders 325; Dev 1 order 120; Mira 0 orders 0
+-- Customers with no orders: Mira
+```
+
+**Explanation / note.** The same logic was run in SQLite on the sample data (Nz is Access's name for COALESCE) and gave 2 orders and 325 for Asha, 1 and 120 for Dev, and 0 for Mira. Not opened in Microsoft Access itself; a reviewer should confirm.
+
+**Task.** Create Customers and Orders tables with a relationship and referential integrity, and add six fictional customers with four orders. Build a totals query with all customers, then a query that lists only customers with no orders. Try to add an order for a customer that does not exist and record the error message.
+
+**Quiz.** Which join keeps customers that have no orders?
+- Correct: A left outer join from Customers to Orders
+- Wrong: An inner join between the two tables
+- Wrong: A union of two forms
+
+**Findings:** _none yet_
+
+### 9. Security, maintenance & capstone
 
 **Concept.** Understand file protection limits, backups, compact/repair, split database concepts and multi-user limitations. Access is useful for small desktop database scenarios, not every enterprise workload.
 

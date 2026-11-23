@@ -1,6 +1,6 @@
 # Review packet: Business & Accounting Foundations
 
-- Course key: `business`  ·  Lessons: 8  ·  Review interval: 180 days
+- Course key: `business`  ·  Lessons: 9  ·  Review interval: 180 days
 - Current status: `initial-review-required`  ·  Last reviewed: never
 - Content files: `essential-courses.js`
 - Official sources to check against:
@@ -187,7 +187,33 @@ Fictional subscription app (one month)
 
 **Findings:** _none yet_
 
-### 8. Operations, controls and business recommendation
+### 8. Cash flow, working capital & runway
+
+**Concept.** Profit and cash are different. A business can be profitable on paper and still run out of cash because customers pay late, stock is bought early or loans fall due. Net cash burn is cash spent minus cash received in a period, and runway is cash on hand divided by monthly burn, which estimates how many months remain at the current rate. The cash conversion cycle adds the days to collect from customers and the days stock is held, then subtracts the days taken to pay suppliers; a shorter cycle frees cash. Forecast cash by month and test a worse case, for example sales 20 percent lower or late payment, before committing to new costs.
+
+**Example**
+
+```
+Fictional shop: cash 120,000; monthly cash in 60,000; monthly cash out 90,000
+Net burn = 90,000 - 60,000 = 30,000 per month
+Runway = 120,000 / 30,000 = 4 months
+Cash after 3 months = 120,000 - 3 x 30,000 = 30,000
+
+Cash conversion cycle = 45 days to collect + 30 days stock - 20 days to pay suppliers = 55 days
+```
+
+**Explanation / note.** The figures were recalculated: burn 30,000, runway 4 months, cash after three months 30,000 and a 55-day cash conversion cycle. This is education, not financial advice.
+
+**Task.** Using a fictional small business, build a 6-month cash forecast with opening cash, cash in, cash out and closing cash. Calculate monthly burn, runway and the cash conversion cycle, then add a worse case with sales 20 percent lower and write three actions that would extend runway.
+
+**Quiz.** What does runway measure?
+- Correct: How many months the business can continue at the current net cash burn
+- Wrong: The length of a delivery route
+- Wrong: The profit margin on each product
+
+**Findings:** _none yet_
+
+### 9. Operations, controls and business recommendation
 
 **Concept.** Operations turn inputs into repeatable products or services. Map a process, identify bottlenecks, define service measures and controls. A useful recommendation states the problem, evidence, options, costs, risks, owner and success measure.
 
