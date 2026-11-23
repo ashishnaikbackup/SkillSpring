@@ -1,6 +1,6 @@
 # Review packet: Git & GitHub: Version Control and Collaboration
 
-- Course key: `git`  ·  Lessons: 8  ·  Review interval: 60 days
+- Course key: `git`  ·  Lessons: 9  ·  Review interval: 60 days
 - Current status: `initial-review-required`  ·  Last reviewed: never
 - Content files: `essential-courses.js`
 - Official sources to check against:
@@ -188,7 +188,34 @@ Review checklist
 
 **Findings:** _none yet_
 
-### 8. Professional repository & collaboration
+### 8. Finding bugs with bisect, tags & releases
+
+**Concept.** When something worked last week and is broken now, git bisect finds the first bad commit by binary search: you mark one good and one bad commit, and Git checks out the middle one for you to test, halving the range each time. If you can write a command that exits with zero for good and non-zero for bad, git bisect run does it automatically. Tags give a permanent name to a commit, and an annotated tag also stores who tagged it, when and a message, which suits releases. Semantic versioning uses MAJOR.MINOR.PATCH numbers so users can see how risky an upgrade is. Run bisect only on a clean working tree and finish with git bisect reset.
+
+**Example**
+
+```
+git tag v1.0.0 HEAD~4              # mark a known good release
+git bisect start HEAD v1.0.0       # bad = now, good = v1.0.0
+git bisect run sh -c '! grep -q bug f.txt'
+# Git reports: <hash> is the first bad commit
+git bisect reset                   # return to your branch
+git tag -a v1.1.0 -m "Release 1.1.0"
+git push origin v1.1.0
+```
+
+**Explanation / note.** Binary search halves the number of commits to test each step, so a hundred commits need only about seven tests. In a scratch repository the run above reported the third of five commits as the first bad one.
+
+**Task.** In a practice repository make five commits and introduce a deliberate bug in the third. Use git bisect run with a test command to find it, then reset, fix it, and create an annotated tag. Write the release notes for the new tag in three lines.
+
+**Quiz.** What does git bisect do?
+- Correct: Finds the first bad commit by repeatedly testing the middle of a range
+- Wrong: Merges two branches automatically
+- Wrong: Deletes old commits to save space
+
+**Findings:** _none yet_
+
+### 9. Professional repository & collaboration
 
 **Concept.** Use issues, milestones, README, licence awareness, releases, tags, actions and contribution guidance. Keep commits reviewable and documentation reproducible.
 
