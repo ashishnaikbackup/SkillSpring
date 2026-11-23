@@ -1,6 +1,6 @@
 # Review packet: IT Support, Networking & Cloud Foundations
 
-- Course key: `it`  ·  Lessons: 8  ·  Review interval: 90 days
+- Course key: `it`  ·  Lessons: 9  ·  Review interval: 90 days
 - Current status: `initial-review-required`  ·  Last reviewed: never
 - Content files: `essential-courses.js`
 - Official sources to check against:
@@ -191,7 +191,37 @@ Troubleshooting ladder (cannot open a website)
 
 **Findings:** _none yet_
 
-### 8. Defensive security and incident response
+### 8. Backups, integrity checks & recovery
+
+**Concept.** A backup you have never restored is only a hope. The 3-2-1 rule keeps three copies of important data, on two different kinds of storage, with one copy off site, so one fire, theft or ransomware infection cannot destroy everything. A checksum such as SHA-256 is a fingerprint of a file: if even one byte changes, the fingerprint changes, so comparing checksums shows whether a backup is intact. Recovery objectives guide how often to back up: the recovery point objective is how much recent data you can afford to lose, and the recovery time objective is how long a restore may take. Protect backups with encryption and access controls, and test a restore on a schedule. Only back up systems and data you are authorised to handle.
+
+**Example**
+
+```
+mkdir -p docs && echo "report v1" > docs/report.txt
+tar -czf backup.tar.gz docs                 # create the archive
+sha256sum backup.tar.gz > backup.sha256     # record its fingerprint
+sha256sum -c backup.sha256                  # prints: backup.tar.gz: OK
+
+mkdir restore && tar -xzf backup.tar.gz -C restore
+diff -r docs restore/docs && echo identical # the restore matches the original
+
+# if the archive is damaged, the check fails:
+# backup.tar.gz: FAILED
+```
+
+**Explanation / note.** The commands were run in a scratch folder: the archive verified as OK, the restored folder was identical to the original, and after appending a byte the check reported FAILED.
+
+**Task.** On a practice machine, back up a small folder of fictional files to an archive, record a checksum, restore to a different folder and compare the two. Then damage a copy of the archive and show that the checksum check fails. Write a one-page plan for a fictional office stating the 3-2-1 copies, the recovery point and recovery time targets, and how often you will test a restore.
+
+**Quiz.** What does a failed checksum comparison tell you?
+- Correct: The file has changed or been corrupted since the checksum was made
+- Wrong: The disk is full
+- Wrong: The file has been encrypted successfully
+
+**Findings:** _none yet_
+
+### 9. Defensive security and incident response
 
 **Concept.** Security protects confidentiality, integrity and availability. Learn patching, backups, MFA, phishing awareness, endpoint protection, logging and incident response. Never scan, exploit or access systems without explicit authorisation.
 
