@@ -228,3 +228,9 @@ Every essential course that had only 7 lessons gains one: Outlook (high-volume e
 
 - **C:** enums, bit flags and compact state (compiled with `-Wall -Wextra`, run under AddressSanitizer and UBSan). **Java:** Optional and null safety (compiled and run). **TypeScript:** mapped and conditional types (`tsc --strict`, with a reproduced readonly compile error). **Data:** dates, time series and rolling averages (run with pandas; printed values match).
 - C, Java, TypeScript and Data now have 10 lessons each; the platform has about 297. All 30 course pages pass the browser checks. AI-drafted, pending expert review; packets regenerated.
+
+
+## Worked examples for DSA, Logic and Vibe Coding briefs — 23 November 2026
+
+- **Three more briefs have worked reference examples (16 of 30):** DSA (stack, hash lookup and BFS with assertion tests and a list-versus-set timing comparison), Logic (one problem solved two ways and cross-checked on normal, boundary and invalid cases) and Vibe Coding (an AI-style SQL-injection mistake, the parameterised fix and a test that shows the difference). All code was run; outputs are real. Timing output is printed as a comparison, not exact times, because speeds vary by machine.
+- Still partial by design; 14 briefs have no example. AI-drafted, pending expert review.

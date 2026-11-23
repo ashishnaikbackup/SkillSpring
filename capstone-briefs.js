@@ -165,3 +165,36 @@ const workedExamples3 = {
  }
 };
 for (const slug in workedExamples3) if (window.SkillSpringBriefs[slug]) window.SkillSpringBriefs[slug].example = workedExamples3[slug];
+const workedExamples4 = {
+ "dsa": {
+  "note": "A stack, a hash-based lookup and a breadth-first search, each with an assertion test, plus a simple timing comparison. Your project needs a queue class, five solved problems, a proper timing table across more sizes and written complexity notes. Timings vary by machine, so the check prints only a comparison, not exact times.",
+  "files": [
+   {
+    "name": "ds.py",
+    "code": "import time\nfrom collections import deque\n\n\nclass Stack:\n    def __init__(self):\n        self._items = []\n\n    def push(self, x):\n        self._items.append(x)\n\n    def pop(self):\n        if not self._items:\n            raise IndexError(\"pop from empty stack\")\n        return self._items.pop()\n\n    def __len__(self):\n        return len(self._items)\n\n\ndef balanced(text):\n    pairs = {\")\": \"(\", \"]\": \"[\", \"}\": \"{\"}\n    stack = Stack()\n    for ch in text:\n        if ch in \"([{\":\n            stack.push(ch)\n        elif ch in pairs:\n            if len(stack) == 0 or stack.pop() != pairs[ch]:\n                return False\n    return len(stack) == 0\n\n\ndef first_repeat(values):\n    seen = set()\n    for v in values:\n        if v in seen:\n            return v\n        seen.add(v)\n    return None\n\n\ndef bfs_distance(graph, start, goal):\n    queue, seen = deque([(start, 0)]), {start}\n    while queue:\n        node, d = queue.popleft()\n        if node == goal:\n            return d\n        for nxt in graph.get(node, []):\n            if nxt not in seen:\n                seen.add(nxt)\n                queue.append((nxt, d + 1))\n    return -1\n\n\nassert balanced(\"{[()]}\") and not balanced(\"(]\") and not balanced(\"((\")\nassert first_repeat([3, 1, 4, 1, 5]) == 1 and first_repeat([1, 2]) is None\ng = {\"A\": [\"B\", \"C\"], \"B\": [\"D\"], \"C\": [\"D\"], \"D\": []}\nassert bfs_distance(g, \"A\", \"D\") == 2 and bfs_distance(g, \"D\", \"A\") == -1\nprint(\"All tests passed.\")\n\nfor n in (1000, 2000, 4000):\n    data = list(range(n))\n    target = n - 1\n    t0 = time.perf_counter()\n    for _ in range(200):\n        target in data          # list scan, O(n)\n    t_list = time.perf_counter() - t0\n    s = set(data)\n    t0 = time.perf_counter()\n    for _ in range(200):\n        target in s             # hash lookup, about O(1)\n    t_set = time.perf_counter() - t0\n    print(f\"n={n}: list slower than set by a factor greater than 5: {t_list > 5 * t_set}\")"
+   }
+  ],
+  "output": "All tests passed.\nn=1000: list slower than set by a factor greater than 5: True\nn=2000: list slower than set by a factor greater than 5: True\nn=4000: list slower than set by a factor greater than 5: True"
+ },
+ "logic": {
+  "note": "One problem (find two numbers that add to a target) solved two ways and checked against each other on normal, boundary and invalid cases. Your portfolio needs five problems, flowcharts or pseudocode and plain-word complexity. The slow version is quadratic; the fast one makes a single pass with a dictionary.",
+  "files": [
+   {
+    "name": "algo.py",
+    "code": "def two_sum_slow(nums, target):\n    for i in range(len(nums)):\n        for j in range(i + 1, len(nums)):\n            if nums[i] + nums[j] == target:\n                return (i, j)\n    return None\n\n\ndef two_sum_fast(nums, target):\n    seen = {}\n    for i, n in enumerate(nums):\n        if target - n in seen:\n            return (seen[target - n], i)\n        seen[n] = i\n    return None\n\n\ncases = [([2, 7, 11, 15], 9), ([3, 3], 6), ([1, 2], 10), ([], 5)]\nfor nums, target in cases:\n    a, b = two_sum_slow(nums, target), two_sum_fast(nums, target)\n    assert a == b, (nums, target, a, b)\n    print(nums, target, \"->\", a)"
+   }
+  ],
+  "output": "[2, 7, 11, 15] 9 -> (0, 1)\n[3, 3] 6 -> (0, 1)\n[1, 2] 10 -> None\n[] 5 -> None"
+ },
+ "vibecoding": {
+  "note": "An example of finding and fixing an AI-style mistake: SQL built by joining text, which lets crafted input return every row. The fix binds the value as a parameter, and a test proves the difference. Your project needs a specification, a prompt log and your own list of issues found.",
+  "files": [
+   {
+    "name": "review.py",
+    "code": "import sqlite3\n\ndb = sqlite3.connect(\":memory:\")\ndb.execute(\"CREATE TABLE users(name TEXT, secret TEXT)\")\ndb.executemany(\"INSERT INTO users VALUES (?, ?)\", [(\"asha\", \"s1\"), (\"dev\", \"s2\")])\n\n\n# What an assistant might generate: builds SQL from user text (unsafe)\ndef find_unsafe(name):\n    return db.execute(\"SELECT name FROM users WHERE name = '\" + name + \"'\").fetchall()\n\n\n# After human review: the value is bound as a parameter\ndef find_safe(name):\n    return db.execute(\"SELECT name FROM users WHERE name = ?\", (name,)).fetchall()\n\n\nattack = \"x' OR '1'='1\"\nprint(\"unsafe:\", find_unsafe(attack))\nprint(\"safe:\", find_safe(attack))\nassert find_safe(\"asha\") == [(\"asha\",)]\nassert find_safe(attack) == []\nprint(\"Review test passed.\")"
+   }
+  ],
+  "output": "unsafe: [('asha',), ('dev',)]\nsafe: []\nReview test passed."
+ }
+};
+for (const slug in workedExamples4) if (window.SkillSpringBriefs[slug]) window.SkillSpringBriefs[slug].example = workedExamples4[slug];
