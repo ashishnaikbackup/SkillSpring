@@ -250,3 +250,8 @@ Authoring is paused at a stable v1. See [HANDOFF.md](HANDOFF.md) for what exists
 ## Two more lessons (Git, Maths) — 23 November 2026
 
 - **Git:** finding bugs with bisect, tags and releases; the bisect run was reproduced in a scratch repository and found the planted bad commit. **Maths:** counting, combinations and the binomial model; every figure (C(5,2) = 10, 0.3125, 0.875, 1/6) was recalculated. Both courses now have 9 lessons and a 9-question final assessment; the platform has about 303 lessons. All 30 course pages pass the browser checks. AI-drafted, pending expert review; packets regenerated.
+
+
+## One more lesson (Excel) — 23 November 2026
+
+- **Excel:** conditional totals, SUMPRODUCT and INDEX/MATCH. The sample formulas were built in a workbook, recalculated in LibreOffice and matched an independent Python check (13 North units, revenue 790, book price 40, a not-found message and one zero-unit row). Excel now has 11 lessons and an 11-question final assessment. Not opened in Microsoft Excel itself; a reviewer should confirm. AI-drafted, pending expert review; packets regenerated.

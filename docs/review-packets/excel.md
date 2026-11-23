@@ -1,6 +1,6 @@
 # Review packet: Microsoft Excel: Beginner to Advanced Workplace Skills
 
-- Course key: `excel`  ·  Lessons: 10  ·  Review interval: 60 days
+- Course key: `excel`  ·  Lessons: 11  ·  Review interval: 60 days
 - Current status: `initial-review-required`  ·  Last reviewed: never
 - Content files: `essential-courses.js`
 - Official sources to check against:
@@ -211,7 +211,33 @@ Sensitivity table (units across, price down) shows profit for each combination.
 
 **Findings:** _none yet_
 
-### 10. Excel professional capstone
+### 10. Conditional totals, SUMPRODUCT & INDEX/MATCH
+
+**Concept.** SUMIFS adds values that meet one or more conditions and COUNTIFS counts rows that meet them, so a summary updates when the data changes instead of being typed in by hand. SUMPRODUCT multiplies matching ranges and adds the results, which gives revenue from units and prices without a helper column. INDEX returns the value at a position in a range and MATCH finds that position; together they look up values in any column and work in every Excel version. Wrap a lookup in IFERROR to show a clear message instead of a raw error, and use MATCH with 0 for an exact match. Keep ranges the same size and prefer tables or named ranges so formulas do not break when rows are added.
+
+**Example**
+
+```
+Units in C2:C6, prices in D2:D6, regions in A2:A6, products in B2:B6
+North units      =SUMIFS(C2:C6,A2:A6,"North")                 -> 13
+Revenue          =SUMPRODUCT(C2:C6,D2:D6)                    -> 790
+Book price       =INDEX(D2:D6,MATCH("Book",B2:B6,0))         -> 40
+Missing product  =IFERROR(INDEX(D2:D6,MATCH("Lamp",B2:B6,0)),"not found")  -> not found
+Rows with 0 units =COUNTIFS(C2:C6,0)                         -> 1
+```
+
+**Explanation / note.** The formulas in the example were calculated in LibreOffice on the sample table and matched a Python check: 13 North units, revenue 790, book price 40 and a not-found message for a missing product.
+
+**Task.** Build a fictional sales table of at least 15 rows. Add formulas for units by region, revenue by product using SUMPRODUCT, a lookup of one product price with a friendly message when missing, and a count of rows with zero units. Change one input and confirm every dependent result updates.
+
+**Quiz.** Why use IFERROR around a lookup?
+- Correct: To show a clear message instead of an error when the item is not found
+- Wrong: To make the lookup faster
+- Wrong: To change the data in the source table
+
+**Findings:** _none yet_
+
+### 11. Excel professional capstone
 
 **Concept.** Build a decision-ready model: clearly labelled inputs, calculations, outputs, checks, assumptions, scenario controls and a dashboard. Separate inputs from formulas and test edge cases.
 
