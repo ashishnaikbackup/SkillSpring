@@ -234,3 +234,9 @@ Every essential course that had only 7 lessons gains one: Outlook (high-volume e
 
 - **Three more briefs have worked reference examples (16 of 30):** DSA (stack, hash lookup and BFS with assertion tests and a list-versus-set timing comparison), Logic (one problem solved two ways and cross-checked on normal, boundary and invalid cases) and Vibe Coding (an AI-style SQL-injection mistake, the parameterised fix and a test that shows the difference). All code was run; outputs are real. Timing output is printed as a comparison, not exact times, because speeds vary by machine.
 - Still partial by design; 14 briefs have no example. AI-drafted, pending expert review.
+
+
+## Four more lessons (C, C++, Java, Web) — 23 November 2026
+
+- **C:** linked lists and pointer manipulation (gcc `-Wall -Wextra` with AddressSanitizer and UBSan, no errors). **C++:** copy, move semantics and the rule of five (same sanitizer run; printed output matches). **Java:** sorting with comparators and functional interfaces (compiled and run). **Web:** motion, transitions and `prefers-reduced-motion` (checked in headless Chromium with the preference set both ways).
+- C, C++, Java and Web now have 11, 11, 11 and 10 lessons; the platform has about 301. All 30 course pages pass the browser checks. AI-drafted, pending expert review; packets regenerated.

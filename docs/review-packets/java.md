@@ -1,6 +1,6 @@
 # Review packet: Java: Programming & Object-Oriented Foundations
 
-- Course key: `java`  ·  Lessons: 10  ·  Review interval: 90 days
+- Course key: `java`  ·  Lessons: 11  ·  Review interval: 90 days
 - Current status: `initial-review-required`  ·  Last reviewed: never
 - Content files: `course-engine.js`
 - Official sources to check against:
@@ -320,7 +320,42 @@ public class Opt {
 
 **Findings:** _none yet_
 
-### 10. Exceptions, files & project
+### 10. Sorting, comparators & functional interfaces
+
+**Concept.** Collections.sort and List.sort order a list using a Comparator, an object that compares two items. Comparator.comparingInt builds one from a key, reversed flips it and thenComparing breaks ties, so complex orderings read as a short chain. A functional interface has a single abstract method, which lets a lambda such as s with an arrow expression stand in for an object; Predicate, Function and Comparator are common examples. Sorting must be consistent, so a comparator should never give contradictory answers.
+
+**Example**
+
+```
+import java.util.*;
+
+public class Sort {
+    record Student(String name, int score) {}
+
+    public static void main(String[] args) {
+        List<Student> list = new ArrayList<>(List.of(
+            new Student("Mira", 46), new Student("Dev", 82), new Student("Asha", 46)));
+        list.sort(Comparator.comparingInt(Student::score).reversed().thenComparing(Student::name));
+        for (Student s : list) System.out.println(s.name() + " " + s.score());
+        java.util.function.Predicate<Student> pass = s -> s.score() >= 50;
+        System.out.println(list.stream().filter(pass).count());
+    }
+}
+// Prints: Dev 82 / Asha 46 / Mira 46 / 1
+```
+
+**Explanation / note.** The list is ordered by score from high to low, and ties are broken by name, so Asha comes before Mira. The Predicate pass is a lambda, and the stream counts only the students at or above 50, which is one. Compiled and run with a current JDK.
+
+**Task.** Create a record for books with title, author and year. Sort them by year descending then title, and print the three oldest. Add a Predicate that selects books before 2000 and test an empty list and equal years.
+
+**Quiz.** What does thenComparing do?
+- Correct: Breaks ties after the first comparison
+- Wrong: Reverses the whole list
+- Wrong: Removes duplicates
+
+**Findings:** _none yet_
+
+### 11. Exceptions, files & project
 
 **Concept.** Exceptions represent exceptional conditions. Use try/catch for expected failures and close resources with try-with-resources. Split code into classes with clear responsibilities and write tests.
 

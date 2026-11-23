@@ -1,6 +1,6 @@
 # Review packet: HTML & CSS: Build Responsive Websites
 
-- Course key: `web`  ·  Lessons: 9  ·  Review interval: 90 days
+- Course key: `web`  ·  Lessons: 10  ·  Review interval: 90 days
 - Current status: `initial-review-required`  ·  Last reviewed: never
 - Content files: `course-engine.js`
 - Official sources to check against:
@@ -247,7 +247,39 @@ a { color: var(--accent); }
 
 **Findings:** _none yet_
 
-### 9. Accessibility, polish & publish
+### 9. Motion, transitions & reduced-motion preferences
+
+**Concept.** Small transitions make an interface feel responsive, but motion can cause discomfort or distraction for some people. Use transitions for feedback such as hover and focus, keep them short, and animate transform and opacity rather than layout properties. The prefers-reduced-motion media query lets a page respect the visitor's system setting by removing or reducing movement. Focus styles must still be visible without motion, and nothing essential should depend on an animation alone.
+
+**Example**
+
+```
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Motion demo</title>
+<style>
+  .btn { padding: .6rem 1rem; background: #0b5cad; color: #fff; border: 0; border-radius: 6px; transition: transform .2s ease; }
+  .btn:hover, .btn:focus-visible { transform: translateY(-2px); }
+  @media (prefers-reduced-motion: reduce) {
+    .btn { transition: none; }
+    .btn:hover, .btn:focus-visible { transform: none; }
+  }
+</style></head><body><main><h1>Motion demo</h1><button class="btn">Save</button></main></body></html>
+/* In a browser with normal motion, a focused button moves up 2px with a 0.2s transition. */
+/* With reduced motion on, the transform is none and the duration is 0s. */
+```
+
+**Explanation / note.** The page defines a short transform transition on hover and keyboard focus. The reduced-motion block turns the transition off and cancels the movement. This was checked in a headless browser with the preference set both ways: the computed transform was a 2 pixel upward movement with 0.2s duration normally and none with 0s when reduced motion was requested.
+
+**Task.** Add one hover or focus animation to your own page, then add a prefers-reduced-motion block that disables it. Test with the operating system setting or browser developer tools and record both results with screenshots.
+
+**Quiz.** What does prefers-reduced-motion let a page do?
+- Correct: Reduce or remove animation for visitors who ask for less motion
+- Wrong: Make animations run faster
+- Wrong: Block all CSS from loading
+
+**Findings:** _none yet_
+
+### 10. Accessibility, polish & publish
 
 **Concept.** Accessibility includes keyboard use, contrast, visible focus, semantic structure, labels and reduced-motion considerations. Test with keyboard navigation and browser tools. Optimise images and keep CSS organised.
 
