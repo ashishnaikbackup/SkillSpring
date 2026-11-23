@@ -260,3 +260,8 @@ Authoring is paused at a stable v1. See [HANDOFF.md](HANDOFF.md) for what exists
 ## Two more lessons (Access, Business) — 23 November 2026
 
 - **Access:** unmatched records, outer joins and summary queries (logic run in SQLite on sample data; Nz is Access's COALESCE; not opened in Microsoft Access itself). **Business:** cash flow, working capital and runway (all figures recalculated; education only, not financial advice). Both courses now have 9 lessons and a 9-question final assessment; the platform has about 306 lessons. All 30 course pages pass the browser checks. AI-drafted, pending expert review; packets regenerated.
+
+
+## One more lesson (IT) — 23 November 2026
+
+- **IT Foundations:** backups, integrity checks and recovery (3-2-1 rule, SHA-256 checksums, recovery objectives). The commands were run in a scratch folder: archive verified OK, restore identical, and a damaged copy failed the check. IT now has 9 lessons; the platform has about 307. All 30 course pages pass the browser checks. AI-drafted, pending expert review; packets regenerated.
