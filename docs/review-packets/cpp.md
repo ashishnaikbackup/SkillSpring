@@ -1,6 +1,6 @@
 # Review packet: C++: Fundamentals to Object-Oriented Programming
 
-- Course key: `cpp`  ·  Lessons: 9  ·  Review interval: 90 days
+- Course key: `cpp`  ·  Lessons: 10  ·  Review interval: 90 days
 - Current status: `initial-review-required`  ·  Last reviewed: never
 - Content files: `course-engine.js`
 - Official sources to check against:
@@ -284,7 +284,59 @@ int main() {
 
 **Findings:** _none yet_
 
-### 9. Files, testing & capstone
+### 9. Copy, move semantics & the rule of five
+
+**Concept.** A class that owns a resource such as heap memory must decide how it is copied and moved. Copying makes an independent duplicate, which can be expensive. Moving transfers ownership of the resource and leaves the source empty but valid, which is cheap. std::move does not move anything by itself; it allows the compiler to pick the move constructor. If a class defines a destructor, copy operations or move operations, it usually needs to define all of them, known as the rule of five. Prefer standard containers and smart pointers so the compiler-generated versions are correct.
+
+**Example**
+
+```
+#include <iostream>
+#include <utility>
+#include <vector>
+
+class Buffer {
+    int* data_;
+    std::size_t size_;
+public:
+    explicit Buffer(std::size_t n) : data_(new int[n]()), size_(n) { std::cout << "construct " << n << '\n'; }
+    Buffer(const Buffer& o) : data_(new int[o.size_]), size_(o.size_) {
+        for (std::size_t i = 0; i < size_; ++i) data_[i] = o.data_[i];
+        std::cout << "copy\n";
+    }
+    Buffer(Buffer&& o) noexcept : data_(o.data_), size_(o.size_) {
+        o.data_ = nullptr; o.size_ = 0;
+        std::cout << "move\n";
+    }
+    Buffer& operator=(Buffer o) noexcept {
+        std::swap(data_, o.data_); std::swap(size_, o.size_);
+        return *this;
+    }
+    ~Buffer() { delete[] data_; }
+    std::size_t size() const { return size_; }
+};
+
+int main() {
+    Buffer a(100);
+    Buffer b = a;
+    Buffer c = std::move(a);
+    std::cout << a.size() << ' ' << b.size() << ' ' << c.size() << '\n';
+}
+// Prints: construct 100 / copy / move / 0 100 100
+```
+
+**Explanation / note.** Buffer b = a copies the 100 integers, so both objects have size 100. Buffer c = std::move(a) steals a's pointer, so a ends with size 0 and c has size 100. The destructor frees the pointer once per owner, and a moved-from object has a null pointer so nothing is freed twice. It compiled with -Wall -Wextra and ran clean under AddressSanitizer and UBSan.
+
+**Task.** Write a class that owns a dynamic array with a constructor, destructor, copy and move constructors. Print a message in each, then show which one runs for passing by value, returning from a function and std::move. Replace the raw pointer with std::vector and note what you can delete.
+
+**Quiz.** What does a move constructor do?
+- Correct: Takes over the resource and leaves the source empty but valid
+- Wrong: Copies every element to a new location
+- Wrong: Deletes the object permanently
+
+**Findings:** _none yet_
+
+### 10. Files, testing & capstone
 
 **Concept.** Use streams such as ifstream and ofstream for files. Separate program logic from input/output so functions can be tested. Compile with warnings, write tests and use version control.
 

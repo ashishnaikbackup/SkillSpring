@@ -1,6 +1,6 @@
 # Review packet: C Programming: Zero to Systems Foundations
 
-- Course key: `c`  ·  Lessons: 10  ·  Review interval: 180 days
+- Course key: `c`  ·  Lessons: 11  ·  Review interval: 180 days
 - Current status: `initial-review-required`  ·  Last reviewed: never
 - Content files: `course-engine.js`
 - Official sources to check against:
@@ -312,7 +312,76 @@ int main(void) {
 
 **Findings:** _none yet_
 
-### 10. Files, debugging & final project
+### 10. Linked lists & pointer manipulation
+
+**Concept.** A linked list stores each value in a node that points to the next node, so items can be added at the front without shifting an array. Each node is allocated separately with malloc and must be freed exactly once. The most common mistakes are losing the head pointer, following a NULL pointer and forgetting to free. When changing links, save the next pointer before overwriting it. Drawing boxes and arrows on paper before coding makes pointer bugs much easier to see.
+
+**Example**
+
+```
+#include <stdio.h>
+#include <stdlib.h>
+
+struct Node {
+    int value;
+    struct Node *next;
+};
+
+static struct Node *push_front(struct Node *head, int value) {
+    struct Node *n = malloc(sizeof *n);
+    if (!n) { perror("malloc"); exit(1); }
+    n->value = value;
+    n->next = head;
+    return n;
+}
+
+static struct Node *reverse(struct Node *head) {
+    struct Node *prev = NULL;
+    while (head) {
+        struct Node *next = head->next;
+        head->next = prev;
+        prev = head;
+        head = next;
+    }
+    return prev;
+}
+
+static void print_free(struct Node *head) {
+    while (head) {
+        printf("%d ", head->value);
+        struct Node *next = head->next;
+        free(head);
+        head = next;
+    }
+    putchar('\n');
+}
+
+int main(void) {
+    struct Node *list = NULL;
+    for (int i = 1; i <= 4; i++) list = push_front(list, i);
+    printf("Before: ");
+    for (struct Node *p = list; p; p = p->next) printf("%d ", p->value);
+    putchar('\n');
+    list = reverse(list);
+    printf("After:  ");
+    print_free(list);
+    return 0;
+}
+// Prints: Before: 4 3 2 1 / After:  1 2 3 4
+```
+
+**Explanation / note.** push_front creates a node and makes it the new head. reverse walks the list once, saving next before pointing each node back at the previous one, and returns the new head. print_free prints each value and frees the node after saving its next pointer. The program compiles without warnings and runs clean under AddressSanitizer and UBSan, which confirms there are no leaks or invalid reads.
+
+**Task.** Add a function that counts nodes and one that removes the first node with a given value. Test an empty list, a one-node list, removing the head, the last node and a missing value, then run everything under AddressSanitizer.
+
+**Quiz.** What is the main risk when re-linking nodes?
+- Correct: Losing access to the rest of the list by overwriting next too early
+- Wrong: The compiler refuses to build the code
+- Wrong: Integers cannot be stored in nodes
+
+**Findings:** _none yet_
+
+### 11. Files, debugging & final project
 
 **Concept.** Use fopen, fgets/fprintf and fclose for file work; check errors. Compile with warnings enabled, for example gcc -Wall -Wextra -Wpedantic. Use a debugger and sanitizers where available. Keep functions small and document assumptions.
 
