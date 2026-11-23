@@ -265,3 +265,8 @@ Authoring is paused at a stable v1. See [HANDOFF.md](HANDOFF.md) for what exists
 ## One more lesson (IT) — 23 November 2026
 
 - **IT Foundations:** backups, integrity checks and recovery (3-2-1 rule, SHA-256 checksums, recovery objectives). The commands were run in a scratch folder: archive verified OK, restore identical, and a damaged copy failed the check. IT now has 9 lessons; the platform has about 307. All 30 course pages pass the browser checks. AI-drafted, pending expert review; packets regenerated.
+
+
+## Final close-out — 23 November 2026
+
+v1 is complete and deployed (about 307 lessons, 41 graded challenges, 16 worked brief examples). Remaining work is human review, manual QA and mentor feedback; see [HANDOFF.md](HANDOFF.md).
