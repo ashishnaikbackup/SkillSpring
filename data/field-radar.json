@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-23T10:48:18.284Z",
+  "generatedAt": "2026-11-24T12:31:29.842Z",
   "disclaimer": "Automatically collected publisher headlines with original links. Read the publisher's source for full context. This is not financial, legal or security advice.",
   "sources": [
     {
@@ -32,7 +32,7 @@
       "status": "ok",
       "message": "Feed refreshed",
       "lastStatusChange": "2026-11-23T10:48:18.284Z",
-      "lastContentUpdate": "2026-11-23T10:48:18.284Z",
+      "lastContentUpdate": "2026-11-24T12:31:29.842Z",
       "itemCount": 1
     },
     {
@@ -43,7 +43,7 @@
       "status": "ok",
       "message": "Feed refreshed",
       "lastStatusChange": "2026-11-01T02:06:00.544Z",
-      "lastContentUpdate": "2026-11-23T10:48:18.284Z",
+      "lastContentUpdate": "2026-11-24T12:31:29.842Z",
       "itemCount": 1
     },
     {
@@ -54,7 +54,7 @@
       "status": "ok",
       "message": "Feed refreshed",
       "lastStatusChange": "2026-11-01T02:06:00.544Z",
-      "lastContentUpdate": "2026-11-20T10:03:04.503Z",
+      "lastContentUpdate": "2026-11-24T12:31:29.842Z",
       "itemCount": 1
     },
     {
@@ -65,7 +65,7 @@
       "status": "ok",
       "message": "Feed refreshed",
       "lastStatusChange": "2026-11-01T02:06:00.544Z",
-      "lastContentUpdate": "2026-11-19T10:23:04.134Z",
+      "lastContentUpdate": "2026-11-24T12:31:29.842Z",
       "itemCount": 1
     },
     {
@@ -76,7 +76,7 @@
       "status": "ok",
       "message": "Feed refreshed",
       "lastStatusChange": "2026-11-01T02:06:00.544Z",
-      "lastContentUpdate": "2026-11-21T09:51:16.638Z",
+      "lastContentUpdate": "2026-11-24T12:31:29.842Z",
       "itemCount": 1
     },
     {
@@ -98,7 +98,7 @@
       "status": "ok",
       "message": "Feed refreshed",
       "lastStatusChange": "2026-11-01T02:06:00.544Z",
-      "lastContentUpdate": "2026-11-21T09:51:16.638Z",
+      "lastContentUpdate": "2026-11-24T12:31:29.842Z",
       "itemCount": 1
     },
     {
@@ -109,7 +109,7 @@
       "status": "ok",
       "message": "Feed refreshed",
       "lastStatusChange": "2026-11-01T02:06:00.544Z",
-      "lastContentUpdate": "2026-11-23T10:48:18.284Z",
+      "lastContentUpdate": "2026-11-24T12:31:29.842Z",
       "itemCount": 1
     },
     {
@@ -131,7 +131,7 @@
       "status": "ok",
       "message": "Feed refreshed",
       "lastStatusChange": "2026-11-06T09:27:04.755Z",
-      "lastContentUpdate": "2026-11-21T09:51:16.638Z",
+      "lastContentUpdate": "2026-11-24T12:31:29.842Z",
       "itemCount": 1
     },
     {
@@ -153,46 +153,82 @@
       "status": "ok",
       "message": "Feed refreshed",
       "lastStatusChange": "2026-11-01T02:06:00.544Z",
-      "lastContentUpdate": "2026-11-23T10:48:18.284Z",
+      "lastContentUpdate": "2026-11-24T12:31:29.842Z",
       "itemCount": 1
     }
   ],
   "items": [
     {
-      "id": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=64024",
-      "title": "Result of Yield/Price Based Auction of State Government Securities",
-      "url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=64024",
-      "publishedAt": "2026-11-23T15:05:00.000Z",
-      "sourceId": "rbi",
-      "sourceName": "Reserve Bank of India",
-      "category": "Finance & India"
-    },
-    {
-      "id": "https://spectrum.ieee.org/thermal-noise-communication-impedance",
-      "title": "How Could Thermal Noise Transmit Data?",
-      "url": "https://spectrum.ieee.org/thermal-noise-communication-impedance",
-      "publishedAt": "2026-11-22T14:00:02.000Z",
+      "id": "https://spectrum.ieee.org/swahili-speech-recognition",
+      "title": "Why Does Voice AI Still Struggle With Kenyans’ Speech?",
+      "url": "https://spectrum.ieee.org/swahili-speech-recognition",
+      "publishedAt": "2026-11-24T12:00:03.000Z",
       "sourceId": "ieee-spectrum",
       "sourceName": "IEEE Spectrum",
       "category": "Engineering & Electronics"
     },
     {
-      "id": "https://openai.com/index/perplexity-and-intelligence",
-      "title": "Perplexity and Intelligence",
-      "url": "https://openai.com/index/perplexity-and-intelligence",
-      "publishedAt": "2026-11-22T00:00:00.000Z",
+      "id": "https://www.microsoft.com/microsoft-365/roadmap?id=581967",
+      "title": "Dynamics 365 Customer Insights - Journeys: Stop tracking email opens without disabling other tracking",
+      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=581967",
+      "publishedAt": "2026-11-24T00:13:11.000Z",
+      "sourceId": "m365-roadmap",
+      "sourceName": "Microsoft 365 Roadmap",
+      "category": "Office & Productivity"
+    },
+    {
+      "id": "https://openai.com/index/introducing-shirudo",
+      "title": "OpenAI and Cisco introduce Shirudo",
+      "url": "https://openai.com/index/introducing-shirudo",
+      "publishedAt": "2026-11-23T21:20:00.000Z",
       "sourceId": "openai",
       "sourceName": "OpenAI News",
       "category": "AI & Data"
     },
     {
-      "id": "https://www.microsoft.com/microsoft-365/roadmap?id=581992",
-      "title": "Manage workforce requests in Microsoft 365 Copilot",
-      "url": "https://www.microsoft.com/microsoft-365/roadmap?id=581992",
-      "publishedAt": "2026-11-21T02:55:45.000Z",
-      "sourceId": "m365-roadmap",
-      "sourceName": "Microsoft 365 Roadmap",
-      "category": "Office & Productivity"
+      "id": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=64033",
+      "title": "RBI to conduct Overnight Variable Rate Repo (VRR) auction under LAF on November 25, 2026",
+      "url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=64033",
+      "publishedAt": "2026-11-23T19:25:00.000Z",
+      "sourceId": "rbi",
+      "sourceName": "Reserve Bank of India",
+      "category": "Finance & India"
+    },
+    {
+      "id": "https://huggingface.co/blog/allenai/robotrack",
+      "title": "RoboTrack: Point tracking for real-world robotic manipulation",
+      "url": "https://huggingface.co/blog/allenai/robotrack",
+      "publishedAt": "2026-11-23T17:20:37.000Z",
+      "sourceId": "huggingface",
+      "sourceName": "Hugging Face Blog",
+      "category": "AI & Data"
+    },
+    {
+      "id": "https://blog.google/products-and-platforms/products/search/google-search-personal-intelligence-apps/",
+      "title": "A more tailored Google Search that’s uniquely yours",
+      "url": "https://blog.google/products-and-platforms/products/search/google-search-personal-intelligence-apps/",
+      "publishedAt": "2026-11-23T17:00:00.000Z",
+      "sourceId": "google-ai",
+      "sourceName": "Google AI",
+      "category": "AI & Data"
+    },
+    {
+      "id": "https://deepmind.google/blog/finding-faster-quantum-algorithms-with-agents-and-formal-verification/",
+      "title": "Finding faster quantum algorithms with agents and formal verification",
+      "url": "https://deepmind.google/blog/finding-faster-quantum-algorithms-with-agents-and-formal-verification/",
+      "publishedAt": "2026-11-23T16:59:40.000Z",
+      "sourceId": "deepmind",
+      "sourceName": "Google DeepMind",
+      "category": "AI & Data"
+    },
+    {
+      "id": "https://www.cisa.gov/news-events/alerts/2026/11/23/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+      "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
+      "url": "https://www.cisa.gov/news-events/alerts/2026/11/23/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+      "publishedAt": "2026-11-23T12:00:00.000Z",
+      "sourceId": "cisa",
+      "sourceName": "CISA Advisories",
+      "category": "Cybersecurity"
     },
     {
       "id": "https://www.figma.com/blog/workflow-lab-specs-and-the-figma-agent/",
@@ -204,15 +240,6 @@
       "category": "Design & Creative"
     },
     {
-      "id": "https://www.cisa.gov/news-events/alerts/2026/11/20/cisa-adds-four-known-exploited-vulnerabilities-catalog",
-      "title": "CISA Adds Four Known Exploited Vulnerabilities to Catalog",
-      "url": "https://www.cisa.gov/news-events/alerts/2026/11/20/cisa-adds-four-known-exploited-vulnerabilities-catalog",
-      "publishedAt": "2026-11-20T12:00:00.000Z",
-      "sourceId": "cisa",
-      "sourceName": "CISA Advisories",
-      "category": "Cybersecurity"
-    },
-    {
       "id": "https://www.microsoft.com/en-us/power-platform/blog/power-pages/discover-and-review-power-pages-sites-with-power-platform-inventory-public-preview/",
       "title": "Discover and review Power Pages sites with Power Platform inventory (public preview)",
       "url": "https://www.microsoft.com/en-us/power-platform/blog/power-pages/discover-and-review-power-pages-sites-with-power-platform-inventory-public-preview/",
@@ -220,24 +247,6 @@
       "sourceId": "power-platform",
       "sourceName": "Microsoft Power Platform",
       "category": "Office & Analytics"
-    },
-    {
-      "id": "https://huggingface.co/blog/inkling2mini",
-      "title": "Welcome Inkling 2 Mini, Cutting-edge Performance for your Local Setup",
-      "url": "https://huggingface.co/blog/inkling2mini",
-      "publishedAt": "2026-11-20T00:00:00.000Z",
-      "sourceId": "huggingface",
-      "sourceName": "Hugging Face Blog",
-      "category": "AI & Data"
-    },
-    {
-      "id": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/",
-      "title": "Introducing Tool Retrieval in the Gemini API",
-      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/",
-      "publishedAt": "2026-11-19T18:00:00.000Z",
-      "sourceId": "google-ai",
-      "sourceName": "Google AI",
-      "category": "AI & Data"
     },
     {
       "id": "https://github.blog/open-source/maintainers/the-best-things-in-open-source-are-built-together/",
@@ -249,15 +258,6 @@
       "category": "Software Development"
     },
     {
-      "id": "https://deepmind.google/blog/introducing-gemini-4-neon/",
-      "title": "Introducing Gemini 4 Neon",
-      "url": "https://deepmind.google/blog/introducing-gemini-4-neon/",
-      "publishedAt": "2026-11-18T21:35:43.000Z",
-      "sourceId": "deepmind",
-      "sourceName": "Google DeepMind",
-      "category": "AI & Data"
-    },
-    {
       "id": "https://blog.python.org/2026/11/transifex-sponsors-python-docs/",
       "title": "XTM Transifex sponsors Python’s documentation translations",
       "url": "https://blog.python.org/2026/11/transifex-sponsors-python-docs/",
@@ -267,9 +267,9 @@
       "category": "Programming"
     },
     {
-      "id": "https://developers.googleblog.com/agent-anomaly-detection-safeguarding-agents-across-other-clouds/",
-      "title": "Agent Anomaly Detection: Safeguarding agents across other clouds",
-      "url": "https://developers.googleblog.com/agent-anomaly-detection-safeguarding-agents-across-other-clouds/",
+      "id": "https://developers.googleblog.com/did-the-user-ask-for-this-securing-ai-agents-against-intent-hijacking-with-semantic-governance-policies/",
+      "title": "Did the user ask for this? Securing AI agents against intent hijacking with Semantic governance policies",
+      "url": "https://developers.googleblog.com/did-the-user-ask-for-this-securing-ai-agents-against-intent-hijacking-with-semantic-governance-policies/",
       "publishedAt": null,
       "sourceId": "google-dev",
       "sourceName": "Google Developers",
