@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-26T10:55:55.902Z",
+  "generatedAt": "2026-11-27T10:53:24.155Z",
   "disclaimer": "Automatically collected publisher headlines with original links. Read the publisher's source for full context. This is not financial, legal or security advice.",
   "sources": [
     {
@@ -76,7 +76,7 @@
       "status": "ok",
       "message": "Feed refreshed",
       "lastStatusChange": "2026-11-01T02:06:00.544Z",
-      "lastContentUpdate": "2026-11-26T10:55:55.902Z",
+      "lastContentUpdate": "2026-11-27T10:53:24.155Z",
       "itemCount": 1
     },
     {
@@ -109,7 +109,7 @@
       "status": "ok",
       "message": "Feed refreshed",
       "lastStatusChange": "2026-11-01T02:06:00.544Z",
-      "lastContentUpdate": "2026-11-26T10:55:55.902Z",
+      "lastContentUpdate": "2026-11-27T10:53:24.155Z",
       "itemCount": 1
     },
     {
@@ -120,7 +120,7 @@
       "status": "ok",
       "message": "Feed refreshed",
       "lastStatusChange": "2026-11-11T09:27:45.219Z",
-      "lastContentUpdate": "2026-11-26T10:55:55.902Z",
+      "lastContentUpdate": "2026-11-27T10:53:24.155Z",
       "itemCount": 1
     },
     {
@@ -153,25 +153,34 @@
       "status": "ok",
       "message": "Feed refreshed",
       "lastStatusChange": "2026-11-01T02:06:00.544Z",
-      "lastContentUpdate": "2026-11-26T10:55:55.902Z",
+      "lastContentUpdate": "2026-11-27T10:53:24.155Z",
       "itemCount": 1
     }
   ],
   "items": [
     {
-      "id": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=64048",
-      "title": "Underwriting Auction for sale of Government Securities for ₹33,000 crore on November 27, 2026",
-      "url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=64048",
-      "publishedAt": "2026-11-26T12:15:00.000Z",
+      "id": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=64056",
+      "title": "Government Stock - Full Auction Results",
+      "url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=64056",
+      "publishedAt": "2026-11-27T15:35:00.000Z",
       "sourceId": "rbi",
       "sourceName": "Reserve Bank of India",
       "category": "Finance & India"
     },
     {
-      "id": "https://huggingface.co/blog/nvidia/building-on-nemotron-35-parse-open-data-fine-tunin",
-      "title": "Building on Nemotron 3.5 Parse: Open Data, Fine-Tuning, and Faster Inference",
-      "url": "https://huggingface.co/blog/nvidia/building-on-nemotron-35-parse-open-data-fine-tunin",
-      "publishedAt": "2026-11-26T05:05:36.000Z",
+      "id": "https://spectrum.ieee.org/jupiter-europa-clipper-mission-jpl",
+      "title": "How Engineers Designed a Mission to One of Jupiter’s Icy Moons",
+      "url": "https://spectrum.ieee.org/jupiter-europa-clipper-mission-jpl",
+      "publishedAt": "2026-11-26T14:00:02.000Z",
+      "sourceId": "ieee-spectrum",
+      "sourceName": "IEEE Spectrum",
+      "category": "Engineering & Electronics"
+    },
+    {
+      "id": "https://huggingface.co/blog/ggml-org/llamacpp-amd-bench",
+      "title": "Introducing the llama.cpp benchmark dashboard for AMD Ryzen and Radeon",
+      "url": "https://huggingface.co/blog/ggml-org/llamacpp-amd-bench",
+      "publishedAt": "2026-11-26T11:37:17.000Z",
       "sourceId": "huggingface",
       "sourceName": "Hugging Face Blog",
       "category": "AI & Data"
@@ -193,15 +202,6 @@
       "sourceId": "github",
       "sourceName": "GitHub Blog",
       "category": "Software Development"
-    },
-    {
-      "id": "https://spectrum.ieee.org/darpa-triage-challenge-final-robots",
-      "title": "How DARPA Challenged Teams to Bring Robots Into Disaster Triage",
-      "url": "https://spectrum.ieee.org/darpa-triage-challenge-final-robots",
-      "publishedAt": "2026-11-25T15:00:03.000Z",
-      "sourceId": "ieee-spectrum",
-      "sourceName": "IEEE Spectrum",
-      "category": "Engineering & Electronics"
     },
     {
       "id": "https://www.cisa.gov/news-events/alerts/2026/11/25/cisa-adds-10-known-exploited-vulnerabilities-catalog",
@@ -276,9 +276,9 @@
       "category": "Software Development"
     },
     {
-      "id": "https://www.sebi.gov.in/enforcement/orders/nov-2026/adjudication-order-in-the-matter-of-vanita-krishnakant-gandhi_105859.html",
-      "title": "Adjudication Order in the matter of Vanita Krishnakant Gandhi",
-      "url": "https://www.sebi.gov.in/enforcement/orders/nov-2026/adjudication-order-in-the-matter-of-vanita-krishnakant-gandhi_105859.html",
+      "id": "https://www.sebi.gov.in/filings/public-issues/aug-2026/muthoot-fincorp-limited-drhp_103697.html",
+      "title": "Appeal No. 7167 of 2026 filed by Ravi",
+      "url": "https://www.sebi.gov.in/filings/public-issues/aug-2026/muthoot-fincorp-limited-drhp_103697.html",
       "publishedAt": null,
       "sourceId": "sebi",
       "sourceName": "SEBI",
