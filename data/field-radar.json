@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-27T10:53:24.155Z",
+  "generatedAt": "2026-11-28T10:28:55.930Z",
   "disclaimer": "Automatically collected publisher headlines with original links. Read the publisher's source for full context. This is not financial, legal or security advice.",
   "sources": [
     {
@@ -76,7 +76,7 @@
       "status": "ok",
       "message": "Feed refreshed",
       "lastStatusChange": "2026-11-01T02:06:00.544Z",
-      "lastContentUpdate": "2026-11-27T10:53:24.155Z",
+      "lastContentUpdate": "2026-11-28T10:28:55.930Z",
       "itemCount": 1
     },
     {
@@ -109,7 +109,7 @@
       "status": "ok",
       "message": "Feed refreshed",
       "lastStatusChange": "2026-11-01T02:06:00.544Z",
-      "lastContentUpdate": "2026-11-27T10:53:24.155Z",
+      "lastContentUpdate": "2026-11-28T10:28:55.930Z",
       "itemCount": 1
     },
     {
@@ -117,10 +117,10 @@
       "name": "SEBI",
       "category": "Finance & India",
       "url": "https://www.sebi.gov.in/sebirss.xml",
-      "status": "ok",
-      "message": "Feed refreshed",
-      "lastStatusChange": "2026-11-11T09:27:45.219Z",
-      "lastContentUpdate": "2026-11-27T10:53:24.155Z",
+      "status": "failed",
+      "message": "fetch failed",
+      "lastStatusChange": "2026-11-28T10:28:55.930Z",
+      "lastContentUpdate": "2026-11-28T10:28:55.930Z",
       "itemCount": 1
     },
     {
@@ -131,7 +131,7 @@
       "status": "ok",
       "message": "Feed refreshed",
       "lastStatusChange": "2026-11-06T09:27:04.755Z",
-      "lastContentUpdate": "2026-11-26T10:55:55.902Z",
+      "lastContentUpdate": "2026-11-28T10:28:55.930Z",
       "itemCount": 1
     },
     {
@@ -153,34 +153,43 @@
       "status": "ok",
       "message": "Feed refreshed",
       "lastStatusChange": "2026-11-01T02:06:00.544Z",
-      "lastContentUpdate": "2026-11-27T10:53:24.155Z",
+      "lastContentUpdate": "2026-11-28T10:28:55.930Z",
       "itemCount": 1
     }
   ],
   "items": [
     {
-      "id": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=64056",
-      "title": "Government Stock - Full Auction Results",
-      "url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=64056",
-      "publishedAt": "2026-11-27T15:35:00.000Z",
+      "id": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=64062",
+      "title": "RBI Issues Amendment Directions on ‘Suspected Money Mule Accounts to Prevent Cyber-enabled Financial Frauds’",
+      "url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=64062",
+      "publishedAt": "2026-11-27T20:45:00.000Z",
       "sourceId": "rbi",
       "sourceName": "Reserve Bank of India",
       "category": "Finance & India"
     },
     {
-      "id": "https://spectrum.ieee.org/jupiter-europa-clipper-mission-jpl",
-      "title": "How Engineers Designed a Mission to One of Jupiter’s Icy Moons",
-      "url": "https://spectrum.ieee.org/jupiter-europa-clipper-mission-jpl",
-      "publishedAt": "2026-11-26T14:00:02.000Z",
+      "id": "https://spectrum.ieee.org/clinical-ai-engineer-dinesh-rai",
+      "title": "This ER Doctor Became a Hospital’s First Clinical AI Engineer",
+      "url": "https://spectrum.ieee.org/clinical-ai-engineer-dinesh-rai",
+      "publishedAt": "2026-11-27T14:00:01.000Z",
       "sourceId": "ieee-spectrum",
       "sourceName": "IEEE Spectrum",
       "category": "Engineering & Electronics"
     },
     {
-      "id": "https://huggingface.co/blog/ggml-org/llamacpp-amd-bench",
-      "title": "Introducing the llama.cpp benchmark dashboard for AMD Ryzen and Radeon",
-      "url": "https://huggingface.co/blog/ggml-org/llamacpp-amd-bench",
-      "publishedAt": "2026-11-26T11:37:17.000Z",
+      "id": "https://www.cisa.gov/news-events/alerts/2026/11/27/cisa-adds-three-known-exploited-vulnerabilities-catalog",
+      "title": "CISA Adds Three Known Exploited Vulnerabilities to Catalog",
+      "url": "https://www.cisa.gov/news-events/alerts/2026/11/27/cisa-adds-three-known-exploited-vulnerabilities-catalog",
+      "publishedAt": "2026-11-27T12:00:00.000Z",
+      "sourceId": "cisa",
+      "sourceName": "CISA Advisories",
+      "category": "Cybersecurity"
+    },
+    {
+      "id": "https://huggingface.co/blog/video-trainium3",
+      "title": "Taking Trainium3 to the Track: Generating Videos with LTX-2.5",
+      "url": "https://huggingface.co/blog/video-trainium3",
+      "publishedAt": "2026-11-27T00:00:00.000Z",
       "sourceId": "huggingface",
       "sourceName": "Hugging Face Blog",
       "category": "AI & Data"
@@ -202,15 +211,6 @@
       "sourceId": "github",
       "sourceName": "GitHub Blog",
       "category": "Software Development"
-    },
-    {
-      "id": "https://www.cisa.gov/news-events/alerts/2026/11/25/cisa-adds-10-known-exploited-vulnerabilities-catalog",
-      "title": "CISA Adds 10 Known Exploited Vulnerabilities to Catalog",
-      "url": "https://www.cisa.gov/news-events/alerts/2026/11/25/cisa-adds-10-known-exploited-vulnerabilities-catalog",
-      "publishedAt": "2026-11-25T12:00:00.000Z",
-      "sourceId": "cisa",
-      "sourceName": "CISA Advisories",
-      "category": "Cybersecurity"
     },
     {
       "id": "https://blog.google/products-and-platforms/products/gemini/gemini-golden-state/",
@@ -282,7 +282,8 @@
       "publishedAt": null,
       "sourceId": "sebi",
       "sourceName": "SEBI",
-      "category": "Finance & India"
+      "category": "Finance & India",
+      "summary": ""
     }
   ]
 }
